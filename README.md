@@ -7,7 +7,7 @@ The Cheapest & First WhatsApp Gateway in Iraq, Syria & MENA Region.
 - **Unlimited WhatsApp Messages** - Flat monthly fee, no per-message charges
 - **RESTful API** - Easy integration for developers
 - **Bilingual** - Full English/Arabic support with RTL
-- **10-Day Free Trial** - No credit card required
+- **5-Day Free Trial** - No credit card required
 
 ## 💰 Pricing
 

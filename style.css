@@ -661,15 +661,26 @@ img {
     opacity: 0.8;
 }
 
+.pricing-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--space-xl);
+    align-items: start;
+    max-width: 960px;
+    margin: 0 auto;
+}
+
 .pricing-card {
     position: relative;
-    max-width: 450px;
-    margin: 0 auto;
     background: var(--white);
     border-radius: var(--radius-xl);
     padding: var(--space-2xl);
     text-align: center;
     box-shadow: var(--shadow-2xl);
+}
+
+.pricing-card-annual .price {
+    font-size: 3rem;
 }
 
 .pricing-badge {
@@ -685,6 +696,11 @@ img {
     border-radius: var(--radius-pill);
     text-transform: uppercase;
     letter-spacing: 0.05em;
+    white-space: nowrap;
+}
+
+.pricing-badge-save {
+    background: linear-gradient(135deg, var(--success) 0%, #00a88a 100%);
 }
 
 .pricing-header {
@@ -1060,6 +1076,10 @@ img {
         grid-column: span 1;
     }
     
+    .pricing-grid {
+        grid-template-columns: 1fr;
+    }
+    
     .footer-links {
         grid-template-columns: 1fr;
         gap: var(--space-xl);
@@ -1088,6 +1108,11 @@ img {
         font-size: 2rem;
     }
     
+    .pricing-grid {
+        grid-template-columns: 1fr;
+        gap: var(--space-xl);
+    }
+
     .pricing-card {
         padding: var(--space-lg);
     }

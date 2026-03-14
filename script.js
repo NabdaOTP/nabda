@@ -66,12 +66,15 @@ const translations = {
         // Pricing
         "pricing.title": "Simple, Transparent Pricing",
         "pricing.subtitle": "No hidden fees. No per-message charges. The best value WhatsApp API in Iraq.",
-        "pricing.badge": "Best Value",
+        "pricing.badge": "Best Value • Monthly",
         "pricing.period": "/month",
         "pricing.tagline": "Everything you need to send unlimited messages",
+        "pricing.annual.badge": "1 Month Free • Annual",
+        "pricing.annual.period": "/year",
+        "pricing.annual.tagline": "12 months for the price of 11",
         "pricing.feature1": "Unlimited WhatsApp Messages",
         "pricing.feature2": "No Per-Message Fee",
-        "pricing.feature3": "10-Day Free Trial",
+        "pricing.feature3": "5-Day Free Trial",
         "pricing.feature4": "RESTful API Access",
         "pricing.feature5": "Priority Support",
         "pricing.feature6": "Cancel Anytime",
@@ -80,7 +83,7 @@ const translations = {
         
         // CTA
         "cta.title": "Ready to send your first message?",
-        "cta.subtitle": "Join 65+ Arab businesses using the cheapest WhatsApp API. Start your 10-day free trial today.",
+        "cta.subtitle": "Join 65+ Arab businesses using the cheapest WhatsApp API. Start your 5-day free trial today.",
         "cta.button": "Get Started Free",
         
         // Payment Methods
@@ -163,12 +166,15 @@ const translations = {
         // Pricing
         "pricing.title": "تسعير بسيط وشفاف",
         "pricing.subtitle": "بدون رسوم خفية. بدون رسوم لكل رسالة. أفضل قيمة لـ WhatsApp API في العراق.",
-        "pricing.badge": "أفضل قيمة",
+        "pricing.badge": "أفضل قيمة • شهري",
         "pricing.period": "/شهرياً",
         "pricing.tagline": "كل ما تحتاجه لإرسال رسائل غير محدودة",
+        "pricing.annual.badge": "شهر مجاني • سنوي",
+        "pricing.annual.period": "/سنوياً",
+        "pricing.annual.tagline": "12 شهر بسعر 11 شهر",
         "pricing.feature1": "رسائل واتساب غير محدودة",
         "pricing.feature2": "بدون رسوم لكل رسالة",
-        "pricing.feature3": "تجربة مجانية 10 أيام",
+        "pricing.feature3": "تجربة مجانية 5 أيام",
         "pricing.feature4": "الوصول لـ RESTful API",
         "pricing.feature5": "دعم أولوية",
         "pricing.feature6": "إلغاء في أي وقت",
@@ -177,7 +183,7 @@ const translations = {
         
         // CTA
         "cta.title": "مستعد لإرسال رسالتك الأولى؟",
-        "cta.subtitle": "انضم إلى أكثر من 65 شركة عربية تستخدم أرخص WhatsApp API. ابدأ تجربتك المجانية لمدة 10 أيام اليوم.",
+        "cta.subtitle": "انضم إلى أكثر من 65 شركة عربية تستخدم أرخص WhatsApp API. ابدأ تجربتك المجانية لمدة 5 أيام اليوم.",
         "cta.button": "ابدأ مجاناً",
         
         // Payment Methods
