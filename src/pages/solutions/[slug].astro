@@ -1,0 +1,179 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Navbar from '../../components/Navbar.astro';
+import Footer from '../../components/Footer.astro';
+import FAQSection from '../../components/FAQSection.astro';
+import CTASection from '../../components/CTASection.astro';
+import { solutions, type Solution } from '../../data/solutions';
+
+export async function getStaticPaths() {
+  return solutions.map((sol) => ({
+    params: { slug: sol.slug },
+    props: { solution: sol },
+  }));
+}
+
+const { solution } = Astro.props as { solution: Solution };
+
+const softwareSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'SoftwareApplication',
+  name: 'Nabda OTP',
+  applicationCategory: 'DeveloperApplication',
+  operatingSystem: 'Web',
+  offers: { '@type': 'Offer', price: '10', priceCurrency: 'USD', priceValidUntil: '2026-12-31' },
+  description: solution.metaDescription,
+  url: `https://nabdaotp.com/solutions/${solution.slug}`,
+  aggregateRating: { '@type': 'AggregateRating', ratingValue: '4.9', reviewCount: '65' },
+};
+
+const faqSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: solution.faqs.map((faq) => ({ '@type': 'Question', name: faq.q, acceptedAnswer: { '@type': 'Answer', text: faq.a } })),
+};
+
+function parseContent(text: string): string {
+  return text
+    .replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>')
+    .replace(/\n\n/g, '</p><p style="margin-bottom:1rem; color:var(--navy-lighter); line-height:1.8;">')
+    .replace(/\n/g, '<br />')
+    .replace(/✅/g, '✅');
+}
+---
+
+<BaseLayout
+  title={solution.metaTitle}
+  description={solution.metaDescription}
+  canonical={`https://nabdaotp.com/solutions/${solution.slug}`}
+  schema={[softwareSchema, faqSchema]}
+>
+  <Navbar />
+
+  <!-- Hero -->
+  <section class="hero" style="min-height:auto; padding:7rem 0 3rem;">
+    <div class="hero-bg">
+      <div class="gradient-orb orb-1"></div>
+      <div class="gradient-orb orb-2"></div>
+      <div class="grid-overlay"></div>
+    </div>
+    <div class="container">
+      <nav style="display:flex; align-items:center; gap:.5rem; font-size:.875rem; color:var(--gray-500); margin-bottom:2rem;">
+        <a href="/" style="color:var(--blurple);">Home</a>
+        <span>/</span>
+        <span style="color:var(--navy-lighter);">Solutions</span>
+        <span>/</span>
+        <span style="color:var(--deep-navy); font-weight:500;">{solution.title}</span>
+      </nav>
+
+      <div class="hero-text" style="max-width:700px;">
+        <div class="badge">$10/month — Unlimited</div>
+        <h1 class="hero-title">{solution.h1}</h1>
+        <p class="hero-subtitle">{solution.heroSubtitle}</p>
+
+        <!-- Keyword pills -->
+        <div style="display:flex; flex-wrap:wrap; gap:.5rem; margin-bottom:1.5rem;">
+          {solution.keywords.slice(0, 5).map((kw) => (
+            <span style="padding:.25rem .75rem; background:rgba(99,91,255,.08); border:1px solid rgba(99,91,255,.2); border-radius:100px; font-size:.75rem; color:var(--blurple);">
+              {kw}
+            </span>
+          ))}
+        </div>
+
+        <div class="hero-cta">
+          <a href="https://dash.nabdaotp.com/" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-lg">Start Free Trial →</a>
+          <a href="https://api.nabdaotp.com/docs" target="_blank" rel="noopener noreferrer" class="btn btn-ghost btn-lg">View Docs</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Content sections -->
+  <section style="padding:4rem 0; background:var(--white);">
+    <div class="container" style="max-width:800px;">
+      {solution.sections.map((section) => (
+        <div style="margin-bottom:3rem;">
+          <h2 style="font-size:1.75rem; font-weight:700; color:var(--deep-navy); margin-bottom:1rem;">{section.heading}</h2>
+          <p style="color:var(--navy-lighter); line-height:1.8; margin-bottom:1rem;" set:html={parseContent(section.body)} />
+        </div>
+      ))}
+
+      <!-- Code Examples -->
+      {solution.codeExamples && solution.codeExamples.length > 0 && (
+        <div style="margin-bottom:3rem;">
+          <h2 style="font-size:1.75rem; font-weight:700; color:var(--deep-navy); margin-bottom:1.5rem;">Code Examples</h2>
+          <div style="display:flex; flex-direction:column; gap:1.5rem;">
+            {solution.codeExamples.map((example) => (
+              <div>
+                <div style="display:flex; justify-content:space-between; align-items:center; background:var(--gray-800); padding:.75rem 1.25rem; border-radius:var(--radius-md) var(--radius-md) 0 0;">
+                  <span style="color:#fff; font-size:.875rem; font-weight:500;">{example.label}</span>
+                  <span style="color:var(--gray-400); font-size:.75rem;">{example.language}</span>
+                </div>
+                <pre style="background:var(--deep-navy); border-radius:0 0 var(--radius-md) var(--radius-md); padding:1.25rem; overflow-x:auto; margin:0;"><code style="font-family:var(--font-mono); font-size:.8125rem; color:var(--gray-300); line-height:1.7;">{example.code}</code></pre>
+              </div>
+            ))}
+          </div>
+        </div>
+      )}
+    </div>
+  </section>
+
+  <!-- Pricing reminder -->
+  <section class="pricing" style="padding:3rem 0;">
+    <div class="container">
+      <div class="pricing-card" style="max-width:480px; margin:0 auto; text-align:center;">
+        <div class="pricing-header">
+          <div class="pricing-amount">
+            <span class="currency">$</span>
+            <span class="price">10</span>
+            <span class="period">/month</span>
+          </div>
+          <p class="pricing-tagline">Unlimited {solution.title} — No per-message fees</p>
+        </div>
+        <div style="display:flex; flex-wrap:wrap; justify-content:center; gap:.75rem; font-size:.875rem; color:var(--navy-lighter); margin-bottom:1.5rem;">
+          <span>✅ Unlimited messages</span>
+          <span>✅ 5-day free trial</span>
+          <span>✅ No credit card</span>
+          <span>✅ Cancel anytime</span>
+        </div>
+        <a href="https://dash.nabdaotp.com/" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-lg btn-full">
+          Start Free Trial →
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section style="padding:4rem 0; background:var(--off-white);">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">{solution.title} — FAQ</h2>
+      </div>
+      <FAQSection faqs={solution.faqs} />
+    </div>
+  </section>
+
+  <!-- Related solutions -->
+  <section style="padding:3rem 0; background:var(--white);">
+    <div class="container">
+      <h2 style="font-size:1.25rem; font-weight:700; color:var(--deep-navy); margin-bottom:1.5rem;">Related Solutions</h2>
+      <div class="page-link-grid">
+        {[
+          { title: 'WhatsApp OTP', slug: 'whatsapp-otp' },
+          { title: 'SMS OTP Alternative', slug: 'sms-otp' },
+          { title: 'WhatsApp API', slug: 'whatsapp-api' },
+          { title: 'WhatsApp 2FA', slug: 'two-factor-authentication' },
+          { title: 'Phone Verification', slug: 'phone-verification-api' },
+          { title: 'WhatsApp Business API', slug: 'whatsapp-business-api' },
+        ]
+          .filter((s) => s.slug !== solution.slug)
+          .map(({ title, slug }) => (
+            <a href={`/solutions/${slug}`} class="page-card" style="font-size:.875rem; color:var(--navy-lighter);">{title}</a>
+          ))}
+      </div>
+    </div>
+  </section>
+
+  <CTASection />
+  <Footer />
+</BaseLayout>

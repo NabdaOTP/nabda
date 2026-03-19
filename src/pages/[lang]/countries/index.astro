@@ -1,0 +1,67 @@
+---
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+import Navbar from '../../../components/Navbar.astro';
+import Footer from '../../../components/Footer.astro';
+import { countries } from '../../../data/countries';
+import {
+  ALL_LOCALES,
+  getTranslations,
+  isLocaleCode,
+  isRtlLocale,
+  withLocalePath,
+  type LocaleCode,
+} from '../../../i18n/translations';
+import { localizedCountryName, regionLabels } from '../../../i18n/page-content';
+
+export function getStaticPaths() {
+  return ALL_LOCALES.map((lang) => ({ params: { lang } }));
+}
+
+const langParam = Astro.params.lang ?? 'en';
+const locale: LocaleCode = isLocaleCode(langParam) ? langParam : 'en';
+const dir = isRtlLocale(locale) ? 'rtl' : 'ltr';
+const t = getTranslations(locale);
+const regions = ['arab', 'asia', 'latam', 'africa', 'europe'] as const;
+---
+
+<BaseLayout
+  title={`${t.common.viewAllCountries} | Nabda OTP`}
+  description="Browse all countries supported by Nabda OTP."
+  lang={locale}
+  dir={dir}
+  canonical={`https://nabdaotp.com${withLocalePath(locale, '/countries/')}`}
+>
+  <Navbar />
+  <section class="hero" style="min-height:auto; padding:7rem 0 3rem;">
+    <div class="hero-bg">
+      <div class="gradient-orb orb-1"></div>
+      <div class="gradient-orb orb-2"></div>
+      <div class="grid-overlay"></div>
+    </div>
+    <div class="container">
+      <h1 class="hero-title" style="font-size:clamp(2rem,4vw,3rem);">{t.common.viewAllCountries}</h1>
+      <p class="hero-subtitle">{countries.length} countries • $10/month unlimited</p>
+    </div>
+  </section>
+
+  <section style="padding:3rem 0 4rem; background:var(--off-white);">
+    <div class="container">
+      {regions.map((region) => (
+        <div style="margin-bottom:2rem;">
+          <h2 style="font-size:1.125rem; font-weight:700; color:var(--deep-navy); margin-bottom:0.9rem;">
+            {regionLabels[locale][region]}
+          </h2>
+          <div class="page-link-grid" style="grid-template-columns: repeat(auto-fill, minmax(210px, 1fr));">
+            {countries.filter((country) => country.region === region).map((country) => (
+              <a href={withLocalePath(locale, `/countries/${country.slug}`)} class="page-card" style="text-decoration:none;">
+                <div style="font-weight:700;">{localizedCountryName(locale, country)}</div>
+                <div style="font-size:.8125rem; color:var(--gray-500); margin-top:.3rem;">{country.phoneCode}</div>
+              </a>
+            ))}
+          </div>
+        </div>
+      ))}
+    </div>
+  </section>
+  <Footer />
+</BaseLayout>

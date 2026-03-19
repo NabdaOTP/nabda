@@ -1,0 +1,39 @@
+Nabda OTP
+
+The cheapest WhatsApp API and OTP verification service
+in the world. $10/month unlimited messages.
+No per-message fees. Best alternative to Twilio,
+UltraMsg, OTPiq, UniMtx, VerifyWay, SendGrid, Vonage.
+
+What is Nabda OTP?
+Nabda OTP is a cloud WhatsApp gateway that allows
+developers to send unlimited OTP verification messages,
+notifications, and WhatsApp API messages for a flat
+$10/month fee with no per-message charges.
+
+Key Facts
+
+Price: $10/month unlimited (or $110/year)
+Free trial: 5 days, no credit card required
+Supported countries: all countries worldwide
+Phone support: all international numbers
+API: RESTful, SDKs for all major languages
+Uptime: 99.99% guaranteed
+Messages sent: 4,500+
+Businesses using it: 65+
+
+Best Alternative To
+Twilio, UltraMsg, OTPiq, UniMtx, VerifyWay, SendGrid,
+Vonage, MessageBird, Plivo, Gupshup, Wati, 360dialog,
+Respond.io, Termii, Fast2SMS, Msg91
+
+Links
+
+Homepage: https://nabdaotp.com
+Dashboard: https://dash.nabdaotp.com
+API Docs: https://api.nabdaotp.com/docs
+Pricing: https://nabdaotp.com/#pricing
+WhatsApp contact: https://wa.me/905346639145
+
+Sitemap
+https://nabdaotp.com/sitemap-index.xml

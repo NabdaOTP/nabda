@@ -1,0 +1,65 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Navbar from '../components/Navbar.astro';
+import Footer from '../components/Footer.astro';
+---
+
+<BaseLayout
+  title="Refund Policy | Nabda OTP"
+  description="Nabda OTP Refund Policy — Our fair refund policy for the WhatsApp API service."
+  canonical="https://nabdaotp.com/refund-policy"
+>
+  <Navbar />
+  <main class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+    <h1 class="text-4xl font-bold text-white mb-2">Refund Policy</h1>
+    <p class="text-gray-500 text-sm mb-10">Last updated: January 1, 2025</p>
+
+    <div class="prose-dark space-y-8">
+      <div class="card" style="border-color: rgba(0,212,170,0.3);">
+        <h2 class="text-xl font-bold text-white mb-3">5-Day Free Trial</h2>
+        <p class="text-gray-400 text-sm leading-relaxed">
+          We offer a <strong class="text-white">5-day free trial</strong> with full access to all features.
+          No credit card required during the trial. You can evaluate Nabda OTP completely risk-free
+          before any payment is made.
+        </p>
+      </div>
+      <div>
+        <h2 class="text-2xl font-bold text-white mb-4">Refund Eligibility</h2>
+        <p class="text-gray-400 leading-relaxed">
+          Given our free trial, we generally do not offer refunds on paid subscriptions.
+          However, we will consider refund requests on a case-by-case basis for:
+        </p>
+        <ul class="space-y-2 mt-4">
+          {[
+            'Service outages exceeding 24 consecutive hours',
+            'Technical failures preventing service use',
+            'Billing errors or duplicate charges',
+            'Exceptional circumstances at our discretion',
+          ].map((item) => (
+            <li class="flex items-start gap-2 text-gray-400 text-sm">
+              <span class="text-accent-green mt-0.5">•</span>
+              {item}
+            </li>
+          ))}
+        </ul>
+      </div>
+      <div>
+        <h2 class="text-2xl font-bold text-white mb-4">How to Request a Refund</h2>
+        <p class="text-gray-400 leading-relaxed">
+          Contact us at <a href="mailto:support@nabdaotp.com" class="text-brand hover:underline">support@nabdaotp.com</a> within
+          7 days of the charge with your account email and the reason for your request.
+          We aim to respond to all refund requests within 2 business days.
+        </p>
+      </div>
+      <div>
+        <h2 class="text-2xl font-bold text-white mb-4">Cancellation</h2>
+        <p class="text-gray-400 leading-relaxed">
+          You can cancel your subscription at any time from your account dashboard.
+          Your service will continue until the end of the current billing period.
+          No partial refunds are issued for unused days in a billing period.
+        </p>
+      </div>
+    </div>
+  </main>
+  <Footer />
+</BaseLayout>

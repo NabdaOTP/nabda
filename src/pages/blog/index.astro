@@ -1,0 +1,57 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Navbar from '../../components/Navbar.astro';
+import Footer from '../../components/Footer.astro';
+import CTASection from '../../components/CTASection.astro';
+import { blogPosts } from '../../data/blog';
+---
+
+<BaseLayout
+  title="Blog — WhatsApp API Guides, Tutorials & Comparisons | Nabda OTP"
+  description="Learn how to use WhatsApp API for OTP verification. Tutorials, pricing comparisons, and guides for developers. Node.js, Python, PHP code examples."
+  canonical="https://nabdaotp.com/blog"
+>
+  <Navbar />
+
+  <!-- Hero -->
+  <section class="hero" style="min-height:auto; padding:7rem 0 3rem;">
+    <div class="hero-bg">
+      <div class="gradient-orb orb-1"></div>
+      <div class="gradient-orb orb-2"></div>
+      <div class="grid-overlay"></div>
+    </div>
+    <div class="container">
+      <div class="hero-text">
+        <div class="badge">Developer Blog</div>
+        <h1 class="hero-title">WhatsApp API Guides &amp; Tutorials</h1>
+        <p class="hero-subtitle">Tutorials, comparisons, and best practices for WhatsApp OTP integration. Code examples in Node.js, Python, and PHP.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Posts grid -->
+  <section style="padding:4rem 0; background:var(--off-white);">
+    <div class="container">
+      <div style="display:grid; grid-template-columns:repeat(auto-fill,minmax(320px,1fr)); gap:1.5rem;">
+        {blogPosts.map((post) => (
+          <a href={`/blog/${post.slug}`} class="page-card" style="display:flex; flex-direction:column; text-decoration:none;">
+            <div class="badge" style="margin-bottom:1rem; width:fit-content;">{post.category}</div>
+            <h2 style="font-size:1.125rem; font-weight:700; color:var(--deep-navy); margin-bottom:.75rem; line-height:1.4;">
+              {post.title}
+            </h2>
+            <p style="font-size:.9375rem; color:var(--navy-lighter); line-height:1.6; margin-bottom:1.5rem; flex:1;">
+              {post.excerpt}
+            </p>
+            <div style="display:flex; justify-content:space-between; font-size:.75rem; color:var(--gray-500);">
+              <span>{post.publishDate}</span>
+              <span>{post.readTime}</span>
+            </div>
+          </a>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <CTASection />
+  <Footer />
+</BaseLayout>

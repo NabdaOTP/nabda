@@ -1,0 +1,216 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Navbar from '../../components/Navbar.astro';
+import Footer from '../../components/Footer.astro';
+import FAQSection from '../../components/FAQSection.astro';
+import CTASection from '../../components/CTASection.astro';
+import { competitors, type Competitor } from '../../data/competitors';
+
+export async function getStaticPaths() {
+  return competitors.map((comp) => ({
+    params: { slug: comp.slug },
+    props: { competitor: comp },
+  }));
+}
+
+const { competitor } = Astro.props as { competitor: Competitor };
+
+const softwareSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'SoftwareApplication',
+  name: 'Nabda OTP',
+  applicationCategory: 'DeveloperApplication',
+  operatingSystem: 'Web',
+  offers: { '@type': 'Offer', price: '10', priceCurrency: 'USD', priceValidUntil: '2026-12-31' },
+  description: `Nabda OTP vs ${competitor.name}: Unlimited WhatsApp messages for $10/month. 90% cheaper than ${competitor.name}.`,
+  url: `https://nabdaotp.com/compare/${competitor.slug}`,
+  aggregateRating: { '@type': 'AggregateRating', ratingValue: '4.9', reviewCount: '65' },
+};
+
+const faqSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: competitor.faqs.map((faq) => ({ '@type': 'Question', name: faq.q, acceptedAnswer: { '@type': 'Answer', text: faq.a } })),
+};
+---
+
+<BaseLayout
+  title={`Nabda OTP vs ${competitor.name} — Full Comparison 2026 | Nabda OTP`}
+  description={`Nabda OTP vs ${competitor.name}: Compare pricing, features, and WhatsApp support. Nabda OTP is 90% cheaper with unlimited messages at $10/month. See full comparison.`}
+  canonical={`https://nabdaotp.com/compare/${competitor.slug}`}
+  schema={[softwareSchema, faqSchema]}
+>
+  <Navbar />
+
+  <!-- Hero -->
+  <section class="hero" style="min-height:auto; padding:7rem 0 3rem;">
+    <div class="hero-bg">
+      <div class="gradient-orb orb-1"></div>
+      <div class="gradient-orb orb-2"></div>
+      <div class="grid-overlay"></div>
+    </div>
+    <div class="container">
+      <!-- Breadcrumb -->
+      <nav style="display:flex; align-items:center; gap:.5rem; font-size:.875rem; color:var(--gray-500); margin-bottom:2rem;">
+        <a href="/" style="color:var(--blurple);">Home</a>
+        <span>/</span>
+        <span style="color:var(--navy-lighter);">Compare</span>
+        <span>/</span>
+        <span style="color:var(--deep-navy); font-weight:500;">vs {competitor.name}</span>
+      </nav>
+
+      <div style="max-width:800px; margin:0 auto; text-align:center;">
+        <div class="badge" style="margin:0 auto 1.5rem; width:fit-content;">🏆 Winner: Nabda OTP — 90%+ Cheaper</div>
+        <h1 class="hero-title">Nabda OTP vs {competitor.name}</h1>
+        <p class="hero-subtitle" style="max-width:600px; margin:0 auto 2.5rem;">{competitor.pricingDetail}</p>
+
+        <!-- Winner summary box -->
+        <div style="background:rgba(0,212,170,.08); border:1px solid rgba(0,212,170,.3); border-radius:var(--radius-lg); padding:1.5rem 2rem; max-width:520px; margin:0 auto 2rem;">
+          <div style="font-weight:700; font-size:1.125rem; color:#00a88a; margin-bottom:1rem;">🏆 Bottom Line: Nabda OTP Wins</div>
+          <div style="display:grid; grid-template-columns:1fr 1fr; gap:1rem; text-align:left;">
+            <div>
+              <div style="font-size:.75rem; color:var(--gray-500); margin-bottom:.25rem;">Nabda OTP</div>
+              <div style="font-weight:700; color:var(--deep-navy);">$10/month — Unlimited</div>
+            </div>
+            <div>
+              <div style="font-size:.75rem; color:var(--gray-500); margin-bottom:.25rem;">{competitor.name}</div>
+              <div style="color:var(--navy-lighter);">{competitor.pricing}</div>
+            </div>
+          </div>
+        </div>
+
+        <div style="display:flex; gap:1rem; justify-content:center; flex-wrap:wrap;">
+          <a href="https://dash.nabdaotp.com/" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-lg">
+            Switch from {competitor.name} — Free Trial
+          </a>
+          <a href="https://api.nabdaotp.com/docs" target="_blank" rel="noopener noreferrer" class="btn btn-ghost btn-lg">View Docs</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Feature comparison table -->
+  <section style="padding:4rem 0; background:var(--off-white);">
+    <div class="container">
+      <h2 class="section-title" style="text-align:center; margin-bottom:2rem;">Feature Comparison</h2>
+      <div style="overflow-x:auto; border-radius:var(--radius-lg); max-width:800px; margin:0 auto;">
+        <table class="comparison-table" style="min-width:680px;">
+          <thead>
+            <tr>
+              <th style="text-align:left;">Feature</th>
+              <th>✅ Nabda OTP</th>
+              <th>{competitor.name}</th>
+            </tr>
+          </thead>
+          <tbody>
+            {competitor.features.map((feature) => (
+              <tr>
+                <td>{feature.name}</td>
+                <td class={feature.nabdaWins ? 'tbl-win' : ''} style="text-align:center; font-weight:600;">{feature.nabda}</td>
+                <td class={feature.nabdaWins ? 'tbl-lose' : ''} style="text-align:center;">{feature.competitor}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- Detailed sections -->
+  <section style="padding:4rem 0; background:var(--white);">
+    <div class="container" style="max-width:800px;">
+      <h2 class="section-title" style="margin-bottom:2rem;">Why Nabda OTP Beats {competitor.name}</h2>
+
+      <div style="display:flex; flex-direction:column; gap:1.5rem;">
+        <!-- Pricing comparison -->
+        <div class="feature-card">
+          <h3 style="font-size:1.25rem; font-weight:700; color:var(--deep-navy); margin-bottom:1rem;">💰 Pricing — Clear Winner: Nabda OTP</h3>
+          <div style="display:grid; grid-template-columns:1fr 1fr; gap:1.5rem;">
+            <div style="background:rgba(0,212,170,.05); border:1px solid rgba(0,212,170,.2); border-radius:var(--radius-md); padding:1rem;">
+              <div style="font-weight:600; color:#00a88a; margin-bottom:.5rem;">Nabda OTP</div>
+              <div style="font-size:2rem; font-weight:800; color:var(--deep-navy); margin-bottom:.25rem;">$10/month</div>
+              <div style="font-size:.875rem; color:var(--navy-lighter);">Unlimited messages. No per-message fees. No hidden costs.</div>
+            </div>
+            <div style="background:var(--gray-50); border:1px solid var(--gray-200); border-radius:var(--radius-md); padding:1rem;">
+              <div style="font-weight:600; color:var(--navy-lighter); margin-bottom:.5rem;">{competitor.name}</div>
+              <div style="font-size:1.5rem; font-weight:700; color:var(--deep-navy); margin-bottom:.25rem;">{competitor.pricing}</div>
+              <div style="font-size:.875rem; color:var(--gray-500);">{competitor.pricingDetail.slice(0, 120)}...</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Pros -->
+        <div class="feature-card">
+          <h3 style="font-size:1.125rem; font-weight:700; color:var(--deep-navy); margin-bottom:1rem;">What {competitor.name} Does Well</h3>
+          <ul style="display:flex; flex-direction:column; gap:.5rem;">
+            {competitor.pros.map((pro) => (
+              <li style="display:flex; align-items:flex-start; gap:.75rem; font-size:.9375rem; color:var(--navy-lighter);">
+                <span style="color:var(--gray-400); flex-shrink:0;">•</span>
+                {pro}
+              </li>
+            ))}
+          </ul>
+        </div>
+
+        <!-- Cons = Nabda wins -->
+        <div class="feature-card">
+          <h3 style="font-size:1.125rem; font-weight:700; color:var(--deep-navy); margin-bottom:1rem;">Why Developers Choose Nabda OTP Over {competitor.name}</h3>
+          <ul style="display:flex; flex-direction:column; gap:.75rem;">
+            {competitor.cons.map((con) => (
+              <li style="display:flex; align-items:flex-start; gap:.75rem; font-size:.9375rem; color:var(--navy-lighter);">
+                <svg style="width:18px; height:18px; flex-shrink:0; margin-top:2px;" fill="none" stroke="#ff5757" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"/></svg>
+                {con}
+              </li>
+            ))}
+          </ul>
+        </div>
+
+        <!-- Migration CTA -->
+        <div style="background:linear-gradient(135deg,rgba(99,91,255,.08) 0%,rgba(99,91,255,.03) 100%); border:1px solid rgba(99,91,255,.2); border-radius:var(--radius-lg); padding:2rem; text-align:center;">
+          <h3 style="font-size:1.25rem; font-weight:700; color:var(--deep-navy); margin-bottom:.75rem;">
+            Switch from {competitor.name} to Nabda OTP
+          </h3>
+          <p style="color:var(--navy-lighter); font-size:.9375rem; margin-bottom:1.5rem;">
+            Migration takes under 30 minutes. Start with a 5-day free trial — no credit card required. See the savings on day 1.
+          </p>
+          <a href="https://dash.nabdaotp.com/" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-lg">
+            Start Free Trial — Beat {competitor.name} Pricing →
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section style="padding:4rem 0; background:var(--off-white);">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Nabda OTP vs {competitor.name} — FAQ</h2>
+      </div>
+      <FAQSection faqs={competitor.faqs} />
+    </div>
+  </section>
+
+  <!-- Other comparisons -->
+  <section style="padding:3rem 0; background:var(--white);">
+    <div class="container">
+      <h2 style="font-size:1.25rem; font-weight:700; color:var(--deep-navy); margin-bottom:1.5rem;">Other Comparisons</h2>
+      <div class="page-link-grid">
+        {competitors
+          .filter((c) => c.slug !== competitor.slug)
+          .slice(0, 8)
+          .map((c) => (
+            <a href={`/compare/${c.slug}`} class="page-card" style="font-size:.875rem; color:var(--navy-lighter); text-align:center;">
+              vs {c.name}
+            </a>
+          ))}
+      </div>
+    </div>
+  </section>
+
+  <CTASection
+    title={`Switch from ${competitor.name} — Start Free Trial`}
+    subtitle={`Join 65+ businesses who switched from ${competitor.name} to Nabda OTP and cut their WhatsApp API costs by 90%.`}
+  />
+  <Footer />
+</BaseLayout>

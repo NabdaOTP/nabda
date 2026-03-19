@@ -1,0 +1,45 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Navbar from '../../components/Navbar.astro';
+import Footer from '../../components/Footer.astro';
+import {
+  ALL_LOCALES,
+  getTranslations,
+  isLocaleCode,
+  isRtlLocale,
+  withLocalePath,
+  type LocaleCode,
+} from '../../i18n/translations';
+import { legalContent } from '../../i18n/page-content';
+
+export function getStaticPaths() {
+  return ALL_LOCALES.map((lang) => ({ params: { lang } }));
+}
+
+const langParam = Astro.params.lang ?? 'en';
+const locale: LocaleCode = isLocaleCode(langParam) ? langParam : 'en';
+const dir = isRtlLocale(locale) ? 'rtl' : 'ltr';
+const t = getTranslations(locale);
+const pageTitle = legalContent.title.terms[locale];
+---
+
+<BaseLayout
+  title={`${pageTitle} | Nabda OTP`}
+  description={`${pageTitle} for Nabda OTP.`}
+  lang={locale}
+  dir={dir}
+  canonical={`https://nabdaotp.com${withLocalePath(locale, '/terms-of-service')}`}
+>
+  <Navbar />
+  <main class="legal-page">
+    <div class="legal-container">
+      <h1 class="legal-title">{pageTitle}</h1>
+      <p class="legal-subtitle">{t.legal.lastUpdated}: 2026-03-19</p>
+      <div class="legal-content">
+        <h2>{pageTitle}</h2>
+        <p>By using Nabda OTP, you agree to responsible API usage and all listed service terms.</p>
+      </div>
+    </div>
+  </main>
+  <Footer />
+</BaseLayout>

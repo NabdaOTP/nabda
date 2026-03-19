@@ -1,0 +1,111 @@
+---
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+import Navbar from '../../../components/Navbar.astro';
+import Footer from '../../../components/Footer.astro';
+import CTASection from '../../../components/CTASection.astro';
+import FAQSection from '../../../components/FAQSection.astro';
+import { countries, type Country } from '../../../data/countries';
+import {
+  ALL_LOCALES,
+  getTranslations,
+  isLocaleCode,
+  isRtlLocale,
+  withLocalePath,
+  type LocaleCode,
+} from '../../../i18n/translations';
+import { localizedCountryName } from '../../../i18n/page-content';
+
+export function getStaticPaths() {
+  return ALL_LOCALES.flatMap((lang) =>
+    countries.map((country) => ({
+      params: { lang, slug: country.slug },
+      props: { country },
+    })),
+  );
+}
+
+const langParam = Astro.params.lang ?? 'en';
+const locale: LocaleCode = isLocaleCode(langParam) ? langParam : 'en';
+const dir = isRtlLocale(locale) ? 'rtl' : 'ltr';
+const t = getTranslations(locale);
+const { country } = Astro.props as { country: Country };
+const countryName = localizedCountryName(locale, country);
+
+const faqs = [
+  {
+    q: `${t.common.countries}: ${countryName}?`,
+    a: `Nabda OTP supports ${countryName} numbers (${country.phoneCode}) with a flat $10/month unlimited plan.`,
+  },
+  {
+    q: `WhatsApp OTP in ${countryName}?`,
+    a: `Use our REST API to send OTP and notification messages to ${country.phoneCode} numbers.`,
+  },
+  {
+    q: `Pricing in ${countryName}?`,
+    a: `Same global pricing in ${countryName}: $10/month unlimited messages with no per-message charges.`,
+  },
+];
+---
+
+<BaseLayout
+  title={`WhatsApp API for ${countryName} | Nabda OTP`}
+  description={`WhatsApp API and OTP verification for ${countryName}. Flat $10/month unlimited pricing.`}
+  lang={locale}
+  dir={dir}
+  canonical={`https://nabdaotp.com${withLocalePath(locale, `/countries/${country.slug}`)}`}
+  geoRegion={country.slug.split('-').at(-1)?.toUpperCase()}
+  geoPlacename={countryName}
+>
+  <Navbar />
+  <section class="hero" style="min-height:auto; padding:7rem 0 3rem;">
+    <div class="hero-bg">
+      <div class="gradient-orb orb-1"></div>
+      <div class="gradient-orb orb-2"></div>
+      <div class="grid-overlay"></div>
+    </div>
+    <div class="container">
+      <div class="hero-text" style="max-width:760px;">
+        <div class="badge">{t.common.countries}</div>
+        <h1 class="hero-title">WhatsApp API — {countryName}</h1>
+        <p class="hero-subtitle">
+          {country.phoneCode} supported. $10/month unlimited WhatsApp messages with fast OTP delivery.
+        </p>
+        <div class="hero-cta">
+          <a href="https://dash.nabdaotp.com/" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-lg">{t.cta.action}</a>
+          <a href={withLocalePath(locale, '/countries/')} class="btn btn-ghost btn-lg">{t.common.viewAllCountries}</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section style="padding:3rem 0; background:var(--white);">
+    <div class="container">
+      <div class="features-grid">
+        <div class="feature-card feature-primary">
+          <h3>$10/month</h3>
+          <p>Unlimited WhatsApp messages in {countryName}.</p>
+        </div>
+        <div class="feature-card">
+          <h3>99.9% Uptime</h3>
+          <p>Reliable OTP delivery for {country.phoneCode} numbers.</p>
+        </div>
+        <div class="feature-card">
+          <h3>REST API</h3>
+          <p>Easy integration using any backend language.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section style="padding:3rem 0; background:var(--off-white);">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">{t.common.faqTitle}</h2>
+      </div>
+      <FAQSection faqs={faqs} />
+    </div>
+  </section>
+
+  <CTASection />
+  <Footer />
+</BaseLayout>

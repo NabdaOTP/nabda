@@ -1,0 +1,78 @@
+---
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+import Navbar from '../../../components/Navbar.astro';
+import Footer from '../../../components/Footer.astro';
+import CTASection from '../../../components/CTASection.astro';
+import FAQSection from '../../../components/FAQSection.astro';
+import { solutions, type Solution } from '../../../data/solutions';
+import {
+  ALL_LOCALES,
+  getTranslations,
+  isLocaleCode,
+  isRtlLocale,
+  withLocalePath,
+  type LocaleCode,
+} from '../../../i18n/translations';
+
+export function getStaticPaths() {
+  return ALL_LOCALES.flatMap((lang) =>
+    solutions.map((solution) => ({
+      params: { lang, slug: solution.slug },
+      props: { solution },
+    })),
+  );
+}
+
+const langParam = Astro.params.lang ?? 'en';
+const locale: LocaleCode = isLocaleCode(langParam) ? langParam : 'en';
+const dir = isRtlLocale(locale) ? 'rtl' : 'ltr';
+const t = getTranslations(locale);
+const { solution } = Astro.props as { solution: Solution };
+---
+
+<BaseLayout
+  title={`${solution.title} | Nabda OTP`}
+  description={solution.metaDescription}
+  lang={locale}
+  dir={dir}
+  canonical={`https://nabdaotp.com${withLocalePath(locale, `/solutions/${solution.slug}`)}`}
+>
+  <Navbar />
+  <section class="hero" style="min-height:auto; padding:7rem 0 3rem;">
+    <div class="hero-bg">
+      <div class="gradient-orb orb-1"></div>
+      <div class="gradient-orb orb-2"></div>
+      <div class="grid-overlay"></div>
+    </div>
+    <div class="container">
+      <div class="hero-text" style="max-width:800px;">
+        <div class="badge">{t.common.solutions}</div>
+        <h1 class="hero-title">{solution.title}</h1>
+        <p class="hero-subtitle">{solution.heroSubtitle}</p>
+      </div>
+    </div>
+  </section>
+
+  <section style="padding:3rem 0; background:var(--white);">
+    <div class="container" style="max-width:850px;">
+      {solution.sections.map((section) => (
+        <div style="margin-bottom:2rem;">
+          <h2 style="font-size:1.35rem; color:var(--deep-navy); margin-bottom:.75rem;">{section.heading}</h2>
+          <p style="color:var(--navy-lighter); line-height:1.8;">{section.body.split('\n')[0]}</p>
+        </div>
+      ))}
+    </div>
+  </section>
+
+  <section style="padding:3rem 0; background:var(--off-white);">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">{t.common.faqTitle}</h2>
+      </div>
+      <FAQSection faqs={solution.faqs.slice(0, 6)} />
+    </div>
+  </section>
+
+  <CTASection />
+  <Footer />
+</BaseLayout>

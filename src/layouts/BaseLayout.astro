@@ -1,0 +1,181 @@
+---
+import '../styles/global.css';
+import {
+  ALL_LOCALES,
+  getLocaleFromPath,
+  isRtlLocale,
+  withLocalePath,
+} from '../i18n/translations';
+
+interface Props {
+  title: string;
+  description: string;
+  canonical?: string;
+  ogImage?: string;
+  lang?: string;
+  dir?: 'ltr' | 'rtl';
+  alternates?: Partial<Record<string, string>>;
+  schema?: object | object[];
+  noindex?: boolean;
+  geoRegion?: string;
+  geoPlacename?: string;
+}
+
+const {
+  title,
+  description,
+  canonical,
+  ogImage = 'https://nabdaotp.com/assets/og-image.png',
+  lang,
+  dir,
+  alternates = {},
+  schema,
+  noindex = false,
+  geoRegion,
+  geoPlacename,
+} = Astro.props;
+
+const detectedLocale = getLocaleFromPath(Astro.url.pathname);
+const activeLang = (lang ?? detectedLocale) as string;
+const activeDir = dir ?? (isRtlLocale(activeLang as any) ? 'rtl' : 'ltr');
+const canonicalUrl = canonical ?? `https://nabdaotp.com${Astro.url.pathname}`;
+const schemaArray = schema ? (Array.isArray(schema) ? schema : [schema]) : [];
+const autoAlternates = ALL_LOCALES.reduce<Record<string, string>>((acc, locale) => {
+  acc[locale] = `https://nabdaotp.com${withLocalePath(locale, Astro.url.pathname)}`;
+  return acc;
+}, {});
+const finalAlternates = { ...autoAlternates, ...alternates };
+---
+
+<!doctype html>
+<html lang={activeLang} dir={activeDir}>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <!-- Primary Meta -->
+    <title>{title}</title>
+    <meta name="description" content={description} />
+    <meta name="robots" content={noindex ? 'noindex, nofollow' : 'index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1'} />
+    <meta name="author" content="Nabda OTP" />
+    <meta http-equiv="content-language" content={activeLang} />
+    {geoRegion && <meta name="geo.region" content={geoRegion} />}
+    {geoPlacename && <meta name="geo.placename" content={geoPlacename} />}
+    <meta name="revisit-after" content="7 days" />
+    <meta name="rating" content="general" />
+
+    <!-- Canonical -->
+    <link rel="canonical" href={canonicalUrl} />
+
+    <!-- hreflang -->
+    {Object.entries(finalAlternates).map(([code, href]) => (
+      <link rel="alternate" hreflang={code} href={href} />
+    ))}
+    <link rel="alternate" hreflang="x-default" href={finalAlternates.en ?? 'https://nabdaotp.com/'} />
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content={canonicalUrl} />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:image" content={ogImage} />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="Nabda OTP - Cheapest WhatsApp API" />
+    <meta property="og:site_name" content="Nabda OTP" />
+    <meta property="og:locale" content={activeLang === 'ar' ? 'ar_SA' : 'en_US'} />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@NabdaOTP" />
+    <meta name="twitter:creator" content="@NabdaOTP" />
+    <meta name="twitter:title" content={title} />
+    <meta name="twitter:description" content={description} />
+    <meta name="twitter:image" content={ogImage} />
+
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon-16x16.png" />
+    <link rel="icon" type="image/x-icon" href="/assets/favicon.ico" />
+    <link rel="manifest" href="/assets/site.webmanifest" />
+    <meta name="theme-color" content="#635bff" />
+    <meta name="msapplication-TileColor" content="#635bff" />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- JSON-LD Schemas -->
+    {schemaArray.map((s) => (
+      <script type="application/ld+json" set:html={JSON.stringify(s)} />
+    ))}
+
+    <!-- Organization Schema (global) -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "Nabda OTP",
+        "alternateName": ["نبضة", "Nabda", "NabdaOTP"],
+        "url": "https://nabdaotp.com",
+        "logo": "https://nabdaotp.com/assets/android-chrome-192x192.png",
+        "sameAs": ["https://twitter.com/NabdaOTP"],
+        "foundingDate": "2024",
+        "slogan": "The Cheapest WhatsApp API - Unlimited Messages for $10/month",
+        "contactPoint": {
+          "@type": "ContactPoint",
+          "contactType": "customer service",
+          "availableLanguage": ["English", "Arabic"],
+          "url": "https://wa.me/905346639145"
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <slot />
+
+    <!-- User language preference and geo fallback -->
+    <script>
+      (function () {
+        const supported = new Set(['en','ar','es','pt','fr','de','tr','it','id','tl','sw']);
+        const preferred = localStorage.getItem('nabda_lang');
+        const pathname = window.location.pathname;
+        const parts = pathname.split('/').filter(Boolean);
+        const currentLocale = parts.length && supported.has(parts[0]) ? parts[0] : 'en';
+        const restPath = currentLocale === 'en' ? pathname : `/${parts.slice(1).join('/') || ''}`.replace(/\/$/, '') || '/';
+
+        if (preferred && supported.has(preferred) && preferred !== currentLocale) {
+          const target = preferred === 'en'
+            ? restPath
+            : restPath === '/'
+              ? `/${preferred}/`
+              : `/${preferred}${restPath}`;
+          window.location.replace(target);
+          return;
+        }
+
+        if (!preferred) {
+          const browser = (navigator.language || 'en').toLowerCase();
+          const guessed = browser.startsWith('ar') ? 'ar'
+            : browser.startsWith('es') ? 'es'
+            : browser.startsWith('pt') ? 'pt'
+            : browser.startsWith('fr') ? 'fr'
+            : browser.startsWith('de') ? 'de'
+            : browser.startsWith('tr') ? 'tr'
+            : browser.startsWith('it') ? 'it'
+            : browser.startsWith('id') ? 'id'
+            : browser.startsWith('tl') ? 'tl'
+            : browser.startsWith('sw') ? 'sw'
+            : 'en';
+          localStorage.setItem('nabda_lang', guessed);
+        }
+      })();
+    </script>
+  </body>
+</html>

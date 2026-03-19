@@ -1,0 +1,59 @@
+---
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+import Navbar from '../../../components/Navbar.astro';
+import Footer from '../../../components/Footer.astro';
+import { blogPosts, type BlogPost } from '../../../data/blog';
+import {
+  ALL_LOCALES,
+  getTranslations,
+  isLocaleCode,
+  isRtlLocale,
+  withLocalePath,
+  type LocaleCode,
+} from '../../../i18n/translations';
+
+export function getStaticPaths() {
+  return ALL_LOCALES.flatMap((lang) =>
+    blogPosts.map((post) => ({
+      params: { lang, slug: post.slug },
+      props: { post },
+    })),
+  );
+}
+
+const langParam = Astro.params.lang ?? 'en';
+const locale: LocaleCode = isLocaleCode(langParam) ? langParam : 'en';
+const dir = isRtlLocale(locale) ? 'rtl' : 'ltr';
+const t = getTranslations(locale);
+const { post } = Astro.props as { post: BlogPost };
+---
+
+<BaseLayout
+  title={post.metaTitle}
+  description={post.metaDescription}
+  lang={locale}
+  dir={dir}
+  canonical={`https://nabdaotp.com${withLocalePath(locale, `/blog/${post.slug}`)}`}
+>
+  <Navbar />
+  <article style="max-width:860px; margin:0 auto; padding:7rem 1rem 4rem;">
+    <nav style="display:flex; gap:.5rem; color:var(--gray-500); margin-bottom:1rem;">
+      <a href={withLocalePath(locale, '/')}>{t.nav.home}</a>
+      <span>/</span>
+      <a href={withLocalePath(locale, '/blog')}>{t.nav.blog}</a>
+    </nav>
+    <h1 style="font-size:clamp(1.8rem,4vw,2.6rem); color:var(--deep-navy); margin-bottom:1rem;">{post.title}</h1>
+    <p style="color:var(--navy-lighter); line-height:1.8; margin-bottom:1.5rem;">{post.excerpt}</p>
+    <div style="display:flex; flex-wrap:wrap; gap:0.5rem; margin-bottom:1.5rem;">
+      {post.keywords.slice(0, 6).map((keyword) => (
+        <span style="padding:0.3rem 0.65rem; background:var(--gray-100); border-radius:999px; font-size:0.75rem;">{keyword}</span>
+      ))}
+    </div>
+    <section class="prose-content">
+      <p>{post.content.split('\n\n')[0]}</p>
+      <p>{post.content.split('\n\n')[1] ?? post.excerpt}</p>
+      <p>{post.content.split('\n\n')[2] ?? post.excerpt}</p>
+    </section>
+  </article>
+  <Footer />
+</BaseLayout>

@@ -1,0 +1,49 @@
+---
+interface FAQ {
+  q: string;
+  a: string;
+}
+
+interface Props {
+  faqs: FAQ[];
+  lang?: string;
+}
+
+const { faqs, lang = 'en' } = Astro.props;
+---
+
+<div class="faq-list">
+  {faqs.map((faq, i) => (
+    <div class="faq-item" data-index={i}>
+      <button class="faq-question" aria-expanded="false">
+        <span>{faq.q}</span>
+        <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M6 9l6 6 6-6"/>
+        </svg>
+      </button>
+      <div class="faq-answer">
+        <p>{faq.a}</p>
+      </div>
+    </div>
+  ))}
+</div>
+
+<script>
+  document.querySelectorAll('.faq-item').forEach((item) => {
+    const btn = item.querySelector('.faq-question') as HTMLButtonElement;
+    const answer = item.querySelector('.faq-answer') as HTMLElement;
+
+    btn?.addEventListener('click', () => {
+      const isOpen = item.classList.contains('open');
+      // Close all others
+      document.querySelectorAll('.faq-item.open').forEach((openItem) => {
+        openItem.classList.remove('open');
+        openItem.querySelector('.faq-question')?.setAttribute('aria-expanded', 'false');
+      });
+      if (!isOpen) {
+        item.classList.add('open');
+        btn.setAttribute('aria-expanded', 'true');
+      }
+    });
+  });
+</script>

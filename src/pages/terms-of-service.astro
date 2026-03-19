@@ -1,0 +1,84 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Navbar from '../components/Navbar.astro';
+import Footer from '../components/Footer.astro';
+---
+
+<BaseLayout
+  title="Terms of Service | Nabda OTP"
+  description="Nabda OTP Terms of Service — The rules and guidelines for using our WhatsApp API service."
+  canonical="https://nabdaotp.com/terms-of-service"
+>
+  <Navbar />
+  <main class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+    <h1 class="text-4xl font-bold text-white mb-2">Terms of Service</h1>
+    <p class="text-gray-500 text-sm mb-10">Last updated: January 1, 2025</p>
+
+    <div class="prose-dark space-y-8">
+      <div>
+        <h2 class="text-2xl font-bold text-white mb-4">1. Acceptance of Terms</h2>
+        <p class="text-gray-400 leading-relaxed">
+          By using Nabda OTP's services, you agree to these Terms of Service. If you do not
+          agree to these terms, please do not use our service.
+        </p>
+      </div>
+      <div>
+        <h2 class="text-2xl font-bold text-white mb-4">2. Service Description</h2>
+        <p class="text-gray-400 leading-relaxed">
+          Nabda OTP provides a WhatsApp messaging API that allows developers and businesses
+          to send OTP verification codes, notifications, and other messages via WhatsApp.
+          The service is provided as-is with a 99.9% uptime commitment.
+        </p>
+      </div>
+      <div>
+        <h2 class="text-2xl font-bold text-white mb-4">3. Acceptable Use</h2>
+        <p class="text-gray-400 leading-relaxed mb-3">You agree not to use Nabda OTP to:</p>
+        <ul class="space-y-2">
+          {[
+            'Send spam or unsolicited commercial messages',
+            'Harass, threaten, or harm individuals',
+            'Violate WhatsApp\'s Terms of Service',
+            'Send illegal content or facilitate illegal activities',
+            'Impersonate other entities or individuals',
+          ].map((item) => (
+            <li class="flex items-start gap-2 text-gray-400 text-sm">
+              <span class="text-red-400 mt-0.5">•</span>
+              {item}
+            </li>
+          ))}
+        </ul>
+      </div>
+      <div>
+        <h2 class="text-2xl font-bold text-white mb-4">4. Billing & Payment</h2>
+        <p class="text-gray-400 leading-relaxed">
+          Subscriptions are billed monthly or annually. After the 5-day free trial, a
+          subscription fee of $10/month or $110/year applies. Subscriptions auto-renew
+          unless cancelled before the renewal date.
+        </p>
+      </div>
+      <div>
+        <h2 class="text-2xl font-bold text-white mb-4">5. Limitation of Liability</h2>
+        <p class="text-gray-400 leading-relaxed">
+          Nabda OTP's liability is limited to the amount paid for the service in the
+          preceding month. We are not liable for indirect, incidental, or consequential
+          damages arising from use of our service.
+        </p>
+      </div>
+      <div>
+        <h2 class="text-2xl font-bold text-white mb-4">6. Termination</h2>
+        <p class="text-gray-400 leading-relaxed">
+          You may cancel your subscription at any time. We reserve the right to terminate
+          accounts that violate these terms. Upon termination, access to the service will
+          end at the close of the current billing period.
+        </p>
+      </div>
+      <div>
+        <h2 class="text-2xl font-bold text-white mb-4">7. Contact</h2>
+        <p class="text-gray-400 leading-relaxed">
+          Questions about these terms: <a href="mailto:support@nabdaotp.com" class="text-brand hover:underline">support@nabdaotp.com</a>
+        </p>
+      </div>
+    </div>
+  </main>
+  <Footer />
+</BaseLayout>

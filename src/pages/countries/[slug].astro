@@ -1,0 +1,324 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Navbar from '../../components/Navbar.astro';
+import Footer from '../../components/Footer.astro';
+import FAQSection from '../../components/FAQSection.astro';
+import CTASection from '../../components/CTASection.astro';
+import { countries, type Country } from '../../data/countries';
+
+export async function getStaticPaths() {
+  return countries.map((country) => ({
+    params: { slug: country.slug },
+    props: { country },
+  }));
+}
+
+const { country } = Astro.props as { country: Country };
+
+const isAr = false;
+const dir = 'ltr';
+const lang = 'en';
+
+const softwareSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'SoftwareApplication',
+  name: 'Nabda OTP',
+  applicationCategory: 'DeveloperApplication',
+  operatingSystem: 'Web',
+  offers: { '@type': 'Offer', price: '10', priceCurrency: 'USD', priceValidUntil: '2026-12-31', availability: 'https://schema.org/InStock' },
+  description: `Cheapest WhatsApp API for ${country.name} (${country.phoneCode}). Unlimited messages for $10/month.`,
+  url: `https://nabdaotp.com/countries/${country.slug}`,
+  aggregateRating: { '@type': 'AggregateRating', ratingValue: '4.9', reviewCount: '65' },
+};
+
+const faqs = [
+  { q: `Does Nabda OTP work in ${country.name}?`, a: `Yes, Nabda OTP fully supports ${country.name} phone numbers (${country.phoneCode}). You can send WhatsApp OTP and notifications to any ${country.name} WhatsApp number with 99.9% delivery rate.` },
+  { q: `What is the cheapest WhatsApp API in ${country.name}?`, a: `Nabda OTP is the cheapest WhatsApp API for ${country.name} at $10/month for unlimited messages. Competitors like Twilio charge $0.005–$0.05 per message, which at 500 messages/day costs $75–$750/month vs Nabda OTP's flat $10/month.` },
+  { q: `How to send WhatsApp OTP to ${country.phoneCode} numbers?`, a: `Use Nabda OTP's REST API. Send a POST request to https://api.nabdaotp.com/v1/send with your API key, the ${country.name} phone number in E.164 format (${country.phoneCode}XXXXXXXXX), and your OTP message. Messages deliver in under 1 second.` },
+  { q: `Is there a free trial for ${country.name} users?`, a: `Yes! Nabda OTP offers a 5-day free trial with full API access. No credit card required. You can test OTP delivery to ${country.name} phone numbers during the trial at zero cost.` },
+  { q: `What is the best Twilio alternative in ${country.name}?`, a: `Nabda OTP is the best Twilio alternative for ${country.name}. At $10/month unlimited vs Twilio's per-message pricing, Nabda OTP is typically 90-98% cheaper for businesses in ${country.name}.` },
+  { q: isAr ? `هل نبضة OTP تدعم الأرقام في ${country.nameAr ?? country.name}؟` : `Does Nabda OTP support ${country.name} phone format?`, a: isAr ? `نعم، نبضة OTP تدعم بالكامل أرقام الهواتف ${country.nameAr ?? country.name} (${country.phoneCode}).` : `Yes. Nabda OTP fully supports ${country.name} phone numbers in E.164 format (${country.phoneCode}XXXXXXXXX).` },
+];
+
+const faqSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: faqs.map((faq) => ({ '@type': 'Question', name: faq.q, acceptedAnswer: { '@type': 'Answer', text: faq.a } })),
+};
+
+const pageTitle = `Cheapest WhatsApp API in ${country.name} — $10/mo Unlimited | Nabda OTP`;
+const pageDesc = `Send unlimited WhatsApp OTP and messages in ${country.name} (${country.phoneCode}) for just $10/month. No per-message fees. Best Twilio alternative for ${country.name} developers. 5-day free trial.`;
+---
+
+<BaseLayout
+  title={pageTitle}
+  description={pageDesc}
+  canonical={`https://nabdaotp.com/countries/${country.slug}`}
+  lang={lang}
+  dir={dir}
+  schema={[softwareSchema, faqSchema]}
+>
+  <Navbar lang={lang} />
+
+  <!-- Hero -->
+  <section class="hero" style="min-height: auto; padding: 7rem 0 3rem;">
+    <div class="hero-bg">
+      <div class="gradient-orb orb-1"></div>
+      <div class="gradient-orb orb-2"></div>
+      <div class="grid-overlay"></div>
+    </div>
+    <div class="container">
+      <!-- Breadcrumb -->
+      <nav style="display:flex; align-items:center; gap:.5rem; font-size:.875rem; color:var(--gray-500); margin-bottom:2rem;">
+        <a href="/" style="color:var(--blurple);">Home</a>
+        <span>/</span>
+        <span style="color:var(--navy-lighter);">Countries</span>
+        <span>/</span>
+        <span style="color:var(--deep-navy); font-weight:500;">{country.name}</span>
+      </nav>
+
+      <div class="hero-content" style="padding-top:0;">
+        <div class="hero-text">
+          <div class="badge">
+            {country.region === 'arab' ? '🌍 MENA Region' : '🌐 Global Coverage'}
+          </div>
+          <h1 class="hero-title">
+            {isAr ? `واتساب API لـ ${country.nameAr ?? country.name}` : `WhatsApp API for ${country.name}`}
+          </h1>
+          <p class="hero-subtitle">
+            {isAr
+              ? `أرسل رسائل واتساب OTP غير محدودة في ${country.nameAr ?? country.name} (${country.phoneCode}) بسعر 10 دولار فقط شهرياً. بدون رسوم لكل رسالة. تجربة مجانية 5 أيام.`
+              : `Send unlimited WhatsApp OTP messages in ${country.name} (${country.phoneCode}) for just $10/month. No per-message fees. Best Twilio alternative for ${country.name}.`}
+          </p>
+          <div class="hero-cta">
+            <a href="https://dash.nabdaotp.com/" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-lg">
+              {isAr ? 'ابدأ التجربة المجانية' : 'Start Free Trial →'}
+            </a>
+            <a href="https://api.nabdaotp.com/docs" target="_blank" rel="noopener noreferrer" class="btn btn-ghost btn-lg">
+              {isAr ? 'التوثيق' : 'View Docs'}
+            </a>
+          </div>
+          <p class="hero-price">
+            {isAr ? 'بعد التجربة: ' : 'After trial: '}<strong>$10/month</strong>{isAr ? ' — إلغاء في أي وقت' : ' — cancel anytime'}
+          </p>
+        </div>
+
+        <div class="hero-visual">
+          <div class="code-terminal">
+            <div class="terminal-header">
+              <div class="terminal-dots">
+                <span class="dot red"></span>
+                <span class="dot yellow"></span>
+                <span class="dot green"></span>
+              </div>
+              <span class="terminal-title">Send OTP — {country.name} ({country.phoneCode})</span>
+            </div>
+            <div class="terminal-body">
+              <pre><code><span class="code-comment">// Send WhatsApp OTP to {country.name}</span>
+<span class="code-keyword">await</span> <span class="code-function">fetch</span>(<span class="code-string">'https://api.nabdaotp.com/v1/send'</span>, &#123;
+  method: <span class="code-string">'POST'</span>,
+  headers: &#123; <span class="code-property">Authorization</span>: <span class="code-string">`Bearer $&#123;API_KEY&#125;`</span> &#125;,
+  body: <span class="code-function">JSON.stringify</span>(&#123;
+    <span class="code-property">phone</span>: <span class="code-string">'{country.phoneCode}XXXXXXXXX'</span>,
+    <span class="code-property">message</span>: <span class="code-string">'Your code is: 847291'</span>,
+  &#125;),
+&#125;);
+<span class="code-comment">// ✅ $10/mo unlimited for {country.name}!</span></code></pre>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Key stats -->
+  <section class="stats">
+    <div class="container">
+      <div class="stats-grid" style="grid-template-columns: repeat(3,1fr);">
+        <div class="stat-item">
+          <div class="stat-icon">💰</div>
+          <div class="stat-number">$10/mo</div>
+          <div class="stat-label">{isAr ? 'رسائل غير محدودة' : 'Unlimited Messages'}</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-icon">⚡</div>
+          <div class="stat-number">99.9%</div>
+          <div class="stat-label">{isAr ? 'معدل التسليم' : 'Delivery Rate'}</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-icon">🚀</div>
+          <div class="stat-number">2 min</div>
+          <div class="stat-label">{isAr ? 'وقت التكامل' : 'Integration Time'}</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Why section -->
+  <section class="features" id="why">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">
+          {isAr ? `لماذا نبضة OTP لـ ${country.nameAr ?? country.name}؟` : `Why Nabda OTP for ${country.name}?`}
+        </h2>
+      </div>
+      <div class="features-grid">
+        <div class="feature-card feature-primary">
+          <div class="feature-icon">🌍</div>
+          <h3>{isAr ? 'فهم السوق المحلي' : `${country.name} Market`}</h3>
+          <p>{country.localMarketNote ?? `Nabda OTP is optimized for ${country.name} (${country.phoneCode}) with reliable WhatsApp delivery to all major telecom operators.`}</p>
+          <div class="feature-highlight">{country.phoneCode} — Full Support</div>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon">💰</div>
+          <h3>{isAr ? 'أفضل سعر في السوق' : 'Best Pricing'}</h3>
+          <p>{isAr
+            ? `بسعر 10 دولار شهرياً لرسائل غير محدودة، وفر 90-99% مقارنة بـ Twilio أو Vonage.`
+            : `$10/month for unlimited messages. Save 90-99% compared to Twilio, Vonage, or MessageBird in ${country.name}.`}</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon">👨‍💻</div>
+          <h3>{isAr ? 'تكامل سريع' : 'Fast Integration'}</h3>
+          <p>{isAr
+            ? `API بسيط يعمل مع Node.js وPython وPHP. ابدأ في إرسال رسائل OTP خلال دقيقتين.`
+            : `Simple REST API works with Node.js, Python, PHP. Start sending OTPs in ${country.name} in under 2 minutes.`}</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon">🔒</div>
+          <h3>{isAr ? 'آمن وموثوق' : 'Secure & Reliable'}</h3>
+          <p>{isAr
+            ? `رسائل مشفرة من طرف إلى طرف. أكثر أماناً من SMS OTP. معدل تسليم 99.9%.`
+            : `End-to-end encrypted messages. More secure than SMS OTP. 99.9% delivery to ${country.name} numbers.`}</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon">🎯</div>
+          <h3>{isAr ? 'بدون رسوم لكل رسالة' : 'No Per-Message Fees'}</h3>
+          <p>{isAr
+            ? `سعر ثابت. لا مفاجآت في الفاتورة. ادفع $10 وأرسل ما تشاء.`
+            : `Flat rate. No bill surprises. Pay $10 and send as many messages as you need to ${country.name}.`}</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon">🆓</div>
+          <h3>{isAr ? 'تجربة مجانية 5 أيام' : '5-Day Free Trial'}</h3>
+          <p>{isAr
+            ? `جرب الخدمة مجاناً لمدة 5 أيام بدون بطاقة ائتمانية. اختبر التسليم في ${country.nameAr ?? country.name}.`
+            : `Try the service free for 5 days. No credit card required. Test OTP delivery to ${country.name} numbers.`}</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pricing & comparison table -->
+  <section class="pricing" id="pricing">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">
+          {isAr ? `أسعار نبضة OTP في ${country.nameAr ?? country.name}` : `Nabda OTP Pricing for ${country.name}`}
+        </h2>
+        <p class="section-subtitle">
+          {isAr ? 'نفس السعر المنخفض لجميع الدول — 10 دولار شهرياً' : 'Same low price for all countries — $10/month unlimited'}
+        </p>
+      </div>
+
+      <div style="max-width:680px; margin:0 auto 3rem;">
+        <div class="pricing-card" style="max-width:400px; margin:0 auto 2rem;">
+          <div class="pricing-badge">{isAr ? 'الأفضل قيمة' : 'Best Value'}</div>
+          <div class="pricing-header">
+            <div class="pricing-amount">
+              <span class="currency">$</span>
+              <span class="price">10</span>
+              <span class="period">/month</span>
+            </div>
+            <p class="pricing-tagline">{isAr ? 'رسائل غير محدودة' : `Unlimited messages to ${country.name}`}</p>
+          </div>
+          <ul class="pricing-features">
+            {[
+              isAr ? `رسائل غير محدودة لأرقام ${country.nameAr ?? country.name}` : `Unlimited messages to ${country.name} (${country.phoneCode})`,
+              isAr ? 'بدون رسوم لكل رسالة' : 'No per-message fees',
+              isAr ? 'تجربة مجانية 5 أيام' : '5-day free trial',
+              isAr ? 'دعم العربية الكامل' : 'Full REST API access',
+              isAr ? 'إلغاء في أي وقت' : 'Cancel anytime',
+            ].map((f) => (
+              <li>
+                <svg class="check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>{f}</span>
+              </li>
+            ))}
+          </ul>
+          <a href="https://dash.nabdaotp.com/" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-lg btn-full">
+            {isAr ? `ابدأ التجربة المجانية` : `Start Free Trial — ${country.name}`}
+          </a>
+          <p class="pricing-note">{isAr ? 'بدون بطاقة ائتمانية' : 'No credit card required'}</p>
+        </div>
+
+        <!-- Cost comparison table -->
+        <div style="background:rgba(255,255,255,0.1); border-radius:var(--radius-lg); overflow:hidden;">
+          <table class="comparison-table" style="background:rgba(10,37,64,0.3);">
+            <thead>
+              <tr>
+                <th style="text-align:left;">{isAr ? 'الخدمة' : 'Service'}</th>
+                <th>{isAr ? '500 رسالة/يوم' : '500 msg/day'}</th>
+                <th>{isAr ? '2000 رسالة/يوم' : '2000 msg/day'}</th>
+              </tr>
+            </thead>
+            <tbody style="background:rgba(255,255,255,0.95);">
+              <tr>
+                <td style="font-weight:700; color:var(--blurple);">✅ Nabda OTP</td>
+                <td style="text-align:center; font-weight:700; color:var(--success);">$10/mo</td>
+                <td style="text-align:center; font-weight:700; color:var(--success);">$10/mo</td>
+              </tr>
+              <tr>
+                <td>Twilio</td>
+                <td style="text-align:center; color:var(--error);">$75–$750/mo</td>
+                <td style="text-align:center; color:var(--error);">$300–$3,000/mo</td>
+              </tr>
+              <tr>
+                <td>Vonage</td>
+                <td style="text-align:center; color:var(--error);">$95–$1,500/mo</td>
+                <td style="text-align:center; color:var(--error);">$380–$6,000/mo</td>
+              </tr>
+              <tr>
+                <td>MessageBird</td>
+                <td style="text-align:center; color:var(--error);">$50–$475/mo</td>
+                <td style="text-align:center; color:var(--error);">$200–$1,900/mo</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section style="padding: 4rem 0; background: var(--off-white);">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">
+          {isAr ? `أسئلة شائعة — واتساب API في ${country.nameAr ?? country.name}` : `FAQ — WhatsApp API in ${country.name}`}
+        </h2>
+      </div>
+      <FAQSection faqs={faqs} lang={lang} />
+    </div>
+  </section>
+
+  <!-- Related pages -->
+  <section style="padding: 3rem 0; background: var(--white);">
+    <div class="container">
+      <h2 style="font-size:1.25rem; font-weight:700; color:var(--deep-navy); margin-bottom:1.5rem;">Related Pages</h2>
+      <div class="page-link-grid">
+        <a href="/solutions/whatsapp-otp" class="page-card" style="font-size:.875rem; color:var(--navy-lighter);">WhatsApp OTP API</a>
+        <a href="/solutions/two-factor-authentication" class="page-card" style="font-size:.875rem; color:var(--navy-lighter);">WhatsApp 2FA</a>
+        <a href="/compare/nabda-vs-twilio" class="page-card" style="font-size:.875rem; color:var(--navy-lighter);">Nabda vs Twilio</a>
+        <a href="/compare/nabda-vs-ultramsg" class="page-card" style="font-size:.875rem; color:var(--navy-lighter);">Nabda vs UltraMsg</a>
+      </div>
+    </div>
+  </section>
+
+  <CTASection lang={lang} />
+  <Footer lang={lang} />
+</BaseLayout>

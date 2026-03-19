@@ -1,0 +1,125 @@
+---
+import {
+  getLocaleFromPath,
+  getTranslations,
+  withLocalePath,
+} from '../i18n/translations';
+
+const locale = getLocaleFromPath(Astro.url.pathname);
+const t = getTranslations(locale);
+const home = withLocalePath(locale, '/');
+---
+
+<footer class="footer">
+  <div class="container">
+    <div style="display:grid; grid-template-columns:1.5fr 1fr 1fr 1fr; gap:2rem; padding-bottom:2rem; border-bottom:1px solid rgba(255,255,255,.1);">
+
+      <!-- Brand -->
+      <div>
+        <a href={home} class="logo" style="color:#fff; margin-bottom:1rem; display:inline-flex;">
+          <img src="/assets/android-chrome-192x192.png" alt="Nabda OTP" class="logo-img" width="50" height="50" loading="lazy">
+          <span class="logo-text">Nabda OTP</span>
+        </a>
+        <p style="font-size:.9375rem; line-height:1.7; color:var(--gray-400); max-width:280px; margin-top:.75rem;">
+          {t.footer.blurb}
+        </p>
+        <div style="margin-top:1.25rem; display:flex; flex-direction:column; gap:.5rem;">
+          <a href="https://wa.me/905346639145" target="_blank" rel="noopener noreferrer" style="font-size:.875rem; color:var(--gray-400); display:flex; align-items:center; gap:.5rem;">
+            <span style="color:#25D366;">●</span> {t.footer.support}
+          </a>
+          <a href="https://api.nabdaotp.com/docs" target="_blank" rel="noopener noreferrer" style="font-size:.875rem; color:var(--gray-400);">
+            📄 {t.footer.apiDocs}
+          </a>
+          <a href="https://dash.nabdaotp.com/" target="_blank" rel="noopener noreferrer" style="font-size:.875rem; color:var(--gray-400);">
+            🚀 {t.footer.dashboard}
+          </a>
+        </div>
+      </div>
+
+      <!-- Product -->
+      <div class="footer-col">
+        <h4>{t.footer.product}</h4>
+        <ul>
+          <li><a href={`${home}#features`}>{t.nav.features}</a></li>
+          <li><a href={`${home}#pricing`}>{t.nav.pricing}</a></li>
+          <li><a href="https://api.nabdaotp.com/docs" target="_blank" rel="noopener noreferrer">{t.footer.apiDocs}</a></li>
+          <li><a href="https://dash.nabdaotp.com/" target="_blank" rel="noopener noreferrer">{t.footer.dashboard}</a></li>
+          <li><a href={withLocalePath(locale, '/blog')}>{t.nav.blog}</a></li>
+          <li><a href={withLocalePath(locale, '/about')}>{t.footer.about}</a></li>
+        </ul>
+      </div>
+
+      <!-- Solutions & Compare -->
+      <div class="footer-col">
+        <h4>{t.nav.solutions}</h4>
+        <ul>
+          <li><a href={withLocalePath(locale, '/solutions/whatsapp-otp')}>WhatsApp OTP API</a></li>
+          <li><a href={withLocalePath(locale, '/solutions/whatsapp-api')}>WhatsApp API</a></li>
+          <li><a href={withLocalePath(locale, '/solutions/two-factor-authentication')}>WhatsApp 2FA</a></li>
+          <li><a href={withLocalePath(locale, '/solutions/sms-otp')}>SMS OTP Alternative</a></li>
+          <li><a href={withLocalePath(locale, '/solutions/phone-verification-api')}>Phone Verification</a></li>
+          <li><a href={withLocalePath(locale, '/solutions/whatsapp-business-api')}>WhatsApp Business</a></li>
+        </ul>
+      </div>
+
+      <!-- Countries + Compare + Legal -->
+      <div class="footer-col">
+        <h4>{t.footer.compareAndCountries}</h4>
+        <ul>
+          <li><a href={withLocalePath(locale, '/compare/nabda-vs-twilio')}>vs Twilio</a></li>
+          <li><a href={withLocalePath(locale, '/compare/nabda-vs-ultramsg')}>vs UltraMsg</a></li>
+          <li><a href={withLocalePath(locale, '/compare/nabda-vs-vonage')}>vs Vonage</a></li>
+          <li><a href={withLocalePath(locale, '/compare/nabda-vs-sendgrid')}>vs SendGrid</a></li>
+          <li><a href={withLocalePath(locale, '/countries/whatsapp-api-iraq')}>Iraq WhatsApp API</a></li>
+          <li><a href={withLocalePath(locale, '/countries/whatsapp-api-saudi-arabia')}>Saudi Arabia API</a></li>
+          <li><a href={withLocalePath(locale, '/countries/whatsapp-api-india')}>India WhatsApp API</a></li>
+          <li><a href={withLocalePath(locale, '/countries/whatsapp-api-brazil')}>Brazil WhatsApp API</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Legal row -->
+    <div style="padding-top:1.25rem; display:flex; flex-wrap:wrap; gap:1.5rem; margin-bottom:1rem;">
+      <a href={withLocalePath(locale, '/privacy-policy')} style="font-size:.875rem; color:var(--gray-500);">{t.footer.privacy}</a>
+      <a href={withLocalePath(locale, '/terms-of-service')} style="font-size:.875rem; color:var(--gray-500);">{t.footer.terms}</a>
+      <a href={withLocalePath(locale, '/refund-policy')} style="font-size:.875rem; color:var(--gray-500);">{t.footer.refund}</a>
+      <a href="https://wa.me/905346639145" target="_blank" rel="noopener noreferrer" style="font-size:.875rem; color:var(--gray-500);">{t.footer.contact}</a>
+    </div>
+
+    <div class="footer-bottom">
+      <p class="copyright">
+        © 2026 Nabda OTP. {t.footer.copyright} We Pioneers Ltd.
+      </p>
+      <p class="footer-seo">
+        Cheapest WhatsApp API $10/mo Unlimited • Best Twilio Alternative • UltraMsg Alternative • WhatsApp OTP Iraq • WhatsApp API Syria • MENA WhatsApp Gateway • أرخص واتساب API • بديل تويليو • خدمة OTP العراق
+      </p>
+    </div>
+  </div>
+</footer>
+
+<!-- Floating WhatsApp Button -->
+<a href="https://wa.me/905346639145" target="_blank" rel="noopener noreferrer" class="whatsapp-float" aria-label="Chat on WhatsApp">
+  <div class="whatsapp-icon">
+    <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M16 3C8.82 3 3 8.82 3 16C3 18.69 3.79 21.21 5.15 23.35L3.14 29.14L9.08 27.17C11.13 28.36 13.49 29 16 29C23.18 29 29 23.18 29 16C29 8.82 23.18 3 16 3Z" fill="#25D366"/>
+      <path d="M16 5C9.92 5 5 9.92 5 16C5 18.39 5.72 20.62 6.97 22.5L5.5 27.5L10.62 26.07C12.43 27.17 14.14 27.77 16 28C22.08 28 27 23.08 27 17C27 10.92 22.08 5 16 5ZM22.59 20.5C22.35 21.17 21.22 21.77 20.63 21.85C19.53 22 18.62 21.77 16.82 21.08C13.34 19.67 11.13 16.14 10.96 15.91C10.79 15.68 9.64 14.17 9.64 12.6C9.64 11.03 10.45 10.28 10.78 9.92C11.11 9.56 11.5 9.47 11.73 9.47C11.96 9.47 12.19 9.47 12.39 9.48C12.62 9.49 12.92 9.39 13.21 10.07C13.51 10.77 14.21 12.34 14.29 12.51C14.37 12.68 14.43 12.88 14.31 13.11C13.71 14.31 13.06 14.24 13.46 14.91C14.86 17.26 16.29 18.02 18.33 19.04C18.69 19.23 18.89 19.2 19.09 18.97C19.29 18.74 19.96 17.95 20.19 17.59C20.42 17.23 20.65 17.29 20.98 17.41C21.31 17.53 22.88 18.3 23.24 18.49C23.6 18.68 23.83 18.77 23.91 18.91C24 19.17 24 19.83 22.59 20.5Z" fill="white"/>
+    </svg>
+  </div>
+  <div class="whatsapp-text">
+    <span class="whatsapp-arrow">→</span>
+    <span>{locale === 'ar' ? 'مرحباً، كيف يمكننا مساعدتك؟' : 'Hello, how can we help you?'}</span>
+  </div>
+</a>
+
+<style>
+  @media (max-width: 768px) {
+    footer .container > div:first-child {
+      grid-template-columns: 1fr 1fr !important;
+    }
+  }
+  @media (max-width: 480px) {
+    footer .container > div:first-child {
+      grid-template-columns: 1fr !important;
+    }
+  }
+</style>

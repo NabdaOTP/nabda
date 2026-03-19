@@ -1,0 +1,136 @@
+---
+import { LANGUAGE_MENU, getLocaleFromPath, getTranslations, withLocalePath } from '../i18n/translations';
+
+const locale = getLocaleFromPath(Astro.url.pathname);
+const t = getTranslations(locale);
+
+const path = Astro.url.pathname;
+const hrefHome = withLocalePath(locale, '/');
+const hrefBlog = withLocalePath(locale, '/blog');
+---
+
+<header class="header">
+  <nav class="nav container" id="mainNav">
+    <a href={hrefHome} class="logo">
+      <img src="/assets/android-chrome-192x192.png" alt="Nabda OTP" class="logo-img" width="50" height="50" loading="eager">
+      <span class="logo-text">Nabda OTP</span>
+    </a>
+
+    <div class="mobile-menu" id="mobileMenu">
+      <ul class="nav-links">
+        <li><a href={hrefHome}>{t.nav.home}</a></li>
+        <li><a href={`${hrefHome}#features`}>{t.nav.features}</a></li>
+        <li><a href={`${hrefHome}#pricing`}>{t.nav.pricing}</a></li>
+        <li><a href={`${hrefHome}#solutions`}>{t.nav.solutions}</a></li>
+        <li><a href={`${hrefHome}#compare`}>{t.nav.compare}</a></li>
+        <li><a href={hrefBlog}>{t.nav.blog}</a></li>
+        <li><a href="https://api.nabdaotp.com/docs" target="_blank" rel="noopener noreferrer">{t.nav.docs}</a></li>
+      </ul>
+      <div class="nav-actions">
+        <div class="lang-switcher">
+          <button class="btn btn-ghost lang-toggle" id="langToggle" aria-label={t.nav.language} type="button">
+            <span class="lang-icon">🌐</span>
+            <span class="lang-label">{t.nav.language}</span>
+          </button>
+          <ul class="lang-dropdown" id="langDropdown">
+            {LANGUAGE_MENU.map((langOption) => (
+              <li>
+                <button
+                  class={`lang-item ${langOption.code === locale ? 'active' : ''}`}
+                  data-lang={langOption.code}
+                  data-target={withLocalePath(langOption.code, path)}
+                  type="button"
+                >
+                  <span>{langOption.label}</span>
+                  {langOption.code === locale && <span>✓</span>}
+                </button>
+              </li>
+            ))}
+          </ul>
+        </div>
+        <a href="https://dash.nabdaotp.com/" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+          {t.nav.login}
+        </a>
+      </div>
+      <ul class="mobile-lang-list">
+        <li class="mobile-lang-heading">
+          <span class="mobile-lang-heading-icon">🌐</span>
+          <span>{t.nav.language}</span>
+        </li>
+        {LANGUAGE_MENU.map((langOption) => (
+          <li>
+            <button
+              class={`mobile-lang-item ${langOption.code === locale ? 'active' : ''}`}
+              data-lang={langOption.code}
+              data-target={withLocalePath(langOption.code, path)}
+              type="button"
+            >
+              <span>{langOption.label}</span>
+              {langOption.code === locale && <span>✓</span>}
+            </button>
+          </li>
+        ))}
+      </ul>
+    </div>
+
+    <button class="mobile-toggle" id="mobileToggle" aria-label={t.nav.menu}>
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </nav>
+</header>
+
+<script>
+  const toggle = document.getElementById('mobileToggle');
+  const nav = document.getElementById('mainNav');
+  const langToggle = document.getElementById('langToggle');
+  const langDropdown = document.getElementById('langDropdown');
+
+  const setLanguage = (lang: string, target: string) => {
+    localStorage.setItem('nabda_lang', lang);
+    window.location.href = target;
+  };
+
+  toggle?.addEventListener('click', () => {
+    nav?.classList.toggle('active');
+  });
+  langToggle?.addEventListener('click', (event) => {
+    event.stopPropagation();
+    langDropdown?.classList.toggle('open');
+  });
+  document.querySelectorAll('[data-lang][data-target]').forEach((node) => {
+    node.addEventListener('click', (event) => {
+      const current = event.currentTarget as HTMLElement;
+      const lang = current.getAttribute('data-lang');
+      const target = current.getAttribute('data-target');
+      if (!lang || !target) return;
+      setLanguage(lang, target);
+    });
+  });
+  document.addEventListener('click', (e) => {
+    if (nav?.classList.contains('active') && !nav.contains(e.target as Node)) {
+      nav.classList.remove('active');
+    }
+    if (langDropdown?.classList.contains('open') && !langDropdown.contains(e.target as Node) && !langToggle?.contains(e.target as Node)) {
+      langDropdown.classList.remove('open');
+    }
+  });
+
+  // Persisted language always wins over geo detection.
+  const preferred = localStorage.getItem('nabda_lang');
+  if (preferred) {
+    const currentPath = window.location.pathname;
+    const segments = currentPath.split('/').filter(Boolean);
+    const localeSet = new Set(['en', 'ar', 'es', 'pt', 'fr', 'de', 'tr', 'it', 'id', 'tl', 'sw']);
+    const currentLocale = segments.length && localeSet.has(segments[0]) ? segments[0] : 'en';
+    if (preferred !== currentLocale) {
+      const rest = currentLocale === 'en' ? currentPath : `/${segments.slice(1).join('/')}`;
+      const normalized = rest || '/';
+      const target = preferred === 'en' ? normalized : (normalized === '/' ? `/${preferred}/` : `/${preferred}${normalized}`);
+      window.location.replace(target);
+    }
+  } else {
+    localStorage.setItem('nabda_lang', 'en');
+  }
+</script>

@@ -1,0 +1,12 @@
+# Netlify _redirects file
+# Astro generates static files, so most routing is handled by the filesystem.
+# This file handles edge cases and legacy URLs.
+
+# Redirect old GitHub Pages URLs to new paths (if migrating)
+# /index.html   /   301
+
+# Keep trailing slashes consistent (optional — Netlify can handle this)
+# /countries/*/ /countries/:splat 301
+
+# Catch-all 404
+/*  /404  404

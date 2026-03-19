@@ -1,0 +1,622 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Navbar from '../components/Navbar.astro';
+import Footer from '../components/Footer.astro';
+import CTASection from '../components/CTASection.astro';
+import FAQSection from '../components/FAQSection.astro';
+import { countries } from '../data/countries';
+import { competitors } from '../data/competitors';
+import { solutions } from '../data/solutions';
+import { blogPosts } from '../data/blog';
+
+// Featured countries by region for homepage display
+const arabCountries = countries.filter(c => c.region === 'arab').slice(0, 8);
+const asiaCountries = countries.filter(c => c.region === 'asia').slice(0, 5);
+const otherCountries = countries.filter(c => !['arab','asia'].includes(c.region)).slice(0, 5);
+
+const softwareSchema = {
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "Nabda OTP - WhatsApp API",
+  "alternateName": ["Nabda OTP", "نبضة OTP", "Nabda WhatsApp Gateway", "Nabda API"],
+  "applicationCategory": "BusinessApplication",
+  "applicationSubCategory": "Messaging API",
+  "operatingSystem": "Web, iOS, Android",
+  "description": "The CHEAPEST WhatsApp OTP API service - Just $10/month for UNLIMITED messages. Best alternative to Twilio, SendGrid, and UltraMsg. First Arab WhatsApp Gateway for Iraq, Syria, and MENA region. RESTful API with 99.99% uptime. No per-message fees.",
+  "url": "https://nabdaotp.com",
+  "downloadUrl": "https://api.nabdaotp.com/docs",
+  "screenshot": "https://nabdaotp.com/assets/android-chrome-192x192.png",
+  "softwareVersion": "2.0",
+  "offers": {
+    "@type": "Offer",
+    "name": "Unlimited WhatsApp Messages",
+    "price": "10.00",
+    "priceCurrency": "USD",
+    "priceValidUntil": "2026-12-31",
+    "availability": "https://schema.org/InStock",
+    "url": "https://nabdaotp.com/#pricing",
+    "description": "Unlimited WhatsApp OTP and notification messages for $10/month. No per-message fees. 5-day free trial included.",
+    "eligibleRegion": ["IQ","SY","SA","AE","KW","QA","BH","OM","JO","LB","EG"]
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "4.9",
+    "ratingCount": "150",
+    "bestRating": "5",
+    "worstRating": "1"
+  },
+  "featureList": [
+    "Unlimited WhatsApp Messages - No caps or limits",
+    "No Per-Message Fee - Flat $10/month",
+    "RESTful API - Easy integration",
+    "5-Day Free Trial - No credit card required",
+    "99.99% Uptime Guarantee",
+    "Arabic Language Support",
+    "Iraq and Syria Phone Number Support",
+    "MENA Region Optimized",
+    "Twilio Alternative",
+    "UltraMsg Alternative"
+  ]
+};
+
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What is the cheapest WhatsApp API service?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Nabda OTP is the cheapest WhatsApp API service, offering unlimited messages for just $10/month. Unlike Twilio, SendGrid, or UltraMsg which charge per message, Nabda OTP offers a flat monthly fee with no per-message charges."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is the best Twilio alternative for WhatsApp API?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Nabda OTP is the best Twilio alternative for WhatsApp API. While Twilio charges per message, Nabda OTP offers unlimited messages for $10/month with better support for Arabic language and Middle Eastern phone numbers."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is there a WhatsApp API with unlimited messages?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes! Nabda OTP offers unlimited WhatsApp messages for a flat fee of $10/month. No message limits, no per-message fees."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does Nabda OTP offer a free trial?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes! Nabda OTP offers a 5-day free trial with no credit card required. Test the full WhatsApp API functionality before committing."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is the most reliable WhatsApp API for MENA region?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Nabda OTP is the most reliable WhatsApp API for the MENA region with 99.99% uptime guarantee, optimized for Iraq, Syria, Saudi Arabia, UAE, and all Middle Eastern countries."
+      }
+    }
+  ]
+};
+
+const organizationSchema = {
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Nabda OTP",
+  "url": "https://nabdaotp.com",
+  "logo": "https://nabdaotp.com/assets/android-chrome-192x192.png",
+  "contactPoint": {
+    "@type": "ContactPoint",
+    "contactType": "customer support",
+    "availableLanguage": ["English", "Arabic"]
+  },
+  "sameAs": []
+};
+
+const websiteSchema = {
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "Nabda OTP",
+  "url": "https://nabdaotp.com",
+  "potentialAction": {
+    "@type": "SearchAction",
+    "target": "https://nabdaotp.com/countries/{search_term}",
+    "query-input": "required name=search_term"
+  }
+};
+
+const codeExample = `<span class="code-comment">// Sending OTP via Nabda Gateway</span>
+<span class="code-keyword">const</span> response = <span class="code-keyword">await</span> Nabda.<span class="code-function">send</span>({
+  <span class="code-property">phone</span>: <span class="code-string">"+964750XXXXXXX"</span>,
+  <span class="code-property">message</span>: <span class="code-string">"Your code is: 847291"</span>,
+  <span class="code-property">type</span>: <span class="code-string">"otp"</span>
+});
+
+<span class="code-comment">// ✓ Delivered instantly</span>
+console.<span class="code-function">log</span>(response.<span class="code-property">status</span>); <span class="code-comment">// "sent"</span>`;
+
+const faqs = [
+  { q: "What is the cheapest WhatsApp API?", a: "Nabda OTP is the cheapest WhatsApp API, offering unlimited messages for just $10/month. No per-message fees, no hidden costs. Save up to 90% compared to Twilio, SendGrid, or UltraMsg." },
+  { q: "Best Twilio alternative for WhatsApp?", a: "Nabda OTP is the best Twilio alternative. Twilio charges $0.005–$0.05 per message. With Nabda OTP, send unlimited messages for $10/month — saving up to 90% on costs." },
+  { q: "Is there a WhatsApp API with unlimited messages?", a: "Yes! Nabda OTP offers truly unlimited WhatsApp messages for a flat $10/month. No message caps, no per-message fees, no surprises on your bill." },
+  { q: "Does Nabda OTP work with Iraqi phone numbers?", a: "Absolutely. Nabda OTP is the first WhatsApp gateway built specifically for Iraq (+964), Syria (+963), and the entire MENA region. Full Arabic language support included." },
+  { q: "How long is the free trial?", a: "Nabda OTP offers a 5-day free trial with no credit card required. You get full API access to test OTP sending, notifications, and all features before subscribing." },
+  { q: "What payment methods are accepted?", a: "We currently accept Visa and Mastercard. USDT (crypto) payments are coming soon." },
+];
+---
+
+<BaseLayout
+  title="Nabda OTP – Cheapest WhatsApp API $10/mo Unlimited | Twilio & UltraMsg Alternative | Iraq Syria MENA"
+  description="🚀 The CHEAPEST WhatsApp OTP API - Just $10/month for UNLIMITED messages! Best Twilio, SendGrid, UltraMsg alternative. First Arab WhatsApp Gateway for Iraq, Syria & MENA. No per-message fees. 5-day free trial."
+  canonical="https://nabdaotp.com/"
+  schema={[softwareSchema, faqSchema, organizationSchema, websiteSchema]}
+>
+  <Navbar />
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-bg">
+      <div class="gradient-orb orb-1"></div>
+      <div class="gradient-orb orb-2"></div>
+      <div class="gradient-orb orb-3"></div>
+      <div class="grid-overlay"></div>
+    </div>
+
+    <div class="container hero-content">
+      <div class="hero-text">
+        <div class="badge">🚀 The most reliable WhatsApp verification platform</div>
+        <h1 class="hero-title">The Cheapest &amp; First WhatsApp Gateway in Iraq, Syria &amp; MENA Region.</h1>
+        <p class="hero-subtitle">Send unlimited OTPs through our cloud gateway. The cheapest, most reliable API solution for developers. Direct integration with the most affordable pricing.</p>
+        <div class="hero-cta">
+          <a href="https://dash.nabdaotp.com/" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-lg">Start Free Trial</a>
+          <a href="https://api.nabdaotp.com/docs" target="_blank" rel="noopener noreferrer" class="btn btn-ghost btn-lg">
+            <span>View Documentation</span>
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M5 12h14M12 5l7 7-7 7"/>
+            </svg>
+          </a>
+        </div>
+        <p class="hero-price">Starting at just <strong>$10/month</strong> — No per-message fees</p>
+      </div>
+
+      <div class="hero-visual">
+        <div class="code-terminal">
+          <div class="terminal-header">
+            <div class="terminal-dots">
+              <span class="dot red"></span>
+              <span class="dot yellow"></span>
+              <span class="dot green"></span>
+            </div>
+            <span class="terminal-title">Nabda-api.js</span>
+          </div>
+          <div class="terminal-body">
+            <pre><code set:html={codeExample} />
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Stats Section -->
+  <section class="stats">
+    <div class="container">
+      <div class="stats-grid">
+        <div class="stat-item">
+          <div class="stat-icon">🏢</div>
+          <div class="stat-number">65+</div>
+          <div class="stat-label">Businesses Trust Us</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-icon">📨</div>
+          <div class="stat-number">4,500+</div>
+          <div class="stat-label">Messages Sent</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-icon">⚡</div>
+          <div class="stat-number">99.99%</div>
+          <div class="stat-label">Uptime Guaranteed</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-icon">🌍</div>
+          <div class="stat-number">✓</div>
+          <div class="stat-label">Most Reliable in MENA</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features Section -->
+  <section class="features" id="features">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Why choose Nabda OTP?</h2>
+        <p class="section-subtitle">The most affordable WhatsApp API with the best reliability. Built by Arab developers, for Arab developers 🤍</p>
+      </div>
+
+      <div class="features-grid">
+        <div class="feature-card feature-primary">
+          <div class="feature-icon">💰</div>
+          <h3>Cheapest in Market</h3>
+          <p>While others charge per message, we offer a flat monthly fee. Send unlimited WhatsApp messages for just $10/month — the most affordable API solution available.</p>
+          <div class="feature-highlight">Save up to 90% compared to competitors</div>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon">🫂</div>
+          <h3>Local &amp; Proud</h3>
+          <p>A local platform built specifically for Arab developers. We understand the local market and provide Arabic support with direct integration capabilities.</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon">👨‍💻</div>
+          <h3>Developer First</h3>
+          <p>Clean RESTful API, comprehensive documentation, and SDKs for all major languages. Integrate our cloud gateway in minutes, not days.</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon">🔒</div>
+          <h3>Enterprise Security</h3>
+          <p>End-to-end encryption, secure authentication, and full compliance. Your data stays protected with our enterprise-grade infrastructure.</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon">🚀</div>
+          <h3>Lightning Fast</h3>
+          <p>Messages delivered in milliseconds. Our optimized cloud gateway ensures your OTPs reach users instantly, every single time.</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon">📊</div>
+          <h3>Real-time Analytics</h3>
+          <p>Track delivery rates, monitor usage, and get insights with our comprehensive dashboard. Full visibility into your messaging operations.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pricing Section -->
+  <section class="pricing" id="pricing">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Simple, Transparent Pricing</h2>
+        <p class="section-subtitle">No hidden fees. No per-message charges. The best value WhatsApp API in Iraq.</p>
+      </div>
+
+      <div class="pricing-grid">
+        <!-- Monthly Plan -->
+        <div class="pricing-card">
+          <div class="pricing-badge">Best Value • Monthly</div>
+          <div class="pricing-header">
+            <div class="pricing-amount">
+              <span class="currency">$</span>
+              <span class="price">10</span>
+              <span class="period">/month</span>
+            </div>
+            <p class="pricing-tagline">Everything you need to send unlimited messages</p>
+          </div>
+          <ul class="pricing-features">
+            <li>
+              <svg class="check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span>Unlimited WhatsApp Messages</span>
+            </li>
+            <li>
+              <svg class="check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span>No Per-Message Fee</span>
+            </li>
+            <li>
+              <svg class="check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span>5-Day Free Trial</span>
+            </li>
+            <li>
+              <svg class="check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span>RESTful API Access</span>
+            </li>
+            <li>
+              <svg class="check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span>Priority Support</span>
+            </li>
+            <li>
+              <svg class="check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span>Cancel Anytime</span>
+            </li>
+          </ul>
+          <a href="https://dash.nabdaotp.com/" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-lg btn-full">Start Your Free Trial</a>
+          <p class="pricing-note">No credit card required • Setup in 2 minutes</p>
+        </div>
+
+        <!-- Annual Plan -->
+        <div class="pricing-card pricing-card-annual">
+          <div class="pricing-badge pricing-badge-save">1 Month Free • Annual</div>
+          <div class="pricing-header">
+            <div class="pricing-amount">
+              <span class="currency">$</span>
+              <span class="price">110</span>
+              <span class="period">/year</span>
+            </div>
+            <p class="pricing-tagline">12 months for the price of 11</p>
+          </div>
+          <ul class="pricing-features">
+            <li>
+              <svg class="check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span>Unlimited WhatsApp Messages</span>
+            </li>
+            <li>
+              <svg class="check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span>No Per-Message Fee</span>
+            </li>
+            <li>
+              <svg class="check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span>5-Day Free Trial</span>
+            </li>
+            <li>
+              <svg class="check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span>RESTful API Access</span>
+            </li>
+            <li>
+              <svg class="check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span>Priority Support</span>
+            </li>
+            <li>
+              <svg class="check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span>Cancel Anytime</span>
+            </li>
+          </ul>
+          <a href="https://dash.nabdaotp.com/" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-lg btn-full">Start Your Free Trial</a>
+          <p class="pricing-note">No credit card required • Setup in 2 minutes</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <CTASection />
+
+  <!-- Payment Methods Section -->
+  <section class="payment-methods">
+    <div class="container">
+      <h3 class="payment-title">Accepted Payment Methods</h3>
+      <div class="payment-grid">
+        <!-- Visa -->
+        <div class="payment-card">
+          <div class="payment-icon">
+            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect width="48" height="48" rx="8" fill="#1A1F71"/>
+              <path d="M19.5 30L21.5 18H25L23 30H19.5Z" fill="white"/>
+              <path d="M32.5 18.3C31.7 18 30.5 17.7 29 17.7C25.5 17.7 23 19.5 23 22C23 23.8 24.7 24.8 26 25.4C27.3 26 27.8 26.5 27.8 27.1C27.8 28 26.7 28.4 25.7 28.4C24.3 28.4 23.5 28.2 22.3 27.7L21.8 27.5L21.3 30.5C22.2 30.9 23.8 31.2 25.5 31.2C29.2 31.2 31.7 29.5 31.7 26.8C31.7 25.4 30.8 24.3 28.8 23.4C27.6 22.8 26.9 22.4 26.9 21.7C26.9 21.1 27.6 20.5 29 20.5C30.2 20.5 31 20.7 31.7 21L32 21.1L32.5 18.3Z" fill="white"/>
+              <path d="M37.5 18H35C34.2 18 33.5 18.2 33.2 19L28 30H31.7L32.4 28H36.9L37.3 30H40.5L37.5 18ZM33.3 25.5C33.6 24.7 34.8 21.5 34.8 21.5C34.8 21.5 35.1 20.7 35.3 20.2L35.5 21.4C35.5 21.4 36.3 25 36.5 25.5H33.3Z" fill="white"/>
+              <path d="M16.5 18L13 26.5L12.7 25C12.1 23.3 10.5 21.4 8.5 20.5L11.7 30H15.5L20.5 18H16.5Z" fill="white"/>
+              <path d="M11 18H5.5L5.5 18.3C10 19.4 13 22.3 14 25L13 19C12.8 18.3 12.2 18 11.5 18H11Z" fill="#F9A825"/>
+            </svg>
+          </div>
+          <span class="payment-name">Visa</span>
+        </div>
+        <!-- Mastercard -->
+        <div class="payment-card">
+          <div class="payment-icon">
+            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect width="48" height="48" rx="8" fill="#F5F5F5"/>
+              <circle cx="18" cy="24" r="10" fill="#EB001B"/>
+              <circle cx="30" cy="24" r="10" fill="#F79E1B"/>
+              <path d="M24 17.5C26.1 19.2 27.5 21.5 27.5 24C27.5 26.5 26.1 28.8 24 30.5C21.9 28.8 20.5 26.5 20.5 24C20.5 21.5 21.9 19.2 24 17.5Z" fill="#FF5F00"/>
+            </svg>
+          </div>
+          <span class="payment-name">Mastercard</span>
+        </div>
+        <!-- USDT Coming Soon -->
+        <div class="payment-card payment-coming-soon">
+          <div class="payment-icon">
+            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect width="48" height="48" rx="8" fill="#26A17B"/>
+              <circle cx="24" cy="24" r="12" fill="white"/>
+              <path d="M26.5 22.5V20H31V17H17V20H21.5V22.5C17.5 22.8 14.5 23.8 14.5 25C14.5 26.2 17.5 27.2 21.5 27.5V34H26.5V27.5C30.5 27.2 33.5 26.2 33.5 25C33.5 23.8 30.5 22.8 26.5 22.5ZM26.5 26.8V26.8C26.3 26.8 25.5 26.9 24 26.9C22.8 26.9 21.8 26.8 21.5 26.8V26.8C18.2 26.5 16 25.8 16 25C16 24.2 18.2 23.5 21.5 23.2V26.2C21.8 26.2 22.8 26.3 24 26.3C25.5 26.3 26.3 26.2 26.5 26.2V23.2C29.8 23.5 32 24.2 32 25C32 25.8 29.8 26.5 26.5 26.8Z" fill="#26A17B"/>
+            </svg>
+          </div>
+          <span class="payment-name">USDT</span>
+          <span class="coming-soon-badge">Coming Soon</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SEO Content (hidden but crawlable) -->
+  <section class="seo-content" aria-hidden="true">
+    <div class="container">
+      <h2>The Cheapest WhatsApp API Service - Nabda OTP</h2>
+      <article>
+        <h3>Why Nabda OTP is the Best WhatsApp API Alternative</h3>
+        <p>Looking for the <strong>cheapest WhatsApp API</strong>? Nabda OTP offers <strong>unlimited WhatsApp messages for just $10/month</strong> - no per-message fees, no hidden costs. We're the <strong>best alternative to Twilio, SendGrid, UltraMsg, and Vonage</strong> for businesses in <strong>Iraq, Syria, and the MENA region</strong>.</p>
+        <h4>Twilio Alternative - Save Up to 90%</h4>
+        <p>Twilio charges $0.005–$0.05 per WhatsApp message. With Nabda OTP, send <strong>unlimited messages for $10/month</strong> - saving you up to 90%.</p>
+        <h4>Best WhatsApp OTP Service for Iraq</h4>
+        <p>Nabda OTP is the <strong>first and best WhatsApp OTP service in Iraq</strong>. Full support for Iraqi phone numbers (+964), Arabic language, and local customer service.</p>
+        <h4>MENA Region WhatsApp Gateway</h4>
+        <p>Support for <strong>Iraq, Syria, Saudi Arabia, UAE, Kuwait, Qatar, Bahrain, Oman, Jordan, Lebanon, and Egypt</strong>. The <strong>first Arab WhatsApp Gateway</strong> built by developers who understand the region.</p>
+      </article>
+      <article lang="ar" dir="rtl">
+        <h3>أرخص خدمة واتساب API - نبضة OTP</h3>
+        <p>نبضة OTP تقدم <strong>رسائل واتساب غير محدودة مقابل 10 دولار شهرياً فقط</strong>. بدون رسوم لكل رسالة. أفضل بديل لـ Twilio و SendGrid و UltraMsg.</p>
+        <h4>أفضل خدمة OTP للعراق وسوريا</h4>
+        <p>أول وأفضل بوابة واتساب عربية. دعم كامل لأرقام الهواتف العراقية (+964) والسورية (+963).</p>
+      </article>
+    </div>
+  </section>
+
+  <!-- FAQ Section -->
+  <section style="padding: 4rem 0; background: var(--off-white);">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Frequently Asked Questions</h2>
+        <p class="section-subtitle">Everything you need to know about Nabda OTP</p>
+      </div>
+      <FAQSection faqs={faqs} />
+    </div>
+  </section>
+
+  <!-- ===== SOLUTIONS SECTION ===== -->
+  <section class="features" id="solutions">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">WhatsApp API Solutions</h2>
+        <p class="section-subtitle">Everything you need to send OTPs, verify users, and build secure authentication — all for $10/month.</p>
+      </div>
+      <div class="features-grid">
+        {solutions.map((sol, i) => (
+          <a href={`/solutions/${sol.slug}`} class="feature-card" style="text-decoration:none; display:flex; flex-direction:column;">
+            <div class="feature-icon">
+              {['🔐','💬','📧','📡','🏢','🛡️','📱','✅'][i] ?? '⚡'}
+            </div>
+            <h3>{sol.title}</h3>
+            <p style="flex:1;">{sol.heroSubtitle.slice(0, 100)}...</p>
+            <div style="margin-top:1rem; font-size:.875rem; font-weight:600; color:var(--blurple);">
+              Learn more →
+            </div>
+          </a>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== COUNTRIES SECTION ===== -->
+  <section style="padding: 4rem 0; background: var(--off-white);" id="countries">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">WhatsApp API by Country</h2>
+        <p class="section-subtitle">Nabda OTP works in 50+ countries. Same $10/month unlimited price everywhere.</p>
+      </div>
+
+      <!-- Arab Countries -->
+      <div style="margin-bottom: 2.5rem;">
+        <h3 style="font-size:1rem; font-weight:700; color:var(--navy-lighter); text-transform:uppercase; letter-spacing:.05em; margin-bottom:1rem;">🌍 Arab Countries & MENA</h3>
+        <div class="page-link-grid" style="grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));">
+          {arabCountries.map((c) => (
+            <a href={`/countries/${c.slug}`} class="page-card" style="text-decoration:none;">
+              <div style="font-weight:600; color:var(--deep-navy); font-size:.9375rem;">{c.name}</div>
+              <div style="font-size:.75rem; color:var(--gray-500); margin-top:.25rem;">{c.phoneCode} · WhatsApp API</div>
+            </a>
+          ))}
+        </div>
+      </div>
+
+      <!-- Asia + Others -->
+      <div style="margin-bottom: 2rem;">
+        <h3 style="font-size:1rem; font-weight:700; color:var(--navy-lighter); text-transform:uppercase; letter-spacing:.05em; margin-bottom:1rem;">🌐 Asia, LATAM & More</h3>
+        <div class="page-link-grid" style="grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));">
+          {[...asiaCountries, ...otherCountries].map((c) => (
+            <a href={`/countries/${c.slug}`} class="page-card" style="text-decoration:none;">
+              <div style="font-weight:600; color:var(--deep-navy); font-size:.9375rem;">{c.name}</div>
+              <div style="font-size:.75rem; color:var(--gray-500); margin-top:.25rem;">{c.phoneCode} · WhatsApp API</div>
+            </a>
+          ))}
+        </div>
+      </div>
+
+      <div style="text-align:center;">
+        <a href="/countries/" class="btn btn-ghost" style="border:1px solid var(--gray-200);">
+          View All 50 Countries →
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== COMPARISONS SECTION ===== -->
+  <section style="padding: 4rem 0; background: var(--white);" id="compare">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Nabda OTP vs Competitors</h2>
+        <p class="section-subtitle">See how Nabda OTP compares to Twilio, UltraMsg, SendGrid, and 13 other services. Spoiler: we're 90% cheaper.</p>
+      </div>
+
+      <div class="page-link-grid" style="grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); margin-bottom:2rem;">
+        {competitors.map((c) => (
+          <a href={`/compare/${c.slug}`} class="page-card" style="text-decoration:none;">
+            <div style="font-size:.75rem; font-weight:700; text-transform:uppercase; letter-spacing:.05em; color:var(--gray-500); margin-bottom:.5rem;">vs</div>
+            <div style="font-weight:700; color:var(--deep-navy); font-size:1rem; margin-bottom:.25rem;">{c.name}</div>
+            <div style="font-size:.8125rem; color:var(--gray-500);">{c.tagline.slice(0, 50)}</div>
+            <div style="margin-top:.75rem; font-size:.8125rem; font-weight:600; color:var(--success);">Nabda wins →</div>
+          </a>
+        ))}
+      </div>
+
+      <!-- Quick comparison table -->
+      <div style="overflow-x:auto; border-radius:var(--radius-lg); border:1px solid var(--gray-200); max-width:700px; margin:0 auto;">
+        <table style="width:100%; min-width:640px; border-collapse:collapse; font-size:.9375rem;">
+          <thead>
+            <tr style="background:var(--deep-navy); color:#fff;">
+              <th style="text-align:left; padding:.875rem 1rem;">Service</th>
+              <th style="padding:.875rem 1rem; text-align:center;">Price</th>
+              <th style="padding:.875rem 1rem; text-align:center;">Model</th>
+              <th style="padding:.875rem 1rem; text-align:center;">MENA</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr style="background:rgba(99,91,255,.04);">
+              <td style="padding:.875rem 1rem; font-weight:700; color:var(--blurple);">✅ Nabda OTP</td>
+              <td style="padding:.875rem 1rem; text-align:center; font-weight:700; color:var(--success);">$10/mo</td>
+              <td style="padding:.875rem 1rem; text-align:center; color:var(--success); font-weight:600;">Unlimited</td>
+              <td style="padding:.875rem 1rem; text-align:center;">✅ Full</td>
+            </tr>
+            <tr style="border-top:1px solid var(--gray-100);">
+              <td style="padding:.875rem 1rem; color:var(--deep-navy);">Twilio</td>
+              <td style="padding:.875rem 1rem; text-align:center; color:var(--error);">$75–$750/mo</td>
+              <td style="padding:.875rem 1rem; text-align:center; color:var(--gray-500);">Per message</td>
+              <td style="padding:.875rem 1rem; text-align:center; color:var(--gray-500);">Partial</td>
+            </tr>
+            <tr style="border-top:1px solid var(--gray-100); background:var(--gray-50);">
+              <td style="padding:.875rem 1rem; color:var(--deep-navy);">UltraMsg</td>
+              <td style="padding:.875rem 1rem; text-align:center; color:var(--error);">$29–$99/mo</td>
+              <td style="padding:.875rem 1rem; text-align:center; color:var(--gray-500);">Per message</td>
+              <td style="padding:.875rem 1rem; text-align:center; color:var(--gray-500);">Partial</td>
+            </tr>
+            <tr style="border-top:1px solid var(--gray-100);">
+              <td style="padding:.875rem 1rem; color:var(--deep-navy);">Vonage</td>
+              <td style="padding:.875rem 1rem; text-align:center; color:var(--error);">$95+/mo</td>
+              <td style="padding:.875rem 1rem; text-align:center; color:var(--gray-500);">Per message</td>
+              <td style="padding:.875rem 1rem; text-align:center; color:var(--gray-500);">Limited</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== BLOG SECTION ===== -->
+  <section style="padding: 4rem 0; background: var(--off-white);" id="blog">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Developer Blog</h2>
+        <p class="section-subtitle">Tutorials, code examples, and guides for WhatsApp API integration.</p>
+      </div>
+
+      <div style="display:grid; grid-template-columns:repeat(auto-fill, minmax(300px, 1fr)); gap:1.5rem; margin-bottom:2rem;">
+        {blogPosts.slice(0, 3).map((post) => (
+          <a href={`/blog/${post.slug}`} class="feature-card" style="text-decoration:none; display:flex; flex-direction:column;">
+            <div class="badge" style="width:fit-content; margin-bottom:1rem; font-size:.75rem;">{post.category}</div>
+            <h3 style="font-size:1.0625rem; flex:1;">{post.title}</h3>
+            <p style="font-size:.875rem; color:var(--navy-lighter); margin-top:.75rem; line-height:1.6;">
+              {post.excerpt.slice(0, 110)}...
+            </p>
+            <div style="display:flex; justify-content:space-between; align-items:center; margin-top:1rem; padding-top:1rem; border-top:1px solid var(--gray-100);">
+              <span style="font-size:.75rem; color:var(--gray-500);">{post.readTime}</span>
+              <span style="font-size:.875rem; font-weight:600; color:var(--blurple);">Read →</span>
+            </div>
+          </a>
+        ))}
+      </div>
+
+      <div style="text-align:center;">
+        <a href="/blog" class="btn btn-ghost" style="border:1px solid var(--gray-200);">
+          View All Articles →
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <Footer />
+</BaseLayout>

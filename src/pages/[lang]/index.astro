@@ -1,0 +1,151 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Navbar from '../../components/Navbar.astro';
+import Footer from '../../components/Footer.astro';
+import CTASection from '../../components/CTASection.astro';
+import { countries } from '../../data/countries';
+import { competitors } from '../../data/competitors';
+import { solutions } from '../../data/solutions';
+import { blogPosts } from '../../data/blog';
+import {
+  ALL_LOCALES,
+  getTranslations,
+  isLocaleCode,
+  isRtlLocale,
+  withLocalePath,
+  type LocaleCode,
+} from '../../i18n/translations';
+import { localizedCountryName } from '../../i18n/page-content';
+
+export function getStaticPaths() {
+  return ALL_LOCALES.map((lang) => ({ params: { lang } }));
+}
+
+const langParam = Astro.params.lang ?? 'en';
+const locale: LocaleCode = isLocaleCode(langParam) ? langParam : 'en';
+const t = getTranslations(locale);
+const dir = isRtlLocale(locale) ? 'rtl' : 'ltr';
+const sampleCountries = countries.slice(0, 12);
+---
+
+<BaseLayout
+  title="Nabda OTP"
+  description="Nabda OTP — the cheapest WhatsApp API with unlimited messaging."
+  lang={locale}
+  dir={dir}
+  canonical={`https://nabdaotp.com${withLocalePath(locale, '/')}`}
+>
+  <Navbar />
+  <section class="hero" style="min-height:auto; padding:7rem 0 4rem;">
+    <div class="hero-bg">
+      <div class="gradient-orb orb-1"></div>
+      <div class="gradient-orb orb-2"></div>
+      <div class="grid-overlay"></div>
+    </div>
+    <div class="container hero-content">
+      <div class="hero-text">
+        <div class="badge">🚀 Nabda OTP</div>
+        <h1 class="hero-title">WhatsApp API + OTP</h1>
+        <p class="hero-subtitle">
+          $10/month unlimited messages. REST API for verification, notifications, and WhatsApp automation.
+        </p>
+        <div class="hero-cta">
+          <a href="https://dash.nabdaotp.com/" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-lg">{t.cta.action}</a>
+          <a href="https://api.nabdaotp.com/docs" target="_blank" rel="noopener noreferrer" class="btn btn-ghost btn-lg">{t.nav.docs}</a>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <div class="code-terminal">
+          <div class="terminal-header">
+            <div class="terminal-dots">
+              <span class="dot red"></span>
+              <span class="dot yellow"></span>
+              <span class="dot green"></span>
+            </div>
+            <span class="terminal-title">send-otp.js</span>
+          </div>
+          <div class="terminal-body">
+            <pre><code>await fetch('https://api.nabdaotp.com/v1/send', {'{'}
+  method: 'POST',
+  headers: {'{'} Authorization: 'Bearer API_KEY' {'}'},
+  body: JSON.stringify({'{'} phone: '+964...', message: 'OTP: 847291' {'}'})
+{'}'})</code></pre>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section style="padding:3rem 0; background:var(--off-white);" id="countries">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">{t.common.countries}</h2>
+        <p class="section-subtitle">{countries.length} countries are supported with one flat price.</p>
+      </div>
+      <div class="page-link-grid" style="grid-template-columns:repeat(auto-fill,minmax(210px,1fr)); margin-bottom:1.5rem;">
+        {sampleCountries.map((country) => (
+          <a href={withLocalePath(locale, `/countries/${country.slug}`)} class="page-card">
+            <div style="font-weight:700; color:var(--deep-navy);">{localizedCountryName(locale, country)}</div>
+            <div style="font-size:.8125rem; color:var(--gray-500); margin-top:.25rem;">{country.phoneCode}</div>
+          </a>
+        ))}
+      </div>
+      <div style="text-align:center;">
+        <a class="btn btn-ghost" href={withLocalePath(locale, '/countries/')}>{t.common.viewAllCountries} →</a>
+      </div>
+    </div>
+  </section>
+
+  <section style="padding:3rem 0; background:var(--white);" id="solutions">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">{t.common.solutions}</h2>
+      </div>
+      <div class="features-grid">
+        {solutions.slice(0, 6).map((solution) => (
+          <a href={withLocalePath(locale, `/solutions/${solution.slug}`)} class="feature-card" style="text-decoration:none;">
+            <h3>{solution.title}</h3>
+            <p>{solution.heroSubtitle.slice(0, 120)}...</p>
+          </a>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <section style="padding:3rem 0; background:var(--off-white);" id="compare">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">{t.common.compare}</h2>
+      </div>
+      <div class="page-link-grid" style="grid-template-columns:repeat(auto-fill,minmax(220px,1fr));">
+        {competitors.slice(0, 8).map((competitor) => (
+          <a href={withLocalePath(locale, `/compare/${competitor.slug}`)} class="page-card">
+            <div style="font-weight:700;">vs {competitor.name}</div>
+            <div style="font-size:.875rem; color:var(--gray-500); margin-top:.4rem;">{competitor.tagline}</div>
+          </a>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <section style="padding:3rem 0; background:var(--white);" id="blog">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">{t.nav.blog}</h2>
+      </div>
+      <div style="display:grid; grid-template-columns:repeat(auto-fill,minmax(280px,1fr)); gap:1rem; margin-bottom:1.5rem;">
+        {blogPosts.slice(0, 3).map((post) => (
+          <a href={withLocalePath(locale, `/blog/${post.slug}`)} class="feature-card" style="text-decoration:none;">
+            <h3 style="font-size:1rem;">{post.title}</h3>
+            <p style="margin-top:.5rem;">{post.excerpt.slice(0, 120)}...</p>
+          </a>
+        ))}
+      </div>
+      <div style="text-align:center;">
+        <a class="btn btn-ghost" href={withLocalePath(locale, '/blog')}>{t.common.viewAllArticles} →</a>
+      </div>
+    </div>
+  </section>
+  <CTASection />
+  <Footer />
+</BaseLayout>

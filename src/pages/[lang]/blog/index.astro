@@ -1,0 +1,56 @@
+---
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+import Navbar from '../../../components/Navbar.astro';
+import Footer from '../../../components/Footer.astro';
+import { blogPosts } from '../../../data/blog';
+import {
+  ALL_LOCALES,
+  getTranslations,
+  isLocaleCode,
+  isRtlLocale,
+  withLocalePath,
+  type LocaleCode,
+} from '../../../i18n/translations';
+
+export function getStaticPaths() {
+  return ALL_LOCALES.map((lang) => ({ params: { lang } }));
+}
+
+const langParam = Astro.params.lang ?? 'en';
+const locale: LocaleCode = isLocaleCode(langParam) ? langParam : 'en';
+const dir = isRtlLocale(locale) ? 'rtl' : 'ltr';
+const t = getTranslations(locale);
+---
+
+<BaseLayout
+  title={`${t.nav.blog} | Nabda OTP`}
+  description="Developer tutorials, integrations, and WhatsApp API guidance."
+  lang={locale}
+  dir={dir}
+  canonical={`https://nabdaotp.com${withLocalePath(locale, '/blog')}`}
+>
+  <Navbar />
+  <section class="hero" style="min-height:auto; padding:7rem 0 3rem;">
+    <div class="hero-bg">
+      <div class="gradient-orb orb-1"></div>
+      <div class="gradient-orb orb-2"></div>
+      <div class="grid-overlay"></div>
+    </div>
+    <div class="container">
+      <h1 class="hero-title">{t.nav.blog}</h1>
+      <p class="hero-subtitle">WhatsApp API guides, tutorials, and best practices.</p>
+    </div>
+  </section>
+  <section style="padding:3rem 0; background:var(--off-white);">
+    <div class="container" style="display:grid; grid-template-columns:repeat(auto-fill,minmax(320px,1fr)); gap:1rem;">
+      {blogPosts.map((post) => (
+        <a href={withLocalePath(locale, `/blog/${post.slug}`)} class="page-card" style="text-decoration:none;">
+          <div class="badge" style="margin-bottom:.6rem;">{post.category}</div>
+          <h2 style="font-size:1.05rem; font-weight:700; color:var(--deep-navy);">{post.title}</h2>
+          <p style="margin-top:.6rem; color:var(--navy-lighter);">{post.excerpt.slice(0, 145)}...</p>
+        </a>
+      ))}
+    </div>
+  </section>
+  <Footer />
+</BaseLayout>
