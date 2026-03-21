@@ -5,6 +5,24 @@
  * Handles dynamic translation, RTL support, and UI interactions
  */
 
+function stripLegacyQueryFromUrl() {
+    try {
+        const url = new URL(window.location.href);
+        const langParam = url.searchParams.get("lang");
+        if (langParam === "ar" || langParam === "en") {
+            localStorage.setItem("nabza-lang", langParam);
+        }
+        if (!url.searchParams.has("lang") && !url.searchParams.has("q")) return;
+        url.searchParams.delete("lang");
+        url.searchParams.delete("q");
+        const query = url.searchParams.toString();
+        const next = url.pathname + (query ? `?${query}` : "") + url.hash;
+        window.history.replaceState({}, "", next);
+    } catch {
+        /* ignore */
+    }
+}
+
 // ============================================
 // Translation Data
 // ============================================
@@ -12,7 +30,7 @@ const translations = {
     en: {
         // Meta
         "meta.title": "Nabda OTP – The Cheapest WhatsApp API & Best OTP Service in Iraq",
-        "meta.description": "Send unlimited WhatsApp OTPs with the first Arab WhatsApp Gateway. The most affordable API solution for Arab developers. Start for just $10/month.",
+        "meta.description": "Nabda OTP is a WhatsApp OTP and transactional messaging API for Iraq, Syria, and MENA. USD $10/month unlimited messages (no per-message fees), REST API, 5-day free trial. Official: nabdaotp.com — Docs: api.nabdaotp.com — Operated by We Pioners Ltd.",
         
         // Navigation
         "nav.features": "Features",
@@ -99,7 +117,6 @@ const translations = {
         "footer.features": "Features",
         "footer.pricing": "Pricing",
         "footer.docs": "Documentation",
-        "footer.status": "API Status",
         "footer.company": "Company",
         "footer.about": "About",
         "footer.contact": "Contact",
@@ -112,7 +129,7 @@ const translations = {
     ar: {
         // Meta
         "meta.title": "نبضة OTP – أرخص خدمة واتساب API وأفضل بوابة OTP في العراق",
-        "meta.description": "أرسل رسائل OTP واتساب غير محدودة عبر أول بوابة عربية. أرخص حل API للمطورين العرب. ابدأ بـ 10 دولار/شهرياً فقط.",
+        "meta.description": "نبضة OTP: واجهة برمجية لواتساب لرسائل OTP والتنبيهات في العراق وسوريا والشرق الأوسط. 10 دولار شهرياً رسائل غير محدودة، REST API، تجربة 5 أيام. الموقع: nabdaotp.com — التوثيق: api.nabdaotp.com — We Pioners Ltd.",
         
         // Navigation
         "nav.features": "المميزات",
@@ -199,7 +216,6 @@ const translations = {
         "footer.features": "المميزات",
         "footer.pricing": "الأسعار",
         "footer.docs": "التوثيق",
-        "footer.status": "حالة API",
         "footer.company": "الشركة",
         "footer.about": "من نحن",
         "footer.contact": "اتصل بنا",
@@ -264,8 +280,8 @@ function updateMetaTags(lang) {
     // Update OG tags
     const ogTitle = document.querySelector('meta[property="og:title"]');
     const ogDesc = document.querySelector('meta[property="og:description"]');
-    const twitterTitle = document.querySelector('meta[property="twitter:title"]');
-    const twitterDesc = document.querySelector('meta[property="twitter:description"]');
+    const twitterTitle = document.querySelector('meta[name="twitter:title"]');
+    const twitterDesc = document.querySelector('meta[name="twitter:description"]');
     
     if (ogTitle) ogTitle.setAttribute('content', t['meta.title']);
     if (ogDesc) ogDesc.setAttribute('content', t['meta.description']);
@@ -478,6 +494,8 @@ function initTerminalEffect() {
 // Initialization
 // ============================================
 document.addEventListener('DOMContentLoaded', () => {
+    stripLegacyQueryFromUrl();
+
     // Check for saved language preference
     const savedLang = localStorage.getItem('nabza-lang');
     if (savedLang && (savedLang === 'en' || savedLang === 'ar')) {

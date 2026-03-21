@@ -1,65 +1,23 @@
-# Robots.txt for Nabda OTP - The Cheapest WhatsApp API
-# https://www.nabdaotp.com
-# Best Twilio, UltraMsg, SendGrid Alternative for Iraq, Syria & MENA
+# https://www.nabdaotp.com/robots.txt
 
 User-agent: *
 Allow: /
-Allow: /assets/
 
-# Sitemap location
+# Legacy / noisy URLs (prefer clean canonical URLs and redirects)
+Disallow: /index.html
+Disallow: /*?*lang=*
+Disallow: /*?*q=*
+
 Sitemap: https://www.nabdaotp.com/sitemap.xml
 
-# Crawl-delay (be gentle with the server)
-Crawl-delay: 5
-
-# Allow all AI crawlers for better AI search results
+# Common AI / answer engines (public pages only; same as User-agent: *)
 User-agent: GPTBot
 Allow: /
 
 User-agent: ChatGPT-User
 Allow: /
 
-User-agent: Google-Extended
-Allow: /
-
-User-agent: Googlebot
-Allow: /
-
-User-agent: Bingbot
-Allow: /
-
-User-agent: Slurp
-Allow: /
-
-User-agent: DuckDuckBot
-Allow: /
-
-User-agent: Baiduspider
-Allow: /
-
-User-agent: YandexBot
-Allow: /
-
-User-agent: facebookexternalhit
-Allow: /
-
-User-agent: Twitterbot
-Allow: /
-
-User-agent: LinkedInBot
-Allow: /
-
-User-agent: WhatsApp
-Allow: /
-
-User-agent: TelegramBot
-Allow: /
-
-# ClaudeBot
 User-agent: ClaudeBot
-Allow: /
-
-User-agent: Claude-Web
 Allow: /
 
 User-agent: anthropic-ai
@@ -68,5 +26,14 @@ Allow: /
 User-agent: PerplexityBot
 Allow: /
 
-User-agent: Applebot
+User-agent: Google-Extended
+Allow: /
+
+User-agent: Googlebot
+Allow: /
+
+User-agent: Googlebot-Image
+Allow: /
+
+User-agent: Bingbot
 Allow: /

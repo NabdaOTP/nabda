@@ -1,0 +1,67 @@
+# Nabda OTP — static site on Netlify
+# https://docs.netlify.com/configure-builds/file-based-configuration/
+
+[build]
+  publish = "."
+
+# Canonical home: avoid duplicate /index.html indexing
+[[redirects]]
+  from = "/index.html"
+  to = "/"
+  status = 301
+  force = true
+
+# Apex → www (HTTPS)
+[[redirects]]
+  from = "https://nabdaotp.com/*"
+  to = "https://www.nabdaotp.com/:splat"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "http://nabdaotp.com/*"
+  to = "https://www.nabdaotp.com/:splat"
+  status = 301
+  force = true
+
+# Force HTTPS on www host
+[[redirects]]
+  from = "http://www.nabdaotp.com/*"
+  to = "https://www.nabdaotp.com/:splat"
+  status = 301
+  force = true
+
+[[headers]]
+  for = "/assets/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "/style.css"
+  [headers.values]
+    Cache-Control = "public, max-age=604800"
+
+[[headers]]
+  for = "/script.js"
+  [headers.values]
+    Cache-Control = "public, max-age=604800"
+
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Frame-Options = "SAMEORIGIN"
+    X-Content-Type-Options = "nosniff"
+    Referrer-Policy = "strict-origin-when-cross-origin"
+    Permissions-Policy = "accelerometer=(), camera=(), geolocation=(), gyroscope=(), magnetometer=(), microphone=(), payment=(), usb=()"
+    Strict-Transport-Security = "max-age=63072000; includeSubDomains"
+
+[[headers]]
+  for = "/index.html"
+  [headers.values]
+    Cache-Control = "public, max-age=0, must-revalidate"
+
+[[headers]]
+  for = "/llms.txt"
+  [headers.values]
+    Content-Type = "text/plain; charset=utf-8"
+    Cache-Control = "public, max-age=86400"
