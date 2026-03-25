@@ -662,12 +662,19 @@ img {
 }
 
 .pricing-grid {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-xl);
+    align-items: stretch;
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+.pricing-options-row {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: var(--space-xl);
     align-items: start;
-    max-width: 960px;
-    margin: 0 auto;
 }
 
 .pricing-card {
@@ -681,6 +688,15 @@ img {
 
 .pricing-card-annual .price {
     font-size: 3rem;
+}
+
+.pricing-amount-contact {
+    margin-bottom: 0;
+}
+
+.pricing-amount-contact .pricing-price-contact {
+    font-size: 2.25rem;
+    line-height: 1.15;
 }
 
 .pricing-badge {
@@ -1076,7 +1092,7 @@ img {
         grid-column: span 1;
     }
     
-    .pricing-grid {
+    .pricing-options-row {
         grid-template-columns: 1fr;
     }
     
@@ -1106,11 +1122,6 @@ img {
     
     .stat-number {
         font-size: 2rem;
-    }
-    
-    .pricing-grid {
-        grid-template-columns: 1fr;
-        gap: var(--space-xl);
     }
 
     .pricing-card {
