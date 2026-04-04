@@ -5,12 +5,75 @@
  * Handles dynamic translation, RTL support, and UI interactions
  */
 
+function isArabicPath(pathname) {
+    return pathname === "/ar" || pathname === "/ar/" || pathname.startsWith("/ar/");
+}
+
+function isTurkishPath(pathname) {
+    return pathname === "/tr" || pathname === "/tr/" || pathname.startsWith("/tr/");
+}
+
+function toEnglishPath(pathname) {
+    if (pathname === "/ar" || pathname === "/ar/") return "/";
+    if (pathname.startsWith("/ar/")) {
+        const rest = pathname.slice(3);
+        return rest.startsWith("/") ? rest : `/${rest}`;
+    }
+    if (pathname === "/tr" || pathname === "/tr/") return "/";
+    if (pathname.startsWith("/tr/")) {
+        const rest = pathname.slice(3);
+        return rest.startsWith("/") ? rest : `/${rest}`;
+    }
+    return pathname;
+}
+
+function pathForLanguage(enPath, lang) {
+    const p = enPath === "/index.html" ? "/" : enPath;
+    if (lang === "en") return p;
+    const prefix = lang === "ar" ? "/ar" : "/tr";
+    if (p === "/") return prefix;
+    return prefix + (p.startsWith("/") ? p : `/${p}`);
+}
+
+function getLanguageFromPath() {
+    const pathname = window.location.pathname;
+    if (isArabicPath(pathname)) return "ar";
+    if (isTurkishPath(pathname)) return "tr";
+    return "en";
+}
+
+const LANG_DISPLAY_NAME = {
+    en: "English",
+    ar: "العربية",
+    tr: "Türkçe"
+};
+
 function stripLegacyQueryFromUrl() {
     try {
         const url = new URL(window.location.href);
         const langParam = url.searchParams.get("lang");
-        if (langParam === "ar" || langParam === "en") {
+        if (langParam === "ar" || langParam === "en" || langParam === "tr") {
             localStorage.setItem("nabza-lang", langParam);
+        }
+        if (langParam === "ar" && !isArabicPath(url.pathname)) {
+            url.searchParams.delete("lang");
+            url.searchParams.delete("q");
+            const query = url.searchParams.toString();
+            let bare = toEnglishPath(url.pathname);
+            if (bare === "/index.html") bare = "/";
+            const arTarget = pathForLanguage(bare, "ar");
+            window.location.replace(arTarget + (query ? `?${query}` : "") + url.hash);
+            return;
+        }
+        if (langParam === "tr" && !isTurkishPath(url.pathname)) {
+            url.searchParams.delete("lang");
+            url.searchParams.delete("q");
+            const query = url.searchParams.toString();
+            let bare = toEnglishPath(url.pathname);
+            if (bare === "/index.html") bare = "/";
+            const trTarget = pathForLanguage(bare, "tr");
+            window.location.replace(trTarget + (query ? `?${query}` : "") + url.hash);
+            return;
         }
         if (!url.searchParams.has("lang") && !url.searchParams.has("q")) return;
         url.searchParams.delete("lang");
@@ -23,6 +86,33 @@ function stripLegacyQueryFromUrl() {
     }
 }
 
+/**
+ * Keeps in-language navigation: /... vs /ar/...
+ */
+function localizeInternalLinks() {
+    const lang = getLanguageFromPath();
+
+    document.querySelectorAll('a[href^="/"]').forEach((a) => {
+        const href = a.getAttribute("href");
+        if (!href || href.startsWith("//")) return;
+
+        let u;
+        try {
+            u = new URL(href, window.location.origin);
+        } catch {
+            return;
+        }
+
+        if (u.origin !== window.location.origin) return;
+
+        let enPath = toEnglishPath(u.pathname);
+        if (enPath === "/index.html") enPath = "/";
+
+        const newPath = pathForLanguage(enPath, lang);
+        a.setAttribute("href", newPath + u.search + u.hash);
+    });
+}
+
 // ============================================
 // Translation Data
 // ============================================
@@ -30,14 +120,13 @@ const translations = {
     en: {
         // Meta
         "meta.title": "Nabda OTP – The Cheapest WhatsApp API & Best OTP Service in Iraq",
-        "meta.description": "Nabda OTP is a WhatsApp OTP and transactional messaging API for Iraq, Syria, and MENA. USD $10/month unlimited messages (no per-message fees), REST API, 5-day free trial. Official: nabdaotp.com — Docs: api.nabdaotp.com — Operated by We Pioners Ltd.",
+        "meta.description": "Nabda OTP — Standard $10/mo Gateway: unlimited messages, no per-message fee, trial, REST API, webhooks, media & documents, priority support, cancel anytime, no credit card 2-min setup. Enterprise: Contact Us, Official API, pay-per-conversation, SLA. MENA. nabdaotp.com — api.nabdaotp.com/docs — We Pioners Ltd.",
         
         // Navigation
         "nav.features": "Features",
         "nav.pricing": "Pricing",
         "nav.docs": "Docs",
         "nav.login": "Login",
-        "nav.lang": "العربية",
         
         // Hero Section
         "hero.badge": "🚀 The most reliable WhatsApp verification platform",
@@ -60,7 +149,7 @@ const translations = {
         
         // Features
         "features.title": "Why choose Nabda OTP ?",
-        "features.subtitle": "The most affordable WhatsApp API with the best reliability. Built by Arab developers, for Arab developers🤍.",
+        "features.subtitle": "The most affordable WhatsApp API with the best reliability. Built by developers, for developers🤍.",
         
         "features.cheapest.title": "Cheapest in Market",
         "features.cheapest.desc": "While others charge per message, we offer a flat monthly fee. Send unlimited WhatsApp messages for just $10/month — the most affordable API solution available.",
@@ -83,7 +172,7 @@ const translations = {
         
         // Pricing
         "pricing.title": "Simple, Transparent Pricing",
-        "pricing.subtitle": "No hidden fees. No per-message charges. The best value WhatsApp API in Iraq.",
+        "pricing.subtitle": "No hidden fees. No per-message charges. The best value WhatsApp API.",
         "pricing.period": "/month",
         "pricing.feature1": "Unlimited WhatsApp Messages",
         "pricing.feature2": "No Per-Message Fee",
@@ -91,6 +180,9 @@ const translations = {
         "pricing.feature4": "RESTful API Access",
         "pricing.feature5": "Priority Support",
         "pricing.feature6": "Cancel Anytime",
+        "pricing.feature7": "Receive messages via Webhook",
+        "pricing.feature8": "Send media & documents",
+        "pricing.feature9": "Webhook support",
         "pricing.cta": "Start Your Free Trial",
         "pricing.note": "No credit card required • Setup in 2 minutes",
         "pricing.standard.badge": "Standard",
@@ -118,10 +210,9 @@ const translations = {
         
         // Payment Methods
         "payment.title": "Accepted Payment Methods",
-        "payment.soon": "Coming Soon",
         
         // WhatsApp
-        "whatsapp.help": "Hello, how we can help you?",
+        "whatsapp.help": "Hello, how can we help you?",
         
         // Footer
         "footer.desc": "The first and best WhatsApp API solution for Iraq and the MENA region. Cloud gateway with direct integration for developers.",
@@ -130,25 +221,26 @@ const translations = {
         "footer.pricing": "Pricing",
         "footer.docs": "Documentation",
         "footer.company": "Company",
+        "footer.legal": "Legal",
         "footer.about": "About",
         "footer.contact": "Contact",
         "footer.privacy": "Privacy Policy",
         "footer.terms": "Terms of Service",
+        "footer.refund": "Refund Policy",
         "footer.copyright": "© 2026 Nabda OTP. All rights reserved. Nabda OTP is a product owned and operated by We Pioners Ltd",
-        "footer.seo": "Cheapest WhatsApp API $10/mo Unlimited • Best Twilio Alternative • UltraMsg Alternative • SendGrid Alternative • WhatsApp OTP Iraq • WhatsApp API Syria • MENA WhatsApp Gateway • First Arab WhatsApp API • أرخص واتساب API • بديل تويليو • خدمة OTP العراق"
+        "footer.seo": "Unlimited WhatsApp Messages • No Per-Message Fee • 5-Day Free Trial • RESTful API • Webhook Receive • Media & Documents • Priority Support • $10/mo • Twilio UltraMsg SendGrid Alternative • MENA Iraq Syria • أرخص واتساب API • بديل تويليو"
     },
     
     ar: {
         // Meta
         "meta.title": "نبضة OTP – أرخص خدمة واتساب API وأفضل بوابة OTP في العراق",
-        "meta.description": "نبضة OTP: واجهة برمجية لواتساب لرسائل OTP والتنبيهات في العراق وسوريا والشرق الأوسط. 10 دولار شهرياً رسائل غير محدودة، REST API، تجربة 5 أيام. الموقع: nabdaotp.com — التوثيق: api.nabdaotp.com — We Pioners Ltd.",
+        "meta.description": "نبضة OTP — قياسي: 10$/شهرياً بوابة واتساب، رسائل غير محدودة، تجربة 5 أيام، REST وويب هوك ووسائط، دعم أولوية، إلغاء في أي وقت، لا بطاقة • دقيقتان. مؤسسات: تواصل معنا، واجهة رسمية، حسب المحادثة، SLA. nabdaotp.com — api.nabdaotp.com/docs — We Pioners Ltd.",
         
         // Navigation
         "nav.features": "المميزات",
         "nav.pricing": "الأسعار",
         "nav.docs": "التوثيق",
         "nav.login": "تسجيل الدخول",
-        "nav.lang": "English",
         
         // Hero Section
         "hero.badge": "🚀 المنصة الأكثر موثوقية للتحقق عبر واتساب",
@@ -160,18 +252,18 @@ const translations = {
         
         // Code Terminal
         "code.comment1": "// جاري إرسال الرمز عبر بوابة نبضة",
-        "code.message": '"رمز التحقق: 847291"',
+        "code.message": '"رمزك: 847291"',
         "code.comment2": "// ✓ تم التوصيل فوراً",
         
         // Stats
         "stats.businesses": "شركات تثق بنا",
-        "stats.messages": "رسالة تم إرسالها",
+        "stats.messages": "الرسائل المرسلة",
         "stats.uptime": "وقت تشغيل مضمون",
         "stats.reliable": "الأكثر موثوقية في الشرق الأوسط",
         
         // Features
         "features.title": "لماذا تختار نبضة OTP ؟",
-        "features.subtitle": "أرخص خدمة واتساب API مع أفضل موثوقية. صُممت بواسطة مطورين عرب، للمطورين العرب🤍.",
+        "features.subtitle": "أرخص خدمة واتساب API مع أفضل موثوقية. صُممت بواسطة مطورين، للمطورين🤍.",
         
         "features.cheapest.title": "الأرخص في السوق",
         "features.cheapest.desc": "بينما يفرض الآخرون رسوماً لكل رسالة، نحن نقدم رسوماً شهرية ثابتة. أرسل رسائل واتساب غير محدودة مقابل 10 دولار/شهرياً فقط — أرخص حل API متاح.",
@@ -194,7 +286,7 @@ const translations = {
         
         // Pricing
         "pricing.title": "تسعير بسيط وشفاف",
-        "pricing.subtitle": "بدون رسوم خفية. بدون رسوم لكل رسالة. أفضل قيمة لـ WhatsApp API في العراق.",
+        "pricing.subtitle": "بدون رسوم خفية. بدون رسوم لكل رسالة. أفضل قيمة لـ WhatsApp API.",
         "pricing.period": "/شهرياً",
         "pricing.feature1": "رسائل واتساب غير محدودة",
         "pricing.feature2": "بدون رسوم لكل رسالة",
@@ -202,6 +294,9 @@ const translations = {
         "pricing.feature4": "الوصول لـ RESTful API",
         "pricing.feature5": "دعم أولوية",
         "pricing.feature6": "إلغاء في أي وقت",
+        "pricing.feature7": "استقبال الرسائل عبر الويب هوك",
+        "pricing.feature8": "إرسال الوسائط والمستندات",
+        "pricing.feature9": "دعم الويب هوك",
         "pricing.cta": "ابدأ تجربتك المجانية",
         "pricing.note": "لا حاجة لبطاقة ائتمان • الإعداد في دقيقتين",
         "pricing.standard.badge": "قياسي",
@@ -229,7 +324,6 @@ const translations = {
         
         // Payment Methods
         "payment.title": "طرق الدفع المقبولة",
-        "payment.soon": "قريباً",
         
         // WhatsApp
         "whatsapp.help": "مرحباً، كيف يمكننا مساعدتك؟",
@@ -241,12 +335,117 @@ const translations = {
         "footer.pricing": "الأسعار",
         "footer.docs": "التوثيق",
         "footer.company": "الشركة",
+        "footer.legal": "قانوني",
         "footer.about": "من نحن",
         "footer.contact": "اتصل بنا",
         "footer.privacy": "سياسة الخصوصية",
         "footer.terms": "شروط الخدمة",
+        "footer.refund": "سياسة الاسترداد",
         "footer.copyright": "© 2026 نبضة OTP. جميع الحقوق محفوظة. نبضة OTP منتج مملوك ومُدار من قبل We Pioners Ltd",
-        "footer.seo": "أرخص واتساب API 10$ شهرياً غير محدود • بديل تويليو • بديل الترامسج • بديل سيندغريد • خدمة OTP العراق • واتساب API سوريا • بوابة واتساب الشرق الأوسط • أول واتساب API عربي"
+        "footer.seo": "رسائل واتساب غير محدودة • بدون رسوم لكل رسالة • تجربة 5 أيام • RESTful API • ويب هوك استقبال • وسائط ومستندات • دعم أولوية • 10$/شهرياً • بديل تويليو الترامسج سيندغريد • العراق سوريا الشرق الأوسط"
+    },
+
+    tr: {
+        "meta.title": "Nabda OTP – Irak'ın En Ucuz WhatsApp API'si ve En İyi OTP Hizmeti",
+        "meta.description": "Nabda OTP — Standart: 10$/ay Ağ Geçidi, sınırsız mesaj, deneme, REST, webhook, medya, öncelikli destek, istediğiniz zaman iptal, kredi kartı yok 2 dk kurulum. Kurumsal: Bize Ulaşın, Resmi API, konuşma başına, SLA. nabdaotp.com — api.nabdaotp.com/docs — We Pioners Ltd.",
+
+        "nav.features": "Özellikler",
+        "nav.pricing": "Fiyatlandırma",
+        "nav.docs": "Dokümantasyon",
+        "nav.login": "Giriş",
+
+        "hero.badge": "🚀 En güvenilir WhatsApp doğrulama platformu",
+        "hero.title": "Irak, Suriye ve MENA Bölgesi'nin En Ucuz ve İlk WhatsApp Ağ Geçidi.",
+        "hero.subtitle": "Standart veya Resmi API ile WhatsApp Ağ Geçidimiz üzerinden sınırsız OTP gönderin. Geliştiriciler için en uygun fiyatlı ve en güvenilir API çözümü. Doğrudan entegrasyon ve en uygun fiyatlandırma.",
+        "hero.cta.primary": "Ücretsiz Denemeyi Başlat",
+        "hero.cta.secondary": "Dokümantasyonu Görüntüle",
+        "hero.price": "Sadece <strong>aylık 10$</strong> ile başlayın — Mesaj başına ücret yok",
+
+        "code.comment1": "// Nabda Ağ Geçidi ile OTP gönderimi",
+        "code.message": '"Kodunuz: 847291"',
+        "code.comment2": "// ✓ Anında teslim edildi",
+
+        "stats.businesses": "Bize Güvenen İşletmeler",
+        "stats.messages": "Gönderilen Mesajlar",
+        "stats.uptime": "Garantili Çalışma Süresi",
+        "stats.reliable": "MENA'da En Güvenilir",
+
+        "features.title": "Neden Nabda OTP?",
+        "features.subtitle": "En iyi güvenilirlikle en uygun fiyatlı WhatsApp API. Geliştiriciler tarafından, geliştiriciler için🤍.",
+
+        "features.cheapest.title": "Piyasadaki En Ucuz",
+        "features.cheapest.desc": "Diğerleri mesaj başına ücret alırken biz sabit aylık ücret sunuyoruz. Sadece aylık 10$ karşılığında sınırsız WhatsApp mesajı gönderin — mevcut en uygun fiyatlı API çözümü.",
+        "features.cheapest.highlight": "Rakiplere kıyasla %90'a varan tasarruf",
+
+        "features.local.title": "Yerel ve Gururlu",
+        "features.local.desc": "Arap geliştiriciler için özel olarak geliştirilmiş yerel bir platform. Yerel piyasayı anlıyoruz ve doğrudan entegrasyon ile Arapça destek sunuyoruz.",
+
+        "features.developer.title": "Önce Geliştirici",
+        "features.developer.desc": "Temiz RESTful API, kapsamlı dokümantasyon ve tüm büyük diller için SDK'lar. Bulut ağ geçidimizi günler değil dakikalar içinde entegre edin.",
+
+        "features.secure.title": "Kurumsal Güvenlik",
+        "features.secure.desc": "Uçtan uca şifreleme, güvenli kimlik doğrulama ve tam uyumluluk. Verileriniz kurumsal altyapımızla korunur.",
+
+        "features.fast.title": "Şimşek Hızında",
+        "features.fast.desc": "Mesajlar milisaniyeler içinde iletilir. Optimize edilmiş bulut ağ geçidimiz OTP'lerinizin her seferinde anında kullanıcılara ulaşmasını sağlar.",
+
+        "features.analytics.title": "Gerçek Zamanlı Analitik",
+        "features.analytics.desc": "Teslim oranlarını takip edin, kullanımı izleyin ve kapsamlı panomuzla içgörüler edinin. Mesajlaşma operasyonlarınıza tam görünürlük.",
+
+        "pricing.title": "Basit, Şeffaf Fiyatlandırma",
+        "pricing.subtitle": "Gizli ücret yok. Mesaj başına ücret yok. En iyi değer WhatsApp API.",
+        "pricing.period": "/ay",
+        "pricing.feature1": "Sınırsız WhatsApp Mesajı",
+        "pricing.feature2": "Mesaj Başına Ücret Yok",
+        "pricing.feature3": "5 Günlük Ücretsiz Deneme",
+        "pricing.feature4": "RESTful API Erişimi",
+        "pricing.feature5": "Öncelikli Destek",
+        "pricing.feature6": "İstediğiniz Zaman İptal",
+        "pricing.feature7": "Webhook ile mesaj alma",
+        "pricing.feature8": "Medya ve belge gönderme",
+        "pricing.feature9": "Webhook desteği",
+        "pricing.cta": "Ücretsiz Denemenizi Başlatın",
+        "pricing.note": "Kredi kartı gerekmez • 2 dakikada kurulum",
+        "pricing.standard.badge": "Standart",
+        "pricing.enterprise.badge": "Kurumsal",
+        "pricing.standard.typeLine": "Tür: WhatsApp Ağ Geçidi",
+        "pricing.standard.bestForLine": "En uygun: Geliştiriciler ve KOBİ'ler",
+        "pricing.standard.messagesLine": "Mesajlar: Sınırsız",
+        "pricing.official.typeLine": "Tür: WhatsApp Resmi API",
+        "pricing.official.bestForLine": "En uygun: Kurumsal ve Uyumluluk",
+        "pricing.official.messagesLine": "Mesajlar: Konuşma başına ücret",
+        "pricing.official.feature1": "Resmi Meta Onaylı API",
+        "pricing.official.feature2": "Daha Yüksek Mesaj Limitleri",
+        "pricing.official.feature3": "İşletme Doğrulama Desteği",
+        "pricing.official.feature4": "Özel Onboarding",
+        "pricing.official.feature5": "Öncelikli Destek",
+        "pricing.official.feature6": "SLA Garantisi",
+        "pricing.contact.price": "Bize Ulaşın",
+        "pricing.contact.cta": "Bize Ulaşın",
+        "pricing.contact.note": "Her şeyi sizin için kuruyoruz",
+
+        "cta.title": "İlk mesajınızı göndermeye hazır mısınız?",
+        "cta.subtitle": "En ucuz WhatsApp API'yi kullanan 65'ten fazla Arap işletmesine katılın. Bugün 5 günlük ücretsiz denemenizi başlatın.",
+        "cta.button": "Ücretsiz Başlayın",
+
+        "payment.title": "Kabul Edilen Ödeme Yöntemleri",
+
+        "whatsapp.help": "Merhaba, size nasıl yardımcı olabiliriz?",
+
+        "footer.desc": "Irak ve MENA bölgesi için ilk ve en iyi WhatsApp API çözümü. Geliştiriciler için doğrudan entegrasyonlu bulut ağ geçidi.",
+        "footer.product": "Ürün",
+        "footer.features": "Özellikler",
+        "footer.pricing": "Fiyatlandırma",
+        "footer.docs": "Dokümantasyon",
+        "footer.company": "Şirket",
+        "footer.legal": "Yasal",
+        "footer.about": "Hakkımızda",
+        "footer.contact": "İletişim",
+        "footer.privacy": "Gizlilik Politikası",
+        "footer.terms": "Hizmet Şartları",
+        "footer.refund": "İade Politikası",
+        "footer.copyright": "© 2026 Nabda OTP. Tüm hakları saklıdır. Nabda OTP, We Pioners Ltd'ye ait ve tarafından işletilen bir üründür",
+        "footer.seo": "Sınırsız WhatsApp Mesajı • Mesaj Başına Ücret Yok • 5 Günlük Deneme • RESTful API • Webhook ile Alma • Medya ve Belgeler • Öncelikli Destek • 10$/ay • Twilio UltraMsg SendGrid Alternatifi • MENA Irak Suriye • أرخص واتساب API"
     }
 };
 
@@ -260,17 +459,32 @@ let currentLang = 'en';
 // ============================================
 function setLanguage(lang) {
     currentLang = lang;
+    const bundle = translations[lang];
+    if (!bundle) return;
+
     const html = document.documentElement;
-    
+
     // Update dir and lang attributes
     html.setAttribute('lang', lang);
     html.setAttribute('dir', lang === 'ar' ? 'rtl' : 'ltr');
-    
+
+    const labelEl = document.getElementById('langToggleLabel');
+    if (labelEl) labelEl.textContent = LANG_DISPLAY_NAME[lang] || lang;
+
+    const langMenu = document.getElementById('langMenu');
+    if (langMenu) {
+        langMenu.querySelectorAll('[data-lang]').forEach((btn) => {
+            const l = btn.getAttribute('data-lang');
+            if (l === lang) btn.setAttribute('aria-current', 'true');
+            else btn.removeAttribute('aria-current');
+        });
+    }
+
     // Update all translatable elements
     document.querySelectorAll('[data-i18n]').forEach(element => {
         const key = element.getAttribute('data-i18n');
-        const translation = translations[lang][key];
-        
+        const translation = bundle[key];
+
         if (translation) {
             // Check if translation contains HTML (like <strong>)
             if (translation.includes('<')) {
@@ -289,11 +503,14 @@ function setLanguage(lang) {
     
     // Trigger custom event for other scripts
     window.dispatchEvent(new CustomEvent('languageChange', { detail: { lang } }));
+
+    localizeInternalLinks();
 }
 
 function updateMetaTags(lang) {
     const t = translations[lang];
-    
+    if (!t) return;
+
     // Update title
     document.title = t['meta.title'];
     
@@ -314,12 +531,77 @@ function updateMetaTags(lang) {
     
     // Update OG locale
     const ogLocale = document.querySelector('meta[property="og:locale"]');
-    if (ogLocale) ogLocale.setAttribute('content', lang === 'ar' ? 'ar_IQ' : 'en_US');
+    if (ogLocale) {
+        const locale = lang === 'ar' ? 'ar_IQ' : lang === 'tr' ? 'tr_TR' : 'en_US';
+        ogLocale.setAttribute('content', locale);
+    }
+
+    const pageUrl = window.location.origin + window.location.pathname + window.location.search;
+    const ogUrl = document.querySelector('meta[property="og:url"]');
+    if (ogUrl) ogUrl.setAttribute("content", pageUrl);
+    const twitterUrl = document.querySelector('meta[name="twitter:url"]');
+    if (twitterUrl) twitterUrl.setAttribute("content", pageUrl);
+    const canonical = document.querySelector('link[rel="canonical"]');
+    if (canonical) canonical.setAttribute("href", pageUrl);
 }
 
+function navigateToLanguage(targetLang) {
+    if (!['en', 'ar', 'tr'].includes(targetLang)) return;
+    if (targetLang === getLanguageFromPath()) {
+        closeLangMenu();
+        return;
+    }
+    const pathname = window.location.pathname;
+    const { search, hash } = window.location;
+    let enPath = toEnglishPath(pathname);
+    if (enPath === '/index.html') enPath = '/';
+    const target = pathForLanguage(enPath, targetLang);
+    window.location.assign(target + search + hash);
+}
+
+function closeLangMenu() {
+    const menu = document.getElementById('langMenu');
+    const btn = document.getElementById('langToggle');
+    if (menu) {
+        menu.hidden = true;
+        menu.classList.remove('is-open');
+    }
+    if (btn) btn.setAttribute('aria-expanded', 'false');
+}
+
+function initLangDropdown() {
+    const langToggle = document.getElementById('langToggle');
+    const langMenu = document.getElementById('langMenu');
+    if (!langToggle || !langMenu) return;
+
+    langToggle.addEventListener('click', (e) => {
+        e.stopPropagation();
+        e.preventDefault();
+        if (!langMenu.hidden) {
+            closeLangMenu();
+            return;
+        }
+        langMenu.hidden = false;
+        langMenu.classList.add('is-open');
+        langToggle.setAttribute('aria-expanded', 'true');
+    });
+
+    langMenu.querySelectorAll('[data-lang]').forEach((item) => {
+        item.addEventListener('click', (e) => {
+            e.stopPropagation();
+            navigateToLanguage(item.getAttribute('data-lang'));
+        });
+    });
+
+    document.addEventListener('click', () => closeLangMenu());
+}
+
+/** Cycles en → ar → tr for legacy callers */
 function toggleLanguage() {
-    const newLang = currentLang === 'en' ? 'ar' : 'en';
-    setLanguage(newLang);
+    const order = ['en', 'ar', 'tr'];
+    const i = order.indexOf(getLanguageFromPath());
+    const next = order[(i + 1) % order.length];
+    navigateToLanguage(next);
 }
 
 // ============================================
@@ -487,8 +769,8 @@ function initHeaderScroll() {
 // ============================================
 function initKeyboardNav() {
     document.addEventListener('keydown', (e) => {
-        // ESC to close mobile menu
         if (e.key === 'Escape') {
+            closeLangMenu();
             const nav = document.querySelector('.nav');
             const mobileToggle = document.getElementById('mobileToggle');
             if (nav && mobileToggle) {
@@ -520,17 +802,9 @@ function initTerminalEffect() {
 document.addEventListener('DOMContentLoaded', () => {
     stripLegacyQueryFromUrl();
 
-    // Check for saved language preference
-    const savedLang = localStorage.getItem('nabza-lang');
-    if (savedLang && (savedLang === 'en' || savedLang === 'ar')) {
-        setLanguage(savedLang);
-    }
-    
-    // Initialize language toggle
-    const langToggle = document.getElementById('langToggle');
-    if (langToggle) {
-        langToggle.addEventListener('click', toggleLanguage);
-    }
+    setLanguage(getLanguageFromPath());
+
+    initLangDropdown();
     
     // Initialize all features
     initMobileNav();
@@ -550,7 +824,9 @@ document.addEventListener('DOMContentLoaded', () => {
 // ============================================
 window.NabzaOTP = {
     setLanguage,
+    navigateToLanguage,
     toggleLanguage,
-    getCurrentLang: () => currentLang
+    getCurrentLang: () => currentLang,
+    getLanguageFromPath
 };
 

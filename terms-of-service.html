@@ -20,14 +20,16 @@
     <!-- Canonical URL -->
     <link rel="canonical" href="https://www.nabdaotp.com/terms-of-service.html">
     <link rel="alternate" hreflang="en" href="https://www.nabdaotp.com/terms-of-service.html">
+    <link rel="alternate" hreflang="ar" href="https://www.nabdaotp.com/ar/terms-of-service.html">
+    <link rel="alternate" hreflang="tr" href="https://www.nabdaotp.com/tr/terms-of-service.html">
     <link rel="alternate" hreflang="x-default" href="https://www.nabdaotp.com/terms-of-service.html">
     
     <!-- Favicon & Icons -->
-    <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16x16.png">
-    <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
-    <link rel="manifest" href="assets/site.webmanifest">
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon-16x16.png">
+    <link rel="icon" type="image/x-icon" href="/assets/favicon.ico">
+    <link rel="manifest" href="/assets/site.webmanifest">
     <meta name="theme-color" content="#635bff">
     
     <!-- Fonts -->
@@ -36,14 +38,14 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&display=swap" rel="stylesheet">
     
     <!-- Stylesheets -->
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/style.css">
 </head>
 <body>
     <!-- Header / Navigation -->
     <header class="header">
         <nav class="nav container">
             <a href="/" class="logo">
-                <img src="assets/android-chrome-192x192.png" alt="Nabda OTP" class="logo-img">
+                <img src="/assets/android-chrome-192x192.png" alt="Nabda OTP" class="logo-img">
                 <span class="logo-text">Nabda OTP</span>
             </a>
             
@@ -55,10 +57,17 @@
                 </ul>
                 
                 <div class="nav-actions">
-                    <button class="btn btn-ghost lang-toggle" id="langToggle" aria-label="Switch Language">
-                        <span class="lang-icon">🌐</span>
-                        <span>العربية</span>
-                    </button>
+                    <div class="lang-dropdown" id="langDropdown">
+                        <button type="button" class="btn btn-ghost lang-toggle" id="langToggle" aria-expanded="false" aria-haspopup="menu" aria-label="Language">
+                            <span class="lang-icon" aria-hidden="true">🌐</span>
+                            <span id="langToggleLabel">English</span>
+                        </button>
+                        <ul class="lang-menu" id="langMenu" role="menu" hidden>
+                            <li role="none"><button type="button" class="lang-menu-item" role="menuitem" data-lang="en">English</button></li>
+                            <li role="none"><button type="button" class="lang-menu-item" role="menuitem" data-lang="ar">العربية</button></li>
+                            <li role="none"><button type="button" class="lang-menu-item" role="menuitem" data-lang="tr">Türkçe</button></li>
+                        </ul>
+                    </div>
                     <a href="https://dash.nabdaotp.com/en/login" target="_blank" rel="noopener noreferrer" class="btn btn-primary">Login</a>
                 </div>
             </div>
@@ -138,7 +147,7 @@
                     <li>Subscription cancellation must be completed before the start of the next billing cycle to avoid charges.</li>
                 </ul>
                 
-                <p>For more details, please see our <a href="refund-policy.html">Refund Policy</a>.</p>
+                <p>For more details, please see our <a href="/refund-policy.html">Refund Policy</a>.</p>
                 
                 <h2>Miscellaneous</h2>
                 
@@ -161,7 +170,7 @@
             <div class="footer-main">
                 <div class="footer-brand">
                     <a href="/" class="logo">
-                        <img src="assets/android-chrome-192x192.png" alt="Nabda OTP" class="logo-img" loading="lazy" decoding="async">
+                        <img src="/assets/android-chrome-192x192.png" alt="Nabda OTP" class="logo-img" loading="lazy" decoding="async">
                         <span class="logo-text">Nabda OTP</span>
                     </a>
                     <p class="footer-desc">The first and best WhatsApp API solution for Iraq and the MENA region. Cloud gateway with direct integration for developers.</p>
@@ -179,11 +188,11 @@
                     <div class="footer-col">
                         <h4>Legal</h4>
                         <ul>
-                            <li><a href="about.html">About</a></li>
+                            <li><a href="/about.html">About</a></li>
                             <li><a href="https://wa.me/905346639145" target="_blank" rel="noopener noreferrer">Contact</a></li>
-                            <li><a href="privacy-policy.html">Privacy Policy</a></li>
-                            <li><a href="terms-of-service.html">Terms of Service</a></li>
-                            <li><a href="refund-policy.html">Refund Policy</a></li>
+                            <li><a href="/privacy-policy.html">Privacy Policy</a></li>
+                            <li><a href="/terms-of-service.html">Terms of Service</a></li>
+                            <li><a href="/refund-policy.html">Refund Policy</a></li>
                         </ul>
                     </div>
                 </div>
@@ -211,6 +220,6 @@
     </a>
 
     <!-- Scripts -->
-    <script src="script.js"></script>
+    <script src="/script.js"></script>
 </body>
 </html>

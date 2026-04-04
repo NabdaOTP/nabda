@@ -261,6 +261,10 @@ img {
     gap: var(--space-md);
 }
 
+.lang-dropdown {
+    position: relative;
+}
+
 .lang-toggle {
     display: flex;
     align-items: center;
@@ -271,6 +275,50 @@ img {
 
 .lang-icon {
     font-size: 1.1rem;
+}
+
+.lang-menu {
+    position: absolute;
+    top: calc(100% + 0.35rem);
+    inset-inline-end: 0;
+    min-width: 10rem;
+    margin: 0;
+    padding: var(--space-xs) 0;
+    list-style: none;
+    background: var(--white);
+    border: 1px solid rgba(15, 23, 42, 0.08);
+    border-radius: var(--radius-md, 8px);
+    box-shadow: var(--shadow-md);
+    z-index: 200;
+}
+
+.lang-menu[hidden] {
+    display: none !important;
+}
+
+.lang-menu-item {
+    display: block;
+    width: 100%;
+    padding: 0.5rem 1rem;
+    border: none;
+    background: none;
+    font: inherit;
+    font-size: 0.875rem;
+    text-align: inherit;
+    cursor: pointer;
+    color: var(--deep-navy);
+    transition: background var(--transition-fast);
+}
+
+.lang-menu-item:hover,
+.lang-menu-item:focus-visible {
+    background: rgba(99, 91, 255, 0.08);
+    outline: none;
+}
+
+.lang-menu-item[aria-current="true"] {
+    font-weight: 600;
+    color: var(--blurple);
 }
 
 .mobile-toggle {
@@ -887,26 +935,6 @@ img {
     color: var(--deep-navy);
 }
 
-.payment-coming-soon {
-    position: relative;
-    opacity: 0.7;
-}
-
-.payment-coming-soon:hover {
-    opacity: 1;
-}
-
-.coming-soon-badge {
-    font-size: 0.625rem;
-    font-weight: 700;
-    color: var(--white);
-    background: linear-gradient(135deg, var(--blurple) 0%, var(--blurple-dark) 100%);
-    padding: 0.25rem 0.5rem;
-    border-radius: var(--radius-pill);
-    text-transform: uppercase;
-    letter-spacing: 0.05em;
-}
-
 @media (max-width: 768px) {
     .payment-grid {
         gap: var(--space-md);
@@ -1167,6 +1195,12 @@ img {
     .nav.active .mobile-menu .nav-actions .btn {
         width: 100%;
         justify-content: center;
+    }
+
+    .nav.active .mobile-menu .lang-menu {
+        position: static;
+        width: 100%;
+        inset-inline-end: auto;
     }
 }
 

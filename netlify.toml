@@ -1,8 +1,86 @@
 # Nabda OTP — static site on Netlify
 # https://docs.netlify.com/configure-builds/file-based-configuration/
+#
+# If the Git repo root is the parent folder, set Netlify "Base directory" to `nabda`.
 
 [build]
   publish = "."
+  command = "npm run build"
+
+[build.environment]
+  NODE_VERSION = "20"
+
+# Arabic locale URLs (200 rewrite — browser bar stays /ar/...)
+[[redirects]]
+  from = "/ar/about.html"
+  to = "/about.html"
+  status = 200
+
+[[redirects]]
+  from = "/ar/privacy-policy.html"
+  to = "/privacy-policy.html"
+  status = 200
+
+[[redirects]]
+  from = "/ar/terms-of-service.html"
+  to = "/terms-of-service.html"
+  status = 200
+
+[[redirects]]
+  from = "/ar/refund-policy.html"
+  to = "/refund-policy.html"
+  status = 200
+
+[[redirects]]
+  from = "/ar/index.html"
+  to = "/index.html"
+  status = 200
+
+[[redirects]]
+  from = "/ar/"
+  to = "/index.html"
+  status = 200
+
+[[redirects]]
+  from = "/ar"
+  to = "/index.html"
+  status = 200
+
+# Turkish locale URLs (200 rewrite — browser bar stays /tr/...)
+[[redirects]]
+  from = "/tr/about.html"
+  to = "/about.html"
+  status = 200
+
+[[redirects]]
+  from = "/tr/privacy-policy.html"
+  to = "/privacy-policy.html"
+  status = 200
+
+[[redirects]]
+  from = "/tr/terms-of-service.html"
+  to = "/terms-of-service.html"
+  status = 200
+
+[[redirects]]
+  from = "/tr/refund-policy.html"
+  to = "/refund-policy.html"
+  status = 200
+
+[[redirects]]
+  from = "/tr/index.html"
+  to = "/index.html"
+  status = 200
+
+[[redirects]]
+  from = "/tr/"
+  to = "/index.html"
+  status = 200
+
+[[redirects]]
+  from = "/tr"
+  to = "/index.html"
+  status = 200
 
 # Canonical home: avoid duplicate /index.html indexing
 [[redirects]]
