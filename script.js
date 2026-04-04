@@ -563,6 +563,11 @@ function closeLangMenu() {
     const menu = document.getElementById('langMenu');
     const btn = document.getElementById('langToggle');
     if (menu) {
+        if (menu._suppressPtrTid) {
+            clearTimeout(menu._suppressPtrTid);
+            menu._suppressPtrTid = undefined;
+        }
+        menu.classList.remove('lang-menu--suppress-pointer');
         menu.hidden = true;
         menu.classList.remove('is-open');
     }
@@ -572,19 +577,55 @@ function closeLangMenu() {
 function initLangDropdown() {
     const langToggle = document.getElementById('langToggle');
     const langMenu = document.getElementById('langMenu');
-    if (!langToggle || !langMenu) return;
+    const langDropdown = document.getElementById('langDropdown');
+    if (!langToggle || !langMenu || !langDropdown) return;
 
-    langToggle.addEventListener('click', (e) => {
-        e.stopPropagation();
-        e.preventDefault();
+    const coarsePointer = window.matchMedia('(pointer: coarse)');
+    let langToggleTouchLock = false;
+
+    function openLangMenu() {
+        langMenu.hidden = false;
+        langMenu.classList.add('is-open');
+        langToggle.setAttribute('aria-expanded', 'true');
+        if (coarsePointer.matches) {
+            langMenu.classList.add('lang-menu--suppress-pointer');
+            if (langMenu._suppressPtrTid) clearTimeout(langMenu._suppressPtrTid);
+            langMenu._suppressPtrTid = window.setTimeout(() => {
+                langMenu.classList.remove('lang-menu--suppress-pointer');
+                langMenu._suppressPtrTid = undefined;
+            }, 450);
+        }
+    }
+
+    function toggleLangMenu() {
         if (!langMenu.hidden) {
             closeLangMenu();
             return;
         }
-        langMenu.hidden = false;
-        langMenu.classList.add('is-open');
-        langToggle.setAttribute('aria-expanded', 'true');
+        openLangMenu();
+    }
+
+    langToggle.addEventListener('click', (e) => {
+        e.preventDefault();
+        e.stopPropagation();
+        if (langToggleTouchLock) return;
+        toggleLangMenu();
     });
+
+    langToggle.addEventListener(
+        'touchend',
+        (e) => {
+            if (!coarsePointer.matches) return;
+            e.preventDefault();
+            e.stopPropagation();
+            langToggleTouchLock = true;
+            toggleLangMenu();
+            window.setTimeout(() => {
+                langToggleTouchLock = false;
+            }, 500);
+        },
+        { passive: false }
+    );
 
     langMenu.querySelectorAll('[data-lang]').forEach((item) => {
         item.addEventListener('click', (e) => {
@@ -593,7 +634,12 @@ function initLangDropdown() {
         });
     });
 
-    document.addEventListener('click', () => closeLangMenu());
+    function onDocumentPointerDown(e) {
+        if (e.button != null && e.button !== 0) return;
+        if (langDropdown.contains(e.target)) return;
+        closeLangMenu();
+    }
+    document.addEventListener('pointerdown', onDocumentPointerDown, true);
 }
 
 /** Cycles en → ar → tr for legacy callers */

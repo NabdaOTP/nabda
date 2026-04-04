@@ -296,6 +296,11 @@ img {
     display: none !important;
 }
 
+/* Block stray synthetic clicks right after open on touch devices (iOS / mobile WebKit). */
+.lang-menu.lang-menu--suppress-pointer {
+    pointer-events: none;
+}
+
 .lang-menu-item {
     display: block;
     width: 100%;
