@@ -10,77 +10,8 @@
 [build.environment]
   NODE_VERSION = "20"
 
-# Arabic locale URLs (200 rewrite — browser bar stays /ar/...)
-[[redirects]]
-  from = "/ar/about.html"
-  to = "/about.html"
-  status = 200
-
-[[redirects]]
-  from = "/ar/privacy-policy.html"
-  to = "/privacy-policy.html"
-  status = 200
-
-[[redirects]]
-  from = "/ar/terms-of-service.html"
-  to = "/terms-of-service.html"
-  status = 200
-
-[[redirects]]
-  from = "/ar/refund-policy.html"
-  to = "/refund-policy.html"
-  status = 200
-
-[[redirects]]
-  from = "/ar/index.html"
-  to = "/index.html"
-  status = 200
-
-[[redirects]]
-  from = "/ar/"
-  to = "/index.html"
-  status = 200
-
-[[redirects]]
-  from = "/ar"
-  to = "/index.html"
-  status = 200
-
-# Turkish locale URLs (200 rewrite — browser bar stays /tr/...)
-[[redirects]]
-  from = "/tr/about.html"
-  to = "/about.html"
-  status = 200
-
-[[redirects]]
-  from = "/tr/privacy-policy.html"
-  to = "/privacy-policy.html"
-  status = 200
-
-[[redirects]]
-  from = "/tr/terms-of-service.html"
-  to = "/terms-of-service.html"
-  status = 200
-
-[[redirects]]
-  from = "/tr/refund-policy.html"
-  to = "/refund-policy.html"
-  status = 200
-
-[[redirects]]
-  from = "/tr/index.html"
-  to = "/index.html"
-  status = 200
-
-[[redirects]]
-  from = "/tr/"
-  to = "/index.html"
-  status = 200
-
-[[redirects]]
-  from = "/tr"
-  to = "/index.html"
-  status = 200
+# Locale URL rewrites: see _redirects (same rules, shipped with the publish root).
+# Wildcard /ar/* and /tr/* map to /:splat so all static assets and HTML work under a prefix.
 
 # Canonical home: avoid duplicate /index.html indexing
 [[redirects]]

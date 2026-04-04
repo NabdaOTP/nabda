@@ -1,3 +1,22 @@
+# Localized URLs: serve the same files under /ar/* and /tr/* (URL prefix kept for i18n JS)
+/ar    /index.html   200
+/ar/   /index.html   200
+/tr    /index.html   200
+/tr/   /index.html   200
+
+# Extensionless legal pages — MUST be before /ar/* and /tr/* wildcards
+/ar/about              /about.html              200
+/ar/privacy-policy     /privacy-policy.html     200
+/ar/terms-of-service   /terms-of-service.html   200
+/ar/refund-policy      /refund-policy.html      200
+/tr/about              /about.html              200
+/tr/privacy-policy     /privacy-policy.html     200
+/tr/terms-of-service   /terms-of-service.html   200
+/tr/refund-policy      /refund-policy.html      200
+
+/ar/*  /:splat       200
+/tr/*  /:splat       200
+
 /index.html  /  301!
 http://nabdaotp.com/*  https://www.nabdaotp.com/:splat  301!
 http://www.nabdaotp.com/*  https://www.nabdaotp.com/:splat  301!

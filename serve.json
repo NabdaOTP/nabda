@@ -1,18 +1,18 @@
 {
   "rewrites": [
-    { "source": "ar/about.html", "destination": "/about.html" },
-    { "source": "ar/privacy-policy.html", "destination": "/privacy-policy.html" },
-    { "source": "ar/terms-of-service.html", "destination": "/terms-of-service.html" },
-    { "source": "ar/refund-policy.html", "destination": "/refund-policy.html" },
-    { "source": "ar/index.html", "destination": "/index.html" },
-    { "source": "ar/", "destination": "/index.html" },
-    { "source": "ar", "destination": "/index.html" },
-    { "source": "tr/about.html", "destination": "/about.html" },
-    { "source": "tr/privacy-policy.html", "destination": "/privacy-policy.html" },
-    { "source": "tr/terms-of-service.html", "destination": "/terms-of-service.html" },
-    { "source": "tr/refund-policy.html", "destination": "/refund-policy.html" },
-    { "source": "tr/index.html", "destination": "/index.html" },
-    { "source": "tr/", "destination": "/index.html" },
-    { "source": "tr", "destination": "/index.html" }
+    { "source": "/ar", "destination": "/index.html" },
+    { "source": "/ar/", "destination": "/index.html" },
+    { "source": "/tr", "destination": "/index.html" },
+    { "source": "/tr/", "destination": "/index.html" },
+    { "source": "/ar/about", "destination": "/about.html" },
+    { "source": "/ar/privacy-policy", "destination": "/privacy-policy.html" },
+    { "source": "/ar/terms-of-service", "destination": "/terms-of-service.html" },
+    { "source": "/ar/refund-policy", "destination": "/refund-policy.html" },
+    { "source": "/tr/about", "destination": "/about.html" },
+    { "source": "/tr/privacy-policy", "destination": "/privacy-policy.html" },
+    { "source": "/tr/terms-of-service", "destination": "/terms-of-service.html" },
+    { "source": "/tr/refund-policy", "destination": "/refund-policy.html" },
+    { "source": "/ar/*", "destination": "/:splat" },
+    { "source": "/tr/*", "destination": "/:splat" }
   ]
 }
