@@ -1,3 +1,35 @@
+# Country landing pages — clean URLs (SEO) → files under /countries/{slug}/
+/eg    /countries/eg/index.html   200
+/eg/   /countries/eg/index.html   200
+/iq    /countries/iq/index.html   200
+/iq/   /countries/iq/index.html   200
+/sa    /countries/sa/index.html   200
+/sa/   /countries/sa/index.html   200
+/qa    /countries/qa/index.html   200
+/qa/   /countries/qa/index.html   200
+/jo    /countries/jo/index.html   200
+/jo/   /countries/jo/index.html   200
+/ae    /countries/ae/index.html   200
+/ae/   /countries/ae/index.html   200
+/sy    /countries/sy/index.html   200
+/sy/   /countries/sy/index.html   200
+
+# Arabic-prefixed country pages (same HTML; UI language from /ar path)
+/ar/eg    /ar/eg/index.html   200
+/ar/eg/   /ar/eg/index.html   200
+/ar/iq    /countries/iq/index.html   200
+/ar/iq/   /countries/iq/index.html   200
+/ar/sa    /ar/sa/index.html   200
+/ar/sa/   /ar/sa/index.html   200
+/ar/qa    /ar/qa/index.html   200
+/ar/qa/   /ar/qa/index.html   200
+/ar/jo    /countries/jo/index.html   200
+/ar/jo/   /countries/jo/index.html   200
+/ar/ae    /countries/ae/index.html   200
+/ar/ae/   /countries/ae/index.html   200
+/ar/sy    /countries/sy/index.html   200
+/ar/sy/   /countries/sy/index.html   200
+
 # Localized URLs: serve the same files under /ar/* and /tr/* (URL prefix kept for i18n JS)
 /ar    /index.html   200
 /ar/   /index.html   200

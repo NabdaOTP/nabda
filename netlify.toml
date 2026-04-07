@@ -74,3 +74,87 @@
   [headers.values]
     Content-Type = "text/plain; charset=utf-8"
     Cache-Control = "public, max-age=86400"
+
+
+[[redirects]]
+  from = "/solutions"
+  to = "/solutions.html"
+  status = 200
+
+  [[redirects]]
+  from = "/solutions/*"
+  to = "/solutions/:splat.html"
+  status = 200
+
+[[redirects]]
+  from = "/comparing"
+  to = "/comparing.html"
+  status = 200
+
+[[redirects]]
+  from = "/blogs"
+  to = "/blogs.html"
+  status = 200
+
+  [[redirects]]
+  from = "/blogs/*"
+  to = "/blogs/:splat.html"
+  status = 200
+
+# Country pages: clean URLs → static files (mirror _redirects)
+[[redirects]]
+  from = "/eg"
+  to = "/countries/eg/index.html"
+  status = 200
+[[redirects]]
+  from = "/eg/"
+  to = "/countries/eg/index.html"
+  status = 200
+[[redirects]]
+  from = "/iq"
+  to = "/countries/iq/index.html"
+  status = 200
+[[redirects]]
+  from = "/iq/"
+  to = "/countries/iq/index.html"
+  status = 200
+[[redirects]]
+  from = "/sa"
+  to = "/countries/sa/index.html"
+  status = 200
+[[redirects]]
+  from = "/sa/"
+  to = "/countries/sa/index.html"
+  status = 200
+[[redirects]]
+  from = "/qa"
+  to = "/countries/qa/index.html"
+  status = 200
+[[redirects]]
+  from = "/qa/"
+  to = "/countries/qa/index.html"
+  status = 200
+[[redirects]]
+  from = "/jo"
+  to = "/countries/jo/index.html"
+  status = 200
+[[redirects]]
+  from = "/jo/"
+  to = "/countries/jo/index.html"
+  status = 200
+[[redirects]]
+  from = "/ae"
+  to = "/countries/ae/index.html"
+  status = 200
+[[redirects]]
+  from = "/ae/"
+  to = "/countries/ae/index.html"
+  status = 200
+[[redirects]]
+  from = "/sy"
+  to = "/countries/sy/index.html"
+  status = 200
+[[redirects]]
+  from = "/sy/"
+  to = "/countries/sy/index.html"
+  status = 200
