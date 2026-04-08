@@ -12,9 +12,9 @@ const path = require("path");
 const ROOT = __dirname;
 const DATA_PATH = path.join(ROOT, "countries-data.json");
 const TEMPLATE_PATH = path.join(ROOT, "country-template.html");
-const OUTPUT_DIR = path.join(ROOT, "countries"); // يولد المجلدات في root المشروع
+const OUTPUT_DIR = path.join(ROOT, "countries");
 
-// قراءة الملفات
+// Reading files
 function readJson(filePath) {
   const raw = fs.readFileSync(filePath, "utf8");
   return JSON.parse(raw);
@@ -55,7 +55,7 @@ function assertNoUnreplacedTokens(html, outputPath) {
   }
 }
 
-// استبدال الـ tokens
+// Replace tokens
 function replaceTokens(template, data) {
   return template.replace(/\{\{([^}]+)\}\}/g, (match, token) => {
     const key = token.trim();
@@ -70,7 +70,7 @@ function replaceTokens(template, data) {
   });
 }
 
-// بناء الـ trust points
+// Build trust points
 function buildTrustPointsHtml(points) {
   return points
     .map(
@@ -111,7 +111,7 @@ function buildFaqHtml(faq) {
     .join("");
 }
 
-// بناء الـ FAQ Schema
+// Build FAQ Schema
 function buildFaqSchema(canonicalUrl, faq) {
   const mainEntity = faq.map((item) => ({
     "@type": "Question",
@@ -134,7 +134,7 @@ function buildFaqSchema(canonicalUrl, faq) {
   );
 }
 
-// بناء WebPage Schema
+// Build WebPage Schema
 function buildWebPageSchema(data) {
   return JSON.stringify(
     {
@@ -160,7 +160,7 @@ function buildWebPageSchema(data) {
   );
 }
 
-// بناء Organization Schema
+// Build Organization Schema
 function buildOrganizationSchema() {
   return JSON.stringify(
     {
@@ -277,10 +277,10 @@ function main() {
     const enCountry = createLocalizedCountry(country, null, "en");
     const enMergedData = buildMergedData(enCountry, enUrl);
 
-    // توليد الـ HTML (EN)
+    // Build HTML (EN)
     let html = replaceTokens(template, enMergedData);
 
-    // حفظ ملف EN
+    // Save EN
     const outputPath = path.join(countryDir, "index.html");
     assertNoUnreplacedTokens(html, outputPath);
     fs.writeFileSync(outputPath, html, "utf8");

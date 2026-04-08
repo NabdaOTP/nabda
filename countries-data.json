@@ -641,39 +641,39 @@
         "99.99% Uptime Guaranteed"
       ],
       "faq": [
-    {
-      "question": "What is the cheapest WhatsApp API in Jordan in 2026?",
-      "answer": "Nabda OTP is currently the cheapest WhatsApp API in Jordan at only $10 per month for unlimited messages with no per-message fees."
-    },
-    {
-      "question": "Does Nabda OTP support Jordanian phone numbers +962?",
-      "answer": "Yes, it supports all Jordanian numbers (+962) with high efficiency and fast delivery across all networks."
-    },
-    {
-      "question": "How much does WhatsApp API cost in Jordan with Nabda OTP?",
-      "answer": "The standard plan starts at just $10 per month (unlimited messages)."
-    },
-    {
-      "question": "Is there a free trial for WhatsApp API in Jordan?",
-      "answer": "Yes, a full 5-day free trial with no credit card or commitment required."
-    },
-    {
-      "question": "Is Nabda OTP a good alternative to Twilio in Jordan?",
-      "answer": "Yes, it saves up to 90% on costs with unlimited messages, instant webhook, and full Arabic support."
-    },
-    {
-      "question": "Does Nabda OTP support sending images, documents, and media?",
-      "answer": "Yes, it supports text messages + images + videos + PDF documents and more."
-    },
-    {
-      "question": "What is the difference between Standard Gateway and Official WhatsApp Business API?",
-      "answer": "The Standard (unlimited at $10) is suitable for most businesses and developers. The Official is for large enterprises needing the Green Badge."
-    },
-    {
-      "question": "How fast is the delivery and is there Arabic technical support?",
-      "answer": "Delivery is fast in most cases. Full Arabic technical support is available via WhatsApp or ticket."
-    }
-  ],
+        {
+          "question": "What is the cheapest WhatsApp API in Jordan in 2026?",
+          "answer": "Nabda OTP is currently the cheapest WhatsApp API in Jordan at only $10 per month for unlimited messages with no per-message fees."
+        },
+        {
+          "question": "Does Nabda OTP support Jordanian phone numbers +962?",
+          "answer": "Yes, it supports all Jordanian numbers (+962) with high efficiency and fast delivery across all networks."
+        },
+        {
+          "question": "How much does WhatsApp API cost in Jordan with Nabda OTP?",
+          "answer": "The standard plan starts at just $10 per month (unlimited messages)."
+        },
+        {
+          "question": "Is there a free trial for WhatsApp API in Jordan?",
+          "answer": "Yes, a full 5-day free trial with no credit card or commitment required."
+        },
+        {
+          "question": "Is Nabda OTP a good alternative to Twilio in Jordan?",
+          "answer": "Yes, it saves up to 90% on costs with unlimited messages, instant webhook, and full Arabic support."
+        },
+        {
+          "question": "Does Nabda OTP support sending images, documents, and media?",
+          "answer": "Yes, it supports text messages + images + videos + PDF documents and more."
+        },
+        {
+          "question": "What is the difference between Standard Gateway and Official WhatsApp Business API?",
+          "answer": "The Standard (unlimited at $10) is suitable for most businesses and developers. The Official is for large enterprises needing the Green Badge."
+        },
+        {
+          "question": "How fast is the delivery and is there Arabic technical support?",
+          "answer": "Delivery is fast in most cases. Full Arabic technical support is available via WhatsApp or ticket."
+        }
+      ],
       "ar": {
         "language": "ar",
         "dir": "rtl",
@@ -695,39 +695,39 @@
           "توفر 99.99%"
         ],
         "faq": [
-      {
-        "question": "ما هو أرخص WhatsApp API في الأردن 2026؟",
-        "answer": "نبضة OTP هو أرخص خدمة WhatsApp API في الأردن حالياً بـ 10 دولار فقط شهرياً مقابل رسائل غير محدودة."
-      },
-      {
-        "question": "هل Nabda OTP يدعم أرقام الهواتف الأردنية +962؟",
-        "answer": "نعم، يدعم جميع أرقام الأردن (+962) بكفاءة عالية وتوصيل سريع عبر جميع الشبكات."
-      },
-      {
-        "question": "كم تكلفة WhatsApp API في الأردن مع Nabda OTP؟",
-        "answer": "تبدأ الخطة القياسية من 10 دولار شهرياً فقط (رسائل غير محدودة)."
-      },
-      {
-        "question": "هل يوجد تجربة مجانية لـ WhatsApp API في الأردن؟",
-        "answer": "نعم، تجربة مجانية كاملة لمدة 5 أيام بدون بطاقة ائتمان أو التزام."
-      },
-      {
-        "question": "هل Nabda OTP بديل جيد لـ Twilio في الأردن؟",
-        "answer": "نعم، يوفر حتى 90% من التكلفة مع رسائل غير محدودة، webhook فوري، ودعم عربي كامل."
-      },
-      {
-        "question": "هل يدعم Nabda OTP إرسال الصور والمستندات والوسائط؟",
-        "answer": "نعم، يدعم إرسال الرسائل النصية + الصور + الفيديوهات + المستندات PDF وغيرها بكل سهولة."
-      },
-      {
-        "question": "ما الفرق بين الـ Standard Gateway والـ Official WhatsApp Business API؟",
-        "answer": "الـ Standard (غير محدود بـ10$) مناسب لمعظم الشركات والمطورين. أما الـ Official فهو للشركات الكبرى."
-      },
-      {
-        "question": "كم يستغرق التوصيل وهل هناك دعم فني عربي؟",
-        "answer": "التوصيل سريع في معظم الحالات. يوجد دعم فني عربي كامل عبر واتساب أو تذكرة."
-      }
-    ]
+          {
+            "question": "ما هو أرخص WhatsApp API في الأردن 2026؟",
+            "answer": "نبضة OTP هو أرخص خدمة WhatsApp API في الأردن حالياً بـ 10 دولار فقط شهرياً مقابل رسائل غير محدودة."
+          },
+          {
+            "question": "هل Nabda OTP يدعم أرقام الهواتف الأردنية +962؟",
+            "answer": "نعم، يدعم جميع أرقام الأردن (+962) بكفاءة عالية وتوصيل سريع عبر جميع الشبكات."
+          },
+          {
+            "question": "كم تكلفة WhatsApp API في الأردن مع Nabda OTP؟",
+            "answer": "تبدأ الخطة القياسية من 10 دولار شهرياً فقط (رسائل غير محدودة)."
+          },
+          {
+            "question": "هل يوجد تجربة مجانية لـ WhatsApp API في الأردن؟",
+            "answer": "نعم، تجربة مجانية كاملة لمدة 5 أيام بدون بطاقة ائتمان أو التزام."
+          },
+          {
+            "question": "هل Nabda OTP بديل جيد لـ Twilio في الأردن؟",
+            "answer": "نعم، يوفر حتى 90% من التكلفة مع رسائل غير محدودة، webhook فوري، ودعم عربي كامل."
+          },
+          {
+            "question": "هل يدعم Nabda OTP إرسال الصور والمستندات والوسائط؟",
+            "answer": "نعم، يدعم إرسال الرسائل النصية + الصور + الفيديوهات + المستندات PDF وغيرها بكل سهولة."
+          },
+          {
+            "question": "ما الفرق بين الـ Standard Gateway والـ Official WhatsApp Business API؟",
+            "answer": "الـ Standard (غير محدود بـ10$) مناسب لمعظم الشركات والمطورين. أما الـ Official فهو للشركات الكبرى."
+          },
+          {
+            "question": "كم يستغرق التوصيل وهل هناك دعم فني عربي؟",
+            "answer": "التوصيل سريع في معظم الحالات. يوجد دعم فني عربي كامل عبر واتساب أو تذكرة."
+          }
+        ]
       }
     },
     {
@@ -755,39 +755,39 @@
         "99.99% Uptime Guaranteed"
       ],
       "faq": [
-    {
-      "question": "What is the cheapest WhatsApp API in Qatar in 2026?",
-      "answer": "Nabda OTP is currently the cheapest WhatsApp API in Qatar at only $10 per month for unlimited messages with no per-message fees."
-    },
-    {
-      "question": "Does Nabda OTP support Qatari phone numbers +974?",
-      "answer": "Yes, it supports all Qatari numbers (+974) with high efficiency across Ooredoo and Vodafone Qatar."
-    },
-    {
-      "question": "How much does WhatsApp API cost in Qatar with Nabda OTP?",
-      "answer": "The standard plan starts at just $10 per month (unlimited messages)."
-    },
-    {
-      "question": "Is there a free trial for WhatsApp API in Qatar?",
-      "answer": "Yes, a full 5-day free trial with no credit card or commitment required."
-    },
-    {
-      "question": "Is Nabda OTP a good alternative to Twilio in Qatar?",
-      "answer": "Yes, it saves up to 90% with unlimited messages and full Arabic support."
-    },
-    {
-      "question": "Does Nabda OTP support sending images, documents, and media?",
-      "answer": "Yes, it supports text + images + videos + PDF documents and more."
-    },
-    {
-      "question": "What is the difference between Standard Gateway and Official WhatsApp Business API?",
-      "answer": "The Standard (unlimited at $10) is suitable for most businesses. The Official is for large enterprises needing the Green Badge."
-    },
-    {
-      "question": "How fast is the delivery and is there Arabic technical support?",
-      "answer": "Delivery is fast in most cases. Full Arabic technical support is available via WhatsApp or ticket."
-    }
-  ],
+        {
+          "question": "What is the cheapest WhatsApp API in Qatar in 2026?",
+          "answer": "Nabda OTP is currently the cheapest WhatsApp API in Qatar at only $10 per month for unlimited messages with no per-message fees."
+        },
+        {
+          "question": "Does Nabda OTP support Qatari phone numbers +974?",
+          "answer": "Yes, it supports all Qatari numbers (+974) with high efficiency across Ooredoo and Vodafone Qatar."
+        },
+        {
+          "question": "How much does WhatsApp API cost in Qatar with Nabda OTP?",
+          "answer": "The standard plan starts at just $10 per month (unlimited messages)."
+        },
+        {
+          "question": "Is there a free trial for WhatsApp API in Qatar?",
+          "answer": "Yes, a full 5-day free trial with no credit card or commitment required."
+        },
+        {
+          "question": "Is Nabda OTP a good alternative to Twilio in Qatar?",
+          "answer": "Yes, it saves up to 90% with unlimited messages and full Arabic support."
+        },
+        {
+          "question": "Does Nabda OTP support sending images, documents, and media?",
+          "answer": "Yes, it supports text + images + videos + PDF documents and more."
+        },
+        {
+          "question": "What is the difference between Standard Gateway and Official WhatsApp Business API?",
+          "answer": "The Standard (unlimited at $10) is suitable for most businesses. The Official is for large enterprises needing the Green Badge."
+        },
+        {
+          "question": "How fast is the delivery and is there Arabic technical support?",
+          "answer": "Delivery is fast in most cases. Full Arabic technical support is available via WhatsApp or ticket."
+        }
+      ],
       "ar": {
         "language": "ar",
         "dir": "rtl",
@@ -809,39 +809,39 @@
           "توفر 99.99%"
         ],
         "faq": [
-      {
-        "question": "ما هو أرخص WhatsApp API في قطر 2026؟",
-        "answer": "نبضة OTP هو أرخص خدمة WhatsApp API في قطر حالياً بـ 10 دولار فقط شهرياً مقابل رسائل غير محدودة."
-      },
-      {
-        "question": "هل Nabda OTP يدعم أرقام الهواتف القطرية +974؟",
-        "answer": "نعم، يدعم جميع أرقام قطر (+974) بكفاءة عالية عبر شبكات Ooredoo و Vodafone Qatar."
-      },
-      {
-        "question": "كم تكلفة WhatsApp API في قطر مع Nabda OTP؟",
-        "answer": "تبدأ الخطة القياسية من 10 دولار شهرياً فقط (رسائل غير محدودة)."
-      },
-      {
-        "question": "هل يوجد تجربة مجانية لـ WhatsApp API في قطر؟",
-        "answer": "نعم، تجربة مجانية كاملة لمدة 5 أيام بدون بطاقة ائتمان أو التزام."
-      },
-      {
-        "question": "هل Nabda OTP بديل جيد لـ Twilio في قطر؟",
-        "answer": "نعم، يوفر حتى 90% من التكلفة مع رسائل غير محدودة ودعم عربي كامل."
-      },
-      {
-        "question": "هل يدعم Nabda OTP إرسال الصور والمستندات والوسائط؟",
-        "answer": "نعم، يدعم إرسال الرسائل النصية + الصور + الفيديوهات + المستندات PDF وغيرها بكل سهولة."
-      },
-      {
-        "question": "ما الفرق بين الـ Standard Gateway والـ Official WhatsApp Business API؟",
-        "answer": "الـ Standard (غير محدود بـ10$) مناسب لمعظم الشركات والمطورين. أما الـ Official فهو للشركات الكبرى."
-      },
-      {
-        "question": "كم يستغرق التوصيل وهل هناك دعم فني عربي؟",
-        "answer": "التوصيل فوري في معظم الحالات. يوجد دعم فني عربي كامل عبر واتساب أو تذكرة."
-      }
-    ]
+          {
+            "question": "ما هو أرخص WhatsApp API في قطر 2026؟",
+            "answer": "نبضة OTP هو أرخص خدمة WhatsApp API في قطر حالياً بـ 10 دولار فقط شهرياً مقابل رسائل غير محدودة."
+          },
+          {
+            "question": "هل Nabda OTP يدعم أرقام الهواتف القطرية +974؟",
+            "answer": "نعم، يدعم جميع أرقام قطر (+974) بكفاءة عالية عبر شبكات Ooredoo و Vodafone Qatar."
+          },
+          {
+            "question": "كم تكلفة WhatsApp API في قطر مع Nabda OTP؟",
+            "answer": "تبدأ الخطة القياسية من 10 دولار شهرياً فقط (رسائل غير محدودة)."
+          },
+          {
+            "question": "هل يوجد تجربة مجانية لـ WhatsApp API في قطر؟",
+            "answer": "نعم، تجربة مجانية كاملة لمدة 5 أيام بدون بطاقة ائتمان أو التزام."
+          },
+          {
+            "question": "هل Nabda OTP بديل جيد لـ Twilio في قطر؟",
+            "answer": "نعم، يوفر حتى 90% من التكلفة مع رسائل غير محدودة ودعم عربي كامل."
+          },
+          {
+            "question": "هل يدعم Nabda OTP إرسال الصور والمستندات والوسائط؟",
+            "answer": "نعم، يدعم إرسال الرسائل النصية + الصور + الفيديوهات + المستندات PDF وغيرها بكل سهولة."
+          },
+          {
+            "question": "ما الفرق بين الـ Standard Gateway والـ Official WhatsApp Business API؟",
+            "answer": "الـ Standard (غير محدود بـ10$) مناسب لمعظم الشركات والمطورين. أما الـ Official فهو للشركات الكبرى."
+          },
+          {
+            "question": "كم يستغرق التوصيل وهل هناك دعم فني عربي؟",
+            "answer": "التوصيل فوري في معظم الحالات. يوجد دعم فني عربي كامل عبر واتساب أو تذكرة."
+          }
+        ]
       }
     },
     {
@@ -856,8 +856,8 @@
       "metaDescription": "Nabda OTP – Affordable WhatsApp Gateway for the USA. $10/month unlimited messages, perfect for OTP, notifications, and transactional messaging. Easy integration and reliable delivery to US numbers.",
       "metaKeywords": "whatsapp api usa, whatsapp otp usa, cheap whatsapp api united states, whatsapp gateway usa, twilio alternative usa, nabda otp usa",
       "heroBadge": "🚀 Cost-effective WhatsApp solution for global businesses",
-      "heroH1": "Affordable WhatsApp API for the United States.",
-      "heroSubtitle": "Send unlimited OTP and transactional messages to US numbers with flat monthly pricing – ideal alternative to expensive per-message solutions.",
+      "heroH1": "The Cheapest WhatsApp Gateway in the United States.",
+      "heroSubtitle": "Send unlimited OTP and transactional messages to US numbers with flat monthly pricing and reliable delivery.",
       "heroPriceNote": "Starting at just <strong>$10/month</strong> — No per-message fees",
       "ctaPrimaryText": "Start Free Trial",
       "ctaSecondaryText": "View Documentation",
@@ -885,7 +885,46 @@
           "question": "Can I send media and documents to US numbers?",
           "answer": "Yes, supports text, images, videos, and document sending."
         }
-      ]
+      ],
+      "ar": {
+        "language": "ar",
+        "dir": "rtl",
+        "locale": "ar_US",
+        "whyUs": "لماذا تختار الفرق في الولايات المتحدة منصة نبضة OTP؟",
+        "metaTitle": "WhatsApp API الولايات المتحدة | أرخص واتساب أوتي بي API في أمريكا $10/شهر غير محدود | نبضة OTP",
+        "metaDescription": "نبضة OTP – بوابة واتساب اقتصادية في الولايات المتحدة. 10 دولار شهرياً رسائل غير محدودة، مثالية لرموز التحقق (OTP) والإشعارات والرسائل الخدمية. تكامل سهل وتوصيل موثوق للأرقام الأمريكية.",
+        "heroBadge": "🚀 حل واتساب اقتصادي للشركات العالمية",
+        "heroH1": "أرخص بوابة واتساب في الولايات المتحدة الأمريكية.",
+        "heroSubtitle": "أرسل عدد غير محدود من رموز التحقق OTP والرسائل الخدمية إلى الأرقام الأمريكية بسعر شهري ثابت وتوصيل موثوق.",
+        "heroPriceNote": "ابدأ من 10 دولار شهرياً فقط — بدون رسوم لكل رسالة",
+        "ctaPrimaryText": "ابدأ التجربة المجانية",
+        "ctaSecondaryText": "عرض التوثيق",
+        "seoIntro": "تقدم نبضة OTP للمطورين والشركات في أمريكا حلاً اقتصادياً وموثوقاً لخدمات واتساب مع إرسال غير محدود.",
+        "trustPoints": [
+          "يعمل مع الأرقام الأمريكية",
+          "رسائل غير محدودة بسعر ثابت",
+          "API سهل للمطورين",
+          "توفر 99.99%"
+        ],
+        "faq": [
+          {
+            "question": "هل يدعم Nabda OTP الأرقام الأمريكية (+1)؟",
+            "answer": "نعم، يدعم إرسال الرسائل إلى الأرقام الأمريكية بمعدلات توصيل جيدة للـ OTP والرسائل الخدمية."
+          },
+          {
+            "question": "ما هو أرخص WhatsApp API للشركات في الولايات المتحدة؟",
+            "answer": "نبضة OTP هو الخيار الأرخص بـ 10 دولار شهرياً فقط مقابل رسائل غير محدودة."
+          },
+          {
+            "question": "هل يوجد تجربة مجانية لـ WhatsApp API في أمريكا؟",
+            "answer": "نعم، تجربة مجانية كاملة لمدة 5 أيام بدون بطاقة ائتمان."
+          },
+          {
+            "question": "هل يمكنني إرسال الصور والمستندات إلى الأرقام الأمريكية؟",
+            "answer": "نعم، يدعم إرسال النصوص + الصور + الفيديوهات + المستندات."
+          }
+        ]
+      }
     },
     {
       "countryName": "Germany",
@@ -896,11 +935,11 @@
       "language": "en",
       "dir": "ltr",
       "metaTitle": "WhatsApp API Germany | Günstiger WhatsApp OTP API in Deutschland $10/Monat | Nabda OTP",
-      "metaDescription": "Nabda OTP – Günstiger WhatsApp Gateway für Deutschland. $10/Monat unbegrenzt Nachrichten, ideal für OTP und Transaktionsnachrichten. Starke Zuverlässigkeit und einfache Integration.",
+      "metaDescription": "Nabda OTP – Günstiger WhatsApp Gateway für Deutschland. $10/Monat unbegrenzt Nachrichten, ideal für OTP und Transaktionsnachrichten.",
       "metaKeywords": "whatsapp api deutschland, whatsapp otp germany, günstiger whatsapp api deutschland, whatsapp gateway germany, nabda otp germany",
       "heroBadge": "🚀 Reliable & affordable for European markets",
       "heroH1": "The Most Affordable WhatsApp API in Germany.",
-      "heroSubtitle": "Unlimited OTP and business messaging to German numbers with flat pricing and high delivery performance.",
+      "heroSubtitle": "Send unlimited OTP and transactional messages to German numbers with excellent delivery.",
       "heroPriceNote": "Starting at just <strong>$10/month</strong> — No per-message fees",
       "ctaPrimaryText": "Start Free Trial",
       "ctaSecondaryText": "View Documentation",
@@ -918,7 +957,7 @@
         },
         {
           "question": "Was kostet WhatsApp API in Deutschland?",
-          "answer": "Mit Nabda OTP nur 10 Dollar monatlich für unbegrenzte Nachrichten – deutlich günstiger als pro-Nachricht-Modelle."
+          "answer": "Mit Nabda OTP nur 10 Dollar monatlich für unbegrenzte Nachrichten."
         },
         {
           "question": "Gibt es eine kostenlose Testphase?",
@@ -928,7 +967,46 @@
           "question": "Kann ich Bilder und Dokumente versenden?",
           "answer": "Ja, vollständige Unterstützung für Medien und Dokumente."
         }
-      ]
+      ],
+      "ar": {
+        "language": "ar",
+        "dir": "rtl",
+        "locale": "ar_DE",
+        "whyUs": "لماذا تختار الفرق في ألمانيا منصة نبضة OTP؟",
+        "metaTitle": "WhatsApp API ألمانيا | أرخص واتساب أوتي بي API في ألمانيا $10/شهر | نبضة OTP",
+        "metaDescription": "نبضة OTP – بوابة واتساب رخيصة في ألمانيا. 10 دولار شهرياً رسائل غير محدودة، مثالية للـ OTP والرسائل الخدمية مع توصيل ممتاز.",
+        "heroBadge": "🚀 موثوق واقتصادي للأسواق الأوروبية",
+        "heroH1": "أرخص واتساب API في ألمانيا.",
+        "heroSubtitle": "أرسل رسائل OTP وإشعارات غير محدودة إلى الأرقام الألمانية بتوصيل ممتاز وسعر شهري ثابت.",
+        "heroPriceNote": "ابدأ من 10 دولار شهرياً فقط — بدون رسوم لكل رسالة",
+        "ctaPrimaryText": "ابدأ التجربة المجانية",
+        "ctaSecondaryText": "عرض التوثيق",
+        "seoIntro": "تقدم نبضة OTP حلول واتساب اقتصادية وموثوقة للشركات والمطورين في ألمانيا وسوق DACH.",
+        "trustPoints": [
+          "توصيل ممتاز في ألمانيا",
+          "رسائل غير محدودة بسعر ثابت",
+          "دعم عربي وإنجليزي",
+          "توفر 99.99%"
+        ],
+        "faq": [
+          {
+            "question": "هل يدعم Nabda OTP الأرقام الألمانية (+49)؟",
+            "answer": "نعم، يدعم الأرقام الألمانية بمعدل توصيل عالي للـ OTP والإشعارات."
+          },
+          {
+            "question": "كم تكلفة WhatsApp API في ألمانيا مع Nabda OTP؟",
+            "answer": "10 دولار شهرياً فقط مقابل رسائل غير محدودة."
+          },
+          {
+            "question": "هل يوجد تجربة مجانية في ألمانيا؟",
+            "answer": "نعم، تجربة مجانية 5 أيام بدون بطاقة ائتمان."
+          },
+          {
+            "question": "هل يمكن إرسال الصور والمستندات؟",
+            "answer": "نعم، يدعم إرسال النصوص والصور والفيديوهات والمستندات."
+          }
+        ]
+      }
     },
     {
       "countryName": "Turkey",
@@ -939,7 +1017,7 @@
       "language": "en",
       "dir": "ltr",
       "metaTitle": "WhatsApp API Turkey | Türkiye'de En Ucuz WhatsApp OTP API $10/ay | Nabda OTP",
-      "metaDescription": "Nabda OTP – Türkiye'de en uygun fiyatlı WhatsApp API. Aylık 10 dolar sınırsız mesaj, OTP ve bildirimler için ideal. +90 numaraları destekler.",
+      "metaDescription": "Nabda OTP – Türkiye'de en uygun fiyatlı WhatsApp API. Aylık 10 dolar sınırsız mesaj, OTP ve bildirimler için ideal.",
       "metaKeywords": "whatsapp api türkiye, whatsapp otp turkey, türkiyede en ucuz whatsapp api, nabda otp turkey, whatsapp gateway türkiye",
       "heroBadge": "🚀 Optimized for the Turkish market",
       "heroH1": "Turkey's Most Affordable WhatsApp Gateway.",
@@ -971,7 +1049,46 @@
           "question": "Medya ve belge gönderebiliyor muyum?",
           "answer": "Evet, resim, video ve belge desteği mevcuttur."
         }
-      ]
+      ],
+      "ar": {
+        "language": "ar",
+        "dir": "rtl",
+        "locale": "ar_TR",
+        "whyUs": "لماذا تختار الفرق في تركيا منصة نبضة OTP؟",
+        "metaTitle": "WhatsApp API تركيا | أرخص واتساب أوتي بي API في تركيا $10/شهر | نبضة OTP",
+        "metaDescription": "نبضة OTP – أرخص خدمة واتساب API في تركيا. 10 دولار شهرياً رسائل غير محدودة، مثالية للـ OTP والإشعارات مع دعم عربي وتركي.",
+        "heroBadge": "🚀 محسن خصيصاً للسوق التركي",
+        "heroH1": "أرخص بوابة واتساب في تركيا.",
+        "heroSubtitle": "أرسل رسائل OTP وإشعارات غير محدودة في جميع أنحاء تركيا بتوصيل ممتاز وسعر شهري ثابت.",
+        "heroPriceNote": "ابدأ من 10 دولار شهرياً فقط — بدون رسوم لكل رسالة",
+        "ctaPrimaryText": "ابدأ التجربة المجانية",
+        "ctaSecondaryText": "عرض التوثيق",
+        "seoIntro": "تقدم نبضة OTP حلول واتساب موثوقة ورخيصة مصممة خصيصاً للشركات والمطورين في تركيا.",
+        "trustPoints": [
+          "توصيل قوي للشبكات التركية",
+          "رسائل غير محدودة",
+          "دعم عربي وتركي كامل",
+          "توفر 99.99%"
+        ],
+        "faq": [
+          {
+            "question": "هل يدعم Nabda OTP الأرقام التركية +90؟",
+            "answer": "نعم، يدعم جميع الأرقام التركية بمعدل نجاح عالي جداً."
+          },
+          {
+            "question": "ما هو أرخص WhatsApp API في تركيا؟",
+            "answer": "نبضة OTP بـ 10 دولار شهرياً فقط مقابل رسائل غير محدودة."
+          },
+          {
+            "question": "هل يوجد تجربة مجانية في تركيا؟",
+            "answer": "نعم، تجربة مجانية كاملة لمدة 5 أيام."
+          },
+          {
+            "question": "هل يمكن إرسال الصور والمستندات؟",
+            "answer": "نعم، يدعم إرسال الوسائط والمستندات بكل سهولة."
+          }
+        ]
+      }
     },
     {
       "countryName": "Kuwait",
@@ -1112,39 +1229,39 @@
         "99.99% Uptime Guaranteed"
       ],
       "faq": [
-    {
-      "question": "What is the cheapest WhatsApp API in Oman in 2026?",
-      "answer": "Nabda OTP is currently the cheapest WhatsApp API in Oman at only $10 per month for unlimited messages with no per-message fees."
-    },
-    {
-      "question": "Does Nabda OTP support Omani phone numbers +968?",
-      "answer": "Yes, it supports all Omani numbers (+968) with reliable delivery."
-    },
-    {
-      "question": "How much does WhatsApp API cost in Oman with Nabda OTP?",
-      "answer": "The standard plan starts at just $10 per month (unlimited messages)."
-    },
-    {
-      "question": "Is there a free trial for WhatsApp API in Oman?",
-      "answer": "Yes, a full 5-day free trial with no credit card or commitment required."
-    },
-    {
-      "question": "Is Nabda OTP a good alternative to Twilio in Oman?",
-      "answer": "Yes, it offers up to 90% savings with unlimited messages and full Arabic support."
-    },
-    {
-      "question": "Does Nabda OTP support sending images, documents, and media?",
-      "answer": "Yes, it supports text + images + videos + PDF documents and more."
-    },
-    {
-      "question": "What is the difference between Standard Gateway and Official WhatsApp Business API?",
-      "answer": "The Standard (unlimited at $10) is suitable for most businesses. The Official is for large enterprises."
-    },
-    {
-      "question": "How fast is the delivery and is there Arabic technical support?",
-      "answer": "Delivery is fast in most cases. Full Arabic technical support is available."
-    }
-  ],
+        {
+          "question": "What is the cheapest WhatsApp API in Oman in 2026?",
+          "answer": "Nabda OTP is currently the cheapest WhatsApp API in Oman at only $10 per month for unlimited messages with no per-message fees."
+        },
+        {
+          "question": "Does Nabda OTP support Omani phone numbers +968?",
+          "answer": "Yes, it supports all Omani numbers (+968) with reliable delivery."
+        },
+        {
+          "question": "How much does WhatsApp API cost in Oman with Nabda OTP?",
+          "answer": "The standard plan starts at just $10 per month (unlimited messages)."
+        },
+        {
+          "question": "Is there a free trial for WhatsApp API in Oman?",
+          "answer": "Yes, a full 5-day free trial with no credit card or commitment required."
+        },
+        {
+          "question": "Is Nabda OTP a good alternative to Twilio in Oman?",
+          "answer": "Yes, it offers up to 90% savings with unlimited messages and full Arabic support."
+        },
+        {
+          "question": "Does Nabda OTP support sending images, documents, and media?",
+          "answer": "Yes, it supports text + images + videos + PDF documents and more."
+        },
+        {
+          "question": "What is the difference between Standard Gateway and Official WhatsApp Business API?",
+          "answer": "The Standard (unlimited at $10) is suitable for most businesses. The Official is for large enterprises."
+        },
+        {
+          "question": "How fast is the delivery and is there Arabic technical support?",
+          "answer": "Delivery is fast in most cases. Full Arabic technical support is available."
+        }
+      ],
       "ar": {
         "language": "ar",
         "dir": "rtl",
@@ -1166,39 +1283,39 @@
           "توفر 99.99%"
         ],
         "faq": [
-      {
-        "question": "ما هو أرخص WhatsApp API في عمان 2026؟",
-        "answer": "نبضة OTP هو أرخص خدمة WhatsApp API في سلطنة عمان حالياً بـ 10 دولار فقط شهرياً مقابل رسائل غير محدودة."
-      },
-      {
-        "question": "هل Nabda OTP يدعم أرقام الهواتف العمانية +968؟",
-        "answer": "نعم، يدعم جميع أرقام عمان (+968) بكفاءة عالية وتوصيل موثوق."
-      },
-      {
-        "question": "كم تكلفة WhatsApp API في عمان مع Nabda OTP؟",
-        "answer": "تبدأ الخطة القياسية من 10 دولار شهرياً فقط (رسائل غير محدودة)."
-      },
-      {
-        "question": "هل يوجد تجربة مجانية لـ WhatsApp API في عمان؟",
-        "answer": "نعم، تجربة مجانية كاملة لمدة 5 أيام بدون بطاقة ائتمان أو التزام."
-      },
-      {
-        "question": "هل Nabda OTP بديل جيد لـ Twilio في عمان؟",
-        "answer": "نعم، يوفر حتى 90% من التكلفة مع رسائل غير محدودة ودعم عربي كامل."
-      },
-      {
-        "question": "هل يدعم Nabda OTP إرسال الصور والمستندات والوسائط؟",
-        "answer": "نعم، يدعم إرسال الرسائل النصية + الصور + الفيديوهات + المستندات PDF وغيرها بكل سهولة."
-      },
-      {
-        "question": "ما الفرق بين الـ Standard Gateway والـ Official WhatsApp Business API؟",
-        "answer": "الـ Standard (غير محدود بـ10$) مناسب لمعظم الشركات والمطورين. أما الـ Official فهو للشركات الكبرى."
-      },
-      {
-        "question": "كم يستغرق التوصيل وهل هناك دعم فني عربي؟",
-        "answer": "التوصيل سريع في معظم الحالات. يوجد دعم فني عربي كامل عبر واتساب أو تذكرة."
-      }
-    ]
+          {
+            "question": "ما هو أرخص WhatsApp API في عمان 2026؟",
+            "answer": "نبضة OTP هو أرخص خدمة WhatsApp API في سلطنة عمان حالياً بـ 10 دولار فقط شهرياً مقابل رسائل غير محدودة."
+          },
+          {
+            "question": "هل Nabda OTP يدعم أرقام الهواتف العمانية +968؟",
+            "answer": "نعم، يدعم جميع أرقام عمان (+968) بكفاءة عالية وتوصيل موثوق."
+          },
+          {
+            "question": "كم تكلفة WhatsApp API في عمان مع Nabda OTP؟",
+            "answer": "تبدأ الخطة القياسية من 10 دولار شهرياً فقط (رسائل غير محدودة)."
+          },
+          {
+            "question": "هل يوجد تجربة مجانية لـ WhatsApp API في عمان؟",
+            "answer": "نعم، تجربة مجانية كاملة لمدة 5 أيام بدون بطاقة ائتمان أو التزام."
+          },
+          {
+            "question": "هل Nabda OTP بديل جيد لـ Twilio في عمان؟",
+            "answer": "نعم، يوفر حتى 90% من التكلفة مع رسائل غير محدودة ودعم عربي كامل."
+          },
+          {
+            "question": "هل يدعم Nabda OTP إرسال الصور والمستندات والوسائط؟",
+            "answer": "نعم، يدعم إرسال الرسائل النصية + الصور + الفيديوهات + المستندات PDF وغيرها بكل سهولة."
+          },
+          {
+            "question": "ما الفرق بين الـ Standard Gateway والـ Official WhatsApp Business API؟",
+            "answer": "الـ Standard (غير محدود بـ10$) مناسب لمعظم الشركات والمطورين. أما الـ Official فهو للشركات الكبرى."
+          },
+          {
+            "question": "كم يستغرق التوصيل وهل هناك دعم فني عربي؟",
+            "answer": "التوصيل سريع في معظم الحالات. يوجد دعم فني عربي كامل عبر واتساب أو تذكرة."
+          }
+        ]
       }
     },
     {
@@ -1225,40 +1342,40 @@
         "Full Arabic support",
         "99.99% Uptime Guaranteed"
       ],
-     "faq": [
-    {
-      "question": "What is the cheapest WhatsApp API in Lebanon in 2026?",
-      "answer": "Nabda OTP is currently the cheapest WhatsApp API in Lebanon at only $10 per month for unlimited messages with no per-message fees."
-    },
-    {
-      "question": "Does Nabda OTP support Lebanese phone numbers +961?",
-      "answer": "Yes, it supports all Lebanese numbers (+961) with reliable delivery despite local network conditions."
-    },
-    {
-      "question": "How much does WhatsApp API cost in Lebanon with Nabda OTP?",
-      "answer": "The standard plan starts at just $10 per month (unlimited messages)."
-    },
-    {
-      "question": "Is there a free trial for WhatsApp API in Lebanon?",
-      "answer": "Yes, a full 5-day free trial with no credit card or commitment required."
-    },
-    {
-      "question": "Is Nabda OTP a good alternative to Twilio in Lebanon?",
-      "answer": "Yes, it provides significant cost savings with unlimited messages and full Arabic support."
-    },
-    {
-      "question": "Does Nabda OTP support sending images, documents, and media?",
-      "answer": "Yes, it supports text + images + videos + PDF documents and more."
-    },
-    {
-      "question": "What is the difference between Standard Gateway and Official WhatsApp Business API?",
-      "answer": "The Standard (unlimited at $10) is suitable for most businesses. The Official is for large enterprises."
-    },
-    {
-      "question": "How fast is the delivery and is there Arabic technical support?",
-      "answer": "Delivery is as fast as network conditions allow. Full Arabic technical support is available."
-    }
-  ],
+      "faq": [
+        {
+          "question": "What is the cheapest WhatsApp API in Lebanon in 2026?",
+          "answer": "Nabda OTP is currently the cheapest WhatsApp API in Lebanon at only $10 per month for unlimited messages with no per-message fees."
+        },
+        {
+          "question": "Does Nabda OTP support Lebanese phone numbers +961?",
+          "answer": "Yes, it supports all Lebanese numbers (+961) with reliable delivery despite local network conditions."
+        },
+        {
+          "question": "How much does WhatsApp API cost in Lebanon with Nabda OTP?",
+          "answer": "The standard plan starts at just $10 per month (unlimited messages)."
+        },
+        {
+          "question": "Is there a free trial for WhatsApp API in Lebanon?",
+          "answer": "Yes, a full 5-day free trial with no credit card or commitment required."
+        },
+        {
+          "question": "Is Nabda OTP a good alternative to Twilio in Lebanon?",
+          "answer": "Yes, it provides significant cost savings with unlimited messages and full Arabic support."
+        },
+        {
+          "question": "Does Nabda OTP support sending images, documents, and media?",
+          "answer": "Yes, it supports text + images + videos + PDF documents and more."
+        },
+        {
+          "question": "What is the difference between Standard Gateway and Official WhatsApp Business API?",
+          "answer": "The Standard (unlimited at $10) is suitable for most businesses. The Official is for large enterprises."
+        },
+        {
+          "question": "How fast is the delivery and is there Arabic technical support?",
+          "answer": "Delivery is as fast as network conditions allow. Full Arabic technical support is available."
+        }
+      ],
       "ar": {
         "language": "ar",
         "dir": "rtl",
@@ -1280,39 +1397,39 @@
           "توفر 99.99%"
         ],
         "faq": [
-      {
-        "question": "ما هو أرخص WhatsApp API في لبنان 2026؟",
-        "answer": "نبضة OTP هو أرخص خدمة WhatsApp API في لبنان حالياً بـ 10 دولار فقط شهرياً مقابل رسائل غير محدودة."
-      },
-      {
-        "question": "هل Nabda OTP يدعم أرقام الهواتف اللبنانية +961؟",
-        "answer": "نعم، يدعم جميع أرقام لبنان (+961) بكفاءة عالية رغم الظروف الشبكية."
-      },
-      {
-        "question": "كم تكلفة WhatsApp API في لبنان مع Nabda OTP؟",
-        "answer": "تبدأ الخطة القياسية من 10 دولار شهرياً فقط (رسائل غير محدودة)."
-      },
-      {
-        "question": "هل يوجد تجربة مجانية لـ WhatsApp API في لبنان؟",
-        "answer": "نعم، تجربة مجانية كاملة لمدة 5 أيام بدون بطاقة ائتمان أو التزام."
-      },
-      {
-        "question": "هل Nabda OTP بديل جيد لـ Twilio في لبنان؟",
-        "answer": "نعم، يوفر حتى 90% من التكلفة مع رسائل غير محدودة ودعم عربي كامل."
-      },
-      {
-        "question": "هل يدعم Nabda OTP إرسال الصور والمستندات والوسائط؟",
-        "answer": "نعم، يدعم إرسال الرسائل النصية + الصور + الفيديوهات + المستندات PDF وغيرها بكل سهولة."
-      },
-      {
-        "question": "ما الفرق بين الـ Standard Gateway والـ Official WhatsApp Business API؟",
-        "answer": "الـ Standard (غير محدود بـ10$) مناسب لمعظم الشركات والمطورين. أما الـ Official فهو للشركات الكبرى."
-      },
-      {
-        "question": "كم يستغرق التوصيل وهل هناك دعم فني عربي؟",
-        "answer": "التوصيل سريع قدر الإمكان. يوجد دعم فني عربي كامل عبر واتساب أو تذكرة."
-      }
-    ]
+          {
+            "question": "ما هو أرخص WhatsApp API في لبنان 2026؟",
+            "answer": "نبضة OTP هو أرخص خدمة WhatsApp API في لبنان حالياً بـ 10 دولار فقط شهرياً مقابل رسائل غير محدودة."
+          },
+          {
+            "question": "هل Nabda OTP يدعم أرقام الهواتف اللبنانية +961؟",
+            "answer": "نعم، يدعم جميع أرقام لبنان (+961) بكفاءة عالية رغم الظروف الشبكية."
+          },
+          {
+            "question": "كم تكلفة WhatsApp API في لبنان مع Nabda OTP؟",
+            "answer": "تبدأ الخطة القياسية من 10 دولار شهرياً فقط (رسائل غير محدودة)."
+          },
+          {
+            "question": "هل يوجد تجربة مجانية لـ WhatsApp API في لبنان؟",
+            "answer": "نعم، تجربة مجانية كاملة لمدة 5 أيام بدون بطاقة ائتمان أو التزام."
+          },
+          {
+            "question": "هل Nabda OTP بديل جيد لـ Twilio في لبنان؟",
+            "answer": "نعم، يوفر حتى 90% من التكلفة مع رسائل غير محدودة ودعم عربي كامل."
+          },
+          {
+            "question": "هل يدعم Nabda OTP إرسال الصور والمستندات والوسائط؟",
+            "answer": "نعم، يدعم إرسال الرسائل النصية + الصور + الفيديوهات + المستندات PDF وغيرها بكل سهولة."
+          },
+          {
+            "question": "ما الفرق بين الـ Standard Gateway والـ Official WhatsApp Business API؟",
+            "answer": "الـ Standard (غير محدود بـ10$) مناسب لمعظم الشركات والمطورين. أما الـ Official فهو للشركات الكبرى."
+          },
+          {
+            "question": "كم يستغرق التوصيل وهل هناك دعم فني عربي؟",
+            "answer": "التوصيل سريع قدر الإمكان. يوجد دعم فني عربي كامل عبر واتساب أو تذكرة."
+          }
+        ]
       }
     },
     {
@@ -1340,39 +1457,39 @@
         "99.99% Uptime Guaranteed"
       ],
       "faq": [
-    {
-      "question": "What is the cheapest WhatsApp API in Morocco in 2026?",
-      "answer": "Nabda OTP is currently the cheapest WhatsApp API in Morocco at only $10 per month for unlimited messages with no per-message fees."
-    },
-    {
-      "question": "Does Nabda OTP support Moroccan phone numbers +212?",
-      "answer": "Yes, it supports all Moroccan numbers (+212) with high efficiency across Maroc Telecom, Orange, and Inwi."
-    },
-    {
-      "question": "How much does WhatsApp API cost in Morocco with Nabda OTP?",
-      "answer": "The standard plan starts at just $10 per month (unlimited messages)."
-    },
-    {
-      "question": "Is there a free trial for WhatsApp API in Morocco?",
-      "answer": "Yes, a full 5-day free trial with no credit card or commitment required."
-    },
-    {
-      "question": "Is Nabda OTP a good alternative to Twilio in Morocco?",
-      "answer": "Yes, it saves up to 90% with unlimited messages and full Arabic support."
-    },
-    {
-      "question": "Does Nabda OTP support sending images, documents, and media?",
-      "answer": "Yes, it supports text + images + videos + PDF documents and more."
-    },
-    {
-      "question": "What is the difference between Standard Gateway and Official WhatsApp Business API?",
-      "answer": "The Standard (unlimited at $10) is suitable for most businesses. The Official is for large enterprises."
-    },
-    {
-      "question": "How fast is the delivery and is there Arabic technical support?",
-      "answer": "Delivery is fast in most cases. Full Arabic technical support is available."
-    }
-  ],
+        {
+          "question": "What is the cheapest WhatsApp API in Morocco in 2026?",
+          "answer": "Nabda OTP is currently the cheapest WhatsApp API in Morocco at only $10 per month for unlimited messages with no per-message fees."
+        },
+        {
+          "question": "Does Nabda OTP support Moroccan phone numbers +212?",
+          "answer": "Yes, it supports all Moroccan numbers (+212) with high efficiency across Maroc Telecom, Orange, and Inwi."
+        },
+        {
+          "question": "How much does WhatsApp API cost in Morocco with Nabda OTP?",
+          "answer": "The standard plan starts at just $10 per month (unlimited messages)."
+        },
+        {
+          "question": "Is there a free trial for WhatsApp API in Morocco?",
+          "answer": "Yes, a full 5-day free trial with no credit card or commitment required."
+        },
+        {
+          "question": "Is Nabda OTP a good alternative to Twilio in Morocco?",
+          "answer": "Yes, it saves up to 90% with unlimited messages and full Arabic support."
+        },
+        {
+          "question": "Does Nabda OTP support sending images, documents, and media?",
+          "answer": "Yes, it supports text + images + videos + PDF documents and more."
+        },
+        {
+          "question": "What is the difference between Standard Gateway and Official WhatsApp Business API?",
+          "answer": "The Standard (unlimited at $10) is suitable for most businesses. The Official is for large enterprises."
+        },
+        {
+          "question": "How fast is the delivery and is there Arabic technical support?",
+          "answer": "Delivery is fast in most cases. Full Arabic technical support is available."
+        }
+      ],
       "ar": {
         "language": "ar",
         "dir": "rtl",
@@ -1394,39 +1511,39 @@
           "توفر 99.99%"
         ],
         "faq": [
-      {
-        "question": "ما هو أرخص WhatsApp API في المغرب 2026؟",
-        "answer": "نبضة OTP هو أرخص خدمة WhatsApp API في المغرب حالياً بـ 10 دولار فقط شهرياً مقابل رسائل غير محدودة."
-      },
-      {
-        "question": "هل Nabda OTP يدعم أرقام الهواتف المغربية +212؟",
-        "answer": "نعم، يدعم جميع أرقام المغرب (+212) بكفاءة عالية عبر شبكات Maroc Telecom، Orange و Inwi."
-      },
-      {
-        "question": "كم تكلفة WhatsApp API في المغرب مع Nabda OTP؟",
-        "answer": "تبدأ الخطة القياسية من 10 دولار شهرياً فقط (رسائل غير محدودة)."
-      },
-      {
-        "question": "هل يوجد تجربة مجانية لـ WhatsApp API في المغرب؟",
-        "answer": "نعم، تجربة مجانية كاملة لمدة 5 أيام بدون بطاقة ائتمان أو التزام."
-      },
-      {
-        "question": "هل Nabda OTP بديل جيد لـ Twilio في المغرب؟",
-        "answer": "نعم، يوفر حتى 90% من التكلفة مع رسائل غير محدودة ودعم عربي كامل."
-      },
-      {
-        "question": "هل يدعم Nabda OTP إرسال الصور والمستندات والوسائط؟",
-        "answer": "نعم، يدعم إرسال الرسائل النصية + الصور + الفيديوهات + المستندات PDF وغيرها بكل سهولة."
-      },
-      {
-        "question": "ما الفرق بين الـ Standard Gateway والـ Official WhatsApp Business API؟",
-        "answer": "الـ Standard (غير محدود بـ10$) مناسب لمعظم الشركات والمطورين. أما الـ Official فهو للشركات الكبرى."
-      },
-      {
-        "question": "كم يستغرق التوصيل وهل هناك دعم فني عربي؟",
-        "answer": "التوصيل سريع في معظم الحالات. يوجد دعم فني عربي كامل عبر واتساب أو تذكرة."
-      }
-    ]
+          {
+            "question": "ما هو أرخص WhatsApp API في المغرب 2026؟",
+            "answer": "نبضة OTP هو أرخص خدمة WhatsApp API في المغرب حالياً بـ 10 دولار فقط شهرياً مقابل رسائل غير محدودة."
+          },
+          {
+            "question": "هل Nabda OTP يدعم أرقام الهواتف المغربية +212؟",
+            "answer": "نعم، يدعم جميع أرقام المغرب (+212) بكفاءة عالية عبر شبكات Maroc Telecom، Orange و Inwi."
+          },
+          {
+            "question": "كم تكلفة WhatsApp API في المغرب مع Nabda OTP؟",
+            "answer": "تبدأ الخطة القياسية من 10 دولار شهرياً فقط (رسائل غير محدودة)."
+          },
+          {
+            "question": "هل يوجد تجربة مجانية لـ WhatsApp API في المغرب؟",
+            "answer": "نعم، تجربة مجانية كاملة لمدة 5 أيام بدون بطاقة ائتمان أو التزام."
+          },
+          {
+            "question": "هل Nabda OTP بديل جيد لـ Twilio في المغرب؟",
+            "answer": "نعم، يوفر حتى 90% من التكلفة مع رسائل غير محدودة ودعم عربي كامل."
+          },
+          {
+            "question": "هل يدعم Nabda OTP إرسال الصور والمستندات والوسائط؟",
+            "answer": "نعم، يدعم إرسال الرسائل النصية + الصور + الفيديوهات + المستندات PDF وغيرها بكل سهولة."
+          },
+          {
+            "question": "ما الفرق بين الـ Standard Gateway والـ Official WhatsApp Business API؟",
+            "answer": "الـ Standard (غير محدود بـ10$) مناسب لمعظم الشركات والمطورين. أما الـ Official فهو للشركات الكبرى."
+          },
+          {
+            "question": "كم يستغرق التوصيل وهل هناك دعم فني عربي؟",
+            "answer": "التوصيل سريع في معظم الحالات. يوجد دعم فني عربي كامل عبر واتساب أو تذكرة."
+          }
+        ]
       }
     },
     {
@@ -1454,39 +1571,39 @@
         "99.99% Uptime Guaranteed"
       ],
       "faq": [
-    {
-      "question": "What is the cheapest WhatsApp API in Libya in 2026?",
-      "answer": "Nabda OTP is currently the cheapest WhatsApp API in Libya at only $10 per month for unlimited messages with no per-message fees."
-    },
-    {
-      "question": "Does Nabda OTP support Libyan phone numbers +218?",
-      "answer": "Yes, it supports all Libyan numbers (+218) with reliable delivery across available networks."
-    },
-    {
-      "question": "How much does WhatsApp API cost in Libya with Nabda OTP?",
-      "answer": "The standard plan starts at just $10 per month (unlimited messages)."
-    },
-    {
-      "question": "Is there a free trial for WhatsApp API in Libya?",
-      "answer": "Yes, a full 5-day free trial with no credit card or commitment required."
-    },
-    {
-      "question": "Is Nabda OTP a good alternative to Twilio in Libya?",
-      "answer": "Yes, it is the most affordable option with unlimited messages and full Arabic support."
-    },
-    {
-      "question": "Does Nabda OTP support sending images, documents, and media?",
-      "answer": "Yes, it supports text + images + videos + PDF documents and more."
-    },
-    {
-      "question": "What is the difference between Standard Gateway and Official WhatsApp Business API?",
-      "answer": "The Standard (unlimited at $10) is suitable for most businesses. The Official is for large enterprises."
-    },
-    {
-      "question": "How fast is the delivery and is there Arabic technical support?",
-      "answer": "Delivery depends on network conditions but is optimized for speed. Full Arabic support is available."
-    }
-  ],
+        {
+          "question": "What is the cheapest WhatsApp API in Libya in 2026?",
+          "answer": "Nabda OTP is currently the cheapest WhatsApp API in Libya at only $10 per month for unlimited messages with no per-message fees."
+        },
+        {
+          "question": "Does Nabda OTP support Libyan phone numbers +218?",
+          "answer": "Yes, it supports all Libyan numbers (+218) with reliable delivery across available networks."
+        },
+        {
+          "question": "How much does WhatsApp API cost in Libya with Nabda OTP?",
+          "answer": "The standard plan starts at just $10 per month (unlimited messages)."
+        },
+        {
+          "question": "Is there a free trial for WhatsApp API in Libya?",
+          "answer": "Yes, a full 5-day free trial with no credit card or commitment required."
+        },
+        {
+          "question": "Is Nabda OTP a good alternative to Twilio in Libya?",
+          "answer": "Yes, it is the most affordable option with unlimited messages and full Arabic support."
+        },
+        {
+          "question": "Does Nabda OTP support sending images, documents, and media?",
+          "answer": "Yes, it supports text + images + videos + PDF documents and more."
+        },
+        {
+          "question": "What is the difference between Standard Gateway and Official WhatsApp Business API?",
+          "answer": "The Standard (unlimited at $10) is suitable for most businesses. The Official is for large enterprises."
+        },
+        {
+          "question": "How fast is the delivery and is there Arabic technical support?",
+          "answer": "Delivery depends on network conditions but is optimized for speed. Full Arabic support is available."
+        }
+      ],
       "ar": {
         "language": "ar",
         "dir": "rtl",
@@ -1508,39 +1625,39 @@
           "توفر 99.99%"
         ],
         "faq": [
-      {
-        "question": "ما هو أرخص WhatsApp API في ليبيا 2026؟",
-        "answer": "نبضة OTP هو أرخص خدمة WhatsApp API في ليبيا حالياً بـ 10 دولار فقط شهرياً مقابل رسائل غير محدودة."
-      },
-      {
-        "question": "هل Nabda OTP يدعم أرقام الهواتف الليبية +218؟",
-        "answer": "نعم، يدعم جميع أرقام ليبيا (+218) بكفاءة عالية وتوصيل موثوق عبر الشبكات المتاحة."
-      },
-      {
-        "question": "كم تكلفة WhatsApp API في ليبيا مع Nabda OTP؟",
-        "answer": "تبدأ الخطة القياسية من 10 دولار شهرياً فقط (رسائل غير محدودة)."
-      },
-      {
-        "question": "هل يوجد تجربة مجانية لـ WhatsApp API في ليبيا؟",
-        "answer": "نعم، تجربة مجانية كاملة لمدة 5 أيام بدون بطاقة ائتمان أو التزام."
-      },
-      {
-        "question": "هل Nabda OTP بديل جيد لـ Twilio في ليبيا؟",
-        "answer": "نعم، هو أرخص بديل لـ Twilio في ليبيا مع رسائل غير محدودة ودعم عربي كامل."
-      },
-      {
-        "question": "هل يدعم Nabda OTP إرسال الصور والمستندات والوسائط؟",
-        "answer": "نعم، يدعم إرسال الرسائل النصية + الصور + الفيديوهات + المستندات PDF وغيرها بكل سهولة."
-      },
-      {
-        "question": "ما الفرق بين الـ Standard Gateway والـ Official WhatsApp Business API؟",
-        "answer": "الـ Standard (غير محدود بـ10$) مناسب لمعظم الشركات والمطورين. أما الـ Official فهو للشركات الكبرى."
-      },
-      {
-        "question": "كم يستغرق التوصيل وهل هناك دعم فني عربي؟",
-        "answer": "التوصيل سريع قدر الإمكان حسب الشبكة. يوجد دعم فني عربي كامل عبر واتساب أو تذكرة."
-      }
-    ]
+          {
+            "question": "ما هو أرخص WhatsApp API في ليبيا 2026؟",
+            "answer": "نبضة OTP هو أرخص خدمة WhatsApp API في ليبيا حالياً بـ 10 دولار فقط شهرياً مقابل رسائل غير محدودة."
+          },
+          {
+            "question": "هل Nabda OTP يدعم أرقام الهواتف الليبية +218؟",
+            "answer": "نعم، يدعم جميع أرقام ليبيا (+218) بكفاءة عالية وتوصيل موثوق عبر الشبكات المتاحة."
+          },
+          {
+            "question": "كم تكلفة WhatsApp API في ليبيا مع Nabda OTP؟",
+            "answer": "تبدأ الخطة القياسية من 10 دولار شهرياً فقط (رسائل غير محدودة)."
+          },
+          {
+            "question": "هل يوجد تجربة مجانية لـ WhatsApp API في ليبيا؟",
+            "answer": "نعم، تجربة مجانية كاملة لمدة 5 أيام بدون بطاقة ائتمان أو التزام."
+          },
+          {
+            "question": "هل Nabda OTP بديل جيد لـ Twilio في ليبيا؟",
+            "answer": "نعم، هو أرخص بديل لـ Twilio في ليبيا مع رسائل غير محدودة ودعم عربي كامل."
+          },
+          {
+            "question": "هل يدعم Nabda OTP إرسال الصور والمستندات والوسائط؟",
+            "answer": "نعم، يدعم إرسال الرسائل النصية + الصور + الفيديوهات + المستندات PDF وغيرها بكل سهولة."
+          },
+          {
+            "question": "ما الفرق بين الـ Standard Gateway والـ Official WhatsApp Business API؟",
+            "answer": "الـ Standard (غير محدود بـ10$) مناسب لمعظم الشركات والمطورين. أما الـ Official فهو للشركات الكبرى."
+          },
+          {
+            "question": "كم يستغرق التوصيل وهل هناك دعم فني عربي؟",
+            "answer": "التوصيل سريع قدر الإمكان حسب الشبكة. يوجد دعم فني عربي كامل عبر واتساب أو تذكرة."
+          }
+        ]
       }
     },
     {
@@ -1568,39 +1685,39 @@
         "99.99% Uptime Guaranteed"
       ],
       "faq": [
-    {
-      "question": "What is the cheapest WhatsApp API in Tunisia in 2026?",
-      "answer": "Nabda OTP is currently the cheapest WhatsApp API in Tunisia at only $10 per month for unlimited messages with no per-message fees."
-    },
-    {
-      "question": "Does Nabda OTP support Tunisian phone numbers +216?",
-      "answer": "Yes, it supports all Tunisian numbers (+216) with fast delivery across Orange, Tunisie Telecom, and Ooredoo."
-    },
-    {
-      "question": "How much does WhatsApp API cost in Tunisia with Nabda OTP?",
-      "answer": "The standard plan starts at just $10 per month (unlimited messages)."
-    },
-    {
-      "question": "Is there a free trial for WhatsApp API in Tunisia?",
-      "answer": "Yes, a full 5-day free trial with no credit card or commitment required."
-    },
-    {
-      "question": "Is Nabda OTP a good alternative to Twilio in Tunisia?",
-      "answer": "Yes, it saves up to 90% with unlimited messages and full Arabic support."
-    },
-    {
-      "question": "Does Nabda OTP support sending images, documents, and media?",
-      "answer": "Yes, it supports text + images + videos + PDF documents and more."
-    },
-    {
-      "question": "What is the difference between Standard Gateway and Official WhatsApp Business API?",
-      "answer": "The Standard (unlimited at $10) is suitable for most businesses. The Official is for large enterprises."
-    },
-    {
-      "question": "How fast is the delivery and is there Arabic technical support?",
-      "answer": "Delivery is fast in most cases. Full Arabic technical support is available."
-    }
-  ],
+        {
+          "question": "What is the cheapest WhatsApp API in Tunisia in 2026?",
+          "answer": "Nabda OTP is currently the cheapest WhatsApp API in Tunisia at only $10 per month for unlimited messages with no per-message fees."
+        },
+        {
+          "question": "Does Nabda OTP support Tunisian phone numbers +216?",
+          "answer": "Yes, it supports all Tunisian numbers (+216) with fast delivery across Orange, Tunisie Telecom, and Ooredoo."
+        },
+        {
+          "question": "How much does WhatsApp API cost in Tunisia with Nabda OTP?",
+          "answer": "The standard plan starts at just $10 per month (unlimited messages)."
+        },
+        {
+          "question": "Is there a free trial for WhatsApp API in Tunisia?",
+          "answer": "Yes, a full 5-day free trial with no credit card or commitment required."
+        },
+        {
+          "question": "Is Nabda OTP a good alternative to Twilio in Tunisia?",
+          "answer": "Yes, it saves up to 90% with unlimited messages and full Arabic support."
+        },
+        {
+          "question": "Does Nabda OTP support sending images, documents, and media?",
+          "answer": "Yes, it supports text + images + videos + PDF documents and more."
+        },
+        {
+          "question": "What is the difference between Standard Gateway and Official WhatsApp Business API?",
+          "answer": "The Standard (unlimited at $10) is suitable for most businesses. The Official is for large enterprises."
+        },
+        {
+          "question": "How fast is the delivery and is there Arabic technical support?",
+          "answer": "Delivery is fast in most cases. Full Arabic technical support is available."
+        }
+      ],
       "ar": {
         "language": "ar",
         "dir": "rtl",
@@ -1622,39 +1739,39 @@
           "توفر 99.99%"
         ],
         "faq": [
-      {
-        "question": "ما هو أرخص WhatsApp API في تونس 2026؟",
-        "answer": "نبضة OTP هو أرخص خدمة WhatsApp API في تونس حالياً بـ 10 دولار فقط شهرياً مقابل رسائل غير محدودة."
-      },
-      {
-        "question": "هل Nabda OTP يدعم أرقام الهواتف التونسية +216؟",
-        "answer": "نعم، يدعم جميع أرقام تونس (+216) بكفاءة عالية عبر شبكات Orange، Tunisie Telecom و Ooredoo."
-      },
-      {
-        "question": "كم تكلفة WhatsApp API في تونس مع Nabda OTP؟",
-        "answer": "تبدأ الخطة القياسية من 10 دولار شهرياً فقط (رسائل غير محدودة)."
-      },
-      {
-        "question": "هل يوجد تجربة مجانية لـ WhatsApp API في تونس؟",
-        "answer": "نعم، تجربة مجانية كاملة لمدة 5 أيام بدون بطاقة ائتمان أو التزام."
-      },
-      {
-        "question": "هل Nabda OTP بديل جيد لـ Twilio في تونس؟",
-        "answer": "نعم، يوفر حتى 90% من التكلفة مع رسائل غير محدودة ودعم عربي كامل."
-      },
-      {
-        "question": "هل يدعم Nabda OTP إرسال الصور والمستندات والوسائط؟",
-        "answer": "نعم، يدعم إرسال الرسائل النصية + الصور + الفيديوهات + المستندات PDF وغيرها بكل سهولة."
-      },
-      {
-        "question": "ما الفرق بين الـ Standard Gateway والـ Official WhatsApp Business API؟",
-        "answer": "الـ Standard (غير محدود بـ10$) مناسب لمعظم الشركات والمطورين. أما الـ Official فهو للشركات الكبرى."
-      },
-      {
-        "question": "كم يستغرق التوصيل وهل هناك دعم فني عربي؟",
-        "answer": "التوصيل سريع في معظم الحالات. يوجد دعم فني عربي كامل عبر واتساب أو تذكرة."
-      }
-    ]
+          {
+            "question": "ما هو أرخص WhatsApp API في تونس 2026؟",
+            "answer": "نبضة OTP هو أرخص خدمة WhatsApp API في تونس حالياً بـ 10 دولار فقط شهرياً مقابل رسائل غير محدودة."
+          },
+          {
+            "question": "هل Nabda OTP يدعم أرقام الهواتف التونسية +216؟",
+            "answer": "نعم، يدعم جميع أرقام تونس (+216) بكفاءة عالية عبر شبكات Orange، Tunisie Telecom و Ooredoo."
+          },
+          {
+            "question": "كم تكلفة WhatsApp API في تونس مع Nabda OTP؟",
+            "answer": "تبدأ الخطة القياسية من 10 دولار شهرياً فقط (رسائل غير محدودة)."
+          },
+          {
+            "question": "هل يوجد تجربة مجانية لـ WhatsApp API في تونس؟",
+            "answer": "نعم، تجربة مجانية كاملة لمدة 5 أيام بدون بطاقة ائتمان أو التزام."
+          },
+          {
+            "question": "هل Nabda OTP بديل جيد لـ Twilio في تونس؟",
+            "answer": "نعم، يوفر حتى 90% من التكلفة مع رسائل غير محدودة ودعم عربي كامل."
+          },
+          {
+            "question": "هل يدعم Nabda OTP إرسال الصور والمستندات والوسائط؟",
+            "answer": "نعم، يدعم إرسال الرسائل النصية + الصور + الفيديوهات + المستندات PDF وغيرها بكل سهولة."
+          },
+          {
+            "question": "ما الفرق بين الـ Standard Gateway والـ Official WhatsApp Business API؟",
+            "answer": "الـ Standard (غير محدود بـ10$) مناسب لمعظم الشركات والمطورين. أما الـ Official فهو للشركات الكبرى."
+          },
+          {
+            "question": "كم يستغرق التوصيل وهل هناك دعم فني عربي؟",
+            "answer": "التوصيل سريع في معظم الحالات. يوجد دعم فني عربي كامل عبر واتساب أو تذكرة."
+          }
+        ]
       }
     },
     {
@@ -1682,39 +1799,39 @@
         "99.99% Uptime Guaranteed"
       ],
       "faq": [
-    {
-      "question": "What is the cheapest WhatsApp API in Algeria in 2026?",
-      "answer": "Nabda OTP is currently the cheapest WhatsApp API in Algeria at only $10 per month for unlimited messages with no per-message fees."
-    },
-    {
-      "question": "Does Nabda OTP support Algerian phone numbers +213?",
-      "answer": "Yes, it supports all Algerian numbers (+213) with high efficiency across Mobilis, Djezzy, and Ooredoo."
-    },
-    {
-      "question": "How much does WhatsApp API cost in Algeria with Nabda OTP?",
-      "answer": "The standard plan starts at just $10 per month (unlimited messages)."
-    },
-    {
-      "question": "Is there a free trial for WhatsApp API in Algeria?",
-      "answer": "Yes, a full 5-day free trial with no credit card or commitment required."
-    },
-    {
-      "question": "Is Nabda OTP a good alternative to Twilio in Algeria?",
-      "answer": "Yes, it saves up to 90% with unlimited messages and full Arabic support."
-    },
-    {
-      "question": "Does Nabda OTP support sending images, documents, and media?",
-      "answer": "Yes, it supports text + images + videos + PDF documents and more."
-    },
-    {
-      "question": "What is the difference between Standard Gateway and Official WhatsApp Business API?",
-      "answer": "The Standard (unlimited at $10) is suitable for most businesses. The Official is for large enterprises."
-    },
-    {
-      "question": "How fast is the delivery and is there Arabic technical support?",
-      "answer": "Delivery is fast in most cases. Full Arabic technical support is available."
-    }
-  ],
+        {
+          "question": "What is the cheapest WhatsApp API in Algeria in 2026?",
+          "answer": "Nabda OTP is currently the cheapest WhatsApp API in Algeria at only $10 per month for unlimited messages with no per-message fees."
+        },
+        {
+          "question": "Does Nabda OTP support Algerian phone numbers +213?",
+          "answer": "Yes, it supports all Algerian numbers (+213) with high efficiency across Mobilis, Djezzy, and Ooredoo."
+        },
+        {
+          "question": "How much does WhatsApp API cost in Algeria with Nabda OTP?",
+          "answer": "The standard plan starts at just $10 per month (unlimited messages)."
+        },
+        {
+          "question": "Is there a free trial for WhatsApp API in Algeria?",
+          "answer": "Yes, a full 5-day free trial with no credit card or commitment required."
+        },
+        {
+          "question": "Is Nabda OTP a good alternative to Twilio in Algeria?",
+          "answer": "Yes, it saves up to 90% with unlimited messages and full Arabic support."
+        },
+        {
+          "question": "Does Nabda OTP support sending images, documents, and media?",
+          "answer": "Yes, it supports text + images + videos + PDF documents and more."
+        },
+        {
+          "question": "What is the difference between Standard Gateway and Official WhatsApp Business API?",
+          "answer": "The Standard (unlimited at $10) is suitable for most businesses. The Official is for large enterprises."
+        },
+        {
+          "question": "How fast is the delivery and is there Arabic technical support?",
+          "answer": "Delivery is fast in most cases. Full Arabic technical support is available."
+        }
+      ],
       "ar": {
         "language": "ar",
         "dir": "rtl",
@@ -1736,39 +1853,39 @@
           "توفر 99.99%"
         ],
         "faq": [
-      {
-        "question": "ما هو أرخص WhatsApp API في الجزائر 2026؟",
-        "answer": "نبضة OTP هو أرخص خدمة WhatsApp API في الجزائر حالياً بـ 10 دولار فقط شهرياً مقابل رسائل غير محدودة."
-      },
-      {
-        "question": "هل Nabda OTP يدعم أرقام الهواتف الجزائرية +213؟",
-        "answer": "نعم، يدعم جميع أرقام الجزائر (+213) بكفاءة عالية عبر شبكات Mobilis، Djezzy و Ooredoo."
-      },
-      {
-        "question": "كم تكلفة WhatsApp API في الجزائر مع Nabda OTP؟",
-        "answer": "تبدأ الخطة القياسية من 10 دولار شهرياً فقط (رسائل غير محدودة)."
-      },
-      {
-        "question": "هل يوجد تجربة مجانية لـ WhatsApp API في الجزائر؟",
-        "answer": "نعم، تجربة مجانية كاملة لمدة 5 أيام بدون بطاقة ائتمان أو التزام."
-      },
-      {
-        "question": "هل Nabda OTP بديل جيد لـ Twilio في الجزائر؟",
-        "answer": "نعم، يوفر حتى 90% من التكلفة مع رسائل غير محدودة ودعم عربي كامل."
-      },
-      {
-        "question": "هل يدعم Nabda OTP إرسال الصور والمستندات والوسائط؟",
-        "answer": "نعم، يدعم إرسال الرسائل النصية + الصور + الفيديوهات + المستندات PDF وغيرها بكل سهولة."
-      },
-      {
-        "question": "ما الفرق بين الـ Standard Gateway والـ Official WhatsApp Business API؟",
-        "answer": "الـ Standard (غير محدود بـ10$) مناسب لمعظم الشركات والمطورين. أما الـ Official فهو للشركات الكبرى."
-      },
-      {
-        "question": "كم يستغرق التوصيل وهل هناك دعم فني عربي؟",
-        "answer": "التوصيل سريع في معظم الحالات. يوجد دعم فني عربي كامل عبر واتساب أو تذكرة."
-      }
-    ]
+          {
+            "question": "ما هو أرخص WhatsApp API في الجزائر 2026؟",
+            "answer": "نبضة OTP هو أرخص خدمة WhatsApp API في الجزائر حالياً بـ 10 دولار فقط شهرياً مقابل رسائل غير محدودة."
+          },
+          {
+            "question": "هل Nabda OTP يدعم أرقام الهواتف الجزائرية +213؟",
+            "answer": "نعم، يدعم جميع أرقام الجزائر (+213) بكفاءة عالية عبر شبكات Mobilis، Djezzy و Ooredoo."
+          },
+          {
+            "question": "كم تكلفة WhatsApp API في الجزائر مع Nabda OTP؟",
+            "answer": "تبدأ الخطة القياسية من 10 دولار شهرياً فقط (رسائل غير محدودة)."
+          },
+          {
+            "question": "هل يوجد تجربة مجانية لـ WhatsApp API في الجزائر؟",
+            "answer": "نعم، تجربة مجانية كاملة لمدة 5 أيام بدون بطاقة ائتمان أو التزام."
+          },
+          {
+            "question": "هل Nabda OTP بديل جيد لـ Twilio في الجزائر؟",
+            "answer": "نعم، يوفر حتى 90% من التكلفة مع رسائل غير محدودة ودعم عربي كامل."
+          },
+          {
+            "question": "هل يدعم Nabda OTP إرسال الصور والمستندات والوسائط؟",
+            "answer": "نعم، يدعم إرسال الرسائل النصية + الصور + الفيديوهات + المستندات PDF وغيرها بكل سهولة."
+          },
+          {
+            "question": "ما الفرق بين الـ Standard Gateway والـ Official WhatsApp Business API؟",
+            "answer": "الـ Standard (غير محدود بـ10$) مناسب لمعظم الشركات والمطورين. أما الـ Official فهو للشركات الكبرى."
+          },
+          {
+            "question": "كم يستغرق التوصيل وهل هناك دعم فني عربي؟",
+            "answer": "التوصيل سريع في معظم الحالات. يوجد دعم فني عربي كامل عبر واتساب أو تذكرة."
+          }
+        ]
       }
     },
     {
@@ -1910,39 +2027,39 @@
         "99.99% Uptime Guaranteed"
       ],
       "faq": [
-    {
-      "question": "What is the cheapest WhatsApp API in Palestine in 2026?",
-      "answer": "Nabda OTP is currently the cheapest WhatsApp API in Palestine at only $10 per month for unlimited messages with no per-message fees."
-    },
-    {
-      "question": "Does Nabda OTP support Palestinian phone numbers +970?",
-      "answer": "Yes, it supports all Palestinian numbers (+970) with reliable delivery."
-    },
-    {
-      "question": "How much does WhatsApp API cost in Palestine with Nabda OTP?",
-      "answer": "The standard plan starts at just $10 per month (unlimited messages)."
-    },
-    {
-      "question": "Is there a free trial for WhatsApp API in Palestine?",
-      "answer": "Yes, a full 5-day free trial with no credit card or commitment required."
-    },
-    {
-      "question": "Is Nabda OTP a good alternative to Twilio in Palestine?",
-      "answer": "Yes, it saves up to 90% with unlimited messages and full Arabic support."
-    },
-    {
-      "question": "Does Nabda OTP support sending images, documents, and media?",
-      "answer": "Yes, it supports text + images + videos + PDF documents and more."
-    },
-    {
-      "question": "What is the difference between Standard Gateway and Official WhatsApp Business API?",
-      "answer": "The Standard (unlimited at $10) is suitable for most businesses. The Official is for large enterprises."
-    },
-    {
-      "question": "How fast is the delivery and is there Arabic technical support?",
-      "answer": "Delivery is optimized for local conditions. Full Arabic technical support is available."
-    }
-  ],
+        {
+          "question": "What is the cheapest WhatsApp API in Palestine in 2026?",
+          "answer": "Nabda OTP is currently the cheapest WhatsApp API in Palestine at only $10 per month for unlimited messages with no per-message fees."
+        },
+        {
+          "question": "Does Nabda OTP support Palestinian phone numbers +970?",
+          "answer": "Yes, it supports all Palestinian numbers (+970) with reliable delivery."
+        },
+        {
+          "question": "How much does WhatsApp API cost in Palestine with Nabda OTP?",
+          "answer": "The standard plan starts at just $10 per month (unlimited messages)."
+        },
+        {
+          "question": "Is there a free trial for WhatsApp API in Palestine?",
+          "answer": "Yes, a full 5-day free trial with no credit card or commitment required."
+        },
+        {
+          "question": "Is Nabda OTP a good alternative to Twilio in Palestine?",
+          "answer": "Yes, it saves up to 90% with unlimited messages and full Arabic support."
+        },
+        {
+          "question": "Does Nabda OTP support sending images, documents, and media?",
+          "answer": "Yes, it supports text + images + videos + PDF documents and more."
+        },
+        {
+          "question": "What is the difference between Standard Gateway and Official WhatsApp Business API?",
+          "answer": "The Standard (unlimited at $10) is suitable for most businesses. The Official is for large enterprises."
+        },
+        {
+          "question": "How fast is the delivery and is there Arabic technical support?",
+          "answer": "Delivery is optimized for local conditions. Full Arabic technical support is available."
+        }
+      ],
       "ar": {
         "language": "ar",
         "dir": "rtl",
@@ -1964,39 +2081,39 @@
           "توفر 99.99%"
         ],
         "faq": [
-      {
-        "question": "ما هو أرخص WhatsApp API في فلسطين 2026؟",
-        "answer": "نبضة OTP هو أرخص خدمة WhatsApp API في فلسطين حالياً بـ 10 دولار فقط شهرياً مقابل رسائل غير محدودة."
-      },
-      {
-        "question": "هل Nabda OTP يدعم أرقام الهواتف الفلسطينية +970؟",
-        "answer": "نعم، يدعم جميع أرقام فلسطين (+970) بكفاءة عالية وتوصيل موثوق."
-      },
-      {
-        "question": "كم تكلفة WhatsApp API في فلسطين مع Nabda OTP؟",
-        "answer": "تبدأ الخطة القياسية من 10 دولار شهرياً فقط (رسائل غير محدودة)."
-      },
-      {
-        "question": "هل يوجد تجربة مجانية لـ WhatsApp API في فلسطين؟",
-        "answer": "نعم، تجربة مجانية كاملة لمدة 5 أيام بدون بطاقة ائتمان أو التزام."
-      },
-      {
-        "question": "هل Nabda OTP بديل جيد لـ Twilio في فلسطين؟",
-        "answer": "نعم، يوفر حتى 90% من التكلفة مع رسائل غير محدودة ودعم عربي كامل."
-      },
-      {
-        "question": "هل يدعم Nabda OTP إرسال الصور والمستندات والوسائط؟",
-        "answer": "نعم، يدعم إرسال الرسائل النصية + الصور + الفيديوهات + المستندات PDF وغيرها بكل سهولة."
-      },
-      {
-        "question": "ما الفرق بين الـ Standard Gateway والـ Official WhatsApp Business API؟",
-        "answer": "الـ Standard (غير محدود بـ10$) مناسب لمعظم الشركات والمطورين. أما الـ Official فهو للشركات الكبرى."
-      },
-      {
-        "question": "كم يستغرق التوصيل وهل هناك دعم فني عربي؟",
-        "answer": "التوصيل سريع قدر الإمكان. يوجد دعم فني عربي كامل عبر واتساب أو تذكرة."
-      }
-    ]
+          {
+            "question": "ما هو أرخص WhatsApp API في فلسطين 2026؟",
+            "answer": "نبضة OTP هو أرخص خدمة WhatsApp API في فلسطين حالياً بـ 10 دولار فقط شهرياً مقابل رسائل غير محدودة."
+          },
+          {
+            "question": "هل Nabda OTP يدعم أرقام الهواتف الفلسطينية +970؟",
+            "answer": "نعم، يدعم جميع أرقام فلسطين (+970) بكفاءة عالية وتوصيل موثوق."
+          },
+          {
+            "question": "كم تكلفة WhatsApp API في فلسطين مع Nabda OTP؟",
+            "answer": "تبدأ الخطة القياسية من 10 دولار شهرياً فقط (رسائل غير محدودة)."
+          },
+          {
+            "question": "هل يوجد تجربة مجانية لـ WhatsApp API في فلسطين؟",
+            "answer": "نعم، تجربة مجانية كاملة لمدة 5 أيام بدون بطاقة ائتمان أو التزام."
+          },
+          {
+            "question": "هل Nabda OTP بديل جيد لـ Twilio في فلسطين؟",
+            "answer": "نعم، يوفر حتى 90% من التكلفة مع رسائل غير محدودة ودعم عربي كامل."
+          },
+          {
+            "question": "هل يدعم Nabda OTP إرسال الصور والمستندات والوسائط؟",
+            "answer": "نعم، يدعم إرسال الرسائل النصية + الصور + الفيديوهات + المستندات PDF وغيرها بكل سهولة."
+          },
+          {
+            "question": "ما الفرق بين الـ Standard Gateway والـ Official WhatsApp Business API؟",
+            "answer": "الـ Standard (غير محدود بـ10$) مناسب لمعظم الشركات والمطورين. أما الـ Official فهو للشركات الكبرى."
+          },
+          {
+            "question": "كم يستغرق التوصيل وهل هناك دعم فني عربي؟",
+            "answer": "التوصيل سريع قدر الإمكان. يوجد دعم فني عربي كامل عبر واتساب أو تذكرة."
+          }
+        ]
       }
     },
     {
@@ -2024,39 +2141,39 @@
         "99.99% Uptime Guaranteed"
       ],
       "faq": [
-    {
-      "question": "What is the cheapest WhatsApp API in Sudan in 2026?",
-      "answer": "Nabda OTP is currently the cheapest WhatsApp API in Sudan at only $10 per month for unlimited messages with no per-message fees."
-    },
-    {
-      "question": "Does Nabda OTP support Sudanese phone numbers +249?",
-      "answer": "Yes, it supports all Sudanese numbers (+249) with reliable delivery across available networks."
-    },
-    {
-      "question": "How much does WhatsApp API cost in Sudan with Nabda OTP?",
-      "answer": "The standard plan starts at just $10 per month (unlimited messages)."
-    },
-    {
-      "question": "Is there a free trial for WhatsApp API in Sudan?",
-      "answer": "Yes, a full 5-day free trial with no credit card or commitment required."
-    },
-    {
-      "question": "Is Nabda OTP a good alternative to Twilio in Sudan?",
-      "answer": "Yes, it is the most affordable option with unlimited messages and full Arabic support."
-    },
-    {
-      "question": "Does Nabda OTP support sending images, documents, and media?",
-      "answer": "Yes, it supports text + images + videos + PDF documents and more."
-    },
-    {
-      "question": "What is the difference between Standard Gateway and Official WhatsApp Business API?",
-      "answer": "The Standard (unlimited at $10) is suitable for most businesses. The Official is for large enterprises."
-    },
-    {
-      "question": "How fast is the delivery and is there Arabic technical support?",
-      "answer": "Delivery is optimized for local conditions. Full Arabic technical support is available."
-    }
-  ],
+        {
+          "question": "What is the cheapest WhatsApp API in Sudan in 2026?",
+          "answer": "Nabda OTP is currently the cheapest WhatsApp API in Sudan at only $10 per month for unlimited messages with no per-message fees."
+        },
+        {
+          "question": "Does Nabda OTP support Sudanese phone numbers +249?",
+          "answer": "Yes, it supports all Sudanese numbers (+249) with reliable delivery across available networks."
+        },
+        {
+          "question": "How much does WhatsApp API cost in Sudan with Nabda OTP?",
+          "answer": "The standard plan starts at just $10 per month (unlimited messages)."
+        },
+        {
+          "question": "Is there a free trial for WhatsApp API in Sudan?",
+          "answer": "Yes, a full 5-day free trial with no credit card or commitment required."
+        },
+        {
+          "question": "Is Nabda OTP a good alternative to Twilio in Sudan?",
+          "answer": "Yes, it is the most affordable option with unlimited messages and full Arabic support."
+        },
+        {
+          "question": "Does Nabda OTP support sending images, documents, and media?",
+          "answer": "Yes, it supports text + images + videos + PDF documents and more."
+        },
+        {
+          "question": "What is the difference between Standard Gateway and Official WhatsApp Business API?",
+          "answer": "The Standard (unlimited at $10) is suitable for most businesses. The Official is for large enterprises."
+        },
+        {
+          "question": "How fast is the delivery and is there Arabic technical support?",
+          "answer": "Delivery is optimized for local conditions. Full Arabic technical support is available."
+        }
+      ],
       "ar": {
         "language": "ar",
         "dir": "rtl",
@@ -2078,39 +2195,39 @@
           "توفر 99.99%"
         ],
         "faq": [
-      {
-        "question": "ما هو أرخص WhatsApp API في السودان 2026؟",
-        "answer": "نبضة OTP هو أرخص خدمة WhatsApp API في السودان حالياً بـ 10 دولار فقط شهرياً مقابل رسائل غير محدودة."
-      },
-      {
-        "question": "هل Nabda OTP يدعم أرقام الهواتف السودانية +249؟",
-        "answer": "نعم، يدعم جميع أرقام السودان (+249) بكفاءة عالية وتوصيل موثوق عبر الشبكات المتاحة."
-      },
-      {
-        "question": "كم تكلفة WhatsApp API في السودان مع Nabda OTP؟",
-        "answer": "تبدأ الخطة القياسية من 10 دولار شهرياً فقط (رسائل غير محدودة)."
-      },
-      {
-        "question": "هل يوجد تجربة مجانية لـ WhatsApp API في السودان؟",
-        "answer": "نعم، تجربة مجانية كاملة لمدة 5 أيام بدون بطاقة ائتمان أو التزام."
-      },
-      {
-        "question": "هل Nabda OTP بديل جيد لـ Twilio في السودان؟",
-        "answer": "نعم، هو أرخص بديل لـ Twilio في السودان مع رسائل غير محدودة ودعم عربي كامل."
-      },
-      {
-        "question": "هل يدعم Nabda OTP إرسال الصور والمستندات والوسائط؟",
-        "answer": "نعم، يدعم إرسال الرسائل النصية + الصور + الفيديوهات + المستندات PDF وغيرها بكل سهولة."
-      },
-      {
-        "question": "ما الفرق بين الـ Standard Gateway والـ Official WhatsApp Business API؟",
-        "answer": "الـ Standard (غير محدود بـ10$) مناسب لمعظم الشركات والمطورين. أما الـ Official فهو للشركات الكبرى."
-      },
-      {
-        "question": "كم يستغرق التوصيل وهل هناك دعم فني عربي؟",
-        "answer": "التوصيل سريع قدر الإمكان. يوجد دعم فني عربي كامل عبر واتساب أو تذكرة."
-      }
-    ]
+          {
+            "question": "ما هو أرخص WhatsApp API في السودان 2026؟",
+            "answer": "نبضة OTP هو أرخص خدمة WhatsApp API في السودان حالياً بـ 10 دولار فقط شهرياً مقابل رسائل غير محدودة."
+          },
+          {
+            "question": "هل Nabda OTP يدعم أرقام الهواتف السودانية +249؟",
+            "answer": "نعم، يدعم جميع أرقام السودان (+249) بكفاءة عالية وتوصيل موثوق عبر الشبكات المتاحة."
+          },
+          {
+            "question": "كم تكلفة WhatsApp API في السودان مع Nabda OTP؟",
+            "answer": "تبدأ الخطة القياسية من 10 دولار شهرياً فقط (رسائل غير محدودة)."
+          },
+          {
+            "question": "هل يوجد تجربة مجانية لـ WhatsApp API في السودان؟",
+            "answer": "نعم، تجربة مجانية كاملة لمدة 5 أيام بدون بطاقة ائتمان أو التزام."
+          },
+          {
+            "question": "هل Nabda OTP بديل جيد لـ Twilio في السودان؟",
+            "answer": "نعم، هو أرخص بديل لـ Twilio في السودان مع رسائل غير محدودة ودعم عربي كامل."
+          },
+          {
+            "question": "هل يدعم Nabda OTP إرسال الصور والمستندات والوسائط؟",
+            "answer": "نعم، يدعم إرسال الرسائل النصية + الصور + الفيديوهات + المستندات PDF وغيرها بكل سهولة."
+          },
+          {
+            "question": "ما الفرق بين الـ Standard Gateway والـ Official WhatsApp Business API؟",
+            "answer": "الـ Standard (غير محدود بـ10$) مناسب لمعظم الشركات والمطورين. أما الـ Official فهو للشركات الكبرى."
+          },
+          {
+            "question": "كم يستغرق التوصيل وهل هناك دعم فني عربي؟",
+            "answer": "التوصيل سريع قدر الإمكان. يوجد دعم فني عربي كامل عبر واتساب أو تذكرة."
+          }
+        ]
       }
     },
     {
@@ -2138,39 +2255,39 @@
         "99.99% Uptime Guaranteed"
       ],
       "faq": [
-    {
-      "question": "What is the cheapest WhatsApp API in Yemen in 2026?",
-      "answer": "Nabda OTP is currently the cheapest WhatsApp API in Yemen at only $10 per month for unlimited messages with no per-message fees."
-    },
-    {
-      "question": "Does Nabda OTP support Yemeni phone numbers +967?",
-      "answer": "Yes, it supports all Yemeni numbers (+967) with reliable delivery across available networks."
-    },
-    {
-      "question": "How much does WhatsApp API cost in Yemen with Nabda OTP?",
-      "answer": "The standard plan starts at just $10 per month (unlimited messages)."
-    },
-    {
-      "question": "Is there a free trial for WhatsApp API in Yemen?",
-      "answer": "Yes, a full 5-day free trial with no credit card or commitment required."
-    },
-    {
-      "question": "Is Nabda OTP a good alternative to Twilio in Yemen?",
-      "answer": "Yes, it is the most affordable option with unlimited messages and full Arabic support."
-    },
-    {
-      "question": "Does Nabda OTP support sending images, documents, and media?",
-      "answer": "Yes, it supports text + images + videos + PDF documents and more."
-    },
-    {
-      "question": "What is the difference between Standard Gateway and Official WhatsApp Business API?",
-      "answer": "The Standard (unlimited at $10) is suitable for most businesses. The Official is for large enterprises."
-    },
-    {
-      "question": "How fast is the delivery and is there Arabic technical support?",
-      "answer": "Delivery is optimized for local conditions. Full Arabic technical support is available."
-    }
-  ],
+        {
+          "question": "What is the cheapest WhatsApp API in Yemen in 2026?",
+          "answer": "Nabda OTP is currently the cheapest WhatsApp API in Yemen at only $10 per month for unlimited messages with no per-message fees."
+        },
+        {
+          "question": "Does Nabda OTP support Yemeni phone numbers +967?",
+          "answer": "Yes, it supports all Yemeni numbers (+967) with reliable delivery across available networks."
+        },
+        {
+          "question": "How much does WhatsApp API cost in Yemen with Nabda OTP?",
+          "answer": "The standard plan starts at just $10 per month (unlimited messages)."
+        },
+        {
+          "question": "Is there a free trial for WhatsApp API in Yemen?",
+          "answer": "Yes, a full 5-day free trial with no credit card or commitment required."
+        },
+        {
+          "question": "Is Nabda OTP a good alternative to Twilio in Yemen?",
+          "answer": "Yes, it is the most affordable option with unlimited messages and full Arabic support."
+        },
+        {
+          "question": "Does Nabda OTP support sending images, documents, and media?",
+          "answer": "Yes, it supports text + images + videos + PDF documents and more."
+        },
+        {
+          "question": "What is the difference between Standard Gateway and Official WhatsApp Business API?",
+          "answer": "The Standard (unlimited at $10) is suitable for most businesses. The Official is for large enterprises."
+        },
+        {
+          "question": "How fast is the delivery and is there Arabic technical support?",
+          "answer": "Delivery is optimized for local conditions. Full Arabic technical support is available."
+        }
+      ],
       "ar": {
         "language": "ar",
         "dir": "rtl",
@@ -2192,39 +2309,39 @@
           "توفر 99.99%"
         ],
         "faq": [
-      {
-        "question": "ما هو أرخص WhatsApp API في اليمن 2026؟",
-        "answer": "نبضة OTP هو أرخص خدمة WhatsApp API في اليمن حالياً بـ 10 دولار فقط شهرياً مقابل رسائل غير محدودة."
-      },
-      {
-        "question": "هل Nabda OTP يدعم أرقام الهواتف اليمنية +967؟",
-        "answer": "نعم، يدعم جميع أرقام اليمن (+967) بكفاءة عالية وتوصيل موثوق عبر الشبكات المتاحة."
-      },
-      {
-        "question": "كم تكلفة WhatsApp API في اليمن مع Nabda OTP؟",
-        "answer": "تبدأ الخطة القياسية من 10 دولار شهرياً فقط (رسائل غير محدودة)."
-      },
-      {
-        "question": "هل يوجد تجربة مجانية لـ WhatsApp API في اليمن؟",
-        "answer": "نعم، تجربة مجانية كاملة لمدة 5 أيام بدون بطاقة ائتمان أو التزام."
-      },
-      {
-        "question": "هل Nabda OTP بديل جيد لـ Twilio في اليمن؟",
-        "answer": "نعم، هو أرخص بديل لـ Twilio في اليمن مع رسائل غير محدودة ودعم عربي كامل."
-      },
-      {
-        "question": "هل يدعم Nabda OTP إرسال الصور والمستندات والوسائط؟",
-        "answer": "نعم، يدعم إرسال الرسائل النصية + الصور + الفيديوهات + المستندات PDF وغيرها بكل سهولة."
-      },
-      {
-        "question": "ما الفرق بين الـ Standard Gateway والـ Official WhatsApp Business API؟",
-        "answer": "الـ Standard (غير محدود بـ10$) مناسب لمعظم الشركات والمطورين. أما الـ Official فهو للشركات الكبرى."
-      },
-      {
-        "question": "كم يستغرق التوصيل وهل هناك دعم فني عربي؟",
-        "answer": "التوصيل سريع قدر الإمكان. يوجد دعم فني عربي كامل عبر واتساب أو تذكرة."
-      }
-    ]
+          {
+            "question": "ما هو أرخص WhatsApp API في اليمن 2026؟",
+            "answer": "نبضة OTP هو أرخص خدمة WhatsApp API في اليمن حالياً بـ 10 دولار فقط شهرياً مقابل رسائل غير محدودة."
+          },
+          {
+            "question": "هل Nabda OTP يدعم أرقام الهواتف اليمنية +967؟",
+            "answer": "نعم، يدعم جميع أرقام اليمن (+967) بكفاءة عالية وتوصيل موثوق عبر الشبكات المتاحة."
+          },
+          {
+            "question": "كم تكلفة WhatsApp API في اليمن مع Nabda OTP؟",
+            "answer": "تبدأ الخطة القياسية من 10 دولار شهرياً فقط (رسائل غير محدودة)."
+          },
+          {
+            "question": "هل يوجد تجربة مجانية لـ WhatsApp API في اليمن؟",
+            "answer": "نعم، تجربة مجانية كاملة لمدة 5 أيام بدون بطاقة ائتمان أو التزام."
+          },
+          {
+            "question": "هل Nabda OTP بديل جيد لـ Twilio في اليمن؟",
+            "answer": "نعم، هو أرخص بديل لـ Twilio في اليمن مع رسائل غير محدودة ودعم عربي كامل."
+          },
+          {
+            "question": "هل يدعم Nabda OTP إرسال الصور والمستندات والوسائط؟",
+            "answer": "نعم، يدعم إرسال الرسائل النصية + الصور + الفيديوهات + المستندات PDF وغيرها بكل سهولة."
+          },
+          {
+            "question": "ما الفرق بين الـ Standard Gateway والـ Official WhatsApp Business API؟",
+            "answer": "الـ Standard (غير محدود بـ10$) مناسب لمعظم الشركات والمطورين. أما الـ Official فهو للشركات الكبرى."
+          },
+          {
+            "question": "كم يستغرق التوصيل وهل هناك دعم فني عربي؟",
+            "answer": "التوصيل سريع قدر الإمكان. يوجد دعم فني عربي كامل عبر واتساب أو تذكرة."
+          }
+        ]
       }
     }
   ]

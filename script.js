@@ -932,6 +932,21 @@ const GEO_COUNTRY_MAP = {
   JO: "jo",
   AE: "ae",
   SY: "sy",
+  US: "us",
+  KW: "kw",
+  BH: "bh",
+  DE: "de",
+  DZ: "dz",
+  LB: "lb",
+  LY: "ly",
+  MA: "ma",
+  OM: "om",
+  PS: "ps",
+  QA: "qa",
+  SD: "sd",
+  TN: "tn",
+  YE: "ye",
+  TR: "tr",
 };
 
 const GEO_COUNTRY_NAMES = {
@@ -943,6 +958,21 @@ const GEO_COUNTRY_NAMES = {
     JO: "Jordan",
     AE: "United Arab Emirates",
     SY: "Syria",
+    US: "United States",
+    KW: "Kuwait",
+    BH: "Bahrain",
+    DE: "Germany",
+    DZ: "Algeria",
+    LB: "Lebanon",
+    LY: "Libya",
+    MA: "Morocco",
+    OM: "Oman",
+    PS: "Palestine",
+    QA: "Qatar",
+    SD: "Sudan",
+    TN: "Tunisia",
+    YE: "Yemen",
+    TR: "Turkey",
   },
   ar: {
     EG: "مصر",
@@ -952,6 +982,21 @@ const GEO_COUNTRY_NAMES = {
     JO: "الأردن",
     AE: "الإمارات",
     SY: "سوريا",
+    US: "الولايات المتحدة الأمريكية",
+    KW: "الكويت",
+    BH: "البحرين",
+    DE: "ألمانيا",
+    DZ: "الجزائر",
+    LB: "لبنان",
+    LY: "ليبيا",
+    MA: "المغرب",
+    OM: "عمان",
+    PS: "فلسطين",
+    QA: "قطر",
+    SD: "السودان",
+    TN: "تونس",
+    TE: "اليمن",
+    TR: "تركيا",
   },
 };
 
@@ -1050,14 +1095,17 @@ function shouldSkipGeoBanner(countryCode) {
 
   const currentLang = getCurrentUiLang();
   const targetSlug = GEO_COUNTRY_MAP[countryCode];
-  const targetPath = currentLang === "ar" ? `/ar/${targetSlug}/` : `/${targetSlug}/`;
-  if (pathname === targetPath || pathname === targetPath.slice(0, -1)) return true;
+  const targetPath =
+    currentLang === "ar" ? `/ar/${targetSlug}/` : `/${targetSlug}/`;
+  if (pathname === targetPath || pathname === targetPath.slice(0, -1))
+    return true;
 
   return false;
 }
 
 function buildGeoBannerMarkup(countryCode, lang) {
-  const countryName = GEO_COUNTRY_NAMES[lang][countryCode] || GEO_COUNTRY_NAMES.en[countryCode];
+  const countryName =
+    GEO_COUNTRY_NAMES[lang][countryCode] || GEO_COUNTRY_NAMES.en[countryCode];
   const targetSlug = GEO_COUNTRY_MAP[countryCode];
   const isLocalHost =
     window.location.hostname === "localhost" ||
@@ -1214,3 +1262,14 @@ window.NabzaOTP = {
   getCurrentLang: () => currentLang,
   getLanguageFromPath,
 };
+
+document.addEventListener("DOMContentLoaded", function () {
+  // Force page title to prevent overrides
+  if (window.location.pathname.includes("/solutions")) {
+    document.title = "Solutions - Nabda OTP";
+  } else if (window.location.pathname.includes("/blogs")) {
+    document.title = "Blog - Nabda OTP | WhatsApp API Insights";
+  } else if (window.location.pathname.includes("/comparing")) {
+    document.title = "Nabda OTP vs Competitors - Best WhatsApp API Comparison";
+  }
+});
