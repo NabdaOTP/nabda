@@ -98,14 +98,33 @@ function buildBenefitsHtml(benefits) {
     .join("");
 }
 
+// function buildFaqHtml(faq) {
+//   return (faq || [])
+//     .map(
+//       (item) => `
+//     <article class="feature-card">
+//       <h3>${escapeHtml(item.question || "")}</h3>
+//       <p>${escapeHtml(item.answer || "")}</p>
+//     </article>
+//   `,
+//     )
+//     .join("");
+// }
 function buildFaqHtml(faq) {
-  return (faq || [])
+  if (!faq || faq.length === 0) return "";
+
+  return faq
     .map(
       (item) => `
-    <article class="feature-card">
-      <h3>${escapeHtml(item.question || "")}</h3>
-      <p>${escapeHtml(item.answer || "")}</p>
-    </article>
+    <div class="faq-item">
+      <button class="faq-question">
+        ${escapeHtml(item.question)}
+        <span class="faq-icon">+</span>
+      </button>
+      <div class="faq-answer">
+        <p>${escapeHtml(item.answer)}</p>
+      </div>
+    </div>
   `,
     )
     .join("");

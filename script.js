@@ -226,6 +226,15 @@ const translations = {
     "pricing.contact.price": "Contact Us",
     "pricing.contact.cta": "Contact Us",
     "pricing.contact.note": "We'll set everything up for you",
+    "pricing.yearly.badge": "1 MONTH FREE",
+    "pricing.yearly.title": "Unlimited WhatsApp (Annual)",
+    "pricing.yearly.subtitle": "12 months for the price of 11",
+    "pricing.yearly.bestForLine": "Best for: Long-term savings & big teams",
+    "pricing.yearly.cta": "Choose Yearly Plan",
+    "pricing.yearly.note": "Save 8.33% • Billed annually",
+
+    // Frequently asked questions
+    "asked.questions": "Frequently asked questions",
 
     // CTA
     "cta.title": "Ready to send your first message?",
@@ -336,6 +345,7 @@ const translations = {
     "pricing.subtitle":
       "بدون رسوم خفية. بدون رسوم لكل رسالة. أفضل قيمة لـ WhatsApp API.",
     "pricing.period": "/شهرياً",
+    "pricing.period.yearly": "/سنوياً",
     "pricing.feature1": "رسائل واتساب غير محدودة",
     "pricing.feature2": "بدون رسوم لكل رسالة",
     "pricing.feature3": "تجربة مجانية 5 أيام",
@@ -364,12 +374,21 @@ const translations = {
     "pricing.contact.price": "تواصل معنا",
     "pricing.contact.cta": "تواصل معنا",
     "pricing.contact.note": "سنقوم بإعداد كل شيء من أجلك",
-
+    "pricing.yearly.badge": "شهر مجاني",
+    "pricing.yearly.title": "واتساب غير محدود (سنوي)",
+    "pricing.yearly.subtitle": "12 شهر بسعر 11 شهر",
+    "pricing.yearly.bestForLine":
+      "الأنسب لـ: التوفير طويل الأمد والفرق الكبيرة",
+    "pricing.yearly.cta": "اختر الخطة السنوية",
+    "pricing.yearly.note": "وفّر 8.33% • يتم الدفع سنوياً",
     // CTA
     "cta.title": "مستعد لإرسال رسالتك الأولى؟",
     "cta.subtitle":
       "انضم إلى أكثر من 65 شركة عربية تستخدم أرخص WhatsApp API. ابدأ تجربتك المجانية لمدة 5 أيام اليوم.",
     "cta.button": "ابدأ مجاناً",
+
+    // Frequently asked questions
+    "asked.questions": "الأسئلة الشائعة",
 
     // Payment Methods
     "payment.title": "طرق الدفع المقبولة",
@@ -1273,3 +1292,22 @@ document.addEventListener("DOMContentLoaded", function () {
     document.title = "Nabda OTP vs Competitors - Best WhatsApp API Comparison";
   }
 });
+
+// FAQ Accordion
+function initFaqAccordion() {
+  document.querySelectorAll(".faq-item").forEach((item) => {
+    const question = item.querySelector(".faq-question");
+
+    question.addEventListener("click", () => {
+      // Close all others
+      document.querySelectorAll(".faq-item").forEach((other) => {
+        if (other !== item) other.classList.remove("active");
+      });
+
+      item.classList.toggle("active");
+    });
+  });
+}
+
+// Call it after page load
+document.addEventListener("DOMContentLoaded", initFaqAccordion);
