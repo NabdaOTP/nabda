@@ -1311,3 +1311,60 @@ function initFaqAccordion() {
 
 // Call it after page load
 document.addEventListener("DOMContentLoaded", initFaqAccordion);
+
+// ====================== Dynamic Pricing Calculator - Fixed & Robust ======================
+function initDynamicPricing() {
+  const slider = document.getElementById("messageSlider");
+  if (!slider) {
+    return;
+  }
+
+  const messageCount = document.getElementById("messageCount");
+  const nabdaCost = document.getElementById("nabdaCost");
+  const ultraCost = document.getElementById("ultraCost");
+  const nabdaPerMsg = document.getElementById("nabdaPerMsg");
+  const ultraPerMsg = document.getElementById("ultraPerMsg");
+
+  function updatePricing() {
+    const messages = Math.max(1, parseInt(slider.value, 10) || 1);
+    const pricingModel = slider.getAttribute("data-pricing-model") || "per-number";
+    const competitorFixed = parseFloat(slider.getAttribute("data-competitor-fixed")) || 0;
+    const competitorPerMessage =
+      parseFloat(slider.getAttribute("data-competitor-per-message")) || 0;
+    const competitorPlanPerNumber =
+      parseFloat(slider.getAttribute("data-ultra-plan")) || 39;
+    const competitorCapacityPerNumber =
+      parseInt(slider.getAttribute("data-ultra-capacity"), 10) || 30000;
+    const nabdaTotal = 10;
+    let competitorTotal = 0;
+
+    if (pricingModel === "per-message") {
+      competitorTotal = competitorFixed + messages * competitorPerMessage;
+    } else {
+      const competitorNumbersNeeded = Math.max(
+        1,
+        Math.ceil(messages / competitorCapacityPerNumber),
+      );
+      competitorTotal = competitorNumbersNeeded * competitorPlanPerNumber;
+    }
+    competitorTotal = +competitorTotal.toFixed(2);
+    const competitorCostPerMessage = (competitorTotal / messages).toFixed(4);
+
+    // Update message count
+    if (messageCount) messageCount.textContent = messages.toLocaleString();
+
+    // Nabda OTP - fixed plan
+    if (nabdaCost) nabdaCost.textContent = `$${nabdaTotal.toFixed(2)}`;
+    if (nabdaPerMsg) nabdaPerMsg.textContent = "$0.000";
+
+    // Competitor total and effective per-message
+    if (ultraCost) ultraCost.textContent = `$${competitorTotal.toFixed(2)}`;
+    if (ultraPerMsg) ultraPerMsg.textContent = `$${competitorCostPerMessage}`;
+  }
+
+  slider.addEventListener("input", updatePricing);
+  updatePricing(); // Initial run
+}
+
+// Initialize
+document.addEventListener("DOMContentLoaded", initDynamicPricing);
