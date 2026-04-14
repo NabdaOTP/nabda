@@ -3,10 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Nabda OTP vs Twilio 2026 - WhatsApp OTP Pricing Comparison</title>
+    <title>Nabda OTP vs Twilio 2026 - Full Comparison</title>
     <meta
       name="description"
-      content="Compare Nabda OTP vs Twilio for WhatsApp OTP delivery. See fixed $10 Nabda pricing vs Twilio usage-based costs, delivery fit for MENA, and choose the best option for your team."
+      content="Detailed comparison between Nabda OTP and Twilio. Compare pricing models, delivery fit, and key OTP features for MENA businesses."
     />
     <link rel="stylesheet" href="../style.css" />
     <link
@@ -31,7 +31,6 @@
     <meta name="theme-color" content="#635bff" />
     <meta name="msapplication-TileColor" content="#635bff" />
   </head>
-
   <body>
     <header class="header">
       <nav class="nav container">
@@ -43,7 +42,6 @@
           />
           <span class="logo-text">Nabda OTP</span>
         </a>
-
         <div class="mobile-menu" id="mobileMenu">
           <ul class="nav-links">
             <li><a href="#features" data-i18n="nav.features">Features</a></li>
@@ -71,7 +69,6 @@
               >
             </li>
           </ul>
-
           <div class="nav-actions">
             <div class="lang-dropdown" id="langDropdown">
               <button
@@ -128,15 +125,12 @@
             >
           </div>
         </div>
-
         <button
           class="mobile-toggle"
           id="mobileToggle"
           aria-label="Toggle Menu"
         >
-          <span></span>
-          <span></span>
-          <span></span>
+          <span></span><span></span><span></span>
         </button>
       </nav>
     </header>
@@ -147,9 +141,9 @@
           <span class="badge">Twilio Alternative for MENA</span>
           <h1>Nabda OTP vs Twilio</h1>
           <p class="subtitle">
-            Twilio is powerful but usually costlier for OTP-heavy workloads
-            because billing is usage-based. Nabda gives predictable fixed
-            pricing and regional-first support for Iraq, Syria, and MENA teams.
+            Twilio is strong for global enterprise workflows, while Nabda OTP
+            provides predictable fixed pricing and MENA-first execution for
+            OTP-heavy products.
           </p>
           <div class="hero-cta">
             <a
@@ -170,76 +164,6 @@
         </div>
       </section>
 
-      <section class="pricing-comparison" id="pricing-calculator">
-        <div class="container">
-          <div class="compare-header">
-            <span class="badge">Live Cost Calculator</span>
-            <h2>Move the slider and compare your monthly OTP spend</h2>
-            <p>
-              Nabda OTP is fixed. Twilio estimate below uses publicly listed
-              Twilio WhatsApp fee ($0.005/message) plus Meta utility template
-              fee (~$0.0034/message), total ~ $0.0084/message.
-            </p>
-          </div>
-
-          <div class="volume-control">
-            <label for="messageSlider">Total OTP messages per month</label>
-            <input
-              type="range"
-              id="messageSlider"
-              min="1000"
-              max="200000"
-              value="30000"
-              step="1000"
-              data-pricing-model="per-message"
-              data-competitor-fixed="0"
-              data-competitor-per-message="0.0084"
-              title="Adjust monthly OTP volume"
-            />
-            <div class="volume-value">
-              <span id="messageCount">30,000</span> messages/month
-            </div>
-          </div>
-
-          <table
-            class="dynamic-comparison-table"
-            aria-label="Dynamic pricing table"
-          >
-            <thead>
-              <tr>
-                <th>Provider</th>
-                <th>Monthly Cost</th>
-                <th>Cost per Message</th>
-                <th>Billing Model</th>
-                <th>Best Fit</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr class="nabda-row highlight">
-                <td><strong>Nabda OTP</strong></td>
-                <td><strong id="nabdaCost">$10.00</strong></td>
-                <td id="nabdaPerMsg">$0.000</td>
-                <td>Fixed plan (monthly or yearly)</td>
-                <td>MENA startups and scaleups</td>
-              </tr>
-              <tr>
-                <td>Twilio</td>
-                <td><strong id="ultraCost">$252.00</strong></td>
-                <td id="ultraPerMsg">$0.0084</td>
-                <td>Usage based (Twilio fee + Meta fee)</td>
-                <td>Global enterprise workflows</td>
-              </tr>
-            </tbody>
-          </table>
-
-          <p class="note">
-            Twilio/Meta pricing varies by country, template category
-            (authentication, utility, marketing), and window type. Verify exact
-            country rates before final budgeting.
-          </p>
-        </div>
-      </section>
-
       <section class="comparison-table-section">
         <div class="container">
           <table class="comparison-table">
@@ -255,27 +179,28 @@
               <tr>
                 <td><strong>Pricing Options</strong></td>
                 <td>
-                  <strong>Monthly: $10 (Unlimited)</strong><br />
-                  <strong>Yearly: $110/year (12 for 11)</strong>
+                  <strong>Monthly: $10 (Unlimited)</strong><br /><strong
+                    >Yearly: $110/year (12 for 11)</strong
+                  >
                 </td>
-                <td>Usage-based fees, country-dependent</td>
+                <td>Usage-based, country-dependent</td>
                 <td class="winner">Nabda OTP</td>
               </tr>
               <tr>
                 <td>Billing Predictability</td>
-                <td>High (fixed plan)</td>
-                <td>Medium-Low at high volume</td>
+                <td>High and fixed</td>
+                <td>Variable at volume</td>
                 <td class="winner">Nabda OTP</td>
               </tr>
               <tr>
                 <td>WhatsApp API Type</td>
                 <td>Gateway API</td>
-                <td>Official API through Twilio platform</td>
-                <td>Tie (depends on use case)</td>
+                <td>Official API via Twilio</td>
+                <td>Tie</td>
               </tr>
               <tr>
-                <td>MENA Delivery Focus</td>
-                <td>Strong (Iraq/Syria/MENA-focused)</td>
+                <td>MENA Focus</td>
+                <td>Strong regional focus</td>
                 <td>Global-first platform</td>
                 <td class="winner">Nabda OTP</td>
               </tr>
@@ -294,12 +219,12 @@
               <tr>
                 <td>Onboarding Speed</td>
                 <td>About 2 minutes</td>
-                <td>Longer setup and compliance flow</td>
+                <td>Typically longer setup flow</td>
                 <td class="winner">Nabda OTP</td>
               </tr>
               <tr>
-                <td>Support Language</td>
-                <td>Arabic + English focused</td>
+                <td>Support</td>
+                <td>Arabic + English</td>
                 <td>Global support model</td>
                 <td class="winner">Nabda OTP</td>
               </tr>
@@ -308,43 +233,110 @@
         </div>
       </section>
 
+      <section class="pricing-comparison" id="pricing-calculator">
+        <div class="container">
+          <div class="compare-header">
+            <span class="badge">Live Cost Calculator</span>
+            <h2>Move the slider and compare your monthly bill instantly</h2>
+            <p>
+              Nabda OTP stays fixed at $10/month. Twilio is estimated with a
+              blended usage model around $0.0084/message (Twilio fee + Meta
+              template fee).
+            </p>
+          </div>
+          <div class="volume-control">
+            <label for="messageSlider">Total OTP messages per month</label>
+            <input
+              type="range"
+              id="messageSlider"
+              min="1000"
+              max="200000"
+              value="30000"
+              step="1000"
+              data-pricing-model="per-message"
+              data-competitor-fixed="0"
+              data-competitor-per-message="0.0084"
+              title="Adjust monthly OTP volume"
+            />
+            <div class="volume-value">
+              <span id="messageCount">30,000</span> messages/month
+            </div>
+          </div>
+          <table
+            class="dynamic-comparison-table"
+            aria-label="Dynamic pricing table"
+          >
+            <thead>
+              <tr>
+                <th>Provider</th>
+                <th>Monthly Cost</th>
+                <th>Cost per Message</th>
+                <th>Billing Model</th>
+                <th>Best Fit</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="nabda-row highlight">
+                <td><strong>Nabda OTP</strong></td>
+                <td>
+                  <strong id="nabdaCost">$10.00</strong><br />Monthly: $10 |
+                  Yearly: $110 (1 month free)
+                </td>
+                <td id="nabdaPerMsg">$0.000</td>
+                <td>Fixed monthly or yearly</td>
+                <td>MENA startups and scaleups</td>
+              </tr>
+              <tr>
+                <td>Twilio</td>
+                <td><strong id="ultraCost">$252.00</strong></td>
+                <td id="ultraPerMsg">$0.0084</td>
+                <td>Usage based (platform + Meta fees)</td>
+                <td>Global enterprise stacks</td>
+              </tr>
+            </tbody>
+          </table>
+          <p class="note">
+            Twilio and Meta pricing varies by destination country, template
+            category, and billing updates.
+          </p>
+        </div>
+      </section>
+
       <section class="why-nabda">
         <div class="container">
-          <h2>Why teams choose Nabda OTP over Twilio for OTP</h2>
+          <h2>Why Businesses in MENA Choose Nabda OTP</h2>
           <div class="why-grid">
             <article class="why-card">
-              <h3>Fixed Cost, Better Margins</h3>
+              <h3>Predictable Cost</h3>
               <p>
-                Nabda gives monthly ($10) and yearly ($110) plans so finance
-                teams can forecast costs without per-message surprises.
+                Fixed monthly and yearly plans make budgeting simple as
+                verification traffic grows.
               </p>
             </article>
             <article class="why-card">
-              <h3>Built for MENA Operations</h3>
+              <h3>MENA-First Product</h3>
               <p>
-                Product, routing priorities, and support are aligned with
-                regional requirements in Iraq, Syria, and neighboring markets.
+                Delivery and support priorities are designed for Iraq, Syria,
+                and nearby markets.
               </p>
             </article>
             <article class="why-card">
-              <h3>Fast Implementation</h3>
+              <h3>Fast Go-Live</h3>
               <p>
-                Clean API, clear docs, and quick onboarding help engineering
-                teams launch OTP workflows quickly.
+                Clean API and clear docs let engineering teams launch OTP
+                workflows quickly.
               </p>
             </article>
           </div>
-
           <div class="cta-bottom">
-            <h2>Want lower OTP cost with faster regional execution?</h2>
+            <h2>Ready to lower OTP costs and launch faster?</h2>
             <a
               href="https://dash.nabdaotp.com/en/signup"
               target="_blank"
               rel="noopener noreferrer"
               class="btn btn-primary btn-lg"
+              >Create Free Nabda Account</a
             >
-              Create Free Nabda Account
-            </a>
           </div>
         </div>
       </section>
@@ -369,7 +361,6 @@
               region. Cloud gateway with direct integration for developers.
             </p>
           </div>
-
           <div class="footer-links">
             <div class="footer-col">
               <h4 data-i18n="footer.product">Product</h4>
@@ -391,7 +382,6 @@
                 </li>
               </ul>
             </div>
-
             <div class="footer-col">
               <h4>Comparisons</h4>
               <ul>
@@ -423,7 +413,6 @@
                 </li>
               </ul>
             </div>
-
             <div class="footer-col">
               <h4 data-i18n="footer.legal">Legal</h4>
               <ul>
@@ -458,7 +447,6 @@
             </div>
           </div>
         </div>
-
         <div class="footer-bottom">
           <p class="copyright" data-i18n="footer.copyright">
             © 2026 Nabda OTP. All rights reserved. Nabda OTP is a product owned
@@ -473,7 +461,6 @@
         </div>
       </div>
     </footer>
-
     <script src="../script.js"></script>
   </body>
 </html>

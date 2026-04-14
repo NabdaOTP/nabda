@@ -159,6 +159,12 @@ const translations = {
     "stats.messages": "Messages Sent",
     "stats.uptime": "Uptime Guaranteed",
     "stats.reliable": "Most Reliable in MENA",
+    // Partner / Referral Section
+    "partner.title": "Earn Points by Referring Friends",
+    "partner.subtitle":
+      "Share your referral code with developers and businesses. When they subscribe, you earn points that can be redeemed for free months, credits, or exclusive rewards.",
+    "partner.cta": "Get Your Referral Code",
+    "partner.note": "Start earning today • No limit on referrals",
 
     // Features
     "features.title": "Why choose Nabda OTP ?",
@@ -306,6 +312,13 @@ const translations = {
     "stats.messages": "الرسائل المرسلة",
     "stats.uptime": "وقت تشغيل مضمون",
     "stats.reliable": "الأكثر موثوقية في الشرق الأوسط",
+
+    // Partner / Referral Section
+    "partner.title": "اكسب نقاط عن طريق دعوة أصدقائك",
+    "partner.subtitle":
+      "شارك كود الدعوة الخاص بك مع المطورين والشركات. وعندما يشتركون، تكسب نقاط يمكن استبدالها بشهور مجانية أو رصيد أو مكافآت حصرية.",
+    "partner.cta": "احصل على كود الدعوة الخاص بك",
+    "partner.note": "ابدأ في الكسب اليوم • لا يوجد حد أقصى لعدد الدعوات",
 
     // Features
     "features.title": "لماذا تختار نبضة OTP ؟",
@@ -1327,8 +1340,10 @@ function initDynamicPricing() {
 
   function updatePricing() {
     const messages = Math.max(1, parseInt(slider.value, 10) || 1);
-    const pricingModel = slider.getAttribute("data-pricing-model") || "per-number";
-    const competitorFixed = parseFloat(slider.getAttribute("data-competitor-fixed")) || 0;
+    const pricingModel =
+      slider.getAttribute("data-pricing-model") || "per-number";
+    const competitorFixed =
+      parseFloat(slider.getAttribute("data-competitor-fixed")) || 0;
     const competitorPerMessage =
       parseFloat(slider.getAttribute("data-competitor-per-message")) || 0;
     const competitorPlanPerNumber =

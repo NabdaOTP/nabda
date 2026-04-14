@@ -1,0 +1,260 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nabda OTP vs Official WhatsApp API 2026</title>
+    <meta
+      name="description"
+      content="Compare Nabda OTP with Official WhatsApp API pricing and features for MENA OTP delivery."
+    />
+    <link rel="stylesheet" href="../style.css" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/assets/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/assets/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="/assets/favicon-16x16.png"
+    />
+    <link rel="icon" type="image/x-icon" href="/assets/favicon.ico" />
+  </head>
+
+  <body>
+    <header class="header">
+      <nav class="nav container">
+        <a href="/" class="logo"
+          ><img
+            src="/assets/android-chrome-192x192.png"
+            alt="Nabda OTP"
+            class="logo-img"
+          /><span class="logo-text">Nabda OTP</span></a
+        >
+        <div class="mobile-menu" id="mobileMenu">
+          <ul class="nav-links">
+            <li><a href="#features">Features</a></li>
+            <li><a href="#pricing">Pricing</a></li>
+            <li><a href="/solutions" target="_blank">Solutions</a></li>
+            <li><a href="/comparing" target="_blank">Comparing</a></li>
+            <li><a href="/blogs" target="_blank">Blogs</a></li>
+            <li>
+              <a
+                href="https://api.nabdaotp.com/docs"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Docs</a
+              >
+            </li>
+          </ul>
+          <div class="nav-actions">
+            <a
+              href="https://dash.nabdaotp.com/en/login"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="btn btn-primary"
+              >Login</a
+            >
+          </div>
+        </div>
+        <button
+          class="mobile-toggle"
+          id="mobileToggle"
+          aria-label="Toggle Menu"
+        >
+          <span></span><span></span><span></span>
+        </button>
+      </nav>
+    </header>
+    <main class="comparison-page comparison-modern">
+      <section class="comparison-hero">
+        <div class="container">
+          <span class="badge">Official API Alternative</span>
+          <h1>Nabda OTP vs Official WhatsApp API</h1>
+          <p class="subtitle">
+            Official API pricing is typically per-message and country-dependent.
+            Nabda keeps OTP economics simple with fixed monthly and yearly
+            plans.
+          </p>
+          <div class="hero-cta">
+            <a
+              href="https://dash.nabdaotp.com/en/signup"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="btn btn-primary btn-lg"
+              >Start 5-Day Free Trial</a
+            ><a
+              href="https://api.nabdaotp.com/docs"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="btn btn-ghost btn-lg"
+              >View API Docs</a
+            >
+          </div>
+        </div>
+      </section>
+
+      <section class="comparison-table-section">
+        <div class="container">
+          <table class="comparison-table">
+            <thead>
+              <tr>
+                <th>Feature</th>
+                <th>Nabda OTP</th>
+                <th>Official API</th>
+                <th>Winner</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>Pricing Options</strong></td>
+                <td>
+                  <strong>Monthly: $10 (Unlimited)</strong><br /><strong
+                    >Yearly: $110/year (12 for 11)</strong
+                  >
+                </td>
+                <td>Per-message pricing model</td>
+                <td class="winner">Nabda OTP</td>
+              </tr>
+              <tr>
+                <td>Billing Predictability</td>
+                <td>High and fixed</td>
+                <td>Variable by volume and country</td>
+                <td class="winner">Nabda OTP</td>
+              </tr>
+              <tr>
+                <td>Compliance</td>
+                <td>Strong for SMB/scaleups</td>
+                <td>Highest official track</td>
+                <td>Official API</td>
+              </tr>
+              <tr>
+                <td>MENA Focus</td>
+                <td>Strong regional focus</td>
+                <td>Global model</td>
+                <td class="winner">Nabda OTP</td>
+              </tr>
+              <tr>
+                <td>Webhook Support</td>
+                <td>Yes</td>
+                <td>Yes</td>
+                <td>Tie</td>
+              </tr>
+              <tr>
+                <td>Onboarding Speed</td>
+                <td>About 2 minutes</td>
+                <td>Usually longer verification cycle</td>
+                <td class="winner">Nabda OTP</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+      <section class="pricing-comparison" id="pricing-calculator">
+        <div class="container">
+          <div class="compare-header">
+            <span class="badge">Live Cost Calculator</span>
+            <h2>Move the slider and compare your monthly bill instantly</h2>
+            <p>
+              Nabda OTP stays fixed at $10/month. Official API estimate below
+              uses a realistic authentication baseline near $0.0030/message.
+            </p>
+          </div>
+          <div class="volume-control">
+            <label for="messageSlider">Total OTP messages per month</label
+            ><input
+              type="range"
+              id="messageSlider"
+              min="1000"
+              max="200000"
+              value="30000"
+              step="1000"
+              data-pricing-model="per-message"
+              data-competitor-fixed="0"
+              data-competitor-per-message="0.0030"
+              title="Adjust monthly OTP volume"
+            />
+            <div class="volume-value">
+              <span id="messageCount">30,000</span> messages/month
+            </div>
+          </div>
+          <table class="dynamic-comparison-table">
+            <thead>
+              <tr>
+                <th>Provider</th>
+                <th>Monthly Cost</th>
+                <th>Cost per Message</th>
+                <th>Billing Model</th>
+                <th>Best Fit</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="nabda-row highlight">
+                <td><strong>Nabda OTP</strong></td>
+                <td>
+                  <strong id="nabdaCost">$10.00</strong><br />Monthly: $10 |
+                  Yearly: $110 (1 month free)
+                </td>
+                <td id="nabdaPerMsg">$0.000</td>
+                <td>Fixed monthly or yearly</td>
+                <td>MENA products needing predictable costs</td>
+              </tr>
+              <tr>
+                <td>Official API</td>
+                <td><strong id="ultraCost">$90.00</strong></td>
+                <td id="ultraPerMsg">$0.0030</td>
+                <td>Per-message category/country pricing</td>
+                <td>Large enterprises requiring official flow</td>
+              </tr>
+            </tbody>
+          </table>
+          <p class="note">
+            Official rates vary by destination country and message category.
+          </p>
+        </div>
+      </section>
+      <section class="why-nabda">
+        <div class="container">
+          <h2>Why Businesses in MENA Choose Nabda OTP</h2>
+          <div class="why-grid">
+            <article class="why-card">
+              <h3>Simple Pricing</h3>
+              <p>
+                Fixed monthly and yearly plans avoid unpredictable cost spikes.
+              </p>
+            </article>
+            <article class="why-card">
+              <h3>Regional Priority</h3>
+              <p>
+                Built with Iraq, Syria, and MENA delivery realities in mind.
+              </p>
+            </article>
+            <article class="why-card">
+              <h3>Fast Launch</h3>
+              <p>Clear docs and easy API flow reduce time to production.</p>
+            </article>
+          </div>
+          <div class="cta-bottom">
+            <h2>Ready to simplify WhatsApp OTP costs?</h2>
+            <a
+              href="https://dash.nabdaotp.com/en/signup"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="btn btn-primary btn-lg"
+              >Create Free Nabda Account</a
+            >
+          </div>
+        </div>
+      </section>
+    </main>
+    <script src="../script.js"></script>
+  </body>
+</html>

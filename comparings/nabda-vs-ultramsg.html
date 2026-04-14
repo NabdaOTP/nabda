@@ -174,74 +174,6 @@
         </div>
       </section>
 
-      <section class="pricing-comparison" id="pricing-calculator">
-        <div class="container">
-          <div class="compare-header">
-            <span class="badge">Live Cost Calculator</span>
-            <h2>Move the slider and compare your monthly bill instantly</h2>
-            <p>
-              Nabda OTP stays fixed at $10/month. UltraMsg is estimated using
-              its $39/month per number pricing model.
-            </p>
-          </div>
-
-          <div class="volume-control">
-            <label for="messageSlider">Total OTP messages per month</label>
-            <input
-              type="range"
-              id="messageSlider"
-              min="1000"
-              max="200000"
-              value="30000"
-              step="1000"
-              data-ultra-plan="39"
-              data-ultra-capacity="30000"
-              title="Adjust monthly OTP volume"
-            />
-            <div class="volume-value">
-              <span id="messageCount">30,000</span> messages/month
-            </div>
-          </div>
-
-          <table
-            class="dynamic-comparison-table"
-            aria-label="Dynamic pricing table"
-          >
-            <thead>
-              <tr>
-                <th>Provider</th>
-                <th>Monthly Cost</th>
-                <th>Cost per Message</th>
-                <th>Billing Model</th>
-                <th>Best Fit</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr class="nabda-row highlight">
-                <td><strong>Nabda OTP</strong></td>
-                <td><strong id="nabdaCost">$10.00</strong></td>
-                <td id="nabdaPerMsg">$0.0003</td>
-                <td>Flat monthly plan</td>
-                <td>MENA startups and scaleups</td>
-              </tr>
-              <tr>
-                <td>UltraMsg</td>
-                <td><strong id="ultraCost">$39.00</strong></td>
-                <td id="ultraPerMsg">$0.0013</td>
-                <td>$39 / month per number</td>
-                <td>Teams managing multiple paid numbers</td>
-              </tr>
-            </tbody>
-          </table>
-
-          <p class="note">
-            Assumption for comparison: each UltraMsg paid number handles up to
-            ~30,000 OTP messages/month. If your volume grows, additional numbers
-            increase monthly cost.
-          </p>
-        </div>
-      </section>
-
       <section class="comparison-table-section">
         <div class="container">
           <table class="comparison-table">
@@ -312,6 +244,71 @@
           </table>
         </div>
       </section>
+
+      <!-- <section class="pricing-comparison" id="pricing-calculator">
+        <div class="container">
+          <div class="compare-header">
+            <span class="badge">Live Cost Calculator</span>
+            <h2>Move the slider and compare your monthly bill instantly</h2>
+            <p>
+              Nabda OTP stays fixed at $10/month. UltraMsg is estimated using
+              its $39/month per number pricing model.
+            </p>
+          </div>
+
+          <div class="volume-control">
+            <label for="messageSlider">Total OTP messages per month</label>
+            <input
+              type="range"
+              id="messageSlider"
+              min="1000"
+              max="200000"
+              value="30000"
+              step="1000"
+              data-ultra-plan="39"
+              data-ultra-capacity="30000"
+              title="Adjust monthly OTP volume"
+            />
+            <div class="volume-value">
+              <span id="messageCount">30,000</span> messages/month
+            </div>
+          </div>
+
+          <table
+            class="dynamic-comparison-table"
+            aria-label="Dynamic pricing table"
+          >
+            <thead>
+              <tr>
+                <th>Provider</th>
+                <th>Monthly Cost</th>
+                <th>Billing Model</th>
+                <th>Best Fit</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="nabda-row highlight">
+                <td><strong>Nabda OTP</strong></td>
+                <td><strong id="nabdaCost">$10.00</strong></td>
+                <td>Flat monthly plan</td>
+                <td>MENA startups and scaleups</td>
+              </tr>
+              <tr>
+                <td>UltraMsg</td>
+                <td><strong>$39.00</strong></td>
+                <td>$39 / month per number</td>
+                <td>Teams managing multiple paid numbers</td>
+              </tr>
+            </tbody>
+          </table>
+
+          <p class="note">
+            Assumption for comparison: each UltraMsg paid number handles up to
+            ~30,000 OTP messages/month. If your volume grows, additional numbers
+            increase monthly cost.
+          </p>
+        </div>
+      </section> -->
 
       <section class="why-nabda">
         <div class="container">

@@ -3,68 +3,105 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>OTP & Verification - Nabda OTP</title>
+    <title>OTP & User Verification via WhatsApp – Nabda OTP</title>
     <meta
       name="description"
-      content="Send secure and instant OTP verification codes via WhatsApp using Nabda OTP API."
+      content="Send instant OTP and user verification codes via WhatsApp to Iraq, Syria, and MENA with Nabda OTP. No templates. No Meta approval. Just simple REST API."
+    />
+    <meta
+      name="keywords"
+      content="WhatsApp OTP Iraq, WhatsApp OTP Syria, OTP verification API, Nabda OTP, 2FA WhatsApp MENA"
+    />
+    <meta name="author" content="Nabda OTP" />
+    <meta name="robots" content="index, follow" />
+    <link
+      rel="canonical"
+      href="https://nabdaotp.com/solutions/otp-verification"
     />
 
+    <meta
+      property="og:title"
+      content="OTP & User Verification via WhatsApp – Nabda OTP"
+    />
+    <meta
+      property="og:description"
+      content="Instant WhatsApp OTP for Iraq, Syria & MENA. No templates needed. Simple REST API with high delivery rates."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Nabda OTP" />
+
     <link rel="stylesheet" href="../style.css" />
-    <!-- Favicon & Icons -->
     <link
       rel="apple-touch-icon"
       sizes="180x180"
-      href="assets/apple-touch-icon.png"
+      href="/assets/apple-touch-icon.png"
     />
     <link
       rel="icon"
       type="image/png"
       sizes="32x32"
-      href="assets/favicon-32x32.png"
+      href="/assets/favicon-32x32.png"
     />
     <link
       rel="icon"
       type="image/png"
       sizes="16x16"
-      href="assets/favicon-16x16.png"
+      href="/assets/favicon-16x16.png"
     />
-    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
-    <link rel="manifest" href="assets/site.webmanifest" />
+    <link rel="icon" type="image/x-icon" href="/assets/favicon.ico" />
+    <link rel="manifest" href="/assets/site.webmanifest" />
     <meta name="theme-color" content="#635bff" />
-    <meta name="msapplication-TileColor" content="#635bff" />
 
-    <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap"
       rel="stylesheet"
     />
-  </head>
 
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "WebPage",
+        "name": "OTP & User Verification via WhatsApp",
+        "description": "Send instant OTP codes via WhatsApp to Iraq, Syria, and MENA using Nabda OTP API.",
+        "publisher": {
+          "@type": "Organization",
+          "name": "Nabda OTP",
+          "url": "https://nabdaotp.com"
+        }
+      }
+    </script>
+  </head>
   <body>
+    <!-- Header -->
     <header class="header">
       <nav class="nav container">
         <a href="/" class="logo">
           <img
-            src="../assets/android-chrome-192x192.png"
+            src="/assets/android-chrome-192x192.png"
             alt="Nabda OTP"
             class="logo-img"
           />
           <span class="logo-text">Nabda OTP</span>
         </a>
-
         <div class="mobile-menu" id="mobileMenu">
           <ul class="nav-links">
-            <li><a href="#features" data-i18n="nav.features">Features</a></li>
-            <li><a href="#pricing" data-i18n="nav.pricing">Pricing</a></li>
+            <li><a href="/#features" data-i18n="nav.features">Features</a></li>
+            <li><a href="/#pricing" data-i18n="nav.pricing">Pricing</a></li>
             <li>
-              <a href="/solutions" data-i18n="nav.solutions">Solutions</a>
+              <a href="/solutions" target="_blank" data-i18n="nav.solutions"
+                >Solutions</a
+              >
             </li>
             <li>
-              <a href="/comparing" data-i18n="nav.comparing">Comparing</a>
+              <a href="/comparing" target="_blank" data-i18n="nav.comparing"
+                >Comparing</a
+              >
             </li>
-            <li><a href="/blogs" data-i18n="nav.blogs">Blogs</a></li>
+            <li>
+              <a href="/blogs" target="_blank" data-i18n="nav.blogs">Blogs</a>
+            </li>
             <li>
               <a
                 href="https://api.nabdaotp.com/docs"
@@ -75,16 +112,52 @@
               >
             </li>
           </ul>
-
           <div class="nav-actions">
-            <button
-              class="btn btn-ghost lang-toggle"
-              id="langToggle"
-              aria-label="Switch Language"
-            >
-              <span class="lang-icon">🌐</span>
-              <span data-i18n="nav.lang">العربية</span>
-            </button>
+            <div class="lang-dropdown" id="langDropdown">
+              <button
+                type="button"
+                class="btn btn-ghost lang-toggle"
+                id="langToggle"
+                aria-expanded="false"
+                aria-haspopup="menu"
+                aria-label="Language"
+              >
+                <span class="lang-icon" aria-hidden="true">🌐</span>
+                <span id="langToggleLabel">English</span>
+              </button>
+              <ul class="lang-menu" id="langMenu" role="menu" hidden>
+                <li role="none">
+                  <button
+                    type="button"
+                    class="lang-menu-item"
+                    role="menuitem"
+                    data-lang="en"
+                  >
+                    English
+                  </button>
+                </li>
+                <li role="none">
+                  <button
+                    type="button"
+                    class="lang-menu-item"
+                    role="menuitem"
+                    data-lang="ar"
+                  >
+                    العربية
+                  </button>
+                </li>
+                <li role="none">
+                  <button
+                    type="button"
+                    class="lang-menu-item"
+                    role="menuitem"
+                    data-lang="tr"
+                  >
+                    Türkçe
+                  </button>
+                </li>
+              </ul>
+            </div>
             <a
               href="https://dash.nabdaotp.com/en/login"
               target="_blank"
@@ -95,35 +168,303 @@
             >
           </div>
         </div>
-
         <button
           class="mobile-toggle"
           id="mobileToggle"
           aria-label="Toggle Menu"
         >
-          <span></span>
-          <span></span>
-          <span></span>
+          <span></span><span></span><span></span>
         </button>
       </nav>
     </header>
-    <main class="sub-page">
-      <section class="hero-sub">
+
+    <!-- Breadcrumb -->
+    <div class="breadcrumb">
+      <div class="container">
+        <a href="/">Home</a><span>›</span> <a href="/solutions">Solutions</a
+        ><span>›</span>
+        OTP & User Verification
+      </div>
+    </div>
+
+    <main>
+      <!-- Hero -->
+      <section class="solution-hero">
         <div class="container">
-          <h1>OTP & Verification</h1>
-          <p>Secure and instant one-time passwords delivered via WhatsApp</p>
+          <div class="hero-icon">
+            <img
+              src="https://img.icons8.com/fluency/96/lock.png"
+              alt="OTP Verification"
+            />
+          </div>
+          <h1>OTP & User Verification<br />via WhatsApp</h1>
+          <p>
+            Send instant one-time passwords to Iraq, Syria, and all MENA
+            countries. No templates. No Meta approval. Just create an instance
+            and start verifying users in minutes.
+          </p>
+          <div class="hero-cta-group">
+            <a
+              href="https://dash.nabdaotp.com/en/signup"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="btn-white"
+              >Start Free — No Credit Card</a
+            >
+            <a
+              href="https://api.nabdaotp.com/docs"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="btn-outline-white"
+              >View API Docs</a
+            >
+          </div>
         </div>
       </section>
 
-      <section class="content">
+      <!-- Stats -->
+      <div class="stats-bar">
         <div class="container">
-          <h2>Page Content</h2>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam, fuga!.
+          <div class="stat-item">
+            <span class="stat-number">98%</span>
+            <span class="stat-label">Delivery Rate</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-number">&lt;3s</span>
+            <span class="stat-label">Average Delivery Time</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-number">+20</span>
+            <span class="stat-label">Countries Supported</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-number">$10/mo</span>
+            <span class="stat-label">Unlimited Messages</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Why WhatsApp OTP -->
+      <section class="solution-content">
+        <div class="container">
+          <span class="section-label">Why WhatsApp?</span>
+          <h2 class="section-title">
+            SMS OTP is broken in Iraq & Syria.<br />WhatsApp just works.
+          </h2>
+          <p class="section-body">
+            SMS delivery rates in Iraq and Syria are notoriously unreliable —
+            messages get delayed, blocked by carriers, or simply never arrive.
+            WhatsApp penetration in the region exceeds 90%, making it the most
+            reliable channel for OTP delivery. With Nabda OTP, your verification
+            codes land in seconds, not minutes.
           </p>
 
-          <div class="placeholder-content">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+          <div class="feature-grid">
+            <div class="feature-card">
+              <div class="fc-icon">⚡</div>
+              <h4>Instant Delivery</h4>
+              <p>
+                OTPs delivered via WhatsApp in under 3 seconds on average, even
+                on slow mobile connections.
+              </p>
+            </div>
+            <div class="feature-card">
+              <div class="fc-icon">🔑</div>
+              <h4>No Templates Needed</h4>
+              <p>
+                Send any plain text message. No approval process, no waiting, no
+                Meta business verification required.
+              </p>
+            </div>
+            <div class="feature-card">
+              <div class="fc-icon">🌍</div>
+              <h4>Iraq & Syria First</h4>
+              <p>
+                Purpose-built for +964 and +963 numbers. Full support for E.164
+                format across all MENA countries.
+              </p>
+            </div>
+            <div class="feature-card">
+              <div class="fc-icon">🔒</div>
+              <h4>Secure by Design</h4>
+              <p>
+                Instance-scoped Bearer tokens. Generate OTPs server-side. Each
+                instance has a dedicated number.
+              </p>
+            </div>
+            <div class="feature-card">
+              <div class="fc-icon">📊</div>
+              <h4>Delivery Webhooks</h4>
+              <p>
+                Real-time callbacks for sent, delivered, and failed events. Know
+                exactly when your OTP arrives.
+              </p>
+            </div>
+            <div class="feature-card">
+              <div class="fc-icon">💰</div>
+              <h4>Flat Pricing</h4>
+              <p>
+                One flat monthly fee per instance. No per-message costs. Send
+                unlimited OTPs without surprises.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- How it works -->
+      <section
+        class="how-it-works"
+        style="
+          background: #f8f9ff;
+          border-top: 1px solid #e8eaf6;
+          border-bottom: 1px solid #e8eaf6;
+        "
+      >
+        <div class="container">
+          <span class="section-label">Integration</span>
+          <h2 class="section-title">Go live in 4 simple steps</h2>
+          <div class="steps">
+            <div class="step">
+              <div class="step-num">1</div>
+              <div class="step-body">
+                <h4>Create a Nabda OTP Account</h4>
+                <p>
+                  Sign up at dash.nabdaotp.com. Free to start, no credit card
+                  required.
+                </p>
+              </div>
+            </div>
+            <div class="step">
+              <div class="step-num">2</div>
+              <div class="step-body">
+                <h4>Create an Instance & Scan QR</h4>
+                <p>
+                  Each instance gives you a dedicated WhatsApp number. Scan the
+                  QR code once to connect your WhatsApp — done.
+                </p>
+              </div>
+            </div>
+            <div class="step">
+              <div class="step-num">3</div>
+              <div class="step-body">
+                <h4>Get Your Instance Token</h4>
+                <p>
+                  Call the select-instance endpoint to receive a Bearer token
+                  scoped to your instance. Store it securely on your backend.
+                </p>
+              </div>
+            </div>
+            <div class="step">
+              <div class="step-num">4</div>
+              <div class="step-body">
+                <h4>Send OTP with a Single API Call</h4>
+                <p>
+                  POST to <code>/api/v1/messages/send</code> with the phone
+                  number and your message. That's it.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Code example -->
+      <section class="solution-content">
+        <div class="container">
+          <span class="section-label">Code Example</span>
+          <h2 class="section-title">Send your first OTP in under 10 lines</h2>
+          <p class="section-body">
+            Everything runs server-side. Generate the OTP, send it via Nabda,
+            store the hash — verify on submission.
+          </p>
+
+          <div class="code-section">
+            <div class="code-header">
+              <div class="code-dot red"></div>
+              <div class="code-dot yellow"></div>
+              <div class="code-dot green"></div>
+              <span
+                style="
+                  color: #64748b;
+                  font-size: 0.78rem;
+                  margin-left: 8px;
+                  font-family: &quot;JetBrains Mono&quot;, monospace;
+                "
+                >send-otp.js</span
+              >
+            </div>
+            <pre><span class="cm">// 1. Generate OTP on your server (never the client)</span>
+<span class="kw">function</span> <span class="fn">generateOTP</span>() {
+  <span class="kw">return</span> Math.<span class="fn">floor</span>(<span class="num">100000</span> + Math.<span class="fn">random</span>() * <span class="num">900000</span>).<span class="fn">toString</span>();
+}
+
+<span class="cm">// 2. Send via Nabda OTP API</span>
+<span class="kw">const</span> otp = <span class="fn">generateOTP</span>();
+
+<span class="kw">const</span> response = <span class="kw">await</span> <span class="fn">fetch</span>(<span class="str">"https://api.nabdaotp.com/api/v1/messages/send"</span>, {
+  method: <span class="str">"POST"</span>,
+  headers: {
+    <span class="str">"Content-Type"</span>: <span class="str">"application/json"</span>,
+    <span class="str">"Authorization"</span>: <span class="str">`Bearer ${instanceToken}`</span>
+  },
+  body: <span class="fn">JSON.stringify</span>({
+    phone: <span class="str">"+9647701234567"</span>,  <span class="cm">// Iraq (+964) or Syria (+963)</span>
+    message: <span class="str">`Your verification code is ${otp}. Valid for 5 minutes. – YourApp`</span>
+  })
+});
+
+<span class="cm">// 3. Store hashed OTP in your DB and verify on submission</span>
+<span class="kw">if</span> (response.ok) {
+  <span class="kw">await</span> <span class="fn">storeOTP</span>(userId, otp, Date.<span class="fn">now</span>() + <span class="num">5</span> * <span class="num">60000</span>);
+}</pre>
+          </div>
+        </div>
+      </section>
+
+      <!-- Use cases -->
+      <section class="use-cases">
+        <div class="container">
+          <span class="section-label">Use Cases</span>
+          <h2 class="section-title">Built for every verification scenario</h2>
+          <div class="use-case-list">
+            <div class="use-case-item">
+              <span class="uc-emoji">📱</span>User registration & signup
+              verification
+            </div>
+            <div class="use-case-item">
+              <span class="uc-emoji">🔐</span>Two-factor authentication (2FA)
+            </div>
+            <div class="use-case-item">
+              <span class="uc-emoji">🔑</span>Password reset & account recovery
+            </div>
+            <div class="use-case-item">
+              <span class="uc-emoji">💳</span>Payment & transaction
+              authorization
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CTA -->
+      <section class="solution-cta">
+        <div class="container">
+          <h2>Start verifying users via WhatsApp today</h2>
+          <p>
+            Create your first Nabda OTP instance in minutes. No contracts, no
+            per-message fees, no Meta approval needed.
+          </p>
+          <div class="hero-cta-group">
+            <a
+              href="https://dash.nabdaotp.com/en/signup"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="btn btn-primary btn-lg"
+              >Create Free Instance</a
+            >
+            <a href="/blogs/whatsapp-otp-iraq-guide.html" class="btn btn-ghost"
+              >Read Full Guide →</a
+            >
           </div>
         </div>
       </section>
@@ -136,7 +477,7 @@
           <div class="footer-brand">
             <a href="/" class="logo">
               <img
-                src="../assets/android-chrome-192x192.png"
+                src="/assets/android-chrome-192x192.png"
                 alt="Nabda OTP"
                 class="logo-img"
                 loading="lazy"
@@ -144,72 +485,83 @@
               />
               <span class="logo-text">Nabda OTP</span>
             </a>
-            <p class="footer-desc" data-i18n="footer.desc">
+            <p class="footer-desc">
               The first and best WhatsApp API solution for Iraq and the MENA
               region. Cloud gateway with direct integration for developers.
             </p>
           </div>
-
           <div class="footer-links">
             <div class="footer-col">
-              <h4 data-i18n="footer.product">Product</h4>
+              <h4>Product</h4>
               <ul>
-                <li>
-                  <a href="#features" data-i18n="footer.features">Features</a>
-                </li>
-                <li>
-                  <a href="#pricing" data-i18n="footer.pricing">Pricing</a>
-                </li>
+                <li><a href="/#features">Features</a></li>
+                <li><a href="/#pricing">Pricing</a></li>
                 <li>
                   <a
                     href="https://api.nabdaotp.com/docs"
                     target="_blank"
                     rel="noopener noreferrer"
-                    data-i18n="footer.docs"
                     >Documentation</a
                   >
                 </li>
               </ul>
             </div>
             <div class="footer-col">
-              <h4 data-i18n="footer.legal">Legal</h4>
+              <h4>Comparisons</h4>
               <ul>
-                <li><a href="about.html" data-i18n="footer.about">About</a></li>
+                <li>
+                  <a href="/comparings/nabda-vs-ultramsg.html"
+                    >Nabda vs UltraMsg</a
+                  >
+                </li>
+                <li>
+                  <a href="/comparings/nabda-vs-twilio.html">Nabda vs Twilio</a>
+                </li>
+                <li>
+                  <a href="/comparings/nabda-vs-bulk-sms.html"
+                    >Nabda vs BulkSMS</a
+                  >
+                </li>
+                <li>
+                  <a href="/comparings/nabda-vs-official.html"
+                    >Nabda vs Official API</a
+                  >
+                </li>
+                <li>
+                  <a href="/comparings/nabda-vs-OTPIQ.html">Nabda vs OTPIQ</a>
+                </li>
+                <li>
+                  <a href="/comparings/nabda-vs-alternatives.html"
+                    >Nabda alternatives →</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div class="footer-col">
+              <h4>Legal</h4>
+              <ul>
+                <li><a href="/about.html">About</a></li>
                 <li>
                   <a
                     href="https://wa.me/905346639145"
                     target="_blank"
                     rel="noopener noreferrer"
-                    data-i18n="footer.contact"
                     >Contact</a
                   >
                 </li>
-                <li>
-                  <a href="privacy-policy.html" data-i18n="footer.privacy"
-                    >Privacy Policy</a
-                  >
-                </li>
-                <li>
-                  <a href="terms-of-service.html" data-i18n="footer.terms"
-                    >Terms of Service</a
-                  >
-                </li>
-                <li>
-                  <a href="refund-policy.html" data-i18n="footer.refund"
-                    >Refund Policy</a
-                  >
-                </li>
+                <li><a href="/privacy-policy.html">Privacy Policy</a></li>
+                <li><a href="/terms-of-service.html">Terms of Service</a></li>
+                <li><a href="/refund-policy.html">Refund Policy</a></li>
               </ul>
             </div>
           </div>
         </div>
-
         <div class="footer-bottom">
-          <p class="copyright" data-i18n="footer.copyright">
+          <p class="copyright">
             © 2026 Nabda OTP. All rights reserved. Nabda OTP is a product owned
             and operated by We Pioners Ltd
           </p>
-          <p class="footer-seo" data-i18n="footer.seo">
+          <p class="footer-seo">
             Cheapest WhatsApp API $10/mo Unlimited • Best Twilio Alternative •
             UltraMsg Alternative • SendGrid Alternative • WhatsApp OTP Iraq •
             WhatsApp API Syria • MENA WhatsApp Gateway • First Arab WhatsApp API
