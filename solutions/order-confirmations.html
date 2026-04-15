@@ -32,7 +32,7 @@
     <meta property="og:type" content="website" />
     <meta property="og:site_name" content="Nabda OTP" />
 
-    <link rel="stylesheet" href="../style.css" />
+    <link rel="stylesheet" href="/../style.css" />
     <link
       rel="apple-touch-icon"
       sizes="180x180"
@@ -185,8 +185,10 @@
               alt="Order Confirmations"
             />
           </div>
-          <h1>Order Confirmations &<br />Delivery Updates via WhatsApp</h1>
-          <p>
+          <h1 data-i18n="orderSolution.hero.title">
+            Order Confirmations &<br />Delivery Updates via WhatsApp
+          </h1>
+          <p data-i18n="orderSolution.hero.desc">
             Keep your customers informed at every step — from order placed to
             doorstep delivery. Real-time WhatsApp notifications that actually
             get read.
@@ -197,6 +199,7 @@
               target="_blank"
               rel="noopener noreferrer"
               class="btn-white"
+              data-i18n="orderSolution.hero.cta1"
               >Start Free — No Credit Card</a
             >
             <a
@@ -204,6 +207,7 @@
               target="_blank"
               rel="noopener noreferrer"
               class="btn-outline-white"
+              data-i18n="orderSolution.hero.cta2"
               >View API Docs</a
             >
           </div>
@@ -214,19 +218,29 @@
         <div class="container">
           <div class="stat-item">
             <span class="stat-number">98%</span>
-            <span class="stat-label">Open Rate on WhatsApp</span>
+            <span class="stat-label" data-i18n="orderSolution.stats.openRate"
+              >Open Rate on WhatsApp</span
+            >
           </div>
           <div class="stat-item">
             <span class="stat-number">3x</span>
-            <span class="stat-label">Less Customer Support Calls</span>
+            <span class="stat-label" data-i18n="orderSolution.stats.support"
+              >Less Customer Support Calls</span
+            >
           </div>
           <div class="stat-item">
             <span class="stat-number">&lt;3s</span>
-            <span class="stat-label">Message Delivery Time</span>
+            <span
+              class="stat-label"
+              data-i18n="orderSolution.stats.deliveryTime"
+              >Message Delivery Time</span
+            >
           </div>
           <div class="stat-item">
             <span class="stat-number">$10/mo</span>
-            <span class="stat-label">Unlimited Notifications</span>
+            <span class="stat-label" data-i18n="orderSolution.stats.unlimited"
+              >Unlimited Notifications</span
+            >
           </div>
         </div>
       </div>
@@ -234,23 +248,27 @@
       <!-- Why section -->
       <section class="solution-content">
         <div class="container">
-          <span class="section-label">Why WhatsApp?</span>
-          <h2 class="section-title">
+          <span class="section-label" data-i18n="orderSolution.why.label"
+            >Why WhatsApp?</span
+          >
+          <h2 class="section-title" data-i18n="orderSolution.why.title">
             Your customers ignore emails.<br />They can't ignore WhatsApp.
           </h2>
-          <p class="section-body">
+          <p class="section-body" data-i18n="orderSolution.why.desc">
             In Iraq and Syria, email open rates hover below 15%. WhatsApp
             messages, on the other hand, are opened within minutes — often
-            seconds. With Nabda OTP, you can send instant order confirmations,
-            payment receipts, and delivery tracking updates that customers
-            actually see and trust.
+            seconds. With نبضة أوتي بي, you can send instant order
+            confirmations, payment receipts, and delivery tracking updates that
+            customers actually see and trust.
           </p>
 
           <div class="feature-grid">
             <div class="feature-card">
               <div class="fc-icon">📦</div>
-              <h4>Order Confirmation</h4>
-              <p>
+              <h4 data-i18n="orderSolution.features.confirmation.title">
+                Order Confirmation
+              </h4>
+              <p data-i18n="orderSolution.features.confirmation.desc">
                 Send an instant confirmation the moment an order is placed.
                 Reduce cancellations and build customer trust from the first
                 interaction.
@@ -258,40 +276,50 @@
             </div>
             <div class="feature-card">
               <div class="fc-icon">💳</div>
-              <h4>Payment Receipt</h4>
-              <p>
+              <h4 data-i18n="orderSolution.features.payment.title">
+                Payment Receipt
+              </h4>
+              <p data-i18n="orderSolution.features.payment.desc">
                 Automatically notify customers when payment is received and
                 processed. Essential for COD and online payment workflows.
               </p>
             </div>
             <div class="feature-card">
               <div class="fc-icon">🚚</div>
-              <h4>Shipping Updates</h4>
-              <p>
+              <h4 data-i18n="orderSolution.features.shipping.title">
+                Shipping Updates
+              </h4>
+              <p data-i18n="orderSolution.features.shipping.desc">
                 Notify when the order is packed, shipped, out for delivery, and
                 delivered. Keep customers in the loop at every stage.
               </p>
             </div>
             <div class="feature-card">
               <div class="fc-icon">↩️</div>
-              <h4>Return & Refund Alerts</h4>
-              <p>
+              <h4 data-i18n="orderSolution.features.return.title">
+                Return & Refund Alerts
+              </h4>
+              <p data-i18n="orderSolution.features.return.desc">
                 Proactively communicate return status and refund confirmations
                 to avoid confusion and reduce support tickets.
               </p>
             </div>
             <div class="feature-card">
               <div class="fc-icon">⚙️</div>
-              <h4>Simple REST API</h4>
-              <p>
+              <h4 data-i18n="orderSolution.features.api.title">
+                Simple REST API
+              </h4>
+              <p data-i18n="orderSolution.features.api.desc">
                 One endpoint. One POST request. Works with any backend —
                 Node.js, Python, PHP, Laravel, whatever your stack is.
               </p>
             </div>
             <div class="feature-card">
               <div class="fc-icon">🇮🇶</div>
-              <h4>Iraq & Syria Ready</h4>
-              <p>
+              <h4 data-i18n="orderSolution.features.regional.title">
+                Iraq & Syria Ready
+              </h4>
+              <p data-i18n="orderSolution.features.regional.desc">
                 Full support for +964 and +963 numbers. Works perfectly with
                 local Iraqi and Syrian e-commerce operations.
               </p>
@@ -303,15 +331,26 @@
       <!-- Order journey -->
       <section class="order-journey">
         <div class="container">
-          <span class="section-label">Customer Journey</span>
-          <h2 class="section-title">A message for every moment that matters</h2>
+          <span class="section-label" data-i18n="orderSolution.journey.label"
+            >Customer Journey</span
+          >
+          <h2 class="section-title" data-i18n="orderSolution.journey.title">
+            A message for every moment that matters
+          </h2>
           <div class="journey-timeline">
             <div class="journey-step">
               <div class="journey-icon">🛒</div>
               <div class="journey-body">
-                <div class="jb-label">Order Placed</div>
-                <h4>Instant Confirmation</h4>
-                <p>
+                <div
+                  class="jb-label"
+                  data-i18n="orderSolution.journey.step1.label"
+                >
+                  Order Placed
+                </div>
+                <h4 data-i18n="orderSolution.journey.step1.title">
+                  Instant Confirmation
+                </h4>
+                <p data-i18n="orderSolution.journey.step1.desc">
                   "✅ Your order #1042 has been confirmed! Total: 35,000 IQD.
                   We'll notify you when it ships. – YourStore"
                 </p>
@@ -320,9 +359,16 @@
             <div class="journey-step">
               <div class="journey-icon">💳</div>
               <div class="journey-body">
-                <div class="jb-label">Payment Received</div>
-                <h4>Payment Receipt</h4>
-                <p>
+                <div
+                  class="jb-label"
+                  data-i18n="orderSolution.journey.step2.label"
+                >
+                  Payment Received
+                </div>
+                <h4 data-i18n="orderSolution.journey.step2.title">
+                  Payment Receipt
+                </h4>
+                <p data-i18n="orderSolution.journey.step2.desc">
                   "💳 Payment received for order #1042. Amount: 35,000 IQD.
                   Thank you! – YourStore"
                 </p>
@@ -331,9 +377,16 @@
             <div class="journey-step">
               <div class="journey-icon">📦</div>
               <div class="journey-body">
-                <div class="jb-label">Order Shipped</div>
-                <h4>Shipping Notification</h4>
-                <p>
+                <div
+                  class="jb-label"
+                  data-i18n="orderSolution.journey.step3.label"
+                >
+                  Order Shipped
+                </div>
+                <h4 data-i18n="orderSolution.journey.step3.title">
+                  Shipping Notification
+                </h4>
+                <p data-i18n="orderSolution.journey.step3.desc">
                   "🚚 Your order #1042 is on its way! Estimated delivery:
                   tomorrow between 10am–2pm. – YourStore"
                 </p>
@@ -342,9 +395,16 @@
             <div class="journey-step">
               <div class="journey-icon">🏠</div>
               <div class="journey-body">
-                <div class="jb-label">Delivered</div>
-                <h4>Delivery Confirmation</h4>
-                <p>
+                <div
+                  class="jb-label"
+                  data-i18n="orderSolution.journey.step4.label"
+                >
+                  Delivered
+                </div>
+                <h4 data-i18n="orderSolution.journey.step4.title">
+                  Delivery Confirmation
+                </h4>
+                <p data-i18n="orderSolution.journey.step4.desc">
                   "✅ Order #1042 delivered! We hope you love it. Need anything?
                   Reply to this message. – YourStore"
                 </p>
@@ -357,11 +417,13 @@
       <!-- Code example -->
       <section class="solution-content">
         <div class="container">
-          <span class="section-label">Code Example</span>
-          <h2 class="section-title">
+          <span class="section-label" data-i18n="orderSolution.code.label"
+            >Code Example</span
+          >
+          <h2 class="section-title" data-i18n="orderSolution.code.title">
             Trigger order notifications with a single API call
           </h2>
-          <p class="section-body">
+          <p class="section-body" data-i18n="orderSolution.code.desc">
             Hook into your order management system's events and fire a WhatsApp
             notification instantly — no complex setup required.
           </p>
@@ -415,34 +477,36 @@
       <!-- Use cases -->
       <section class="use-cases">
         <div class="container">
-          <span class="section-label">Who Uses This</span>
-          <h2 class="section-title">
+          <span class="section-label" data-i18n="orderSolution.usecases.label"
+            >Who Uses This</span
+          >
+          <h2 class="section-title" data-i18n="orderSolution.usecases.title">
             Perfect for every type of seller in MENA
           </h2>
           <div class="use-case-list">
-            <div class="use-case-item">
-              <span class="uc-emoji">🛍️</span>Online stores & marketplaces
+            <div class="use-case-item" data-i18n="orderSolution.usecases.item1">
+              🛍️ Online stores & marketplaces
             </div>
-            <div class="use-case-item">
-              <span class="uc-emoji">🍕</span>Food delivery & restaurants
+            <div class="use-case-item" data-i18n="orderSolution.usecases.item2">
+              🍕 Food delivery & restaurants
             </div>
-            <div class="use-case-item">
-              <span class="uc-emoji">💊</span>Pharmacies & health products
+            <div class="use-case-item" data-i18n="orderSolution.usecases.item3">
+              💊 Pharmacies & health products
             </div>
-            <div class="use-case-item">
-              <span class="uc-emoji">👗</span>Fashion & clothing brands
+            <div class="use-case-item" data-i18n="orderSolution.usecases.item4">
+              👗 Fashion & clothing brands
             </div>
-            <div class="use-case-item">
-              <span class="uc-emoji">📱</span>Electronics & mobile shops
+            <div class="use-case-item" data-i18n="orderSolution.usecases.item5">
+              📱 Electronics & mobile shops
             </div>
-            <div class="use-case-item">
-              <span class="uc-emoji">🚗</span>Auto parts & accessories
+            <div class="use-case-item" data-i18n="orderSolution.usecases.item6">
+              🚗 Auto parts & accessories
             </div>
-            <div class="use-case-item">
-              <span class="uc-emoji">🏗️</span>B2B wholesale suppliers
+            <div class="use-case-item" data-i18n="orderSolution.usecases.item7">
+              🏗️ B2B wholesale suppliers
             </div>
-            <div class="use-case-item">
-              <span class="uc-emoji">🎁</span>Gift shops & subscription boxes
+            <div class="use-case-item" data-i18n="orderSolution.usecases.item8">
+              🎁 Gift shops & subscription boxes
             </div>
           </div>
         </div>
@@ -450,9 +514,11 @@
 
       <section class="solution-cta">
         <div class="container">
-          <h2>Start sending order updates via WhatsApp today</h2>
-          <p>
-            Create your Nabda OTP instance in minutes and connect it to your
+          <h2 data-i18n="orderSolution.cta.title">
+            Start sending order updates via WhatsApp today
+          </h2>
+          <p data-i18n="orderSolution.cta.desc">
+            Create your نبضة أوتي بي instance in minutes and connect it to your
             store. Unlimited notifications, flat monthly price.
           </p>
           <div class="hero-cta-group">
@@ -461,6 +527,7 @@
               target="_blank"
               rel="noopener noreferrer"
               class="btn btn-primary btn-lg"
+              data-i18n="orderSolution.cta.button1"
               >Create Free Instance</a
             >
             <a
@@ -468,6 +535,7 @@
               target="_blank"
               rel="noopener noreferrer"
               class="btn btn-ghost"
+              data-i18n="orderSolution.cta.button2"
               >Read the Docs →</a
             >
           </div>
@@ -475,6 +543,7 @@
       </section>
     </main>
 
+    <!-- Footer -->
     <footer class="footer">
       <div class="container">
         <div class="footer-main">
@@ -489,83 +558,122 @@
               />
               <span class="logo-text">Nabda OTP</span>
             </a>
-            <p class="footer-desc">
+            <p class="footer-desc" data-i18n="footer.desc">
               The first and best WhatsApp API solution for Iraq and the MENA
               region. Cloud gateway with direct integration for developers.
             </p>
           </div>
+
           <div class="footer-links">
             <div class="footer-col">
-              <h4>Product</h4>
+              <h4 data-i18n="footer.product">Product</h4>
               <ul>
-                <li><a href="/#features">Features</a></li>
-                <li><a href="/#pricing">Pricing</a></li>
+                <li>
+                  <a href="#features" data-i18n="footer.features">Features</a>
+                </li>
+                <li>
+                  <a href="#pricing" data-i18n="footer.pricing">Pricing</a>
+                </li>
                 <li>
                   <a
                     href="https://api.nabdaotp.com/docs"
                     target="_blank"
                     rel="noopener noreferrer"
+                    data-i18n="footer.docs"
                     >Documentation</a
                   >
                 </li>
               </ul>
             </div>
+
             <div class="footer-col">
-              <h4>Comparisons</h4>
+              <h4 data-i18n="footer.comparisons.title">Comparisons</h4>
               <ul>
                 <li>
-                  <a href="/comparings/nabda-vs-ultramsg.html"
+                  <a
+                    href="/comparing/nabda-vs-ultramsg"
+                    data-i18n="footer.comparisons.nabda_vs_ultramsg"
                     >Nabda vs UltraMsg</a
                   >
                 </li>
                 <li>
-                  <a href="/comparings/nabda-vs-twilio.html">Nabda vs Twilio</a>
+                  <a
+                    href="/comparing/nabda-vs-twilio"
+                    data-i18n="footer.comparisons.nabda_vs_twilio"
+                    >Nabda vs Twilio</a
+                  >
                 </li>
                 <li>
-                  <a href="/comparings/nabda-vs-bulk-sms.html"
+                  <a
+                    href="/comparing/nabda-vs-bulk-sms"
+                    data-i18n="footer.comparisons.nabda_vs_bulksms"
                     >Nabda vs BulkSMS</a
                   >
                 </li>
                 <li>
-                  <a href="/comparings/nabda-vs-official.html"
+                  <a
+                    href="/comparing/nabda-vs-official"
+                    data-i18n="footer.comparisons.nabda_vs_official"
                     >Nabda vs Official API</a
                   >
                 </li>
                 <li>
-                  <a href="/comparings/nabda-vs-OTPIQ.html">Nabda vs OTPIQ</a>
+                  <a
+                    href="/comparing/nabda-vs-OTPIQ"
+                    data-i18n="footer.comparisons.nabda_vs_otpiq"
+                    >Nabda vs OTPIQ</a
+                  >
                 </li>
                 <li>
-                  <a href="/comparings/nabda-vs-alternatives.html"
-                    >Nabda alternatives →</a
+                  <a
+                    href="/comparing/nabda-vs-alternatives"
+                    data-i18n="footer.comparisons.nabda_alternatives"
+                    >Nabda alternatives→</a
                   >
                 </li>
               </ul>
             </div>
             <div class="footer-col">
-              <h4>Legal</h4>
+              <h4 data-i18n="footer.legal">Legal</h4>
               <ul>
-                <li><a href="/about.html">About</a></li>
+                <li>
+                  <a href="/about.html" data-i18n="footer.about">About</a>
+                </li>
                 <li>
                   <a
                     href="https://wa.me/905346639145"
                     target="_blank"
                     rel="noopener noreferrer"
+                    data-i18n="footer.contact"
                     >Contact</a
                   >
                 </li>
-                <li><a href="/privacy-policy.html">Privacy Policy</a></li>
-                <li><a href="/terms-of-service.html">Terms of Service</a></li>
-                <li><a href="/refund-policy.html">Refund Policy</a></li>
+                <li>
+                  <a href="/privacy-policy.html" data-i18n="footer.privacy"
+                    >Privacy Policy</a
+                  >
+                </li>
+                <li>
+                  <a href="/terms-of-service.html" data-i18n="footer.terms"
+                    >Terms of Service</a
+                  >
+                </li>
+                <li>
+                  <a href="/refund-policy.html" data-i18n="footer.refund"
+                    >Refund Policy</a
+                  >
+                </li>
               </ul>
             </div>
           </div>
         </div>
+
         <div class="footer-bottom">
-          <p class="copyright">
+          <p class="copyright" data-i18n="footer.copyright">
             © 2026 Nabda OTP. All rights reserved. Nabda OTP is a product owned
             and operated by We Pioners Ltd
           </p>
-          <p class="footer-seo">
+          <p class="footer-seo" data-i18n="footer.seo">
             Cheapest WhatsApp API $10/mo Unlimited • Best Twilio Alternative •
             UltraMsg Alternative • SendGrid Alternative • WhatsApp OTP Iraq •
             WhatsApp API Syria • MENA WhatsApp Gateway • First Arab WhatsApp API
@@ -574,7 +682,6 @@
         </div>
       </div>
     </footer>
-
-    <script src="../script.js"></script>
+    <script src="/../script.js"></script>
   </body>
 </html>

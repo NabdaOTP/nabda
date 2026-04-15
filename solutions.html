@@ -8,27 +8,27 @@
       name="description"
       content="Discover how Nabda OTP WhatsApp API can solve your business communication needs with powerful solutions."
     />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="/style.css" />
     <!-- Favicon & Icons -->
     <link
       rel="apple-touch-icon"
       sizes="180x180"
-      href="assets/apple-touch-icon.png"
+      href="/assets/apple-touch-icon.png"
     />
     <link
       rel="icon"
       type="image/png"
       sizes="32x32"
-      href="assets/favicon-32x32.png"
+      href="/assets/favicon-32x32.png"
     />
     <link
       rel="icon"
       type="image/png"
       sizes="16x16"
-      href="assets/favicon-16x16.png"
+      href="/assets/favicon-16x16.png"
     />
-    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
-    <link rel="manifest" href="assets/site.webmanifest" />
+    <link rel="icon" type="image/x-icon" href="/assets/favicon.ico" />
+    <link rel="manifest" href="/assets/site.webmanifest" />
     <meta name="theme-color" content="#635bff" />
     <meta name="msapplication-TileColor" content="#635bff" />
 
@@ -149,8 +149,8 @@
     <main class="solutions-page">
       <section class="hero-solutions">
         <div class="container">
-          <h1>Solutions</h1>
-          <p>
+          <h1 data-i18n="solutions.title">Solutions</h1>
+          <p data-i18n="solutions.subtitle">
             Powerful WhatsApp solutions tailored for your business needs in
             Iraq, Syria & MENA
           </p>
@@ -169,12 +169,14 @@
                   class="icon"
                 />
               </div>
-              <h3>OTP & User Verification</h3>
-              <p>
+              <h3 data-i18n="solutions.card1.title">OTP & User Verification</h3>
+              <p data-i18n="solutions.card1.description">
                 Send secure and instant one-time passwords via WhatsApp for
                 registration, login, and two-factor authentication.
               </p>
-              <span class="learn-more">Learn More →</span>
+              <span class="learn-more" data-i18n="solutions.learn_more"
+                >Learn More →</span
+              >
             </a>
 
             <!-- Card 2 -->
@@ -186,12 +188,16 @@
                   class="icon"
                 />
               </div>
-              <h3>Order Confirmations & Delivery</h3>
-              <p>
+              <h3 data-i18n="solutions.card2.title">
+                Order Confirmations & Delivery
+              </h3>
+              <p data-i18n="solutions.card2.description">
                 Real-time order status updates, delivery notifications, and
                 payment confirmations for e-commerce businesses.
               </p>
-              <span class="learn-more">Learn More →</span>
+              <span class="learn-more" data-i18n="solutions.learn_more"
+                >Learn More →</span
+              >
             </a>
 
             <!-- Coming Soon Card -->
@@ -203,12 +209,18 @@
                   class="icon"
                 />
               </div>
-              <h3>More Solutions Coming Soon</h3>
-              <p>
+              <h3 data-i18n="solutions.coming_soon.title">
+                More Solutions Coming Soon
+              </h3>
+              <p data-i18n="solutions.coming_soon.description">
                 We're working on additional powerful WhatsApp solutions tailored
                 for businesses in Iraq, Syria, and the MENA region.
               </p>
-              <span class="learn-more coming-soon-text">Stay Tuned ...</span>
+              <span
+                class="learn-more coming-soon-text"
+                data-i18n="solutions.coming_soon.text"
+                >Stay Tuned ...</span
+              >
             </div>
 
             <!-- Card 3 -->
@@ -326,31 +338,94 @@
               </ul>
             </div>
             <div class="footer-col">
-              <h4>Comparisons</h4>
+              <h4 data-i18n="footer.comparisons.title">Comparisons</h4>
               <ul>
                 <li>
-                  <a href="/comparings/nabda-vs-ultramsg.html"
+                  <a
+                    href="/comparing/nabda-vs-ultramsg"
+                    data-i18n="footer.comparisons.nabda_vs_ultramsg"
                     >Nabda vs UltraMsg</a
                   >
                 </li>
                 <li>
-                  <a href="/comparings/nabda-vs-twilio.html">Nabda vs Twilio</a>
+                  <a
+                    href="/comparing/nabda-vs-twilio"
+                    data-i18n="footer.comparisons.nabda_vs_twilio"
+                    >Nabda vs Twilio</a
+                  >
                 </li>
                 <li>
-                  <a href="/comparings/nabda-vs-bulk-sms.html"
+                  <a
+                    href="/comparing/nabda-vs-bulk-sms"
+                    data-i18n="footer.comparisons.nabda_vs_bulksms"
                     >Nabda vs BulkSMS</a
                   >
                 </li>
                 <li>
-                  <a href="/comparings/nabda-vs-official.html"
+                  <a
+                    href="/comparing/nabda-vs-official"
+                    data-i18n="footer.comparisons.nabda_vs_official"
                     >Nabda vs Official API</a
                   >
                 </li>
                 <li>
-                  <a href="/comparings/nabda-vs-OTPIQ.html">Nabda vs OTPIQ</a>
+                  <a
+                    href="/comparing/nabda-vs-OTPIQ"
+                    data-i18n="footer.comparisons.nabda_vs_otpiq"
+                    >Nabda vs OTPIQ</a
+                  >
                 </li>
                 <li>
-                  <a href="/comparings/nabda-vs-alternatives.html"
+                  <a
+                    href="/comparing/nabda-vs-alternatives"
+                    data-i18n="footer.comparisons.nabda_alternatives"
+                    >Nabda alternatives→</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div class="footer-col">
+              <h4 data-i18n="footer.comparisons.title">Comparisons</h4>
+              <ul>
+                <li>
+                  <a
+                    href="/comparing/nabda-vs-ultramsg.html"
+                    data-i18n="footer.comparisons.nabda_vs_ultramsg"
+                    >Nabda vs UltraMsg</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="/comparing/nabda-vs-twilio.html"
+                    data-i18n="footer.comparisons.nabda_vs_twilio"
+                    >Nabda vs Twilio</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="/comparing/nabda-vs-bulk-sms.html"
+                    data-i18n="footer.comparisons.nabda_vs_bulksms"
+                    >Nabda vs BulkSMS</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="/comparing/nabda-vs-official.html"
+                    data-i18n="footer.comparisons.nabda_vs_official"
+                    >Nabda vs Official API</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="/comparing/nabda-vs-OTPIQ.html"
+                    data-i18n="footer.comparisons.nabda_vs_otpiq"
+                    >Nabda vs OTPIQ</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="/comparing/nabda-vs-alternatives.html"
+                    data-i18n="footer.comparisons.nabda_alternatives"
                     >Nabda alternatives→</a
                   >
                 </li>
@@ -404,6 +479,6 @@
       </div>
     </footer>
 
-    <script src="script.js"></script>
+    <script src="/script.js"></script>
   </body>
 </html>

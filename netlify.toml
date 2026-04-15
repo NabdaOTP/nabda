@@ -77,14 +77,96 @@
 
 
 [[redirects]]
+  from = "/blogs"
+  to = "/blogs.html"
+  status = 200
+
+[[redirects]]
+  from = "/blogs/"
+  to = "/blogs.html"
+  status = 200
+
+[[redirects]]
+  from = "/blogs/*"
+  to = "/blogs/:splat.html"
+  status = 200
+
+[[redirects]]
+  from = "/ar/blogs"
+  to = "/blogs.html"
+  status = 200
+
+[[redirects]]
+  from = "/ar/blogs/"
+  to = "/blogs.html"
+  status = 200
+
+[[redirects]]
+  from = "/ar/blogs/*"
+  to = "/blogs/:splat.html"
+  status = 200
+
+[[redirects]]
+  from = "/tr/blogs"
+  to = "/blogs.html"
+  status = 200
+
+[[redirects]]
+  from = "/tr/blogs/"
+  to = "/blogs.html"
+  status = 200
+
+[[redirects]]
+  from = "/tr/blogs/*"
+  to = "/blogs/:splat.html"
+  status = 200
+
+
+[[redirects]]
   from = "/solutions"
   to = "/solutions.html"
   status = 200
 
-  [[redirects]]
+[[redirects]]
+  from = "/solutions/"
+  to = "/solutions.html"
+  status = 200
+
+[[redirects]]
   from = "/solutions/*"
   to = "/solutions/:splat.html"
   status = 200
+
+[[redirects]]
+  from = "/ar/solutions"
+  to = "/solutions.html"
+  status = 200
+
+[[redirects]]
+  from = "/ar/solutions/"
+  to = "/solutions.html"
+  status = 200
+
+[[redirects]]
+  from = "/ar/solutions/*"
+  to = "/solutions/:splat.html"
+  status = 200
+
+[[redirects]]
+  from = "/tr/solutions"
+  to = "/solutions.html"
+  status = 200
+
+[[redirects]]
+  from = "/tr/solutions/"
+  to = "/solutions.html"
+  status = 200
+
+[[redirects]]
+  from = "/tr/solutions/*"
+  to = "/solutions/:splat.html"
+  status = 200
+
 
 [[redirects]]
   from = "/comparing"
@@ -92,14 +174,46 @@
   status = 200
 
 [[redirects]]
-  from = "/blogs"
-  to = "/blogs.html"
+  from = "/comparing/"
+  to = "/comparing.html"
   status = 200
 
-  [[redirects]]
-  from = "/blogs/*"
-  to = "/blogs/:splat.html"
+[[redirects]]
+  from = "/comparing/*"
+  to = "/comparing/:splat.html"
   status = 200
+
+[[redirects]]
+  from = "/ar/comparing"
+  to = "/comparing.html"
+  status = 200
+
+[[redirects]]
+  from = "/ar/comparing/"
+  to = "/comparing.html"
+  status = 200
+
+[[redirects]]
+  from = "/ar/comparing/*"
+  to = "/comparing/:splat.html"
+  status = 200
+
+[[redirects]]
+  from = "/tr/comparing"
+  to = "/comparing.html"
+  status = 200
+
+[[redirects]]
+  from = "/tr/comparing/"
+  to = "/comparing.html"
+  status = 200
+
+[[redirects]]
+  from = "/tr/comparing/*"
+  to = "/comparing/:splat.html"
+  status = 200
+
+  
 
 # Country pages: clean URLs → static files (mirror _redirects)
 [[redirects]]

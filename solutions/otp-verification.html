@@ -30,7 +30,7 @@
     <meta property="og:type" content="website" />
     <meta property="og:site_name" content="Nabda OTP" />
 
-    <link rel="stylesheet" href="../style.css" />
+    <link rel="stylesheet" href="/../style.css" />
     <link
       rel="apple-touch-icon"
       sizes="180x180"
@@ -197,8 +197,10 @@
               alt="OTP Verification"
             />
           </div>
-          <h1>OTP & User Verification<br />via WhatsApp</h1>
-          <p>
+          <h1 data-i18n="otpSolution.hero.title">
+            OTP & User Verification<br />via WhatsApp
+          </h1>
+          <p data-i18n="otpSolution.hero.desc">
             Send instant one-time passwords to Iraq, Syria, and all MENA
             countries. No templates. No Meta approval. Just create an instance
             and start verifying users in minutes.
@@ -209,6 +211,7 @@
               target="_blank"
               rel="noopener noreferrer"
               class="btn-white"
+              data-i18n="otpSolution.hero.cta1"
               >Start Free — No Credit Card</a
             >
             <a
@@ -216,6 +219,7 @@
               target="_blank"
               rel="noopener noreferrer"
               class="btn-outline-white"
+              data-i18n="otpSolution.hero.cta2"
               >View API Docs</a
             >
           </div>
@@ -227,19 +231,27 @@
         <div class="container">
           <div class="stat-item">
             <span class="stat-number">98%</span>
-            <span class="stat-label">Delivery Rate</span>
+            <span class="stat-label" data-i18n="otpSolution.stats.delivery"
+              >Delivery Rate</span
+            >
           </div>
           <div class="stat-item">
             <span class="stat-number">&lt;3s</span>
-            <span class="stat-label">Average Delivery Time</span>
+            <span class="stat-label" data-i18n="otpSolution.stats.time"
+              >Average Delivery Time</span
+            >
           </div>
           <div class="stat-item">
             <span class="stat-number">+20</span>
-            <span class="stat-label">Countries Supported</span>
+            <span class="stat-label" data-i18n="otpSolution.stats.countries"
+              >Countries Supported</span
+            >
           </div>
           <div class="stat-item">
             <span class="stat-number">$10/mo</span>
-            <span class="stat-label">Unlimited Messages</span>
+            <span class="stat-label" data-i18n="otpSolution.stats.pricing"
+              >Unlimited Messages</span
+            >
           </div>
         </div>
       </div>
@@ -247,63 +259,77 @@
       <!-- Why WhatsApp OTP -->
       <section class="solution-content">
         <div class="container">
-          <span class="section-label">Why WhatsApp?</span>
-          <h2 class="section-title">
+          <span class="section-label" data-i18n="otpSolution.why.label"
+            >Why WhatsApp?</span
+          >
+          <h2 class="section-title" data-i18n="otpSolution.why.title">
             SMS OTP is broken in Iraq & Syria.<br />WhatsApp just works.
           </h2>
-          <p class="section-body">
+          <p class="section-body" data-i18n="otpSolution.why.desc">
             SMS delivery rates in Iraq and Syria are notoriously unreliable —
             messages get delayed, blocked by carriers, or simply never arrive.
             WhatsApp penetration in the region exceeds 90%, making it the most
-            reliable channel for OTP delivery. With Nabda OTP, your verification
-            codes land in seconds, not minutes.
+            reliable channel for OTP delivery. With نبضة أوتي بي, your
+            verification codes land in seconds, not minutes.
           </p>
 
           <div class="feature-grid">
             <div class="feature-card">
               <div class="fc-icon">⚡</div>
-              <h4>Instant Delivery</h4>
-              <p>
+              <h4 data-i18n="otpSolution.features.instant.title">
+                Instant Delivery
+              </h4>
+              <p data-i18n="otpSolution.features.instant.desc">
                 OTPs delivered via WhatsApp in under 3 seconds on average, even
                 on slow mobile connections.
               </p>
             </div>
             <div class="feature-card">
               <div class="fc-icon">🔑</div>
-              <h4>No Templates Needed</h4>
-              <p>
+              <h4 data-i18n="otpSolution.features.noTemplates.title">
+                No Templates Needed
+              </h4>
+              <p data-i18n="otpSolution.features.noTemplates.desc">
                 Send any plain text message. No approval process, no waiting, no
                 Meta business verification required.
               </p>
             </div>
             <div class="feature-card">
               <div class="fc-icon">🌍</div>
-              <h4>Iraq & Syria First</h4>
-              <p>
+              <h4 data-i18n="otpSolution.features.regional.title">
+                Iraq & Syria First
+              </h4>
+              <p data-i18n="otpSolution.features.regional.desc">
                 Purpose-built for +964 and +963 numbers. Full support for E.164
                 format across all MENA countries.
               </p>
             </div>
             <div class="feature-card">
               <div class="fc-icon">🔒</div>
-              <h4>Secure by Design</h4>
-              <p>
+              <h4 data-i18n="otpSolution.features.secure.title">
+                Secure by Design
+              </h4>
+              <p data-i18n="otpSolution.features.secure.desc">
                 Instance-scoped Bearer tokens. Generate OTPs server-side. Each
                 instance has a dedicated number.
               </p>
             </div>
             <div class="feature-card">
               <div class="fc-icon">📊</div>
-              <h4>Delivery Webhooks</h4>
-              <p>
+              <h4 data-i18n="otpSolution.features.webhooks.title">
+                Delivery Webhooks
+              </h4>
+              <p data-i18n="otpSolution.features.webhooks.desc">
                 Real-time callbacks for sent, delivered, and failed events. Know
                 exactly when your OTP arrives.
               </p>
             </div>
             <div class="feature-card">
               <div class="fc-icon">💰</div>
-              <h4>Flat Pricing</h4>
-              <p>
+              <h4 data-i18n="otpSolution.features.pricing.title">
+                Flat Pricing
+              </h4>
+              <p data-i18n="otpSolution.features.pricing.desc">
                 One flat monthly fee per instance. No per-message costs. Send
                 unlimited OTPs without surprises.
               </p>
@@ -322,14 +348,20 @@
         "
       >
         <div class="container">
-          <span class="section-label">Integration</span>
-          <h2 class="section-title">Go live in 4 simple steps</h2>
+          <span class="section-label" data-i18n="otpSolution.how.label"
+            >Integration</span
+          >
+          <h2 class="section-title" data-i18n="otpSolution.how.title">
+            Go live in 4 simple steps
+          </h2>
           <div class="steps">
             <div class="step">
               <div class="step-num">1</div>
               <div class="step-body">
-                <h4>Create a Nabda OTP Account</h4>
-                <p>
+                <h4 data-i18n="otpSolution.how.step1.title">
+                  Create a نبضة أوتي بي Account
+                </h4>
+                <p data-i18n="otpSolution.how.step1.desc">
                   Sign up at dash.nabdaotp.com. Free to start, no credit card
                   required.
                 </p>
@@ -338,8 +370,10 @@
             <div class="step">
               <div class="step-num">2</div>
               <div class="step-body">
-                <h4>Create an Instance & Scan QR</h4>
-                <p>
+                <h4 data-i18n="otpSolution.how.step2.title">
+                  Create an Instance & Scan QR
+                </h4>
+                <p data-i18n="otpSolution.how.step2.desc">
                   Each instance gives you a dedicated WhatsApp number. Scan the
                   QR code once to connect your WhatsApp — done.
                 </p>
@@ -348,8 +382,10 @@
             <div class="step">
               <div class="step-num">3</div>
               <div class="step-body">
-                <h4>Get Your Instance Token</h4>
-                <p>
+                <h4 data-i18n="otpSolution.how.step3.title">
+                  Get Your Instance Token
+                </h4>
+                <p data-i18n="otpSolution.how.step3.desc">
                   Call the select-instance endpoint to receive a Bearer token
                   scoped to your instance. Store it securely on your backend.
                 </p>
@@ -358,8 +394,10 @@
             <div class="step">
               <div class="step-num">4</div>
               <div class="step-body">
-                <h4>Send OTP with a Single API Call</h4>
-                <p>
+                <h4 data-i18n="otpSolution.how.step4.title">
+                  Send OTP with a Single API Call
+                </h4>
+                <p data-i18n="otpSolution.how.step4.desc">
                   POST to <code>/api/v1/messages/send</code> with the phone
                   number and your message. That's it.
                 </p>
@@ -372,10 +410,14 @@
       <!-- Code example -->
       <section class="solution-content">
         <div class="container">
-          <span class="section-label">Code Example</span>
-          <h2 class="section-title">Send your first OTP in under 10 lines</h2>
-          <p class="section-body">
-            Everything runs server-side. Generate the OTP, send it via Nabda,
+          <span class="section-label" data-i18n="otpSolution.code.label"
+            >Code Example</span
+          >
+          <h2 class="section-title" data-i18n="otpSolution.code.title">
+            Send your first OTP in under 10 lines
+          </h2>
+          <p class="section-body" data-i18n="otpSolution.code.desc">
+            Everything runs server-side. Generate the OTP, send it via نبضة,
             store the hash — verify on submission.
           </p>
 
@@ -425,22 +467,24 @@
       <!-- Use cases -->
       <section class="use-cases">
         <div class="container">
-          <span class="section-label">Use Cases</span>
-          <h2 class="section-title">Built for every verification scenario</h2>
+          <span class="section-label" data-i18n="otpSolution.usecases.label"
+            >Use Cases</span
+          >
+          <h2 class="section-title" data-i18n="otpSolution.usecases.title">
+            Built for every verification scenario
+          </h2>
           <div class="use-case-list">
-            <div class="use-case-item">
-              <span class="uc-emoji">📱</span>User registration & signup
-              verification
+            <div class="use-case-item" data-i18n="otpSolution.usecases.item1">
+              📱 User registration & signup verification
             </div>
-            <div class="use-case-item">
-              <span class="uc-emoji">🔐</span>Two-factor authentication (2FA)
+            <div class="use-case-item" data-i18n="otpSolution.usecases.item2">
+              🔐 Two-factor authentication (2FA)
             </div>
-            <div class="use-case-item">
-              <span class="uc-emoji">🔑</span>Password reset & account recovery
+            <div class="use-case-item" data-i18n="otpSolution.usecases.item3">
+              🔑 Password reset & account recovery
             </div>
-            <div class="use-case-item">
-              <span class="uc-emoji">💳</span>Payment & transaction
-              authorization
+            <div class="use-case-item" data-i18n="otpSolution.usecases.item4">
+              💳 Payment & transaction authorization
             </div>
           </div>
         </div>
@@ -449,9 +493,11 @@
       <!-- CTA -->
       <section class="solution-cta">
         <div class="container">
-          <h2>Start verifying users via WhatsApp today</h2>
-          <p>
-            Create your first Nabda OTP instance in minutes. No contracts, no
+          <h2 data-i18n="otpSolution.cta.title">
+            Start verifying users via WhatsApp today
+          </h2>
+          <p data-i18n="otpSolution.cta.desc">
+            Create your first نبضة أوتي بي instance in minutes. No contracts, no
             per-message fees, no Meta approval needed.
           </p>
           <div class="hero-cta-group">
@@ -460,11 +506,16 @@
               target="_blank"
               rel="noopener noreferrer"
               class="btn btn-primary btn-lg"
+              data-i18n="otpSolution.cta.button1"
               >Create Free Instance</a
             >
-            <a href="/blogs/whatsapp-otp-iraq-guide.html" class="btn btn-ghost"
-              >Read Full Guide →</a
+            <a
+              href="/blogs/whatsapp-otp-iraq-guide.html"
+              class="btn btn-ghost"
+              data-i18n="otpSolution.cta.button2"
             >
+              Read Full Guide →
+            </a>
           </div>
         </div>
       </section>
@@ -485,83 +536,122 @@
               />
               <span class="logo-text">Nabda OTP</span>
             </a>
-            <p class="footer-desc">
+            <p class="footer-desc" data-i18n="footer.desc">
               The first and best WhatsApp API solution for Iraq and the MENA
               region. Cloud gateway with direct integration for developers.
             </p>
           </div>
+
           <div class="footer-links">
             <div class="footer-col">
-              <h4>Product</h4>
+              <h4 data-i18n="footer.product">Product</h4>
               <ul>
-                <li><a href="/#features">Features</a></li>
-                <li><a href="/#pricing">Pricing</a></li>
+                <li>
+                  <a href="#features" data-i18n="footer.features">Features</a>
+                </li>
+                <li>
+                  <a href="#pricing" data-i18n="footer.pricing">Pricing</a>
+                </li>
                 <li>
                   <a
                     href="https://api.nabdaotp.com/docs"
                     target="_blank"
                     rel="noopener noreferrer"
+                    data-i18n="footer.docs"
                     >Documentation</a
                   >
                 </li>
               </ul>
             </div>
+
             <div class="footer-col">
-              <h4>Comparisons</h4>
+              <h4 data-i18n="footer.comparisons.title">Comparisons</h4>
               <ul>
                 <li>
-                  <a href="/comparings/nabda-vs-ultramsg.html"
+                  <a
+                    href="/comparing/nabda-vs-ultramsg"
+                    data-i18n="footer.comparisons.nabda_vs_ultramsg"
                     >Nabda vs UltraMsg</a
                   >
                 </li>
                 <li>
-                  <a href="/comparings/nabda-vs-twilio.html">Nabda vs Twilio</a>
+                  <a
+                    href="/comparing/nabda-vs-twilio"
+                    data-i18n="footer.comparisons.nabda_vs_twilio"
+                    >Nabda vs Twilio</a
+                  >
                 </li>
                 <li>
-                  <a href="/comparings/nabda-vs-bulk-sms.html"
+                  <a
+                    href="/comparing/nabda-vs-bulk-sms"
+                    data-i18n="footer.comparisons.nabda_vs_bulksms"
                     >Nabda vs BulkSMS</a
                   >
                 </li>
                 <li>
-                  <a href="/comparings/nabda-vs-official.html"
+                  <a
+                    href="/comparing/nabda-vs-official"
+                    data-i18n="footer.comparisons.nabda_vs_official"
                     >Nabda vs Official API</a
                   >
                 </li>
                 <li>
-                  <a href="/comparings/nabda-vs-OTPIQ.html">Nabda vs OTPIQ</a>
+                  <a
+                    href="/comparing/nabda-vs-OTPIQ"
+                    data-i18n="footer.comparisons.nabda_vs_otpiq"
+                    >Nabda vs OTPIQ</a
+                  >
                 </li>
                 <li>
-                  <a href="/comparings/nabda-vs-alternatives.html"
-                    >Nabda alternatives →</a
+                  <a
+                    href="/comparing/nabda-vs-alternatives"
+                    data-i18n="footer.comparisons.nabda_alternatives"
+                    >Nabda alternatives→</a
                   >
                 </li>
               </ul>
             </div>
             <div class="footer-col">
-              <h4>Legal</h4>
+              <h4 data-i18n="footer.legal">Legal</h4>
               <ul>
-                <li><a href="/about.html">About</a></li>
+                <li>
+                  <a href="/about.html" data-i18n="footer.about">About</a>
+                </li>
                 <li>
                   <a
                     href="https://wa.me/905346639145"
                     target="_blank"
                     rel="noopener noreferrer"
+                    data-i18n="footer.contact"
                     >Contact</a
                   >
                 </li>
-                <li><a href="/privacy-policy.html">Privacy Policy</a></li>
-                <li><a href="/terms-of-service.html">Terms of Service</a></li>
-                <li><a href="/refund-policy.html">Refund Policy</a></li>
+                <li>
+                  <a href="/privacy-policy.html" data-i18n="footer.privacy"
+                    >Privacy Policy</a
+                  >
+                </li>
+                <li>
+                  <a href="/terms-of-service.html" data-i18n="footer.terms"
+                    >Terms of Service</a
+                  >
+                </li>
+                <li>
+                  <a href="/refund-policy.html" data-i18n="footer.refund"
+                    >Refund Policy</a
+                  >
+                </li>
               </ul>
             </div>
           </div>
         </div>
+
         <div class="footer-bottom">
-          <p class="copyright">
+          <p class="copyright" data-i18n="footer.copyright">
             © 2026 Nabda OTP. All rights reserved. Nabda OTP is a product owned
             and operated by We Pioners Ltd
           </p>
-          <p class="footer-seo">
+          <p class="footer-seo" data-i18n="footer.seo">
             Cheapest WhatsApp API $10/mo Unlimited • Best Twilio Alternative •
             UltraMsg Alternative • SendGrid Alternative • WhatsApp OTP Iraq •
             WhatsApp API Syria • MENA WhatsApp Gateway • First Arab WhatsApp API
@@ -571,6 +661,6 @@
       </div>
     </footer>
 
-    <script src="../script.js"></script>
+    <script src="/../script.js"></script>
   </body>
 </html>

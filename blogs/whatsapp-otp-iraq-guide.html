@@ -58,7 +58,7 @@
       content="https://nabdaotp.com/assets/blog/otp-iraq-guide.jpg"
     />
 
-    <link rel="stylesheet" href="../style.css" />
+    <link rel="stylesheet" href="/../style.css" />
 
     <!-- Favicon & Icons -->
     <link
@@ -229,8 +229,10 @@
       <article class="container">
         <div class="blog-post-header">
           <span class="blog-date">April 14, 2026</span>
-          <h1>How to Send OTP via WhatsApp API Complete Guide 2026</h1>
-          <p class="blog-excerpt">
+          <h1 data-i18n="blogPost.title">
+            How to Send OTP via WhatsApp API Complete Guide 2026
+          </h1>
+          <p class="blog-excerpt" data-i18n="blogPost.excerpt">
             A practical, production-ready guide for developers using
             <strong>Nabda OTP</strong>
             – the fastest WhatsApp OTP solution in Iraq (+964) and Syria (+963)
@@ -238,36 +240,41 @@
           </p>
         </div>
 
-        <div class="featured-image">
-          <img
-            src="../assets/otp-iraq-guide.jpg"
-            alt="Send OTP via WhatsApp API Iraq Syria - Nabda OTP"
-          />
-        </div>
-
         <div class="blog-content">
-          <h2>Why Nabda OTP is the best choice for Iraq & Syria</h2>
-          <p>
+          <h2 data-i18n="blogPost.section1.title">
+            Why Nabda OTP is the best choice for Iraq & Syria
+          </h2>
+          <p data-i18n="blogPost.section1.desc">
             Nabda OTP gives you direct access to WhatsApp without dealing with
             official Business API templates or Meta approval delays. Just create
             an instance and start sending OTPs instantly.
           </p>
 
-          <h2>What you need to get started</h2>
+          <h2 data-i18n="blogPost.section2.title">
+            What you need to get started
+          </h2>
           <ul>
-            <li>A Nabda OTP account</li>
-            <li>
+            <li data-i18n="blogPost.section2.item1">A Nabda OTP account</li>
+            <li data-i18n="blogPost.section2.item2">
               One or more active instances (each instance = dedicated WhatsApp
               number)
             </li>
-            <li>Instance-scoped token (Bearer token)</li>
-            <li>Server-side OTP generation logic</li>
+            <li data-i18n="blogPost.section2.item3">
+              Instance-scoped token (Bearer token)
+            </li>
+            <li data-i18n="blogPost.section2.item4">
+              Server-side OTP generation logic
+            </li>
           </ul>
 
-          <h2>Step-by-step: Send OTP using Nabda OTP API</h2>
+          <h2 data-i18n="blogPost.section3.title">
+            Step-by-step: Send OTP using Nabda OTP API
+          </h2>
 
-          <h3>1. Create and Select an Instance</h3>
-          <p>
+          <h3 data-i18n="blogPost.section3.step1">
+            1. Create and Select an Instance
+          </h3>
+          <p data-i18n="blogPost.section3.step1.desc">
             After creating an instance from the dashboard, you must select it to
             get the instance token:
           </p>
@@ -281,12 +288,16 @@
 const { accessToken } = await res.json();
 localStorage.setItem("nadba-instance-token", accessToken);</code></pre>
 
-          <h3>2. Generate OTP on your backend</h3>
+          <h3 data-i18n="blogPost.section3.step2">
+            2. Generate OTP on your backend
+          </h3>
           <pre><code>function generateOTP() {
   return Math.floor(100000 + Math.random() * 900000).toString();
 }</code></pre>
 
-          <h3>3. Send OTP via WhatsApp (Correct Endpoint)</h3>
+          <h3 h3 data-i18n="blogPost.section3.step3">
+            3. Send OTP via WhatsApp (Correct Endpoint)
+          </h3>
           <pre><code>const token = localStorage.getItem("nadba-instance-token");
 
 const payload = {
@@ -307,10 +318,16 @@ if (response.ok) {
   console.log("OTP sent successfully via WhatsApp");
 }</code></pre>
 
-          <h3>4. Verify the OTP on your server</h3>
-          <p>Always verify the OTP on the backend (never trust the client).</p>
+          <h3 data-i18n="blogPost.section3.step4">
+            4. Verify the OTP on your server
+          </h3>
+          <p data-i18n="blogPost.section3.step4.desc">
+            Always verify the OTP on the backend (never trust the client).
+          </p>
 
-          <h2>Optional: Configure Webhook for Delivery Status</h2>
+          <h2 data-i18n="blogPost.section4.title">
+            Optional: Configure Webhook for Delivery Status
+          </h2>
           <pre><code>await fetch("https://api.nabdaotp.com/api/v1/instances/webhook", {
   method: "PATCH",
   headers: {
@@ -323,58 +340,69 @@ if (response.ok) {
   })
 });</code></pre>
 
-          <h2>Best Practices for Iraq & Syria</h2>
+          <h2 data-i18n="blogPost.section5.title">
+            Best Practices for Iraq & Syria
+          </h2>
           <ul>
-            <li>
+            <li data-i18n="blogPost.section5.item1">
               Use E.164 format: <code>+96477xxxxxxxx</code> or
               <code>+9639xxxxxxxx</code>
             </li>
-            <li>Keep OTP expiry between 3–8 minutes</li>
-            <li>Send bilingual messages when possible (Arabic + English)</li>
-            <li>Always include your brand name in the message</li>
-            <li>
+            <li data-i18n="blogPost.section5.item2">
+              Keep OTP expiry between 3–8 minutes
+            </li>
+            <li data-i18n="blogPost.section5.item3">
+              Send bilingual messages when possible (Arabic + English)
+            </li>
+            <li data-i18n="blogPost.section5.item4">
+              Always include your brand name in the message
+            </li>
+            <li data-i18n="blogPost.section5.item5">
               Monitor webhook events for <code>sent</code>,
               <code>delivered</code>, and failures
             </li>
           </ul>
 
-          <h2>Troubleshooting</h2>
+          <h2 data-i18n="blogPost.section6.title">Troubleshooting</h2>
           <ul>
-            <li>
+            <li data-i18n="blogPost.section6.item1">
               <strong>401 Unauthorized</strong> → Make sure you selected the
               instance and using the instance token
             </li>
-            <li>
+            <li data-i18n="blogPost.section6.item2">
               <strong>Invalid phone</strong> → Must start with +964 or +963 or
               any other supported country code.
             </li>
-            <li>
+            <li data-i18n="blogPost.section6.item3">
               <strong>Message not received</strong> → Check that the instance is
               connected (QR code scanned)
             </li>
           </ul>
 
-          <h2>Ready to start?</h2>
-          <p>
+          <h2 data-i18n="blogPost.section7.title">Ready to start?</h2>
+          <p data-i18n="blogPost.section7.desc">
             Create your first instance in seconds and start sending OTPs via
             WhatsApp today.
           </p>
         </div>
 
         <div class="cta-bottom">
-          <h2>Get Started with Nabda OTP</h2>
+          <h2 data-i18n="blogPost.cta.title">Get Started with Nabda OTP</h2>
           <a
             href="https://dash.nabdaotp.com/en/signup"
             target="_blank"
             rel="noopener noreferrer"
             class="btn btn-primary btn-lg"
+            data-i18n="blogPost.cta.button"
           >
             Create Free Instance Now
           </a>
         </div>
 
         <div class="blog-footer">
-          <a href="/blogs" class="back-to-blogs">← Back to All Articles</a>
+          <a href="/blogs" class="back-to-blogs" data-i18n="blogPost.back"
+            >← Back to All Articles</a
+          >
         </div>
       </article>
     </main>
@@ -422,31 +450,47 @@ if (response.ok) {
               </ul>
             </div>
             <div class="footer-col">
-              <h4>Comparisons</h4>
+              <h4 data-i18n="footer.comparisons.title">Comparisons</h4>
               <ul>
                 <li>
-                  <a href="/comparings/nabda-vs-ultramsg.html"
+                  <a
+                    href="/comparing/nabda-vs-ultramsg"
+                    data-i18n="footer.comparisons.nabda_vs_ultramsg"
                     >Nabda vs UltraMsg</a
                   >
                 </li>
                 <li>
-                  <a href="/comparings/nabda-vs-twilio.html">Nabda vs Twilio</a>
+                  <a
+                    href="/comparing/nabda-vs-twilio"
+                    data-i18n="footer.comparisons.nabda_vs_twilio"
+                    >Nabda vs Twilio</a
+                  >
                 </li>
                 <li>
-                  <a href="/comparings/nabda-vs-bulk-sms.html"
+                  <a
+                    href="/comparing/nabda-vs-bulk-sms"
+                    data-i18n="footer.comparisons.nabda_vs_bulksms"
                     >Nabda vs BulkSMS</a
                   >
                 </li>
                 <li>
-                  <a href="/comparings/nabda-vs-official.html"
+                  <a
+                    href="/comparing/nabda-vs-official"
+                    data-i18n="footer.comparisons.nabda_vs_official"
                     >Nabda vs Official API</a
                   >
                 </li>
                 <li>
-                  <a href="/comparings/nabda-vs-OTPIQ.html">Nabda vs OTPIQ</a>
+                  <a
+                    href="/comparing/nabda-vs-OTPIQ"
+                    data-i18n="footer.comparisons.nabda_vs_otpiq"
+                    >Nabda vs OTPIQ</a
+                  >
                 </li>
                 <li>
-                  <a href="/comparings/nabda-vs-alternatives.html"
+                  <a
+                    href="/comparing/nabda-vs-alternatives"
+                    data-i18n="footer.comparisons.nabda_alternatives"
                     >Nabda alternatives→</a
                   >
                 </li>
@@ -500,6 +544,6 @@ if (response.ok) {
       </div>
     </footer>
 
-    <script src="../script.js"></script>
+    <script src="/../script.js"></script>
   </body>
 </html>

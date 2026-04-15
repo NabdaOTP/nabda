@@ -1018,6 +1018,66 @@ img {
     color: #1e40af;
 }
 
+/* Toggle Wrapper */
+.pricing-toggle-wrapper {
+    display: flex;
+    justify-content: center;
+    margin-top: var(--space-xl);
+}
+
+.pricing-toggle {
+    display: flex;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: var(--radius-pill);
+    padding: 4px;
+    gap: 4px;
+}
+
+.toggle-btn {
+    padding: 0.6rem 2rem;
+    border-radius: var(--radius-pill);
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 600;
+    background: transparent;
+    color: rgba(255, 255, 255, 0.7);
+    transition: all 0.25s ease;
+}
+
+.toggle-btn.active {
+    background: var(--blurple);
+    color: var(--white);
+    box-shadow: 0 4px 12px rgba(99, 91, 255, 0.4);
+}
+
+/* Cards Grid - 2 columns when toggle active */
+.pricing-options-row {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 24px;
+    margin-top: 40px;
+}
+
+@media (min-width: 768px) {
+    .pricing-options-row {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Annual card highlighted */
+.pricing-card-annual {
+    border: 2px solid #635bff;
+}
+
+@media (min-width: 768px) {
+    .pricing-card-annual {
+        transform: scale(1.04);
+        z-index: 10;
+        box-shadow: 0 25px 50px -12px rgb(99 91 255 / 0.25);
+    }
+}
+
 
 /* ============================================
    CTA Section
@@ -3914,7 +3974,7 @@ button:focus-visible {
     color: var(--navy-lighter);
 }
 
-.featured-image {
+/* .featured-image {
     margin-bottom: var(--space-2xl);
     border-radius: var(--radius-lg);
     overflow: hidden;
@@ -3928,7 +3988,7 @@ button:focus-visible {
     width: 100%;
     max-height: 520px;
     object-fit: cover;
-}
+} */
 
 .blog-content {
     background: var(--white);
