@@ -290,7 +290,7 @@
                     العربية
                   </button>
                 </li>
-                <li role="none">
+                <!-- <li role="none">
                   <button
                     type="button"
                     class="lang-menu-item"
@@ -299,7 +299,7 @@
                   >
                     Türkçe
                   </button>
-                </li>
+                </li> -->
               </ul>
             </div>
             <a
@@ -446,10 +446,10 @@ console.log(response.status); <span class="code-comment">// "sent"</span></code>
               />
             </div>
 
-            <h2 data-i18n="partner.title">Earn Points by Referring Friends</h2>
+            <h2 data-i18n="partner.title">Earn Money by Referring Friends</h2>
             <p class="partner-subtitle" data-i18n="partner.subtitle">
               Share your referral code with developers and businesses. When they
-              subscribe, you earn points that can be redeemed for free months,
+              subscribe, you earn Money that can be redeemed for free months,
               credits, or exclusive rewards.
             </p>
 
@@ -471,13 +471,19 @@ console.log(response.status); <span class="code-comment">// "sent"</span></code>
         </div>
       </section>
 
-      <!-- Features -->
+      <!-- Why Us / Features Section -->
       <section class="features" id="features">
         <div class="container">
           <div class="section-header">
-            <h2 class="section-title">Why teams in Oman choose Nabda OTP?</h2>
-            <p class="section-subtitle">Nabda OTP provides Omani businesses with affordable and reliable WhatsApp messaging solutions.</p>
+            <h2 class="section-title" data-i18n="features.title">
+              Why choose Nabda OTP ?
+            </h2>
+            <p class="section-subtitle" data-i18n="features.subtitle">
+              The most affordable WhatsApp API with the best reliability. Built
+              by developers, for developers🤍.
+            </p>
           </div>
+
           <div class="features-grid">
             <div class="feature-card feature-primary">
               <div class="feature-icon">💰</div>
@@ -547,7 +553,7 @@ console.log(response.status); <span class="code-comment">// "sent"</span></code>
         </div>
       </section>
 
-      <!-- Pricing Section (same as your manual Egypt page) -->
+      <!-- Pricing Section -->
       <section class="pricing" id="pricing">
         <div class="container">
           <div class="section-header">
@@ -560,9 +566,32 @@ console.log(response.status); <span class="code-comment">// "sent"</span></code>
             </p>
           </div>
 
+          <!-- Toggle -->
+          <div class="pricing-toggle-wrapper">
+            <div class="pricing-toggle">
+              <button
+                class="toggle-btn active"
+                id="toggleMonthly"
+                onclick="switchPricing('monthly')"
+                data-i18n="pricing.monthly"
+              >
+                Monthly
+              </button>
+              <button
+                class="toggle-btn"
+                id="toggleAnnual"
+                onclick="switchPricing('annual')"
+                data-i18n="pricing.annual"
+              >
+                Annual
+              </button>
+            </div>
+          </div>
+
           <div class="pricing-grid">
-            <div class="pricing-options-row">
-              <div class="pricing-card">
+            <div class="pricing-options-row" id="pricingCards">
+              <!-- Monthly Card -->
+              <div class="pricing-card" id="monthlyCard">
                 <div class="pricing-badge" data-i18n="pricing.standard.badge">
                   Standard
                 </div>
@@ -593,7 +622,6 @@ console.log(response.status); <span class="code-comment">// "sent"</span></code>
                     Messages: Unlimited
                   </p>
                 </div>
-
                 <ul class="pricing-features">
                   <li>
                     <svg
@@ -603,9 +631,8 @@ console.log(response.status); <span class="code-comment">// "sent"</span></code>
                       stroke="currentColor"
                       stroke-width="3"
                     >
-                      <polyline points="20 6 9 17 4 12"></polyline>
-                    </svg>
-                    <span data-i18n="pricing.feature1"
+                      <polyline points="20 6 9 17 4 12"></polyline></svg
+                    ><span data-i18n="pricing.features.unlimited"
                       >Unlimited WhatsApp Messages</span
                     >
                   </li>
@@ -617,9 +644,10 @@ console.log(response.status); <span class="code-comment">// "sent"</span></code>
                       stroke="currentColor"
                       stroke-width="3"
                     >
-                      <polyline points="20 6 9 17 4 12"></polyline>
-                    </svg>
-                    <span data-i18n="pricing.feature2">No Per-Message Fee</span>
+                      <polyline points="20 6 9 17 4 12"></polyline></svg
+                    ><span data-i18n="pricing.features.noFee"
+                      >No Per-Message Fee</span
+                    >
                   </li>
                   <li>
                     <svg
@@ -629,9 +657,10 @@ console.log(response.status); <span class="code-comment">// "sent"</span></code>
                       stroke="currentColor"
                       stroke-width="3"
                     >
-                      <polyline points="20 6 9 17 4 12"></polyline>
-                    </svg>
-                    <span data-i18n="pricing.feature3">5-Day Free Trial</span>
+                      <polyline points="20 6 9 17 4 12"></polyline></svg
+                    ><span data-i18n="pricing.features.trial"
+                      >5-Day Free Trial</span
+                    >
                   </li>
                   <li>
                     <svg
@@ -641,9 +670,10 @@ console.log(response.status); <span class="code-comment">// "sent"</span></code>
                       stroke="currentColor"
                       stroke-width="3"
                     >
-                      <polyline points="20 6 9 17 4 12"></polyline>
-                    </svg>
-                    <span data-i18n="pricing.feature4">RESTful API Access</span>
+                      <polyline points="20 6 9 17 4 12"></polyline></svg
+                    ><span data-i18n="pricing.features.api"
+                      >RESTful API Access</span
+                    >
                   </li>
                   <li>
                     <svg
@@ -653,9 +683,8 @@ console.log(response.status); <span class="code-comment">// "sent"</span></code>
                       stroke="currentColor"
                       stroke-width="3"
                     >
-                      <polyline points="20 6 9 17 4 12"></polyline>
-                    </svg>
-                    <span data-i18n="pricing.feature7"
+                      <polyline points="20 6 9 17 4 12"></polyline></svg
+                    ><span data-i18n="pricing.features.webhookReceive"
                       >Receive messages via Webhook</span
                     >
                   </li>
@@ -667,9 +696,8 @@ console.log(response.status); <span class="code-comment">// "sent"</span></code>
                       stroke="currentColor"
                       stroke-width="3"
                     >
-                      <polyline points="20 6 9 17 4 12"></polyline>
-                    </svg>
-                    <span data-i18n="pricing.feature8"
+                      <polyline points="20 6 9 17 4 12"></polyline></svg
+                    ><span data-i18n="pricing.features.media"
                       >Send media & documents</span
                     >
                   </li>
@@ -681,102 +709,9 @@ console.log(response.status); <span class="code-comment">// "sent"</span></code>
                       stroke="currentColor"
                       stroke-width="3"
                     >
-                      <polyline points="20 6 9 17 4 12"></polyline>
-                    </svg>
-                    <span data-i18n="pricing.feature9">Webhook support</span>
-                  </li>
-                  <li>
-                    <svg
-                      class="check-icon"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      stroke="currentColor"
-                      stroke-width="3"
-                    >
-                      <polyline points="20 6 9 17 4 12"></polyline>
-                    </svg>
-                    <span data-i18n="pricing.feature5">Priority Support</span>
-                  </li>
-                  <li>
-                    <svg
-                      class="check-icon"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      stroke="currentColor"
-                      stroke-width="3"
-                    >
-                      <polyline points="20 6 9 17 4 12"></polyline>
-                    </svg>
-                    <span data-i18n="pricing.feature6">Cancel Anytime</span>
-                  </li>
-                </ul>
-
-                <a
-                  href="https://dash.nabdaotp.com/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  class="btn btn-primary btn-lg btn-full"
-                  data-i18n="pricing.cta"
-                  >Start Your Free Trial</a
-                >
-                <p class="pricing-note" data-i18n="pricing.note">
-                  No credit card required • Setup in 2 minutes
-                </p>
-              </div>
-
-              <!-- Yearly Plan -->
-              <div class="pricing-card pricing-card-annual most-popular">
-                <div
-                  data-i18n="pricing.yearly.badge"
-                  class="pricing-badge pricing-badge-save"
-                >
-                  1 MONTH FREE
-                </div>
-
-                <div class="pricing-header">
-                  <div class="pricing-amount">
-                    <span class="currency">$</span>
-                    <span class="price">110</span>
-                    <span data-i18n="pricing.period.yearly" class="period"
-                      >/year</span
-                    >
-                  </div>
-                  <p
-                    class="pricing-tagline"
-                    data-i18n="pricing.yearly.subtitle"
-                  >
-                    12 months for the price of 11
-                  </p>
-                  <p
-                    class="pricing-tagline"
-                    data-i18n="pricing.standard.typeLine"
-                  >
-                    Type: WhatsApp Gateway
-                  </p>
-                  <p
-                    class="pricing-tagline"
-                    data-i18n="pricing.yearly.bestForLine"
-                  >
-                    Best for: Long-term savings
-                  </p>
-                  <p class="pricing-tagline" data-i18n="pricing.yearly.title">
-                    Messages: Unlimited WhatsApp (Annual)
-                  </p>
-                </div>
-
-                <ul class="pricing-features">
-                  <li>
-                    <svg
-                      class="check-icon"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      stroke="currentColor"
-                      stroke-width="3"
-                    >
-                      <polyline points="20 6 9 17 4 12"></polyline>
-                    </svg>
-                    <span data-i18n="pricing.feature1"
-                      >Unlimited WhatsApp Messages</span
+                      <polyline points="20 6 9 17 4 12"></polyline></svg
+                    ><span data-i18n="pricing.features.webhook"
+                      >Webhook support</span
                     >
                   </li>
                   <li>
@@ -787,218 +722,8 @@ console.log(response.status); <span class="code-comment">// "sent"</span></code>
                       stroke="currentColor"
                       stroke-width="3"
                     >
-                      <polyline points="20 6 9 17 4 12"></polyline>
-                    </svg>
-                    <span data-i18n="pricing.feature2">No Per-Message Fee</span>
-                  </li>
-                  <li>
-                    <svg
-                      class="check-icon"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      stroke="currentColor"
-                      stroke-width="3"
-                    >
-                      <polyline points="20 6 9 17 4 12"></polyline>
-                    </svg>
-                    <span data-i18n="pricing.feature3">5-Day Free Trial</span>
-                  </li>
-                  <li>
-                    <svg
-                      class="check-icon"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      stroke="currentColor"
-                      stroke-width="3"
-                    >
-                      <polyline points="20 6 9 17 4 12"></polyline>
-                    </svg>
-                    <span data-i18n="pricing.feature4">RESTful API Access</span>
-                  </li>
-                  <li>
-                    <svg
-                      class="check-icon"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      stroke="currentColor"
-                      stroke-width="3"
-                    >
-                      <polyline points="20 6 9 17 4 12"></polyline>
-                    </svg>
-                    <span data-i18n="pricing.feature7"
-                      >Receive messages via Webhook</span
-                    >
-                  </li>
-                  <li>
-                    <svg
-                      class="check-icon"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      stroke="currentColor"
-                      stroke-width="3"
-                    >
-                      <polyline points="20 6 9 17 4 12"></polyline>
-                    </svg>
-                    <span data-i18n="pricing.feature8"
-                      >Send media & documents</span
-                    >
-                  </li>
-                  <li>
-                    <svg
-                      class="check-icon"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      stroke="currentColor"
-                      stroke-width="3"
-                    >
-                      <polyline points="20 6 9 17 4 12"></polyline>
-                    </svg>
-                    <span data-i18n="pricing.feature9">Webhook support</span>
-                  </li>
-                  <li>
-                    <svg
-                      class="check-icon"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      stroke="currentColor"
-                      stroke-width="3"
-                    >
-                      <polyline points="20 6 9 17 4 12"></polyline>
-                    </svg>
-                    <span data-i18n="pricing.feature5">Priority Support</span>
-                  </li>
-                  <li>
-                    <svg
-                      class="check-icon"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      stroke="currentColor"
-                      stroke-width="3"
-                    >
-                      <polyline points="20 6 9 17 4 12"></polyline>
-                    </svg>
-                    <span data-i18n="pricing.feature6">Cancel Anytime</span>
-                  </li>
-                </ul>
-
-                <a
-                  href="https://dash.nabdaotp.com/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  class="btn btn-primary btn-lg btn-full"
-                  data-i18n="pricing.yearly.cta"
-                >
-                  Choose Yearly Plan
-                </a>
-
-                <p class="pricing-note" data-i18n="pricing.yearly.note">
-                  Save 8.33% • Billed annually
-                </p>
-              </div>
-
-              <div class="pricing-card">
-                <div
-                  class="pricing-badge pricing-badge-save"
-                  data-i18n="pricing.enterprise.badge"
-                >
-                  Enterprise
-                </div>
-                <div class="pricing-header">
-                  <div class="pricing-amount pricing-amount-contact">
-                    <span
-                      class="price pricing-price-contact"
-                      data-i18n="pricing.contact.price"
-                      >Contact Us</span
-                    >
-                  </div>
-                  <p
-                    class="pricing-tagline"
-                    data-i18n="pricing.official.typeLine"
-                  >
-                    Type: WhatsApp Official API
-                  </p>
-                  <p
-                    class="pricing-tagline"
-                    data-i18n="pricing.official.bestForLine"
-                  >
-                    Best for: Enterprise & Compliance
-                  </p>
-                  <p
-                    class="pricing-tagline"
-                    data-i18n="pricing.official.messagesLine"
-                  >
-                    Messages: Pay-per-conversation
-                  </p>
-                </div>
-
-                <ul class="pricing-features">
-                  <li>
-                    <svg
-                      class="check-icon"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      stroke="currentColor"
-                      stroke-width="3"
-                    >
-                      <polyline points="20 6 9 17 4 12"></polyline>
-                    </svg>
-                    <span data-i18n="pricing.official.feature1"
-                      >Official Meta-Verified API</span
-                    >
-                  </li>
-                  <li>
-                    <svg
-                      class="check-icon"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      stroke="currentColor"
-                      stroke-width="3"
-                    >
-                      <polyline points="20 6 9 17 4 12"></polyline>
-                    </svg>
-                    <span data-i18n="pricing.official.feature2"
-                      >Higher Message Limits</span
-                    >
-                  </li>
-                  <li>
-                    <svg
-                      class="check-icon"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      stroke="currentColor"
-                      stroke-width="3"
-                    >
-                      <polyline points="20 6 9 17 4 12"></polyline>
-                    </svg>
-                    <span data-i18n="pricing.official.feature3"
-                      >Business Verification Support</span
-                    >
-                  </li>
-                  <li>
-                    <svg
-                      class="check-icon"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      stroke="currentColor"
-                      stroke-width="3"
-                    >
-                      <polyline points="20 6 9 17 4 12"></polyline>
-                    </svg>
-                    <span data-i18n="pricing.official.feature4"
-                      >Dedicated Onboarding</span
-                    >
-                  </li>
-                  <li>
-                    <svg
-                      class="check-icon"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      stroke="currentColor"
-                      stroke-width="3"
-                    >
-                      <polyline points="20 6 9 17 4 12"></polyline>
-                    </svg>
-                    <span data-i18n="pricing.official.feature5"
+                      <polyline points="20 6 9 17 4 12"></polyline></svg
+                    ><span data-i18n="pricing.features.support"
                       >Priority Support</span
                     >
                   </li>
@@ -1010,23 +735,317 @@ console.log(response.status); <span class="code-comment">// "sent"</span></code>
                       stroke="currentColor"
                       stroke-width="3"
                     >
-                      <polyline points="20 6 9 17 4 12"></polyline>
-                    </svg>
-                    <span data-i18n="pricing.official.feature6"
+                      <polyline points="20 6 9 17 4 12"></polyline></svg
+                    ><span data-i18n="pricing.features.cancel"
+                      >Cancel Anytime</span
+                    >
+                  </li>
+                </ul>
+                <a
+                  href="https://dash.nabdaotp.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="btn btn-primary btn-lg btn-full"
+                  data-i18n="pricing.cta.trial"
+                  >Start Your Free Trial</a
+                >
+                <p class="pricing-note" data-i18n="pricing.note.trial">
+                  No credit card required • Setup in 2 minutes
+                </p>
+              </div>
+
+              <!-- Annual Card -->
+              <div
+                class="pricing-card pricing-card-annual"
+                id="annualCard"
+                style="display: none"
+              >
+                <div class="pricing-badge" data-i18n="pricing.standard.badge">
+                  Standard
+                </div>
+                <div class="pricing-header">
+                  <div class="pricing-amount">
+                    <span class="currency">$</span>
+                    <span class="price">110</span>
+                    <span class="period" data-i18n="pricing.periodYear"
+                      >/year</span
+                    >
+                  </div>
+                  <p class="pricing-tagline" data-i18n="pricing.annual.save">
+                    12 months for the price of 11
+                  </p>
+                  <p
+                    class="pricing-tagline"
+                    data-i18n="pricing.standard.typeLine"
+                  >
+                    Type: WhatsApp Gateway
+                  </p>
+                  <p class="pricing-tagline" data-i18n="pricing.annual.bestFor">
+                    Best for: Long-term savings
+                  </p>
+                  <p
+                    class="pricing-tagline"
+                    data-i18n="pricing.annual.messages"
+                  >
+                    Messages: Unlimited WhatsApp (Annual)
+                  </p>
+                </div>
+                <ul class="pricing-features">
+                  <li>
+                    <svg
+                      class="check-icon"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="3"
+                    >
+                      <polyline points="20 6 9 17 4 12"></polyline></svg
+                    ><span data-i18n="pricing.features.unlimited"
+                      >Unlimited WhatsApp Messages</span
+                    >
+                  </li>
+                  <li>
+                    <svg
+                      class="check-icon"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="3"
+                    >
+                      <polyline points="20 6 9 17 4 12"></polyline></svg
+                    ><span data-i18n="pricing.features.noFee"
+                      >No Per-Message Fee</span
+                    >
+                  </li>
+                  <li>
+                    <svg
+                      class="check-icon"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="3"
+                    >
+                      <polyline points="20 6 9 17 4 12"></polyline></svg
+                    ><span data-i18n="pricing.features.trial"
+                      >5-Day Free Trial</span
+                    >
+                  </li>
+                  <li>
+                    <svg
+                      class="check-icon"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="3"
+                    >
+                      <polyline points="20 6 9 17 4 12"></polyline></svg
+                    ><span data-i18n="pricing.features.api"
+                      >RESTful API Access</span
+                    >
+                  </li>
+                  <li>
+                    <svg
+                      class="check-icon"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="3"
+                    >
+                      <polyline points="20 6 9 17 4 12"></polyline></svg
+                    ><span data-i18n="pricing.features.webhookReceive"
+                      >Receive messages via Webhook</span
+                    >
+                  </li>
+                  <li>
+                    <svg
+                      class="check-icon"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="3"
+                    >
+                      <polyline points="20 6 9 17 4 12"></polyline></svg
+                    ><span data-i18n="pricing.features.media"
+                      >Send media & documents</span
+                    >
+                  </li>
+                  <li>
+                    <svg
+                      class="check-icon"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="3"
+                    >
+                      <polyline points="20 6 9 17 4 12"></polyline></svg
+                    ><span data-i18n="pricing.features.webhook"
+                      >Webhook support</span
+                    >
+                  </li>
+                  <li>
+                    <svg
+                      class="check-icon"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="3"
+                    >
+                      <polyline points="20 6 9 17 4 12"></polyline></svg
+                    ><span data-i18n="pricing.features.support"
+                      >Priority Support</span
+                    >
+                  </li>
+                  <li>
+                    <svg
+                      class="check-icon"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="3"
+                    >
+                      <polyline points="20 6 9 17 4 12"></polyline></svg
+                    ><span data-i18n="pricing.features.cancel"
+                      >Cancel Anytime</span
+                    >
+                  </li>
+                </ul>
+                <a
+                  href="https://dash.nabdaotp.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="btn btn-primary btn-lg btn-full"
+                  data-i18n="pricing.cta.yearly"
+                  >Choose Yearly Plan</a
+                >
+                <p class="pricing-note" data-i18n="pricing.note.yearly">
+                  Save 8.33% • Billed annually
+                </p>
+              </div>
+
+              <!-- Enterprise Card -->
+              <div class="pricing-card" id="enterpriseCard">
+                <div
+                  class="pricing-badge pricing-badge-save"
+                  data-i18n="pricing.enterprise.enter"
+                >
+                  Enterprise
+                </div>
+                <div class="pricing-header">
+                  <div class="pricing-amount pricing-amount-contact">
+                    <span
+                      class="price pricing-price-contact"
+                      data-i18n="pricing.enterprise.contact"
+                      >Contact Us</span
+                    >
+                  </div>
+                  <p
+                    class="pricing-tagline"
+                    data-i18n="pricing.enterprise.type"
+                  >
+                    Type: WhatsApp Official API
+                  </p>
+                  <p
+                    class="pricing-tagline"
+                    data-i18n="pricing.enterprise.bestFor"
+                  >
+                    Best for: Enterprise & Compliance
+                  </p>
+                  <p
+                    class="pricing-tagline"
+                    data-i18n="pricing.enterprise.messages"
+                  >
+                    Messages: Pay-per-conversation
+                  </p>
+                </div>
+                <ul class="pricing-features">
+                  <li>
+                    <svg
+                      class="check-icon"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="3"
+                    >
+                      <polyline points="20 6 9 17 4 12"></polyline></svg
+                    ><span data-i18n="pricing.enterprise.meta"
+                      >Official Meta-Verified API</span
+                    >
+                  </li>
+                  <li>
+                    <svg
+                      class="check-icon"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="3"
+                    >
+                      <polyline points="20 6 9 17 4 12"></polyline></svg
+                    ><span data-i18n="pricing.enterprise.limits"
+                      >Higher Message Limits</span
+                    >
+                  </li>
+                  <li>
+                    <svg
+                      class="check-icon"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="3"
+                    >
+                      <polyline points="20 6 9 17 4 12"></polyline></svg
+                    ><span data-i18n="pricing.enterprise.verification"
+                      >Business Verification Support</span
+                    >
+                  </li>
+                  <li>
+                    <svg
+                      class="check-icon"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="3"
+                    >
+                      <polyline points="20 6 9 17 4 12"></polyline></svg
+                    ><span data-i18n="pricing.enterprise.onboarding"
+                      >Dedicated Onboarding</span
+                    >
+                  </li>
+                  <li>
+                    <svg
+                      class="check-icon"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="3"
+                    >
+                      <polyline points="20 6 9 17 4 12"></polyline></svg
+                    ><span data-i18n="pricing.features.support"
+                      >Priority Support</span
+                    >
+                  </li>
+                  <li>
+                    <svg
+                      class="check-icon"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="3"
+                    >
+                      <polyline points="20 6 9 17 4 12"></polyline></svg
+                    ><span data-i18n="pricing.enterprise.sla"
                       >SLA Guarantee</span
                     >
                   </li>
                 </ul>
-
                 <a
                   href="https://wa.me/905346639145"
                   target="_blank"
                   rel="noopener noreferrer"
                   class="btn btn-primary btn-lg btn-full"
-                  data-i18n="pricing.contact.cta"
+                  data-i18n="pricing.cta.contact"
                   >Contact Us</a
                 >
-                <p class="pricing-note" data-i18n="pricing.contact.note">
+                <p class="pricing-note" data-i18n="pricing.note.enterprise">
                   We'll set everything up for you
                 </p>
               </div>

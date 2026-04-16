@@ -160,7 +160,7 @@ const translations = {
     "stats.uptime": "Uptime Guaranteed",
     "stats.reliable": "Most Reliable in MENA",
     // Partner / Referral Section
-    "partner.title": "Earn Points by Referring Friends",
+    "partner.title": "Earn Money by Referring Friends",
     "partner.subtitle":
       "Share your referral code with developers and businesses. When they subscribe, you earn points that can be redeemed for free months, credits, or exclusive rewards.",
     "partner.cta": "Get Your Referral Code",
@@ -199,7 +199,6 @@ const translations = {
     "features.analytics.desc":
       "Track delivery rates, monitor usage, and get insights with our comprehensive dashboard. Full visibility into your messaging operations.",
 
-    // Pricing
     // Pricing
     "pricing.title": "Simple, Transparent Pricing",
     "pricing.subtitle":
@@ -1102,9 +1101,9 @@ const translations = {
     "stats.reliable": "الأكثر موثوقية في الشرق الأوسط",
 
     // Partner / Referral Section
-    "partner.title": "اكسب نقاط عن طريق دعوة أصدقائك",
+    "partner.title": "اكسب أموال عن طريق دعوة أصدقائك",
     "partner.subtitle":
-      "شارك كود الدعوة الخاص بك مع المطورين والشركات. وعندما يشتركون، تكسب نقاط يمكن استبدالها بشهور مجانية أو رصيد أو مكافآت حصرية.",
+      "شارك كود الدعوة الخاص بك مع المطورين والشركات. وعندما يشتركون، تكسب أموال يمكن استبدالها بشهور مجانية أو رصيد أو مكافآت حصرية.",
     "partner.cta": "احصل على كود الدعوة الخاص بك",
     "partner.note": "ابدأ في الكسب اليوم • لا يوجد حد أقصى لعدد الدعوات",
 
@@ -2062,6 +2061,12 @@ const translations = {
     "stats.messages": "Gönderilen Mesajlar",
     "stats.uptime": "Garantili Çalışma Süresi",
     "stats.reliable": "MENA'da En Güvenilir",
+    // Partner / Referral Section - Turkish
+    "partner.title": "Arkadaşlarını Davet Ederek Puan Kazan",
+    "partner.subtitle":
+      "Referans kodunu geliştiriciler ve işletmelerle paylaş. Abone olduklarında, ücretsiz aylar, krediler veya özel ödüller için kullanabileceğin puanlar kazanırsın.",
+    "partner.cta": "Referans Kodunu Al",
+    "partner.note": "Hemen kazanmaya başla • Davetlerde sınır yok",
 
     "features.title": "Neden Nabda OTP?",
     "features.subtitle":

@@ -225,6 +225,14 @@
   to = "/countries/eg/index.html"
   status = 200
 [[redirects]]
+  from = "/tr"
+  to = "/countries/tr/index.html"
+  status = 200
+[[redirects]]
+  from = "/tr/"
+  to = "/countries/tr/index.html"
+  status = 200
+[[redirects]]
   from = "/iq"
   to = "/countries/iq/index.html"
   status = 200
@@ -271,4 +279,123 @@
 [[redirects]]
   from = "/sy/"
   to = "/countries/sy/index.html"
+  status = 200
+
+
+[[redirects]]
+  from = "/bh"
+  to = "/countries/bh/index.html"
+  status = 200
+[[redirects]]
+  from = "/bh/"
+  to = "/countries/bh/index.html"
+  status = 200
+
+[[redirects]]
+  from = "/de"
+  to = "/countries/de/index.html"
+  status = 200
+[[redirects]]
+  from = "/de/"
+  to = "/countries/de/index.html"
+  status = 200
+
+[[redirects]]
+  from = "/dz"
+  to = "/countries/dz/index.html"
+  status = 200
+[[redirects]]
+  from = "/dz/"
+  to = "/countries/dz/index.html"
+  status = 200
+
+
+[[redirects]]
+  from = "/kw"
+  to = "/countries/kw/index.html"
+  status = 200
+[[redirects]]
+  from = "/kw/"
+  to = "/countries/kw/index.html"
+  status = 200
+
+[[redirects]]
+  from = "/lb"
+  to = "/countries/lb/index.html"
+  status = 200
+[[redirects]]
+  from = "/lb/"
+  to = "/countries/lb/index.html"
+  status = 200
+
+[[redirects]]
+  from = "/ly"
+  to = "/countries/ly/index.html"
+  status = 200
+[[redirects]]
+  from = "/ly/"
+  to = "/countries/ly/index.html"
+  status = 200
+
+[[redirects]]
+  from = "/ma"
+  to = "/countries/ma/index.html"
+  status = 200
+[[redirects]]
+  from = "/ma/"
+  to = "/countries/ma/index.html"
+  status = 200
+
+[[redirects]]
+  from = "/om"
+  to = "/countries/om/index.html"
+  status = 200
+[[redirects]]
+  from = "/om/"
+  to = "/countries/om/index.html"
+  status = 200
+
+[[redirects]]
+  from = "/ps"
+  to = "/countries/ps/index.html"
+  status = 200
+[[redirects]]
+  from = "/ps/"
+  to = "/countries/ps/index.html"
+  status = 200
+
+[[redirects]]
+  from = "/sd"
+  to = "/countries/sd/index.html"
+  status = 200
+[[redirects]]
+  from = "/sd/"
+  to = "/countries/sd/index.html"
+  status = 200
+
+[[redirects]]
+  from = "/tn"
+  to = "/countries/tn/index.html"
+  status = 200
+[[redirects]]
+  from = "/tn/"
+  to = "/countries/tn/index.html"
+  status = 200
+
+[[redirects]]
+  from = "/us"
+  to = "/countries/us/index.html"
+  status = 200
+[[redirects]]
+  from = "/us/"
+  to = "/countries/us/index.html"
+  status = 200
+
+[[redirects]]
+  from = "/ye"
+  to = "/countries/ye/index.html"
+  status = 200
+[[redirects]]
+  from = "/ye/"
+  to = "/countries/ye/index.html"
   status = 200

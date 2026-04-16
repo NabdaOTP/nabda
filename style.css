@@ -637,7 +637,7 @@ img {
 .stat-number {
     font-size: 2.5rem;
     font-weight: 800;
-    color: var(--deep-navy);
+    color: var(--deep-navy) !important;
     letter-spacing: -0.02em;
     margin-bottom: var(--space-xs);
 }
@@ -2147,16 +2147,22 @@ button:focus-visible {
 }
 
 .btn-white {
-    background: #fff;
-    color: #635bff;
+    background: #fff !important;
+    color: #635bff !important;
     font-weight: 700;
-    padding: 12px 28px;
-    border-radius: 8px;
+    padding: 15px 28px !important;
     text-decoration: none;
-    transition:
-        transform 0.15s,
-        box-shadow 0.15s;
     font-size: 0.95rem;
+    -webkit-transition:        transform 0.15s,        box-shadow 0.15s;
+    -moz-transition:        transform 0.15s,        box-shadow 0.15s;
+    -ms-transition:        transform 0.15s,        box-shadow 0.15s;
+    -o-transition:        transform 0.15s,        box-shadow 0.15s;
+    transition:        transform 0.15s,        box-shadow 0.15s;
+    -webkit-border-radius: 90px !important;
+    -moz-border-radius: 90px !important;
+    -ms-border-radius: 90px !important;
+    -o-border-radius: 90px !important;
+    border-radius: 90px !important;
 }
 
 .btn-white:hover {
@@ -2200,7 +2206,7 @@ button:focus-visible {
 .stat-item .stat-number {
     font-size: 1.8rem;
     font-weight: 800;
-    color: #635bff;
+    color: #635bff !important;
     display: block;
 }
 
@@ -3008,6 +3014,10 @@ button:focus-visible {
     text-decoration: none;
     transition: transform 0.15s, box-shadow 0.15s;
     font-size: 0.95rem;
+    -webkit-transition: transform 0.15s, box-shadow 0.15s;
+    -moz-transition: transform 0.15s, box-shadow 0.15s;
+    -ms-transition: transform 0.15s, box-shadow 0.15s;
+    -o-transition: transform 0.15s, box-shadow 0.15s;
 }
 
 .btn-white:hover {
