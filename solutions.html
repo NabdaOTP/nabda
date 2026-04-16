@@ -1,0 +1,484 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Solutions - Nabda OTP</title>
+    <meta
+      name="description"
+      content="Discover how Nabda OTP WhatsApp API can solve your business communication needs with powerful solutions."
+    />
+    <link rel="stylesheet" href="/style.css" />
+    <!-- Favicon & Icons -->
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/assets/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/assets/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="/assets/favicon-16x16.png"
+    />
+    <link rel="icon" type="image/x-icon" href="/assets/favicon.ico" />
+    <link rel="manifest" href="/assets/site.webmanifest" />
+    <meta name="theme-color" content="#635bff" />
+    <meta name="msapplication-TileColor" content="#635bff" />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <header class="header">
+      <nav class="nav container">
+        <a href="/" class="logo">
+          <img
+            src="/assets/android-chrome-192x192.png"
+            alt="Nabda OTP"
+            class="logo-img"
+          />
+          <span class="logo-text">Nabda OTP</span>
+        </a>
+
+        <div class="mobile-menu" id="mobileMenu">
+          <ul class="nav-links">
+            <li><a href="/#features" data-i18n="nav.features">Features</a></li>
+            <li><a href="/#pricing" data-i18n="nav.pricing">Pricing</a></li>
+            <li>
+              <a href="/solutions" data-i18n="nav.solutions">Solutions</a>
+            </li>
+            <li>
+              <a href="/comparing" data-i18n="nav.comparing">Comparing</a>
+            </li>
+            <li>
+              <a href="/blogs" target="_blank" data-i18n="nav.blogs">Blogs</a>
+            </li>
+            <li>
+              <a
+                href="https://api.nabdaotp.com/docs"
+                target="_blank"
+                rel="noopener noreferrer"
+                data-i18n="nav.docs"
+                >Docs</a
+              >
+            </li>
+          </ul>
+
+          <div class="nav-actions">
+            <div class="lang-dropdown" id="langDropdown">
+              <button
+                type="button"
+                class="btn btn-ghost lang-toggle"
+                id="langToggle"
+                aria-expanded="false"
+                aria-haspopup="menu"
+                aria-label="Language"
+              >
+                <span class="lang-icon" aria-hidden="true">🌐</span>
+                <span id="langToggleLabel">English</span>
+              </button>
+              <ul class="lang-menu" id="langMenu" role="menu" hidden>
+                <li role="none">
+                  <button
+                    type="button"
+                    class="lang-menu-item"
+                    role="menuitem"
+                    data-lang="en"
+                  >
+                    English
+                  </button>
+                </li>
+                <li role="none">
+                  <button
+                    type="button"
+                    class="lang-menu-item"
+                    role="menuitem"
+                    data-lang="ar"
+                  >
+                    العربية
+                  </button>
+                </li>
+                <li role="none">
+                  <button
+                    type="button"
+                    class="lang-menu-item"
+                    role="menuitem"
+                    data-lang="tr"
+                  >
+                    Türkçe
+                  </button>
+                </li>
+              </ul>
+            </div>
+            <a
+              href="https://dash.nabdaotp.com/en/login"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="btn btn-primary"
+              data-i18n="nav.login"
+              >Login</a
+            >
+          </div>
+        </div>
+
+        <button
+          class="mobile-toggle"
+          id="mobileToggle"
+          aria-label="Toggle Menu"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </nav>
+    </header>
+
+    <main class="solutions-page">
+      <section class="hero-solutions">
+        <div class="container">
+          <h1 data-i18n="solutions.title">Solutions</h1>
+          <p data-i18n="solutions.subtitle">
+            Powerful WhatsApp solutions tailored for your business needs in
+            Iraq, Syria & MENA
+          </p>
+        </div>
+      </section>
+
+      <section class="solutions-section">
+        <div class="container">
+          <div class="solutions-grid">
+            <!-- Card 1 -->
+            <a href="/solutions/otp-verification" class="solution-card">
+              <div class="icon-wrapper">
+                <img
+                  src="https://img.icons8.com/fluency/96/lock.png"
+                  alt="OTP"
+                  class="icon"
+                />
+              </div>
+              <h3 data-i18n="solutions.card1.title">OTP & User Verification</h3>
+              <p data-i18n="solutions.card1.description">
+                Send secure and instant one-time passwords via WhatsApp for
+                registration, login, and two-factor authentication.
+              </p>
+              <span class="learn-more" data-i18n="solutions.learn_more"
+                >Learn More →</span
+              >
+            </a>
+
+            <!-- Card 2 -->
+            <a href="/solutions/order-confirmations" class="solution-card">
+              <div class="icon-wrapper">
+                <img
+                  src="https://img.icons8.com/fluency/96/shopping-cart.png"
+                  alt="Order"
+                  class="icon"
+                />
+              </div>
+              <h3 data-i18n="solutions.card2.title">
+                Order Confirmations & Delivery
+              </h3>
+              <p data-i18n="solutions.card2.description">
+                Real-time order status updates, delivery notifications, and
+                payment confirmations for e-commerce businesses.
+              </p>
+              <span class="learn-more" data-i18n="solutions.learn_more"
+                >Learn More →</span
+              >
+            </a>
+
+            <!-- Coming Soon Card -->
+            <div class="solution-card coming-soon-card">
+              <div class="icon-wrapper">
+                <img
+                  src="https://img.icons8.com/fluency/96/hourglass.png"
+                  alt="Coming Soon"
+                  class="icon"
+                />
+              </div>
+              <h3 data-i18n="solutions.coming_soon.title">
+                More Solutions Coming Soon
+              </h3>
+              <p data-i18n="solutions.coming_soon.description">
+                We're working on additional powerful WhatsApp solutions tailored
+                for businesses in Iraq, Syria, and the MENA region.
+              </p>
+              <span
+                class="learn-more coming-soon-text"
+                data-i18n="solutions.coming_soon.text"
+                >Stay Tuned ...</span
+              >
+            </div>
+
+            <!-- Card 3 -->
+            <!-- <a href="/solutions/appointment-reminders" class="solution-card">
+              <div class="icon-wrapper">
+                <img
+                  src="https://img.icons8.com/fluency/96/calendar.png"
+                  alt="Appointment"
+                  class="icon"
+                />
+              </div>
+              <h3>Appointment & Booking Reminders</h3>
+              <p>
+                Automated reminders for clinics, salons, restaurants, and
+                service businesses to reduce no-shows.
+              </p>
+              <span class="learn-more">Learn More →</span>
+            </a> -->
+
+            <!-- Card 4 -->
+            <!-- <a href="/solutions/customer-support" class="solution-card">
+              <div class="icon-wrapper">
+                <img
+                  src="https://img.icons8.com/fluency/96/headset.png"
+                  alt="Support"
+                  class="icon"
+                />
+              </div>
+              <h3>Customer Support & Alerts</h3>
+              <p>
+                Instant customer support notifications, issue alerts, and
+                proactive communication.
+              </p>
+              <span class="learn-more">Learn More →</span>
+            </a> -->
+
+            <!-- Card 5 -->
+            <!-- <a href="/solutions/marketing" class="solution-card">
+              <div class="icon-wrapper">
+                <img
+                  src="https://img.icons8.com/fluency/96/megaphone.png"
+                  alt="Marketing"
+                  class="icon"
+                />
+              </div>
+              <h3>Marketing & Promotions</h3>
+              <p>
+                Run targeted promotional campaigns, offers, and re-engagement
+                messages via WhatsApp.
+              </p>
+              <span class="learn-more">Learn More →</span>
+            </a> -->
+
+            <!-- Card 6 -->
+            <!-- <a href="/solutions/account-security" class="solution-card">
+              <div class="icon-wrapper">
+                <img
+                  src="https://img.icons8.com/fluency/96/shield.png"
+                  alt="Security"
+                  class="icon"
+                />
+              </div>
+              <h3>Account Security & Alerts</h3>
+              <p>
+                Security notifications, password reset, suspicious activity
+                alerts, and compliance messages.
+              </p>
+              <span class="learn-more">Learn More →</span>
+            </a> -->
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-main">
+          <div class="footer-brand">
+            <a href="/" class="logo">
+              <img
+                src="/assets/android-chrome-192x192.png"
+                alt="Nabda OTP"
+                class="logo-img"
+                loading="lazy"
+                decoding="async"
+              />
+              <span class="logo-text">Nabda OTP</span>
+            </a>
+            <p class="footer-desc" data-i18n="footer.desc">
+              The first and best WhatsApp API solution for Iraq and the MENA
+              region. Cloud gateway with direct integration for developers.
+            </p>
+          </div>
+
+          <div class="footer-links">
+            <div class="footer-col">
+              <h4 data-i18n="footer.product">Product</h4>
+              <ul>
+                <li>
+                  <a href="#features" data-i18n="footer.features">Features</a>
+                </li>
+                <li>
+                  <a href="#pricing" data-i18n="footer.pricing">Pricing</a>
+                </li>
+                <li>
+                  <a
+                    href="https://api.nabdaotp.com/docs"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    data-i18n="footer.docs"
+                    >Documentation</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div class="footer-col">
+              <h4 data-i18n="footer.comparisons.title">Comparisons</h4>
+              <ul>
+                <li>
+                  <a
+                    href="/comparing/nabda-vs-ultramsg"
+                    data-i18n="footer.comparisons.nabda_vs_ultramsg"
+                    >Nabda vs UltraMsg</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="/comparing/nabda-vs-twilio"
+                    data-i18n="footer.comparisons.nabda_vs_twilio"
+                    >Nabda vs Twilio</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="/comparing/nabda-vs-bulk-sms"
+                    data-i18n="footer.comparisons.nabda_vs_bulksms"
+                    >Nabda vs BulkSMS</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="/comparing/nabda-vs-official"
+                    data-i18n="footer.comparisons.nabda_vs_official"
+                    >Nabda vs Official API</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="/comparing/nabda-vs-OTPIQ"
+                    data-i18n="footer.comparisons.nabda_vs_otpiq"
+                    >Nabda vs OTPIQ</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="/comparing/nabda-vs-alternatives"
+                    data-i18n="footer.comparisons.nabda_alternatives"
+                    >Nabda alternatives→</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div class="footer-col">
+              <h4 data-i18n="footer.comparisons.title">Comparisons</h4>
+              <ul>
+                <li>
+                  <a
+                    href="/comparing/nabda-vs-ultramsg.html"
+                    data-i18n="footer.comparisons.nabda_vs_ultramsg"
+                    >Nabda vs UltraMsg</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="/comparing/nabda-vs-twilio.html"
+                    data-i18n="footer.comparisons.nabda_vs_twilio"
+                    >Nabda vs Twilio</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="/comparing/nabda-vs-bulk-sms.html"
+                    data-i18n="footer.comparisons.nabda_vs_bulksms"
+                    >Nabda vs BulkSMS</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="/comparing/nabda-vs-official.html"
+                    data-i18n="footer.comparisons.nabda_vs_official"
+                    >Nabda vs Official API</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="/comparing/nabda-vs-OTPIQ.html"
+                    data-i18n="footer.comparisons.nabda_vs_otpiq"
+                    >Nabda vs OTPIQ</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="/comparing/nabda-vs-alternatives.html"
+                    data-i18n="footer.comparisons.nabda_alternatives"
+                    >Nabda alternatives→</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div class="footer-col">
+              <h4 data-i18n="footer.legal">Legal</h4>
+              <ul>
+                <li><a href="about.html" data-i18n="footer.about">About</a></li>
+                <li>
+                  <a
+                    href="https://wa.me/905346639145"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    data-i18n="footer.contact"
+                    >Contact</a
+                  >
+                </li>
+                <li>
+                  <a href="privacy-policy.html" data-i18n="footer.privacy"
+                    >Privacy Policy</a
+                  >
+                </li>
+                <li>
+                  <a href="terms-of-service.html" data-i18n="footer.terms"
+                    >Terms of Service</a
+                  >
+                </li>
+                <li>
+                  <a href="refund-policy.html" data-i18n="footer.refund"
+                    >Refund Policy</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <p class="copyright" data-i18n="footer.copyright">
+            © 2026 Nabda OTP. All rights reserved. Nabda OTP is a product owned
+            and operated by We Pioners Ltd
+          </p>
+          <p class="footer-seo" data-i18n="footer.seo">
+            Cheapest WhatsApp API $10/mo Unlimited • Best Twilio Alternative •
+            UltraMsg Alternative • SendGrid Alternative • WhatsApp OTP Iraq •
+            WhatsApp API Syria • MENA WhatsApp Gateway • First Arab WhatsApp API
+            • أرخص واتساب API • بديل تويليو • خدمة OTP العراق
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="/script.js"></script>
+  </body>
+</html>

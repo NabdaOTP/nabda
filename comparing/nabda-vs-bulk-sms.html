@@ -1,0 +1,523 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nabda OTP vs BulkSMS 2026</title>
+    <meta
+      name="description"
+      content="Compare Nabda OTP and BulkSMS pricing and features for OTP workflows in MENA."
+    />
+    <link rel="stylesheet" href="/../style.css" />
+    <!-- Favicon & Icons -->
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/assets/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/assets/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="/assets/favicon-16x16.png"
+    />
+    <link rel="icon" type="image/x-icon" href="/assets/favicon.ico" />
+    <link rel="manifest" href="/assets/site.webmanifest" />
+    <meta name="theme-color" content="#635bff" />
+    <meta name="msapplication-TileColor" content="#635bff" />
+  </head>
+  <body>
+    <!-- Header / Navigation -->
+    <header class="header">
+      <nav class="nav container">
+        <a href="/" class="logo">
+          <img
+            src="/assets/android-chrome-192x192.png"
+            alt="Nabda OTP"
+            class="logo-img"
+          />
+          <span class="logo-text">Nabda OTP</span>
+        </a>
+
+        <div class="mobile-menu" id="mobileMenu">
+          <ul class="nav-links">
+            <li><a href="#features" data-i18n="nav.features">Features</a></li>
+            <li><a href="#pricing" data-i18n="nav.pricing">Pricing</a></li>
+            <li>
+              <a href="/solutions" target="_blank" data-i18n="nav.solutions"
+                >Solutions</a
+              >
+            </li>
+            <li>
+              <a href="/comparing" target="_blank" data-i18n="nav.comparing"
+                >Comparing</a
+              >
+            </li>
+            <li>
+              <a href="/blogs" target="_blank" data-i18n="nav.blogs">Blogs</a>
+            </li>
+            <li>
+              <a
+                href="https://api.nabdaotp.com/docs"
+                target="_blank"
+                rel="noopener noreferrer"
+                data-i18n="nav.docs"
+                >Docs</a
+              >
+            </li>
+          </ul>
+
+          <div class="nav-actions">
+            <div class="lang-dropdown" id="langDropdown">
+              <button
+                type="button"
+                class="btn btn-ghost lang-toggle"
+                id="langToggle"
+                aria-expanded="false"
+                aria-haspopup="menu"
+                aria-label="Language"
+              >
+                <span class="lang-icon" aria-hidden="true">🌐</span>
+                <span id="langToggleLabel">English</span>
+              </button>
+              <ul class="lang-menu" id="langMenu" role="menu" hidden>
+                <li role="none">
+                  <button
+                    type="button"
+                    class="lang-menu-item"
+                    role="menuitem"
+                    data-lang="en"
+                  >
+                    English
+                  </button>
+                </li>
+                <li role="none">
+                  <button
+                    type="button"
+                    class="lang-menu-item"
+                    role="menuitem"
+                    data-lang="ar"
+                  >
+                    العربية
+                  </button>
+                </li>
+                <li role="none">
+                  <button
+                    type="button"
+                    class="lang-menu-item"
+                    role="menuitem"
+                    data-lang="tr"
+                  >
+                    Türkçe
+                  </button>
+                </li>
+              </ul>
+            </div>
+            <a
+              href="https://dash.nabdaotp.com/en/login"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="btn btn-primary"
+              data-i18n="nav.login"
+              >Login</a
+            >
+          </div>
+        </div>
+
+        <button
+          class="mobile-toggle"
+          id="mobileToggle"
+          aria-label="Toggle Menu"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </nav>
+    </header>
+    <main class="comparison-page comparison-modern">
+      <section class="comparison-hero">
+        <div class="container">
+          <span class="badge" data-i18n="comparisonBulkSMS.badge"
+            >BulkSMS Alternative for MENA</span
+          >
+          <h1 data-i18n="comparisonBulkSMS.title">Nabda OTP vs BulkSMS</h1>
+          <p class="subtitle" data-i18n="comparisonBulkSMS.subtitle">
+            BulkSMS pricing is usually per-message. Nabda keeps pricing fixed
+            for predictable OTP growth.
+          </p>
+          <div class="hero-cta">
+            <a
+              href="https://dash.nabdaotp.com/en/signup"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="btn btn-primary btn-lg"
+              data-i18n="comparisonBulkSMS.hero.cta1"
+              >Start 5-Day Free Trial</a
+            >
+            <a
+              href="https://api.nabdaotp.com/docs"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="btn btn-ghost btn-lg"
+              data-i18n="comparisonBulkSMS.hero.cta2"
+              >View API Docs</a
+            >
+          </div>
+        </div>
+      </section>
+
+      <section class="comparison-table-section">
+        <div class="container">
+          <table class="comparison-table">
+            <thead>
+              <tr>
+                <th data-i18n="comparisonBulkSMS.table.feature">Feature</th>
+                <th data-i18n="comparisonBulkSMS.table.nabda">Nabda OTP</th>
+                <th data-i18n="comparisonBulkSMS.table.bulksms">BulkSMS</th>
+                <th data-i18n="comparisonBulkSMS.table.winner">Winner</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>
+                  <strong data-i18n="comparisonBulkSMS.table.row1.feature"
+                    >Pricing Options</strong
+                  >
+                </td>
+                <td data-i18n="comparisonBulkSMS.table.row1.nabda">
+                  <strong>Monthly: $10 (Unlimited)</strong><br /><strong
+                    >Yearly: $110/year (12 for 11)</strong
+                  >
+                </td>
+                <td data-i18n="comparisonBulkSMS.table.row1.bulksms">
+                  Per-message pricing
+                </td>
+                <td
+                  class="winner"
+                  data-i18n="comparisonBulkSMS.table.row1.winner"
+                >
+                  Nabda OTP
+                </td>
+              </tr>
+              <tr>
+                <td data-i18n="comparisonBulkSMS.table.row2.feature">
+                  Predictability
+                </td>
+                <td data-i18n="comparisonBulkSMS.table.row2.nabda">High</td>
+                <td data-i18n="comparisonBulkSMS.table.row2.bulksms">
+                  Variable
+                </td>
+                <td
+                  class="winner"
+                  data-i18n="comparisonBulkSMS.table.row2.winner"
+                >
+                  Nabda OTP
+                </td>
+              </tr>
+              <tr>
+                <td data-i18n="comparisonBulkSMS.table.row3.feature">
+                  MENA Focus
+                </td>
+                <td data-i18n="comparisonBulkSMS.table.row3.nabda">Strong</td>
+                <td data-i18n="comparisonBulkSMS.table.row3.bulksms">
+                  General global
+                </td>
+                <td
+                  class="winner"
+                  data-i18n="comparisonBulkSMS.table.row3.winner"
+                >
+                  Nabda OTP
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <section class="pricing-comparison" id="pricing-calculator">
+        <div class="container">
+          <div class="compare-header">
+            <span class="badge" data-i18n="comparisonBulkSMS.calculator.badge"
+              >Live Cost Calculator</span
+            >
+            <h2 data-i18n="comparisonBulkSMS.calculator.title">
+              Move the slider and compare your monthly bill instantly
+            </h2>
+            <p data-i18n="comparisonBulkSMS.calculator.desc">
+              Nabda OTP stays fixed at $10/month. BulkSMS estimate below uses
+              $0.0321/message benchmark.
+            </p>
+          </div>
+          <div class="volume-control">
+            <label
+              for="messageSlider"
+              data-i18n="comparisonBulkSMS.calculator.label"
+              >Total OTP messages per month</label
+            >
+            <input
+              type="range"
+              id="messageSlider"
+              min="1000"
+              max="200000"
+              value="30000"
+              step="1000"
+              data-pricing-model="per-message"
+              data-competitor-fixed="0"
+              data-competitor-per-message="0.0321"
+              title="Adjust monthly OTP volume"
+            />
+            <div class="volume-value">
+              <span id="messageCount">30,000</span>
+              <span data-i18n="comparisonBulkSMS.calculator.messages"
+                >messages/month</span
+              >
+            </div>
+          </div>
+          <table class="dynamic-comparison-table">
+            <thead>
+              <tr>
+                <th data-i18n="comparisonBulkSMS.calculator.table.provider">
+                  Provider
+                </th>
+                <th data-i18n="comparisonBulkSMS.calculator.table.monthlyCost">
+                  Monthly Cost
+                </th>
+                <th data-i18n="comparisonBulkSMS.calculator.table.costPerMsg">
+                  Cost per Message
+                </th>
+                <th data-i18n="comparisonBulkSMS.calculator.table.billingModel">
+                  Billing Model
+                </th>
+                <th data-i18n="comparisonBulkSMS.calculator.table.bestFit">
+                  Best Fit
+                </th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="nabda-row highlight">
+                <td><strong>Nabda OTP</strong></td>
+                <td data-i18n="comparisonBulkSMS.calculator.nabda.cost">
+                  <strong id="nabdaCost">$10.00</strong><br />Monthly: $10 |
+                  Yearly: $110 (1 month free)
+                </td>
+                <td id="nabdaPerMsg">$0.000</td>
+                <td data-i18n="comparisonBulkSMS.calculator.nabda.model">
+                  Fixed monthly or yearly
+                </td>
+                <td data-i18n="comparisonBulkSMS.calculator.nabda.fit">
+                  MENA OTP teams
+                </td>
+              </tr>
+              <tr>
+                <td>BulkSMS</td>
+                <td><strong id="ultraCost">$963.00</strong></td>
+                <td id="ultraPerMsg">$0.0321</td>
+                <td data-i18n="comparisonBulkSMS.calculator.bulksms.model">
+                  Per-message SMS billing
+                </td>
+                <td data-i18n="comparisonBulkSMS.calculator.bulksms.fit">
+                  SMS-first use cases
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          <p class="note" data-i18n="comparisonBulkSMS.calculator.note">
+            BulkSMS rates vary by destination and route.
+          </p>
+        </div>
+      </section>
+
+      <section class="why-nabda">
+        <div class="container">
+          <h2 data-i18n="comparisonBulkSMS.why.title">
+            Why Businesses in MENA Choose Nabda OTP
+          </h2>
+          <div class="why-grid">
+            <article class="why-card">
+              <h3 data-i18n="comparisonBulkSMS.why.card1.title">
+                Fixed Economics
+              </h3>
+              <p data-i18n="comparisonBulkSMS.why.card1.desc">
+                No message-level billing surprises as traffic grows.
+              </p>
+            </article>
+            <article class="why-card">
+              <h3 data-i18n="comparisonBulkSMS.why.card2.title">
+                Regional Execution
+              </h3>
+              <p data-i18n="comparisonBulkSMS.why.card2.desc">
+                Built for Iraq, Syria, and nearby markets.
+              </p>
+            </article>
+            <article class="why-card">
+              <h3 data-i18n="comparisonBulkSMS.why.card3.title">Fast Setup</h3>
+              <p data-i18n="comparisonBulkSMS.why.card3.desc">
+                Easy API onboarding and clear docs.
+              </p>
+            </article>
+          </div>
+          <div class="cta-bottom">
+            <h2 data-i18n="comparisonBulkSMS.why.cta.title">
+              Ready to switch?
+            </h2>
+            <a
+              href="https://dash.nabdaotp.com/en/signup"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="btn btn-primary btn-lg"
+              data-i18n="comparisonBulkSMS.why.cta.button"
+              >Create Free Nabda Account</a
+            >
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-main">
+          <div class="footer-brand">
+            <a href="/" class="logo">
+              <img
+                src="/assets/android-chrome-192x192.png"
+                alt="Nabda OTP"
+                class="logo-img"
+                loading="lazy"
+                decoding="async"
+              />
+              <span class="logo-text">Nabda OTP</span>
+            </a>
+            <p class="footer-desc" data-i18n="footer.desc">
+              The first and best WhatsApp API solution for Iraq and the MENA
+              region. Cloud gateway with direct integration for developers.
+            </p>
+          </div>
+
+          <div class="footer-links">
+            <div class="footer-col">
+              <h4 data-i18n="footer.product">Product</h4>
+              <ul>
+                <li>
+                  <a href="#features" data-i18n="footer.features">Features</a>
+                </li>
+                <li>
+                  <a href="#pricing" data-i18n="footer.pricing">Pricing</a>
+                </li>
+                <li>
+                  <a
+                    href="https://api.nabdaotp.com/docs"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    data-i18n="footer.docs"
+                    >Documentation</a
+                  >
+                </li>
+              </ul>
+            </div>
+
+            <div class="footer-col">
+              <h4 data-i18n="footer.comparisons.title">Comparisons</h4>
+              <ul>
+                <li>
+                  <a
+                    href="/comparing/nabda-vs-ultramsg"
+                    data-i18n="footer.comparisons.nabda_vs_ultramsg"
+                    >Nabda vs UltraMsg</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="/comparing/nabda-vs-twilio"
+                    data-i18n="footer.comparisons.nabda_vs_twilio"
+                    >Nabda vs Twilio</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="/comparing/nabda-vs-bulk-sms"
+                    data-i18n="footer.comparisons.nabda_vs_bulksms"
+                    >Nabda vs BulkSMS</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="/comparing/nabda-vs-official"
+                    data-i18n="footer.comparisons.nabda_vs_official"
+                    >Nabda vs Official API</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="/comparing/nabda-vs-OTPIQ"
+                    data-i18n="footer.comparisons.nabda_vs_otpiq"
+                    >Nabda vs OTPIQ</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="/comparing/nabda-vs-alternatives"
+                    data-i18n="footer.comparisons.nabda_alternatives"
+                    >Nabda alternatives→</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div class="footer-col">
+              <h4 data-i18n="footer.legal">Legal</h4>
+              <ul>
+                <li>
+                  <a href="/about.html" data-i18n="footer.about">About</a>
+                </li>
+                <li>
+                  <a
+                    href="https://wa.me/905346639145"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    data-i18n="footer.contact"
+                    >Contact</a
+                  >
+                </li>
+                <li>
+                  <a href="/privacy-policy.html" data-i18n="footer.privacy"
+                    >Privacy Policy</a
+                  >
+                </li>
+                <li>
+                  <a href="/terms-of-service.html" data-i18n="footer.terms"
+                    >Terms of Service</a
+                  >
+                </li>
+                <li>
+                  <a href="/refund-policy.html" data-i18n="footer.refund"
+                    >Refund Policy</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <p class="copyright" data-i18n="footer.copyright">
+            © 2026 Nabda OTP. All rights reserved. Nabda OTP is a product owned
+            and operated by We Pioners Ltd
+          </p>
+          <p class="footer-seo" data-i18n="footer.seo">
+            Cheapest WhatsApp API $10/mo Unlimited • Best Twilio Alternative •
+            UltraMsg Alternative • SendGrid Alternative • WhatsApp OTP Iraq •
+            WhatsApp API Syria • MENA WhatsApp Gateway • First Arab WhatsApp API
+            • أرخص واتساب API • بديل تويليو • خدمة OTP العراق
+          </p>
+        </div>
+      </div>
+    </footer>
+    <script src="/../script.js"></script>
+  </body>
+</html>
