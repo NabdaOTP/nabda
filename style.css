@@ -635,11 +635,11 @@ img {
 }
 
 .stat-number {
-    font-size: 2.5rem;
-    font-weight: 800;
+    font-size: 2.5rem !important;
+    font-weight: 800 !important;
     color: var(--deep-navy) !important;
-    letter-spacing: -0.02em;
-    margin-bottom: var(--space-xs);
+    letter-spacing: -0.02em !important;
+    margin-bottom: var(--space-xs) !important;
 }
 
 .stat-label {
@@ -1015,7 +1015,8 @@ img {
 }
 
 .pricing-card-annual .pricing-amount .price {
-    color: #1e40af;
+    font-size: 64px;
+    color: #0a2540;
 }
 
 /* Toggle Wrapper */
@@ -2206,7 +2207,7 @@ button:focus-visible {
 .stat-item .stat-number {
     font-size: 1.8rem;
     font-weight: 800;
-    color: #635bff !important;
+    color: #635bff ;
     display: block;
 }
 
