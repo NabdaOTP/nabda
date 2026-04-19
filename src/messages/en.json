@@ -1,0 +1,1018 @@
+{
+    "meta": {
+        "title": "Nabda OTP – The Cheapest WhatsApp API & Best OTP Service in Iraq",
+        "description": "Nabda OTP — Standard $10/mo Gateway: unlimited messages, no per-message fee, trial, REST API, webhooks, media & documents, priority support, cancel anytime, no credit card 2-min setup. Enterprise: Contact Us, Official API, pay-per-conversation, SLA. MENA. nabdaotp.com — api.nabdaotp.com/docs — We Pioners Ltd."
+    },
+    "nav": {
+        "features": "Features",
+        "pricing": "Pricing",
+        "solutions": "Solutions",
+        "comparing": "Comparing",
+        "blogs": "Blogs",
+        "docs": "Docs",
+        "login": "Login"
+    },
+    "hero": {
+        "badge": "🚀 The most reliable WhatsApp verification platform",
+        "title": "The Cheapest & First WhatsApp Gateway in Iraq, Syria & MENA Region.",
+        "titleEg": "The Cheapest & First WhatsApp Gateway in Egypt & MENA Region.",
+        "subtitle": "Send unlimited OTPs through our WhatsApp Gateway — Standard or Official API. The cheapest, most reliable API solution for developers. Direct integration with the most affordable pricing.",
+        "cta": {
+            "primary": "Start Free Trial",
+            "secondary": "View Documentation"
+        },
+        "price": "Starting at just <strong>$10/month</strong> — No per-message fees"
+    },
+    "code": {
+        "comment1": "// Sending OTP via Nabda Gateway",
+        "message": "\"Your code is: 847291\"",
+        "comment2": "// ✓ Delivered instantly"
+    },
+    "stats": {
+        "businesses": "Businesses Trust Us",
+        "messages": "Messages Sent",
+        "uptime": "Uptime Guaranteed",
+        "reliable": "Most Reliable in MENA"
+    },
+    "partner": {
+        "title": "Earn Money by Referring Friends",
+        "subtitle": "Share your referral code with developers and businesses. When they subscribe, you earn points that can be redeemed for free months, credits, or exclusive rewards.",
+        "cta": "Get Your Referral Code",
+        "note": "Start earning today • No limit on referrals"
+    },
+    "features": {
+        "title": "Why choose Nabda OTP ?",
+        "titleEg": "Why teams in Egypt choose Nabda OTP?",
+        "subtitle": "The most affordable WhatsApp API with the best reliability. Built by developers, for developers🤍.",
+        "subtitleEg": "Nabda OTP helps businesses in Egypt ship WhatsApp OTP and transactional messaging quickly with clean API workflows and regional support.🤍.",
+        "cheapest": {
+            "title": "Cheapest in Market",
+            "desc": "While others charge per message, we offer a flat monthly fee. Send unlimited WhatsApp messages for just $10/month — the most affordable API solution available.",
+            "highlight": "Save up to 90% compared to competitors"
+        },
+        "local": {
+            "title": "Local & Proud",
+            "desc": "A local platform built specifically for Arab developers. We understand the local market and provide Arabic support with direct integration capabilities."
+        },
+        "developer": {
+            "title": "Developer First",
+            "desc": "Clean RESTful API, comprehensive documentation, and SDKs for all major languages. Integrate our cloud gateway in minutes, not days."
+        },
+        "secure": {
+            "title": "Enterprise Security",
+            "desc": "End-to-end encryption, secure authentication, and full compliance. Your data stays protected with our enterprise-grade infrastructure."
+        },
+        "fast": {
+            "title": "Lightning Fast",
+            "desc": "Messages delivered in milliseconds. Our optimized cloud gateway ensures your OTPs reach users instantly, every single time."
+        },
+        "analytics": {
+            "title": "Real-time Analytics",
+            "desc": "Track delivery rates, monitor usage, and get insights with our comprehensive dashboard. Full visibility into your messaging operations."
+        }
+    },
+    "pricing": {
+        "title": "Simple, Transparent Pricing",
+        "subtitle": "No hidden fees. No per-message charges. The best value WhatsApp API.",
+        "monthly": "Monthly",
+        "annualTitle": "Annual",
+        "period": "/month",
+        "periodYear": "/year",
+        "standard": {
+            "badge": "Standard",
+            "typeLine": "Type: WhatsApp Gateway",
+            "bestForLine": "Best for: Developers & SMBs",
+            "messagesLine": "Messages: Unlimited"
+        },
+        "features": {
+            "unlimited": "Unlimited WhatsApp Messages",
+            "noFee": "No Per-Message Fee",
+            "trial": "5-Day Free Trial",
+            "api": "RESTful API Access",
+            "webhookReceive": "Receive messages via Webhook",
+            "media": "Send media & documents",
+            "webhook": "Webhook support",
+            "support": "Priority Support",
+            "cancel": "Cancel Anytime"
+        },
+        "cta": {
+            "trial": "Start Your Free Trial",
+            "yearly": "Choose Yearly Plan",
+            "contact": "Contact Us"
+        },
+        "note": {
+            "trial": "No credit card required • Setup in 2 minutes",
+            "yearly": "Save 8.33% • Billed annually",
+            "enterprise": "We'll set everything up for you"
+        },
+        "annual": {
+            "save": "12 months for the price of 11",
+            "bestFor": "Best for: Long-term savings",
+            "messages": "Messages: Unlimited WhatsApp (Annual)"
+        },
+        "enterprise": {
+            "contact": "Contact Us",
+            "enter": "Enterprise",
+            "type": "Type: WhatsApp Official API",
+            "bestFor": "Best for: Enterprise & Compliance",
+            "messages": "Messages: Pay-per-conversation",
+            "meta": "Official Meta-Verified API",
+            "limits": "Higher Message Limits",
+            "verification": "Business Verification Support",
+            "onboarding": "Dedicated Onboarding",
+            "sla": "SLA Guarantee"
+        }
+    },
+    "faq": {
+        "title": "Frequently asked questions"
+    },
+    "cta": {
+        "title": "Ready to send your first message?",
+        "subtitle": "Join 65+ Arab businesses using the cheapest WhatsApp API. Start your 5-day free trial today.",
+        "button": "Get Started Free"
+    },
+    "payment": {
+        "title": "Accepted Payment Methods"
+    },
+    "whatsapp": {
+        "help": "Hello, how can we help you?"
+    },
+    "footer": {
+        "desc": "The first and best WhatsApp API solution for Iraq and the MENA region. Cloud gateway with direct integration for developers.",
+        "product": "Product",
+        "features": "Features",
+        "pricing": "Pricing",
+        "docs": "Documentation",
+        "company": "Company",
+        "regions": "WhatsApp API by country",
+        "legal": "Legal",
+        "about": "About",
+        "contact": "Contact",
+        "privacy": "Privacy Policy",
+        "terms": "Terms of Service",
+        "refund": "Refund Policy",
+        "copyright": "© 2026 Nabda OTP. All rights reserved. Nabda OTP is a product owned and operated by We Pioners Ltd",
+        "seo": "Unlimited WhatsApp Messages • No Per-Message Fee • 5-Day Free Trial • RESTful API • Webhook Receive • Media & Documents • Priority Support • $10/mo • Twilio UltraMsg SendGrid Alternative • MENA Iraq Syria • أرخص واتساب API • بديل تويليو",
+        "comparisons": {
+            "title": "Comparisons",
+            "nabda_vs_ultramsg": "Nabda vs UltraMsg",
+            "nabda_vs_twilio": "Nabda vs Twilio",
+            "nabda_vs_bulksms": "Nabda vs BulkSMS",
+            "nabda_vs_official": "Nabda vs Official API",
+            "nabda_vs_otpiq": "Nabda vs OTPIQ",
+            "nabda_alternatives": "Nabda alternatives→"
+        }
+    },
+    "blogs": {
+        "title": "Our Blog",
+        "subtitle": "Insights, guides, and latest updates about WhatsApp API and OTP solutions",
+        "post1": {
+            "title": "How to Send OTP via WhatsApp API – Complete Guide 2026",
+            "desc": "Complete step-by-step guide to integrate Nabda OTP for secure user verification."
+        },
+        "post2": {
+            "title": "Why WhatsApp OTP is Replacing SMS in the Middle East – 2026 Trends & Realities",
+            "desc": "Trends, statistics, and opportunities for businesses in Egypt, Saudi Arabia & beyond."
+        },
+        "comingSoon": {
+            "title": "More Valuable Guides & Articles Are Coming",
+            "desc": "We're working on new in-depth articles about WhatsApp API best practices, advanced integrations, and success stories from MENA businesses.",
+            "stayTuned": "Stay Tuned .."
+        },
+        "readMore": "Read More →",
+        "blogPost": {
+            "title": "How to Send OTP via WhatsApp API Complete Guide 2026",
+            "excerpt": "A practical, production-ready guide for developers using <strong>Nabda OTP</strong> – the fastest WhatsApp OTP solution in Iraq (+964) and Syria (+963) and other countries.",
+            "section1": {
+                "title": "Why Nabda OTP is the best choice for Iraq & Syria",
+                "desc": "Nabda OTP gives you direct access to WhatsApp without dealing with official Business API templates or Meta approval delays. Just create an instance and start sending OTPs instantly."
+            },
+            "section2": {
+                "title": "What you need to get started",
+                "item1": "A Nabda OTP account",
+                "item2": "One or more active instances (each instance = dedicated WhatsApp number)",
+                "item3": "Instance-scoped token (Bearer token)",
+                "item4": "Server-side OTP generation logic"
+            },
+            "section3": {
+                "title": "Step-by-step: Send OTP using Nabda OTP API",
+                "step1": "1. Create and Select an Instance",
+                "step1Desc": "After creating an instance from the dashboard, you must select it to get the instance token:",
+                "step2": "2. Generate OTP on your backend",
+                "step3": "3. Send OTP via WhatsApp (Correct Endpoint)",
+                "step4": "4. Verify the OTP on your server",
+                "step4Desc": "Always verify the OTP on the backend (never trust the client)."
+            },
+            "section4": {
+                "title": "Optional: Configure Webhook for Delivery Status"
+            },
+            "section5": {
+                "title": "Best Practices for Iraq & Syria",
+                "item1": "Use E.164 format: +96477xxxxxxxx or +9639xxxxxxxx",
+                "item2": "Keep OTP expiry between 3–8 minutes",
+                "item3": "Send bilingual messages when possible (Arabic + English)",
+                "item4": "Always include your brand name in the message",
+                "item5": "Monitor webhook events for sent, delivered, and failures"
+            },
+            "section6": {
+                "title": "Troubleshooting",
+                "item1": "<strong>401 Unauthorized</strong> → Make sure you selected the instance and using the instance token",
+                "item2": "<strong>Invalid phone</strong> → Must start with +964 or +963 or any other supported country code.",
+                "item3": "<strong>Message not received</strong> → Check that the instance is connected (QR code scanned)"
+            },
+            "section7": {
+                "title": "Ready to start?",
+                "desc": "Create your first instance in seconds and start sending OTPs via WhatsApp today."
+            },
+            "cta": {
+                "title": "Get Started with Nabda OTP",
+                "button": "Create Free Instance Now"
+            },
+            "back": "← Back to All Articles"
+        },
+        "blogPost2": {
+            "title": "Why WhatsApp OTP is Replacing SMS in the Middle East – Trends & Realities 2026",
+            "excerpt": "Why product teams in Iraq, Syria, Egypt, Saudi Arabia and beyond are moving from SMS to WhatsApp OTP — and how Nabda OTP makes this transition simple and reliable.",
+            "section1": {
+                "title": "The shift is happening faster than most expect",
+                "desc1": "In 2026, WhatsApp has become the primary messaging app across the Middle East. Users check WhatsApp dozens of times a day, while SMS open rates continue to decline due to carrier filtering and spam perception.",
+                "desc2": "For authentication use cases like login, password reset, and transaction verification, WhatsApp OTP offers significantly better delivery rates and user experience."
+            },
+            "section2": {
+                "title": "Key Advantages of WhatsApp OTP over Traditional SMS",
+                "item1": "<strong>Higher Delivery Rate</strong> – Often exceeds 95% in Iraq, Syria, and Egypt",
+                "item2": "<strong>Lower Cost</strong> – Especially at scale compared to international SMS routes",
+                "item3": "<strong>Better User Experience</strong> – Messages appear in a familiar chat interface",
+                "item4": "<strong>Rich Status Tracking</strong> – Know when the message was sent, delivered, or read",
+                "item5": "<strong>Brand Trust</strong> – Messages come from a verified business number"
+            },
+            "section3": {
+                "title": "Real-World Performance in MENA Markets",
+                "intro": "Companies using Nabda OTP report:",
+                "item1": "Up to 40% reduction in authentication-related support tickets",
+                "item2": "Significant drop in SMS costs after migrating high-volume flows",
+                "item3": "Faster verification times (users receive OTP in under 5 seconds on average)"
+            },
+            "section4": {
+                "title": "How Nabda OTP Makes WhatsApp OTP Simple",
+                "desc": "Unlike the official WhatsApp Business API which requires template approval and complex setup, Nabda OTP follows a straightforward UltraMsg-style approach:",
+                "item1": "Create an instance → Get a dedicated WhatsApp number",
+                "item2": "Select the instance to get your scoped token",
+                "item3": "Send plain text OTPs directly via <code>/api/v1/messages/send</code>",
+                "item4": "Optional webhook for delivery status"
+            },
+            "section5": {
+                "title": "Who is making the switch in 2026?",
+                "desc": "Fintech startups, e-commerce platforms, delivery apps, and enterprise SaaS products across Iraq, Syria, Egypt, Jordan, and Saudi Arabia are increasingly making WhatsApp their primary OTP channel, with SMS kept only as a fallback."
+            },
+            "section6": {
+                "title": "Bottom Line",
+                "desc": "WhatsApp OTP is not just a trend — it is becoming the new standard for authentication in the Middle East. Teams that move early with a reliable provider like Nabda OTP gain a clear advantage in cost, user experience, and delivery reliability."
+            },
+            "cta": {
+                "title": "Ready to replace SMS with WhatsApp OTP?",
+                "button": "Start Free with Nabda OTP"
+            },
+            "back": "← Back to All Articles"
+        }
+    },
+    "comparison": {
+        "title": "Nabda OTP vs Competitors",
+        "subtitle": "See why smart businesses in MENA choose Nabda OTP",
+        "card1": {
+            "title": "Nabda OTP VS UltraMsg",
+            "description": "Best value and reliability for MENA businesses"
+        },
+        "card2": {
+            "title": "Nabda OTP VS Twilio",
+            "description": "Cost and delivery performance comparison"
+        },
+        "card3": {
+            "title": "Nabda OTP VS Official WhatsApp API",
+            "description": "Price vs features vs complexity"
+        },
+        "card4": {
+            "title": "Nabda OTP VS BulkSMS",
+            "description": "WhatsApp API vs Traditional SMS Gateway – Cost, delivery & reliability in MENA"
+        },
+        "card5": {
+            "title": "Nabda OTP VS OTPIQ",
+            "description": "Local OTP provider comparison – Pricing, delivery speed and features"
+        },
+        "card6": {
+            "title": "Best Nabda OTP Alternatives",
+            "description": "Complete guide to all major WhatsApp API providers in 2026"
+        },
+        "detailedComparison": "Detailed Comparison →",
+        "viewAll": "View All Alternatives →"
+    },
+    "comparisonModern": {
+        "badge": "Complete Market Overview",
+        "title": "Nabda OTP vs Top Alternatives",
+        "subtitle": "High-level comparison of pricing models, onboarding speed, and feature fit for OTP products in Iraq, Syria, and MENA.",
+        "table": {
+            "provider": "Provider",
+            "pricingModel": "Pricing Model",
+            "entryPrice": "Entry Price (Typical)",
+            "costPredictability": "Cost Predictability",
+            "menaFocus": "MENA Focus",
+            "bestFor": "Best For",
+            "nabda": {
+                "pricing": "Fixed Monthly + Yearly",
+                "price": "<strong>$10/mo</strong> or <strong>$110/yr</strong>",
+                "cost": "High",
+                "mena": "Strong",
+                "bestFor": "MENA OTP products"
+            },
+            "ultramsg": {
+                "pricing": "Per number/month",
+                "price": "~$39/month per number",
+                "cost": "Medium",
+                "mena": "General global",
+                "bestFor": "Teams managing multiple numbers"
+            },
+            "twilio": {
+                "pricing": "Per message + platform markup",
+                "price": "~$0.005 + Meta rate/message",
+                "cost": "Low-Medium at high volume",
+                "mena": "Global-first",
+                "bestFor": "Enterprise multi-channel stacks"
+            },
+            "bulksms": {
+                "pricing": "Per SMS message",
+                "price": "~$0.0321/message benchmark",
+                "cost": "Low-Medium",
+                "mena": "General global",
+                "bestFor": "SMS-first delivery"
+            },
+            "official": {
+                "pricing": "Per template message",
+                "price": "Country/category-based",
+                "cost": "Medium",
+                "mena": "Global model",
+                "bestFor": "Large compliance-heavy orgs"
+            },
+            "otpiq": {
+                "pricing": "Per message routing",
+                "price": "Public SMS benchmark ~80 IQD/msg",
+                "cost": "Medium",
+                "mena": "Local Iraq focus",
+                "bestFor": "Local multi-channel routing"
+            }
+        },
+        "note": "Data shown uses public benchmark pricing models and may vary by country, route, category, and contract terms.",
+        "why": {
+            "title": "Why Businesses in MENA Choose Nabda OTP",
+            "card1": {
+                "title": "Best Cost Predictability",
+                "desc": "Fixed monthly and yearly plans make long-term planning simple."
+            },
+            "card2": {
+                "title": "Regional Product Fit",
+                "desc": "Built for Iraq, Syria, and MENA business realities."
+            },
+            "card3": {
+                "title": "Faster Launch",
+                "desc": "Clean API, practical docs, and quick onboarding."
+            }
+        },
+        "cta": {
+            "title": "Choose the most predictable OTP partner",
+            "button": "Create Free Nabda Account"
+        }
+    },
+    "comparisonOfficial": {
+        "badge": "Official API Alternative",
+        "title": "Nabda OTP vs Official WhatsApp API",
+        "subtitle": "Official API pricing is typically per-message and country-dependent. Nabda keeps OTP economics simple with fixed monthly and yearly plans.",
+        "hero": {
+            "cta1": "Start 5-Day Free Trial",
+            "cta2": "View API Docs"
+        },
+        "table": {
+            "feature": "Feature",
+            "nabda": "Nabda OTP",
+            "official": "Official API",
+            "winner": "Winner",
+            "row1": {
+                "feature": "Pricing Options",
+                "nabda": "<strong>Monthly: $10 (Unlimited)</strong><br /><strong>Yearly: $110/year (12 for 11)</strong>",
+                "official": "Per-message pricing model",
+                "winner": "Nabda OTP"
+            },
+            "row2": {
+                "feature": "Billing Predictability",
+                "nabda": "High and fixed",
+                "official": "Variable by volume and country",
+                "winner": "Nabda OTP"
+            },
+            "row3": {
+                "feature": "Compliance",
+                "nabda": "Strong for SMB/scaleups",
+                "official": "Highest official track",
+                "winner": "Official API"
+            },
+            "row4": {
+                "feature": "MENA Focus",
+                "nabda": "Strong regional focus",
+                "official": "Global model",
+                "winner": "Nabda OTP"
+            },
+            "row5": {
+                "feature": "Webhook Support",
+                "nabda": "Yes",
+                "official": "Yes",
+                "winner": "Tie"
+            },
+            "row6": {
+                "feature": "Onboarding Speed",
+                "nabda": "About 2 minutes",
+                "official": "Usually longer verification cycle",
+                "winner": "Nabda OTP"
+            }
+        },
+        "calculator": {
+            "badge": "Live Cost Calculator",
+            "title": "Move the slider and compare your monthly bill instantly",
+            "desc": "Nabda OTP stays fixed at $10/month. Official API estimate below uses a realistic authentication baseline near $0.0030/message.",
+            "label": "Total OTP messages per month",
+            "messages": "messages/month",
+            "table": {
+                "provider": "Provider",
+                "monthlyCost": "Monthly Cost",
+                "costPerMsg": "Cost per Message",
+                "billingModel": "Billing Model",
+                "bestFit": "Best Fit"
+            },
+            "nabda": {
+                "cost": "<strong id='nabdaCost'>$10.00</strong><br />Monthly: $10 | Yearly: $110 (1 month free)",
+                "model": "Fixed monthly or yearly",
+                "fit": "MENA products needing predictable costs"
+            },
+            "official": {
+                "model": "Per-message category/country pricing",
+                "fit": "Large enterprises requiring official flow"
+            },
+            "note": "Official rates vary by destination country and message category."
+        },
+        "why": {
+            "title": "Why Businesses in MENA Choose Nabda OTP",
+            "card1": {
+                "title": "Simple Pricing",
+                "desc": "Fixed monthly and yearly plans avoid unpredictable cost spikes."
+            },
+            "card2": {
+                "title": "Regional Priority",
+                "desc": "Built with Iraq, Syria, and MENA delivery realities in mind."
+            },
+            "card3": {
+                "title": "Fast Launch",
+                "desc": "Clear docs and easy API flow reduce time to production."
+            }
+        },
+        "whyCta": {
+            "title": "Ready to simplify WhatsApp OTP costs?",
+            "button": "Create Free Nabda Account"
+        }
+    },
+    "comparisonBulkSMS": {
+        "badge": "BulkSMS Alternative for MENA",
+        "title": "Nabda OTP vs BulkSMS",
+        "subtitle": "BulkSMS pricing is usually per-message. Nabda keeps pricing fixed for predictable OTP growth.",
+        "hero": {
+            "cta1": "Start 5-Day Free Trial",
+            "cta2": "View API Docs"
+        },
+        "table": {
+            "feature": "Feature",
+            "nabda": "Nabda OTP",
+            "bulksms": "BulkSMS",
+            "winner": "Winner",
+            "row1": {
+                "feature": "Pricing Options",
+                "nabda": "<strong>Monthly: $10 (Unlimited)</strong><br /><strong>Yearly: $110/year (12 for 11)</strong>",
+                "bulksms": "Per-message pricing",
+                "winner": "Nabda OTP"
+            },
+            "row2": {
+                "feature": "Predictability",
+                "nabda": "High",
+                "bulksms": "Variable",
+                "winner": "Nabda OTP"
+            },
+            "row3": {
+                "feature": "MENA Focus",
+                "nabda": "Strong",
+                "bulksms": "General global",
+                "winner": "Nabda OTP"
+            }
+        },
+        "calculator": {
+            "badge": "Live Cost Calculator",
+            "title": "Move the slider and compare your monthly bill instantly",
+            "desc": "Nabda OTP stays fixed at $10/month. BulkSMS estimate below uses $0.0321/message benchmark.",
+            "label": "Total OTP messages per month",
+            "messages": "messages/month",
+            "table": {
+                "provider": "Provider",
+                "monthlyCost": "Monthly Cost",
+                "costPerMsg": "Cost per Message",
+                "billingModel": "Billing Model",
+                "bestFit": "Best Fit"
+            },
+            "nabda": {
+                "cost": "<strong id='nabdaCost'>$10.00</strong><br />Monthly: $10 | Yearly: $110 (1 month free)",
+                "model": "Fixed monthly or yearly",
+                "fit": "MENA OTP teams"
+            },
+            "bulksms": {
+                "model": "Per-message SMS billing",
+                "fit": "SMS-first use cases"
+            },
+            "note": "BulkSMS rates vary by destination and route."
+        },
+        "why": {
+            "title": "Why Businesses in MENA Choose Nabda OTP",
+            "card1": {
+                "title": "Fixed Economics",
+                "desc": "No message-level billing surprises as traffic grows."
+            },
+            "card2": {
+                "title": "Regional Execution",
+                "desc": "Built for Iraq, Syria, and nearby markets."
+            },
+            "card3": {
+                "title": "Fast Setup",
+                "desc": "Easy API onboarding and clear docs."
+            }
+        },
+        "whyCta": {
+            "title": "Ready to switch?",
+            "button": "Create Free Nabda Account"
+        },
+        "comparisonOTPIQ": {
+            "badge": "OTPIQ Alternative for MENA",
+            "title": "Nabda OTP vs OTPIQ",
+            "subtitle": "Both target regional OTP workflows, but Nabda provides fixed monthly and yearly pricing for easier budgeting.",
+            "hero": {
+                "cta1": "Start 5-Day Free Trial",
+                "cta2": "View API Docs"
+            },
+            "table": {
+                "feature": "Feature",
+                "nabda": "Nabda OTP",
+                "otpiq": "OTPIQ",
+                "winner": "Winner",
+                "row1": {
+                    "feature": "Pricing Options",
+                    "nabda": "<strong>Monthly: $10 (Unlimited)</strong><br /><strong>Yearly: $110/year (12 for 11)</strong>",
+                    "otpiq": "Per-message pricing",
+                    "winner": "Nabda OTP"
+                },
+                "row2": {
+                    "feature": "Predictability",
+                    "nabda": "High",
+                    "otpiq": "Variable",
+                    "winner": "Nabda OTP"
+                },
+                "row3": {
+                    "feature": "MENA Focus",
+                    "nabda": "Strong",
+                    "otpiq": "Strong local focus",
+                    "winner": "Tie"
+                },
+                "row4": {
+                    "feature": "Webhook Support",
+                    "nabda": "Yes",
+                    "otpiq": "Yes",
+                    "winner": "Tie"
+                }
+            },
+            "calculator": {
+                "badge": "Live Cost Calculator",
+                "title": "Move the slider and compare your monthly bill instantly",
+                "desc": "Nabda OTP stays fixed at $10/month. OTPIQ estimate uses a public Iraq SMS benchmark around 80 IQD (~$0.061/message).",
+                "label": "Total OTP messages per month",
+                "messages": "messages/month",
+                "table": {
+                    "provider": "Provider",
+                    "monthlyCost": "Monthly Cost",
+                    "costPerMsg": "Cost per Message",
+                    "billingModel": "Billing Model",
+                    "bestFit": "Best Fit"
+                },
+                "nabda": {
+                    "cost": "<strong id='nabdaCost'>$10.00</strong><br />Monthly: $10 | Yearly: $110 (1 month free)",
+                    "model": "Fixed monthly or yearly",
+                    "fit": "MENA OTP teams"
+                },
+                "otpiq": {
+                    "model": "Per-message routing model",
+                    "fit": "Local multi-channel routing"
+                },
+                "note": "OTPIQ WhatsApp-specific rates should be confirmed directly from OTPIQ contracts."
+            },
+            "why": {
+                "title": "Why Businesses in MENA Choose Nabda OTP",
+                "card1": {
+                    "title": "Fixed Pricing",
+                    "desc": "Predictable monthly and yearly cost at scale."
+                },
+                "card2": {
+                    "title": "Regional Product Fit",
+                    "desc": "Purpose-built for local delivery and support needs."
+                },
+                "card3": {
+                    "title": "Developer Experience",
+                    "desc": "Fast integration with clean API workflows."
+                }
+            },
+            "whyCta": {
+                "title": "Ready to reduce OTP costs?",
+                "button": "Create Free Nabda Account"
+            }
+        },
+        "comparisonTwilio": {
+            "badge": "Twilio Alternative for MENA",
+            "title": "Nabda OTP vs Twilio",
+            "subtitle": "Twilio is strong for global enterprise workflows, while Nabda OTP provides predictable fixed pricing and MENA-first execution for OTP-heavy products.",
+            "hero": {
+                "cta1": "Start 5-Day Free Trial",
+                "cta2": "View API Docs"
+            },
+            "table": {
+                "feature": "Feature",
+                "nabda": "Nabda OTP",
+                "twilio": "Twilio",
+                "winner": "Winner",
+                "row1": {
+                    "feature": "Pricing Options",
+                    "nabda": "<strong>Monthly: $10 (Unlimited)</strong><br /><strong>Yearly: $110/year (12 for 11)</strong>",
+                    "twilio": "Usage-based, country-dependent",
+                    "winner": "Nabda OTP"
+                },
+                "row2": {
+                    "feature": "Billing Predictability",
+                    "nabda": "High and fixed",
+                    "twilio": "Variable at volume",
+                    "winner": "Nabda OTP"
+                },
+                "row3": {
+                    "feature": "WhatsApp API Type",
+                    "nabda": "Gateway API",
+                    "twilio": "Official API via Twilio",
+                    "winner": "Tie"
+                },
+                "row4": {
+                    "feature": "MENA Focus",
+                    "nabda": "Strong regional focus",
+                    "twilio": "Global-first platform",
+                    "winner": "Nabda OTP"
+                },
+                "row5": {
+                    "feature": "Webhook Support",
+                    "nabda": "Yes",
+                    "twilio": "Yes",
+                    "winner": "Tie"
+                },
+                "row6": {
+                    "feature": "Media & Documents",
+                    "nabda": "Yes",
+                    "twilio": "Yes",
+                    "winner": "Tie"
+                },
+                "row7": {
+                    "feature": "Onboarding Speed",
+                    "nabda": "About 2 minutes",
+                    "twilio": "Typically longer setup flow",
+                    "winner": "Nabda OTP"
+                },
+                "row8": {
+                    "feature": "Support",
+                    "nabda": "Arabic + English",
+                    "twilio": "Global support model",
+                    "winner": "Nabda OTP"
+                }
+            },
+            "calculator": {
+                "badge": "Live Cost Calculator",
+                "title": "Move the slider and compare your monthly bill instantly",
+                "desc": "Nabda OTP stays fixed at $10/month. Twilio is estimated with a blended usage model around $0.0084/message (Twilio fee + Meta template fee).",
+                "label": "Total OTP messages per month",
+                "messages": "messages/month",
+                "table": {
+                    "provider": "Provider",
+                    "monthlyCost": "Monthly Cost",
+                    "costPerMsg": "Cost per Message",
+                    "billingModel": "Billing Model",
+                    "bestFit": "Best Fit"
+                },
+                "nabda": {
+                    "cost": "<strong id='nabdaCost'>$10.00</strong><br />Monthly: $10 | Yearly: $110 (1 month free)",
+                    "model": "Fixed monthly or yearly",
+                    "fit": "MENA startups and scaleups"
+                },
+                "twilio": {
+                    "model": "Usage based (platform + Meta fees)",
+                    "fit": "Global enterprise stacks"
+                },
+                "note": "Twilio and Meta pricing varies by destination country, template category, and billing updates."
+            },
+            "why": {
+                "title": "Why Businesses in MENA Choose Nabda OTP",
+                "card1": {
+                    "title": "Predictable Cost",
+                    "desc": "Fixed monthly and yearly plans make budgeting simple as verification traffic grows."
+                },
+                "card2": {
+                    "title": "MENA-First Product",
+                    "desc": "Delivery and support priorities are designed for Iraq, Syria, and nearby markets."
+                },
+                "card3": {
+                    "title": "Fast Go-Live",
+                    "desc": "Clean API and clear docs let engineering teams launch OTP workflows quickly."
+                }
+            },
+            "whyCta": {
+                "title": "Ready to lower OTP costs and launch faster?",
+                "button": "Create Free Nabda Account"
+            }
+        },
+        "comparisonUltra": {
+            "badge": "UltraMsg Alternative for MENA",
+            "title": "Nabda OTP vs UltraMsg",
+            "subtitle": "If you need WhatsApp OTP delivery in Iraq, Syria, and the wider MENA region, Nabda gives you a simple fixed plan while UltraMsg pricing scales with how many active numbers you need.",
+            "hero": {
+                "cta1": "Start 5-Day Free Trial",
+                "cta2": "View API Docs"
+            },
+            "table": {
+                "feature": "Feature",
+                "nabda": "Nabda OTP",
+                "ultramsg": "UltraMsg",
+                "winner": "Winner",
+                "row1": {
+                    "feature": "Pricing Options",
+                    "nabda": "<strong>Monthly: $10 (Unlimited)</strong><br /><strong>Yearly: $110/year (12 for 11)</strong>",
+                    "ultramsg": "<strong>Monthly: $39 per number</strong><br /><strong>Yearly: $390/year</strong>",
+                    "winner": "Nabda OTP"
+                },
+                "row2": {
+                    "feature": "WhatsApp Type",
+                    "nabda": "Gateway API",
+                    "ultramsg": "Gateway API",
+                    "winner": "Tie"
+                },
+                "row3": {
+                    "feature": "Volume Predictability",
+                    "nabda": "Stable monthly cost",
+                    "ultramsg": "Cost grows with added numbers",
+                    "winner": "Nabda OTP"
+                },
+                "row4": {
+                    "feature": "Regional Optimization",
+                    "nabda": "Iraq + Syria + MENA focused",
+                    "ultramsg": "General global routing",
+                    "winner": "Nabda OTP"
+                },
+                "row5": {
+                    "feature": "Webhook Support",
+                    "nabda": "Yes",
+                    "ultramsg": "Yes",
+                    "winner": "Tie"
+                },
+                "row6": {
+                    "feature": "Media/Documents",
+                    "nabda": "Yes",
+                    "ultramsg": "Yes",
+                    "winner": "Tie"
+                },
+                "row7": {
+                    "feature": "Free Trial",
+                    "nabda": "5 days",
+                    "ultramsg": "Limited trial options",
+                    "winner": "Nabda OTP"
+                },
+                "row8": {
+                    "feature": "Onboarding Speed",
+                    "nabda": "About 2 minutes",
+                    "ultramsg": "Longer setup flow",
+                    "winner": "Nabda OTP"
+                }
+            },
+            "why": {
+                "title": "Why teams switch from UltraMsg to Nabda OTP",
+                "card1": {
+                    "title": "Predictable Costs",
+                    "desc": "Pay $10/month with no surprise scaling charges as your OTP traffic increases."
+                },
+                "card2": {
+                    "title": "Built for MENA Delivery",
+                    "desc": "Routing and support are built around Iraq, Syria, Egypt, Saudi, and nearby markets."
+                },
+                "card3": {
+                    "title": "Faster to Launch",
+                    "desc": "Simple REST API + webhooks + clear docs so your team can go live quickly."
+                }
+            },
+            "whyCta": {
+                "title": "Ready to lower OTP costs and launch faster?",
+                "button": "Create Free Nabda Account"
+            }
+        }
+    },
+    "solutions": {
+        "title": "Solutions",
+        "subtitle": "Powerful WhatsApp solutions tailored for your business needs in Iraq, Syria & MENA",
+        "card1": {
+            "title": "OTP & User Verification",
+            "description": "Send secure and instant one-time passwords via WhatsApp for registration, login, and two-factor authentication."
+        },
+        "card2": {
+            "title": "Order Confirmations & Delivery",
+            "description": "Real-time order status updates, delivery notifications, and payment confirmations for e-commerce businesses."
+        },
+        "comingSoon": {
+            "title": "More Solutions Coming Soon",
+            "description": "We're working on additional powerful WhatsApp solutions tailored for businesses in Iraq, Syria, and the MENA region.",
+            "text": "Stay Tuned ..."
+        },
+        "learnMore": "Learn More →"
+    },
+    "otpSolution": {
+        "hero": {
+            "title": "OTP & User Verification via WhatsApp",
+            "desc": "Send instant one-time passwords to Iraq, Syria, and all MENA countries. No templates. No Meta approval. Just create an instance and start verifying users in minutes.",
+            "cta1": "Start Free — No Credit Card",
+            "cta2": "View API Docs"
+        },
+        "stats": {
+            "delivery": "Delivery Rate",
+            "time": "Average Delivery Time",
+            "countries": "Countries Supported",
+            "pricing": "Unlimited Messages"
+        },
+        "why": {
+            "label": "Why WhatsApp?",
+            "title": "SMS OTP is broken in Iraq & Syria.<br />WhatsApp just works.",
+            "desc": "SMS delivery rates in Iraq and Syria are notoriously unreliable — messages get delayed, blocked by carriers, or simply never arrive. WhatsApp penetration in the region exceeds 90%, making it the most reliable channel for OTP delivery. With Nabda OTP, your verification codes land in seconds, not minutes."
+        },
+        "features": {
+            "instant": {
+                "title": "Instant Delivery",
+                "desc": "OTPs delivered via WhatsApp in under 3 seconds on average, even on slow mobile connections."
+            },
+            "noTemplates": {
+                "title": "No Templates Needed",
+                "desc": "Send any plain text message. No approval process, no waiting, no Meta business verification required."
+            },
+            "regional": {
+                "title": "Iraq & Syria First",
+                "desc": "Purpose-built for +964 and +963 numbers. Full support for E.164 format across all MENA countries."
+            },
+            "secure": {
+                "title": "Secure by Design",
+                "desc": "Instance-scoped Bearer tokens. Generate OTPs server-side. Each instance has a dedicated number."
+            },
+            "webhooks": {
+                "title": "Delivery Webhooks",
+                "desc": "Real-time callbacks for sent, delivered, and failed events. Know exactly when your OTP arrives."
+            },
+            "pricing": {
+                "title": "Flat Pricing",
+                "desc": "One flat monthly fee per instance. No per-message costs. Send unlimited OTPs without surprises."
+            }
+        },
+        "how": {
+            "label": "Integration",
+            "title": "Go live in 4 simple steps",
+            "step1": {
+                "title": "Create a Nabda OTP Account",
+                "desc": "Sign up at dash.nabdaotp.com. Free to start, no credit card required."
+            },
+            "step2": {
+                "title": "Create an Instance & Scan QR",
+                "desc": "Each instance gives you a dedicated WhatsApp number. Scan the QR code once to connect your WhatsApp — done."
+            },
+            "step3": {
+                "title": "Get Your Instance Token",
+                "desc": "Call the select-instance endpoint to receive a Bearer token scoped to your instance. Store it securely on your backend."
+            },
+            "step4": {
+                "title": "Send OTP with a Single API Call",
+                "desc": "POST to /api/v1/messages/send with the phone number and your message. That's it."
+            }
+        },
+        "code": {
+            "label": "Code Example",
+            "title": "Send your first OTP in under 10 lines",
+            "desc": "Everything runs server-side. Generate the OTP, send it via Nabda, store the hash — verify on submission."
+        },
+        "usecases": {
+            "label": "Use Cases",
+            "title": "Built for every verification scenario",
+            "item1": "📱 User registration & signup verification",
+            "item2": "🔐 Two-factor authentication (2FA)",
+            "item3": "🔑 Password reset & account recovery",
+            "item4": "💳 Payment & transaction authorization"
+        },
+        "cta": {
+            "title": "Start verifying users via WhatsApp today",
+            "desc": "Create your first Nabda OTP instance in minutes. No contracts, no per-message fees, no Meta approval needed.",
+            "button1": "Create Free Instance",
+            "button2": "Read Full Guide →"
+        }
+    },
+    "orderSolution": {
+        "hero": {
+            "title": "Order Confirmations & Delivery Updates via WhatsApp",
+            "desc": "Keep your customers informed at every step — from order placed to doorstep delivery. Real-time WhatsApp notifications that actually get read.",
+            "cta1": "Start Free — No Credit Card",
+            "cta2": "View API Docs"
+        },
+        "stats": {
+            "openRate": "Open Rate on WhatsApp",
+            "support": "Less Customer Support Calls",
+            "deliveryTime": "Message Delivery Time",
+            "unlimited": "Unlimited Notifications"
+        },
+        "why": {
+            "label": "Why WhatsApp?",
+            "title": "Your customers ignore emails.<br />They can't ignore WhatsApp.",
+            "desc": "In Iraq and Syria, email open rates hover below 15%. WhatsApp messages, on the other hand, are opened within minutes — often seconds. With Nabda OTP, you can send instant order confirmations, payment receipts, and delivery tracking updates that customers actually see and trust."
+        },
+        "features": {
+            "confirmation": {
+                "title": "Order Confirmation",
+                "desc": "Send an instant confirmation the moment an order is placed. Reduce cancellations and build customer trust from the first interaction."
+            },
+            "payment": {
+                "title": "Payment Receipt",
+                "desc": "Automatically notify customers when payment is received and processed. Essential for COD and online payment workflows."
+            },
+            "shipping": {
+                "title": "Shipping Updates",
+                "desc": "Notify when the order is packed, shipped, out for delivery, and delivered. Keep customers in the loop at every stage."
+            },
+            "return": {
+                "title": "Return & Refund Alerts",
+                "desc": "Proactively communicate return status and refund confirmations to avoid confusion and reduce support tickets."
+            },
+            "api": {
+                "title": "Simple REST API",
+                "desc": "One endpoint. One POST request. Works with any backend — Node.js, Python, PHP, Laravel, whatever your stack is."
+            },
+            "regional": {
+                "title": "Iraq & Syria Ready",
+                "desc": "Full support for +964 and +963 numbers. Works perfectly with local Iraqi and Syrian e-commerce operations."
+            }
+        },
+        "journey": {
+            "label": "Customer Journey",
+            "title": "A message for every moment that matters",
+            "step1": {
+                "label": "Order Placed",
+                "title": "Instant Confirmation",
+                "desc": "\"✅ Your order #1042 has been confirmed! Total: 35,000 IQD. We'll notify you when it ships. – YourStore\""
+            },
+            "step2": {
+                "label": "Payment Received",
+                "title": "Payment Receipt",
+                "desc": "\"💳 Payment received for order #1042. Amount: 35,000 IQD. Thank you! – YourStore\""
+            },
+            "step3": {
+                "label": "Order Shipped",
+                "title": "Shipping Notification",
+                "desc": "\"🚚 Your order #1042 is on its way! Estimated delivery: tomorrow between 10am–2pm. – YourStore\""
+            },
+            "step4": {
+                "label": "Delivered",
+                "title": "Delivery Confirmation",
+                "desc": "\"✅ Order #1042 delivered! We hope you love it. Need anything? Reply to this message. – YourStore\""
+            }
+        },
+        "code": {
+            "label": "Code Example",
+            "title": "Trigger order notifications with a single API call",
+            "desc": "Hook into your order management system's events and fire a WhatsApp notification instantly — no complex setup required."
+        },
+        "usecases": {
+            "label": "Who Uses This",
+            "title": "Perfect for every type of seller in MENA",
+            "item1": "🛍️ Online stores & marketplaces",
+            "item2": "🍕 Food delivery & restaurants",
+            "item3": "💊 Pharmacies & health products",
+            "item4": "👗 Fashion & clothing brands",
+            "item5": "📱 Electronics & mobile shops",
+            "item6": "🚗 Auto parts & accessories",
+            "item7": "🏗️ B2B wholesale suppliers",
+            "item8": "🎁 Gift shops & subscription boxes"
+        },
+        "cta": {
+            "title": "Start sending order updates via WhatsApp today",
+            "desc": "Create your Nabda OTP instance in minutes and connect it to your store. Unlimited notifications, flat monthly price.",
+            "button1": "Create Free Instance",
+            "button2": "Read the Docs →"
+        }
+    }
+}
