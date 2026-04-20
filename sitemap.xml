@@ -3,9 +3,10 @@
         xmlns:xhtml="http://www.w3.org/1999/xhtml"
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
 
+  <!-- ====================== HOMEPAGE ====================== -->
   <url>
     <loc>https://www.nabdaotp.com/</loc>
-    <lastmod>2026-04-04</lastmod>
+    <lastmod>2026-04-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.nabdaotp.com/"/>
@@ -19,41 +20,11 @@
     </image:image>
   </url>
 
-  <url>
-    <loc>https://www.nabdaotp.com/ar</loc>
-    <lastmod>2026-04-04</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>1.0</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.nabdaotp.com/"/>
-    <xhtml:link rel="alternate" hreflang="ar" href="https://www.nabdaotp.com/ar"/>
-    <xhtml:link rel="alternate" hreflang="tr" href="https://www.nabdaotp.com/tr"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.nabdaotp.com/"/>
-    <image:image>
-      <image:loc>https://www.nabdaotp.com/assets/og-image.png</image:loc>
-      <image:title>Nabda OTP - Cheapest WhatsApp API</image:title>
-      <image:caption>Unlimited WhatsApp messages, REST API, webhooks, media and documents, 5-day trial, priority support — from $10/month MENA.</image:caption>
-    </image:image>
-  </url>
-
-  <url>
-    <loc>https://www.nabdaotp.com/tr</loc>
-    <lastmod>2026-04-04</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>1.0</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.nabdaotp.com/"/>
-    <xhtml:link rel="alternate" hreflang="ar" href="https://www.nabdaotp.com/ar"/>
-    <xhtml:link rel="alternate" hreflang="tr" href="https://www.nabdaotp.com/tr"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.nabdaotp.com/"/>
-    <image:image>
-      <image:loc>https://www.nabdaotp.com/assets/og-image.png</image:loc>
-      <image:title>Nabda OTP - Cheapest WhatsApp API</image:title>
-      <image:caption>Unlimited WhatsApp messages, REST API, webhooks, media and documents, 5-day trial, priority support — from $10/month MENA.</image:caption>
-    </image:image>
-  </url>
-
+  <!-- ====================== MULTILINGUAL PAGES ====================== -->
+  <!-- about -->
   <url>
     <loc>https://www.nabdaotp.com/about.html</loc>
-    <lastmod>2026-04-04</lastmod>
+    <lastmod>2026-04-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.nabdaotp.com/about.html"/>
@@ -62,31 +33,10 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.nabdaotp.com/about.html"/>
   </url>
 
-  <url>
-    <loc>https://www.nabdaotp.com/ar/about.html</loc>
-    <lastmod>2026-04-04</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.nabdaotp.com/about.html"/>
-    <xhtml:link rel="alternate" hreflang="ar" href="https://www.nabdaotp.com/ar/about.html"/>
-    <xhtml:link rel="alternate" hreflang="tr" href="https://www.nabdaotp.com/tr/about.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.nabdaotp.com/about.html"/>
-  </url>
-
-  <url>
-    <loc>https://www.nabdaotp.com/tr/about.html</loc>
-    <lastmod>2026-04-04</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.nabdaotp.com/about.html"/>
-    <xhtml:link rel="alternate" hreflang="ar" href="https://www.nabdaotp.com/ar/about.html"/>
-    <xhtml:link rel="alternate" hreflang="tr" href="https://www.nabdaotp.com/tr/about.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.nabdaotp.com/about.html"/>
-  </url>
-
+  <!-- privacy-policy -->
   <url>
     <loc>https://www.nabdaotp.com/privacy-policy.html</loc>
-    <lastmod>2026-04-04</lastmod>
+    <lastmod>2026-04-19</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.5</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.nabdaotp.com/privacy-policy.html"/>
@@ -95,31 +45,10 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.nabdaotp.com/privacy-policy.html"/>
   </url>
 
-  <url>
-    <loc>https://www.nabdaotp.com/ar/privacy-policy.html</loc>
-    <lastmod>2026-04-04</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.5</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.nabdaotp.com/privacy-policy.html"/>
-    <xhtml:link rel="alternate" hreflang="ar" href="https://www.nabdaotp.com/ar/privacy-policy.html"/>
-    <xhtml:link rel="alternate" hreflang="tr" href="https://www.nabdaotp.com/tr/privacy-policy.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.nabdaotp.com/privacy-policy.html"/>
-  </url>
-
-  <url>
-    <loc>https://www.nabdaotp.com/tr/privacy-policy.html</loc>
-    <lastmod>2026-04-04</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.5</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.nabdaotp.com/privacy-policy.html"/>
-    <xhtml:link rel="alternate" hreflang="ar" href="https://www.nabdaotp.com/ar/privacy-policy.html"/>
-    <xhtml:link rel="alternate" hreflang="tr" href="https://www.nabdaotp.com/tr/privacy-policy.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.nabdaotp.com/privacy-policy.html"/>
-  </url>
-
+  <!-- terms-of-service -->
   <url>
     <loc>https://www.nabdaotp.com/terms-of-service.html</loc>
-    <lastmod>2026-04-04</lastmod>
+    <lastmod>2026-04-19</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.5</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.nabdaotp.com/terms-of-service.html"/>
@@ -128,31 +57,10 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.nabdaotp.com/terms-of-service.html"/>
   </url>
 
-  <url>
-    <loc>https://www.nabdaotp.com/ar/terms-of-service.html</loc>
-    <lastmod>2026-04-04</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.5</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.nabdaotp.com/terms-of-service.html"/>
-    <xhtml:link rel="alternate" hreflang="ar" href="https://www.nabdaotp.com/ar/terms-of-service.html"/>
-    <xhtml:link rel="alternate" hreflang="tr" href="https://www.nabdaotp.com/tr/terms-of-service.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.nabdaotp.com/terms-of-service.html"/>
-  </url>
-
-  <url>
-    <loc>https://www.nabdaotp.com/tr/terms-of-service.html</loc>
-    <lastmod>2026-04-04</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.5</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.nabdaotp.com/terms-of-service.html"/>
-    <xhtml:link rel="alternate" hreflang="ar" href="https://www.nabdaotp.com/ar/terms-of-service.html"/>
-    <xhtml:link rel="alternate" hreflang="tr" href="https://www.nabdaotp.com/tr/terms-of-service.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.nabdaotp.com/terms-of-service.html"/>
-  </url>
-
+  <!-- refund-policy -->
   <url>
     <loc>https://www.nabdaotp.com/refund-policy.html</loc>
-    <lastmod>2026-04-04</lastmod>
+    <lastmod>2026-04-19</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.5</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.nabdaotp.com/refund-policy.html"/>
@@ -161,77 +69,396 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.nabdaotp.com/refund-policy.html"/>
   </url>
 
+  <!-- solutions + subpages -->
   <url>
-    <loc>https://www.nabdaotp.com/ar/refund-policy.html</loc>
-    <lastmod>2026-04-04</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.5</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.nabdaotp.com/refund-policy.html"/>
-    <xhtml:link rel="alternate" hreflang="ar" href="https://www.nabdaotp.com/ar/refund-policy.html"/>
-    <xhtml:link rel="alternate" hreflang="tr" href="https://www.nabdaotp.com/tr/refund-policy.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.nabdaotp.com/refund-policy.html"/>
+    <loc>https://www.nabdaotp.com/solutions</loc>
+    <lastmod>2026-04-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.nabdaotp.com/solutions"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://www.nabdaotp.com/ar/solutions"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://www.nabdaotp.com/tr/solutions"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.nabdaotp.com/solutions"/>
   </url>
-
   <url>
-    <loc>https://www.nabdaotp.com/tr/refund-policy.html</loc>
-    <lastmod>2026-04-04</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.5</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.nabdaotp.com/refund-policy.html"/>
-    <xhtml:link rel="alternate" hreflang="ar" href="https://www.nabdaotp.com/ar/refund-policy.html"/>
-    <xhtml:link rel="alternate" hreflang="tr" href="https://www.nabdaotp.com/tr/refund-policy.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.nabdaotp.com/refund-policy.html"/>
+    <loc>https://www.nabdaotp.com/solutions/otp-verification</loc>
+    <lastmod>2026-04-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.nabdaotp.com/solutions/otp-verification"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://www.nabdaotp.com/ar/solutions/otp-verification"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://www.nabdaotp.com/tr/solutions/otp-verification"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.nabdaotp.com/solutions/otp-verification"/>
+  </url>
+  <url>
+    <loc>https://www.nabdaotp.com/solutions/order-confirmations</loc>
+    <lastmod>2026-04-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.nabdaotp.com/solutions/order-confirmations"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://www.nabdaotp.com/ar/solutions/order-confirmations"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://www.nabdaotp.com/tr/solutions/order-confirmations"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.nabdaotp.com/solutions/order-confirmations"/>
+  </url>
+  <!-- the rest of subpages solutions when completed -->
+  <url>
+    <loc>https://www.nabdaotp.com/solutions/order-confirmations</loc>
+    <lastmod>2026-04-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.nabdaotp.com/solutions/order-confirmations"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://www.nabdaotp.com/ar/solutions/order-confirmations"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://www.nabdaotp.com/tr/solutions/order-confirmations"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.nabdaotp.com/solutions/order-confirmations"/>
+  </url>
+  <url>
+    <loc>https://www.nabdaotp.com/solutions/account-security</loc>
+    <lastmod>2026-04-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.nabdaotp.com/solutions/account-security"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://www.nabdaotp.com/ar/solutions/account-security"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://www.nabdaotp.com/tr/solutions/account-security"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.nabdaotp.com/solutions/account-security"/>
+  </url>
+  <url>
+    <loc>https://www.nabdaotp.com/solutions/appointment-reminders</loc>
+    <lastmod>2026-04-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.nabdaotp.com/solutions/appointment-reminders"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://www.nabdaotp.com/ar/solutions/appointment-reminders"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://www.nabdaotp.com/tr/solutions/appointment-reminders"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.nabdaotp.com/solutions/appointment-reminders"/>
+  </url>
+  <url>
+    <loc>https://www.nabdaotp.com/solutions/customer-support</loc>
+    <lastmod>2026-04-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.nabdaotp.com/solutions/customer-support"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://www.nabdaotp.com/ar/solutions/customer-support"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://www.nabdaotp.com/tr/solutions/customer-support"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.nabdaotp.com/solutions/customer-support"/>
+  </url>
+  <url>
+    <loc>https://www.nabdaotp.com/solutions/marketing</loc>
+    <lastmod>2026-04-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.nabdaotp.com/solutions/marketing"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://www.nabdaotp.com/ar/solutions/marketing"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://www.nabdaotp.com/tr/solutions/marketing"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.nabdaotp.com/solutions/marketing"/>
   </url>
 
+  <!-- comparing + subpages -->
+  <url>
+    <loc>https://www.nabdaotp.com/comparing</loc>
+    <lastmod>2026-04-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.nabdaotp.com/comparing"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://www.nabdaotp.com/ar/comparing"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://www.nabdaotp.com/tr/comparing"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.nabdaotp.com/comparing"/>
+  </url>
+  <!-- (the rest of comparing subpages) -->
+  <url>
+    <loc>https://www.nabdaotp.com/comparing/nabda-vs-ultramsg</loc>
+    <lastmod>2026-04-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.nabdaotp.com/comparing/nabda-vs-ultramsg"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://www.nabdaotp.com/ar/comparing/nabda-vs-ultramsg"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://www.nabdaotp.com/tr/comparing/nabda-vs-ultramsg"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.nabdaotp.com/comparing/nabda-vs-ultramsg"/>
+  </url>
+  <url>
+    <loc>https://www.nabdaotp.com/comparing/nabda-vs-twilio</loc>
+    <lastmod>2026-04-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.nabdaotp.com/comparing/nabda-vs-twilio"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://www.nabdaotp.com/ar/comparing/nabda-vs-twilio"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://www.nabdaotp.com/tr/comparing/nabda-vs-twilio"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.nabdaotp.com/comparing/nabda-vs-twilio"/>
+  </url>
+  <url>
+    <loc>https://www.nabdaotp.com/comparing/nabda-vs-OTPIQ</loc>
+    <lastmod>2026-04-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.nabdaotp.com/comparing/nabda-vs-OTPIQ"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://www.nabdaotp.com/ar/comparing/nabda-vs-OTPIQ"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://www.nabdaotp.com/tr/comparing/nabda-vs-OTPIQ"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.nabdaotp.com/comparing/nabda-vs-OTPIQ"/>
+  </url>
+  <url>
+    <loc>https://www.nabdaotp.com/comparing/nabda-vs-official</loc>
+    <lastmod>2026-04-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.nabdaotp.com/comparing/nabda-vs-official"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://www.nabdaotp.com/ar/comparing/nabda-vs-official"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://www.nabdaotp.com/tr/comparing/nabda-vs-official"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.nabdaotp.com/comparing/nabda-vs-official"/>
+  </url>
+  <url>
+    <loc>https://www.nabdaotp.com/comparing/nabda-vs-bulk-sms</loc>
+    <lastmod>2026-04-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.nabdaotp.com/comparing/nabda-vs-bulk-sms"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://www.nabdaotp.com/ar/comparing/nabda-vs-bulk-sms"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://www.nabdaotp.com/tr/comparing/nabda-vs-bulk-sms"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.nabdaotp.com/comparing/nabda-vs-bulk-sms"/>
+  </url>
+  <url>
+    <loc>https://www.nabdaotp.com/comparing/nabda-vs-alternatives</loc>
+    <lastmod>2026-04-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.nabdaotp.com/comparing/nabda-vs-alternatives"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://www.nabdaotp.com/ar/comparing/nabda-vs-alternatives"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://www.nabdaotp.com/tr/comparing/nabda-vs-alternatives"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.nabdaotp.com/comparing/nabda-vs-alternatives"/>
+  </url>
+
+  <!-- blogs + subpages -->
+  <url>
+    <loc>https://www.nabdaotp.com/blogs</loc>
+    <lastmod>2026-04-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.nabdaotp.com/blogs"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://www.nabdaotp.com/ar/blogs"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://www.nabdaotp.com/tr/blogs"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.nabdaotp.com/blogs"/>
+  </url>
+  <url>
+    <loc>https://www.nabdaotp.com/blogs/whatsapp-otp-iraq-guide</loc>
+    <lastmod>2026-04-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.nabdaotp.com/blogs/whatsapp-otp-iraq-guide"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://www.nabdaotp.com/ar/blogs/whatsapp-otp-iraq-guide"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://www.nabdaotp.com/tr/blogs/whatsapp-otp-iraq-guide"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.nabdaotp.com/blogs/whatsapp-otp-iraq-guide"/>
+  </url>
+  <url>
+    <loc>https://www.nabdaotp.com/blogs/whatsapp-replacing-sms</loc>
+    <lastmod>2026-04-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.nabdaotp.com/blogs/whatsapp-replacing-sms"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://www.nabdaotp.com/ar/blogs/whatsapp-replacing-sms"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://www.nabdaotp.com/tr/blogs/whatsapp-replacing-sms"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.nabdaotp.com/blogs/whatsapp-replacing-sms"/>
+  </url>
+
+  <!-- llms.txt -->
   <url>
     <loc>https://www.nabdaotp.com/llms.txt</loc>
-    <lastmod>2026-04-04</lastmod>
+    <lastmod>2026-04-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.4</priority>
   </url>
 
-  <!-- Country landing pages (WhatsApp API by region) -->
+  <!-- ====================== COUNTRY LANDING PAGES (21 countries) ====================== -->
+  <!-- eg, iq, sa, qa, jo, ae, sy, us, kw, bh, de, dz, lb, ly, ma, om, ps, sd, tn, ye -->
+  <!-- ( each country en + ar) -->
   <url>
     <loc>https://www.nabdaotp.com/eg/</loc>
-    <lastmod>2026-04-06</lastmod>
+    <lastmod>2026-04-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.nabdaotp.com/eg/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://www.nabdaotp.com/ar/eg/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.nabdaotp.com/eg/"/>
   </url>
   <url>
     <loc>https://www.nabdaotp.com/iq/</loc>
-    <lastmod>2026-04-06</lastmod>
+    <lastmod>2026-04-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.nabdaotp.com/iq/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://www.nabdaotp.com/ar/iq/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.nabdaotp.com/iq/"/>
   </url>
   <url>
     <loc>https://www.nabdaotp.com/sa/</loc>
-    <lastmod>2026-04-06</lastmod>
+    <lastmod>2026-04-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.nabdaotp.com/sa/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://www.nabdaotp.com/ar/sa/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.nabdaotp.com/sa/"/>
   </url>
   <url>
     <loc>https://www.nabdaotp.com/qa/</loc>
-    <lastmod>2026-04-06</lastmod>
+    <lastmod>2026-04-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.nabdaotp.com/qa/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://www.nabdaotp.com/ar/qa/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.nabdaotp.com/qa/"/>
   </url>
   <url>
     <loc>https://www.nabdaotp.com/jo/</loc>
-    <lastmod>2026-04-06</lastmod>
+    <lastmod>2026-04-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.nabdaotp.com/jo/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://www.nabdaotp.com/ar/jo/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.nabdaotp.com/jo/"/>
   </url>
   <url>
     <loc>https://www.nabdaotp.com/ae/</loc>
-    <lastmod>2026-04-06</lastmod>
+    <lastmod>2026-04-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.nabdaotp.com/ae/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://www.nabdaotp.com/ar/ae/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.nabdaotp.com/ae/"/>
+  </url>
+  <url>
+    <loc>https://www.nabdaotp.com/us/</loc>
+    <lastmod>2026-04-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.nabdaotp.com/us/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://www.nabdaotp.com/ar/us/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.nabdaotp.com/us/"/>
   </url>
   <url>
     <loc>https://www.nabdaotp.com/sy/</loc>
-    <lastmod>2026-04-06</lastmod>
+    <lastmod>2026-04-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.nabdaotp.com/sy/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://www.nabdaotp.com/ar/sy/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.nabdaotp.com/sy/"/>
+  </url>
+  <url>
+    <loc>https://www.nabdaotp.com/kw/</loc>
+    <lastmod>2026-04-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.nabdaotp.com/kw/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://www.nabdaotp.com/ar/kw/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.nabdaotp.com/kw/"/>
+  </url>
+  <url>
+    <loc>https://www.nabdaotp.com/bh/</loc>
+    <lastmod>2026-04-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.nabdaotp.com/bh/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://www.nabdaotp.com/ar/bh/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.nabdaotp.com/bh/"/>
+  </url>
+  <url>
+    <loc>https://www.nabdaotp.com/de/</loc>
+    <lastmod>2026-04-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.nabdaotp.com/de/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://www.nabdaotp.com/ar/de/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.nabdaotp.com/de/"/>
+  </url>
+  <url>
+    <loc>https://www.nabdaotp.com/dz/</loc>
+    <lastmod>2026-04-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.nabdaotp.com/dz/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://www.nabdaotp.com/ar/dz/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.nabdaotp.com/dz/"/>
+  </url>
+  <url>
+    <loc>https://www.nabdaotp.com/ly/</loc>
+    <lastmod>2026-04-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.nabdaotp.com/ly/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://www.nabdaotp.com/ar/ly/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.nabdaotp.com/ly/"/>
+  </url>
+  <url>
+    <loc>https://www.nabdaotp.com/lb/</loc>
+    <lastmod>2026-04-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.nabdaotp.com/lb/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://www.nabdaotp.com/ar/lb/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.nabdaotp.com/lb/"/>
+  </url>
+  <url>
+    <loc>https://www.nabdaotp.com/ma/</loc>
+    <lastmod>2026-04-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.nabdaotp.com/ma/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://www.nabdaotp.com/ar/ma/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.nabdaotp.com/ma/"/>
+  </url>
+  <url>
+    <loc>https://www.nabdaotp.com/om/</loc>
+    <lastmod>2026-04-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.nabdaotp.com/om/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://www.nabdaotp.com/ar/om/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.nabdaotp.com/om/"/>
+  </url>
+  <url>
+    <loc>https://www.nabdaotp.com/ps/</loc>
+    <lastmod>2026-04-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.nabdaotp.com/ps/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://www.nabdaotp.com/ar/ps/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.nabdaotp.com/ps/"/>
+  </url>
+  <url>
+    <loc>https://www.nabdaotp.com/sd/</loc>
+    <lastmod>2026-04-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.nabdaotp.com/sd/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://www.nabdaotp.com/ar/sd/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.nabdaotp.com/sd/"/>
+  </url>
+  <url>
+    <loc>https://www.nabdaotp.com/tn/</loc>
+    <lastmod>2026-04-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.nabdaotp.com/tn/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://www.nabdaotp.com/ar/tn/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.nabdaotp.com/tn/"/>
+  </url>
+  <url>
+    <loc>https://www.nabdaotp.com/ye/</loc>
+    <lastmod>2026-04-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.nabdaotp.com/ye/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://www.nabdaotp.com/ar/ye/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.nabdaotp.com/ye/"/>
+  </url>
+
+  <!-- Turkey ( 3 langs + /turkey/) -->
+  <url>
+    <loc>https://www.nabdaotp.com/turkey/</loc>
+    <lastmod>2026-04-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.nabdaotp.com/turkey/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://www.nabdaotp.com/ar/turkey/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://www.nabdaotp.com/tr/turkey/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.nabdaotp.com/turkey/"/>
   </url>
 
 </urlset>
