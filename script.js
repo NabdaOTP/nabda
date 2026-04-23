@@ -135,6 +135,7 @@ const translations = {
     "nav.blogs": "Blogs",
     "nav.docs": "Docs",
     "nav.login": "Login",
+    "nav.home": "Home",
 
     // Hero Section
     "hero.badge": "🚀 The most reliable WhatsApp verification platform",
@@ -287,6 +288,238 @@ const translations = {
     "footer.comparisons.nabda_vs_official": "Nabda vs Official API",
     "footer.comparisons.nabda_vs_otpiq": "Nabda vs OTPIQ",
     "footer.comparisons.nabda_alternatives": "Nabda alternatives→",
+    // ====================== ABOUT PAGE ======================
+    "about.title": "About Nabda OTP",
+    "about.subtitle":
+      "The cloud-based WhatsApp API and verification platform for the MENA region",
+
+    "about.paraOne":
+      "Nabda OTP is a cloud-based WhatsApp API and verification platform designed to help businesses securely deliver one-time passwords (OTP) and transactional messages across Iraq, Syria, and the MENA region.",
+
+    "about.paraTwo":
+      "Built for developers, Nabda OTP provides a reliable gateway that enables fast, scalable WhatsApp messaging through a simple RESTful API and SDKs. Our platform allows businesses to send unlimited OTP and notification messages using a flat monthly subscription—without per-message fees or hidden costs.",
+
+    "about.paraThree":
+      "Nabda OTP focuses on affordability, reliability, and regional optimization. The service is fully optimized for local phone numbers, Arabic language support, and high delivery rates across Middle Eastern networks, making it a practical alternative to global providers such as Twilio, UltraMsg, and similar platforms.",
+
+    "about.ques": "What We Offer",
+
+    "about.featone": "WhatsApp OTP and transactional messaging",
+    "about.feattwo": "Developer-friendly APIs and documentation",
+    "about.featthree": "Real-time delivery analytics and monitoring",
+    "about.featfour": "Enterprise-grade security and authentication",
+    "about.featfive": "High availability cloud infrastructure",
+
+    "about.note": "Important Notice",
+
+    "about.noteone":
+      "Nabda OTP is operated as a software messaging platform and does not act as a telecommunications provider. All usage must comply with applicable laws, WhatsApp policies, and regional regulations.",
+
+    "about.legalepara":
+      "Nabda OTP is a product and service operated by We Pioners LTD, as part of its technology solutions portfolio, serving startups, developers, and businesses across the MENA region.",
+    // ====================== TERMS PAGE (EN) ======================
+    "terms.title": "Terms of Service",
+
+    "terms.subtitle": "Terms of use of the Site's services",
+
+    "terms.introOne":
+      'These Terms of Service ("Terms") are a binding legal agreement between you and We Pioners Ltd, a company registered in the United Kingdom, operating the service "Nabda OTP".',
+
+    "terms.introTwo":
+      "By using Nabda OTP and the website Nabdaotp.com, the Client agrees to the following Terms of Service.",
+
+    "terms.introThree":
+      "The Client undertakes to obtain prior consent from the end user to whom messages are sent, in any lawful form, including but not limited to oral, written, email, or electronic consent.",
+
+    "terms.clientObligations": "Client Obligations",
+
+    "terms.clientIntro":
+      "The Client agrees not to use the service for sending any messages that fall under the following categories:",
+
+    "terms.list.one": "Spam or unsolicited bulk messages",
+    "terms.list.two":
+      "Messages that may cause malfunction or disruption of Nabda OTP systems or infrastructure",
+    "terms.list.three":
+      "Pornographic, offensive, or otherwise inappropriate content",
+    "terms.list.four":
+      "Misleading messages, including impersonation or providing false or deceptive information",
+    "terms.list.five":
+      "Transmission of inaccurate, confidential, or private information without proper authorization",
+    "terms.list.six":
+      "Transfer of information obtained unlawfully or that violates intellectual property or related rights of third parties",
+    "terms.list.seven":
+      "Advertising or promotion of alcohol, tobacco, drugs, or any illegal products or services",
+    "terms.list.eight":
+      "Any content that violates applicable laws, regulations, or international legal standards",
+
+    "terms.whatsapp": "Communication with WhatsApp Inc. and Guarantees",
+
+    "terms.whatsapp.one":
+      "The Nabda OTP service and Nabdaotp.com website are not supported, endorsed, or approved by WhatsApp Inc. in any way. The Client understands and accepts all risks associated with using the Service, Website, and API.",
+
+    "terms.whatsapp.two":
+      "Nabda OTP offers two integration modes: a Standard Gateway and an Official WhatsApp Business API option. Clients are responsible for choosing the plan that fits their compliance and business requirements.",
+
+    "terms.whatsapp.three":
+      "Nabda OTP is not responsible for the Client's inability to access the service, API, or accounts due to internet outages, hardware issues, or software problems on the Client's side.",
+
+    "terms.whatsapp.four":
+      "The Client acknowledges that their WhatsApp number or account may be blocked or banned by WhatsApp or WhatsApp Inc., particularly when using the Standard Gateway mode.",
+
+    "terms.whatsapp.five":
+      "Nabda OTP is not responsible for service interruptions or access limitations caused by changes, updates, or policies introduced by WhatsApp Inc.",
+
+    "terms.website": "Website Usage",
+
+    "terms.website.intro":
+      "You are permitted to print or download extracts from the Website for your own personal or internal business use, provided that:",
+
+    "terms.website.one":
+      "No documents or related graphics are modified in any way",
+    "terms.website.two":
+      "Graphics are not used separately from accompanying text",
+    "terms.website.three":
+      "All copyright, trademark, and permission notices appear in all copies",
+
+    "terms.refund": "Refunds / Subscription Cancellation",
+
+    "terms.refund.one":
+      "A free trial may be offered for a limited number of days.",
+    "terms.refund.two": "Paid subscription fees are non-refundable.",
+    "terms.refund.three": "You may cancel your subscription at any time.",
+    "terms.refund.four":
+      "The service will remain active until the end of the current subscription period.",
+    "terms.refund.five":
+      "Subscription cancellation must be completed before the start of the next billing cycle to avoid charges.",
+
+    "terms.refund.note": "For more details, please see our",
+    "terms.refund.link": "Refund Policy",
+
+    "terms.misc": "Miscellaneous",
+
+    "terms.misc.one":
+      "If any provision of these Terms of Service is found to be unenforceable, the remaining provisions shall remain valid and enforceable.",
+
+    "terms.misc.two":
+      "These Terms constitute the entire agreement between the Client and Nabda OTP regarding the use of the Website and Services.",
+
+    "terms.misc.three": "These Terms may not be modified by the Client.",
+
+    "terms.misc.four":
+      "Any statements made by representatives of Nabda OTP that are not explicitly stated in these Terms shall not be considered legally binding.",
+
+    "terms.misc.five":
+      "Nabda OTP shall not be liable for any representations that are inaccurate or misleading if not expressly included in these Terms.",
+
+    // ====================== Privacy PAGE ======================
+    "privacy.breadcrumb": "Privacy Policy",
+    "privacy.title": "Privacy Policy",
+    "privacy.subtitle": "How we collect, use, and protect your data",
+
+    "privacy.intro.one":
+      'This Privacy Policy ("Policy") forms part of the Terms of Service governing the use of the Nabda OTP website and services available at Nabdaotp.com (the "Website").',
+
+    "privacy.intro.two":
+      "By using the Website or any of our services, you expressly consent to the collection, use, and disclosure of your information in accordance with this Policy.",
+
+    "privacy.intro.three":
+      "If you do not agree with this Policy or any future amendments, you must immediately stop using the Website and Services.",
+
+    "privacy.changes.title": "Changes to This Policy",
+    "privacy.changes.one":
+      "We may update or amend this Privacy Policy at any time without prior notice. Any changes become effective once published on the Website or through any electronic platform we provide.",
+    "privacy.changes.two":
+      "The most current version of this Policy will always govern our data practices.",
+
+    "privacy.definitions.title": "Definitions",
+    "privacy.definitions.one":
+      'The terms "we", "our", or "us" refer to Nabda OTP, including its owners, employees, affiliates, agents, and authorized service providers.',
+    "privacy.definitions.two":
+      "This Privacy Policy becomes effective upon your acceptance, which occurs automatically through your use of the Website or Services.",
+    "privacy.definitions.three":
+      "If any provision of this Policy is found to be invalid or unenforceable, the remaining provisions shall remain valid and enforceable.",
+
+    "privacy.collect.title": "Information We Collect",
+    "privacy.collect.intro": "We collect two types of information:",
+
+    "privacy.personal.title": "1. Personal Information",
+    "privacy.personal.intro": "Personal information may be collected when you:",
+    "privacy.personal.one": "Register for an account",
+    "privacy.personal.two": "Use our Services or API",
+    "privacy.personal.three": "Update your account details",
+    "privacy.personal.four": "Purchase a subscription",
+    "privacy.personal.five": "Contact us or request support",
+    "privacy.personal.six": "Participate in promotions or campaigns",
+    "privacy.personal.note":
+      "This information may include your name, email address, company name, billing details, and contact information.",
+
+    "privacy.general.title": "2. General (Non-Personal) Information",
+    "privacy.general.intro":
+      "We may automatically collect general information such as:",
+    "privacy.general.one": "IP address",
+    "privacy.general.two": "Date and time of access",
+    "privacy.general.three": "Pages visited and time spent",
+    "privacy.general.four": "Browser type and OS",
+    "privacy.general.five": "Referring websites",
+    "privacy.general.note": "This helps us improve performance and usability.",
+
+    "privacy.cookies.title": "Cookies and Tracking Technologies",
+    "privacy.cookies.intro": "We may use cookies and tracking technologies to:",
+    "privacy.cookies.one": "Improve functionality",
+    "privacy.cookies.two": "Understand user behavior",
+    "privacy.cookies.three": "Provide requested services",
+    "privacy.cookies.note": "Disabling cookies may affect functionality.",
+
+    "privacy.usage.title": "Use and Sharing of Information",
+    "privacy.usage.important":
+      "We do not sell your personal information or your end users' data.",
+    "privacy.usage.intro": "We may share data with trusted providers for:",
+    "privacy.usage.one": "Hosting and infrastructure",
+    "privacy.usage.two": "Platform support",
+    "privacy.usage.three": "Analytics and maintenance",
+    "privacy.usage.noteOne": "Providers only use data as necessary.",
+    "privacy.usage.noteTwo": "No marketing use without consent.",
+
+    "privacy.security.title": "Data Security",
+    "privacy.security.one":
+      "We apply technical and organizational measures to protect data.",
+    "privacy.security.two":
+      "Security depends on data sensitivity and standards.",
+
+    "privacy.rights.title": "Your Rights",
+    "privacy.rights.intro": "You have the right to:",
+    "privacy.rights.one": "Access your data",
+    "privacy.rights.two": "Update or delete data",
+    "privacy.rights.three": "Control usage",
+    "privacy.rights.note": "You can contact us for any request.",
+
+    "privacy.retention.title": "Data Retention",
+    "privacy.retention.one": "We retain data only as long as necessary.",
+
+    "privacy.contact.title": "Contact",
+    "privacy.contact.intro": "For any questions, contact us via:",
+
+    "privacy.notice":
+      "Final Notice: Continued use of the Website means you accept this Privacy Policy.",
+
+    // ====================== refund policy PAGE ======================
+    "refund.title": "Refund Policy",
+
+    "refund.subtitle": "Our trial period and subscription refund terms",
+
+    "refund.trial":
+      "We offer a <strong>5-day free trial</strong> for all new users to test the service before paying. We encourage you to use this period to ensure Nabda OTP meets your needs.",
+
+    "refund.policy":
+      "Subscription fees are generally non-refundable after the trial period ends. However, if you believe a technical error has occurred or you are not satisfied with the service, please contact our support team within <strong>7 days</strong> of the transaction date.",
+
+    "refund.contactText": "Contact us on",
+
+    "refund.whatsapp": "WhatsApp",
+
+    "refund.note":
+      " — We review refund requests on a case-by-case basis and reserve the right to issue refunds at our discretion.",
+
     // ====================== BLOGS PAGE ======================
     "blogs.title": "Our Blog",
     "blogs.subtitle":
@@ -1076,6 +1309,7 @@ const translations = {
     "nav.blogs": "المدونة",
     "nav.docs": "التوثيق",
     "nav.login": "تسجيل الدخول",
+    "nav.home": "الصفحة الرئيسية",
 
     // Hero Section
     "hero.badge": "🚀 المنصة الأكثر موثوقية للتحقق عبر واتساب",
@@ -1227,8 +1461,242 @@ const translations = {
     "footer.comparisons.nabda_vs_official": "نبضة مقابل Official API",
     "footer.comparisons.nabda_vs_otpiq": "نبضة مقابل OTPIQ",
     "footer.comparisons.nabda_alternatives": "بدائل نبضة ←",
+
+    // ====================== ABOUT PAGE (AR) ======================
+    "about.title": "حول Nabda OTP",
+
+    "about.subtitle":
+      "منصة سحابية لواجهة برمجة تطبيقات واتساب (API) وخدمات التحقق في منطقة الشرق الأوسط وشمال أفريقيا",
+
+    "about.paraOne":
+      "Nabda OTP هي منصة سحابية لواجهة برمجة تطبيقات واتساب (API) وخدمات التحقق، مصممة لمساعدة الشركات على إرسال كلمات المرور لمرة واحدة (OTP) والرسائل التفاعلية بشكل آمن عبر العراق وسوريا ومنطقة الشرق الأوسط وشمال أفريقيا.",
+
+    "about.paraTwo":
+      "تم تطوير Nabda OTP خصيصًا للمطورين، حيث توفر بوابة موثوقة تتيح إرسال رسائل واتساب بسرعة وكفاءة عالية عبر واجهة RESTful بسيطة ومكتبات SDK. تتيح المنصة للشركات إرسال عدد غير محدود من رسائل OTP والإشعارات باشتراك شهري ثابت دون رسوم لكل رسالة أو تكاليف مخفية.",
+
+    "about.paraThree":
+      "تركّز Nabda OTP على تقديم خدمة ميسورة التكلفة وموثوقة ومُحسّنة للمنطقة. المنصة مُهيأة بالكامل لدعم أرقام الهواتف المحلية، واللغة العربية، وتحقيق معدلات تسليم عالية عبر شبكات الشرق الأوسط، مما يجعلها بديلاً عمليًا لمزودي الخدمات العالميين مثل Twilio وUltraMsg وغيرها.",
+
+    "about.ques": "ما الذي نقدمه",
+
+    "about.featone": "إرسال OTP ورسائل واتساب التفاعلية",
+    "about.feattwo": "واجهات برمجة سهلة الاستخدام للمطورين وتوثيق شامل",
+    "about.featthree": "تحليلات ومراقبة فورية لعمليات التسليم",
+    "about.featfour": "أمان متقدم على مستوى المؤسسات وأنظمة تحقق قوية",
+    "about.featfive": "بنية تحتية سحابية عالية الاعتمادية",
+
+    "about.note": "ملاحظة مهمة",
+
+    "about.noteone":
+      "Nabda OTP هي منصة برمجية للرسائل ولا تُعتبر مزود خدمات اتصالات. يجب أن يتوافق استخدام الخدمة مع القوانين المعمول بها وسياسات واتساب واللوائح الإقليمية.",
+
+    "about.legalepara":
+      "Nabda OTP هو منتج وخدمة مقدمة من قبل شركة We Pioners LTD، كجزء من حلولها التقنية الموجهة للشركات الناشئة والمطورين والأعمال في منطقة الشرق الأوسط وشمال أفريقيا.",
+    // ====================== TERMS PAGE (AR) ======================
+    "terms.title": "شروط الاستخدام",
+
+    "terms.subtitle": "شروط استخدام خدمات الموقع",
+
+    "terms.introOne":
+      'تشكل شروط الاستخدام هذه ("الشروط") اتفاقية قانونية ملزمة بينك وبين شركة We Pioners Ltd، وهي شركة مسجلة في المملكة المتحدة وتدير خدمة "Nabda OTP".',
+
+    "terms.introTwo":
+      "باستخدامك لخدمة Nabda OTP وموقع Nabdaotp.com، فإنك توافق على شروط الاستخدام التالية.",
+
+    "terms.introThree":
+      "يتعهد العميل بالحصول على موافقة مسبقة من المستخدم النهائي الذي يتم إرسال الرسائل إليه، بأي وسيلة قانونية، بما في ذلك على سبيل المثال لا الحصر الموافقة الشفهية أو المكتوبة أو عبر البريد الإلكتروني أو الوسائل الإلكترونية.",
+
+    "terms.clientObligations": "التزامات العميل",
+
+    "terms.clientIntro":
+      "يوافق العميل على عدم استخدام الخدمة لإرسال أي رسائل تندرج ضمن الفئات التالية:",
+
+    "terms.list.one":
+      "رسائل غير مرغوب فيها (Spam) أو رسائل جماعية غير مصرح بها",
+    "terms.list.two":
+      "رسائل قد تسبب خللًا أو تعطلًا في أنظمة أو بنية Nabda OTP",
+    "terms.list.three": "محتوى إباحي أو مسيء أو غير لائق بأي شكل",
+    "terms.list.four":
+      "رسائل مضللة، بما في ذلك انتحال الهوية أو تقديم معلومات كاذبة أو خادعة",
+    "terms.list.five":
+      "إرسال معلومات غير دقيقة أو سرية أو خاصة دون تصريح مناسب",
+    "terms.list.six":
+      "نقل معلومات تم الحصول عليها بطرق غير قانونية أو تنتهك حقوق الملكية الفكرية أو حقوق الغير",
+    "terms.list.seven":
+      "الإعلان أو الترويج للكحول أو التبغ أو المخدرات أو أي منتجات أو خدمات غير قانونية",
+    "terms.list.eight":
+      "أي محتوى ينتهك القوانين أو اللوائح أو المعايير القانونية الدولية المعمول بها",
+
+    "terms.whatsapp": "التواصل مع WhatsApp Inc. والضمانات",
+
+    "terms.whatsapp.one":
+      "خدمة Nabda OTP وموقع Nabdaotp.com غير مدعومين أو معتمدين أو مُصدق عليهم من قبل شركة WhatsApp Inc. بأي شكل من الأشكال. ويقر العميل ويقبل جميع المخاطر المرتبطة باستخدام الخدمة والموقع وواجهة API.",
+
+    "terms.whatsapp.two":
+      "توفر Nabda OTP وضعين للتكامل: بوابة قياسية (Standard Gateway) وخيار WhatsApp Business API الرسمي. ويتحمل العميل مسؤولية اختيار الخطة المناسبة لاحتياجاته ومتطلبات الامتثال الخاصة به.",
+
+    "terms.whatsapp.three":
+      "لا تتحمل Nabda OTP أي مسؤولية عن عدم قدرة العميل على الوصول إلى الخدمة أو API أو الحسابات نتيجة لانقطاع الإنترنت أو مشاكل الأجهزة أو البرمجيات لدى العميل.",
+
+    "terms.whatsapp.four":
+      "يقر العميل بأن رقم واتساب الخاص به أو حسابه قد يتم حظره أو إيقافه من قبل WhatsApp أو WhatsApp Inc.، خاصة عند استخدام وضع البوابة القياسية.",
+
+    "terms.whatsapp.five":
+      "لا تتحمل Nabda OTP أي مسؤولية عن انقطاع الخدمة أو قيود الوصول الناتجة عن تغييرات أو تحديثات أو سياسات تفرضها WhatsApp Inc.",
+
+    "terms.website": "استخدام الموقع",
+
+    "terms.website.intro":
+      "يُسمح لك بطباعة أو تنزيل أجزاء من الموقع لاستخدامك الشخصي أو للاستخدام الداخلي في عملك، بشرط:",
+
+    "terms.website.one": "عدم تعديل أي مستندات أو رسومات مرتبطة بها بأي شكل",
+    "terms.website.two": "عدم استخدام الرسومات بشكل منفصل عن النص المصاحب لها",
+    "terms.website.three":
+      "ظهور جميع إشعارات حقوق النشر والعلامات التجارية والتصاريح في جميع النسخ",
+
+    "terms.refund": "الاسترداد / إلغاء الاشتراك",
+
+    "terms.refund.one":
+      "قد يتم تقديم فترة تجريبية مجانية لعدد محدود من الأيام.",
+    "terms.refund.two": "رسوم الاشتراك المدفوعة غير قابلة للاسترداد.",
+    "terms.refund.three": "يمكنك إلغاء اشتراكك في أي وقت.",
+    "terms.refund.four": "ستظل الخدمة فعالة حتى نهاية فترة الاشتراك الحالية.",
+    "terms.refund.five":
+      "يجب إلغاء الاشتراك قبل بدء دورة الفوترة التالية لتجنب أي رسوم إضافية.",
+
+    "terms.refund.note": "لمزيد من التفاصيل، يرجى الاطلاع على سياسة الاسترداد.",
+
+    "terms.misc": "أحكام عامة",
+
+    "terms.misc.one":
+      "إذا تبين أن أي بند من هذه الشروط غير قابل للتنفيذ، فإن باقي البنود تظل سارية وملزمة.",
+
+    "terms.misc.two":
+      "تشكل هذه الشروط الاتفاق الكامل بين العميل وNabda OTP فيما يتعلق باستخدام الموقع والخدمات.",
+
+    "terms.misc.three": "لا يجوز للعميل تعديل هذه الشروط.",
+
+    "terms.misc.four":
+      "أي تصريحات صادرة عن ممثلي Nabda OTP ولم يتم ذكرها صراحة في هذه الشروط لا تعتبر ملزمة قانونيًا.",
+
+    "terms.misc.five":
+      "لا تتحمل Nabda OTP مسؤولية أي تصريحات غير دقيقة أو مضللة ما لم يتم تضمينها صراحة في هذه الشروط.",
+    // ====================== Privacy PAGE ======================
+    "privacy.breadcrumb": "سياسة الخصوصية",
+    "privacy.title": "سياسة الخصوصية",
+    "privacy.subtitle": "كيف نقوم بجمع واستخدام وحماية بياناتك",
+
+    "privacy.intro.one":
+      'تشكل سياسة الخصوصية ("السياسة") جزءًا من شروط الخدمة التي تحكم استخدام موقع Nabda OTP والخدمات المتاحة عبر Nabdaotp.com ("الموقع").',
+
+    "privacy.intro.two":
+      "باستخدام الموقع أو أي من خدماتنا، فإنك توافق صراحةً على جمع واستخدام والكشف عن معلوماتك وفقًا لهذه السياسة.",
+
+    "privacy.intro.three":
+      "إذا كنت لا توافق على هذه السياسة أو أي تعديلات مستقبلية، يجب عليك التوقف فورًا عن استخدام الموقع والخدمات.",
+
+    "privacy.changes.title": "التعديلات على هذه السياسة",
+    "privacy.changes.one":
+      "يجوز لنا تحديث أو تعديل سياسة الخصوصية هذه في أي وقت دون إشعار مسبق. تصبح أي تغييرات سارية بمجرد نشرها على الموقع أو عبر أي منصة إلكترونية نوفرها.",
+    "privacy.changes.two":
+      "ستظل أحدث نسخة من هذه السياسة هي المرجع الأساسي لممارساتنا المتعلقة بالبيانات.",
+
+    "privacy.definitions.title": "التعريفات",
+    "privacy.definitions.one":
+      'تشير المصطلحات "نحن" أو "لنا" أو "خاصتنا" إلى Nabda OTP بما في ذلك مالكيها وموظفيها والشركات التابعة والوكلاء ومقدمي الخدمات المعتمدين.',
+    "privacy.definitions.two":
+      "تصبح هذه السياسة سارية عند قبولك لها، ويتم ذلك تلقائيًا من خلال استخدامك للموقع أو الخدمات.",
+    "privacy.definitions.three":
+      "إذا تبين أن أي بند من هذه السياسة غير صالح أو غير قابل للتنفيذ، تظل باقي البنود سارية وقابلة للتنفيذ.",
+
+    "privacy.collect.title": "المعلومات التي نقوم بجمعها",
+    "privacy.collect.intro": "نقوم بجمع نوعين من المعلومات:",
+
+    "privacy.personal.title": "1. المعلومات الشخصية",
+    "privacy.personal.intro": "قد نقوم بجمع المعلومات الشخصية عند:",
+    "privacy.personal.one": "إنشاء حساب",
+    "privacy.personal.two": "استخدام الخدمات أو الـ API",
+    "privacy.personal.three": "تحديث بيانات الحساب",
+    "privacy.personal.four": "شراء اشتراك",
+    "privacy.personal.five": "التواصل معنا أو طلب الدعم",
+    "privacy.personal.six": "المشاركة في العروض أو الحملات",
+    "privacy.personal.note":
+      "قد تتضمن هذه المعلومات الاسم والبريد الإلكتروني واسم الشركة وبيانات الدفع ووسائل الاتصال.",
+
+    "privacy.general.title": "2. المعلومات العامة (غير الشخصية)",
+    "privacy.general.intro": "قد نقوم تلقائيًا بجمع معلومات عامة مثل:",
+    "privacy.general.one": "عنوان IP",
+    "privacy.general.two": "تاريخ ووقت الوصول",
+    "privacy.general.three": "الصفحات التي تمت زيارتها ومدة التصفح",
+    "privacy.general.four": "نوع المتصفح ونظام التشغيل",
+    "privacy.general.five": "المواقع المحيلة",
+    "privacy.general.note":
+      "تساعدنا هذه المعلومات في تحسين أداء الموقع وتجربة المستخدم.",
+
+    "privacy.cookies.title": "ملفات تعريف الارتباط وتقنيات التتبع",
+    "privacy.cookies.intro":
+      "قد نستخدم ملفات تعريف الارتباط وتقنيات التتبع من أجل:",
+    "privacy.cookies.one": "تحسين وظائف الموقع",
+    "privacy.cookies.two": "فهم سلوك المستخدم",
+    "privacy.cookies.three": "تقديم الخدمات المطلوبة",
+    "privacy.cookies.note":
+      "قد يؤدي تعطيل الكوكيز إلى التأثير على بعض وظائف الموقع.",
+
+    "privacy.usage.title": "استخدام ومشاركة المعلومات",
+    "privacy.usage.important":
+      "نحن لا نبيع معلوماتك الشخصية أو بيانات المستخدمين النهائيين.",
+    "privacy.usage.intro": "قد نشارك البيانات مع مزودي خدمات موثوقين من أجل:",
+    "privacy.usage.one": "الاستضافة والبنية التحتية",
+    "privacy.usage.two": "دعم المنصة",
+    "privacy.usage.three": "التحليلات والصيانة",
+    "privacy.usage.noteOne":
+      "يُسمح لمزودي الخدمة باستخدام البيانات فقط بالقدر اللازم.",
+    "privacy.usage.noteTwo":
+      "لا يتم استخدام البيانات لأغراض تسويقية بدون موافقتك.",
+
+    "privacy.security.title": "أمان البيانات",
+    "privacy.security.one": "نطبق إجراءات تقنية وتنظيمية لحماية البيانات.",
+    "privacy.security.two":
+      "تعتمد الحماية على حساسية البيانات والمعايير التقنية.",
+
+    "privacy.rights.title": "حقوقك",
+    "privacy.rights.intro": "لديك الحق في:",
+    "privacy.rights.one": "الوصول إلى بياناتك",
+    "privacy.rights.two": "تحديث أو حذف البيانات",
+    "privacy.rights.three": "التحكم في استخدامها",
+    "privacy.rights.note": "يمكنك التواصل معنا لأي طلب متعلق بالبيانات.",
+
+    "privacy.retention.title": "الاحتفاظ بالبيانات",
+    "privacy.retention.one": "نحتفظ بالبيانات فقط للمدة اللازمة.",
+
+    "privacy.contact.title": "التواصل",
+    "privacy.contact.intro": "لأي استفسارات، يمكنك التواصل معنا عبر:",
+
+    "privacy.notice":
+      "ملاحظة نهائية: استمرارك في استخدام الموقع يعني موافقتك على هذه السياسة وأي تحديثات مستقبلية.",
+    // Refund page
+    "refund.title": "سياسة الاسترجاع",
+
+    "refund.subtitle": "فترة التجربة وشروط استرجاع الاشتراك",
+
+    "refund.trial":
+      "نقدم <strong>فترة تجريبية مجانية لمدة 5 أيام</strong> لجميع المستخدمين الجدد لاختبار الخدمة قبل الدفع. نشجعك على الاستفادة من هذه الفترة للتأكد من أن Nabda OTP يلبي احتياجاتك.",
+
+    "refund.policy":
+      "بشكل عام، رسوم الاشتراك غير قابلة للاسترجاع بعد انتهاء فترة التجربة. ومع ذلك، إذا كنت تعتقد بوجود خطأ تقني أو لم تكن راضيًا عن الخدمة، يرجى التواصل مع فريق الدعم خلال <strong>7 أيام</strong> من تاريخ الدفع.",
+
+    "refund.contactText": "تواصل معنا عبر",
+
+    "refund.whatsapp": "واتساب",
+
+    "refund.note":
+      " — نقوم بمراجعة طلبات الاسترجاع لكل حالة على حدة ونحتفظ بالحق في قبول أو رفض الطلب حسب تقديرنا.",
+    "blog.whatsappOtpGuide": "WhatsApp OTP Guide",
+    "blog.whatsappReplacingSms": "Is WhatsApp Replacing SMS?",
     "blogs.title": "مدونتنا",
     "blogs.subtitle": "رؤى وأدلة وآخر التحديثات حول واتساب API وحلول OTP",
+    "blog.whatsappOtpGuide": "دليل OTP عبر واتساب",
+    "blog.whatsappReplacingSms": "هل واتساب يستبدل الرسائل النصية SMS؟",
 
     "blogs.post1.title": "كيفية إرسال OTP عبر WhatsApp API – دليل شامل 2026",
     "blogs.post1.desc":
@@ -2042,6 +2510,7 @@ const translations = {
     "nav.pricing": "Fiyatlandırma",
     "nav.docs": "Dokümantasyon",
     "nav.login": "Giriş",
+    "nav.home": "Ana Sayfa",
 
     "hero.badge": "🚀 En güvenilir WhatsApp doğrulama platformu",
     "hero.title":
@@ -2171,6 +2640,126 @@ const translations = {
       "© 2026 Nabda OTP. Tüm hakları saklıdır. Nabda OTP, We Pioners Ltd'ye ait ve tarafından işletilen bir üründür",
     "footer.seo":
       "Sınırsız WhatsApp Mesajı • Mesaj Başına Ücret Yok • 5 Günlük Deneme • RESTful API • Webhook ile Alma • Medya ve Belgeler • Öncelikli Destek • 10$/ay • Twilio UltraMsg SendGrid Alternatifi • MENA Irak Suriye • أرخص واتساب API",
+    // ====================== ABOUT PAGE (TR) ======================
+    "about.title": "Nabda OTP Hakkında",
+
+    "about.subtitle":
+      "MENA bölgesi için bulut tabanlı WhatsApp API ve doğrulama platformu",
+
+    "about.paraOne":
+      "Nabda OTP, işletmelerin Irak, Suriye ve MENA bölgesi genelinde tek kullanımlık şifreleri (OTP) ve işlem mesajlarını güvenli bir şekilde göndermesine yardımcı olmak için tasarlanmış bulut tabanlı bir WhatsApp API ve doğrulama platformudur.",
+
+    "about.paraTwo":
+      "Geliştiriciler için oluşturulan Nabda OTP, basit bir RESTful API ve SDK'lar aracılığıyla hızlı ve ölçeklenebilir WhatsApp mesajlaşması sağlayan güvenilir bir ağ geçidi sunar. Platformumuz, işletmelerin mesaj başına ücret veya gizli maliyetler olmadan sabit aylık abonelik ile sınırsız OTP ve bildirim mesajları göndermesine olanak tanır.",
+
+    "about.paraThree":
+      "Nabda OTP; uygun fiyat, güvenilirlik ve bölgesel optimizasyona odaklanır. Hizmet, yerel telefon numaraları, Arapça dil desteği ve Orta Doğu ağlarında yüksek teslimat oranları için tamamen optimize edilmiştir. Bu da onu Twilio, UltraMsg ve benzeri global sağlayıcılara pratik bir alternatif haline getirir.",
+
+    "about.ques": "Neler Sunuyoruz",
+
+    "about.featone": "WhatsApp OTP ve işlem mesajları",
+    "about.feattwo": "Geliştirici dostu API'ler ve kapsamlı dokümantasyon",
+    "about.featthree": "Gerçek zamanlı teslimat analizi ve izleme",
+    "about.featfour": "Kurumsal düzeyde güvenlik ve kimlik doğrulama",
+    "about.featfive": "Yüksek erişilebilirliğe sahip bulut altyapısı",
+
+    "about.note": "Önemli Not",
+
+    "about.noteone":
+      "Nabda OTP, bir telekomünikasyon sağlayıcısı değil, yazılım tabanlı bir mesajlaşma platformudur. Tüm kullanım, geçerli yasalar, WhatsApp politikaları ve bölgesel düzenlemelere uygun olmalıdır.",
+
+    "about.legalepara":
+      "Nabda OTP, teknoloji çözümleri portföyünün bir parçası olarak We Pioners LTD tarafından sunulan bir ürün ve hizmettir ve MENA bölgesindeki girişimler, geliştiriciler ve işletmelere hizmet vermektedir.",
+    // ====================== TERMS PAGE (TR) ======================
+    "terms.title": "Kullanım Şartları",
+
+    "terms.subtitle": "Site hizmetlerinin kullanım şartları",
+
+    "terms.introOne":
+      'Bu Kullanım Şartları ("Şartlar"), Birleşik Krallık\'ta kayıtlı olan ve "Nabda OTP" hizmetini işleten We Pioners Ltd ile sizin aranızda bağlayıcı bir yasal sözleşmedir.',
+
+    "terms.introTwo":
+      "Nabda OTP hizmetini ve Nabdaotp.com web sitesini kullanarak, Müşteri aşağıdaki Kullanım Şartlarını kabul eder.",
+
+    "terms.introThree":
+      "Müşteri, mesaj gönderilen son kullanıcıdan önceden, sözlü, yazılı, e-posta veya elektronik onay dahil ancak bunlarla sınırlı olmamak üzere, yasal herhangi bir yöntemle izin almayı taahhüt eder.",
+
+    "terms.clientObligations": "Müşteri Yükümlülükleri",
+
+    "terms.clientIntro":
+      "Müşteri, aşağıdaki kategorilere giren mesajları göndermek için hizmeti kullanmamayı kabul eder:",
+
+    "terms.list.one": "Spam veya istenmeyen toplu mesajlar",
+    "terms.list.two":
+      "Nabda OTP sistemlerinin veya altyapısının arızalanmasına ya da kesintiye uğramasına neden olabilecek mesajlar",
+    "terms.list.three": "Pornografik, saldırgan veya uygunsuz içerik",
+    "terms.list.four":
+      "Yanıltıcı mesajlar, kimliğe bürünme veya yanlış bilgi verme dahil",
+    "terms.list.five":
+      "Doğru olmayan, gizli veya özel bilgilerin yetkisiz olarak iletilmesi",
+    "terms.list.six":
+      "Hukuka aykırı yollarla elde edilen veya üçüncü tarafların fikri mülkiyet haklarını ihlal eden bilgilerin aktarılması",
+    "terms.list.seven":
+      "Alkol, tütün, uyuşturucu veya yasa dışı ürün ya da hizmetlerin reklamı veya tanıtımı",
+    "terms.list.eight":
+      "Geçerli yasa, yönetmelik veya uluslararası hukuk standartlarını ihlal eden herhangi bir içerik",
+
+    "terms.whatsapp": "WhatsApp Inc. ile İletişim ve Garantiler",
+
+    "terms.whatsapp.one":
+      "Nabda OTP hizmeti ve Nabdaotp.com web sitesi, WhatsApp Inc. tarafından desteklenmez, onaylanmaz veya yetkilendirilmez. Müşteri, hizmetin, web sitesinin ve API'nin kullanımına ilişkin tüm riskleri kabul eder.",
+
+    "terms.whatsapp.two":
+      "Nabda OTP iki entegrasyon seçeneği sunar: Standart Gateway ve Resmi WhatsApp Business API. Müşteriler, ihtiyaçlarına uygun planı seçmekten sorumludur.",
+
+    "terms.whatsapp.three":
+      "Nabda OTP, internet kesintileri, donanım veya yazılım sorunları nedeniyle müşterinin hizmete veya API'ye erişememesinden sorumlu değildir.",
+
+    "terms.whatsapp.four":
+      "Müşteri, özellikle Standart Gateway kullanırken WhatsApp numarasının veya hesabının WhatsApp tarafından engellenebileceğini veya yasaklanabileceğini kabul eder.",
+
+    "terms.whatsapp.five":
+      "WhatsApp Inc. tarafından yapılan değişiklikler, güncellemeler veya politikalar nedeniyle oluşan kesintilerden Nabda OTP sorumlu değildir.",
+
+    "terms.website": "Web Sitesi Kullanımı",
+
+    "terms.website.intro":
+      "Aşağıdaki şartlara uymanız kaydıyla, web sitesinden alıntıları kişisel veya dahili iş kullanımı için yazdırabilir veya indirebilirsiniz:",
+
+    "terms.website.one": "Hiçbir belge veya ilgili grafik değiştirilmemelidir",
+    "terms.website.two": "Grafikler metinden ayrı kullanılmamalıdır",
+    "terms.website.three":
+      "Tüm telif hakkı ve izin bildirimleri tüm kopyalarda yer almalıdır",
+
+    "terms.refund": "İade / Abonelik İptali",
+
+    "terms.refund.one": "Belirli günler için ücretsiz deneme sunulabilir.",
+    "terms.refund.two": "Ödenen abonelik ücretleri iade edilmez.",
+    "terms.refund.three":
+      "Aboneliğinizi istediğiniz zaman iptal edebilirsiniz.",
+    "terms.refund.four":
+      "Hizmet, mevcut abonelik süresi sonuna kadar aktif kalır.",
+    "terms.refund.five":
+      "Ek ücretlerden kaçınmak için iptal işlemi bir sonraki fatura döneminden önce yapılmalıdır.",
+
+    "terms.refund.note": "Daha fazla bilgi için lütfen",
+    "terms.refund.link": "İade Politikamızı inceleyin",
+
+    "terms.misc": "Diğer Hükümler",
+
+    "terms.misc.one":
+      "Bu şartların herhangi bir hükmü geçersiz sayılırsa, diğer hükümler geçerliliğini korur.",
+
+    "terms.misc.two":
+      "Bu şartlar, müşteri ile Nabda OTP arasındaki tüm anlaşmayı oluşturur.",
+
+    "terms.misc.three": "Bu şartlar müşteri tarafından değiştirilemez.",
+
+    "terms.misc.four":
+      "Bu şartlarda açıkça belirtilmeyen temsilci beyanları yasal olarak bağlayıcı değildir.",
+
+    "terms.misc.five":
+      "Bu şartlarda açıkça yer almayan yanlış veya yanıltıcı beyanlardan Nabda OTP sorumlu değildir.",
     // ====================== BLOGS PAGE ======================
     "blogs.title": "Blogumuz",
     "blogs.subtitle":
@@ -2191,6 +2780,112 @@ const translations = {
       "WhatsApp API en iyi uygulamaları, gelişmiş entegrasyonlar ve MENA işletmelerinden başarı hikayeleri hakkında yeni derinlemesine makaleler üzerinde çalışıyoruz.",
     "blogs.comingSoon.stayTuned": "Takipte Kalın ..",
     "blogs.readMore": "Devamını Oku →",
+
+    // ====================== Refund PAGE ======================
+    "refund.title": "İade Politikası",
+
+    "refund.subtitle": "Deneme süresi ve abonelik iade şartları",
+
+    "refund.trial":
+      "Tüm yeni kullanıcılar için ödeme yapmadan önce hizmeti test etmeleri amacıyla <strong>5 günlük ücretsiz deneme</strong> sunuyoruz. Bu süreyi Nabda OTP'nin ihtiyaçlarınıza uygun olup olmadığını değerlendirmek için kullanmanızı öneririz.",
+
+    "refund.policy":
+      "Genel olarak, deneme süresi sona erdikten sonra abonelik ücretleri iade edilmez. Ancak teknik bir hata olduğunu düşünüyorsanız veya hizmetten memnun değilseniz, işlem tarihinden itibaren <strong>7 gün</strong> içinde destek ekibimizle iletişime geçin.",
+
+    "refund.contactText": "Bizimle iletişime geçin",
+
+    "refund.whatsapp": "WhatsApp",
+
+    "refund.note":
+      " — İade talepleri duruma göre değerlendirilir ve iade yapma hakkı tarafımıza aittir.",
+    // ====================== Privacy PAGE ======================
+    "privacy.breadcrumb": "Gizlilik Politikası",
+    "privacy.title": "Gizlilik Politikası",
+    "privacy.subtitle": "Verilerinizi nasıl toplar, kullanır ve koruruz",
+
+    "privacy.intro.one":
+      'Bu Gizlilik Politikası ("Politika"), Nabda OTP web sitesi ve Nabdaotp.com üzerinden sunulan hizmetlerin kullanımını düzenleyen Hizmet Şartlarının bir parçasıdır.',
+
+    "privacy.intro.two":
+      "Web sitesini veya hizmetlerimizi kullanarak, bilgilerinizin bu politikaya uygun şekilde toplanmasını ve kullanılmasını kabul etmiş olursunuz.",
+
+    "privacy.intro.three":
+      "Bu politikayı kabul etmiyorsanız, web sitesini ve hizmetleri kullanmayı derhal bırakmalısınız.",
+
+    "privacy.changes.title": "Politikadaki Değişiklikler",
+    "privacy.changes.one":
+      "Bu Gizlilik Politikasını önceden bildirimde bulunmadan güncelleyebiliriz. Değişiklikler yayınlandığı anda yürürlüğe girer.",
+    "privacy.changes.two": "En güncel sürüm her zaman geçerli olacaktır.",
+
+    "privacy.definitions.title": "Tanımlar",
+    "privacy.definitions.one":
+      '"biz", "bizim" ifadeleri Nabda OTP ve bağlı tarafları ifade eder.',
+    "privacy.definitions.two":
+      "Bu politika, siteyi kullanmanızla birlikte yürürlüğe girer.",
+    "privacy.definitions.three": "Geçersiz maddeler diğerlerini etkilemez.",
+
+    "privacy.collect.title": "Toplanan Bilgiler",
+    "privacy.collect.intro": "İki tür bilgi toplarız:",
+
+    "privacy.personal.title": "1. Kişisel Bilgiler",
+    "privacy.personal.intro": "Aşağıdaki durumlarda toplanabilir:",
+    "privacy.personal.one": "Hesap oluşturma",
+    "privacy.personal.two": "Hizmetleri kullanma",
+    "privacy.personal.three": "Hesap güncelleme",
+    "privacy.personal.four": "Abonelik satın alma",
+    "privacy.personal.five": "Destek talebi",
+    "privacy.personal.six": "Kampanyalara katılım",
+    "privacy.personal.note":
+      "Ad, e-posta, şirket ve iletişim bilgilerini içerebilir.",
+
+    "privacy.general.title": "2. Genel Bilgiler",
+    "privacy.general.intro": "Otomatik olarak şu bilgiler toplanabilir:",
+    "privacy.general.one": "IP adresi",
+    "privacy.general.two": "Erişim zamanı",
+    "privacy.general.three": "Ziyaret edilen sayfalar",
+    "privacy.general.four": "Tarayıcı ve işletim sistemi",
+    "privacy.general.five": "Yönlendiren siteler",
+    "privacy.general.note":
+      "Bu veriler performansı iyileştirmek için kullanılır.",
+
+    "privacy.cookies.title": "Çerezler ve Takip",
+    "privacy.cookies.intro": "Çerezler şu amaçlarla kullanılır:",
+    "privacy.cookies.one": "Siteyi iyileştirmek",
+    "privacy.cookies.two": "Kullanıcı davranışını anlamak",
+    "privacy.cookies.three": "Hizmet sunmak",
+    "privacy.cookies.note":
+      "Çerezleri devre dışı bırakmak bazı özellikleri etkileyebilir.",
+
+    "privacy.usage.title": "Bilgi Kullanımı",
+    "privacy.usage.important": "Kişisel verilerinizi satmayız.",
+    "privacy.usage.intro": "Veriler şu amaçlarla paylaşılabilir:",
+    "privacy.usage.one": "Hosting",
+    "privacy.usage.two": "Platform desteği",
+    "privacy.usage.three": "Analiz",
+    "privacy.usage.noteOne": "Sadece gerekli kullanım yapılır.",
+    "privacy.usage.noteTwo": "İzinsiz pazarlama yapılmaz.",
+
+    "privacy.security.title": "Veri Güvenliği",
+    "privacy.security.one": "Verileri korumak için önlemler alınır.",
+    "privacy.security.two": "Güvenlik veri hassasiyetine bağlıdır.",
+
+    "privacy.rights.title": "Haklarınız",
+    "privacy.rights.intro": "Şunlara sahipsiniz:",
+    "privacy.rights.one": "Verilere erişim",
+    "privacy.rights.two": "Güncelleme veya silme",
+    "privacy.rights.three": "Kontrol etme",
+    "privacy.rights.note": "İletişime geçebilirsiniz.",
+
+    "privacy.retention.title": "Veri Saklama",
+    "privacy.retention.one": "Veriler gerekli süre boyunca saklanır.",
+
+    "privacy.contact.title": "İletişim",
+    "privacy.contact.intro": "Sorular için bizimle iletişime geçin:",
+
+    "privacy.notice":
+      "Son Not: Siteyi kullanmaya devam etmek bu politikayı kabul ettiğiniz anlamına gelir.",
+    "blog.whatsappOtpGuide": "WhatsApp OTP Rehberi",
+    "blog.whatsappReplacingSms": "WhatsApp SMS'in Yerini Alıyor mu?",
 
     // Comparison Page
     "comparison.title": "Nabda OTP Rakip Karşılaştırması",
@@ -3129,79 +3824,62 @@ function closeLangMenu() {
 }
 
 function initLangDropdown() {
-  const langToggle = document.getElementById("langToggle");
-  const langMenu = document.getElementById("langMenu");
-  const langDropdown = document.getElementById("langDropdown");
-  if (!langToggle || !langMenu || !langDropdown) return;
+  const btn = document.getElementById("langToggle");
+  const menu = document.getElementById("langMenu");
+  if (!btn || !menu) return;
 
-  const coarsePointer = window.matchMedia("(pointer: coarse)");
-  let langToggleTouchLock = false;
-
-  function openLangMenu() {
-    langMenu.hidden = false;
-    langMenu.classList.add("is-open");
-    langToggle.setAttribute("aria-expanded", "true");
-    if (coarsePointer.matches) {
-      langMenu.classList.add("lang-menu--suppress-pointer");
-      if (langMenu._suppressPtrTid) clearTimeout(langMenu._suppressPtrTid);
-      langMenu._suppressPtrTid = window.setTimeout(() => {
-        langMenu.classList.remove("lang-menu--suppress-pointer");
-        langMenu._suppressPtrTid = undefined;
-      }, 450);
-    }
-  }
-
-  function toggleLangMenu() {
-    if (!langMenu.hidden) {
-      closeLangMenu();
-      return;
-    }
-    openLangMenu();
-  }
-
-  langToggle.addEventListener("click", (e) => {
-    e.preventDefault();
+  btn.addEventListener("click", (e) => {
     e.stopPropagation();
-    if (langToggleTouchLock) return;
-    toggleLangMenu();
+    const isOpen = !menu.hidden;
+    if (isOpen) {
+      closeLangMenu();
+    } else {
+      menu.hidden = false;
+      menu.classList.add("is-open");
+      btn.setAttribute("aria-expanded", "true");
+
+      // Suppress pointer events briefly to avoid hover flicker on open
+      menu.classList.add("lang-menu--suppress-pointer");
+      menu._suppressPtrTid = setTimeout(() => {
+        menu.classList.remove("lang-menu--suppress-pointer");
+        menu._suppressPtrTid = undefined;
+      }, 120);
+    }
   });
 
-  langToggle.addEventListener(
-    "touchend",
-    (e) => {
-      if (!coarsePointer.matches) return;
-      e.preventDefault();
-      e.stopPropagation();
-      langToggleTouchLock = true;
-      toggleLangMenu();
-      window.setTimeout(() => {
-        langToggleTouchLock = false;
-      }, 500);
-    },
-    { passive: false },
-  );
-
-  langMenu.querySelectorAll("[data-lang]").forEach((item) => {
-    item.addEventListener("click", (e) => {
-      e.stopPropagation();
-      navigateToLanguage(item.getAttribute("data-lang"));
+  menu.querySelectorAll("[data-lang]").forEach((item) => {
+    item.addEventListener("click", () => {
+      const lang = item.getAttribute("data-lang");
+      closeLangMenu();
+      navigateToLanguage(lang);
     });
   });
 
-  function onDocumentPointerDown(e) {
-    if (e.button != null && e.button !== 0) return;
-    if (langDropdown.contains(e.target)) return;
-    closeLangMenu();
-  }
-  document.addEventListener("pointerdown", onDocumentPointerDown, true);
+  document.addEventListener("click", (e) => {
+    if (!menu.hidden && !btn.contains(e.target) && !menu.contains(e.target)) {
+      closeLangMenu();
+    }
+  });
+
+  document.addEventListener("keydown", (e) => {
+    if (e.key === "Escape" && !menu.hidden) {
+      closeLangMenu();
+      btn.focus();
+    }
+  });
 }
 
-/** Cycles en → ar → tr for legacy callers */
 function toggleLanguage() {
-  const order = ["en", "ar", "tr"];
-  const i = order.indexOf(getLanguageFromPath());
-  const next = order[(i + 1) % order.length];
-  navigateToLanguage(next);
+  const menu = document.getElementById("langMenu");
+  const btn = document.getElementById("langToggle");
+  if (!menu || !btn) return;
+  if (menu.hidden) {
+    menu.hidden = false;
+    menu.classList.add("is-open");
+    btn.setAttribute("aria-expanded", "true");
+  } else {
+    closeLangMenu();
+  }
 }
 
 // ============================================

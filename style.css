@@ -4201,3 +4201,12 @@ button:focus-visible {
         font-size: 0.98rem;
     }
 }
+
+.curmbs-color{
+    color: white !important;
+    margin-top: 20px !important;
+}
+.curmbs-color-sec{
+    color: rgba(15, 70, 159, 0.71) !important;
+    margin-top: 20px !important;
+}

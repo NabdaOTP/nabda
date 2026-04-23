@@ -102,8 +102,8 @@
 /tr/terms-of-service /terms-of-service.html 200
 /tr/refund-policy /refund-policy.html 200
 
-/ar/_ /:splat 200
-/tr/_ /:splat 200
+/ar/* /:splat 200
+/tr/* /:splat 200
 
 /index.html / 301!
 http://nabdaotp.com/_ https://www.nabdaotp.com/:splat 301!

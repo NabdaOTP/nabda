@@ -75,6 +75,189 @@
     Content-Type = "text/plain; charset=utf-8"
     Cache-Control = "public, max-age=86400"
 
+[[redirects]]
+  from = "/about"
+  to = "/about.html"
+  status = 200
+
+[[redirects]]
+  from = "/about/"
+  to = "/about.html"
+  status = 200
+
+[[redirects]]
+  from = "/about/*"
+  to = "/about/:splat.html"
+  status = 200
+
+[[redirects]]
+  from = "/ar/about"
+  to = "/about.html"
+  status = 200
+
+[[redirects]]
+  from = "/ar/about/"
+  to = "/about.html"
+  status = 200
+
+[[redirects]]
+  from = "/ar/about/*"
+  to = "/about/:splat.html"
+  status = 200
+
+[[redirects]]
+  from = "/tr/about"
+  to = "/about.html"
+  status = 200
+
+[[redirects]]
+  from = "/tr/about/"
+  to = "/about.html"
+  status = 200
+
+[[redirects]]
+  from = "/tr/about/*"
+  to = "/about/:splat.html"
+  status = 200    
+
+
+[[redirects]]
+  from = "/privacy-policy"
+  to = "/privacy-policy.html"
+  status = 200
+
+[[redirects]]
+  from = "/privacy-policy/"
+  to = "/privacy-policy.html"
+  status = 200
+
+[[redirects]]
+  from = "/privacy-policy/*"
+  to = "/privacy-policy/:splat.html"
+  status = 200
+
+[[redirects]]
+  from = "/ar/privacy-policy"
+  to = "/privacy-policy.html"
+  status = 200
+
+[[redirects]]
+  from = "/ar/privacy-policy/"
+  to = "/privacy-policy.html"
+  status = 200
+
+[[redirects]]
+  from = "/ar/privacy-policy/*"
+  to = "/privacy-policy/:splat.html"
+  status = 200
+
+[[redirects]]
+  from = "/tr/privacy-policy"
+  to = "/privacy-policy.html"
+  status = 200
+
+[[redirects]]
+  from = "/tr/privacy-policy/"
+  to = "/privacy-policy.html"
+  status = 200
+
+[[redirects]]
+  from = "/tr/privacy-policy/*"
+  to = "/privacy-policy/:splat.html"
+  status = 200    
+
+
+[[redirects]]
+  from = "/terms-of-service"
+  to = "/terms-of-service.html"
+  status = 200
+
+[[redirects]]
+  from = "/terms-of-service/"
+  to = "/terms-of-service.html"
+  status = 200
+
+[[redirects]]
+  from = "/terms-of-service/*"
+  to = "/terms-of-service/:splat.html"
+  status = 200
+
+[[redirects]]
+  from = "/ar/terms-of-service"
+  to = "/terms-of-service.html"
+  status = 200
+
+[[redirects]]
+  from = "/ar/terms-of-service/"
+  to = "/terms-of-service.html"
+  status = 200
+
+[[redirects]]
+  from = "/ar/terms-of-service/*"
+  to = "/terms-of-service/:splat.html"
+  status = 200
+
+[[redirects]]
+  from = "/tr/terms-of-service"
+  to = "/terms-of-service.html"
+  status = 200
+
+[[redirects]]
+  from = "/tr/terms-of-service/"
+  to = "/terms-of-service.html"
+  status = 200
+
+[[redirects]]
+  from = "/tr/terms-of-service/*"
+  to = "/terms-of-service/:splat.html"
+  status = 200 
+
+
+[[redirects]]
+  from = "/refund-policy"
+  to = "/refund-policy.html"
+  status = 200
+
+[[redirects]]
+  from = "/refund-policy/"
+  to = "/refund-policy.html"
+  status = 200
+
+[[redirects]]
+  from = "/refund-policy/*"
+  to = "/refund-policy/:splat.html"
+  status = 200
+
+[[redirects]]
+  from = "/ar/refund-policy"
+  to = "/refund-policy.html"
+  status = 200
+
+[[redirects]]
+  from = "/ar/refund-policy/"
+  to = "/refund-policy.html"
+  status = 200
+
+[[redirects]]
+  from = "/ar/refund-policy/*"
+  to = "/refund-policy/:splat.html"
+  status = 200
+
+[[redirects]]
+  from = "/tr/refund-policy"
+  to = "/refund-policy.html"
+  status = 200
+
+[[redirects]]
+  from = "/tr/refund-policy/"
+  to = "/refund-policy.html"
+  status = 200
+
+[[redirects]]
+  from = "/tr/refund-policy/*"
+  to = "/refund-policy/:splat.html"
+  status = 200    
+
 
 [[redirects]]
   from = "/blogs"
