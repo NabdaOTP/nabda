@@ -38,5 +38,4 @@ Allow: /
 User-agent: Bingbot
 Allow: /
 
-User-agent: *
-Disallow: /login
+
