@@ -839,25 +839,10 @@ img {
     opacity: 0.8;
 }
 
-/* .pricing-grid {
-    display: flex;
-    flex-direction: column;
-    gap: var(--space-xl);
-    align-items: stretch;
-    max-width: 960px;
-    margin: 0 auto;
-} */
 .pricing-grid {
     max-width: 1200px;
     margin: 0 auto;
 }
-
-/* .pricing-options-row {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: var(--space-xl);
-    align-items: start;
-} */
 
 .pricing-options-row {
     display: grid;
