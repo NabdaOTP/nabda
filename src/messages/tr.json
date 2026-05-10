@@ -4,6 +4,7 @@
         "description": "Nabda OTP — Standart: 10$/ay Ağ Geçidi, sınırsız mesaj, deneme, REST, webhook, medya, öncelikli destek, istediğiniz zaman iptal, kredi kartı yok 2 dk kurulum. Kurumsal: Bize Ulaşın, Resmi API, konuşma başına, SLA. nabdaotp.com — api.nabdaotp.com/docs — We Pioners Ltd."
     },
     "nav": {
+        "home": "Ana Sayfa",
         "features": "Özellikler",
         "pricing": "Fiyatlandırma",
         "solutions": "Çözümler",
@@ -13,9 +14,9 @@
         "login": "Giriş"
     },
     "hero": {
-        "badge": "🚀 En güvenilir WhatsApp doğrulama platformu",
-        "title": "Irak, Suriye ve MENA Bölgesi'nin En Ucuz ve İlk WhatsApp Ağ Geçidi.",
-        "titleEg": "Mısır ve MENA Bölgesi'nin En Ucuz ve İlk WhatsApp Ağ Geçidi.",
+        "badge": "En güvenilir WhatsApp doğrulama platformu",
+        "title": "Türkiye ve MENA Bölgesi'nin En Ucuz WhatsApp Gateway'i.",
+        "titleEg": "Türkiye ve MENA Bölgesi'nin En Ucuz WhatsApp Gateway'i.",
         "subtitle": "Standart veya Resmi API ile WhatsApp Ağ Geçidimiz üzerinden sınırsız OTP gönderin. Geliştiriciler için en uygun fiyatlı ve en güvenilir API çözümü. Doğrudan entegrasyon ve en uygun fiyatlandırma.",
         "cta": {
             "primary": "Ücretsiz Denemeyi Başlat",
@@ -24,7 +25,7 @@
         "price": "Sadece <strong>aylık 10$</strong> ile başlayın — Mesaj başına ücret yok"
     },
     "code": {
-        "comment1": "// Nabda Ağ Geçidi ile OTP gönderimi",
+        "comment1": "// Türkiye için OTP gönderimi (+90)",
         "message": "\"Kodunuz: 847291\"",
         "comment2": "// ✓ Anında teslim edildi"
     },
@@ -42,15 +43,15 @@
     },
     "features": {
         "title": "Neden Nabda OTP?",
-        "subtitle": "En iyi güvenilirlikle en uygun fiyatlı WhatsApp API. Geliştiriciler tarafından, geliştiriciler için🤍.",
+        "subtitle": "En iyi güvenilirlikle en uygun fiyatlı WhatsApp API. Geliştiriciler tarafından, geliştiriciler için",
         "cheapest": {
             "title": "Piyasadaki En Ucuz",
             "desc": "Diğerleri mesaj başına ücret alırken biz sabit aylık ücret sunuyoruz. Sadece aylık 10$ karşılığında sınırsız WhatsApp mesajı gönderin — mevcut en uygun fiyatlı API çözümü.",
             "highlight": "Rakiplere kıyasla %90'a varan tasarruf"
         },
-        "local": {
-            "title": "Yerel ve Gururlu",
-            "desc": "Arap geliştiriciler için özel olarak geliştirilmiş yerel bir platform. Yerel piyasayı anlıyoruz ve doğrudan entegrasyon ile Arapça destek sunuyoruz."
+        "bundle": {
+            "title": "Çok Numaralı Paket",
+            "desc": "Birden fazla WhatsApp numarasını tek bir API anahtarı altında toplayın. Nabda, mesajları tüm slotlar arasında otomatik olarak dağıtır — yerleşik hata toleransı ile yüksek hacimli OTP gönderimi için idealdir."
         },
         "developer": {
             "title": "Önce Geliştirici",
@@ -67,6 +68,10 @@
         "analytics": {
             "title": "Gerçek Zamanlı Analitik",
             "desc": "Teslim oranlarını takip edin, kullanımı izleyin ve kapsamlı panomuzla içgörüler edinin. Mesajlaşma operasyonlarınıza tam görünürlük."
+        },
+        "webhook": {
+            "title": "Webhook'lar ve Medya Desteği",
+            "desc": "Gelen mesajları webhook'lar aracılığıyla gerçek zamanlı olarak alın. Görseller, PDF'ler, sesli mesajlar ve belgeler gönderin — kutudan çıktığı gibi tam medya desteği."
         }
     },
     "pricing": {
@@ -119,10 +124,42 @@
             "verification": "İşletme doğrulama desteği",
             "onboarding": "Özel kurulum desteği",
             "sla": "SLA Garantisi"
+        },
+        "bundle": {
+            "badge": "Paket",
+            "bestValue": "En İyi Değer",
+            "save": "11 ay fiyatına 12 ay",
+            "periodMonth": "/ay slot başına",
+            "periodYear": "/yıl slot başına",
+            "typeLine": "Tür: Çok numaralı paket",
+            "bestForLine": "En uygun: Yüksek hacimli kullanım ve kurumsal şirketler",
+            "messagesLine": "Mesajlar: Slot başına sınırsız",
+            "cta": "Paket denemesini başlat",
+            "note": "Minimum 1 slot • İstediğiniz zaman daha fazlasını ekleyin",
+            "bundleUnlimited": "Slot başına sınırsız mesaj",
+            "bundleRotation": "Otomatik mesaj rotasyonu",
+            "bundleOneKey": "Tüm slotlar için tek API anahtarı",
+            "bundleOneWebhook": "Tüm slotlar için tek webhook",
+            "bundleFaultTolerance": "Hata toleransı — slotlar göndermeye devam eder",
+            "bundleTrial": "5 günlük ücretsiz deneme"
         }
     },
     "faq": {
-        "title": "Sık Sorulan Sorular"
+        "title": "Sık Sorulan Sorular",
+        "q1": "2026 yılında Türkiye'de en ucuz WhatsApp API hangisidir?",
+        "a1": "Nabda OTP, Türkiye'de en uygun fiyatlı WhatsApp API çözümlerinden biridir. Aylık sadece 10$ karşılığında mesaj başına ücret olmadan sınırsız mesaj gönderimi sunar — bu da onu Twilio veya UltraMsg gibi alternatiflere göre %90'a kadar daha ucuz yapar.",
+        "q2": "Nabda OTP Türkiye'de nasıl çalışır?",
+        "a2": "Nabda OTP bir WhatsApp Gateway API sağlar. Bir instance oluşturursunuz, WhatsApp numaranızı QR kod ile bağlarsınız ve Bearer token alırsınız. Ardından REST API üzerinden kolayca mesaj gönderirsiniz. Kurulum genelde 2 dakikadan kısa sürer.",
+        "q3": "Nabda OTP Türkiye'de Twilio'dan daha mı iyi?",
+        "a3": "Çoğu kullanım için evet. Nabda OTP sabit aylık ücret ile sınırsız mesaj sunarken, Twilio mesaj başına ücret alır ve şablon onayı gerektirir. Bu da Nabda OTP'yi Türkiye'deki geliştiriciler ve işletmeler için daha hızlı ve uygun maliyetli yapar.",
+        "q4": "Türkiye'de Nabda OTP kullanmak için Meta onayı gerekir mi?",
+        "a4": "Hayır. Nabda OTP resmi olmayan bir WhatsApp Gateway olduğu için Meta işletme doğrulaması veya şablon onayı gerekmez. Hesap oluşturduktan hemen sonra OTP mesajları göndermeye başlayabilirsiniz.",
+        "q5": "Aylık 10$ plana Türkiye için neler dahildir?",
+        "a5": "Standart plan şunları içerir: sınırsız WhatsApp mesajı, mesaj başına ücret yok, REST API erişimi, webhook desteği, medya ve doküman gönderimi, 5 gün ücretsiz deneme, öncelikli destek ve istediğiniz zaman iptal.",
+        "q6": "Nabda OTP Türkiye telefon numaralarını (+90) destekliyor mu?",
+        "a6": "Evet. Nabda OTP, Türkiye'deki tüm +90 numaralarını destekler (Turkcell, Vodafone TR, Türk Telekom dahil) ve OTP mesajlarını hızlı ve güvenilir şekilde iletir.",
+        "q7": "Instance ile Bundle arasındaki fark nedir?",
+        "a7": "Instance, tek bir WhatsApp numarasının tek bir API anahtarı ile çalıştığı yapıdır. Bundle ise birden fazla numarayı tek bir API anahtarı altında birleştirir ve mesajları otomatik olarak dağıtarak daha yüksek hız ve güvenilirlik sağlar."
     },
     "cta": {
         "title": "İlk mesajınızı göndermeye hazır mısınız?",
@@ -136,30 +173,249 @@
         "help": "Merhaba, size nasıl yardımcı olabiliriz?"
     },
     "footer": {
-        "desc": "Irak ve MENA bölgesi için ilk ve en iyi WhatsApp API çözümü. Geliştiriciler için doğrudan entegrasyonlu bulut ağ geçidi.",
+        "desc": "Irak ve MENA bölgesi için ilk ve en iyi WhatsApp API çözümü. Geliştiriciler için doğrudan entegrasyon sunan bulut tabanlı bir geçit.",
+        "regions": "Ülkeye Göre WhatsApp API",
+        "view_all_countries": "Tüm ülkeleri görüntüle →",
         "product": "Ürün",
-        "features": "Özellikler",
-        "pricing": "Fiyatlandırma",
-        "docs": "Dokümantasyon",
+        "solutions": "Çözümler",
+        "comparisons": "Karşılaştırmalar",
+        "resources": "Kaynaklar",
         "company": "Şirket",
-        "regions": "Ülkelere göre WhatsApp API",
-        "legal": "Yasal",
-        "about": "Hakkımızda",
-        "contact": "İletişim",
-        "privacy": "Gizlilik Politikası",
-        "terms": "Hizmet Şartları",
-        "refund": "İade Politikası",
-        "copyright": "© 2026 Nabda OTP. Tüm hakları saklıdır. Nabda OTP, We Pioners Ltd'ye ait ve tarafından işletilen bir üründür",
-        "seo": "Sınırsız WhatsApp Mesajı • Mesaj Başına Ücret Yok • 5 Günlük Deneme • RESTful API • Webhook ile Alma • Medya ve Belgeler • Öncelikli Destek • 10$/ay • Twilio UltraMsg SendGrid Alternatifi • MENA Irak Suriye • أرخص واتساب API",
-        "comparisons": {
-            "title": "Karşılaştırmalar",
-            "nabda_vs_ultramsg": "Nabda vs UltraMsg",
-            "nabda_vs_twilio": "Nabda vs Twilio",
-            "nabda_vs_bulksms": "Nabda vs BulkSMS",
-            "nabda_vs_official": "Nabda vs Official API",
-            "nabda_vs_otpiq": "Nabda vs OTPIQ",
-            "nabda_alternatives": "Nabda alternatifleri→"
+        "badges": {
+            "uptime": "%99.9 Çalışma Süresi",
+            "encryption": "Uçtan uca şifreleme",
+            "api": "REST API"
+        },
+        "copyright": "© 2026 Nabda OTP. Tüm hakları saklıdır. Nabda OTP, We Pioners Ltd tarafından sahip olunan ve işletilen bir üründür",
+        "seo": "Sınırsız WhatsApp Mesajları • Mesaj başına ücret yok • 5 gün ücretsiz deneme • RESTful API • Webhook ile alım • Medya ve belge desteği • Öncelikli destek • Aylık 10$ • Twilio, UltraMsg, SendGrid alternatifi • MENA, Irak, Suriye • En uygun WhatsApp API",
+        "links": {
+            "product": {
+                "features": "Özellikler",
+                "pricing": "Fiyatlandırma",
+                "solutions": "Çözümler",
+                "comparisons": "Karşılaştırmalar",
+                "docs": "Dokümantasyon"
+            },
+            "solutions": {
+                "otp": "OTP Doğrulama",
+                "orders": "Sipariş Onayları",
+                "security": "Hesap Güvenliği",
+                "appointments": "Randevu Hatırlatmaları",
+                "support": "Müşteri Desteği",
+                "marketing": "Pazarlama"
+            },
+            "comparisons": {
+                "ultramsg": "Nabda vs UltraMsg",
+                "twilio": "Nabda vs Twilio",
+                "official": "Nabda vs Resmi API",
+                "bulksms": "Nabda vs BulkSMS",
+                "otpiq": "Nabda vs OTPIQ",
+                "alternatives": "Nabda alternatifleri →"
+            },
+            "resources": {
+                "blog": "Blog",
+                "iraq_guide": "Irak için WhatsApp OTP Rehberi",
+                "vs_sms": "WhatsApp vs SMS",
+                "api_ref": "API Referansı",
+                "bundle_vs_instance": "WhatsApp Bundle vs Single Instance",
+                "top_5mis": "En Yaygın 5 WhatsApp OTP Hatası",
+                "whats_vs_sms": "WhatsApp API vs SMS OTP"
+            },
+            "company": {
+                "about": "Hakkında",
+                "contact": "İletişim",
+                "privacy": "Gizlilik Politikası",
+                "terms": "Hizmet Şartları",
+                "refund": "İade Politikası"
+            }
+        },
+        "countries": {
+            "iraq": "Irak",
+            "egypt": "Mısır",
+            "saudi": "Suudi Arabistan",
+            "uae": "BAE",
+            "qatar": "Katar",
+            "jordan": "Ürdün",
+            "syria": "Suriye",
+            "turkey": "Türkiye",
+            "algeria": "Cezayir",
+            "morocco": "Fas",
+            "kuwait": "Kuveyt",
+            "bahrain": "Bahreyn",
+            "oman": "Umman",
+            "lebanon": "Lübnan",
+            "tunisia": "Tunus",
+            "libya": "Libya",
+            "palestine": "Filistin",
+            "sudan": "Sudan",
+            "yemen": "Yemen",
+            "usa": "Amerika",
+            "germany": "Almanya"
         }
+    },
+    "about": {
+        "title": "Nabda OTP Hakkında",
+        "subtitle": "MENA bölgesi için bulut tabanlı WhatsApp API ve doğrulama platformu",
+        "paraOne": "Nabda OTP, Irak, Suriye ve MENA bölgesindeki işletmelerin tek kullanımlık şifreler (OTP) ve işlemsel mesajları güvenli şekilde iletmesine yardımcı olmak için tasarlanmış bulut tabanlı bir WhatsApp API ve doğrulama platformudur.",
+        "paraTwo": "Geliştiriciler için inşa edilen Nabda OTP, basit bir RESTful API aracılığıyla hızlı ve ölçeklenebilir WhatsApp mesajlaşmasını sağlayan güvenilir bir gateway sunar. Platformumuz, işletmelerin sabit aylık abonelikle sınırsız OTP ve bildirim mesajı göndermesine olanak tanır.",
+        "paraThree": "Nabda OTP, uygun fiyatlılık, güvenilirlik ve bölgesel optimizasyona odaklanır. Hizmet, yerel telefon numaraları, Arapça dil desteği ve Orta Doğu ağlarında yüksek teslimat oranları için tamamen optimize edilmiştir.",
+        "ques": "Neler Sunuyoruz",
+        "featone": "WhatsApp OTP ve işlemsel mesajlaşma",
+        "feattwo": "Geliştirici dostu REST API ve dokümantasyon",
+        "featthree": "Gerçek zamanlı mesaj teslimi için Webhook desteği",
+        "featfour": "Kurumsal düzeyde güvenlik ve kimlik doğrulama",
+        "featfive": "Yüksek erişilebilirliğe sahip bulut altyapısı",
+        "note": "Önemli Bildirim",
+        "noteone": "Nabda OTP, bir yazılım mesajlaşma platformu olarak işletilmektedir ve telekomünikasyon sağlayıcısı olarak hareket etmemektedir. Tüm kullanımlar yürürlükteki yasalara, WhatsApp politikalarına ve bölgesel düzenlemelere uygun olmalıdır.",
+        "legalepara": "<strong>Nabda OTP</strong>, teknoloji çözümleri portföyünün bir parçası olarak <strong>We Pioners LTD</strong> tarafından işletilen bir ürün ve hizmettir.",
+        "back": "Ana Sayfaya Dön"
+    },
+    "refund": {
+        "title": "İade Politikası",
+        "subtitle": "Adalet ve şeffaflığa olan bağlılığımız",
+        "trial": "Nabda OTP, kredi kartı gerektirmeyen 5 günlük ücretsiz deneme sunar. Bu, ücretli aboneliğe geçmeden önce platformu tam olarak değerlendirmenizi sağlar.",
+        "policy": "Fatura dönemi başladıktan sonra tüm abonelik ödemeleri iade edilemez. Aboneliğinizi iptal ederseniz, mevcut fatura döneminin sonuna kadar hizmete erişiminiz devam eder. Aktif abonelik dönemindeki kullanılmamış günler için kısmi iade yapılmamaktadır.",
+        "contactText": "Hatalı tahsilat yapıldığını düşünüyorsanız veya özel bir durumunuz varsa, lütfen destek ekibimizle",
+        "whatsapp": "WhatsApp",
+        "note": "üzerinden iletişime geçin, durumunuzu hızlıca değerlendireceğiz."
+    },
+    "privacy": {
+        "title": "Gizlilik Politikası",
+        "subtitle": "Bilgilerinizi nasıl topladığımız, kullandığımız ve koruduğumuz",
+        "intro": {
+            "one": "Bu Gizlilik Politikası, Nabda OTP (\"biz\", \"bize\" veya \"bizim\") tarafından WhatsApp API platformumuzu ve ilgili hizmetleri kullandığınızda sizinle ilgili bilgileri nasıl topladığımızı, kullandığımızı ve paylaştığımızı açıklamaktadır.",
+            "two": "Hizmetlerimize erişerek veya kullanarak, bu politikaya uygun olarak bilgi toplanmasını ve kullanılmasını kabul etmiş olursunuz.",
+            "three": "Bu politika, Irak, Suriye, Mısır ve genel MENA bölgesindeki geliştiriciler, işletmeler ve son kullanıcılar dahil olmak üzere platformumuzun tüm kullanıcıları için geçerlidir."
+        },
+        "changes": {
+            "title": "Bu Politikadaki Değişiklikler",
+            "one": "Bu Gizlilik Politikasını zaman zaman güncelleyebiliriz. Herhangi bir değişikliği bu sayfaya yeni politika ve güncellenmiş tarih ile bildirerek size haber vereceğiz.",
+            "two": "Bu politikayı periyodik olarak gözden geçirmenizi öneririz. Herhangi bir değişiklikten sonra platformu kullanmaya devam etmeniz, güncellenmiş politikayı kabul ettiğiniz anlamına gelir."
+        },
+        "definitions": {
+            "title": "Tanımlar",
+            "one": "\"Kişisel Veri\", kimliği belirli veya belirlenebilir gerçek bir kişiye ilişkin her türlü bilgiyi ifade eder.",
+            "two": "\"Kullanım Verisi\", platformu kullandığınızda otomatik olarak toplanan verileri ifade eder; örneğin API çağrı kayıtları, IP adresleri ve oturum bilgileri.",
+            "three": "\"Hizmet\", nabdaotp.com ve api.nabdaotp.com adreslerinde erişilebilen Nabda OTP WhatsApp API platformunu ifade eder."
+        },
+        "collect": {
+            "title": "Topladığımız Bilgiler",
+            "intro": "Doğrudan verdiğiniz bilgileri ve hizmetlerimizi kullanmanız yoluyla oluşturulan verileri topluyoruz."
+        },
+        "personal": {
+            "title": "Kişisel Bilgiler",
+            "intro": "Platforma kaydolduğunuzda veya kullandığınızda şunları toplayabiliriz:",
+            "one": "Ad ve e-posta adresi",
+            "two": "İşletme adı ve iletişim bilgileri",
+            "three": "Faturalandırma ve ödeme bilgileri",
+            "four": "API kullanım kayıtları ve mesaj meta verileri",
+            "five": "Cihaz ve tarayıcı bilgileri",
+            "six": "İletişim tercihleri",
+            "note": "Platformumuz aracılığıyla gönderilen WhatsApp mesajlarının içeriğini, teslimat ve sorun giderme için gerekli olanın ötesinde saklamıyoruz."
+        },
+        "general": {
+            "title": "Kullanım Verileri",
+            "intro": "Hizmetlerimizi kullandığınızda otomatik olarak belirli bilgileri toplarız:",
+            "one": "IP adresi ve yaklaşık konum",
+            "two": "Tarayıcı türü ve sürümü",
+            "three": "Ziyaret edilen sayfalar ve harcanan süre",
+            "four": "API uç noktası kullanımı ve yanıt süreleri",
+            "five": "Hata kayıtları ve çökme raporları",
+            "note": "Bu veriler, platform performansımızı ve güvenliğimizi iyileştirmemize yardımcı olur."
+        },
+        "cookies": {
+            "title": "Çerezler",
+            "intro": "Deneyiminizi geliştirmek için çerezler ve benzer izleme teknolojileri kullanıyoruz:",
+            "one": "Platform işlevselliği için gerekli temel çerezler",
+            "two": "Kullanım kalıplarını anlamak için analiz çerezleri",
+            "three": "Ayarlarınızı hatırlamak için tercih çerezleri",
+            "note": "Çerez ayarlarını tarayıcı tercihlerinizden kontrol edebilirsiniz. Bazı çerezleri devre dışı bırakmak platform işlevselliğini etkileyebilir."
+        },
+        "usage": {
+            "title": "Bilgilerinizi Nasıl Kullanıyoruz",
+            "important": "Bilgilerinizi yalnızca hizmetlerimizi sağlamak, geliştirmek ve güvence altına almak için kullanıyoruz.",
+            "intro": "Özellikle verilerinizi şu amaçlarla kullanıyoruz:",
+            "one": "Nabda OTP platformunu sağlamak ve sürdürmek",
+            "two": "Ödemeleri işlemek ve abonelikleri yönetmek",
+            "three": "Hizmet bildirimleri ve destek iletişimleri göndermek",
+            "noteOne": "Kişisel verilerinizi üçüncü taraflara satmıyoruz.",
+            "noteTwo": "Bireysel kullanıcıları tanımlayamayan anonimleştirilmiş, toplu verileri analiz amaçlarıyla paylaşabiliriz."
+        },
+        "security": {
+            "title": "Veri Güvenliği",
+            "one": "Aktarım sırasında şifreleme (TLS), güvenli API kimlik doğrulaması ve erişim kontrolleri dahil olmak üzere endüstri standardı güvenlik önlemleri uyguluyoruz.",
+            "two": "Bilgilerinizi korumak için çaba göstersek de, internet üzerinden hiçbir aktarım yöntemi %100 güvenli değildir. Mutlak güvenlik garanti edemeyiz ancak herhangi bir güvenlik olayını derhal ele almayı taahhüt ediyoruz."
+        },
+        "rights": {
+            "title": "Haklarınız",
+            "intro": "Konumunuza bağlı olarak şu haklara sahip olabilirsiniz:",
+            "one": "Hakkınızda tuttuğumuz kişisel verilere erişim",
+            "two": "Verilerinizin düzeltilmesini veya silinmesini talep etme",
+            "three": "Verilerinizin belirli işlemlerine itiraz etme veya kısıtlama",
+            "note": "Bu hakları kullanmak için lütfen web sitesi üzerinden veya WhatsApp desteği aracılığıyla bizimle iletişime geçin."
+        },
+        "retention": {
+            "title": "Veri Saklama",
+            "one": "Kişisel verilerinizi hesabınız aktif olduğu sürece veya hizmetleri sağlamak için gerekli olduğu sürece saklarız. Hesap kapandıktan sonra, yasal ve denetim amaçları için belirli verileri 90 güne kadar saklayabiliriz, ardından güvenli bir şekilde silinir."
+        },
+        "contact": {
+            "title": "Bize Ulaşın",
+            "intro": "Bu Gizlilik Politikası veya veri uygulamalarımız hakkında sorularınız varsa, lütfen şu yollarla iletişime geçin:"
+        },
+        "notice": "Nabda OTP, gizliliğinizi korumaya ve verilerinizi sorumlu bir şekilde işlemeye kararlıdır. Bu politika, faaliyet gösterdiğimiz yargı bölgelerindeki geçerli veri koruma yasalarına tabidir."
+    },
+    "terms": {
+        "title": "Hizmet Şartları",
+        "subtitle": "Nabda OTP platformunu kullanma şartları ve koşulları",
+        "introOne": "Bu Hizmet Şartları, We Pioners LTD tarafından işletilen Nabda OTP WhatsApp API platformuna erişiminizi ve kullanımınızı düzenler.",
+        "introTwo": "Platformumuza erişerek veya kullanarak bu şartlara bağlı kalmayı kabul edersiniz. Bu şartları kabul etmiyorsanız, lütfen hizmetlerimizi kullanmayın.",
+        "introThree": "Bu şartları herhangi bir zamanda değiştirme hakkını saklı tutarız. Değişikliklerden sonra platformu kullanmaya devam etmeniz, güncellenmiş şartları kabul ettiğiniz anlamına gelir.",
+        "clientObligations": "Müşteri Yükümlülükleri",
+        "clientIntro": "Nabda OTP'yi kullanarak şunları kabul etmiş olursunuz:",
+        "list": {
+            "one": "Platformu yalnızca yasal amaçlarla ve tüm geçerli yasalara uyumlu şekilde kullanmak",
+            "two": "Hizmeti spam, istenmeyen mesajlar veya zararlı içerik göndermek için kullanmamak",
+            "three": "WhatsApp'ın Hizmet Şartları ve İşletme Politikasına uymak",
+            "four": "API kimlik bilgilerinizi güvende tutmak ve yetkisiz taraflarla paylaşmamak",
+            "five": "Platformu tersine mühendislik, hackleme veya bozmak için girişimde bulunmamak",
+            "six": "Doğru kayıt bilgileri sağlamak ve güncel tutmak",
+            "seven": "Hesabınız altında gerçekleşen tüm faaliyetlerden sorumlu olmak",
+            "eight": "Platformu yasa dışı, zararlı veya saldırgan içerik iletmek için kullanmamak"
+        },
+        "whatsappTitle": "WhatsApp Kullanım Politikası",
+        "whatsapp": {
+            "one": "Nabda OTP bir WhatsApp Gateway hizmeti sunar. Platformumuz üzerinden WhatsApp kullanımı Meta'nın WhatsApp Business Politikasına uygun olmalıdır.",
+            "two": "Alıcılardan uygun onay almadan promosyon mesajları göndermek için platformu kullanamazsınız.",
+            "three": "WhatsApp politikalarını veya geçerli yasaları ihlal eden hesapları askıya alma hakkını saklı tutarız.",
+            "four": "Nabda OTP, WhatsApp Inc. veya Meta Platforms ile bağlı veya onaylanmış değildir.",
+            "five": "Platform, OTP doğrulama, sipariş bildirimleri ve müşteri desteği gibi meşru iş mesajlaşmaları için tasarlanmıştır."
+        },
+        "websiteTitle": "Web Sitesi ve Platform Kullanımı",
+        "website": {
+            "intro": "Platformumuzu kullanırken şunları yapmamayı kabul edersiniz:",
+            "one": "Platformun herhangi bir bölümüne veya altyapısına yetkisiz erişim sağlamaya çalışmak",
+            "two": "Platformdan veri kazımak, taramak veya çıkarmak için otomatik araçlar kullanmak",
+            "three": "Platformun bütünlüğüne veya performansına müdahale etmek veya bozmak"
+        },
+        "refundTitle": "Abonelik ve İade Şartları",
+        "refund": {
+            "one": "Kredi kartı gerektirmeyen 5 günlük ücretsiz deneme mevcuttur",
+            "two": "Abonelikler seçtiğiniz şekilde aylık veya yıllık olarak faturalandırılır",
+            "three": "Faturalandırma döngüsü başladıktan sonra ödemeler iade edilemez",
+            "four": "İptal, mevcut faturalandırma döneminin sonunda geçerli olur",
+            "five": "Bu şartları ihlal eden hesapları askıya alma veya sonlandırma hakkını saklı tutarız",
+            "note": "Tam detaylar için bkz.",
+            "link": "İade Politikası"
+        },
+        "miscTitle": "Genel Hükümler",
+        "misc": {
+            "one": "Bu şartlar, platformun kullanımı konusunda sizinle Nabda OTP arasındaki tüm anlaşmayı oluşturur.",
+            "two": "Bu şartların herhangi bir hükmü geçersiz veya uygulanamaz bulunursa, kalan hükümler tam olarak yürürlükte kalır.",
+            "three": "Herhangi bir hak veya hükmü uygulamamamız, bu haklardan feragat edildiği anlamına gelmez.",
+            "four": "Bu şartlar, We Pioners LTD'nin yargı yetkisi altındaki geçerli yasalara tabidir.",
+            "five": "Bu şartlar hakkında herhangi bir sorunuz için lütfen web sitesi veya WhatsApp desteği aracılığıyla bizimle iletişime geçin."
+        },
+        "notice": "Nabda OTP'yi kullanarak, bu Hizmet Şartlarını okuduğunuzu, anladığınızı ve bunlara bağlı kalmayı kabul ettiğinizi beyan etmiş olursunuz. Son güncelleme: 2026."
     },
     "blogs": {
         "title": "Blogumuz",
@@ -172,137 +428,416 @@
             "title": "WhatsApp OTP Neden Orta Doğu'da SMS'in Yerini Alıyor – 2026 Trendleri ve Gerçekler",
             "desc": "Mısır, Suudi Arabistan ve ötesindeki işletmeler için trendler, istatistikler ve fırsatlar."
         },
+        "post3": {
+            "title": "WhatsApp Bundle vs Tekli Instance — İşletmeniz için Hangisi Doğru?",
+            "desc": "Nabda OTP Bundle ve tekli Instance arasındaki farkı anlayın ve mesaj hacminize göre doğru kurulumu seçin."
+        },
+        "post4": {
+            "title": "Geliştiricilerin WhatsApp OTP'de Yaptığı 5 Hata",
+            "desc": "Yanlış telefon formatından eksik webhook işleyicilerine kadar — Nabda API entegrasyonunda bu yaygın hatalardan kaçının."
+        },
+        "post5": {
+            "title": "WhatsApp API vs SMS OTP: MENA 2026 Gerçek Maliyet Karşılaştırması",
+            "desc": "Irak, Mısır, Suudi Arabistan ve MENA bölgesindeki işletmeler için WhatsApp OTP ile geleneksel SMS arasında detaylı maliyet analizi."
+        },
         "comingSoon": {
             "title": "Daha Fazla Değerli Rehber ve Makale Geliyor",
             "desc": "WhatsApp API en iyi uygulamaları, gelişmiş entegrasyonlar ve MENA işletmelerinden başarı hikayeleri hakkında yeni derinlemesine makaleler üzerinde çalışıyoruz.",
             "stayTuned": "Takipte Kalın .."
         },
-        "readMore": "Devamını Oku →"
-    },
-    "blogPost": {
-        "title": "WhatsApp API ile OTP Gönderme - Tam Kılavuz 2026",
-        "excerpt": "Geliştiriciler için pratik ve üretime hazır rehber: <strong>Nabda OTP</strong> kullanarak – Irak (+964) ve Suriye (+963) ile diğer ülkelerde en hızlı WhatsApp OTP çözümü.",
-        "section1": {
-            "title": "Neden Nabda OTP Irak ve Suriye için en iyi seçimdir",
-            "desc": "Nabda OTP size resmi Business API şablonları veya Meta onay gecikmeleriyle uğraşmadan doğrudan WhatsApp erişimi sağlar. Sadece bir instance oluşturun ve anında OTP göndermeye başlayın."
+        "readMore": "Devamını Oku →",
+        "blogPost": {
+            "title": "WhatsApp API ile OTP Gönderme - Tam Kılavuz 2026",
+            "excerpt": "Geliştiriciler için pratik ve üretime hazır rehber: <strong>Nabda OTP</strong> kullanarak – Irak (+964) ve Suriye (+963) ile diğer ülkelerde en hızlı WhatsApp OTP çözümü.",
+            "breadcrumb": "WhatsApp OTP Irak Rehberi",
+            "badge": "Rehber",
+            "date": "25 Mart 2026",
+            "readingTime": "8 dakika okuma",
+            "section1": {
+                "title": "Neden Nabda OTP Irak ve Suriye için en iyi seçimdir",
+                "desc": "Nabda OTP size resmi Business API şablonları veya Meta onay gecikmeleriyle uğraşmadan doğrudan WhatsApp erişimi sağlar. Sadece bir instance oluşturun ve anında OTP göndermeye başlayın."
+            },
+            "section2": {
+                "title": "Başlamak için ihtiyacınız olanlar",
+                "item1": "Bir Nabda OTP hesabı",
+                "item2": "Bir veya daha fazla aktif instance (her instance = özel WhatsApp numarası)",
+                "item3": "Instance kapsamlı token (Bearer token)",
+                "item4": "Sunucu tarafında OTP üretme mantığı"
+            },
+            "section3": {
+                "title": "Adım adım: Nabda OTP API ile OTP gönderme",
+                "step1": "Instance Oluşturma ve Seçme",
+                "step1Desc": "Dashboard'dan instance oluşturduktan sonra, instance token'ını almak için onu seçmelisiniz:",
+                "step2": "Backend'de OTP üretme",
+                "step3": "WhatsApp üzerinden OTP gönderme (Doğru Endpoint)",
+                "step4": "OTP'yi sunucunuzda doğrulama",
+                "step4Desc": "OTP'yi her zaman backend'de doğrulayın (asla client tarafına güvenmeyin)."
+            },
+            "section4": {
+                "title": "İsteğe bağlı: Teslimat Durumu için Webhook Yapılandırma"
+            },
+            "section5": {
+                "title": "Irak ve Suriye için En İyi Uygulamalar",
+                "item1": "E.164 formatını kullanın: +96477xxxxxxxx veya +9639xxxxxxxx",
+                "item2": "OTP geçerlilik süresini 3-8 dakika arasında tutun",
+                "item3": "Mümkün olduğunda iki dilli mesaj gönderin (Arapça + İngilizce)",
+                "item4": "Mesaja her zaman marka adınızı ekleyin",
+                "item5": "Webhook olaylarını izleyin: sent, delivered ve hatalar"
+            },
+            "section6": {
+                "title": "Sorun Giderme",
+                "item1": "<strong>401 Unauthorized</strong> → Instance'ı seçtiğinizden ve instance token'ını kullandığınızdan emin olun",
+                "item2": "<strong>Geçersiz telefon</strong> → +964 veya +963 ile başlamalı veya desteklenen diğer ülke kodlarından biri olmalıdır.",
+                "item3": "<strong>Mesaj alınmadı</strong> → Instance'ın bağlı olduğundan emin olun (QR kod tarandı)"
+            },
+            "section7": {
+                "title": "Başlamaya hazır mısınız?",
+                "desc": "İlk instance'ınızı saniyeler içinde oluşturun ve bugün WhatsApp üzerinden OTP göndermeye başlayın."
+            },
+            "cta": {
+                "title": "Nabda OTP ile Başlayın",
+                "button": "Ücretsiz Instance Oluştur"
+            },
+            "back": " Tüm Makalelere Geri Dön"
         },
-        "section2": {
-            "title": "Başlamak için ihtiyacınız olanlar",
-            "item1": "Bir Nabda OTP hesabı",
-            "item2": "Bir veya daha fazla aktif instance (her instance = özel WhatsApp numarası)",
-            "item3": "Instance kapsamlı token (Bearer token)",
-            "item4": "Sunucu tarafında OTP üretme mantığı"
+        "blogPost2": {
+            "title": "Neden WhatsApp OTP Orta Doğu'da SMS'in Yerini Alıyor – 2026 Trendleri ve Gerçekler",
+            "excerpt": "Irak, Suriye, Mısır, Suudi Arabistan ve ötesindeki ürün ekipleri neden SMS'ten WhatsApp OTP'ye geçiyor — ve Nabda OTP bu geçişi nasıl basit ve güvenilir kılıyor.",
+            "section1": {
+                "title": "Değişim çoğu kişinin beklediğinden daha hızlı gerçekleşiyor",
+                "desc1": "2026'da WhatsApp, Orta Doğu genelinde ana mesajlaşma uygulaması haline geldi. Kullanıcılar WhatsApp'ı günde onlarca kez kontrol ederken, SMS açılma oranları operatör filtrelemesi ve spam algısı nedeniyle düşmeye devam ediyor.",
+                "desc2": "Giriş, şifre sıfırlama ve işlem doğrulama gibi kimlik doğrulama durumlarında WhatsApp OTP çok daha iyi teslimat oranları ve kullanıcı deneyimi sunar."
+            },
+            "section2": {
+                "title": "WhatsApp OTP'nin Geleneksel SMS'e Göre Başlıca Avantajları",
+                "item1": "<strong>Daha Yüksek Teslimat Oranı</strong> – Irak, Suriye ve Mısır'da sıklıkla %95'i aşar",
+                "item2": "<strong>Daha Düşük Maliyet</strong> – Özellikle büyük ölçekte uluslararası SMS rotalarına kıyasla",
+                "item3": "<strong>Daha İyi Kullanıcı Deneyimi</strong> – Mesajlar tanıdık sohbet arayüzünde görünür",
+                "item4": "<strong>Zengin Durum Takibi</strong> – Mesajın ne zaman gönderildiğini, teslim edildiğini veya okunduğunu bilin",
+                "item5": "<strong>Marka Güveni</strong> – Mesajlar doğrulanmış bir iş numarasından gelir"
+            },
+            "section3": {
+                "title": "MENA Pazarlarında Gerçek Dünya Performansı",
+                "intro": "Nabda OTP kullanan şirketler şunları rapor ediyor:",
+                "item1": "Kimlik doğrulama ile ilgili destek taleplerinde %40'a varan azalma",
+                "item2": "Yüksek hacimli akışları taşıdıktan sonra SMS maliyetlerinde önemli düşüş",
+                "item3": "Daha hızlı doğrulama süreleri (kullanıcılar ortalama 5 saniyenin altında OTP alır)"
+            },
+            "section4": {
+                "title": "Nabda OTP WhatsApp OTP'yi Nasıl Kolaylaştırıyor",
+                "desc": "Şablon onayı ve karmaşık kurulum gerektiren resmi WhatsApp Business API'nin aksine, Nabda OTP basit ve UltraMsg tarzı bir yaklaşım izler:",
+                "item1": "Bir instance oluşturun → Özel WhatsApp numarası edinin",
+                "item2": "Instance'ı seçerek kapsamlı token'ınızı alın",
+                "item3": "Düz metin OTP'leri doğrudan <code>/api/v1/messages/send</code> ile gönderin",
+                "item4": "Teslimat durumu için isteğe bağlı webhook"
+            },
+            "section5": {
+                "title": "2026'da geçişi kimler yapıyor?",
+                "desc": "Irak, Suriye, Mısır, Ürdün ve Suudi Arabistan'daki fintech startup'ları, e-ticaret platformları, teslimat uygulamaları ve kurumsal SaaS ürünleri, WhatsApp'ı ana OTP kanalı haline getiriyor; SMS ise yalnızca yedek olarak kalıyor."
+            },
+            "section6": {
+                "title": "Özet",
+                "desc": "WhatsApp OTP sadece bir trend değil — Orta Doğu'da kimlik doğrulamanın yeni standardı haline geliyor. Nabda OTP gibi güvenilir bir sağlayıcı ile erken hareket eden ekipler, maliyet, kullanıcı deneyimi ve teslimat güvenilirliğinde net bir avantaj elde eder."
+            },
+            "cta": {
+                "title": "SMS'i WhatsApp OTP ile değiştirmeye hazır mısınız?",
+                "button": "Nabda OTP ile Ücretsiz Başlayın"
+            },
+            "back": " Tüm Makalelere Geri Dön"
         },
-        "section3": {
-            "title": "Adım adım: Nabda OTP API ile OTP gönderme",
-            "step1": "1. Instance Oluşturma ve Seçme",
-            "step1Desc": "Dashboard'dan instance oluşturduktan sonra, instance token'ını almak için onu seçmelisiniz:",
-            "step2": "2. Backend'de OTP üretme",
-            "step3": "3. WhatsApp üzerinden OTP gönderme (Doğru Endpoint)",
-            "step4": "4. OTP'yi sunucunuzda doğrulama",
-            "step4Desc": "OTP'yi her zaman backend'de doğrulayın (asla client tarafına güvenmeyin)."
+        "bundlePost": {
+            "meta": {
+                "title": "WhatsApp Bundle vs Single Instance — İşletmeniz için hangisi doğru? | Nabda OTP",
+                "description": "Nabda OTP Bundle ile tek bir Instance arasındaki farkı anlayın. Mesaj hacminize, fault tolerance ihtiyaçlarınıza ve bütçenize en uygun yapıyı öğrenin."
+            },
+            "hero": {
+                "title": "WhatsApp Bundle vs Single Instance — İşletmeniz için hangisi doğru?",
+                "excerpt": "Nabda OTP, WhatsApp mesajları göndermek için iki yöntem sunar: tek bir Instance veya çoklu slot içeren bir Bundle. Doğru seçimi yapmak için bilmeniz gereken her şey burada."
+            },
+            "intro": "Nabda OTP'ye kaydolduğunuzda iki temel kavramla karşılaşırsınız: Instance ve Bundle. Her ikisi de API'miz üzerinden WhatsApp mesajları göndermenizi sağlar — ancak farklı ihtiyaçlara hizmet ederler. Doğru seçimi baştan yapmak, ölçeklendikçe zaman, maliyet ve sorunlardan tasarruf etmenizi sağlar.",
+            "instance": {
+                "name": "Single Instance",
+                "def": "Tek bir WhatsApp numarası ve tek bir API key. Nabda OTP ile başlamanın en basit yolu.",
+                "f1": "Tek bir özel WhatsApp numarası",
+                "f2": "Tek bir API key ve Bearer token",
+                "f3": "Gelen olaylar için tek bir webhook URL",
+                "f4": "Düşük ve orta hacimli mesajlar için ideal",
+                "price": "$10 / ay"
+            },
+            "bundle": {
+                "name": "Bundle",
+                "badge": "Yüksek Hacim",
+                "def": "Tek bir API key altında birden fazla WhatsApp numarası (Slots) ve otomatik mesaj dağıtımı.",
+                "f1": "Birden fazla slot (WhatsApp numarası)",
+                "f2": "Tüm slotlar için tek ve birleşik API key",
+                "f3": "Tüm slotlar için tek bir webhook",
+                "f4": "Slotlar arasında otomatik mesaj dağıtımı",
+                "f5": "Dahili fault tolerance",
+                "price": "$15 / slot / ay"
+            },
+            "table": {
+                "title": "Instance vs Bundle — Yan yana karşılaştırma",
+                "feature": "Özellik",
+                "instance": "Instance",
+                "bundle": "Bundle",
+                "r1": {
+                    "feature": "WhatsApp numaraları",
+                    "instance": "1",
+                    "bundle": "2+ (slot başına bir)"
+                },
+                "r2": {
+                    "feature": "API key'ler",
+                    "instance": "Her instance için 1",
+                    "bundle": "Tüm slotlar için 1"
+                },
+                "r3": {
+                    "feature": "Mesaj dağıtımı",
+                    "instance": "Yok",
+                    "bundle": "Otomatik"
+                },
+                "r4": {
+                    "feature": "Aylık maliyet",
+                    "instance": "$10 sabit",
+                    "bundle": "$15 / slot"
+                },
+                "r5": {
+                    "feature": "En uygun",
+                    "instance": "Startup'lar ve KOBİ'ler",
+                    "bundle": "Yüksek hacimli ve kurumsal kullanım"
+                }
+            },
+            "when": {
+                "title": "Hangisini ne zaman seçmelisiniz?",
+                "instance": {
+                    "title": "Instance seçin eğer…",
+                    "p1": "Günde yaklaşık 2.000’den az mesaj gönderiyorsanız",
+                    "p2": "Bir MVP geliştiriyor veya API’yi test ediyorsanız",
+                    "p3": "Maliyet basitliği, yedeklilikten daha önemliyse"
+                },
+                "bundle": {
+                    "title": "Bundle seçin eğer…",
+                    "p1": "Günde binlerce OTP göndermeniz gerekiyorsa",
+                    "p2": "Fault tolerance ihtiyacınız varsa — bir numara sınırlanırsa diğerleri göndermeye devam eder",
+                    "p3": "Kod değiştirmeden ölçeklenebilen tek bir API entegrasyonu istiyorsanız"
+                }
+            },
+            "how": {
+                "title": "Bundle nasıl çalışır — Adım adım",
+                "s1": "Nabda panelinden bir Bundle oluşturun — hemen bir Bundle API key alırsınız.",
+                "s2": "Bundle'ınıza Slots ekleyin. Her Slot, QR kod tarayarak bağladığınız bir WhatsApp numarasıdır.",
+                "s3": "Mesajları Bundle API key kullanarak gönderin. Nabda, mesajları aktif tüm Slot'lar arasında otomatik olarak dağıtır.",
+                "s4": "Tüm gelen olayları (message.sent, message.received, message.ack) tek bir webhook URL üzerinden alın."
+            },
+            "pricing": {
+                "title": "Fiyatlandırma Özeti",
+                "instanceNote": "Sabit aylık ücret, sınırsız mesaj",
+                "bundleNote": "Slot başına / aylık — istediğiniz zaman slot ekleyebilirsiniz"
+            },
+            "conclusion": {
+                "title": "Sonuç",
+                "desc": "Test aşamasındaysanız veya mesaj hacminiz yönetilebilir durumdaysa tek bir Instance ile başlayın. Ölçek, dayanıklılık veya günlük binlerce kullanıcıya gönderim ihtiyacı doğduğunda Bundle’a geçin. İyi haber: Instance’tan Bundle’a geçmek sadece tek satırlık API key değişikliği gerektirir — kod yapınız aynı kalır."
+            },
+            "cta": {
+                "title": "Başlamaya hazır mısınız?",
+                "subtitle": "Dakikalar içinde Instance veya Bundle oluşturun. Kredi kartı gerekmez.",
+                "button": "Nabda OTP ile ücretsiz başlayın"
+            }
         },
-        "section4": {
-            "title": "İsteğe bağlı: Teslimat Durumu için Webhook Yapılandırma"
+        "mistakesPost": {
+            "meta": {
+                "title": "Geliştiricilerin Yaptığı En Yaygın 5 WhatsApp OTP Hatası (ve Nasıl Düzeltilir) | Nabda OTP",
+                "description": "Nabda API ile WhatsApp OTP entegrasyonunda en yaygın hatalardan kaçının — yanlış telefon formatları, eksik instance token'ları, güvensiz OTP depolama ve daha fazlası."
+            },
+            "hero": {
+                "title": "Geliştiricilerin Yaptığı En Yaygın 5 WhatsApp OTP Hatası (ve Nasıl Düzeltilir)",
+                "excerpt": "Yanlış telefon numarası formatlarından eksik webhook işleyicilerine kadar — Nabda API ile WhatsApp OTP entegrasyonunda geliştiricilerin en sık karşılaştığı sorunlar ve bunların tam çözümleri."
+            },
+            "intro": "Nabda ile WhatsApp OTP entegrasyonu oldukça basittir — ancak birkaç tekrarlayan hata saatlerce hata ayıklamanıza neden olabilir. İster yeni bir entegrasyon kuruyor olun ister mevcut birini denetliyor olun, bu rehber destek taleplerinde en çok gördüğümüz 5 sorunu ve bunlardan nasıl kaçınılacağını ele alıyor.",
+            "labels": {
+                "wrong": "Yanlış",
+                "fix": "Doğru"
+            },
+            "mistake1": {
+                "title": "Yanlış Telefon Numarası Formatı",
+                "desc": "En yaygın hata: ülke kodu olmadan telefon numarası göndermek veya ülke kodu yerine sıfırla başlamak. Nabda OTP, E.164 formatı gerektirir — yani numara + işaretiyle ve ardından ülke koduyla başlamalıdır.",
+                "tip": "Nabda OTP tüm MENA ülke kodlarını destekler. Irak: +964, Suriye: +963, Mısır: +20, Suudi Arabistan: +966, BAE: +971. Göndermeden önce her zaman sunucu tarafında formatı doğrulayın."
+            },
+            "mistake2": {
+                "title": "Yanlış API Token Kullanımı",
+                "desc": "Nabda OTP'nin iki tür token'ı vardır: genel hesap token'ınız ve instance kapsamlı Bearer token. Mesaj göndermek için instance token'ı gereklidir — select-instance çağrısıyla elde edilir. Genel token kullanmak her zaman 401 Unauthorized hatası döndürür.",
+                "tip": "Instance token'ı arka uçta güvenli şekilde saklanmalı ve her select-instance çağrısından sonra yenilenmelidir. Asla frontend kodunda veya loglarda açığa çıkarmayın."
+            },
+            "mistake3": {
+                "title": "OTP'yi İstemci Tarafında Düz Metin Olarak Saklamak",
+                "desc": "OTP'yi localStorage'da, bir cookie'de saklamak veya API yanıtında geri göndermek kritik bir güvenlik hatasıdır. Tarayıcı geliştirici araçlarına erişimi olan herkes bunu görüp yeniden kullanabilir. OTP'leri her zaman arka uçta oluşturun, şifreleyin ve doğrulayın.",
+                "tip": "Sunucu tarafı bir gizli anahtarla birlikte kriptografik hash (SHA-256) kullanın. Hash'i veritabanında saklayın — düz OTP'yi asla değil. Bu sayede bir veritabanı sızıntısında bile kullanılabilir hiçbir şey açığa çıkmaz."
+            },
+            "mistake4": {
+                "title": "OTP Doğrulamasında Süre Sonu veya Hız Sınırlaması Olmaması",
+                "desc": "Süre sonu olmayan bir OTP sonsuza kadar geçerlidir — bu da kaba kuvvet saldırılarına kapı açar. Hız sınırlaması olmadan, saldırgan dakikalar içinde 6 haneli tüm olası kodları (1.000.000 kod) deneyebilir. Her iki koruma da zorunludur.",
+                "tip": "OTP geçerlilik süresini 3-8 dakika olarak ayarlayın. Kullanıcı başına 15 dakikalık pencerede doğrulama denemelerini 5 ile sınırlayın. 5 başarısız denemeden sonra OTP'yi geçersiz kılın ve yeni bir tane isteyin."
+            },
+            "mistake5": {
+                "title": "Instance Bağlantı Durumunu İzlememek",
+                "desc": "Nabda OTP instance'ı bağlı bir WhatsApp oturumu gerektirir. QR kodu süresi dolarsa veya telefon bağlantısı kesilirse instance çevrimdışı olur — ve OTP'ler sessizce iletilmeyi durdurur. Webhook olmadan, kullanıcılar şikayet etmeye başlayana kadar bunun farkına varmazsınız.",
+                "tip": "Nabda instance'ınıza her zaman bir webhook yapılandırın. instance.disconnected olaylarını dinleyin ve ekibinizi anında uyarın. Her birkaç dakikada bir instance sağlığını kontrol eden otomatik bir monitör kurmayı düşünün."
+            },
+            "checklist": {
+                "title": "Yayına Almadan Önce Hızlı Kontrol Listesi",
+                "c1": "Telefon numaraları ülke koduyla E.164 formatını kullanıyor (+964, +963, +20...)",
+                "c2": "Instance token'ı select-instance üzerinden alınıyor — genel hesap token'ı değil",
+                "c3": "OTP'ler sunucu tarafında şifreleniyor, düz metin olarak saklanmıyor veya istemciye gönderilmiyor",
+                "c4": "Geçerlilik süresi ayarlandı (3-8 dk) ve doğrulama hız sınırlandı (maks. 5 deneme)",
+                "c5": "Instance durumunu ve mesaj iletim olaylarını izlemek için Webhook yapılandırıldı"
+            },
+            "cta": {
+                "title": "Entegrasyonunuzu baştan doğru yapın",
+                "subtitle": "Ücretsiz Nabda OTP instance'ınızı oluşturun ve bu en iyi uygulamaları ilk günden itibaren takip edin.",
+                "button": "Ücretsiz Instance Oluştur"
+            }
         },
-        "section5": {
-            "title": "Irak ve Suriye için En İyi Uygulamalar",
-            "item1": "E.164 formatını kullanın: +96477xxxxxxxx veya +9639xxxxxxxx",
-            "item2": "OTP geçerlilik süresini 3-8 dakika arasında tutun",
-            "item3": "Mümkün olduğunda iki dilli mesaj gönderin (Arapça + İngilizce)",
-            "item4": "Mesaja her zaman marka adınızı ekleyin",
-            "item5": "Webhook olaylarını izleyin: sent, delivered ve hatalar"
-        },
-        "section6": {
-            "title": "Sorun Giderme",
-            "item1": "<strong>401 Unauthorized</strong> → Instance'ı seçtiğinizden ve instance token'ını kullandığınızdan emin olun",
-            "item2": "<strong>Geçersiz telefon</strong> → +964 veya +963 ile başlamalı veya desteklenen diğer ülke kodlarından biri olmalıdır.",
-            "item3": "<strong>Mesaj alınmadı</strong> → Instance'ın bağlı olduğundan emin olun (QR kod tarandı)"
-        },
-        "section7": {
-            "title": "Başlamaya hazır mısınız?",
-            "desc": "İlk instance'ınızı saniyeler içinde oluşturun ve bugün WhatsApp üzerinden OTP göndermeye başlayın."
-        },
-        "cta": {
-            "title": "Nabda OTP ile Başlayın",
-            "button": "Ücretsiz Instance Oluştur"
-        },
-        "back": "← Tüm Makalelere Geri Dön"
-    },
-    "blogPost2": {
-        "title": "Neden WhatsApp OTP Orta Doğu'da SMS'in Yerini Alıyor – 2026 Trendleri ve Gerçekler",
-        "excerpt": "Irak, Suriye, Mısır, Suudi Arabistan ve ötesindeki ürün ekipleri neden SMS'ten WhatsApp OTP'ye geçiyor — ve Nabda OTP bu geçişi nasıl basit ve güvenilir kılıyor.",
-        "section1": {
-            "title": "Değişim çoğu kişinin beklediğinden daha hızlı gerçekleşiyor",
-            "desc1": "2026'da WhatsApp, Orta Doğu genelinde ana mesajlaşma uygulaması haline geldi. Kullanıcılar WhatsApp'ı günde onlarca kez kontrol ederken, SMS açılma oranları operatör filtrelemesi ve spam algısı nedeniyle düşmeye devam ediyor.",
-            "desc2": "Giriş, şifre sıfırlama ve işlem doğrulama gibi kimlik doğrulama durumlarında WhatsApp OTP çok daha iyi teslimat oranları ve kullanıcı deneyimi sunar."
-        },
-        "section2": {
-            "title": "WhatsApp OTP'nin Geleneksel SMS'e Göre Başlıca Avantajları",
-            "item1": "<strong>Daha Yüksek Teslimat Oranı</strong> – Irak, Suriye ve Mısır'da sıklıkla %95'i aşar",
-            "item2": "<strong>Daha Düşük Maliyet</strong> – Özellikle büyük ölçekte uluslararası SMS rotalarına kıyasla",
-            "item3": "<strong>Daha İyi Kullanıcı Deneyimi</strong> – Mesajlar tanıdık sohbet arayüzünde görünür",
-            "item4": "<strong>Zengin Durum Takibi</strong> – Mesajın ne zaman gönderildiğini, teslim edildiğini veya okunduğunu bilin",
-            "item5": "<strong>Marka Güveni</strong> – Mesajlar doğrulanmış bir iş numarasından gelir"
-        },
-        "section3": {
-            "title": "MENA Pazarlarında Gerçek Dünya Performansı",
-            "intro": "Nabda OTP kullanan şirketler şunları rapor ediyor:",
-            "item1": "Kimlik doğrulama ile ilgili destek taleplerinde %40'a varan azalma",
-            "item2": "Yüksek hacimli akışları taşıdıktan sonra SMS maliyetlerinde önemli düşüş",
-            "item3": "Daha hızlı doğrulama süreleri (kullanıcılar ortalama 5 saniyenin altında OTP alır)"
-        },
-        "section4": {
-            "title": "Nabda OTP WhatsApp OTP'yi Nasıl Kolaylaştırıyor",
-            "desc": "Şablon onayı ve karmaşık kurulum gerektiren resmi WhatsApp Business API'nin aksine, Nabda OTP basit ve UltraMsg tarzı bir yaklaşım izler:",
-            "item1": "Bir instance oluşturun → Özel WhatsApp numarası edinin",
-            "item2": "Instance'ı seçerek kapsamlı token'ınızı alın",
-            "item3": "Düz metin OTP'leri doğrudan <code>/api/v1/messages/send</code> ile gönderin",
-            "item4": "Teslimat durumu için isteğe bağlı webhook"
-        },
-        "section5": {
-            "title": "2026'da geçişi kimler yapıyor?",
-            "desc": "Irak, Suriye, Mısır, Ürdün ve Suudi Arabistan'daki fintech startup'ları, e-ticaret platformları, teslimat uygulamaları ve kurumsal SaaS ürünleri, WhatsApp'ı ana OTP kanalı haline getiriyor; SMS ise yalnızca yedek olarak kalıyor."
-        },
-        "section6": {
-            "title": "Özet",
-            "desc": "WhatsApp OTP sadece bir trend değil — Orta Doğu'da kimlik doğrulamanın yeni standardı haline geliyor. Nabda OTP gibi güvenilir bir sağlayıcı ile erken hareket eden ekipler, maliyet, kullanıcı deneyimi ve teslimat güvenilirliğinde net bir avantaj elde eder."
-        },
-        "cta": {
-            "title": "SMS'i WhatsApp OTP ile değiştirmeye hazır mısınız?",
-            "button": "Nabda OTP ile Ücretsiz Başlayın"
-        },
-        "back": "← Tüm Makalelere Geri Dön"
+        "costPost": {
+            "meta": {
+                "title": "WhatsApp API vs SMS OTP: MENA 2026 için Gerçek Maliyet Karşılaştırması | Nabda OTP",
+                "description": "Irak, Mısır, Suudi Arabistan ve MENA bölgesindeki işletmeler için Nabda üzerinden WhatsApp OTP ile geleneksel SMS arasında detaylı maliyet analizi."
+            },
+            "hero": {
+                "title": "WhatsApp API vs SMS OTP: MENA 2026 için Gerçek Maliyet Karşılaştırması",
+                "excerpt": "Irak, Mısır veya Suudi Arabistan'da OTP iletimi için hâlâ mesaj başına SMS ücreti ödüyorsanız, büyük ihtimalle fazla ödüyorsunuzdur. İşte gerçek, rakam rakam bir karşılaştırma."
+            },
+            "intro": "MENA'daki çoğu işletme için OTP iletimi sessizce birikerek artan aylık bir maliyettir. SMS sağlayıcıları mesaj başına ücret alır — ve Irak, Suriye veya Mısır'a giden uluslararası hatlar ucuz değildir. Nabda üzerinden WhatsApp OTP, bu denklemi sabit aylık abonelikle tamamen değiştiriyor. Gerçek rakamlara bakalım.",
+            "qsummery": "Hızlı Özet",
+            "tldr": "Nabda OTP aylık sabit 10$ maliyetle sınırsız mesaj sunar. SMS ise ülkeye göre mesaj başına 0,025$–0,060$ arasında değişir. Ayda sadece 200 mesajda bile Nabda OTP, SMS'ten daha ucuza gelir.",
+            "sms": {
+                "title": "MENA'da SMS OTP'nin Gerçek Maliyeti Nedir?",
+                "desc": "MENA'da SMS fiyatlandırması, ülkeye ve operatöre göre değişen uluslararası yönlendirme oranlarına dayanır. Aşağıdakiler, bölgedeki yaygın uluslararası SMS ağ geçidi fiyatlandırmasına dayalı referans fiyatlardır.",
+                "note": "Fiyatlar, yaygın uluslararası SMS ağ geçidi oranlarına dayalı tahminlerdir. Gerçek fiyatlar sağlayıcıya, rotaya ve hacme göre değişiklik gösterebilir."
+            },
+            "table": {
+                "country": "Ülke",
+                "smsPrice": "SMS Fiyatı / mesaj",
+                "monthly1k": "1.000 mesaj/ay",
+                "monthly10k": "10.000 mesaj/ay"
+            },
+            "nabda": {
+                "title": "Nabda ile WhatsApp OTP'nin Maliyeti Nedir?",
+                "desc": "Nabda OTP basit bir sabit fiyat aboneliği kullanır — mesaj başına ücret yok, sürpriz yok.",
+                "s1": "Sınırsız WhatsApp mesajı",
+                "s2": "Mesaj başına ücret yok",
+                "s3": "5 günlük ücretsiz deneme",
+                "a1": "11 aylık fiyatına 12 ay",
+                "a2": "Yüksek hacimli ekipler için en iyi seçenek",
+                "a3": "İstediğiniz zaman iptal edin"
+            },
+            "comparison": {
+                "title": "Yan Yana: Farklı Hacimlerde Nabda vs SMS",
+                "desc": "Mısır'ı referans olarak kullanıyoruz (MENA'da en düşük SMS oranlarından biri: ~0,025$/mesaj). Irak veya Suriye'de SMS maliyetleri 2–2,5 kat daha yüksektir.",
+                "msgs": "Hacim",
+                "smsCost": "SMS Maliyeti (Mısır referansı)",
+                "nabdaCost": "Nabda OTP (WhatsApp)",
+                "note": "SMS maliyetleri Mısır referansını (0,025$/mesaj) kullanır. Irak ve Suriye'de 0,050$–0,060$/mesaj olur — bu da Nabda tasarrufunu çok daha büyük yapar."
+            },
+            "beyond": {
+                "title": "Fiyatın Ötesinde — Geçiş İçin Diğer Nedenler",
+                "b1Title": "Daha yüksek iletim oranları",
+                "b1Desc": "Irak ve Suriye'de WhatsApp OTP iletim oranı %95'i aşıyor. Uluslararası hatlardaki SMS iletimi ise operatör filtrelemesi nedeniyle çoğunlukla %80'in altında kalıyor.",
+                "b2Title": "Teslimat onayı",
+                "b2Desc": "Nabda webhook'ları her OTP'nin ne zaman gönderildiğini, iletildiğini ve okunduğunu size bildirir. SMS sağlayıcıları nadiren bu düzeyde görünürlük sunar.",
+                "b3Title": "Maliyet öngörülebilirliği",
+                "b3Desc": "Aylık sabit 10$, bütçenizi tam olarak planlamanızı sağlar. SMS maliyetleri her kampanya yürüttüğünüzde veya kullanıcı tabanınız büyüdüğünde yükselir.",
+                "b4Title": "Şablon onayı gerekmez",
+                "b4Desc": "Resmi WhatsApp Business API'sinin aksine, Nabda Gateway herhangi bir Meta şablon onayı gerektirmez. Herhangi bir düz metin OTP'yi anında gönderin."
+            },
+            "smsStillWorks": {
+                "title": "SMS Hâlâ Ne Zaman Mantıklıdır?",
+                "desc": "SMS, WhatsApp'ı olmayan kullanıcılar için veya özellikle SMS iletimini zorunlu kılan düzenlenmiş sektörler için yedek seçenek olarak tutulmaya değerdir. Ancak WhatsApp penetrasyonunun %90'ı aştığı MENA kullanıcılarının büyük çoğunluğu için SMS ikincil bir kanal olmalı, birincil değil."
+            },
+            "conclusion": {
+                "title": "Sonuç",
+                "desc": "Aylık birkaç yüz mesajın üzerindeki her hacimde, Nabda OTP MENA'daki tüm ülkelerde SMS'ten önemli ölçüde daha ucuzdur. Buna daha yüksek iletim oranlarını, gerçek zamanlı durum takibini ve mesaj başına faturalama sürprizlerinin olmamasını ekleyin — ve geçiş yapmanın gerekçesi net olur. Tek soru, mesaj başına ödemeye ne kadar daha devam etmek istediğinizdir."
+            },
+            "cta": {
+                "title": "Mesaj başına ödemeyi durdurun",
+                "subtitle": "Nabda OTP'ye geçin — aylık sabit 10$, sınırsız WhatsApp OTP, 5 günlük ücretsiz deneme.",
+                "button": "Ücretsiz Denemeye Başla"
+            }
+        }
     },
     "comparison": {
         "title": "Nabda OTP Rakip Karşılaştırması",
         "subtitle": "Akıllı MENA işletmelerinin neden Nabda OTP'yi tercih ettiğini görün",
+        "heroBadge": "Rakiplere göre %90'a kadar tasarruf",
+        "mostSearched": "En Çok Aranan",
         "card1": {
             "title": "Nabda OTP VS UltraMsg",
-            "description": "MENA işletmeleri için en iyi değer ve güvenilirlik"
+            "description": "MENA işletmeleri için en iyi değer ve güvenilirlik",
+            "savingsLabel": "~%74 Tasarruf"
         },
         "card2": {
             "title": "Nabda OTP VS Twilio",
-            "description": "Maliyet ve teslimat performansı karşılaştırması"
+            "description": "Maliyet ve teslimat performansı karşılaştırması",
+            "savingsLabel": "~%90 Tasarruf"
         },
         "card3": {
             "title": "Nabda OTP VS Official WhatsApp API",
-            "description": "Fiyat vs özellikler vs karmaşıklık"
+            "description": "Fiyat vs özellikler vs karmaşıklık",
+            "savingsLabel": "Şablon gerekmez"
         },
         "card4": {
             "title": "Nabda OTP VS BulkSMS",
-            "description": "WhatsApp API vs Geleneksel SMS Gateway – MENA'da maliyet, teslimat ve güvenilirlik"
+            "description": "WhatsApp API vs Geleneksel SMS Gateway – MENA'da maliyet, teslimat ve güvenilirlik",
+            "savingsLabel": "WhatsApp vs SMS"
         },
         "card5": {
             "title": "Nabda OTP VS OTPIQ",
-            "description": "Yerel OTP sağlayıcı karşılaştırması – Fiyatlandırma, teslimat hızı ve özellikler"
+            "description": "Yerel OTP sağlayıcı karşılaştırması – Fiyatlandırma, teslimat hızı ve özellikler",
+            "savingsLabel": "Yerel karşılaştırma"
         },
         "card6": {
             "title": "En İyi Nabda OTP Alternatifleri",
-            "description": "2026'da tüm büyük WhatsApp API sağlayıcıları için kapsamlı rehber"
+            "description": "2026'da tüm büyük WhatsApp API sağlayıcıları için kapsamlı rehber",
+            "savingsLabel": "Tüm sağlayıcılar"
         },
-        "detailedComparison": "Detaylı Karşılaştırma →",
-        "viewAll": "Tüm Alternatifleri Görüntüle →"
+        "detailedComparison": "Detaylı Karşılaştırma",
+        "viewAll": "Tüm Alternatifleri Görüntüle",
+        "quickTable": {
+            "title": "Neden Nabda OTP her karşılaştırmayı kazanıyor",
+            "featureCol": "Özellik",
+            "nabdaCol": "Nabda OTP",
+            "othersCol": "Diğerleri",
+            "rows": {
+                "price": {
+                    "label": "Fiyat",
+                    "nabda": "Aylık $10 sabit",
+                    "others": "$39–$0.01+/mesaj"
+                },
+                "messages": {
+                    "label": "Mesajlar",
+                    "nabda": "Sınırsız",
+                    "others": "Mesaj başı ücretlendirme"
+                },
+                "setup": {
+                    "label": "Kurulum süresi",
+                    "nabda": "~2 dakika",
+                    "others": "Günler ile haftalar arası"
+                },
+                "mena": {
+                    "label": "MENA odaklı",
+                    "nabda": "✅ Amaca özel",
+                    "others": "⚠️ Küresel öncelikli"
+                },
+                "arabic": {
+                    "label": "Arapça desteği",
+                    "nabda": "✅ Tam",
+                    "others": "⚠️ Sınırlı"
+                },
+                "trial": {
+                    "label": "Ücretsiz deneme",
+                    "nabda": "5 gün, kart gerekmez",
+                    "others": "Değişken"
+                }
+            }
+        }
     },
     "comparisonModern": {
         "badge": "Tam Pazar İncelemesi",
@@ -382,10 +917,10 @@
     "comparisonOfficial": {
         "badge": "Resmi API Alternatifi",
         "title": "Nabda OTP vs Resmi WhatsApp API",
-        "subtitle": "Resmi API fiyatlandırması genellikle mesaj başına ve ülkeye bağlıdır. Nabda, sabit aylık ve yıllık planlarla OTP ekonomisini basit tutar.",
+        "subtitle": "Resmi API fiyatlandırması genellikle mesaj başına ve ülkeye göre değişir. Nabda ise sabit aylık ve yıllık planlarla OTP maliyetlerini basit hale getirir.",
         "hero": {
-            "cta1": "5 Günlük Ücretsiz Denemeye Başla",
-            "cta2": "API Dokümanlarını İncele"
+            "cta1": "5 Günlük Ücretsiz Denemeyi Başlat",
+            "cta2": "API Dokümantasyonunu Görüntüle"
         },
         "table": {
             "feature": "Özellik",
@@ -394,24 +929,24 @@
             "winner": "Kazanan",
             "row1": {
                 "feature": "Fiyatlandırma Seçenekleri",
-                "nabda": "<strong>Aylık: 10$ (Sınırsız)</strong><br /><strong>Yıllık: 110$/yıl (12'ye 11)</strong>",
+                "nabda": "<strong>Aylık: $10 (Sınırsız)</strong><br /><strong>Yıllık: $110/yıl (12 ay yerine 11 ay öde)</strong>",
                 "official": "Mesaj başına fiyatlandırma modeli",
                 "winner": "Nabda OTP"
             },
             "row2": {
-                "feature": "Faturalandırma Tahmin Edilebilirliği",
+                "feature": "Faturalandırma Öngörülebilirliği",
                 "nabda": "Yüksek ve sabit",
-                "official": "Hacme ve ülkeye göre değişken",
+                "official": "Hacim ve ülkeye göre değişken",
                 "winner": "Nabda OTP"
             },
             "row3": {
                 "feature": "Uyumluluk",
-                "nabda": "KOBİ'ler ve ölçeklenen şirketler için güçlü",
-                "official": "En yüksek resmi seviye",
+                "nabda": "KOBİ'ler ve büyüyen şirketler için güçlü",
+                "official": "En yüksek resmi standart",
                 "winner": "Resmi API"
             },
             "row4": {
-                "feature": "MENA Odaklı",
+                "feature": "MENA Odaklılık",
                 "nabda": "Güçlü bölgesel odak",
                 "official": "Global model",
                 "winner": "Nabda OTP"
@@ -423,7 +958,7 @@
                 "winner": "Berabere"
             },
             "row6": {
-                "feature": "Onboarding Hızı",
+                "feature": "Kurulum Hızı",
                 "nabda": "Yaklaşık 2 dakika",
                 "official": "Genellikle daha uzun doğrulama süreci",
                 "winner": "Nabda OTP"
@@ -431,8 +966,8 @@
         },
         "calculator": {
             "badge": "Canlı Maliyet Hesaplayıcı",
-            "title": "Kaydırıcıyı hareket ettirin ve aylık faturanızı anında karşılaştırın",
-            "desc": "Nabda OTP aylık 10$'da sabit kalır. Aşağıdaki Resmi API tahmini, gerçekçi bir kimlik doğrulama bazında yaklaşık 0.0030$/mesaj kullanır.",
+            "title": "Kaydırıcıyı hareket ettirin ve aylık faturayı anında karşılaştırın",
+            "desc": "Nabda OTP aylık sabit $10’dur. Aşağıdaki Resmi API tahmini ise mesaj başına yaklaşık $0.0030 doğrulama maliyetine dayanmaktadır.",
             "label": "Aylık toplam OTP mesajı",
             "messages": "mesaj/ay",
             "table": {
@@ -440,43 +975,43 @@
                 "monthlyCost": "Aylık Maliyet",
                 "costPerMsg": "Mesaj Başına Maliyet",
                 "billingModel": "Faturalandırma Modeli",
-                "bestFit": "En Uygun Olduğu Alan"
+                "bestFit": "En Uygun Kullanım"
             },
             "nabda": {
-                "cost": "<strong id='nabdaCost'>10.00$</strong><br />Aylık: 10$ | Yıllık: 110$ (1 ay ücretsiz)",
-                "model": "Sabit aylık veya yıllık",
-                "fit": "Tahmin edilebilir maliyet ihtiyacı olan MENA ürünleri"
+                "cost": "Aylık: $10 | Yıllık: $110 (1 ay ücretsiz)",
+                "model": "Sabit aylık veya yıllık plan",
+                "fit": "Öngörülebilir maliyet isteyen MENA ürünleri"
             },
-            "official": {
-                "model": "Mesaj başına kategori/ülke fiyatlandırması",
-                "fit": "Resmi akış gerektiren büyük işletmeler"
+            "official api": {
+                "model": "Mesaj kategorisi ve ülkeye göre fiyatlandırma",
+                "fit": "Resmi akış gerektiren büyük şirketler"
             },
-            "note": "Resmi API ücretleri hedef ülke ve mesaj kategorisine göre değişir."
+            "note": "Resmi API ücretleri hedef ülkeye ve mesaj kategorisine göre değişir."
         },
         "why": {
-            "title": "MENA'daki İşletmeler Neden Nabda OTP'yi Tercih Ediyor",
+            "title": "MENA Bölgesindeki İşletmeler Neden Nabda OTP'yi Seçiyor?",
             "card1": {
                 "title": "Basit Fiyatlandırma",
-                "desc": "Sabit aylık ve yıllık planlar öngörülemeyen maliyet artışlarını önler."
+                "desc": "Sabit aylık ve yıllık planlar, beklenmedik maliyet artışlarını önler."
             },
             "card2": {
                 "title": "Bölgesel Öncelik",
-                "desc": "Irak, Suriye ve MENA teslimat gerçekleri göz önünde bulundurularak geliştirildi."
+                "desc": "Irak, Suriye ve MENA bölgesindeki teslimat gerçekleri dikkate alınarak geliştirildi."
             },
             "card3": {
                 "title": "Hızlı Başlangıç",
-                "desc": "Net dokümantasyon ve kolay API akışı üretime geçiş süresini azaltır."
+                "desc": "Açık dokümantasyon ve kolay API akışı, canlıya geçiş süresini azaltır."
+            },
+            "cta": {
+                "title": "WhatsApp OTP maliyetlerini sadeleştirmeye hazır mısınız?",
+                "button": "Ücretsiz Nabda Hesabı Oluştur"
             }
-        },
-        "whyCta": {
-            "title": "WhatsApp OTP maliyetlerini basitleştirmeye hazır mısınız?",
-            "button": "Ücretsiz Nabda Hesabı Oluştur"
         }
     },
     "comparisonBulkSMS": {
         "badge": "MENA için BulkSMS Alternatifi",
         "title": "Nabda OTP vs BulkSMS",
-        "subtitle": "BulkSMS fiyatlandırması genellikle mesaj başına olur. Nabda, öngörülebilir OTP büyümesi için fiyatlandırmayı sabit tutar.",
+        "subtitle": "BulkSMS fiyatlandırması genellikle mesaj başınadır. Nabda, tahmin edilebilir OTP büyümesi için sabit fiyatlandırma sunar.",
         "hero": {
             "cta1": "5 Günlük Ücretsiz Denemeye Başla",
             "cta2": "API Dokümanlarını İncele"
@@ -499,7 +1034,7 @@
                 "winner": "Nabda OTP"
             },
             "row3": {
-                "feature": "MENA Odaklı",
+                "feature": "MENA Odağı",
                 "nabda": "Güçlü",
                 "bulksms": "Genel global",
                 "winner": "Nabda OTP"
@@ -508,7 +1043,7 @@
         "calculator": {
             "badge": "Canlı Maliyet Hesaplayıcı",
             "title": "Kaydırıcıyı hareket ettirin ve aylık faturanızı anında karşılaştırın",
-            "desc": "Nabda OTP aylık 10$'da sabit kalır. Aşağıdaki BulkSMS tahmini 0.0321$/mesaj benchmark'ını kullanır.",
+            "desc": "Nabda OTP 10$/ay'da sabit kalır. Aşağıdaki BulkSMS tahmini 0,0321$/mesaj referans değerini kullanır.",
             "label": "Aylık toplam OTP mesajı",
             "messages": "mesaj/ay",
             "table": {
@@ -516,119 +1051,37 @@
                 "monthlyCost": "Aylık Maliyet",
                 "costPerMsg": "Mesaj Başına Maliyet",
                 "billingModel": "Faturalandırma Modeli",
-                "bestFit": "En Uygun Olduğu Alan"
+                "bestFit": "En Uygun"
             },
             "nabda": {
-                "cost": "<strong id='nabdaCost'>10.00$</strong><br />Aylık: 10$ | Yıllık: 110$ (1 ay ücretsiz)",
+                "cost": "Aylık: 10$ | Yıllık: 110$ (1 ay ücretsiz)",
                 "model": "Sabit aylık veya yıllık",
                 "fit": "MENA OTP ekipleri"
             },
             "bulksms": {
                 "model": "Mesaj başına SMS faturalandırması",
-                "fit": "SMS öncelikli kullanım durumları"
+                "fit": "SMS odaklı kullanım senaryoları"
             },
-            "note": "BulkSMS ücretleri hedef ülke ve rotaya göre değişir."
+            "note": "BulkSMS ücretleri hedefe ve rotaya göre değişir."
         },
         "why": {
-            "title": "MENA'daki İşletmeler Neden Nabda OTP'yi Tercih Ediyor",
+            "title": "MENA'daki İşletmeler Neden Nabda OTP'yi Seçiyor",
             "card1": {
                 "title": "Sabit Ekonomi",
-                "desc": "Trafik arttıkça mesaj bazlı fatura sürprizleri yaşanmaz."
+                "desc": "Trafik büyüdükçe mesaj düzeyinde fatura sürprizleri yok."
             },
             "card2": {
                 "title": "Bölgesel Uygulama",
-                "desc": "Irak, Suriye ve yakın pazarlar için geliştirildi."
+                "desc": "Irak, Suriye ve yakın pazarlar için tasarlandı."
             },
             "card3": {
                 "title": "Hızlı Kurulum",
-                "desc": "Kolay API onboarding ve net dokümantasyon."
+                "desc": "Kolay API entegrasyonu ve net dokümantasyon."
+            },
+            "cta": {
+                "title": "Geçmeye hazır mısınız?",
+                "button": "Ücretsiz Nabda Hesabı Oluştur"
             }
-        },
-        "whyCta": {
-            "title": "Geçiş yapmaya hazır mısınız?",
-            "button": "Ücretsiz Nabda Hesabı Oluştur"
-        }
-    },
-    "comparisonOTPIQ": {
-        "badge": "MENA için OTPIQ Alternatifi",
-        "title": "Nabda OTP vs OTPIQ",
-        "subtitle": "Her ikisi de bölgesel OTP iş akışlarını hedefler, ancak Nabda daha kolay bütçeleme için sabit aylık ve yıllık fiyatlandırma sunar.",
-        "hero": {
-            "cta1": "5 Günlük Ücretsiz Denemeye Başla",
-            "cta2": "API Dokümanlarını İncele"
-        },
-        "table": {
-            "feature": "Özellik",
-            "nabda": "Nabda OTP",
-            "otpiq": "OTPIQ",
-            "winner": "Kazanan",
-            "row1": {
-                "feature": "Fiyatlandırma Seçenekleri",
-                "nabda": "<strong>Aylık: 10$ (Sınırsız)</strong><br /><strong>Yıllık: 110$/yıl (12'ye 11)</strong>",
-                "otpiq": "Mesaj başına fiyatlandırma",
-                "winner": "Nabda OTP"
-            },
-            "row2": {
-                "feature": "Tahmin Edilebilirlik",
-                "nabda": "Yüksek",
-                "otpiq": "Değişken",
-                "winner": "Nabda OTP"
-            },
-            "row3": {
-                "feature": "MENA Odaklı",
-                "nabda": "Güçlü",
-                "otpiq": "Güçlü yerel odak",
-                "winner": "Berabere"
-            },
-            "row4": {
-                "feature": "Webhook Desteği",
-                "nabda": "Evet",
-                "otpiq": "Evet",
-                "winner": "Berabere"
-            }
-        },
-        "calculator": {
-            "badge": "Canlı Maliyet Hesaplayıcı",
-            "title": "Kaydırıcıyı hareket ettirin ve aylık faturanızı anında karşılaştırın",
-            "desc": "Nabda OTP aylık 10$'da sabit kalır. OTPIQ tahmini, Irak SMS benchmark'ını (~0.061$/mesaj) kullanır.",
-            "label": "Aylık toplam OTP mesajı",
-            "messages": "mesaj/ay",
-            "table": {
-                "provider": "Sağlayıcı",
-                "monthlyCost": "Aylık Maliyet",
-                "costPerMsg": "Mesaj Başına Maliyet",
-                "billingModel": "Faturalandırma Modeli",
-                "bestFit": "En Uygun Olduğu Alan"
-            },
-            "nabda": {
-                "cost": "<strong id='nabdaCost'>10.00$</strong><br />Aylık: 10$ | Yıllık: 110$ (1 ay ücretsiz)",
-                "model": "Sabit aylık veya yıllık",
-                "fit": "MENA OTP ekipleri"
-            },
-            "otpiq": {
-                "model": "Mesaj başına yönlendirme modeli",
-                "fit": "Yerel çok kanallı yönlendirme"
-            },
-            "note": "OTPIQ'un WhatsApp'a özel ücretleri doğrudan OTPIQ sözleşmelerinden teyit edilmelidir."
-        },
-        "why": {
-            "title": "MENA'daki İşletmeler Neden Nabda OTP'yi Tercih Ediyor",
-            "card1": {
-                "title": "Sabit Fiyatlandırma",
-                "desc": "Büyük ölçekte öngörülebilir aylık ve yıllık maliyet."
-            },
-            "card2": {
-                "title": "Bölgesel Ürün Uyumu",
-                "desc": "Yerel teslimat ve destek ihtiyaçları için özel olarak tasarlandı."
-            },
-            "card3": {
-                "title": "Geliştirici Deneyimi",
-                "desc": "Temiz API akışlarıyla hızlı entegrasyon."
-            }
-        },
-        "whyCta": {
-            "title": "OTP maliyetlerini azaltmaya hazır mısınız?",
-            "button": "Ücretsiz Nabda Hesabı Oluştur"
         }
     },
     "comparisonTwilio": {
@@ -707,7 +1160,7 @@
                 "bestFit": "En Uygun Olduğu Alan"
             },
             "nabda": {
-                "cost": "<strong id='nabdaCost'>10.00$</strong><br />Aylık: 10$ | Yıllık: 110$ (1 ay ücretsiz)",
+                "cost": "Aylık: $10 | Yıllık: $110 (1 ay ücretsiz)",
                 "model": "Sabit aylık veya yıllık",
                 "fit": "MENA startup'ları ve ölçeklenen şirketler"
             },
@@ -730,11 +1183,11 @@
             "card3": {
                 "title": "Hızlı Devreye Alma",
                 "desc": "Temiz API ve net dokümantasyon, mühendislik ekiplerinin OTP iş akışlarını hızlıca başlatmasını sağlar."
+            },
+            "cta": {
+                "title": "OTP maliyetlerini düşürmeye ve daha hızlı başlatmaya hazır mısınız?",
+                "button": "Ücretsiz Nabda Hesabı Oluştur"
             }
-        },
-        "whyCta": {
-            "title": "OTP maliyetlerini düşürmeye ve daha hızlı başlatmaya hazır mısınız?",
-            "button": "Ücretsiz Nabda Hesabı Oluştur"
         }
     },
     "comparisonUltra": {
@@ -812,11 +1265,162 @@
             "card3": {
                 "title": "Daha Hızlı Başlatma",
                 "desc": "Basit REST API + webhook'lar + net dokümantasyon sayesinde ekibiniz hızlıca yayına geçebilir."
+            },
+            "cta": {
+                "title": "OTP maliyetlerini düşürmeye ve daha hızlı başlatmaya hazır mısınız?",
+                "button": "Ücretsiz Nabda Hesabı Oluştur"
+            }
+        }
+    },
+    "comparisonOTPIQ": {
+        "badge": "MENA için OTPIQ Alternatifi",
+        "title": "Nabda OTP vs OTPIQ",
+        "subtitle": "Her ikisi de bölgesel OTP iş akışlarını hedefler, ancak Nabda daha kolay bütçeleme için sabit aylık ve yıllık fiyatlandırma sunar.",
+        "hero": {
+            "cta1": "5 Günlük Ücretsiz Denemeye Başla",
+            "cta2": "API Dokümanlarını İncele"
+        },
+        "table": {
+            "feature": "Özellik",
+            "nabda": "Nabda OTP",
+            "otpiq": "OTPIQ",
+            "winner": "Kazanan",
+            "row1": {
+                "feature": "Fiyatlandırma Seçenekleri",
+                "nabda": "<strong>Aylık: 10$ (Sınırsız)</strong><br /><strong>Yıllık: 110$/yıl (12'ye 11)</strong>",
+                "otpiq": "Mesaj başına fiyatlandırma",
+                "winner": "Nabda OTP"
+            },
+            "row2": {
+                "feature": "Tahmin Edilebilirlik",
+                "nabda": "Yüksek",
+                "otpiq": "Değişken",
+                "winner": "Nabda OTP"
+            },
+            "row3": {
+                "feature": "MENA Odağı",
+                "nabda": "Güçlü",
+                "otpiq": "Güçlü yerel odak",
+                "winner": "Berabere"
+            },
+            "row4": {
+                "feature": "Webhook Desteği",
+                "nabda": "Evet",
+                "otpiq": "Evet",
+                "winner": "Berabere"
             }
         },
-        "whyCta": {
-            "title": "OTP maliyetlerini düşürmeye ve daha hızlı başlatmaya hazır mısınız?",
-            "button": "Ücretsiz Nabda Hesabı Oluştur"
+        "calculator": {
+            "badge": "Canlı Maliyet Hesaplayıcı",
+            "title": "Kaydırıcıyı hareket ettirin ve aylık faturanızı anında karşılaştırın",
+            "desc": "Nabda OTP 10$/ay'da sabit kalır. OTPIQ tahmini, yaklaşık 80 IQD (~0,061$/mesaj) olan Irak SMS referans değerini kullanır.",
+            "label": "Aylık toplam OTP mesajı",
+            "messages": "mesaj/ay",
+            "table": {
+                "provider": "Sağlayıcı",
+                "monthlyCost": "Aylık Maliyet",
+                "costPerMsg": "Mesaj Başına Maliyet",
+                "billingModel": "Faturalandırma Modeli",
+                "bestFit": "En Uygun"
+            },
+            "nabda": {
+                "cost": "Aylık: 10$ | Yıllık: 110$ (1 ay ücretsiz)",
+                "model": "Sabit aylık veya yıllık",
+                "fit": "MENA OTP ekipleri"
+            },
+            "otpiq": {
+                "model": "Mesaj başına yönlendirme modeli",
+                "fit": "Yerel çok kanallı yönlendirme"
+            },
+            "note": "OTPIQ'nun WhatsApp'a özel ücretleri doğrudan OTPIQ sözleşmelerinden teyit edilmelidir."
+        },
+        "why": {
+            "title": "MENA'daki İşletmeler Neden Nabda OTP'yi Seçiyor",
+            "card1": {
+                "title": "Sabit Fiyatlandırma",
+                "desc": "Ölçek büyüdükçe tahmin edilebilir aylık ve yıllık maliyet."
+            },
+            "card2": {
+                "title": "Bölgesel Ürün Uyumu",
+                "desc": "Yerel teslimat ve destek ihtiyaçları için özel olarak tasarlandı."
+            },
+            "card3": {
+                "title": "Geliştirici Deneyimi",
+                "desc": "Temiz API iş akışlarıyla hızlı entegrasyon."
+            },
+            "cta": {
+                "title": "OTP maliyetlerini düşürmeye hazır mısınız?",
+                "button": "Ücretsiz Nabda Hesabı Oluştur"
+            }
+        }
+    },
+    "alternatives": {
+        "badge": "Eksiksiz Karşılaştırma Rehberi",
+        "title": "Nabda OTP Alternatifleri: Eksiksiz Karşılaştırma",
+        "subtitle": "Nabda OTP'yi Twilio, UltraMsg, Official WhatsApp API, BulkSMS ve OTPIQ ile karşılaştırın. Sabit aylık fiyatlandırma vs mesaj başına faturalama. Her biri farklı kullanım senaryoları için tasarlandı.",
+        "breadcrumb": {
+            "comparing": "Karşılaştırmalar",
+            "current": "Nabda Alternatifleri"
+        },
+        "cta": {
+            "trial": "Ücretsiz Denemeye Başla",
+            "docs": "Dokümantasyonu İncele"
+        },
+        "quickCompare": {
+            "title": "30K mesaj/ay'da Hızlı Karşılaştırma",
+            "provider": "Sağlayıcı",
+            "pricingModel": "Fiyatlandırma Modeli",
+            "monthlyCost": "Aylık Maliyet",
+            "type": "Tür",
+            "menaFocus": "MENA Odağı",
+            "details": "Detaylar",
+            "current": "Mevcut",
+            "compare": "Karşılaştır"
+        },
+        "detailed": {
+            "title": "Detaylı Karşılaştırmalar",
+            "from": "Başlangıç",
+            "viewFull": "Tam Karşılaştırmayı Görüntüle"
+        },
+        "whenToChoose": {
+            "title": "Nabda OTP Ne Zaman Seçilmeli",
+            "choose": {
+                "title": "✅ Nabda OTP'yi seçin eğer:",
+                "item1": "Tahmin edilebilir sabit aylık maliyetlere ihtiyacınız varsa",
+                "item2": "Ana pazarınız Irak, Suriye veya MENA ise",
+                "item3": "Ayda 3.000+ OTP mesajı gönderiyorsanız",
+                "item4": "Hızlı onboarding istiyorsanız (2 dakika)",
+                "item5": "SMS yerine WhatsApp tercih ediyorsanız"
+            },
+            "consider": {
+                "title": "⚠️ Alternatifleri düşünün eğer:",
+                "item1": "Resmi WhatsApp uyumluluk sürecine ihtiyacınız varsa",
+                "item2": "Ana pazarınız MENA dışındaysa",
+                "item3": "Çok düşük hacim gönderiyorsanız (<1.000/ay)",
+                "item4": "Yalnızca SMS teslimatına ihtiyacınız varsa",
+                "item5": "Çok kanallı yönlendirme gerekiyorsa (SMS + WhatsApp + Viber)"
+            }
+        },
+        "bottomCta": {
+            "title": "MENA için en uygun fiyatlı WhatsApp API'yi denemeye hazır mısınız?",
+            "button": "5 Günlük Ücretsiz Denemeyi Başlat"
+        },
+        "competitors": {
+            "twilio": {
+                "bestFor": "Global kurumsal sistemler"
+            },
+            "official": {
+                "bestFor": "Büyük işletmeler"
+            },
+            "ultramsg": {
+                "bestFor": "Çok numaralı kurulumlar"
+            },
+            "bulksms": {
+                "bestFor": "SMS odaklı kullanım senaryoları"
+            },
+            "otpiq": {
+                "bestFor": "Yerel çok kanallı yönlendirme"
+            }
         }
     },
     "solutions": {
@@ -830,6 +1434,18 @@
             "title": "Sipariş Onayları ve Teslimat",
             "description": "E-ticaret işletmeleri için gerçek zamanlı sipariş durumu güncellemeleri, teslimat bildirimleri ve ödeme onayları."
         },
+        "card3": {
+            "title": "Hesap Güvenliği ve 2FA",
+            "description": "WhatsApp üzerinden iki faktörlü kimlik doğrulama ile kullanıcılarınızı koruyun. Anlık güvenlik uyarıları, şüpheli giriş bildirimleri ve şifre sıfırlama."
+        },
+        "card4": {
+            "title": "Randevu Hatırlatıcıları",
+            "description": "MENA genelindeki klinikler, salonlar, restoranlar ve hizmet işletmeleri için otomatik WhatsApp hatırlatıcılarıyla randevu kaçırmayı azaltın."
+        },
+        "card5": {
+            "title": "WhatsApp Pazarlama Kampanyaları",
+            "description": "Yüksek hacimli gönderim için Nabda OTP'nin Bundle özelliğini kullanarak müşterilerinize hedefli promosyon mesajları, teklifler ve yeniden etkileşim kampanyaları gönderin."
+        },
         "comingSoon": {
             "title": "Daha Fazla Çözüm Yakında Geliyor",
             "description": "Irak, Suriye ve MENA bölgesindeki işletmeler için özel olarak tasarlanmış ek güçlü WhatsApp çözümleri üzerinde çalışıyoruz.",
@@ -839,10 +1455,10 @@
     },
     "otpSolution": {
         "hero": {
-            "title": "OTP ve Kullanıcı Doğrulaması WhatsApp Üzerinden",
-            "desc": "Irak, Suriye ve tüm MENA ülkelerine anında tek kullanımlık şifre gönderin. Şablon yok. Meta onayı yok. Sadece bir instance oluşturun ve dakikalar içinde kullanıcı doğrulamaya başlayın.",
-            "cta1": "Ücretsiz Başla — Kredi Kartı Gerekmez",
-            "cta2": "API Dokümanlarını İncele"
+            "title": "WhatsApp ile OTP ve Kullanıcı Doğrulama",
+            "desc": "Irak, Suriye ve tüm MENA ülkelerine anında tek kullanımlık şifreler gönderin. Şablon yok. Meta onayı yok. Sadece bir instance oluşturun ve dakikalar içinde kullanıcıları doğrulamaya başlayın.",
+            "cta1": "Ücretsiz Başlayın — Kredi Kartı Gereksiz",
+            "cta2": "API Belgelerini Görüntüle"
         },
         "stats": {
             "delivery": "Teslimat Oranı",
@@ -852,92 +1468,92 @@
         },
         "why": {
             "label": "Neden WhatsApp?",
-            "title": "Irak ve Suriye'de SMS OTP çalışmıyor.<br>WhatsApp sorunsuz çalışıyor.",
-            "desc": "Irak ve Suriye'de SMS teslimat oranları oldukça güvenilmezdir — mesajlar gecikir, operatörler tarafından engellenir veya hiç ulaşmaz. Bölgede WhatsApp kullanımı %90'ın üzerindedir, bu da OTP teslimatı için en güvenilir kanal yapar. Nabda OTP ile doğrulama kodlarınız saniyeler içinde ulaşır, dakikalar içinde değil."
+            "title": "SMS OTP Irak ve Suriye'de bozuk. WhatsApp işe yarıyor.",
+            "desc": "Irak ve Suriye'deki SMS teslimat oranları oldukça güvenilmez — mesajlar gecikiyor, operatörler tarafından engellenmiş veya asla gelmiyor. Bölgede WhatsApp penetrasyonu %90'ı aşıyor, bu da onu OTP teslimi için en güvenilir kanal yapıyor. Nabda OTP ile doğrulama kodlarınız dakikalar değil saniyeler içinde ulaşır."
         },
         "features": {
             "instant": {
                 "title": "Anında Teslimat",
-                "desc": "OTPs WhatsApp üzerinden ortalama 3 saniyenin altında teslim edilir, yavaş mobil bağlantılarda bile."
+                "desc": "OTP'ler WhatsApp üzerinden ortalama 3 saniyenin altında teslim edilir, yavaş mobil bağlantılarda bile."
             },
             "noTemplates": {
-                "title": "Şablon Gerekmez",
-                "desc": "Herhangi bir düz metin mesajı gönderin. Onay süreci yok, bekleme yok, Meta iş doğrulaması gerekmez."
+                "title": "Şablon Gerektirmez",
+                "desc": "Herhangi bir düz metin mesajı gönderin. Onay süreci yok, bekleme yok, Meta iş doğrulaması gerekmiyor."
             },
             "regional": {
                 "title": "Irak ve Suriye Öncelikli",
-                "desc": "+964 ve +963 numaraları için özel tasarlandı. Tüm MENA ülkelerinde E.164 formatı tam desteklenir."
+                "desc": "+964 ve +963 numaraları için özel olarak tasarlanmış. Tüm MENA ülkelerinde E.164 formatı için tam destek."
             },
             "secure": {
-                "title": "Tasarımından Güvenli",
-                "desc": "Instance kapsamlı Bearer token'ları. OTP'leri sunucu tarafında üretin. Her instance'ın kendine ait bir numarası vardır."
+                "title": "Tasarımda Güvenlik",
+                "desc": "Instance kapsamlı Bearer token'ları. Sunucu tarafında OTP oluşturma. Her instance'ın özel bir numarası var."
             },
             "webhooks": {
                 "title": "Teslimat Webhook'ları",
-                "desc": "Gönderildi, teslim edildi ve başarısız olayları için gerçek zamanlı geri bildirim. OTP'nizin ne zaman ulaştığını tam olarak bilin."
+                "desc": "Gönderildi, teslim edildi ve başarısız olaylar için gerçek zamanlı callback'ler. OTP'nizin tam olarak ne zaman geldiğini bilin."
             },
             "pricing": {
                 "title": "Sabit Fiyatlandırma",
-                "desc": "Her instance için tek sabit aylık ücret. Mesaj başına maliyet yok. Sınırsız OTP gönderin, sürpriz olmadan."
+                "desc": "Instance başına tek sabit aylık ücret. Mesaj başına maliyet yok. Sürprizsiz sınırsız OTP gönderin."
             }
         },
         "how": {
             "label": "Entegrasyon",
-            "title": "4 basit adımda yayına alın",
+            "title": "4 basit adımda canlıya alın",
             "step1": {
-                "title": "Nabda OTP Hesabı Oluşturun",
-                "desc": "dash.nabdaotp.com'a kaydolun. Başlamak ücretsizdir, kredi kartı gerekmez."
+                "title": "Bir Nabda OTP Hesabı Oluşturun",
+                "desc": "dash.nabdaotp.com adresinden kaydolun. Başlamak ücretsiz, kredi kartı gerektirmez."
             },
             "step2": {
-                "title": "Instance Oluşturun ve QR Kodunu Tarayın",
-                "desc": "Her instance size özel bir WhatsApp numarası verir. QR kodunu bir kez tarayın ve WhatsApp'ınızı bağlayın — tamamdır."
+                "title": "Bir Instance Oluşturun ve QR'yi Tarayın",
+                "desc": "Her instance size özel bir WhatsApp numarası verir. WhatsApp'ınızı bağlamak için QR kodunu bir kez tarayın — tamam."
             },
             "step3": {
                 "title": "Instance Token'ınızı Alın",
-                "desc": "select-instance endpoint'ini çağırarak instance'ınıza özel Bearer token alın. Bunu backend'inizde güvenli bir şekilde saklayın."
+                "desc": "Instance'ınıza özel bir Bearer token almak için select-instance endpoint'ini çağırın. Sunucunuzda güvenli bir şekilde saklayın."
             },
             "step4": {
-                "title": "Tek API Çağrısıyla OTP Gönderin",
-                "desc": "Telefon numarası ve mesajınızla /api/v1/messages/send adresine POST yapın. Hepsi bu kadar."
+                "title": "Tek Bir API Çağrısıyla OTP Gönderin",
+                "desc": "/api/v1/messages/send adresine telefon numarası ve mesajınızla POST gönderin. Hepsi bu."
             }
         },
         "code": {
             "label": "Kod Örneği",
             "title": "İlk OTP'nizi 10 satırın altında gönderin",
-            "desc": "Her şey sunucu tarafında çalışır. OTP'yi üretin, Nabda üzerinden gönderin, hash'ini saklayın — gönderimde doğrulayın."
+            "desc": "Her şey sunucu tarafında çalışır. OTP oluşturun, Nabda ile gönderin, hash'i saklayın — gönderimde doğrulayın."
         },
         "usecases": {
-            "label": "Kullanım Alanları",
+            "label": "Kullanım Senaryoları",
             "title": "Her doğrulama senaryosu için tasarlandı",
-            "item1": "📱 Kullanıcı kaydı ve kayıt doğrulama",
-            "item2": "🔐 İki faktörlü kimlik doğrulama (2FA)",
-            "item3": "🔑 Şifre sıfırlama ve hesap kurtarma",
-            "item4": "💳 Ödeme ve işlem onayı"
+            "item1": "Kullanıcı kaydı ve kayıt doğrulama",
+            "item2": "İki faktörlü kimlik doğrulama (2FA)",
+            "item3": "Şifre sıfırlama ve hesap kurtarma",
+            "item4": "Ödeme ve işlem yetkilendirmesi"
         },
         "cta": {
-            "title": "Bugün WhatsApp üzerinden kullanıcı doğrulamaya başlayın",
-            "desc": "İlk Nabda OTP instance'ınızı dakikalar içinde oluşturun. Sözleşme yok, mesaj başına ücret yok, Meta onayı gerekmez.",
+            "title": "Bugün WhatsApp ile kullanıcıları doğrulamaya başlayın",
+            "desc": "İlk Nabda OTP instance'ınızı dakikalar içinde oluşturun. Sözleşme yok, mesaj başına ücret yok, Meta onayı gerekmiyor.",
             "button1": "Ücretsiz Instance Oluştur",
-            "button2": "Tam Rehberi Oku →"
+            "button2": "Tam Kılavuzu Okuyun"
         }
     },
     "orderSolution": {
         "hero": {
-            "title": "Sipariş Onayları ve Teslimat Güncellemeleri WhatsApp Üzerinden",
-            "desc": "Müşterilerinizi her adımda bilgilendirin — sipariş verildiğinden kapıya teslimata kadar. Gerçek zamanlı WhatsApp bildirimleri gerçekten okunur.",
-            "cta1": "Ücretsiz Başla — Kredi Kartı Gerekmez",
-            "cta2": "API Dokümanlarını İncele"
+            "title": "WhatsApp ile Sipariş Onayları ve Teslimat Güncellemeleri",
+            "desc": "Müşterilerinizi her adımda bilgilendirin — siparişten kapıya teslimata kadar. Gerçekten okunan gerçek zamanlı WhatsApp bildirimleri.",
+            "cta1": "Ücretsiz Başlayın — Kredi Kartı Gereksiz",
+            "cta2": "API Belgelerini Görüntüle"
         },
         "stats": {
             "openRate": "WhatsApp'ta Açılma Oranı",
-            "support": "Müşteri Destek Aramalarında Azalma",
+            "support": "Daha Az Müşteri Destek Araması",
             "deliveryTime": "Mesaj Teslimat Süresi",
             "unlimited": "Sınırsız Bildirim"
         },
         "why": {
             "label": "Neden WhatsApp?",
-            "title": "Müşterileriniz e-postaları görmezden geliyor.<br>WhatsApp'ı görmezden gelemezler.",
-            "desc": "Irak ve Suriye'de e-posta açılma oranları %15'in altında kalıyor. Buna karşılık WhatsApp mesajları dakikalar içinde — çoğu zaman saniyeler içinde — açılıyor. Nabda OTP ile anında sipariş onayları, ödeme makbuzları ve teslimat takip güncellemeleri gönderebilirsiniz; müşteriler bunları gerçekten görür ve güvenir."
+            "title": "Müşterileriniz e-postaları görmezden geliyor. WhatsApp'ı görmezden gelemezler.",
+            "desc": "Irak ve Suriye'de e-posta açılma oranları %15'in altında seyrediyor. Öte yandan WhatsApp mesajları dakikalar içinde — genellikle saniyeler içinde açılıyor.Nabda OTP ile müşterilerin gerçekten gördüğü ve güvendiği anında sipariş onayları, ödeme makbuzları ve teslimat takip güncellemeleri gönderebilirsiniz."
         },
         "features": {
             "confirmation": {
@@ -946,71 +1562,333 @@
             },
             "payment": {
                 "title": "Ödeme Makbuzu",
-                "desc": "Ödeme alındığında ve işlendiğinde müşterileri otomatik olarak bilgilendirin. Kapıda ödeme ve online ödeme akışları için vazgeçilmez."
+                "desc": "Ödeme alındığında ve işlendiğinde müşterilere otomatik olarak bildirim gönderin. Kapıda ödeme ve online ödeme iş akışları için gerekli."
             },
             "shipping": {
                 "title": "Kargo Güncellemeleri",
-                "desc": "Sipariş paketlendiğinde, gönderildiğinde, teslimata çıktığında ve teslim edildiğinde bildirim gönderin. Müşterileri her aşamada bilgilendirin."
+                "desc": "Sipariş paketlendiğinde, gönderildiğinde, teslimata çıktığında ve teslim edildiğinde bildirim gönderin. Her aşamada müşterileri bilgilendirin."
             },
             "return": {
-                "title": "İade ve İade Bildirimleri",
-                "desc": "İade durumunu ve iade onaylarını proaktif olarak iletin; karışıklığı önleyin ve destek taleplerini azaltın."
+                "title": "İade ve Geri Ödeme Uyarıları",
+                "desc": "Karışıklığı önlemek ve destek taleplerini azaltmak için iade durumu ve geri ödeme onaylarını proaktif olarak iletin."
             },
             "api": {
                 "title": "Basit REST API",
-                "desc": "Tek endpoint. Tek POST isteği. Her türlü backend ile çalışır — Node.js, Python, PHP, Laravel, stack'iniz ne olursa olsun."
+                "desc": "Tek endpoint. Tek POST isteği. Herhangi bir backend ile çalışır — Node.js, Python, PHP, Laravel, stack'iniz ne olursa olsun."
             },
             "regional": {
-                "title": "Irak ve Suriye Hazır",
+                "title": "Irak ve Suriye İçin Hazır",
                 "desc": "+964 ve +963 numaraları için tam destek. Yerel Irak ve Suriye e-ticaret operasyonlarıyla mükemmel çalışır."
             }
         },
         "journey": {
             "label": "Müşteri Yolculuğu",
-            "title": "Önemli her an için bir mesaj",
+            "title": "Önemli olan her an için bir mesaj",
             "step1": {
                 "label": "Sipariş Verildi",
                 "title": "Anında Onay",
-                "desc": "\"✅ Siparişiniz #1042 onaylandı! Toplam: 35.000 IQD. Kargoya verdiğimizde sizi bilgilendireceğiz. – Mağazanız\""
+                "desc": "✅ Siparişiniz #1042 onaylandı! Toplam: 35.000 IQD. Kargoya verildiğinde size haber vereceğiz. – Mağazanız"
             },
             "step2": {
                 "label": "Ödeme Alındı",
                 "title": "Ödeme Makbuzu",
-                "desc": "\"💳 #1042 numaralı sipariş için ödeme alındı. Tutar: 35.000 IQD. Teşekkürler! – Mağazanız\""
+                "desc": "💳 #1042 siparişi için ödeme alındı. Tutar: 35.000 IQD. Teşekkürler! – Mağazanız"
             },
             "step3": {
-                "label": "Sipariş Kargoya Verildi",
+                "label": "Sipariş Gönderildi",
                 "title": "Kargo Bildirimi",
-                "desc": "\"🚚 Siparişiniz #1042 yolda! Tahmini teslimat: yarın 10:00-14:00 arası. – Mağazanız\""
+                "desc": "🚚 Siparişiniz #1042 yolda! Tahmini teslimat: yarın saat 10:00–14:00 arası. – Mağazanız"
             },
             "step4": {
                 "label": "Teslim Edildi",
                 "title": "Teslimat Onayı",
-                "desc": "\"✅ Sipariş #1042 teslim edildi! Umarız beğenirsiniz. Bir şeye ihtiyacınız olursa bu mesaja cevap verin. – Mağazanız\""
+                "desc": "✅ Sipariş #1042 teslim edildi! Umarız beğenirsiniz. Bir şeye ihtiyacınız olursa bu mesaja yanıt verin. – Mağazanız"
             }
         },
         "code": {
             "label": "Kod Örneği",
-            "title": "Tek API çağrısıyla sipariş bildirimlerini tetikleyin",
-            "desc": "Sipariş yönetim sisteminizin olaylarına bağlanın ve anında WhatsApp bildirimi gönderin — karmaşık kurulum gerekmez."
+            "title": "Tek bir API çağrısıyla sipariş bildirimlerini tetikleyin",
+            "desc": "Sipariş yönetim sisteminizin olaylarına bağlanın ve anında bir WhatsApp bildirimi gönderin — karmaşık kurulum gerekmez."
         },
         "usecases": {
-            "label": "Bunu Kimler Kullanıyor",
-            "title": "MENA'daki her tür satıcı için mükemmel",
-            "item1": "🛍️ Online mağazalar ve pazar yerleri",
-            "item2": "🍕 Yemek teslimatı ve restoranlar",
-            "item3": "💊 Eczaneler ve sağlık ürünleri",
-            "item4": "👗 Moda ve giyim markaları",
-            "item5": "📱 Elektronik ve cep telefonu mağazaları",
-            "item6": "🚗 Oto yedek parça ve aksesuarlar",
-            "item7": "🏗️ B2B toptan tedarikçiler",
-            "item8": "🎁 Hediye dükkanları ve abonelik kutuları"
+            "label": "Kim Kullanıyor",
+            "title": "MENA'daki her satıcı türü için mükemmel",
+            "item1": "Online mağazalar ve pazaryerleri",
+            "item2": "Yemek teslimatı ve restoranlar",
+            "item3": "Eczaneler ve sağlık ürünleri",
+            "item4": "Moda ve giyim markaları",
+            "item5": "Elektronik ve mobil mağazaları",
+            "item6": "Oto yedek parça ve aksesuarlar",
+            "item7": "B2B toptan tedarikçiler",
+            "item8": "Hediye dükkanları ve abonelik kutuları"
         },
         "cta": {
-            "title": "Sipariş güncellemelerini WhatsApp üzerinden bugün göndermeye başlayın",
-            "desc": "Nabda OTP instance'ınızı dakikalar içinde oluşturun ve mağazanıza bağlayın. Sınırsız bildirim, sabit aylık fiyat.",
+            "title": "Bugün WhatsApp ile sipariş güncellemeleri göndermeye başlayın",
+            "desc": "Dakikalar içinde Nabda OTP instance'ınızı oluşturun ve mağazanıza bağlayın. Sınırsız bildirim, sabit aylık fiyat.",
             "button1": "Ücretsiz Instance Oluştur",
-            "button2": "Dokümanları Oku →"
+            "button2": "Belgeleri Okuyun"
+        }
+    },
+    "securitySolution": {
+        "hero": {
+            "title": "WhatsApp ile Hesap Güvenliği ve Giriş Uyarıları",
+            "desc": "Kullanıcı hesaplarını anında WhatsApp güvenlik uyarılarıyla koruyun. Kullanıcıları şüpheli girişler, şifre değişiklikleri ve yetkisiz erişim girişimleri hakkında gerçek zamanlı bilgilendirin.",
+            "cta1": "Ücretsiz Başlayın — Kredi Kartı Gereksiz",
+            "cta2": "API Belgelerini Görüntüle"
+        },
+        "stats": {
+            "alertTime": "Uyarı Teslimat Süresi",
+            "deliveryRate": "Uyarı Teslimat Oranı",
+            "fraudDetection": "Daha Hızlı Dolandırıcılık Tespiti",
+            "unlimited": "Sınırsız Güvenlik Uyarıları"
+        },
+        "why": {
+            "label": "Neden WhatsApp Güvenliği?",
+            "title": "E-posta güvenlik uyarıları göz ardı ediliyor. WhatsApp uyarıları anında harekete geçiyor.",
+            "desc": "Irak ve Suriye'de güvenlik e-postaları genellikle spam'e düşüyor veya saatlerce okunmuyor — hesapları savunmasız bırakıyor. WhatsApp uyarıları anında açılıyor, kullanıcılara tehditlere gerçek zamanlı yanıt verme gücü veriyor.Nabda OTP ile kullanıcılarınız şüpheli bir şey olduğu anda bildirim alıyor — saatler sonra değil."
+        },
+        "features": {
+            "loginAlerts": {
+                "title": "Giriş Uyarıları",
+                "desc": "Her giriş denemesinde anında bildirim gönderin. Kullanıcılar herhangi bir cihazdan hesaplarına erişildiğinde hemen bilir."
+            },
+            "geoLocation": {
+                "title": "Coğrafi Konum Takibi",
+                "desc": "Yeni bir şehir veya ülkeden giriş yapıldığında kullanıcıları uyarın. Sınır ötesi hesap ele geçirme girişimlerini tespit edin ve önleyin."
+            },
+            "suspicious": {
+                "title": "Şüpheli Aktivite Tespiti",
+                "desc": "Olağandışı davranış tespit edildiğinde kullanıcıları otomatik olarak bilgilendirin — birden çok başarısız giriş, hızlı konum değişiklikleri veya anormal erişim kalıpları."
+            },
+            "passwordChange": {
+                "title": "Şifre Değişikliği Onayı",
+                "desc": "Her şifre sıfırlama veya değişikliğini WhatsApp üzerinden onaylayın. Kullanıcılar yetkisiz şifre değişikliklerini hemen engelleyebilir."
+            },
+            "deviceVerification": {
+                "title": "Cihaz Doğrulama",
+                "desc": "Yeni cihazları yetkilendirmeden önce WhatsApp onayı isteyin. Tanıdık mesajlaşma ile 2FA ile ekstra güvenlik katmanı ekleyin."
+            },
+            "threatResponse": {
+                "title": "Gerçek Zamanlı Tehdit Yanıtı",
+                "desc": "Hesaplar tehlikeye girdiğinde anında kilitleme bildirimleri gönderin. Kullanıcılar basit bir mesajla hesaplarını güvenceye alabilir."
+            }
+        },
+        "how": {
+            "label": "Nasıl Çalışır",
+            "title": "Hesapları 4 basit adımda koruyun",
+            "step1": {
+                "title": "Güvenlik Olayını Tespit Edin",
+                "desc": "Sisteminiz bir giriş, şifre değişikliği veya şüpheli aktivite tespit eder ve Nabda OTP API üzerinden bir uyarı tetikler."
+            },
+            "step2": {
+                "title": "Anında WhatsApp Uyarısı Gönderin",
+                "desc": "Kullanıcı olay detaylarıyla gerçek zamanlı bir bildirim alır — cihaz, konum, zaman damgası ve gerekli eylem."
+            },
+            "step3": {
+                "title": "Kullanıcı Hemen Yanıt Verir",
+                "desc": "Kullanıcı meşru aktiviteyi onaylar veya yetkisiz erişimi engellemek için yanıt verir — hepsi WhatsApp üzerinden, uygulama değiştirmeye gerek yok."
+            },
+            "step4": {
+                "title": "Kaydet ve Hesabı Güvenli Hale Getir",
+                "desc": "Sisteminiz yanıtı kaydeder ve harekete geçer — hesabı kilitle, oturumu iptal et veya güvenliği onayla — anında."
+            }
+        },
+        "code": {
+            "label": "Kod Örneği",
+            "title": "Tek bir API çağrısıyla güvenlik uyarıları gönderin",
+            "desc": "Nabda OTP'yi kimlik doğrulama akışınıza entegre edin ve her kritik olayda gerçek zamanlı güvenlik bildirimleri gönderin."
+        },
+        "usecases": {
+            "label": "Kimin İhtiyacı Var",
+            "title": "Güvenlik açısından kritik uygulamalar için gerekli",
+            "item1": "Bankacılık ve fintech uygulamaları",
+            "item2": "Ödeme platformları ve cüzdanlar",
+            "item3": "Kurumsal SaaS araçları",
+            "item4": "Eğitim platformları",
+            "item5": "Sağlık portalları ve telesağlık",
+            "item6": "E-ticaret kullanıcı hesapları"
+        },
+        "cta": {
+            "title": "Bugün WhatsApp ile hesapları korumaya başlayın",
+            "desc": "Nabda OTP instance'ınızı oluşturun ve dakikalar içinde uygulamanıza gerçek zamanlı güvenlik uyarıları ekleyin. Uyarı başına ücret yok, sabit aylık fiyatlandırma.",
+            "button1": "Ücretsiz Instance Oluştur",
+            "button2": "Belgeleri Okuyun"
+        },
+        "appointmentSolution": {
+            "hero": {
+                "title": "WhatsApp ile Randevu Hatırlatıcıları",
+                "desc": "Hastaların gerçekten okuduğu otomatik randevu hatırlatıcıları gönderin. Anında WhatsApp bildirimleriyle devamsızlığı %67 azaltın. Irak, Suriye ve MENA'daki klinikler, kuaförler ve hizmet işletmeleri için mükemmel.",
+                "cta1": "Ücretsiz Başlayın — Kredi Kartı Gereksiz",
+                "cta2": "API Belgelerini Görüntüle"
+            },
+            "stats": {
+                "reduction": "Devamsızlık Azalması",
+                "openRate": "Mesaj Açılma Oranı",
+                "automated": "Tamamen Otomatik Hatırlatıcılar",
+                "unlimited": "Sınırsız Hatırlatıcı"
+            },
+            "why": {
+                "label": "Neden WhatsApp?",
+                "title": "SMS hatırlatıcıları göz ardı ediliyor. WhatsApp hatırlatıcıları okunuyor ve onaylanıyor.",
+                "desc": "Irak ve Suriye'de SMS randevu hatırlatıcılarının açılma oranı %40'ın altında — ve çoğu hasta onaylamak için yanıt veremiyor. WhatsApp hatırlatıcılarının açılma oranı %98 ve anında iki yönlü iletişime izin veriyor. Hastalar onaylayabilir, yeniden planlayabilir veya soru sorabilir — hepsi telefon görüşmesi olmadan. Nabda OTP ile devamsızlık oranınız önemli ölçüde düşüyor."
+            },
+            "features": {
+                "automated": {
+                    "title": "Otomatik Zamanlama",
+                    "desc": "Bir kez ayarlayın ve unutun. Hatırlatıcılar randevulardan 24 saat önce otomatik olarak gönderilir — manuel iş gerekmez."
+                },
+                "customTiming": {
+                    "title": "Özel Zamanlama",
+                    "desc": "1 gün, 3 saat veya 30 dakika önce hatırlatıcı gönderin. Maksimum katılım için randevu başına birden fazla hatırlatıcı yapılandırın."
+                },
+                "confirmation": {
+                    "title": "İki Yönlü Onay",
+                    "desc": "Hastalar doğrudan WhatsApp'ta CONFIRM, RESCHEDULE veya CANCEL yanıtını verebilir. Telefon görüşmesi yok, indirilecek uygulama yok."
+                },
+                "rescheduling": {
+                    "title": "Kolay Yeniden Planlama",
+                    "desc": "Hastalar yeniden planlamak için yanıt verdiğinde, sisteminiz alternatif slotlar sunabilir veya geri arama tetikleyebilir — hepsi webhook üzerinden otomatik."
+                },
+                "locationSharing": {
+                    "title": "Konum ve Yol Tarifi",
+                    "desc": "Her hatırlatıcıya klinik adresi ve Google Haritalar bağlantısı ekleyin. Hastalar randevulara giderken asla kaybolmaz."
+                },
+                "multilingual": {
+                    "title": "Çok Dilli Destek",
+                    "desc": "Hasta tercihine göre Arapça, İngilizce veya Kürtçe hatırlatıcı gönderin. Arapça metin için tam RTL desteği."
+                }
+            },
+            "how": {
+                "label": "Entegrasyon",
+                "title": "4 adımda otomatik hatırlatıcıları kurun",
+                "step1": {
+                    "title": "Rezervasyon Sisteminizi Bağlayın",
+                    "desc": "Nabda OTP'yi randevu planlama yazılımınız veya CRM'iniz ile basit REST API üzerinden entegre edin."
+                },
+                "step2": {
+                    "title": "Hatırlatıcı Kurallarını Yapılandırın",
+                    "desc": "Hatırlatıcıların ne zaman gönderileceğini belirleyin (24 saat önce, 3 saat önce vb.) ve işletmeniz için mesaj şablonlarını özelleştirin."
+                },
+                "step3": {
+                    "title": "Otomatik Teslimat",
+                    "desc": "Nabda OTP, planlanan zamanlarda WhatsApp hatırlatıcılarını otomatik olarak gönderir. Hastalar anında bildirim alır."
+                },
+                "step4": {
+                    "title": "Onayları İzleyin",
+                    "desc": "Kimin onayladığını, kimin yeniden planladığını ve kimin yanıt vermediğini izleyin. Webhook'lar aracılığıyla takviminizi otomatik olarak güncelleyin."
+                }
+            },
+            "code": {
+                "label": "Kod Örneği",
+                "title": "Tek bir API çağrısıyla hatırlatıcıları planlayın",
+                "desc": "Nabda OTP'yi randevu rezervasyon akışınıza entegre edin ve her randevudan 24 saat önce otomatik hatırlatıcılar gönderin."
+            },
+            "usecases": {
+                "label": "Kim Kullanıyor",
+                "title": "Randevu tabanlı her işletme için mükemmel",
+                "item1": "Tıp klinikleri ve hastaneler",
+                "item2": "Diş klinikleri ve ortodontistler",
+                "item3": "Kuaförler ve berberler",
+                "item4": "Tırnak salonları ve güzellik merkezleri",
+                "item5": "Spa ve sağlıklı yaşam merkezleri",
+                "item6": "Oto tamir ve servis merkezleri",
+                "item7": "Spor salonları ve kişisel antrenörler",
+                "item8": "Veteriner klinikleri ve evcil hayvan bakımı"
+            },
+            "cta": {
+                "title": "Bugün WhatsApp ile devamsızlığı azaltmaya başlayın",
+                "desc": "Nabda OTP instance'ınızı oluşturun ve rezervasyon sisteminize bağlayın. Sınırsız hatırlatıcı, sabit aylık fiyat, %67 daha az devamsızlık.",
+                "button1": "Ücretsiz Instance Oluştur",
+                "button2": "Belgeleri Okuyun →"
+            }
+        }
+    },
+    "marketingSolution": {
+        "hero": {
+            "title": "WhatsApp Pazarlama ve Promosyon Kampanyaları",
+            "desc": "Müşterilerin gerçekten açtığı promosyon kampanyaları, ürün lansmanları ve pazarlama mesajları gönderin. %98 açılma oranı, %45 tıklama oranı. Irak, Suriye ve MENA'daki e-ticaret, perakende ve hizmet işletmeleri için mükemmel.",
+            "cta1": "Ücretsiz Başlayın — Kredi Kartı Gereksiz",
+            "cta2": "API Belgelerini Görüntüle"
+        },
+        "stats": {
+            "openRate": "Mesaj Açılma Oranı",
+            "clickRate": "Tıklama Oranı",
+            "deliveryTime": "Anında Teslimat",
+            "unlimited": "Sınırsız Kampanya"
+        },
+        "why": {
+            "label": "Neden WhatsApp Pazarlama?",
+            "title": "E-posta pazarlama ölüyor. WhatsApp pazarlama patlıyor.",
+            "desc": "Irak ve Suriye'de e-posta pazarlamanın açılma oranı %15'in altında ve çoğu promosyon e-postası spam'e düşüyor. WhatsApp mesajlarının açılma oranı %98 ve tıklama oranı %45 — müşteriler tekliflerinizle gerçekten etkileşime giriyor. Nabda OTP ile flaş satışlar, ürün lansmanları ve özel fırsatları doğrudan müşterilerinizin telefonlarına gönderebilirsiniz."
+        },
+        "features": {
+            "broadcasts": {
+                "title": "Toplu Yayınlar",
+                "desc": "Binlerce müşteriye anında promosyon mesajları gönderin. Günlük limit yok, mesaj başına ücret yok — sabit aylık fiyatla sınırsız yayın."
+            },
+            "targeting": {
+                "title": "Hedef Kitle Belirleme",
+                "desc": "Müşteri listenizi konuma, satın alma geçmişine veya tercihlere göre bölümlere ayırın. Doğru kişilere doğru zamanda kişiselleştirilmiş teklifler gönderin."
+            },
+            "productLaunches": {
+                "title": "Ürün Lansmanları",
+                "desc": "WhatsApp üzerinden yeni ürünleri, yeniden stoklamaları veya özel çıkışları duyurun. Sınırlı süreli tekliflerle FOMO yaratın ve anında satın alımları teşvik edin."
+            },
+            "sales": {
+                "title": "Flaş Satışlar ve İndirimler",
+                "desc": "Aciliyet yaratan zamana duyarlı promosyonlar gönderin. WhatsApp üzerinden flaş satışlar MENA'da e-posta kampanyalarından 3 kat daha iyi dönüşüm sağlıyor."
+            },
+            "analytics": {
+                "title": "Kampanya Analitiği",
+                "desc": "Webhook'lar aracılığıyla teslimat oranlarını, tıklama oranlarını ve müşteri yanıtlarını izleyin. Gönderdiğiniz her kampanyada ROI'yi ölçün."
+            },
+            "regional": {
+                "title": "MENA Odaklı Yaklaşım",
+                "desc": "Irak, Suriye ve MENA pazarları için optimize edilmiş. Tam Arapça desteği, yerel telefon numarası doğrulaması ve RTL biçimlendirme."
+            }
+        },
+        "how": {
+            "label": "Kampanya Kurulumu",
+            "title": "4 adımda pazarlama kampanyaları başlatın",
+            "step1": {
+                "title": "Müşteri Listenizi Oluşturun",
+                "desc": "CRM, e-ticaret platformu veya CSV dosyasından müşteri telefon numaralarını içe aktarın. Konuma, davranışa veya özel etiketlere göre bölümlere ayırın."
+            },
+            "step2": {
+                "title": "Kampanyanızı Oluşturun",
+                "desc": "Promosyon mesajınızı yazın, ürün bağlantıları ekleyin ve net bir harekete geçirici mesaj ekleyin. En iyi sonuçlar için 1000 karakterin altında tutun."
+            },
+            "step3": {
+                "title": "Nabda API ile Gönderin",
+                "desc": "REST API'miz aracılığıyla kampanyayı tetikleyin veya belirli bir zaman için planlayın. Mesajlar tüm alıcılara anında teslim edilir."
+            },
+            "step4": {
+                "title": "Performansı İzleyin",
+                "desc": "Webhook'lar aracılığıyla teslimat durumunu, tıklama oranlarını ve müşteri yanıtlarını izleyin. Gerçek verilere dayalı gelecekteki kampanyaları optimize edin."
+            }
+        },
+        "code": {
+            "label": "Kod Örneği",
+            "title": "Tek bir API çağrısıyla promosyon kampanyaları gönderin",
+            "desc": "Nabda OTP'yi pazarlama otomasyonunuza entegre edin ve saniyeler içinde binlerce müşteriye toplu WhatsApp kampanyaları gönderin."
+        },
+        "usecases": {
+            "label": "Kimler İçin Mükemmel",
+            "title": "Daha fazla satış isteyen her işletme",
+            "item1": "E-ticaret mağazaları ve online mağazalar",
+            "item2": "Restoranlar ve yemek teslimatı",
+            "item3": "Moda ve giyim markaları",
+            "item4": "Güzellik ve kozmetik dükkanları",
+            "item5": "Elektronik ve mobil perakendeciler",
+            "item6": "Emlak acenteleri",
+            "item7": "Eğitim kursları ve programları",
+            "item8": "Etkinlik organizatörleri ve mekanlar"
+        },
+        "cta": {
+            "title": "Bugün WhatsApp kampanyaları göndermeye başlayın",
+            "desc": "Nabda OTP instance'ınızı oluşturun ve ilk promosyon kampanyanızı dakikalar içinde başlatın. Sınırsız mesaj, sabit aylık fiyat, %98 açılma oranı.",
+            "button1": "Ücretsiz Instance Oluştur",
+            "button2": "Belgeleri Okuyun"
         }
     }
 }

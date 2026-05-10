@@ -1,0 +1,193 @@
+import CTA from '@/components/home/CTA';
+import Partner from '@/components/home/Partner';
+import Payment from '@/components/home/Payment';
+import Pricing from '@/components/home/Pricing';
+import Stats from '@/components/home/Stats';
+import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/components/ui/accordion';
+import type { CountryData } from '@/lib/country-data';
+import { ArrowRight, Rocket } from 'lucide-react';
+import Features from '../home/Features';
+
+interface Props {
+  country:  CountryData;
+  locale:   'en' | 'ar' | 'tr';
+  phoneExample: string; // e.g. "+96477XXXXXXXX"
+}
+
+export default function CountryPageTemplate({ country, locale, phoneExample }: Props) {
+  const isAR  = locale === 'ar';
+  const data  = isAR ? country.ar : country;
+  const dir   = isAR ? 'rtl' : 'ltr';
+
+  const BASE_URL    = 'https://www.nabdaotp.com';
+  const enUrl       = `${BASE_URL}/${country.slug}/`;
+  const arUrl       = `${BASE_URL}/ar/${country.slug}/`;
+  const canonicalUrl = isAR ? arUrl : enUrl;
+
+  // JSON-LD — FAQPage schema
+  const faqSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: data.faq.map(({ question, answer }) => ({
+      '@type': 'Question',
+      name: question,
+      acceptedAnswer: { '@type': 'Answer', text: answer },
+    })),
+  };
+
+  // JSON-LD — LocalBusiness / WebPage
+  const webPageSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'WebPage',
+    name: data.metaTitle,
+    description: data.metaDescription,
+    url: canonicalUrl,
+    inLanguage: isAR ? 'ar' : 'en',
+    isPartOf: { '@type': 'WebSite', url: BASE_URL, name: 'Nabda OTP' },
+  };
+
+  return (
+    <>
+      {/* Structured Data */}
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(webPageSchema) }} />
+
+      {/* Hero */}
+      <section className="relative overflow-hidden py-20 md:py-28 bg-linear-to-br from-white via-[#f5f3ff] to-[#ede9fe] dark:bg-none dark:bg-[#0a2540]">
+        <div className="pointer-events-none absolute inset-0">
+          <div className="absolute -top-40 -right-40 h-150 w-150 rounded-full bg-[#635bff]/10 blur-[120px] dark:bg-[#635bff]/25" />
+          <div className="absolute -bottom-20 -left-20 h-100 w-100 rounded-full bg-[#a89fff]/15 blur-[100px]" />
+        </div>
+
+        <div className="relative max-w-300 mx-auto px-6">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center" dir={dir}>
+            {/* Text */}
+            <div className="flex flex-col gap-6">
+              <div className="inline-flex items-center self-start gap-2 rounded-full px-4 py-1.5 text-sm font-medium border border-[#635bff]/30 bg-[#635bff]/8 text-[#635bff] dark:border-[#635bff]/40 dark:bg-[#635bff]/10 dark:text-[#a89fff]">
+                <Rocket/> {data.heroBadge}
+              </div>
+
+              <h1 className="text-4xl md:text-5xl font-extrabold leading-tight tracking-tight text-[#0a2540] dark:text-white">
+                {data.heroH1}
+              </h1>
+
+              <p className="text-lg leading-relaxed max-w-lg text-[#425466] dark:text-[#8899a6]">
+                {data.heroSubtitle}
+              </p>
+
+              <div className="flex flex-wrap gap-4">
+                <a
+                  href="https://dash.nabdaotp.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 px-7 py-3.5 text-base font-semibold rounded-full text-white bg-[#635bff] hover:bg-[#7a73ff] shadow-[0_4px_20px_rgba(99,91,255,0.4)] hover:-translate-y-0.5 transition-all duration-200"
+                >
+                  {data.ctaPrimaryText}
+                </a>
+                <a
+                  href="https://api.nabdaotp.com/docs"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 px-7 py-3.5 text-base font-semibold rounded-full border border-[#635bff]/30 text-[#635bff] hover:bg-[#635bff]/8 dark:border-white/20 dark:text-white/80 dark:hover:border-white/40 transition-all duration-200"
+                >
+                  {data.ctaSecondaryText}
+                  <ArrowRight size={18} />
+                </a>
+              </div>
+
+              <p
+                className="text-sm text-[#425466] dark:text-[#8899a6]"
+                dangerouslySetInnerHTML={{ __html: data.heroPriceNote }}
+              />
+            </div>
+
+            {/* Code Terminal */}
+            <div className="rounded-2xl overflow-hidden border shadow-2xl border-[#e2e8f0] bg-[#f8fafc] dark:border-white/10 dark:bg-[#0d1b2e]">
+              <div className="flex items-center gap-2 px-4 py-3 border-b bg-[#f1f5f9] border-[#e2e8f0] dark:bg-[#0a1628] dark:border-white/8">
+                <span className="w-3 h-3 rounded-full bg-[#ff5f57]" />
+                <span className="w-3 h-3 rounded-full bg-[#ffbd2e]" />
+                <span className="w-3 h-3 rounded-full bg-[#28c840]" />
+                <span className="ms-3 text-xs font-mono text-[#94a3b8] dark:text-[#4a6278]">Nabda-api.js</span>
+              </div>
+              <div className="p-6 font-mono text-sm leading-7 overflow-x-auto">
+                <pre className="text-[#64748b] dark:text-[#8899a6]">
+{`// OTP for ${country.countryName}
+const response = await Nabda.send({
+  phone: "${phoneExample}",
+  message: "Your code: 847291",
+  type: "otp"
+});
+// ✓ Delivered instantly`}
+                </pre>
+              </div>
+              <div className="flex items-center gap-2 px-6 pb-5">
+                <span className="flex h-2 w-2 rounded-full bg-[#00d4aa] shadow-[0_0_6px_rgba(0,212,170,0.8)]" />
+                <span className="text-xs font-medium text-[#00d4aa]">Message delivered · 0.3s</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/*Shared sections */}
+      <Stats />
+      <Partner />
+      <Features/>
+      <Pricing />
+      {/* FAQ (country-specific) */}
+      <section className="py-20 bg-gray-50/80 dark:bg-[#060f1e]">
+        <div className="max-w-215 mx-auto px-6" dir={dir}>
+          <h2 className="text-4xl font-extrabold text-center mb-14 text-[#0a2540] dark:text-white">
+            {isAR ? 'الأسئلة الشائعة' : 'Frequently Asked Questions'}
+          </h2>
+          <Accordion type="single" collapsible className="flex flex-col gap-3">
+            {data.faq.map((item, i) => (
+              <AccordionItem
+                key={i}
+                value={`item-${i}`}
+                className="rounded-2xl border px-6 bg-white border-gray-100 hover:border-[#635bff]/30 data-[state=open]:border-[#635bff]/50 dark:bg-white/4 dark:border-white/8 transition-all duration-200"
+              >
+                <AccordionTrigger className="py-5 text-start text-base font-semibold hover:no-underline text-[#0a2540] dark:text-white [&>svg]:text-[#635bff] [&>svg]:shrink-0">
+                  {item.question}
+                </AccordionTrigger>
+                <AccordionContent className="pb-5 text-[0.9375rem] leading-7 text-[#425466] dark:text-[#8899a6]">
+                  {item.answer}
+                </AccordionContent>
+              </AccordionItem>
+            ))}
+          </Accordion>
+        </div>
+      </section>
+
+      <CTA />
+      <Payment />
+
+      {/* SEO Content (visually subtle, crawlable) */}
+      <section
+        aria-label={`Extended product summary for ${country.countryName}`}
+        className="sr-only"
+      >
+        <div className="max-w-5xl mx-auto px-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            {/* EN SEO block */}
+            <article className="text-[11px] leading-relaxed text-slate-300 dark:text-slate-700">
+              <span className="font-medium">The Cheapest WhatsApp API in {country.countryName} — Nabda OTP. </span>
+              {data.seoIntro}{' '}
+              Standard Plan: $10/month — unlimited messages, no per-message fee, 5-day free trial.
+              Enterprise Plan: Official WhatsApp Business API (Meta), SLA.
+              Supported in {country.countryName} and MENA region. Dial code: {country.dialCode}.
+              Unlike Twilio which charges per message, Nabda OTP offers unlimited messaging at a flat rate. Save up to 90% on WhatsApp messaging costs in {country.countryName}.
+            </article>
+
+            {/* AR SEO block */}
+            <article lang="ar" dir="rtl" className="text-[11px] leading-relaxed text-slate-300 dark:text-slate-700">
+              <span className="font-medium">أرخص خدمة واتساب API في {country.countryName} - نبضة OTP. </span>
+              {country.ar.seoIntro}{' '}
+              وفر حتى 90% من تكاليف الرسائل مقارنة بتويليو وغيره من المنافسين. رسائل غير محدودة بـ 10 دولار شهرياً فقط.
+            </article>
+          </div>
+        </div>
+      </section>
+    </>
+  );
+}
