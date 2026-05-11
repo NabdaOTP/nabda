@@ -13,8 +13,6 @@ const getLocalizedUrl = (locale: Locale, path: string = ''): string => {
 
 const localizedPages = [
   { path: '',                changefreq: 'weekly'  as const, priority: 1.0  },
-  { path: '/features',      changefreq: 'monthly' as const, priority: 0.8  },
-  { path: '/pricing',       changefreq: 'monthly' as const, priority: 0.8  },
   { path: '/solutions',     changefreq: 'monthly' as const, priority: 0.8  },
   { path: '/comparing',     changefreq: 'monthly' as const, priority: 0.8  },
   { path: '/blogs',         changefreq: 'monthly' as const, priority: 0.85 },
@@ -30,7 +28,6 @@ const subPages = [
   { path: '/solutions/order-confirmations',   changefreq: 'monthly' as const, priority: 0.75 },
   { path: '/solutions/account-security',      changefreq: 'monthly' as const, priority: 0.75 },
   { path: '/solutions/appointment-reminders', changefreq: 'monthly' as const, priority: 0.75 },
-  { path: '/solutions/customer-support',      changefreq: 'monthly' as const, priority: 0.75 },
   { path: '/solutions/marketing',             changefreq: 'monthly' as const, priority: 0.75 },
 
   // Comparing
@@ -44,6 +41,9 @@ const subPages = [
   // Blogs
   { path: '/blogs/whatsapp-otp-iraq-guide',   changefreq: 'monthly' as const, priority: 0.85 },
   { path: '/blogs/whatsapp-replacing-sms',    changefreq: 'monthly' as const, priority: 0.85 },
+  { path: '/blogs/bundle-vs-instance',        changefreq: 'monthly' as const, priority: 0.85 },
+  { path: '/blogs/whatsapp-otp-mistakes',     changefreq: 'monthly' as const, priority: 0.85 },
+  { path: '/blogs/whatsapp-vs-sms-cost',      changefreq: 'monthly' as const, priority: 0.85 },
 ];
 
 const countries = [

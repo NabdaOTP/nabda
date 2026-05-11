@@ -154,7 +154,7 @@ export default function NabdaAlternativesPage() {
                         {t('alternatives.quickCompare.title')}
                     </h2>
                     <div className="overflow-x-auto">
-                        <table className="w-full border-collapse bg-white dark:bg-white/4 rounded-2xl overflow-hidden shadow-lg">
+                        <table className="w-full border-collapse bg-white dark:bg-white/4 rounded-2xl overflow-hidden">
                             <thead>
                                 <tr className="bg-[#f8f9ff] dark:bg-white/8 border-b border-gray-200 dark:border-white/10">
                                     {['provider', 'pricingModel', 'monthlyCost', 'type', 'menaFocus', 'details'].map(k => (
