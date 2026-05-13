@@ -67,6 +67,20 @@ const countries = [
   { slug: 'sd',     languages: ['en', 'ar'] as const },
   { slug: 'tn',     languages: ['en', 'ar'] as const },
   { slug: 'ye',     languages: ['en', 'ar'] as const },
+  { slug: 'fr',     languages: ['en', 'ar'] as const },
+  { slug: 'nl',     languages: ['en', 'ar'] as const },
+  { slug: 'es',     languages: ['en', 'ar'] as const },
+  { slug: 'it',     languages: ['en', 'ar'] as const },
+  { slug: 'pl',     languages: ['en', 'ar'] as const },
+  { slug: 'se',     languages: ['en', 'ar'] as const },
+  { slug: 'be',     languages: ['en', 'ar'] as const },
+  { slug: 'gb',     languages: ['en', 'ar'] as const },
+  { slug: 'ca',     languages: ['en', 'ar'] as const },
+  { slug: 'in',     languages: ['en', 'ar'] as const },
+  { slug: 'pk',     languages: ['en', 'ar'] as const },
+  { slug: 'id',     languages: ['en', 'ar'] as const },
+  { slug: 'my',     languages: ['en', 'ar'] as const },
+  { slug: 'bd',     languages: ['en', 'ar'] as const },
 ];
 
 export async function GET() {

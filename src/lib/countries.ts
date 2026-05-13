@@ -19,6 +19,20 @@ export const countries = [
   { slug: 'sd', nameEn: 'Sudan',        nameAr: 'السودان',     dialCode: '+249' },
   { slug: 'de', nameEn: 'Germany',      nameAr: 'ألمانيا',     dialCode: '+49'  },
   { slug: 'us', nameEn: 'USA',          nameAr: 'أمريكا',      dialCode: '+1'   },
+  { slug: 'fr', nameEn: 'France',       nameAr: 'فرنسا',       dialCode: '+33'  },
+  { slug: 'nl', nameEn: 'Netherlands',  nameAr: 'هولندا',      dialCode: '+31'  },
+  { slug: 'es', nameEn: 'Spain',        nameAr: 'إسبانيا',     dialCode: '+34'  },
+  { slug: 'it', nameEn: 'Italy',        nameAr: 'إيطاليا',     dialCode: '+39'  },
+  { slug: 'pl', nameEn: 'Poland',       nameAr: 'بولندا',      dialCode: '+48'  },
+  { slug: 'se', nameEn: 'Sweden',       nameAr: 'السويد',      dialCode: '+46'  },
+  { slug: 'be', nameEn: 'Belgium',      nameAr: 'بلجيكا',      dialCode: '+32'  },
+  { slug: 'gb', nameEn: 'UK',           nameAr: 'بريطانيا',    dialCode: '+44'  },
+  { slug: 'ca', nameEn: 'Canada',       nameAr: 'كندا',        dialCode: '+1'   },
+  { slug: 'in', nameEn: 'India',        nameAr: 'الهند',       dialCode: '+91'  },
+  { slug: 'pk', nameEn: 'Pakistan',     nameAr: 'باكستان',     dialCode: '+92'  },
+  { slug: 'id', nameEn: 'Indonesia',    nameAr: 'إندونيسيا',   dialCode: '+62'  },
+  { slug: 'my', nameEn: 'Malaysia',     nameAr: 'ماليزيا',     dialCode: '+60'  },
+  { slug: 'bd', nameEn: 'Bangladesh',   nameAr: 'بنغلاديش',    dialCode: '+880' },
 ] as const;
 
 export type CountrySlug = typeof countries[number]['slug'];

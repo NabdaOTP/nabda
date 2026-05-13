@@ -252,7 +252,21 @@
             "sudan": "السودان",
             "yemen": "اليمن",
             "usa": "الولايات المتحدة",
-            "germany": "ألمانيا"
+            "germany": "ألمانيا",
+            "france": "فرنسا",
+            "netherlands": "هولندا",
+            "spain": "إسبانيا",
+            "italy": "إيطاليا",
+            "poland": "بولندا",
+            "sweden": "السويد",
+            "belgium": "بلجيكا",
+            "uk": "بريطانيا",
+            "canada": "كندا",
+            "india": "الهند",
+            "pakistan": "باكستان",
+            "indonesia": "إندونيسيا",
+            "malaysia": "ماليزيا",
+            "bangladesh": "بنغلاديش"
         }
     },
     "about": {

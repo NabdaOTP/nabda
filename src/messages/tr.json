@@ -250,7 +250,21 @@
             "sudan": "Sudan",
             "yemen": "Yemen",
             "usa": "Amerika",
-            "germany": "Almanya"
+            "germany": "Almanya",
+            "france": "Fransa",
+            "netherlands": "Hollanda",
+            "spain": "İspanya",
+            "italy": "İtalya",
+            "poland": "Polonya",
+            "sweden": "İsveç",
+            "belgium": "Belçika",
+            "uk": "Birleşik Krallık",
+            "canada": "Kanada",
+            "india": "Hindistan",
+            "pakistan": "Pakistan",
+            "indonesia": "Endonezya",
+            "malaysia": "Malezya",
+            "bangladesh": "Bangladeş"
         }
     },
     "about": {
@@ -1889,6 +1903,24 @@
             "desc": "Nabda OTP instance'ınızı oluşturun ve ilk promosyon kampanyanızı dakikalar içinde başlatın. Sınırsız mesaj, sabit aylık fiyat, %98 açılma oranı.",
             "button1": "Ücretsiz Instance Oluştur",
             "button2": "Belgeleri Okuyun"
+        }
+    },
+    "countryPage": {
+        "heroH1": "{countryName} için En Uygun WhatsApp Gateway",
+        "faqTitle": "Sıkça Sorulan Sorular",
+        "faq": {
+            "q1": "{countryName} için en ucuz WhatsApp API hangisi?",
+            "a1": "Nabda OTP şu anda {countryName} için mesaj başına ücret olmaksızın aylık yalnızca 10$ ile en uygun fiyatlı WhatsApp API'sidir.",
+            "q2": "Nabda OTP {dialCode} numaralarını destekliyor mu?",
+            "a2": "Evet, {countryName}'deki tüm {dialCode} numaralarını yüksek başarı oranıyla destekler.",
+            "q3": "Ücretsiz deneme var mı?",
+            "a3": "Evet, kredi kartı gerektirmeyen 5 günlük tam ücretsiz deneme.",
+            "q4": "Twilio'ya kıyasla nasıl?",
+            "a4": "Nabda OTP sınırsız mesajla %90'a kadar tasarruf sağlar.",
+            "q5": "Medya ve belge gönderebilir miyim?",
+            "a5": "Evet, metin, resim, video ve PDF belgeler desteklenir.",
+            "q6": "Standard ve Official API arasındaki fark nedir?",
+            "a6": "Standard (10$/ay sınırsız) çoğu işletme için uygundur. Official, Green Badge gerektiren büyük şirketler içindir."
         }
     }
 }

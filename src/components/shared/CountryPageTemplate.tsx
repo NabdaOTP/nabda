@@ -5,6 +5,7 @@ import Pricing from '@/components/home/Pricing';
 import Stats from '@/components/home/Stats';
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/components/ui/accordion';
 import type { CountryData } from '@/lib/country-data';
+import trMessages from '@/messages/tr.json';
 import { ArrowRight, Rocket } from 'lucide-react';
 import Features from '../home/Features';
 
@@ -16,19 +17,48 @@ interface Props {
 
 export default function CountryPageTemplate({ country, locale, phoneExample }: Props) {
   const isAR  = locale === 'ar';
+  const isTR  = locale === 'tr';
   const data  = isAR ? country.ar : country;
   const dir   = isAR ? 'rtl' : 'ltr';
+
+  const interp = (s: string) =>
+    s.replace(/\{countryName\}/g, country.countryName).replace(/\{dialCode\}/g, country.dialCode);
+
+  const cp = trMessages.countryPage;
+  const trData = isTR ? {
+    heroBadge:        trMessages.hero.badge,
+    heroH1:           interp(cp.heroH1),
+    heroSubtitle:     trMessages.hero.subtitle,
+    heroPriceNote:    trMessages.hero.price,
+    ctaPrimaryText:   trMessages.hero.cta.primary,
+    ctaSecondaryText: trMessages.hero.cta.secondary,
+    metaTitle:        data.metaTitle,
+    metaDescription:  data.metaDescription,
+    seoIntro:         data.seoIntro,
+    trustPoints:      data.trustPoints,
+    faq: [
+      { question: interp(cp.faq.q1), answer: interp(cp.faq.a1) },
+      { question: interp(cp.faq.q2), answer: interp(cp.faq.a2) },
+      { question: interp(cp.faq.q3), answer: interp(cp.faq.a3) },
+      { question: interp(cp.faq.q4), answer: interp(cp.faq.a4) },
+      { question: interp(cp.faq.q5), answer: interp(cp.faq.a5) },
+      { question: interp(cp.faq.q6), answer: interp(cp.faq.a6) },
+    ],
+  } : null;
+
+  const displayData = trData ?? data;
 
   const BASE_URL    = 'https://www.nabdaotp.com';
   const enUrl       = `${BASE_URL}/${country.slug}/`;
   const arUrl       = `${BASE_URL}/ar/${country.slug}/`;
-  const canonicalUrl = isAR ? arUrl : enUrl;
+  const trUrl       = `${BASE_URL}/tr/${country.slug}/`;
+  const canonicalUrl = isAR ? arUrl : isTR ? trUrl : enUrl;
 
   // JSON-LD — FAQPage schema
   const faqSchema = {
     '@context': 'https://schema.org',
     '@type': 'FAQPage',
-    mainEntity: data.faq.map(({ question, answer }) => ({
+    mainEntity: displayData.faq.map(({ question, answer }) => ({
       '@type': 'Question',
       name: question,
       acceptedAnswer: { '@type': 'Answer', text: answer },
@@ -39,10 +69,10 @@ export default function CountryPageTemplate({ country, locale, phoneExample }: P
   const webPageSchema = {
     '@context': 'https://schema.org',
     '@type': 'WebPage',
-    name: data.metaTitle,
-    description: data.metaDescription,
+    name: displayData.metaTitle,
+    description: displayData.metaDescription,
     url: canonicalUrl,
-    inLanguage: isAR ? 'ar' : 'en',
+    inLanguage: isAR ? 'ar' : isTR ? 'tr' : 'en',
     isPartOf: { '@type': 'WebSite', url: BASE_URL, name: 'Nabda OTP' },
   };
 
@@ -64,15 +94,15 @@ export default function CountryPageTemplate({ country, locale, phoneExample }: P
             {/* Text */}
             <div className="flex flex-col gap-6">
               <div className="inline-flex items-center self-start gap-2 rounded-full px-4 py-1.5 text-sm font-medium border border-[#635bff]/30 bg-[#635bff]/8 text-[#635bff] dark:border-[#635bff]/40 dark:bg-[#635bff]/10 dark:text-[#a89fff]">
-                <Rocket/> {data.heroBadge}
+                <Rocket/> {displayData.heroBadge}
               </div>
 
               <h1 className="text-4xl md:text-5xl font-extrabold leading-tight tracking-tight text-[#0a2540] dark:text-white">
-                {data.heroH1}
+                {displayData.heroH1}
               </h1>
 
               <p className="text-lg leading-relaxed max-w-lg text-[#425466] dark:text-[#8899a6]">
-                {data.heroSubtitle}
+                {displayData.heroSubtitle}
               </p>
 
               <div className="flex flex-wrap gap-4">
@@ -82,7 +112,7 @@ export default function CountryPageTemplate({ country, locale, phoneExample }: P
                   rel="noopener noreferrer"
                   className="inline-flex items-center gap-2 px-7 py-3.5 text-base font-semibold rounded-full text-white bg-[#635bff] hover:bg-[#7a73ff] shadow-[0_4px_20px_rgba(99,91,255,0.4)] hover:-translate-y-0.5 transition-all duration-200"
                 >
-                  {data.ctaPrimaryText}
+                  {displayData.ctaPrimaryText}
                 </a>
                 <a
                   href="https://api.nabdaotp.com/docs"
@@ -90,14 +120,14 @@ export default function CountryPageTemplate({ country, locale, phoneExample }: P
                   rel="noopener noreferrer"
                   className="inline-flex items-center gap-2 px-7 py-3.5 text-base font-semibold rounded-full border border-[#635bff]/30 text-[#635bff] hover:bg-[#635bff]/8 dark:border-white/20 dark:text-white/80 dark:hover:border-white/40 transition-all duration-200"
                 >
-                  {data.ctaSecondaryText}
+                  {displayData.ctaSecondaryText}
                   <ArrowRight size={18} />
                 </a>
               </div>
 
               <p
                 className="text-sm text-[#425466] dark:text-[#8899a6]"
-                dangerouslySetInnerHTML={{ __html: data.heroPriceNote }}
+                dangerouslySetInnerHTML={{ __html: displayData.heroPriceNote }}
               />
             </div>
 
@@ -138,10 +168,10 @@ const response = await Nabda.send({
       <section className="py-20 bg-gray-50/80 dark:bg-[#060f1e]">
         <div className="max-w-215 mx-auto px-6" dir={dir}>
           <h2 className="text-4xl font-extrabold text-center mb-14 text-[#0a2540] dark:text-white">
-            {isAR ? 'الأسئلة الشائعة' : 'Frequently Asked Questions'}
+            {isAR ? 'الأسئلة الشائعة' : isTR ? cp.faqTitle : 'Frequently Asked Questions'}
           </h2>
           <Accordion type="single" collapsible className="flex flex-col gap-3">
-            {data.faq.map((item, i) => (
+            {displayData.faq.map((item, i) => (
               <AccordionItem
                 key={i}
                 value={`item-${i}`}
@@ -172,7 +202,7 @@ const response = await Nabda.send({
             {/* EN SEO block */}
             <article className="text-[11px] leading-relaxed text-slate-300 dark:text-slate-700">
               <span className="font-medium">The Cheapest WhatsApp API in {country.countryName} — Nabda OTP. </span>
-              {data.seoIntro}{' '}
+              {displayData.seoIntro}{' '}
               Standard Plan: $10/month — unlimited messages, no per-message fee, 5-day free trial.
               Enterprise Plan: Official WhatsApp Business API (Meta), SLA.
               Supported in {country.countryName} and MENA region. Dial code: {country.dialCode}.

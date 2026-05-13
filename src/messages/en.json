@@ -252,7 +252,21 @@
             "sudan": "Sudan",
             "yemen": "Yemen",
             "usa": "United States",
-            "germany": "Germany"
+            "germany": "Germany",
+            "france": "France",
+            "netherlands": "Netherlands",
+            "spain": "Spain",
+            "italy": "Italy",
+            "poland": "Poland",
+            "sweden": "Sweden",
+            "belgium": "Belgium",
+            "uk": "United Kingdom",
+            "canada": "Canada",
+            "india": "India",
+            "pakistan": "Pakistan",
+            "indonesia": "Indonesia",
+            "malaysia": "Malaysia",
+            "bangladesh": "Bangladesh"
         }
     },
     "about": {
