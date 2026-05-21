@@ -8,6 +8,7 @@ import Pricing  from '@/components/home/Pricing';
 import FAQ      from '@/components/home/FAQ';
 import CTA      from '@/components/home/CTA';
 import Payment  from '@/components/home/Payment';
+import OfficialComingSoon from '@/components/home/OfficialComingSoon';
  
 const BASE_URL = 'https://www.nabdaotp.com';
  
@@ -88,6 +89,7 @@ export default async function HomePage() {
       <Partner />
       <Features />
       <Pricing />
+      <OfficialComingSoon/>
       <FAQ />
       <CTA />
       <Payment />

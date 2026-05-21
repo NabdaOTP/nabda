@@ -65,8 +65,8 @@ export default function FAQ() {
   return (
     <section className="
       py-20 md:py-28
-      bg-gray-50/80
-      dark:bg-[#060f1e]
+      bg-linear-to-b from-[#ede9fe]/30 to-white
+        dark:from-[#060f1e] dark:to-[#0a1628]
     ">
       {/* JSON-LD structured data */}
       <script

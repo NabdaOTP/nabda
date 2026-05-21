@@ -255,7 +255,7 @@ await sendPromotionalCampaign({
         descKey="marketingSolution.hero.desc"
         cta1Key="marketingSolution.hero.cta1"
         cta2Key="marketingSolution.hero.cta2"
-        gradient="from-[#ec4899] via-[#d946ef] to-[#a855f7]"
+        gradient="bg-linear-to-br from-white via-[#f5f3ff] to-[#ede9fe] dark:from-[#0a2540] dark:via-[#0d1b2e] dark:to-[#0a1628]"
       />
 
       {/* Stats */}

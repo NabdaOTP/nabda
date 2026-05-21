@@ -12,7 +12,7 @@ import type { Metadata } from 'next';
 const BASE_URL = 'https://www.nabdaotp.com';
 type Props = { params: Promise<{ locale: string }> };
 
-// ── Metadata ──────────────────────────────────────────────
+// Metadata
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { locale } = await params;
   const isAR = locale === 'ar';
@@ -87,7 +87,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   };
 }
 
-// ── JSON-LD ───────────────────────────────────────────────
+// JSON-LD 
 const jsonLd = {
   '@context': 'https://schema.org',
   '@type': 'WebPage',
@@ -101,7 +101,7 @@ const jsonLd = {
   },
 };
 
-// ── Page ──────────────────────────────────────────────────
+// Page 
 export default function AppointmentRemindersPage() {
   // Stats data
   const stats: [
@@ -241,7 +241,7 @@ scheduleReminder(appointment, reminderTime);`;
         descKey="appointmentSolution.hero.desc"
         cta1Key="appointmentSolution.hero.cta1"
         cta2Key="appointmentSolution.hero.cta2"
-        gradient="from-[#f59e0b] via-[#d97706] to-[#b45309]"
+        gradient="bg-linear-to-br from-white via-[#f5f3ff] to-[#ede9fe] dark:from-[#0a2540] dark:via-[#0d1b2e] dark:to-[#0a1628]"
       />
 
       {/* Stats */}

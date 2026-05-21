@@ -12,7 +12,7 @@ import type { Metadata } from 'next';
 const BASE_URL = 'https://www.nabdaotp.com';
 type Props = { params: Promise<{ locale: string }> };
 
-// ── Metadata ──────────────────────────────────────────────
+// Metadata 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { locale } = await params;
   const isAR = locale === 'ar';
@@ -87,7 +87,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   };
 }
 
-// ── JSON-LD ───────────────────────────────────────────────
+// JSON-LD 
 const jsonLd = {
   '@context': 'https://schema.org',
   '@type': 'WebPage',
@@ -101,7 +101,7 @@ const jsonLd = {
   },
 };
 
-// ── Page ──────────────────────────────────────────────────
+// Page
 export default function AccountSecurityPage() {
   // Stats data
   const stats: [
@@ -244,7 +244,7 @@ app.post("/auth/login", async (req, res) => {
         descKey="securitySolution.hero.desc"
         cta1Key="securitySolution.hero.cta1"
         cta2Key="securitySolution.hero.cta2"
-        gradient="from-[#3b82f6] via-[#2563eb] to-[#1d4ed8]"
+        gradient="bg-linear-to-br from-white via-[#f5f3ff] to-[#ede9fe] dark:from-[#0a2540] dark:via-[#0d1b2e] dark:to-[#0a1628]"
       />
 
       {/* Stats */}

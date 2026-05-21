@@ -15,17 +15,17 @@
     },
     "hero": {
         "badge": "En güvenilir WhatsApp doğrulama platformu",
-        "title": "Türkiye ve MENA Bölgesi'nin En Ucuz WhatsApp Gateway'i.",
-        "titleEg": "Türkiye ve MENA Bölgesi'nin En Ucuz WhatsApp Gateway'i.",
-        "subtitle": "Standart veya Resmi API ile WhatsApp Ağ Geçidimiz üzerinden sınırsız OTP gönderin. Geliştiriciler için en uygun fiyatlı ve en güvenilir API çözümü. Doğrudan entegrasyon ve en uygun fiyatlandırma.",
+        "title": "Irak, Suriye ve MENA Bölgesi'ndeki En Ucuz ve İlk WhatsApp Gateway.",
+        "titleEg": "Mısır ve MENA Bölgesi'ndeki En Ucuz ve İlk WhatsApp Gateway.",
+        "subtitle": "WhatsApp Gateway'imiz üzerinden sınırsız OTP gönderin — Standard veya Official API ile. Geliştiriciler için en uygun fiyatlı ve en güvenilir API çözümü. En ekonomik fiyatlarla doğrudan entegrasyon.",
         "cta": {
             "primary": "Ücretsiz Denemeyi Başlat",
             "secondary": "Dokümantasyonu Görüntüle"
         },
-        "price": "Sadece <strong>aylık 10$</strong> ile başlayın — Mesaj başına ücret yok"
+        "price": "Sadece <strong>10$/ay</strong> başlangıç fiyatıyla — Mesaj başına ücret yok"
     },
     "code": {
-        "comment1": "// Türkiye için OTP gönderimi (+90)",
+        "comment1": "// Nabda Gateway üzerinden OTP gönderme",
         "message": "\"Kodunuz: 847291\"",
         "comment2": "// ✓ Anında teslim edildi"
     },
@@ -145,21 +145,21 @@
         }
     },
     "faq": {
-        "title": "Sık Sorulan Sorular",
-        "q1": "2026 yılında Türkiye'de en ucuz WhatsApp API hangisidir?",
-        "a1": "Nabda OTP, Türkiye'de en uygun fiyatlı WhatsApp API çözümlerinden biridir. Aylık sadece 10$ karşılığında mesaj başına ücret olmadan sınırsız mesaj gönderimi sunar — bu da onu Twilio veya UltraMsg gibi alternatiflere göre %90'a kadar daha ucuz yapar.",
-        "q2": "Nabda OTP Türkiye'de nasıl çalışır?",
-        "a2": "Nabda OTP bir WhatsApp Gateway API sağlar. Bir instance oluşturursunuz, WhatsApp numaranızı QR kod ile bağlarsınız ve Bearer token alırsınız. Ardından REST API üzerinden kolayca mesaj gönderirsiniz. Kurulum genelde 2 dakikadan kısa sürer.",
-        "q3": "Nabda OTP Türkiye'de Twilio'dan daha mı iyi?",
-        "a3": "Çoğu kullanım için evet. Nabda OTP sabit aylık ücret ile sınırsız mesaj sunarken, Twilio mesaj başına ücret alır ve şablon onayı gerektirir. Bu da Nabda OTP'yi Türkiye'deki geliştiriciler ve işletmeler için daha hızlı ve uygun maliyetli yapar.",
-        "q4": "Türkiye'de Nabda OTP kullanmak için Meta onayı gerekir mi?",
-        "a4": "Hayır. Nabda OTP resmi olmayan bir WhatsApp Gateway olduğu için Meta işletme doğrulaması veya şablon onayı gerekmez. Hesap oluşturduktan hemen sonra OTP mesajları göndermeye başlayabilirsiniz.",
-        "q5": "Aylık 10$ plana Türkiye için neler dahildir?",
-        "a5": "Standart plan şunları içerir: sınırsız WhatsApp mesajı, mesaj başına ücret yok, REST API erişimi, webhook desteği, medya ve doküman gönderimi, 5 gün ücretsiz deneme, öncelikli destek ve istediğiniz zaman iptal.",
-        "q6": "Nabda OTP Türkiye telefon numaralarını (+90) destekliyor mu?",
-        "a6": "Evet. Nabda OTP, Türkiye'deki tüm +90 numaralarını destekler (Turkcell, Vodafone TR, Türk Telekom dahil) ve OTP mesajlarını hızlı ve güvenilir şekilde iletir.",
-        "q7": "Instance ile Bundle arasındaki fark nedir?",
-        "a7": "Instance, tek bir WhatsApp numarasının tek bir API anahtarı ile çalıştığı yapıdır. Bundle ise birden fazla numarayı tek bir API anahtarı altında birleştirir ve mesajları otomatik olarak dağıtarak daha yüksek hız ve güvenilirlik sağlar."
+        "title": "Sıkça sorulan sorular",
+        "q1": "MENA bölgesi için en ucuz WhatsApp API hangisidir?",
+        "a1": "Nabda OTP; MENA, Irak, Suriye ve Türkiye için en uygun fiyatlı WhatsApp API çözümüdür. Mesaj başına ücret olmadan aylık sabit 10$ ile sınırsız mesaj sunar — bu da Twilio veya UltraMsg gibi alternatiflerden %90’a kadar daha ucuz olmasını sağlar.",
+        "q2": "Nabda OTP nasıl çalışır?",
+        "a2": "Nabda OTP bir WhatsApp Gateway API sağlar. Bir instance oluşturur, WhatsApp numaranızı bağlamak için QR kodu bir kez tarar ve bir Bearer token alırsınız. Daha sonra /api/v1/messages/send adresine basit bir REST API isteği göndererek mesaj yollarsınız. Kurulum 2 dakikadan kısa sürer.",
+        "q3": "Nabda OTP, Irak ve Suriye için Twilio’dan daha mı iyi?",
+        "a3": "Evet. Nabda OTP özellikle Irak (+964) ve Suriye (+963) için geliştirilmiştir. Twilio mesaj başına ücret alırken ve Meta template onayı gerektirirken, Nabda OTP sabit aylık ücret sunar, template onayı gerektirmez ve OTP mesajlarını Irak ve Suriye’de 3 saniyeden kısa sürede teslim eder.",
+        "q4": "Nabda OTP kullanmak için Meta onayı gerekiyor mu?",
+        "a4": "Hayır. Nabda OTP bir WhatsApp Gateway'dir (Official API değildir), bu nedenle Meta işletme doğrulaması veya template onayı gerekmez. Bir instance oluşturduktan hemen sonra düz metin OTP göndermeye başlayabilirsiniz.",
+        "q5": "10$/ay planına neler dahil?",
+        "a5": "10$/ay Standard planı şunları içerir: sınırsız WhatsApp mesajı, mesaj başına ücret yok, REST API erişimi, mesaj almak için webhook desteği, medya ve belge gönderimi, 5 günlük ücretsiz deneme, öncelikli destek ve istediğiniz zaman iptal etme seçeneği.",
+        "q6": "Nabda OTP Suriye ve Irak'ta çalışıyor mu?",
+        "a6": "Evet. Nabda OTP özellikle Irak (+964) ve Suriye (+963) telefon numaraları için E.164 formatında optimize edilmiştir. Ayrıca Mısır, Suudi Arabistan, BAE, Ürdün, Kuveyt ve Türkiye dahil tüm diğer MENA ülkelerini destekler.",
+        "q7": "Nabda OTP'de Instance ile Bundle arasındaki fark nedir?",
+        "a7": "Bir Instance, kendi API key’ine sahip tek bir WhatsApp numarasıdır — çoğu geliştirici ve KOBİ için idealdir. Bundle ise birden fazla WhatsApp numarasını (Slots) otomatik mesaj dağıtımıyla tek bir API key altında toplar. Bundle'lar, fault tolerance ve numaralar arasında yük dağıtımı gerektiren yüksek hacimli kullanım senaryoları için tasarlanmıştır."
     },
     "cta": {
         "title": "İlk mesajınızı göndermeye hazır mısınız?",
@@ -1921,6 +1921,33 @@
             "a5": "Evet, metin, resim, video ve PDF belgeler desteklenir.",
             "q6": "Standard ve Official API arasındaki fark nedir?",
             "a6": "Standard (10$/ay sınırsız) çoğu işletme için uygundur. Official, Green Badge gerektiren büyük şirketler içindir."
+        }
+    },
+    "official": {
+        "badge": "Yakında",
+        "title": "Göndermenin İki Yolu, Size Uygun Olanı Seçin",
+        "subtitle": "Gateway'imiz bugün kullanımda. Meta onaylı Resmi API yakında geliyor, Green Badge ihtiyacı olan işletmeler için ideal.",
+        "gateway": {
+            "name": "Gateway (Şu An Mevcut)",
+            "desc": "Kendi WhatsApp numaranızı bağlayın. Meta onayı gerekmez. Sınırsız OTP ve bildirim gönderin.",
+            "f1": "Sınırsız mesaj",
+            "f2": "Şablon onayı gerekmiyor",
+            "f3": "5 günlük ücretsiz deneme"
+        },
+        "official": {
+            "badge": "Yakında",
+            "name": "Resmi API",
+            "desc": "Meta onaylı Business API. Daha yüksek limitler, doğrulanmış işletme profili ve kurumsal şablon desteği.",
+            "price": "Bizimle iletişime geçin",
+            "priceNote": "fiyatlandırma için",
+            "f1": "Meta onaylı numara",
+            "f2": "Daha yüksek mesaj limitleri",
+            "f3": "Özel kurulum ve destek"
+        },
+        "notify": {
+            "title": "Resmi API yayınlandığında haberdar olun",
+            "desc": "İlk erişenlerden biri olun, WhatsApp üzerinden doğrudan sizinle iletişime geçeceğiz.",
+            "cta": "WhatsApp ile bildir"
         }
     }
 }

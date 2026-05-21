@@ -45,7 +45,7 @@ export default function Features() {
       id="features"
       className="
         py-20 md:py-28
-        bg-linear-to-b from-white to-gray-50/80
+        bg-linear-to-b from-[#ede9fe]/30 to-white
         dark:from-[#060f1e] dark:to-[#0a1628]
       "
     >

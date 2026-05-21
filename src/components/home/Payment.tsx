@@ -42,9 +42,9 @@ export default function Payment() {
 
   return (
     <section className="
-      py-12 border-t
-      bg-white border-gray-100
-      dark:bg-[#060f1e] dark:border-white/8
+      py-18
+      bg-linear-to-b from-[#ede9fe]/30 to-white
+      dark:from-[#060f1e] dark:to-[#0a1628]
     ">
       <div className="max-w-300 mx-auto px-6">
 

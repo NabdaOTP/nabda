@@ -8,6 +8,7 @@ import type { CountryData } from '@/lib/country-data';
 import trMessages from '@/messages/tr.json';
 import { ArrowRight, Rocket } from 'lucide-react';
 import Features from '../home/Features';
+import OfficialComingSoon from '../home/OfficialComingSoon';
 
 interface Props {
   country:  CountryData;
@@ -65,7 +66,7 @@ export default function CountryPageTemplate({ country, locale, phoneExample }: P
     })),
   };
 
-  // JSON-LD — LocalBusiness / WebPage
+  // JSON-LD — WebPage
   const webPageSchema = {
     '@context': 'https://schema.org',
     '@type': 'WebPage',
@@ -76,11 +77,24 @@ export default function CountryPageTemplate({ country, locale, phoneExample }: P
     isPartOf: { '@type': 'WebSite', url: BASE_URL, name: 'Nabda OTP' },
   };
 
+  // JSON-LD — BreadcrumbList
+  const homeUrl   = isAR ? `${BASE_URL}/ar/` : isTR ? `${BASE_URL}/tr/` : `${BASE_URL}/`;
+  const homeName  = isAR ? 'الرئيسية' : isTR ? 'Ana Sayfa' : 'Home';
+  const breadcrumbSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      { '@type': 'ListItem', position: 1, name: homeName,            item: homeUrl      },
+      { '@type': 'ListItem', position: 2, name: country.countryName, item: canonicalUrl },
+    ],
+  };
+
   return (
     <>
       {/* Structured Data */}
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(webPageSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
 
       {/* Hero */}
       <section className="relative overflow-hidden py-20 md:py-28 bg-linear-to-br from-white via-[#f5f3ff] to-[#ede9fe] dark:bg-none dark:bg-[#0a2540]">
@@ -164,6 +178,7 @@ const response = await Nabda.send({
       <Partner />
       <Features/>
       <Pricing />
+      <OfficialComingSoon />
       {/* FAQ (country-specific) */}
       <section className="py-20 bg-gray-50/80 dark:bg-[#060f1e]">
         <div className="max-w-215 mx-auto px-6" dir={dir}>
@@ -192,32 +207,6 @@ const response = await Nabda.send({
       <CTA />
       <Payment />
 
-      {/* SEO Content (visually subtle, crawlable) */}
-      <section
-        aria-label={`Extended product summary for ${country.countryName}`}
-        className="sr-only"
-      >
-        <div className="max-w-5xl mx-auto px-6">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            {/* EN SEO block */}
-            <article className="text-[11px] leading-relaxed text-slate-300 dark:text-slate-700">
-              <span className="font-medium">The Cheapest WhatsApp API in {country.countryName} — Nabda OTP. </span>
-              {displayData.seoIntro}{' '}
-              Standard Plan: $10/month — unlimited messages, no per-message fee, 5-day free trial.
-              Enterprise Plan: Official WhatsApp Business API (Meta), SLA.
-              Supported in {country.countryName} and MENA region. Dial code: {country.dialCode}.
-              Unlike Twilio which charges per message, Nabda OTP offers unlimited messaging at a flat rate. Save up to 90% on WhatsApp messaging costs in {country.countryName}.
-            </article>
-
-            {/* AR SEO block */}
-            <article lang="ar" dir="rtl" className="text-[11px] leading-relaxed text-slate-300 dark:text-slate-700">
-              <span className="font-medium">أرخص خدمة واتساب API في {country.countryName} - نبضة OTP. </span>
-              {country.ar.seoIntro}{' '}
-              وفر حتى 90% من تكاليف الرسائل مقارنة بتويليو وغيره من المنافسين. رسائل غير محدودة بـ 10 دولار شهرياً فقط.
-            </article>
-          </div>
-        </div>
-      </section>
     </>
   );
 }

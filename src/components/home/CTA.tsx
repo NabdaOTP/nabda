@@ -5,7 +5,7 @@ export default function CTA() {
   const t = useTranslations('cta');
 
   return (
-    <section className="relative overflow-hidden py-15 md:py-15">
+    <section className="relative overflow-hidden py-20 md:py-28">
 
       {/* ── Background ── */}
       <div className="absolute inset-0 bg-linear-to-br from-[#635bff] via-[#4b44cc] to-deep-navy dark:from-[#1a1040] dark:via-[#2d1b69] dark:to-[#04080f]" />

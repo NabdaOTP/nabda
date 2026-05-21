@@ -234,6 +234,7 @@ if (response.ok) {
                 descKey="otpSolution.hero.desc"
                 cta1Key="otpSolution.hero.cta1"
                 cta2Key="otpSolution.hero.cta2"
+                gradient="bg-linear-to-br from-white via-[#f5f3ff] to-[#ede9fe] dark:from-[#0a2540] dark:via-[#0d1b2e] dark:to-[#0a1628]"
             />
 
             {/* Stats */}

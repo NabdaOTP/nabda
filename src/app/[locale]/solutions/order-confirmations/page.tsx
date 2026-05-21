@@ -238,7 +238,7 @@ await sendOrderUpdate(order, "delivered");`;
                 descKey="orderSolution.hero.desc"
                 cta1Key="orderSolution.hero.cta1"
                 cta2Key="orderSolution.hero.cta2"
-                gradient="from-[#00d4aa] via-[#00a88a] to-[#008f73]"
+                gradient="bg-linear-to-br from-white via-[#f5f3ff] to-[#ede9fe] dark:from-[#0a2540] dark:via-[#0d1b2e] dark:to-[#0a1628]"
             />
 
             {/* Stats */}

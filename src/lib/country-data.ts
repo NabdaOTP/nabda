@@ -50,8 +50,8 @@ export interface CountryData {
 }
 
 export const COUNTRIES_DATA: Record<string, CountryData> = {
-  eg: {
-    countryName: 'Egypt', countryCode: 'EG', slug: 'eg',
+  egypt: {
+    countryName: 'Egypt', countryCode: 'EG', slug: 'egypt',
     locale: 'ar_EG', language: 'en', dir: 'ltr',
     dialCode: '+20', geoPosition: '26.8206;30.8025',
     metaTitle: 'WhatsApp API Egypt | أرخص WhatsApp OTP API في مصر $10/شهر غير محدود | Nabda OTP',
@@ -63,7 +63,7 @@ export const COUNTRIES_DATA: Record<string, CountryData> = {
     heroPriceNote: 'Starting at just <strong>$10/month</strong> — No per-message fees',
     ctaPrimaryText: 'Start Free Trial', ctaSecondaryText: 'View Documentation',
     seoIntro: 'Nabda OTP helps businesses in Egypt ship WhatsApp OTP and transactional messaging quickly with clean API workflows and regional support.',
-    trustPoints: ['65+ Businesses Trust Us', '4500+ Messages Sent', '99.99% Uptime Guaranteed', 'Most Reliable in MENA'],
+    trustPoints: ['65+ Businesses Trust Us', '4K+ Messages Sent', '99.99% Uptime Guaranteed', 'Most Reliable in MENA'],
     faq: [
       { question: 'What is the cheapest WhatsApp API in Egypt in 2026?', answer: 'Nabda OTP at only $10/month for unlimited messages with no per-message fees — up to 90% cheaper than Twilio or UltraMsg.' },
       { question: 'Does Nabda OTP support Egyptian phone numbers +20?', answer: 'Yes, all Egyptian numbers (+20) across Vodafone, Orange, Etisalat, and WE.' },
@@ -93,8 +93,8 @@ export const COUNTRIES_DATA: Record<string, CountryData> = {
       ],
     },
   },
-  iq: {
-    countryName: 'Iraq', countryCode: 'IQ', slug: 'iq',
+  iraq: {
+    countryName: 'Iraq', countryCode: 'IQ', slug: 'iraq',
     locale: 'ar_IQ', language: 'en', dir: 'ltr',
     dialCode: '+964', geoPosition: '33.2232;43.6793',
     metaTitle: 'WhatsApp API Iraq | أرخص WhatsApp OTP API في العراق $10/شهر غير محدود | Nabda OTP',
@@ -136,8 +136,8 @@ export const COUNTRIES_DATA: Record<string, CountryData> = {
       ],
     },
   },
-  sa: {
-    countryName: 'Saudi Arabia', countryCode: 'SA', slug: 'sa',
+  'saudi-arabia': {
+    countryName: 'Saudi Arabia', countryCode: 'SA', slug: 'saudi-arabia',
     locale: 'ar_SA', language: 'en', dir: 'ltr',
     dialCode: '+966', geoPosition: '23.8859;45.0792',
     metaTitle: 'WhatsApp API Saudi Arabia | أرخص WhatsApp OTP API في السعودية $10/شهر | Nabda OTP',
@@ -179,8 +179,8 @@ export const COUNTRIES_DATA: Record<string, CountryData> = {
       ],
     },
   },
-  ae: {
-    countryName: "United Arab Emirates", countryCode: "AE", slug: "ae",
+  'united-arab-emirates': {
+    countryName: "United Arab Emirates", countryCode: "AE", slug: "united-arab-emirates",
     locale: "ar_AE", language: "en", dir: "ltr",
     dialCode: "+971", geoPosition: "23.4241;53.8478",
     metaTitle: "WhatsApp API UAE | أرخص WhatsApp OTP API في الإمارات $10/شهر غير محدود | Nabda OTP",
@@ -219,8 +219,8 @@ export const COUNTRIES_DATA: Record<string, CountryData> = {
       ],
     },
   },
-  qa: {
-    countryName: "Qatar", countryCode: "QA", slug: "qa",
+  qatar: {
+    countryName: "Qatar", countryCode: "QA", slug: "qatar",
     locale: "ar_QA", language: "en", dir: "ltr",
     dialCode: "+974", geoPosition: "25.3548;51.1839",
     metaTitle: "WhatsApp API Qatar | أرخص WhatsApp OTP API في قطر $10/شهر غير محدود | Nabda OTP",
@@ -259,8 +259,8 @@ export const COUNTRIES_DATA: Record<string, CountryData> = {
       ],
     },
   },
-  jo: {
-    countryName: "Jordan", countryCode: "JO", slug: "jo",
+  jordan: {
+    countryName: "Jordan", countryCode: "JO", slug: "jordan",
     locale: "ar_JO", language: "en", dir: "ltr",
     dialCode: "+962", geoPosition: "30.5852;36.2384",
     metaTitle: "WhatsApp API Jordan | أرخص WhatsApp OTP API في الأردن $10/شهر غير محدود | Nabda OTP",
@@ -299,8 +299,8 @@ export const COUNTRIES_DATA: Record<string, CountryData> = {
       ],
     },
   },
-  sy: {
-    countryName: "Syria", countryCode: "SY", slug: "sy",
+  syria: {
+    countryName: "Syria", countryCode: "SY", slug: "syria",
     locale: "ar_SY", language: "en", dir: "ltr",
     dialCode: "+963", geoPosition: "34.8021;38.9968",
     metaTitle: "WhatsApp API Syria | أرخص WhatsApp OTP API في سوريا $10/شهر غير محدود | Nabda OTP",
@@ -339,8 +339,8 @@ export const COUNTRIES_DATA: Record<string, CountryData> = {
       ],
     },
   },
-  kw: {
-    countryName: "Kuwait", countryCode: "KW", slug: "kw",
+  kuwait: {
+    countryName: "Kuwait", countryCode: "KW", slug: "kuwait",
     locale: "ar_KW", language: "en", dir: "ltr",
     dialCode: "+965", geoPosition: "29.3117;47.4818",
     metaTitle: "WhatsApp API Kuwait | أرخص WhatsApp OTP API في الكويت $10/شهر غير محدود | Nabda OTP",
@@ -379,8 +379,8 @@ export const COUNTRIES_DATA: Record<string, CountryData> = {
       ],
     },
   },
-  bh: {
-    countryName: "Bahrain", countryCode: "BH", slug: "bh",
+  bahrain: {
+    countryName: "Bahrain", countryCode: "BH", slug: "bahrain",
     locale: "ar_BH", language: "en", dir: "ltr",
     dialCode: "+973", geoPosition: "25.9304;50.6378",
     metaTitle: "WhatsApp API Bahrain | أرخص WhatsApp OTP API في البحرين $10/شهر غير محدود | Nabda OTP",
@@ -419,8 +419,8 @@ export const COUNTRIES_DATA: Record<string, CountryData> = {
       ],
     },
   },
-  om: {
-    countryName: "Oman", countryCode: "OM", slug: "om",
+  oman: {
+    countryName: "Oman", countryCode: "OM", slug: "oman",
     locale: "ar_OM", language: "en", dir: "ltr",
     dialCode: "+968", geoPosition: "21.4735;55.9754",
     metaTitle: "WhatsApp API Oman | أرخص WhatsApp OTP API في عمان $10/شهر غير محدود | Nabda OTP",
@@ -459,8 +459,8 @@ export const COUNTRIES_DATA: Record<string, CountryData> = {
       ],
     },
   },
-  lb: {
-    countryName: "Lebanon", countryCode: "LB", slug: "lb",
+  lebanon: {
+    countryName: "Lebanon", countryCode: "LB", slug: "lebanon",
     locale: "ar_LB", language: "en", dir: "ltr",
     dialCode: "+961", geoPosition: "33.8547;35.8623",
     metaTitle: "WhatsApp API Lebanon | أرخص WhatsApp OTP API في لبنان $10/شهر غير محدود | Nabda OTP",
@@ -499,8 +499,8 @@ export const COUNTRIES_DATA: Record<string, CountryData> = {
       ],
     },
   },
-  ma: {
-    countryName: "Morocco", countryCode: "MA", slug: "ma",
+  morocco: {
+    countryName: "Morocco", countryCode: "MA", slug: "morocco",
     locale: "ar_MA", language: "en", dir: "ltr",
     dialCode: "+212", geoPosition: "31.7917;-7.0926",
     metaTitle: "WhatsApp API Morocco | أرخص WhatsApp OTP API في المغرب $10/شهر غير محدود | Nabda OTP",
@@ -539,8 +539,8 @@ export const COUNTRIES_DATA: Record<string, CountryData> = {
       ],
     },
   },
-  dz: {
-    countryName: "Algeria", countryCode: "DZ", slug: "dz",
+  algeria: {
+    countryName: "Algeria", countryCode: "DZ", slug: "algeria",
     locale: "ar_DZ", language: "en", dir: "ltr",
     dialCode: "+213", geoPosition: "28.0339;1.6596",
     metaTitle: "WhatsApp API Algeria | أرخص WhatsApp OTP API في الجزائر $10/شهر غير محدود | Nabda OTP",
@@ -579,8 +579,8 @@ export const COUNTRIES_DATA: Record<string, CountryData> = {
       ],
     },
   },
-  tn: {
-    countryName: "Tunisia", countryCode: "TN", slug: "tn",
+  tunisia: {
+    countryName: "Tunisia", countryCode: "TN", slug: "tunisia",
     locale: "ar_TN", language: "en", dir: "ltr",
     dialCode: "+216", geoPosition: "33.8869;9.5375",
     metaTitle: "WhatsApp API Tunisia | أرخص WhatsApp OTP API في تونس $10/شهر غير محدود | Nabda OTP",
@@ -619,8 +619,8 @@ export const COUNTRIES_DATA: Record<string, CountryData> = {
       ],
     },
   },
-  ly: {
-    countryName: "Libya", countryCode: "LY", slug: "ly",
+  libya: {
+    countryName: "Libya", countryCode: "LY", slug: "libya",
     locale: "ar_LY", language: "en", dir: "ltr",
     dialCode: "+218", geoPosition: "26.3351;17.2283",
     metaTitle: "WhatsApp API Libya | أرخص WhatsApp OTP API في ليبيا $10/شهر غير محدود | Nabda OTP",
@@ -659,8 +659,8 @@ export const COUNTRIES_DATA: Record<string, CountryData> = {
       ],
     },
   },
-  ps: {
-    countryName: "Palestine", countryCode: "PS", slug: "ps",
+  palestine: {
+    countryName: "Palestine", countryCode: "PS", slug: "palestine",
     locale: "ar_PS", language: "en", dir: "ltr",
     dialCode: "+970", geoPosition: "31.9522;35.2332",
     metaTitle: "WhatsApp API Palestine | أرخص WhatsApp OTP API في فلسطين $10/شهر غير محدود | Nabda OTP",
@@ -699,8 +699,8 @@ export const COUNTRIES_DATA: Record<string, CountryData> = {
       ],
     },
   },
-  sd: {
-    countryName: "Sudan", countryCode: "SD", slug: "sd",
+  sudan: {
+    countryName: "Sudan", countryCode: "SD", slug: "sudan",
     locale: "ar_SD", language: "en", dir: "ltr",
     dialCode: "+249", geoPosition: "12.8628;30.2176",
     metaTitle: "WhatsApp API Sudan | أرخص WhatsApp OTP API في السودان $10/شهر غير محدود | Nabda OTP",
@@ -739,8 +739,8 @@ export const COUNTRIES_DATA: Record<string, CountryData> = {
       ],
     },
   },
-  ye: {
-    countryName: "Yemen", countryCode: "YE", slug: "ye",
+  yemen: {
+    countryName: "Yemen", countryCode: "YE", slug: "yemen",
     locale: "ar_YE", language: "en", dir: "ltr",
     dialCode: "+967", geoPosition: "15.5527;48.5164",
     metaTitle: "WhatsApp API Yemen | أرخص WhatsApp OTP API في اليمن $10/شهر غير محدود | Nabda OTP",
@@ -779,8 +779,8 @@ export const COUNTRIES_DATA: Record<string, CountryData> = {
       ],
     },
   },
-  us: {
-    countryName: "United States", countryCode: "US", slug: "us",
+  usa: {
+    countryName: "United States", countryCode: "US", slug: "usa",
     locale: "en_US", language: "en", dir: "ltr",
     dialCode: "+1", geoPosition: "37.0902;-95.7129",
     metaTitle: "WhatsApp API USA | Cheap WhatsApp OTP API in United States $10/month Unlimited | Nabda OTP",
@@ -815,8 +815,8 @@ export const COUNTRIES_DATA: Record<string, CountryData> = {
       ],
     },
   },
-  de: {
-    countryName: "Germany", countryCode: "DE", slug: "de",
+  germany: {
+    countryName: "Germany", countryCode: "DE", slug: "germany",
     locale: "de_DE", language: "en", dir: "ltr",
     dialCode: "+49", geoPosition: "51.1657;10.4515",
     metaTitle: "WhatsApp API Germany | Günstiger WhatsApp OTP API in Deutschland $10/Monat | Nabda OTP",
@@ -851,8 +851,8 @@ export const COUNTRIES_DATA: Record<string, CountryData> = {
       ],
     },
   },
-  fr: {
-    countryName: "France", countryCode: "FR", slug: "fr",
+  france: {
+    countryName: "France", countryCode: "FR", slug: "france",
     locale: "en_FR", language: "en", dir: "ltr",
     dialCode: "+33", geoPosition: "46.2276;2.2137",
     metaTitle: "WhatsApp API France | Cheap WhatsApp OTP $10/month Unlimited | Nabda OTP",
@@ -894,8 +894,8 @@ export const COUNTRIES_DATA: Record<string, CountryData> = {
       ],
     },
   },
-  nl: {
-    countryName: "Netherlands", countryCode: "NL", slug: "nl",
+  netherlands: {
+    countryName: "Netherlands", countryCode: "NL", slug: "netherlands",
     locale: "en_NL", language: "en", dir: "ltr",
     dialCode: "+31", geoPosition: "52.1326;5.2913",
     metaTitle: "WhatsApp API Netherlands | Cheap WhatsApp OTP $10/month Unlimited | Nabda OTP",
@@ -937,8 +937,8 @@ export const COUNTRIES_DATA: Record<string, CountryData> = {
       ],
     },
   },
-  es: {
-    countryName: "Spain", countryCode: "ES", slug: "es",
+  spain: {
+    countryName: "Spain", countryCode: "ES", slug: "spain",
     locale: "en_ES", language: "en", dir: "ltr",
     dialCode: "+34", geoPosition: "40.4637;-3.7492",
     metaTitle: "WhatsApp API Spain | Cheap WhatsApp OTP $10/month Unlimited | Nabda OTP",
@@ -980,8 +980,8 @@ export const COUNTRIES_DATA: Record<string, CountryData> = {
       ],
     },
   },
-  it: {
-    countryName: "Italy", countryCode: "IT", slug: "it",
+  italy: {
+    countryName: "Italy", countryCode: "IT", slug: "italy",
     locale: "en_IT", language: "en", dir: "ltr",
     dialCode: "+39", geoPosition: "41.8719;12.5674",
     metaTitle: "WhatsApp API Italy | Cheap WhatsApp OTP $10/month Unlimited | Nabda OTP",
@@ -1023,8 +1023,8 @@ export const COUNTRIES_DATA: Record<string, CountryData> = {
       ],
     },
   },
-  pl: {
-    countryName: "Poland", countryCode: "PL", slug: "pl",
+  poland: {
+    countryName: "Poland", countryCode: "PL", slug: "poland",
     locale: "en_PL", language: "en", dir: "ltr",
     dialCode: "+48", geoPosition: "51.9194;19.1451",
     metaTitle: "WhatsApp API Poland | Cheap WhatsApp OTP $10/month Unlimited | Nabda OTP",
@@ -1066,8 +1066,8 @@ export const COUNTRIES_DATA: Record<string, CountryData> = {
       ],
     },
   },
-  se: {
-    countryName: "Sweden", countryCode: "SE", slug: "se",
+  sweden: {
+    countryName: "Sweden", countryCode: "SE", slug: "sweden",
     locale: "en_SE", language: "en", dir: "ltr",
     dialCode: "+46", geoPosition: "60.1282;18.6435",
     metaTitle: "WhatsApp API Sweden | Cheap WhatsApp OTP $10/month Unlimited | Nabda OTP",
@@ -1109,8 +1109,8 @@ export const COUNTRIES_DATA: Record<string, CountryData> = {
       ],
     },
   },
-  be: {
-    countryName: "Belgium", countryCode: "BE", slug: "be",
+  belgium: {
+    countryName: "Belgium", countryCode: "BE", slug: "belgium",
     locale: "en_BE", language: "en", dir: "ltr",
     dialCode: "+32", geoPosition: "50.5039;4.4699",
     metaTitle: "WhatsApp API Belgium | Cheap WhatsApp OTP $10/month Unlimited | Nabda OTP",
@@ -1152,8 +1152,8 @@ export const COUNTRIES_DATA: Record<string, CountryData> = {
       ],
     },
   },
-  gb: {
-    countryName: "United Kingdom", countryCode: "GB", slug: "gb",
+  'united-kingdom': {
+    countryName: "United Kingdom", countryCode: "GB", slug: "united-kingdom",
     locale: "en_GB", language: "en", dir: "ltr",
     dialCode: "+44", geoPosition: "55.3781;-3.4360",
     metaTitle: "WhatsApp API UK | Cheap WhatsApp OTP $10/month Unlimited | Nabda OTP",
@@ -1195,8 +1195,8 @@ export const COUNTRIES_DATA: Record<string, CountryData> = {
       ],
     },
   },
-  ca: {
-    countryName: "Canada", countryCode: "CA", slug: "ca",
+  canada: {
+    countryName: "Canada", countryCode: "CA", slug: "canada",
     locale: "en_CA", language: "en", dir: "ltr",
     dialCode: "+1", geoPosition: "56.1304;-106.3468",
     metaTitle: "WhatsApp API Canada | Cheap WhatsApp OTP $10/month Unlimited | Nabda OTP",
@@ -1238,8 +1238,8 @@ export const COUNTRIES_DATA: Record<string, CountryData> = {
       ],
     },
   },
-  in: {
-    countryName: "India", countryCode: "IN", slug: "in",
+  india: {
+    countryName: "India", countryCode: "IN", slug: "india",
     locale: "en_IN", language: "en", dir: "ltr",
     dialCode: "+91", geoPosition: "20.5937;78.9629",
     metaTitle: "WhatsApp API India | Cheap WhatsApp OTP $10/month Unlimited | Nabda OTP",
@@ -1281,8 +1281,8 @@ export const COUNTRIES_DATA: Record<string, CountryData> = {
       ],
     },
   },
-  pk: {
-    countryName: "Pakistan", countryCode: "PK", slug: "pk",
+  pakistan: {
+    countryName: "Pakistan", countryCode: "PK", slug: "pakistan",
     locale: "en_PK", language: "en", dir: "ltr",
     dialCode: "+92", geoPosition: "30.3753;69.3451",
     metaTitle: "WhatsApp API Pakistan | Cheap WhatsApp OTP $10/month Unlimited | Nabda OTP",
@@ -1324,8 +1324,8 @@ export const COUNTRIES_DATA: Record<string, CountryData> = {
       ],
     },
   },
-  id: {
-    countryName: "Indonesia", countryCode: "ID", slug: "id",
+  indonesia: {
+    countryName: "Indonesia", countryCode: "ID", slug: "indonesia",
     locale: "en_ID", language: "en", dir: "ltr",
     dialCode: "+62", geoPosition: "-0.7893;113.9213",
     metaTitle: "WhatsApp API Indonesia | Cheap WhatsApp OTP $10/month Unlimited | Nabda OTP",
@@ -1367,8 +1367,8 @@ export const COUNTRIES_DATA: Record<string, CountryData> = {
       ],
     },
   },
-  my: {
-    countryName: "Malaysia", countryCode: "MY", slug: "my",
+  malaysia: {
+    countryName: "Malaysia", countryCode: "MY", slug: "malaysia",
     locale: "en_MY", language: "en", dir: "ltr",
     dialCode: "+60", geoPosition: "4.2105;101.9758",
     metaTitle: "WhatsApp API Malaysia | Cheap WhatsApp OTP $10/month Unlimited | Nabda OTP",
@@ -1410,8 +1410,8 @@ export const COUNTRIES_DATA: Record<string, CountryData> = {
       ],
     },
   },
-  bd: {
-    countryName: "Bangladesh", countryCode: "BD", slug: "bd",
+  bangladesh: {
+    countryName: "Bangladesh", countryCode: "BD", slug: "bangladesh",
     locale: "en_BD", language: "en", dir: "ltr",
     dialCode: "+880", geoPosition: "23.6850;90.3563",
     metaTitle: "WhatsApp API Bangladesh | Cheap WhatsApp OTP $10/month Unlimited | Nabda OTP",
@@ -1453,6 +1453,69 @@ export const COUNTRIES_DATA: Record<string, CountryData> = {
       ],
     },
   },
+  turkey: {
+    countryName: 'Turkey', countryCode: 'TR', slug: 'turkey',
+    locale: 'tr_TR', language: 'en', dir: 'ltr',
+    dialCode: '+90', geoPosition: '38.9637;35.2433',
+    metaTitle: 'WhatsApp API Turkey | Cheapest WhatsApp OTP API in Turkey $10/month Unlimited | Nabda OTP',
+    metaDescription: 'Nabda OTP – Cheapest WhatsApp API in Turkey. $10/month unlimited messages, no per-message fees, webhook, 5-day free trial, full Turkish support. Supports +90 numbers.',
+    metaKeywords: 'whatsapp api turkey, whatsapp otp turkey, whatsapp api türkiye, nabda otp turkey, twilio alternative turkey, whatsapp business api turkey, ucuz whatsapp api türkiye',
+    heroBadge: 'The most reliable WhatsApp verification platform in Turkey',
+    heroH1: 'The Cheapest & First WhatsApp Gateway in Turkey & MENA Region.',
+    heroSubtitle: 'Send unlimited OTPs through our WhatsApp Gateway. The most affordable, reliable API for developers and businesses in Turkey.',
+    heroPriceNote: 'Starting at just <strong>$10/month</strong> — No per-message fees',
+    ctaPrimaryText: 'Start Free Trial', ctaSecondaryText: 'View Documentation',
+    seoIntro: 'Nabda OTP helps businesses in Turkey ship WhatsApp OTP and transactional messaging quickly with clean API workflows and strong local delivery.',
+    trustPoints: ['High delivery across Turkish networks', 'Full Turkish & Arabic support', 'No per-message fees', '99.99% Uptime Guaranteed'],
+    faq: [
+      { question: 'What is the cheapest WhatsApp API in Turkey in 2026?', answer: 'Nabda OTP at only $10/month for unlimited messages — no per-message fees. Up to 90% cheaper than Twilio.' },
+      { question: 'Does Nabda OTP support Turkish phone numbers +90?', answer: 'Yes, all Turkish numbers (+90) across Turkcell, Vodafone TR, and Türk Telekom.' },
+      { question: 'Is there a free trial for WhatsApp API in Turkey?', answer: 'Yes, a full 5-day free trial with no credit card required.' },
+      { question: 'Is Nabda OTP better than Twilio in Turkey?', answer: 'Yes — saves up to 90% with unlimited messages and full Turkish support.' },
+      { question: 'Does Nabda OTP support sending images and documents?', answer: 'Yes — text, images, videos, PDF documents and more.' },
+      { question: 'What is the difference between Standard Gateway and Official API?', answer: 'Standard ($10/mo unlimited) suits most developers and SMBs. Official is for large enterprises needing the Green Badge.' },
+    ],
+    ar: {
+      language: 'ar', dir: 'rtl', locale: 'ar_TR',
+      metaTitle: 'WhatsApp API تركيا | أرخص خدمة OTP واتساب في تركيا $10/شهر | Nabda OTP',
+      metaDescription: 'نبضة OTP في تركيا: واتساب API بـ 10 دولار شهرياً مع رسائل غير محدودة، ويبهوك، دعم عربي وتركي، وتجربة مجانية 5 أيام. يدعم أرقام +90.',
+      heroBadge: 'أقوى منصة تحقق عبر واتساب في تركيا',
+      heroH1: 'أرخص بوابة و أول بوابة واتساب في تركيا و منطقة الشرق الأوسط وشمال أفريقيا.',
+      heroSubtitle: 'أرسل عددًا غير محدود من رموز التحقق OTP عبر بوابة واتساب. الحل الأمثل والأكثر موثوقية للمطورين والشركات في تركيا.',
+      heroPriceNote: 'ابدأ من <strong>10$ شهرياً</strong> بدون رسوم لكل رسالة',
+      ctaPrimaryText: 'ابدأ التجربة المجانية', ctaSecondaryText: 'عرض التوثيق',
+      seoIntro: 'نبضة OTP تساعد الشركات في تركيا على إطلاق OTP وإشعارات واتساب بسرعة مع تكامل API واضح.',
+      trustPoints: ['توصيل عالي عبر شبكات تركيا', 'دعم عربي وتركي كامل', 'بدون رسوم لكل رسالة', 'توفر 99.99%'],
+      faq: [
+        { question: 'ما هو أرخص WhatsApp API في تركيا 2026؟', answer: 'نبضة OTP بـ 10 دولار فقط شهرياً مقابل رسائل غير محدودة.' },
+        { question: 'هل Nabda OTP يدعم أرقام الهواتف التركية +90؟', answer: 'نعم، يدعم جميع أرقام تركيا (+90) عبر شبكات Turkcell وVodafone TR وTürk Telekom.' },
+        { question: 'هل يوجد تجربة مجانية في تركيا؟', answer: 'نعم، تجربة مجانية كاملة لمدة 5 أيام بدون بطاقة ائتمان.' },
+        { question: 'هل Nabda OTP بديل جيد لـ Twilio في تركيا؟', answer: 'نعم، يوفر حتى 90% من التكلفة مع رسائل غير محدودة.' },
+        { question: 'هل يدعم إرسال الصور والمستندات؟', answer: 'نعم، يدعم النصوص والصور والفيديوهات ومستندات PDF وغيرها.' },
+        { question: 'ما الفرق بين Standard وOfficial API؟', answer: 'الـ Standard (10$ غير محدود) لمعظم الشركات. الـ Official للشركات الكبرى التي تحتاج Green Badge.' },
+      ],
+    },
+    tr: {
+      language: 'tr', dir: 'ltr', locale: 'tr_TR',
+      metaTitle: "WhatsApp API Türkiye | Türkiye'nin En Ucuz WhatsApp OTP API $10/ay Sınırsız | Nabda OTP",
+      metaDescription: "Nabda OTP – Türkiye'nin en ucuz WhatsApp API'si. Aylık $10 sınırsız mesaj, mesaj başı ücret yok, webhook, 5 günlük ücretsiz deneme, tam Türkçe destek. +90 numaraları destekler.",
+      heroBadge: "Türkiye'nin en güvenilir WhatsApp doğrulama platformu",
+      heroH1: "Türkiye'nin En Ucuz WhatsApp Gateway'i.",
+      heroSubtitle: "WhatsApp Gateway'imiz aracılığıyla sınırsız OTP gönderin. Türkiye'deki geliştiriciler ve işletmeler için en uygun fiyatlı, güvenilir API çözümü.",
+      heroPriceNote: 'Sadece <strong>$10/ay</strong>\'dan başlayan fiyatlarla — Mesaj başı ücret yok',
+      ctaPrimaryText: 'Ücretsiz Denemeyi Başlat', ctaSecondaryText: 'Belgeleri Görüntüle',
+      seoIntro: "Nabda OTP, Türkiye'deki işletmelerin WhatsApp OTP ve işlemsel mesajlaşmayı temiz API entegrasyonu ve güçlü yerel teslimatla hızlıca kullanıma almasına yardımcı olur.",
+      trustPoints: ['Türk ağlarında yüksek teslimat oranı', 'Tam Türkçe ve Arapça destek', 'Mesaj başı ücret yok', '%99,99 Çalışma Süresi Garantisi'],
+      faq: [
+        { question: "2026'da Türkiye'de en ucuz WhatsApp API hangisi?", answer: "Nabda OTP, aylık yalnızca $10 ile sınırsız mesaj sunar — mesaj başı ücret yok. Twilio'ya kıyasla %90'a kadar tasarruf." },
+        { question: 'Nabda OTP Türk telefon numaralarını (+90) destekliyor mu?', answer: 'Evet, Turkcell, Vodafone TR ve Türk Telekom dahil tüm Türk numaralarını (+90) destekler.' },
+        { question: "Türkiye'de WhatsApp API için ücretsiz deneme var mı?", answer: 'Evet, kredi kartı gerekmeden 5 günlük tam ücretsiz deneme.' },
+        { question: "Nabda OTP Türkiye'de Twilio'dan daha mı iyi?", answer: "Evet — sınırsız mesaj ve tam Türkçe destekle %90'a kadar tasarruf." },
+        { question: 'Nabda OTP görsel ve belge göndermeyi destekliyor mu?', answer: 'Evet — metin, görsel, video, PDF belgesi ve daha fazlası.' },
+        { question: 'Standard Gateway ile Official API arasındaki fark nedir?', answer: 'Standard (aylık $10 sınırsız) çoğu geliştirici ve KOBİ için uygundur. Official, Green Badge isteyen büyük işletmeler içindir.' },
+      ],
+    },
+  },
 };
 
 // Helper to get country + locale 
@@ -1489,10 +1552,10 @@ export function getCountryLocaleData(
 
 // All slugs for generateStaticParams
 export const ALL_COUNTRY_SLUGS = [
-  'eg','iq','sa','ae','qa','jo','sy','kw','bh','om',
-  'lb','ma','dz','tn','ly','ps','sd','ye','us','de',
-  'fr','nl','es','it','pl','se','be','gb','ca',
-  'in','pk','id','my','bd',
+  'egypt','iraq','saudi-arabia','united-arab-emirates','qatar','jordan','syria','kuwait','bahrain','oman',
+  'lebanon','morocco','algeria','tunisia','libya','palestine','sudan','yemen','usa','germany',
+  'france','netherlands','spain','italy','poland','sweden','belgium','united-kingdom','canada',
+  'india','pakistan','indonesia','malaysia','bangladesh','turkey',
 ];
 
 export const TURKEY_SLUG = 'turkey';

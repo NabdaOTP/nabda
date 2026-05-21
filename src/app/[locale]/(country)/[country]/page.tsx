@@ -10,12 +10,12 @@ type Props = {
   params: Promise<{ locale: string; country: string }>;
 };
 
-// Static generation 
+// Static generation
 export async function generateStaticParams() {
-  const locales = ['en', 'ar'];
-  return ALL_COUNTRY_SLUGS.flatMap((country) =>
-    locales.map((locale) => ({ locale, country }))
-  );
+  return ALL_COUNTRY_SLUGS.flatMap((country) => {
+    const locales = country === 'turkey' ? ['en', 'ar', 'tr'] : ['en', 'ar'];
+    return locales.map((locale) => ({ locale, country }));
+  });
 }
 
 // Metadata
@@ -42,6 +42,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       languages: {
         'en':        `${BASE_URL}/${slug}/`,
         'ar':        `${BASE_URL}/ar/${slug}/`,
+        ...(slug === 'turkey' ? { 'tr': `${BASE_URL}/tr/${slug}/` } : {}),
         'x-default': `${BASE_URL}/${slug}/`,
       },
     },

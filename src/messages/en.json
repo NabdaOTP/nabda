@@ -1906,5 +1906,32 @@
             "button1": "Create Free Instance",
             "button2": "Read the Docs"
         }
+    },
+    "official": {
+        "badge": "Coming Soon",
+        "title": "Two Ways to Send, Choose What Fits",
+        "subtitle": "Our Gateway is live today. Official Meta-verified API is launching soon, ideal for enterprises that need the Green Badge.",
+        "gateway": {
+            "name": "Gateway (Available Now)",
+            "desc": "Connect your own WhatsApp number. No Meta approval needed. Send unlimited OTPs and notifications instantly.",
+            "f1": "Unlimited messages",
+            "f2": "No template approval",
+            "f3": "5-day free trial"
+        },
+        "official": {
+            "badge": "Coming Soon",
+            "name": "Official API",
+            "desc": "Meta-verified Business API. Higher limits, verified business profile, and full template support for enterprises.",
+            "price": "Contact Us",
+            "priceNote": "for pricing",
+            "f1": "Meta-verified number",
+            "f2": "Higher message limits",
+            "f3": "Dedicated onboarding"
+        },
+        "notify": {
+            "title": "Get notified when Official API launches",
+            "desc": "Be first to access, we'll reach out directly via WhatsApp.",
+            "cta": "Notify me via WhatsApp"
+        }
     }
 }

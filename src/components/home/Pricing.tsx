@@ -121,7 +121,7 @@ export default function Pricing() {
         <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6">
 
           {/* 1. Standard Card */}
-          <Card className="relative overflow-visible border-0 shadow-2xl bg-white dark:bg-[#0d1525] transition-shadow duration-300">
+          <Card className="relative overflow-visible border-0 shadow-2xl bg-[#0d1525] transition-shadow duration-300">
             <div className="absolute -top-3 left-1/2 -translate-x-1/2">
               <Badge className="px-4 py-1 text-xs font-bold uppercase tracking-wider bg-linear-to-r from-[#635bff] to-[#4b44cc] text-white border-0 shadow-lg whitespace-nowrap">
                 {t('standard.badge')}
@@ -131,17 +131,17 @@ export default function Pricing() {
             <div key={billing} className="animate-billing-swap">
               <CardHeader className="text-center pt-10 pb-6">
                 <div className="flex items-baseline justify-center gap-1 mb-3">
-                  <span className="text-2xl font-semibold text-[#64748b]">$</span>
-                  <span className="text-6xl font-extrabold tracking-tight text-[#0a2540] dark:text-white">
+                  <span className="text-2xl font-semibold text-white/50">$</span>
+                  <span className="text-6xl font-extrabold tracking-tight text-white">
                     {isAnnual ? '110' : '10'}
                   </span>
-                  <span className="text-base font-medium text-[#64748b]">
+                  <span className="text-base font-medium text-white/50">
                     {isAnnual ? t('periodYear') : t('period')}
                   </span>
                 </div>
-                <div className="flex flex-col gap-1 text-sm text-[#425466] dark:text-[#64748b]">
+                <div className="flex flex-col gap-1 text-sm text-white/60">
                   {isAnnual && (
-                    <p className="font-semibold text-[#635bff] dark:text-[#a89fff]">
+                    <p className="font-semibold text-[#a89fff]">
                       {t('annual.save')}
                     </p>
                   )}
@@ -151,23 +151,23 @@ export default function Pricing() {
                 </div>
               </CardHeader>
 
-              <Separator className="dark:bg-white/10" />
+              <Separator className="bg-white/10" />
 
               <CardContent className="pt-6 pb-8">
                 <ul className="space-y-0.5 mb-8">
                   {STANDARD_FEATURES.map((key) => (
-                    <FeatureItem key={key} label={tf(key)} />
+                    <FeatureItem key={key} label={tf(key)} dark />
                   ))}
                 </ul>
                 <Button
                   asChild
-                  className="w-full py-6 text-base font-semibold rounded-full bg-blurple hover:bg-blurple-light [a]:hover:bg-blurple-light shadow-[0_4px_20px_rgba(99,91,255,0.4)] transition-all hover:-translate-y-0.5 duration-200"
+                  className="w-full py-6 text-white text-[16px] font-bold rounded-full bg-blurple hover:bg-blurple-light [a]:hover:bg-blurple-light shadow-[0_4px_20px_rgba(99,91,255,0.4)] transition-all hover:-translate-y-0.5 duration-200"
                 >
                   <a href="https://dash.nabdaotp.com/" target="_blank" rel="noopener noreferrer">
                     {isAnnual ? t('cta.yearly') : t('cta.trial')}
                   </a>
                 </Button>
-                <p className="text-center text-sm text-[#64748b] dark:text-[#475569] mt-4">
+                <p className="text-center text-sm text-white/40 mt-4">
                   {isAnnual ? t('note.yearly') : t('note.trial')}
                 </p>
               </CardContent>
@@ -241,7 +241,7 @@ export default function Pricing() {
                 </ul>
                 <Button
                   asChild
-                  className="w-full py-6 text-base font-semibold rounded-full bg-blurple hover:bg-blurple-light [a]:hover:bg-blurple-light shadow-[0_4px_20px_rgba(99,91,255,0.4)] transition-all hover:-translate-y-0.5 duration-200"
+                  className="w-full py-6 text-white text-[16px] font-semibold rounded-full bg-blurple hover:bg-blurple-light [a]:hover:bg-blurple-light shadow-[0_4px_20px_rgba(99,91,255,0.4)] transition-all hover:-translate-y-0.5 duration-200"
                 >
                   <a href="https://dash.nabdaotp.com/" target="_blank" rel="noopener noreferrer">
                     {tb('cta')}

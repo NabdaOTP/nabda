@@ -57,3 +57,559 @@
     Referrer-Policy           = "strict-origin-when-cross-origin"
     Strict-Transport-Security = "max-age=63072000; includeSubDomains; preload"
     Permissions-Policy        = "accelerometer=(), camera=(), geolocation=(), gyroscope=(), magnetometer=(), microphone=(), payment=(), usb=()"
+
+# ── Old 2-letter slug → full name (EN) ───────────────────
+[[redirects]]
+  from = "/eg"
+  to = "/egypt"
+  status = 301
+[[redirects]]
+  from = "/ar/eg"
+  to = "/ar/egypt"
+  status = 301
+[[redirects]]
+  from = "/iq"
+  to = "/iraq"
+  status = 301
+[[redirects]]
+  from = "/ar/iq"
+  to = "/ar/iraq"
+  status = 301
+[[redirects]]
+  from = "/sa"
+  to = "/saudi-arabia"
+  status = 301
+[[redirects]]
+  from = "/ar/sa"
+  to = "/ar/saudi-arabia"
+  status = 301
+[[redirects]]
+  from = "/ae"
+  to = "/united-arab-emirates"
+  status = 301
+[[redirects]]
+  from = "/ar/ae"
+  to = "/ar/united-arab-emirates"
+  status = 301
+[[redirects]]
+  from = "/qa"
+  to = "/qatar"
+  status = 301
+[[redirects]]
+  from = "/ar/qa"
+  to = "/ar/qatar"
+  status = 301
+[[redirects]]
+  from = "/jo"
+  to = "/jordan"
+  status = 301
+[[redirects]]
+  from = "/ar/jo"
+  to = "/ar/jordan"
+  status = 301
+[[redirects]]
+  from = "/sy"
+  to = "/syria"
+  status = 301
+[[redirects]]
+  from = "/ar/sy"
+  to = "/ar/syria"
+  status = 301
+[[redirects]]
+  from = "/kw"
+  to = "/kuwait"
+  status = 301
+[[redirects]]
+  from = "/ar/kw"
+  to = "/ar/kuwait"
+  status = 301
+[[redirects]]
+  from = "/bh"
+  to = "/bahrain"
+  status = 301
+[[redirects]]
+  from = "/ar/bh"
+  to = "/ar/bahrain"
+  status = 301
+[[redirects]]
+  from = "/om"
+  to = "/oman"
+  status = 301
+[[redirects]]
+  from = "/ar/om"
+  to = "/ar/oman"
+  status = 301
+[[redirects]]
+  from = "/lb"
+  to = "/lebanon"
+  status = 301
+[[redirects]]
+  from = "/ar/lb"
+  to = "/ar/lebanon"
+  status = 301
+[[redirects]]
+  from = "/ps"
+  to = "/palestine"
+  status = 301
+[[redirects]]
+  from = "/ar/ps"
+  to = "/ar/palestine"
+  status = 301
+[[redirects]]
+  from = "/ye"
+  to = "/yemen"
+  status = 301
+[[redirects]]
+  from = "/ar/ye"
+  to = "/ar/yemen"
+  status = 301
+[[redirects]]
+  from = "/dz"
+  to = "/algeria"
+  status = 301
+[[redirects]]
+  from = "/ar/dz"
+  to = "/ar/algeria"
+  status = 301
+[[redirects]]
+  from = "/ma"
+  to = "/morocco"
+  status = 301
+[[redirects]]
+  from = "/ar/ma"
+  to = "/ar/morocco"
+  status = 301
+[[redirects]]
+  from = "/tn"
+  to = "/tunisia"
+  status = 301
+[[redirects]]
+  from = "/ar/tn"
+  to = "/ar/tunisia"
+  status = 301
+[[redirects]]
+  from = "/ly"
+  to = "/libya"
+  status = 301
+[[redirects]]
+  from = "/ar/ly"
+  to = "/ar/libya"
+  status = 301
+[[redirects]]
+  from = "/sd"
+  to = "/sudan"
+  status = 301
+[[redirects]]
+  from = "/ar/sd"
+  to = "/ar/sudan"
+  status = 301
+[[redirects]]
+  from = "/de"
+  to = "/germany"
+  status = 301
+[[redirects]]
+  from = "/ar/de"
+  to = "/ar/germany"
+  status = 301
+[[redirects]]
+  from = "/us"
+  to = "/usa"
+  status = 301
+[[redirects]]
+  from = "/ar/us"
+  to = "/ar/usa"
+  status = 301
+[[redirects]]
+  from = "/fr"
+  to = "/france"
+  status = 301
+[[redirects]]
+  from = "/ar/fr"
+  to = "/ar/france"
+  status = 301
+[[redirects]]
+  from = "/nl"
+  to = "/netherlands"
+  status = 301
+[[redirects]]
+  from = "/ar/nl"
+  to = "/ar/netherlands"
+  status = 301
+[[redirects]]
+  from = "/es"
+  to = "/spain"
+  status = 301
+[[redirects]]
+  from = "/ar/es"
+  to = "/ar/spain"
+  status = 301
+[[redirects]]
+  from = "/it"
+  to = "/italy"
+  status = 301
+[[redirects]]
+  from = "/ar/it"
+  to = "/ar/italy"
+  status = 301
+[[redirects]]
+  from = "/pl"
+  to = "/poland"
+  status = 301
+[[redirects]]
+  from = "/ar/pl"
+  to = "/ar/poland"
+  status = 301
+[[redirects]]
+  from = "/se"
+  to = "/sweden"
+  status = 301
+[[redirects]]
+  from = "/ar/se"
+  to = "/ar/sweden"
+  status = 301
+[[redirects]]
+  from = "/be"
+  to = "/belgium"
+  status = 301
+[[redirects]]
+  from = "/ar/be"
+  to = "/ar/belgium"
+  status = 301
+[[redirects]]
+  from = "/gb"
+  to = "/united-kingdom"
+  status = 301
+[[redirects]]
+  from = "/ar/gb"
+  to = "/ar/united-kingdom"
+  status = 301
+[[redirects]]
+  from = "/ca"
+  to = "/canada"
+  status = 301
+[[redirects]]
+  from = "/ar/ca"
+  to = "/ar/canada"
+  status = 301
+[[redirects]]
+  from = "/in"
+  to = "/india"
+  status = 301
+[[redirects]]
+  from = "/ar/in"
+  to = "/ar/india"
+  status = 301
+[[redirects]]
+  from = "/pk"
+  to = "/pakistan"
+  status = 301
+[[redirects]]
+  from = "/ar/pk"
+  to = "/ar/pakistan"
+  status = 301
+[[redirects]]
+  from = "/id"
+  to = "/indonesia"
+  status = 301
+[[redirects]]
+  from = "/ar/id"
+  to = "/ar/indonesia"
+  status = 301
+[[redirects]]
+  from = "/my"
+  to = "/malaysia"
+  status = 301
+[[redirects]]
+  from = "/ar/my"
+  to = "/ar/malaysia"
+  status = 301
+[[redirects]]
+  from = "/bd"
+  to = "/bangladesh"
+  status = 301
+[[redirects]]
+  from = "/ar/bd"
+  to = "/ar/bangladesh"
+  status = 301
+
+# ── Keyword alias URLs → canonical (301) ─────────────────
+[[redirects]]
+  from = "/api-whatsapp-in-egypt"
+  to = "/egypt"
+  status = 301
+[[redirects]]
+  from = "/whatsapp-api-egypt"
+  to = "/egypt"
+  status = 301
+[[redirects]]
+  from = "/api-whatsapp-in-iraq"
+  to = "/iraq"
+  status = 301
+[[redirects]]
+  from = "/whatsapp-api-iraq"
+  to = "/iraq"
+  status = 301
+[[redirects]]
+  from = "/api-whatsapp-in-saudi-arabia"
+  to = "/saudi-arabia"
+  status = 301
+[[redirects]]
+  from = "/whatsapp-api-saudi-arabia"
+  to = "/saudi-arabia"
+  status = 301
+[[redirects]]
+  from = "/api-whatsapp-in-uae"
+  to = "/united-arab-emirates"
+  status = 301
+[[redirects]]
+  from = "/whatsapp-api-uae"
+  to = "/united-arab-emirates"
+  status = 301
+[[redirects]]
+  from = "/api-whatsapp-in-qatar"
+  to = "/qatar"
+  status = 301
+[[redirects]]
+  from = "/whatsapp-api-qatar"
+  to = "/qatar"
+  status = 301
+[[redirects]]
+  from = "/api-whatsapp-in-jordan"
+  to = "/jordan"
+  status = 301
+[[redirects]]
+  from = "/whatsapp-api-jordan"
+  to = "/jordan"
+  status = 301
+[[redirects]]
+  from = "/api-whatsapp-in-syria"
+  to = "/syria"
+  status = 301
+[[redirects]]
+  from = "/whatsapp-api-syria"
+  to = "/syria"
+  status = 301
+[[redirects]]
+  from = "/api-whatsapp-in-kuwait"
+  to = "/kuwait"
+  status = 301
+[[redirects]]
+  from = "/whatsapp-api-kuwait"
+  to = "/kuwait"
+  status = 301
+[[redirects]]
+  from = "/api-whatsapp-in-bahrain"
+  to = "/bahrain"
+  status = 301
+[[redirects]]
+  from = "/whatsapp-api-bahrain"
+  to = "/bahrain"
+  status = 301
+[[redirects]]
+  from = "/api-whatsapp-in-oman"
+  to = "/oman"
+  status = 301
+[[redirects]]
+  from = "/whatsapp-api-oman"
+  to = "/oman"
+  status = 301
+[[redirects]]
+  from = "/api-whatsapp-in-lebanon"
+  to = "/lebanon"
+  status = 301
+[[redirects]]
+  from = "/whatsapp-api-lebanon"
+  to = "/lebanon"
+  status = 301
+[[redirects]]
+  from = "/api-whatsapp-in-palestine"
+  to = "/palestine"
+  status = 301
+[[redirects]]
+  from = "/whatsapp-api-palestine"
+  to = "/palestine"
+  status = 301
+[[redirects]]
+  from = "/api-whatsapp-in-yemen"
+  to = "/yemen"
+  status = 301
+[[redirects]]
+  from = "/whatsapp-api-yemen"
+  to = "/yemen"
+  status = 301
+[[redirects]]
+  from = "/api-whatsapp-in-algeria"
+  to = "/algeria"
+  status = 301
+[[redirects]]
+  from = "/whatsapp-api-algeria"
+  to = "/algeria"
+  status = 301
+[[redirects]]
+  from = "/api-whatsapp-in-morocco"
+  to = "/morocco"
+  status = 301
+[[redirects]]
+  from = "/whatsapp-api-morocco"
+  to = "/morocco"
+  status = 301
+[[redirects]]
+  from = "/api-whatsapp-in-tunisia"
+  to = "/tunisia"
+  status = 301
+[[redirects]]
+  from = "/whatsapp-api-tunisia"
+  to = "/tunisia"
+  status = 301
+[[redirects]]
+  from = "/api-whatsapp-in-libya"
+  to = "/libya"
+  status = 301
+[[redirects]]
+  from = "/whatsapp-api-libya"
+  to = "/libya"
+  status = 301
+[[redirects]]
+  from = "/api-whatsapp-in-sudan"
+  to = "/sudan"
+  status = 301
+[[redirects]]
+  from = "/whatsapp-api-sudan"
+  to = "/sudan"
+  status = 301
+[[redirects]]
+  from = "/api-whatsapp-in-germany"
+  to = "/germany"
+  status = 301
+[[redirects]]
+  from = "/whatsapp-api-germany"
+  to = "/germany"
+  status = 301
+[[redirects]]
+  from = "/api-whatsapp-in-usa"
+  to = "/usa"
+  status = 301
+[[redirects]]
+  from = "/whatsapp-api-usa"
+  to = "/usa"
+  status = 301
+[[redirects]]
+  from = "/api-whatsapp-in-turkey"
+  to = "/turkey"
+  status = 301
+[[redirects]]
+  from = "/whatsapp-api-turkey"
+  to = "/turkey"
+  status = 301
+[[redirects]]
+  from = "/api-whatsapp-in-france"
+  to = "/france"
+  status = 301
+[[redirects]]
+  from = "/whatsapp-api-france"
+  to = "/france"
+  status = 301
+[[redirects]]
+  from = "/api-whatsapp-in-netherlands"
+  to = "/netherlands"
+  status = 301
+[[redirects]]
+  from = "/whatsapp-api-netherlands"
+  to = "/netherlands"
+  status = 301
+[[redirects]]
+  from = "/api-whatsapp-in-spain"
+  to = "/spain"
+  status = 301
+[[redirects]]
+  from = "/whatsapp-api-spain"
+  to = "/spain"
+  status = 301
+[[redirects]]
+  from = "/api-whatsapp-in-italy"
+  to = "/italy"
+  status = 301
+[[redirects]]
+  from = "/whatsapp-api-italy"
+  to = "/italy"
+  status = 301
+[[redirects]]
+  from = "/api-whatsapp-in-poland"
+  to = "/poland"
+  status = 301
+[[redirects]]
+  from = "/whatsapp-api-poland"
+  to = "/poland"
+  status = 301
+[[redirects]]
+  from = "/api-whatsapp-in-sweden"
+  to = "/sweden"
+  status = 301
+[[redirects]]
+  from = "/whatsapp-api-sweden"
+  to = "/sweden"
+  status = 301
+[[redirects]]
+  from = "/api-whatsapp-in-belgium"
+  to = "/belgium"
+  status = 301
+[[redirects]]
+  from = "/whatsapp-api-belgium"
+  to = "/belgium"
+  status = 301
+[[redirects]]
+  from = "/api-whatsapp-in-uk"
+  to = "/united-kingdom"
+  status = 301
+[[redirects]]
+  from = "/whatsapp-api-uk"
+  to = "/united-kingdom"
+  status = 301
+[[redirects]]
+  from = "/api-whatsapp-in-canada"
+  to = "/canada"
+  status = 301
+[[redirects]]
+  from = "/whatsapp-api-canada"
+  to = "/canada"
+  status = 301
+[[redirects]]
+  from = "/api-whatsapp-in-india"
+  to = "/india"
+  status = 301
+[[redirects]]
+  from = "/whatsapp-api-india"
+  to = "/india"
+  status = 301
+[[redirects]]
+  from = "/api-whatsapp-in-pakistan"
+  to = "/pakistan"
+  status = 301
+[[redirects]]
+  from = "/whatsapp-api-pakistan"
+  to = "/pakistan"
+  status = 301
+[[redirects]]
+  from = "/api-whatsapp-in-indonesia"
+  to = "/indonesia"
+  status = 301
+[[redirects]]
+  from = "/whatsapp-api-indonesia"
+  to = "/indonesia"
+  status = 301
+[[redirects]]
+  from = "/api-whatsapp-in-malaysia"
+  to = "/malaysia"
+  status = 301
+[[redirects]]
+  from = "/whatsapp-api-malaysia"
+  to = "/malaysia"
+  status = 301
+[[redirects]]
+  from = "/api-whatsapp-in-bangladesh"
+  to = "/bangladesh"
+  status = 301
+[[redirects]]
+  from = "/whatsapp-api-bangladesh"
+  to = "/bangladesh"
+  status = 301

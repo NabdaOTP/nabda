@@ -94,7 +94,7 @@ export default function Stats() {
 
   const stats = [
     { icon: Building2,     countTarget: 65,   suffix: '+', label: t('businesses') },
-    { icon: MessageSquare, countTarget: 4500, suffix: '+', label: t('messages')   },
+    { icon: MessageSquare, countTarget: 4, suffix: 'k+', label: t('messages')   },
     { icon: Activity,      staticValue: '99.99%',          label: t('uptime')     },
     { icon: ShieldCheck,   staticValue: '✓',               label: t('reliable')   },
   ];
@@ -102,8 +102,8 @@ export default function Stats() {
   return (
     <section
       ref={ref}
-      className="py-16
-        bg-gray-50/80
+      className="py-24
+        bg-[#f5f3ff]
         dark:bg-[#060f1e]
       "
     >
