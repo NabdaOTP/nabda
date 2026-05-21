@@ -125,7 +125,8 @@
             "limits": "حدود رسائل أعلى",
             "verification": "دعم توثيق النشاط التجاري",
             "onboarding": "إعداد مخصص",
-            "sla": "ضمان SLA"
+            "sla": "ضمان SLA",
+            "greenBadge": "الشارة الخضراء لواتساب"
         },
         "bundle": {
             "badge": "باقة",

@@ -125,7 +125,8 @@
             "limits": "Higher Message Limits",
             "verification": "Business Verification Support",
             "onboarding": "Dedicated Onboarding",
-            "sla": "SLA Guarantee"
+            "sla": "SLA Guarantee",
+            "greenBadge": "WhatsApp Green Badge"
         },
         "bundle": {
             "badge": "Bundle",

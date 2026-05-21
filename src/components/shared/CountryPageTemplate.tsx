@@ -8,7 +8,7 @@ import type { CountryData } from '@/lib/country-data';
 import trMessages from '@/messages/tr.json';
 import { ArrowRight, Rocket } from 'lucide-react';
 import Features from '../home/Features';
-import OfficialComingSoon from '../home/OfficialComingSoon';
+
 
 interface Props {
   country:  CountryData;
@@ -178,7 +178,6 @@ const response = await Nabda.send({
       <Partner />
       <Features/>
       <Pricing />
-      <OfficialComingSoon />
       {/* FAQ (country-specific) */}
       <section className="py-20 bg-gray-50/80 dark:bg-[#060f1e]">
         <div className="max-w-215 mx-auto px-6" dir={dir}>

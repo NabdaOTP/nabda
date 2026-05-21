@@ -123,7 +123,8 @@
             "limits": "Daha yüksek mesaj limitleri",
             "verification": "İşletme doğrulama desteği",
             "onboarding": "Özel kurulum desteği",
-            "sla": "SLA Garantisi"
+            "sla": "SLA Garantisi",
+            "greenBadge": "WhatsApp Green Badge"
         },
         "bundle": {
             "badge": "Paket",

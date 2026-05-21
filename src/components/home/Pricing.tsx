@@ -27,7 +27,7 @@ const BUNDLE_FEATURES = [
 ] as const;
 
 const ENTERPRISE_FEATURES = [
-  'meta', 'limits', 'verification', 'onboarding', 'support', 'sla',
+  'meta', 'greenBadge', 'limits', 'verification', 'onboarding', 'support', 'sla',
 ] as const;
 
 // Reusable check item
@@ -283,7 +283,7 @@ export default function Pricing() {
                     label={
                       key === 'support'
                         ? tf('support')
-                        : te(key as 'meta' | 'limits' | 'verification' | 'onboarding' | 'sla')
+                        : te(key as 'meta' | 'greenBadge' | 'limits' | 'verification' | 'onboarding' | 'sla')
                     }
                     dark
                   />
