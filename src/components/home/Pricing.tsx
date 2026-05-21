@@ -2,7 +2,7 @@
 
 import { useState } from 'react';
 import { useTranslations } from 'next-intl';
-import { Check, Layers } from 'lucide-react';
+import { Check } from 'lucide-react';
 import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardHeader } from '@/components/ui/card';
@@ -13,17 +13,6 @@ import { cn } from '@/lib/utils';
 const STANDARD_FEATURES = [
   'unlimited', 'noFee', 'trial', 'api',
   'webhookReceive', 'media', 'webhook', 'support', 'cancel',
-] as const;
-
-const BUNDLE_FEATURES = [
-  'bundleUnlimited',
-  'bundleRotation',
-  'bundleOneKey',
-  'bundleOneWebhook',
-  'bundleFaultTolerance',
-  'bundleTrial',
-  'support',
-  'cancel',
 ] as const;
 
 const ENTERPRISE_FEATURES = [
@@ -60,11 +49,9 @@ function FeatureItem({
 
 // Main 
 export default function Pricing() {
-  const t  = useTranslations('pricing');
+  const t = useTranslations('pricing');
   const tf = useTranslations('pricing.features');
   const te = useTranslations('pricing.enterprise');
-  const tb = useTranslations('pricing.bundle');
-
   const [billing, setBilling] = useState<'monthly' | 'annual'>('monthly');
   const isAnnual = billing === 'annual';
 
@@ -117,8 +104,8 @@ export default function Pricing() {
           </div>
         </div>
 
-        {/* 3-Column Cards Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6">
+        {/* 2-Column Cards Grid */}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-3xl mx-auto">
 
           {/* 1. Standard Card */}
           <Card className="relative overflow-visible border-0 shadow-2xl bg-[#0d1525] transition-shadow duration-300">
@@ -174,88 +161,17 @@ export default function Pricing() {
             </div>
           </Card>
 
-          {/* 2. Bundle Card — highlighted center ══ */}
+          {/* 2. Enterprise Card — highlighted */}
           <Card className="
             relative overflow-visible border-2 border-[#635bff]
             bg-linear-to-b from-[#0f1e40] to-[#0a1628]
             shadow-[0_25px_60px_rgba(99,91,255,0.35)]
-            xl:scale-[1.04] z-10
+            z-10
             dark:from-[#0d1230] dark:to-[#080e20]
           ">
             {/* Glow ring */}
             <div className="pointer-events-none absolute inset-0 rounded-[inherit] bg-[#635bff]/5" />
 
-            <div className="absolute -top-3 left-1/2 -translate-x-1/2">
-              <Badge className="px-4 py-1 text-xs font-bold uppercase tracking-wider bg-linear-to-r from-[#635bff] to-[#a89fff] text-white border-0 shadow-[0_4px_12px_rgba(99,91,255,0.5)] whitespace-nowrap">
-                <Layers size={12} className="me-1.5 inline-block" />
-                {tb('badge')}
-              </Badge>
-            </div>
-
-            {isAnnual && (
-              <div className="absolute top-5 -right-1.5 rotate-45 animate-billing-swap">
-                <Badge className="px-2 py-2 text-[0.7rem] font-bold bg-success text-deep-navy border-0">
-                  {tb('bestValue')}
-                </Badge>
-              </div>
-            )}
-
-            <div key={`bundle-${billing}`} className="animate-billing-swap">
-              <CardHeader className="text-center pt-10 pb-6">
-                <div className="flex items-baseline justify-center gap-1 mb-1">
-                  <span className="text-2xl font-semibold text-white/50">$</span>
-                  <span className="text-6xl font-extrabold tracking-tight text-white">
-                    {isAnnual ? '165' : '15'}
-                  </span>
-                </div>
-                <p className="text-sm text-white/50 mb-3">
-                  {isAnnual ? tb('periodYear') : tb('periodMonth')}
-                </p>
-                <div className="flex flex-col gap-1 text-sm text-white/60">
-                  {isAnnual && (
-                    <p className="font-semibold text-[#a89fff]">
-                      {tb('save')}
-                    </p>
-                  )}
-                  <p>{tb('typeLine')}</p>
-                  <p>{tb('bestForLine')}</p>
-                  <p>{tb('messagesLine')}</p>
-                </div>
-              </CardHeader>
-
-              <Separator className="bg-white/10" />
-
-              <CardContent className="pt-6 pb-8">
-                <ul className="space-y-0.5 mb-8">
-                  {BUNDLE_FEATURES.map((key) => (
-                    <FeatureItem
-                      key={key}
-                      label={
-                        key === 'support' || key === 'cancel'
-                          ? tf(key as 'support' | 'cancel')
-                          : tb(key as typeof BUNDLE_FEATURES[number])
-                      }
-                      dark
-                    />
-                  ))}
-                </ul>
-                <Button
-                  asChild
-                  className="w-full py-6 text-white text-[16px] font-semibold rounded-full bg-blurple hover:bg-blurple-light [a]:hover:bg-blurple-light shadow-[0_4px_20px_rgba(99,91,255,0.4)] transition-all hover:-translate-y-0.5 duration-200"
-                >
-                  <a href="https://dash.nabdaotp.com/" target="_blank" rel="noopener noreferrer">
-                    {tb('cta')}
-                  </a>
-                </Button>
-                <p className="text-center text-sm text-white/40 mt-4">
-                  {tb('note')}
-                </p>
-              </CardContent>
-            </div>
-          </Card>
-
-          {/* 3. Enterprise Card */}
-          <Card className="relative overflow-visible border border-white/15 bg-white/5 backdrop-blur-sm shadow-xl md:col-span-2 xl:col-span-1">
             <div className="absolute -top-3 left-1/2 -translate-x-1/2">
               <Badge className="px-4 py-1 text-xs font-bold uppercase tracking-wider bg-gradient-to-r from-[#00d4aa] to-[#00a88a] text-[#0a2540] border-0 shadow-lg whitespace-nowrap">
                 {te('enter')}
