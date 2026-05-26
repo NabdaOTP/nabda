@@ -288,7 +288,7 @@ app.post("/auth/login", async (req, res) => {
         descKey="securitySolution.cta.desc"
         button1Key="securitySolution.cta.button1"
         button2Key="securitySolution.cta.button2"
-        button2Href="https://api.nabdaotp.com/docs"
+        button2Href="https://connect.nabdaotp.com/docs"
       />
     </main>
   );

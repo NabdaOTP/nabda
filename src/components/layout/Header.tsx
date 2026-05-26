@@ -33,11 +33,8 @@ export default function Header() {
   const anchorBase = (useHomeAnchor || pathname === '/') ? '' : pathname;
 
   const NAV_LINKS = [
-    { key: 'features',  href: `${anchorBase}/#features` },
-    { key: 'pricing',   href: `${anchorBase}/#pricing` },
-    { key: 'solutions', href: '/solutions' },
-    { key: 'comparing', href: '/comparing' },
-    { key: 'blogs',     href: '/blogs', newTab: true },
+    { key: 'features', href: `${anchorBase}/#features` },
+    { key: 'pricing',  href: `${anchorBase}/#pricing` },
   ];
 
   const [mobileOpen, setMobileOpen] = useState(false);
@@ -109,7 +106,7 @@ export default function Header() {
             ))}
             <li>
               <a
-                href="https://api.nabdaotp.com/docs"
+                href="https://connect.nabdaotp.com/docs"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-[0.9375rem] font-medium text-navy-lighter hover:text-[#635bff] dark:text-[#8899a6] dark:hover:text-white transition-colors duration-150"
@@ -172,7 +169,7 @@ export default function Header() {
 
             {/* Login CTA */}
             <a
-              href="https://dash.nabdaotp.com/en/login"
+              href="https://app.nabdaotp.com/en/login"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center px-5 py-2.5 bg-[#635bff] hover:bg-[#7a73ff] text-white text-sm font-semibold rounded-full shadow-[0_4px_14px_rgba(99,91,255,0.35)] hover:shadow-[0_6px_20px_rgba(99,91,255,0.5)] hover:-translate-y-0.5 transition-all duration-200"
@@ -244,7 +241,7 @@ export default function Header() {
           ))}
           <li>
             <a
-              href="https://api.nabdaotp.com/docs"
+              href="https://connect.nabdaotp.com/docs"
               target="_blank"
               rel="noopener noreferrer"
               onClick={() => setMobileOpen(false)}
@@ -278,7 +275,7 @@ export default function Header() {
         {/* Login */}
         <div className="px-4 py-4">
           <a
-            href="https://dash.nabdaotp.com/en/login"
+            href="https://app.nabdaotp.com/en/login"
             target="_blank"
             rel="noopener noreferrer"
             onClick={() => setMobileOpen(false)}

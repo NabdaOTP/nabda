@@ -60,7 +60,7 @@ export default function ComparisonHero({
                 {/* CTAs */}
                 <div className="flex flex-wrap gap-4">
                     <Link
-                        href="https://dash.nabdaotp.com/en/signup"
+                        href="https://app.nabdaotp.com/en/login"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="inline-flex items-center justify-center px-6 py-2.5 rounded-full bg-[#635bff] hover:bg-[#4f46e5] text-white font-bold text-base transition-all shadow-lg hover:shadow-xl hover:scale-105"
@@ -68,7 +68,7 @@ export default function ComparisonHero({
                         {t(cta1Key as Parameters<typeof t>[0])}
                     </Link>
                     <Link
-                        href="https://api.nabdaotp.com/docs"
+                        href="https://connect.nabdaotp.com/docs"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="inline-flex items-center justify-center px-6 py-2.5 rounded-full border-2 border-[#635bff] text-[#635bff] dark:border-[#a89fff] dark:text-[#a89fff] hover:bg-[#635bff]/10 dark:hover:bg-[#635bff]/20 font-bold text-base transition-all"

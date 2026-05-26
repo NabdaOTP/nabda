@@ -49,7 +49,7 @@ export default function Partner() {
         {/* CTA */}
         <div className="flex flex-col items-center gap-4">
           <a
-            href="https://dash.nabdaotp.com/en/signup"
+            href="https://app.nabdaotp.com/en/login"
             target="_blank"
             rel="noopener noreferrer"
             className="

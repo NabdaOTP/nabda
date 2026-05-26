@@ -285,7 +285,7 @@ scheduleReminder(appointment, reminderTime);`;
         descKey="appointmentSolution.cta.desc"
         button1Key="appointmentSolution.cta.button1"
         button2Key="appointmentSolution.cta.button2"
-        button2Href="https://api.nabdaotp.com/docs"
+        button2Href="https://connect.nabdaotp.com/docs"
       />
     </main>
   );

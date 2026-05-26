@@ -135,11 +135,11 @@ export default function NabdaAlternativesPage() {
                     </p>
 
                     <div className="flex flex-wrap gap-4">
-                        <Link href="https://dash.nabdaotp.com/en/signup" target="_blank" rel="noopener noreferrer"
+                        <Link href="https://app.nabdaotp.com/en/login" target="_blank" rel="noopener noreferrer"
                             className="inline-flex items-center justify-center px-6 py-2.5 rounded-full bg-[#635bff] hover:bg-[#4f46e5] text-white font-bold text-base transition-all shadow-lg hover:shadow-xl hover:scale-105">
                             {t('alternatives.cta.trial')}
                         </Link>
-                        <Link href="https://api.nabdaotp.com/docs" target="_blank" rel="noopener noreferrer"
+                        <Link href="https://connect.nabdaotp.com/docs" target="_blank" rel="noopener noreferrer"
                             className="inline-flex items-center justify-center px-6 py-2.5 rounded-full border-2 border-[#635bff] text-[#635bff] dark:border-[#a89fff] dark:text-[#a89fff] hover:bg-[#635bff]/10 font-bold text-base transition-all">
                             {t('alternatives.cta.docs')}
                         </Link>
@@ -264,7 +264,7 @@ export default function NabdaAlternativesPage() {
                         <h2 className="text-2xl md:text-3xl font-bold text-[#0a2540] dark:text-white mb-6">
                             {t('alternatives.bottomCta.title')}
                         </h2>
-                        <a href="https://dash.nabdaotp.com/en/signup" target="_blank" rel="noopener noreferrer"
+                        <a href="https://app.nabdaotp.com/en/login" target="_blank" rel="noopener noreferrer"
                             className="inline-flex items-center justify-center px-8 py-3.5 rounded-full bg-[#635bff] hover:bg-[#4f46e5] text-white font-bold text-lg transition-all shadow-lg hover:shadow-xl hover:scale-105">
                             {t('alternatives.bottomCta.button')}
                         </a>

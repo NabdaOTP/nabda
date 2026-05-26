@@ -16,7 +16,7 @@ export default function SolutionCTA({
     descKey,
     button1Key,
     button2Key,
-    button1Href = 'https://dash.nabdaotp.com/en/signup',
+    button1Href = 'https://app.nabdaotp.com/en/login',
     button2Href = '/blogs/whatsapp-otp-iraq-guide',
 }: SolutionCTAProps) {
     const t = useTranslations();

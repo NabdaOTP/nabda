@@ -44,11 +44,9 @@ export default function Footer() {
   const t = useTranslations('footer');
 
   const PRODUCT_LINKS = [
-    { label: t('links.product.features'),  href: '/#features' },
-    { label: t('links.product.pricing'),   href: '/#pricing' },
-    { label: t('links.product.solutions'), href: '/solutions' },
-    { label: t('links.product.comparisons'), href: '/comparisons' },
-    { label: t('links.product.docs'),      href: 'https://api.nabdaotp.com/docs', external: true },
+    { label: t('links.product.features'), href: '/#features' },
+    { label: t('links.product.pricing'),  href: '/#pricing' },
+    { label: t('links.product.docs'),     href: 'https://connect.nabdaotp.com/docs', external: true },
   ];
 
   const SOLUTIONS_LINKS = [
@@ -76,7 +74,7 @@ export default function Footer() {
     { label: t('links.resources.bundle_vs_instance'), href: '/blogs/bundle-vs-instance'},
     { label: t('links.resources.top_5mis'), href: '/blogs/whatsapp-otp-mistakes'},
     { label: t('links.resources.whats_vs_sms'), href: '/blogs/whatsapp-replacing-sms'},
-    { label: t('links.resources.api_ref'),    href: 'https://api.nabdaotp.com/docs', external: true },
+    { label: t('links.resources.api_ref'),    href: 'https://connect.nabdaotp.com/docs', external: true },
   ];
 
   const COMPANY_LINKS = [
@@ -173,13 +171,10 @@ export default function Footer() {
           </p>
         </div>
 
-        {/* 5-column links grid */}
-        <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-10">
-          <FooterCol title={t('product')}     links={PRODUCT_LINKS} />
-          <FooterCol title={t('solutions')}   links={SOLUTIONS_LINKS} />
-          <FooterCol title={t('comparisons')} links={COMPARISONS_LINKS} />
-          <FooterCol title={t('resources')}   links={RESOURCES_LINKS} />
-          <FooterCol title={t('company')}     links={COMPANY_LINKS} />
+        {/* 2-column links grid */}
+        <div className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-2 gap-10">
+          <FooterCol title={t('product')} links={PRODUCT_LINKS} />
+          <FooterCol title={t('company')} links={COMPANY_LINKS} />
         </div>
       </div>
 

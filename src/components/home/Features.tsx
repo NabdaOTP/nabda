@@ -7,7 +7,6 @@ import {
   Zap,
   Webhook,
   type LucideIcon,
-  Layers,
   Heart,
 } from 'lucide-react';
 
@@ -23,7 +22,7 @@ const FEATURES: Feature[] = [
   { key: 'developer', icon: Code2,           primary: false },
   { key: 'secure',    icon: ShieldCheck,     primary: false },
   { key: 'fast',      icon: Zap,             primary: false },
-  { key: 'bundle', icon: Layers, primary: false },
+  { key: 'bundle', icon: ShieldCheck, primary: false },
   { key: 'webhook',   icon: Webhook,         primary: false },
 ];
 

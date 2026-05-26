@@ -61,7 +61,7 @@ export default function Hero() {
             {/* CTAs */}
             <div className="flex flex-wrap gap-4">
               <a
-                href="https://dash.nabdaotp.com/en/login"
+                href="https://app.nabdaotp.com/en/login"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 px-7 py-3.5 text-base font-semibold rounded-full text-white bg-[#635bff] hover:bg-[#7a73ff] shadow-[0_4px_20px_rgba(99,91,255,0.4)] hover:shadow-[0_6px_28px_rgba(99,91,255,0.6)] hover:-translate-y-0.5 transition-all duration-200"
@@ -69,7 +69,7 @@ export default function Hero() {
                 {t('hero.cta.primary')}
               </a>
               <a
-                href="https://api.nabdaotp.com/docs"
+                href="https://connect.nabdaotp.com/docs"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 px-7 py-3.5 text-base font-semibold rounded-full transition-all duration-200
@@ -82,11 +82,11 @@ export default function Hero() {
               </a>
             </div>
 
-            {/* Price note */}
-            <p className="text-sm text-navy-lighter dark:text-[#8899a6]">
-              Starting at just{' '}
-              <strong className="font-semibold text-deep-navy dark:text-white">$10/month</strong>
-              {' '}— No per-message fees
+            {/* Slogan */}
+            <p className="text-2xl font-bold tracking-tight text-deep-navy dark:text-white">
+              Fast.{' '}
+              <span className="text-[#635bff]">Simple.</span>{' '}
+              Cheap.
             </p>
           </AnimateIn>
 

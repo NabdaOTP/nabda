@@ -19,8 +19,8 @@ export default function SolutionHero({
     descKey,
     cta1Key,
     cta2Key,
-    cta1Href = 'https://dash.nabdaotp.com/en/signup',
-    cta2Href = 'https://api.nabdaotp.com/docs',
+    cta1Href = 'https://app.nabdaotp.com/en/login',
+    cta2Href = 'https://connect.nabdaotp.com/docs',
     gradient = 'from-[#635bff] via-[#4f46e5] to-[#312e81]',
 }: SolutionHeroProps) {
     const t = useTranslations();

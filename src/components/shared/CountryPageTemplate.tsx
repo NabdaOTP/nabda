@@ -121,7 +121,7 @@ export default function CountryPageTemplate({ country, locale, phoneExample }: P
 
               <div className="flex flex-wrap gap-4">
                 <a
-                  href="https://dash.nabdaotp.com/"
+                  href="https://app.nabdaotp.com/en/login"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex items-center gap-2 px-7 py-3.5 text-base font-semibold rounded-full text-white bg-[#635bff] hover:bg-[#7a73ff] shadow-[0_4px_20px_rgba(99,91,255,0.4)] hover:-translate-y-0.5 transition-all duration-200"
@@ -129,7 +129,7 @@ export default function CountryPageTemplate({ country, locale, phoneExample }: P
                   {displayData.ctaPrimaryText}
                 </a>
                 <a
-                  href="https://api.nabdaotp.com/docs"
+                  href="https://connect.nabdaotp.com/docs"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex items-center gap-2 px-7 py-3.5 text-base font-semibold rounded-full border border-[#635bff]/30 text-[#635bff] hover:bg-[#635bff]/8 dark:border-white/20 dark:text-white/80 dark:hover:border-white/40 transition-all duration-200"

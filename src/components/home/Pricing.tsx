@@ -150,7 +150,7 @@ export default function Pricing() {
                   asChild
                   className="w-full py-6 text-white text-[16px] font-bold rounded-full bg-blurple hover:bg-blurple-light [a]:hover:bg-blurple-light shadow-[0_4px_20px_rgba(99,91,255,0.4)] transition-all hover:-translate-y-0.5 duration-200"
                 >
-                  <a href="https://dash.nabdaotp.com/" target="_blank" rel="noopener noreferrer">
+                  <a href="https://app.nabdaotp.com/en/login" target="_blank" rel="noopener noreferrer">
                     {isAnnual ? t('cta.yearly') : t('cta.trial')}
                   </a>
                 </Button>

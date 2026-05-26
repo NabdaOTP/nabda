@@ -348,7 +348,7 @@ function verifyOTP(userInput, storedHash, secret) {
                         {t('cta.title')}
                     </h2>
                     <a
-                        href="https://dash.nabdaotp.com/en/signup"
+                        href="https://app.nabdaotp.com/en/login"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="relative inline-flex items-center px-6 md:px-8 py-3 md:py-3.5 rounded-full bg-white text-[#635bff] font-bold text-sm md:text-base hover:bg-white/90 hover:-translate-y-0.5 transition-all duration-200 shadow-lg"

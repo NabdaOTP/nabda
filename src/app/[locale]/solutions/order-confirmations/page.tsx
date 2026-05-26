@@ -282,7 +282,7 @@ await sendOrderUpdate(order, "delivered");`;
                 descKey="orderSolution.cta.desc"
                 button1Key="orderSolution.cta.button1"
                 button2Key="orderSolution.cta.button2"
-                button2Href="https://api.nabdaotp.com/docs"
+                button2Href="https://connect.nabdaotp.com/docs"
             />
         </main>
     );

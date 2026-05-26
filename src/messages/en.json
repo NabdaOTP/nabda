@@ -48,12 +48,12 @@
         "subtitleEg": "Nabda OTP helps businesses in Egypt ship WhatsApp OTP and transactional messaging quickly with clean API workflows and regional support.🤍.",
         "cheapest": {
             "title": "Cheapest in Market",
-            "desc": "While others charge per message, we offer a flat monthly fee. Send unlimited WhatsApp messages for just $10/month — the most affordable API solution available.",
+            "desc": "The cheapest in the market for all types of businesses, and projects.",
             "highlight": "Save up to 90% compared to competitors"
         },
         "bundle": {
-            "title": "Multi-number Bundle",
-            "desc": "Group multiple WhatsApp numbers under one API key. Nabda automatically rotates messages across all slots — perfect for high-volume OTP delivery with built-in fault tolerance."
+            "title": "Official WhatsApp API",
+            "desc": "Send OTPs, notifications, alerts, and more through the Official WhatsApp Business API — verified, reliable, and built for scale. No bans, no limits, just seamless delivery."
         },
         "developer": {
             "title": "Developer First",
@@ -78,7 +78,7 @@
     },
     "pricing": {
         "title": "Simple, Transparent Pricing",
-        "subtitle": "No hidden fees. No per-message charges. The best value WhatsApp API.",
+        "subtitle": "No hidden fees. The best value Official WhatsApp API.",
         "monthly": "Monthly",
         "annualTitle": "Annual",
         "period": "/month",

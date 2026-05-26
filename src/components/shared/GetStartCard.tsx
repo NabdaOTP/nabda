@@ -17,7 +17,7 @@ export default function GetStartCard() {
                         {t('cta.subtitle')}
                     </p>
                     <a
-                        href="https://dash.nabdaotp.com/"
+                        href="https://app.nabdaotp.com/en/login"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="inline-flex items-center px-8 py-3.5 rounded-full bg-white text-[#635bff] font-bold hover:bg-white/90 hover:-translate-y-0.5 transition-all duration-200 shadow-lg"
