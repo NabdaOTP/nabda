@@ -15,13 +15,6 @@ const LANGUAGES = [
   { code: 'tr', label: 'Türkçe' },
 ] as const;
 
-const NAV_LINKS = [
-  { key: 'features',  href: '/#features' },
-  { key: 'pricing',   href: '/#pricing' },
-  { key: 'solutions', href: '/solutions' },
-  { key: 'comparing', href: '/comparing' },
-  { key: 'blogs',     href: '/blogs' },
-] as const;
 
 export default function Header() {
   const t        = useTranslations('nav');
@@ -93,11 +86,10 @@ export default function Header() {
 
           {/* Desktop Nav Links */}
           <ul className="hidden lg:flex items-center gap-7 flex-1 justify-center">
-            {NAV_LINKS.map(({ key, href, newTab }) => (
+            {NAV_LINKS.map(({ key, href }) => (
               <li key={key}>
                 <Link
                   href={href}
-                  {...(newTab && { target: '_blank', rel: 'noopener noreferrer' })}
                   className="text-[0.9375rem] font-medium text-navy-lighter hover:text-[#635bff] dark:text-[#8899a6] dark:hover:text-white transition-colors duration-150"
                 >
                   {t(key)}
