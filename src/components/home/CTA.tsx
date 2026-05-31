@@ -30,7 +30,7 @@ export default function CTA() {
 
         {/* CTA Button */}
         <a
-          href="https://app.nabdaotp.com/en/login"
+          href="https://app.nabda-otp.com/en/login"
           target="_blank"
           rel="noopener noreferrer"
           className="

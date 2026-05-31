@@ -19,7 +19,7 @@ export default function SolutionHero({
     descKey,
     cta1Key,
     cta2Key,
-    cta1Href = 'https://app.nabdaotp.com/en/login',
+    cta1Href = 'https://app.nabda-otp.com/en/login',
     cta2Href = 'https://connect.nabdaotp.com/docs',
     gradient = 'from-[#635bff] via-[#4f46e5] to-[#312e81]',
 }: SolutionHeroProps) {

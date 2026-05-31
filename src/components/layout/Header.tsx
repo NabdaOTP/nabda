@@ -161,7 +161,7 @@ export default function Header() {
 
             {/* Login CTA */}
             <a
-              href="https://app.nabdaotp.com/en/login"
+              href="https://app.nabda-otp.com/en/login"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center px-5 py-2.5 bg-[#635bff] hover:bg-[#7a73ff] text-white text-sm font-semibold rounded-full shadow-[0_4px_14px_rgba(99,91,255,0.35)] hover:shadow-[0_6px_20px_rgba(99,91,255,0.5)] hover:-translate-y-0.5 transition-all duration-200"
@@ -267,7 +267,7 @@ export default function Header() {
         {/* Login */}
         <div className="px-4 py-4">
           <a
-            href="https://app.nabdaotp.com/en/login"
+            href="https://app.nabda-otp.com/en/login"
             target="_blank"
             rel="noopener noreferrer"
             onClick={() => setMobileOpen(false)}

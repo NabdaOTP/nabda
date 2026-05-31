@@ -377,7 +377,7 @@ app.post("/nabda/webhook", (req, res) => {
                     <h2 className="relative text-2xl font-extrabold text-white mb-2">{t('cta.title')}</h2>
                     <p className="relative text-white/75 mb-6 text-sm">{t('cta.subtitle')}</p>
                     <a
-                        href="https://app.nabdaotp.com/en/login"
+                        href="https://app.nabda-otp.com/en/login"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="relative inline-flex items-center gap-2 px-8 py-3.5 rounded-full bg-white text-[#635bff] font-bold hover:bg-white/90 hover:-translate-y-0.5 transition-all duration-200 shadow-lg"

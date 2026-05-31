@@ -44,7 +44,7 @@ export default function WhyNabdaCards({ baseKey, cards }: WhyNabdaCardsProps) {
                         {t(`${baseKey}.cta.title` as Parameters<typeof t>[0])}
                     </h2>
                     <a
-                        href="https://app.nabdaotp.com/en/login"
+                        href="https://app.nabda-otp.com/en/login"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="inline-flex items-center justify-center px-8 py-3.5 rounded-full bg-[#635bff] hover:bg-[#4f46e5] text-white font-bold text-lg transition-all shadow-lg hover:shadow-xl hover:scale-105"

@@ -11,8 +11,7 @@ import { cn } from '@/lib/utils';
 
 // Feature lists 
 const STANDARD_FEATURES = [
-  'unlimited', 'noFee', 'trial', 'api',
-  'webhookReceive', 'media', 'webhook', 'support', 'cancel',
+  'api', 'webhookReceive', 'media', 'webhook', 'support', 'cancel',
 ] as const;
 
 const ENTERPRISE_FEATURES = [
@@ -117,14 +116,14 @@ export default function Pricing() {
 
             <div key={billing} className="animate-billing-swap">
               <CardHeader className="text-center pt-10 pb-6">
-                <div className="flex items-baseline justify-center gap-1 mb-3">
-                  <span className="text-2xl font-semibold text-white/50">$</span>
-                  <span className="text-6xl font-extrabold tracking-tight text-white">
-                    {isAnnual ? '110' : '10'}
-                  </span>
-                  <span className="text-base font-medium text-white/50">
-                    {isAnnual ? t('periodYear') : t('period')}
-                  </span>
+                <div className="flex flex-col items-center gap-1 mb-3">
+                  <span className="text-sm font-medium text-white/50 uppercase tracking-widest">Starting from</span>
+                  <div className="flex items-baseline gap-1">
+                    <span className="text-6xl font-extrabold tracking-tight text-white">
+                      {isAnnual ? '110' : '10'}
+                    </span>
+                    <span className="text-3xl font-bold text-white/70">$</span>
+                  </div>
                 </div>
                 <div className="flex flex-col gap-1 text-sm text-white/60">
                   {isAnnual && (
@@ -134,7 +133,6 @@ export default function Pricing() {
                   )}
                   <p>{t('standard.typeLine')}</p>
                   <p>{isAnnual ? t('annual.bestFor') : t('standard.bestForLine')}</p>
-                  <p>{t('standard.messagesLine')}</p>
                 </div>
               </CardHeader>
 
@@ -150,7 +148,7 @@ export default function Pricing() {
                   asChild
                   className="w-full py-6 text-white text-[16px] font-bold rounded-full bg-blurple hover:bg-blurple-light [a]:hover:bg-blurple-light shadow-[0_4px_20px_rgba(99,91,255,0.4)] transition-all hover:-translate-y-0.5 duration-200"
                 >
-                  <a href="https://app.nabdaotp.com/en/login" target="_blank" rel="noopener noreferrer">
+                  <a href="https://app.nabda-otp.com/en/login" target="_blank" rel="noopener noreferrer">
                     {isAnnual ? t('cta.yearly') : t('cta.trial')}
                   </a>
                 </Button>
