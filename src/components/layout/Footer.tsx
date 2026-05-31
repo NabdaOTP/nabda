@@ -46,7 +46,7 @@ export default function Footer() {
   const PRODUCT_LINKS = [
     { label: t('links.product.features'), href: '/#features' },
     { label: t('links.product.pricing'),  href: '/#pricing' },
-    { label: t('links.product.docs'),     href: 'https://connect.nabdaotp.com/docs', external: true },
+    { label: t('links.product.docs'),     href: 'https://connect.nabda-otp.com/docs', external: true },
   ];
 
   const SOLUTIONS_LINKS = [
@@ -74,7 +74,7 @@ export default function Footer() {
     { label: t('links.resources.bundle_vs_instance'), href: '/blogs/bundle-vs-instance'},
     { label: t('links.resources.top_5mis'), href: '/blogs/whatsapp-otp-mistakes'},
     { label: t('links.resources.whats_vs_sms'), href: '/blogs/whatsapp-replacing-sms'},
-    { label: t('links.resources.api_ref'),    href: 'https://connect.nabdaotp.com/docs', external: true },
+    { label: t('links.resources.api_ref'),    href: 'https://connect.nabda-otp.com/docs', external: true },
   ];
 
   const COMPANY_LINKS = [

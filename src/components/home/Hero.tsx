@@ -69,7 +69,7 @@ export default function Hero() {
                 {t('hero.cta.primary')}
               </a>
               <a
-                href="https://connect.nabdaotp.com/docs"
+                href="https://connect.nabda-otp.com/docs"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 px-7 py-3.5 text-base font-semibold rounded-full transition-all duration-200

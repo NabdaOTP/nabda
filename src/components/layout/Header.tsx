@@ -98,7 +98,7 @@ export default function Header() {
             ))}
             <li>
               <a
-                href="https://connect.nabdaotp.com/docs"
+                href="https://connect.nabda-otp.com/docs"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-[0.9375rem] font-medium text-navy-lighter hover:text-[#635bff] dark:text-[#8899a6] dark:hover:text-white transition-colors duration-150"
@@ -233,7 +233,7 @@ export default function Header() {
           ))}
           <li>
             <a
-              href="https://connect.nabdaotp.com/docs"
+              href="https://connect.nabda-otp.com/docs"
               target="_blank"
               rel="noopener noreferrer"
               onClick={() => setMobileOpen(false)}

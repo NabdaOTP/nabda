@@ -299,7 +299,7 @@ await sendPromotionalCampaign({
         descKey="marketingSolution.cta.desc"
         button1Key="marketingSolution.cta.button1"
         button2Key="marketingSolution.cta.button2"
-        button2Href="https://connect.nabdaotp.com/docs"
+        button2Href="https://connect.nabda-otp.com/docs"
       />
     </main>
   );

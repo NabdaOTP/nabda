@@ -129,7 +129,7 @@ export default function CountryPageTemplate({ country, locale, phoneExample }: P
                   {displayData.ctaPrimaryText}
                 </a>
                 <a
-                  href="https://connect.nabdaotp.com/docs"
+                  href="https://connect.nabda-otp.com/docs"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex items-center gap-2 px-7 py-3.5 text-base font-semibold rounded-full border border-[#635bff]/30 text-[#635bff] hover:bg-[#635bff]/8 dark:border-white/20 dark:text-white/80 dark:hover:border-white/40 transition-all duration-200"
