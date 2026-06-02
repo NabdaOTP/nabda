@@ -1,4 +1,4 @@
-import type { Metadata } from 'next';
+import type { Metadata, Viewport } from 'next';
 import { NextIntlClientProvider } from 'next-intl';
 import { getMessages } from 'next-intl/server';
 import { notFound } from 'next/navigation';
@@ -9,6 +9,7 @@ import Footer from '@/components/layout/Footer'
 import '@/app/globals.css';
 import { ThemeProvider } from '@/components/providers/ThemeProvider';
 import WhatsAppFloat from '@/components/home/WhatsAppFloat';
+import { getOrganizationSchema, getWebsiteSchema, type Locale } from '@/lib/seo';
 
 
 const inter = Inter({
@@ -34,7 +35,14 @@ type Props = {
 export async function generateStaticParams() {
   return routing.locales.map((locale) => ({ locale }));
 }
-
+export const viewport: Viewport = {
+  themeColor: [
+    { media: '(prefers-color-scheme: light)', color: '#ffffff' },
+    { media: '(prefers-color-scheme: dark)', color: '#000000' },
+  ],
+  width: 'device-width',
+  initialScale: 1,
+};
 export async function generateMetadata({
   params,
 }: {
@@ -134,6 +142,9 @@ export default async function LocaleLayout({ children, params }: Props) {
   const messages = await getMessages();
   const isRTL = locale === 'ar';
 
+  const organizationSchema = getOrganizationSchema();
+  const websiteSchema = getWebsiteSchema(locale as Locale);
+
   return (
     <html
       lang={locale}
@@ -144,6 +155,14 @@ export default async function LocaleLayout({ children, params }: Props) {
         className={isRTL ? 'font-arabic' : 'font-inter'}
         suppressHydrationWarning
       >
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationSchema) }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteSchema) }}
+        />
         <ThemeProvider>
           <NextIntlClientProvider messages={messages}>
             <Header />

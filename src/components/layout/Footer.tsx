@@ -47,7 +47,7 @@ export default function Footer() {
     { label: t('links.product.features'),  href: '/#features' },
     { label: t('links.product.pricing'),   href: '/#pricing' },
     { label: t('links.product.solutions'), href: '/solutions' },
-    { label: t('links.product.comparisons'), href: '/comparisons' },
+    { label: t('links.product.comparisons'), href: '/comparing' },
     { label: t('links.product.docs'),      href: 'https://api.nabdaotp.com/docs', external: true },
   ];
 

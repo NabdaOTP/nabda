@@ -3,14 +3,14 @@
 User-agent: *
 Allow: /
 
-# Legacy / noisy URLs
+# Block noisy/legacy URLs
 Disallow: /index.html
 Disallow: /*?*lang=*
 Disallow: /*?*q=*
+Disallow: /api/
+Disallow: /_next/
 
-Sitemap: https://www.nabdaotp.com/sitemap.xml
-
-# AI crawlers — allow all public pages
+# AI crawlers
 User-agent: GPTBot
 Allow: /
 
@@ -29,11 +29,8 @@ Allow: /
 User-agent: Google-Extended
 Allow: /
 
-User-agent: Googlebot
-Allow: /
-
-User-agent: Googlebot-Image
-Allow: /
-
 User-agent: Bingbot
 Allow: /
+
+# Reference all sitemaps
+Sitemap: https://www.nabdaotp.com/sitemap.xml
