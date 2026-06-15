@@ -2,7 +2,7 @@
 
 import { useState } from 'react';
 import { useTranslations } from 'next-intl';
-import { Check } from 'lucide-react';
+import { Check, X } from 'lucide-react';
 import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardHeader } from '@/components/ui/card';
@@ -12,34 +12,41 @@ import { cn } from '@/lib/utils';
 // Feature lists 
 const STANDARD_FEATURES = [
   'unlimited', 'noFee', 'trial', 'api',
-  'webhookReceive', 'media', 'webhook', 'support', 'cancel',
+  'webhookReceive', 'media', 'webhook', 'support', 'cancel', 'nonOfficial',
 ] as const;
 
 const ENTERPRISE_FEATURES = [
-  'meta', 'greenBadge', 'limits', 'verification', 'onboarding', 'support', 'sla',
+  'meta', 'officialApiFromMeta', 'freeSetupAccount', 'technicalSupportWhatsapp', 'noMetaRestrictions',
+  'greenBadge', 'limits', 'verification', 'onboarding', 'support', 'sla',
 ] as const;
 
 // Reusable check item
 function FeatureItem({
   label,
   dark = false,
+  included = true,
 }: {
   label: string;
   dark?: boolean;
+  included?: boolean;
 }) {
   return (
     <li className="flex items-center gap-3 py-1.5">
       <span className={cn(
         'flex items-center justify-center w-5 h-5 rounded-full shrink-0',
-        dark ? 'bg-[#00d4aa]/15' : 'bg-[#00d4aa]/15'
+        included ? 'bg-[#00d4aa]/15' : 'bg-red-500/15'
       )}>
-        <Check size={12} strokeWidth={3} className="text-[#00d4aa]" />
+        {included ? (
+          <Check size={12} strokeWidth={3} className="text-[#00d4aa]" />
+        ) : (
+          <X size={12} strokeWidth={3} className="text-red-400" />
+        )}
       </span>
       <span className={cn(
         'text-[0.9375rem]',
         dark
-          ? 'text-white/80'
-          : 'text-[#0a2540] dark:text-[#cbd5e1]'
+          ? included ? 'text-white/80' : 'text-white/50'
+          : included ? 'text-[#0a2540] dark:text-[#cbd5e1]' : 'text-[#0a2540]/50 dark:text-[#cbd5e1]/50'
       )}>
         {label}
       </span>
@@ -143,7 +150,12 @@ export default function Pricing() {
               <CardContent className="pt-6 pb-8">
                 <ul className="space-y-0.5 mb-8">
                   {STANDARD_FEATURES.map((key) => (
-                    <FeatureItem key={key} label={tf(key)} dark />
+                    <FeatureItem
+                      key={key}
+                      label={tf(key)}
+                      dark
+                      included={key !== 'nonOfficial'}
+                    />
                   ))}
                 </ul>
                 <Button
@@ -199,7 +211,7 @@ export default function Pricing() {
                     label={
                       key === 'support'
                         ? tf('support')
-                        : te(key as 'meta' | 'greenBadge' | 'limits' | 'verification' | 'onboarding' | 'sla')
+                        : te(key as 'meta' | 'officialApiFromMeta' | 'freeSetupAccount' | 'technicalSupportWhatsapp' | 'noMetaRestrictions' | 'greenBadge' | 'limits' | 'verification' | 'onboarding' | 'sla')
                     }
                     dark
                   />
