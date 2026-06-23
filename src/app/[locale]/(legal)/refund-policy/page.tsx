@@ -118,7 +118,7 @@ export default function RefundPolicyPage() {
                 <p className="text-[0.9375rem] leading-[1.8] text-[#425466] dark:text-[#8899a6] m-0">
                   {t('contactText')}{' '}
                   <a
-                    href="https://wa.me/905346639145"
+                    href="https://wa.me/905352682350"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="font-semibold text-[#635bff] hover:text-[#7a73ff] underline transition-colors"

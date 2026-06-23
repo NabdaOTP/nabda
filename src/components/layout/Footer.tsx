@@ -81,7 +81,7 @@ export default function Footer() {
 
   const COMPANY_LINKS = [
     { label: t('links.company.about'),   href: '/about' },
-    { label: t('links.company.contact'), href: 'https://wa.me/905346639145', external: true },
+    { label: t('links.company.contact'), href: 'https://wa.me/905352682350', external: true },
     { label: t('links.company.privacy'), href: '/privacy-policy' },
     { label: t('links.company.terms'),   href: '/terms-of-service' },
     { label: t('links.company.refund'),  href: '/refund-policy' },

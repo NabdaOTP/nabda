@@ -22,7 +22,7 @@ const organizationSchema = {
   contactPoint: {
     '@type': 'ContactPoint',
     contactType: 'customer support',
-    url: 'https://wa.me/905346639145',
+    url: 'https://wa.me/905352682350',
     availableLanguage: ['English', 'Arabic'],
   },
   sameAs: [],

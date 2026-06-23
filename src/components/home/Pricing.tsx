@@ -210,7 +210,7 @@ export default function Pricing() {
                 variant="outline"
                 className="w-full py-6 text-base font-semibold rounded-full border-white/25 text-white bg-white/8 hover:bg-white/15 hover:text-white hover:border-white/40 transition-all"
               >
-                <a href="https://wa.me/905346639145" target="_blank" rel="noopener noreferrer">
+                <a href="https://wa.me/905352682350" target="_blank" rel="noopener noreferrer">
                   {t('cta.contact')}
                 </a>
               </Button>

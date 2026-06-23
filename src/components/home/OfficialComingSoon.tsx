@@ -116,7 +116,7 @@ export default function OfficialComingSoon() {
                         </p>
                     </div>
                     <a
-                        href="https://wa.me/905346639145"
+                        href="https://wa.me/905352682350"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="shrink-0 inline-flex items-center gap-2 px-6 py-2.5 rounded-full border border-[#635bff]/30 text-[#635bff] dark:text-[#a89fff] dark:border-[#635bff]/30 text-sm font-semibold hover:bg-[#635bff]/8 transition-colors"
