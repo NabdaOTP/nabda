@@ -98,7 +98,8 @@
             "media": "إرسال الوسائط والمستندات",
             "webhook": "دعم Webhook",
             "support": "دعم أولوية",
-            "cancel": "إلغاء في أي وقت"
+            "cancel": "إلغاء في أي وقت",
+            "nonOfficial": "غير رسمي"
         },
         "cta": {
             "trial": "ابدأ تجربتك المجانية",
@@ -122,6 +123,10 @@
             "bestFor": "مناسبة للشركات الكبيرة والامتثال",
             "messages": "الرسائل: الدفع لكل محادثة",
             "meta": "واجهة رسمية موثقة من Meta",
+            "officialApiFromMeta": "واجهة رسمية من Meta",
+            "freeSetupAccount": "إعداد حساب مجاني",
+            "technicalSupportWhatsapp": "دعم فني عبر واتساب",
+            "noMetaRestrictions": "بدون قيود Meta",
             "limits": "حدود رسائل أعلى",
             "verification": "دعم توثيق النشاط التجاري",
             "onboarding": "إعداد مخصص",

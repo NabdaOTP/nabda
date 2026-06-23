@@ -96,7 +96,8 @@
             "media": "Medya ve belge gönderimi",
             "webhook": "Webhook desteği",
             "support": "Öncelikli Destek",
-            "cancel": "İstediğiniz zaman iptal"
+            "cancel": "İstediğiniz zaman iptal",
+            "nonOfficial": "Resmi değil"
         },
         "cta": {
             "trial": "Ücretsiz Denemenizi Başlatın",
@@ -120,6 +121,10 @@
             "bestFor": "En uygun: Kurumsal ve uyumluluk",
             "messages": "Mesajlar: Konuşma başına ödeme",
             "meta": "Resmi Meta Onaylı API",
+            "officialApiFromMeta": "Meta'dan resmi API",
+            "freeSetupAccount": "Ücretsiz hesap kurulumu",
+            "technicalSupportWhatsapp": "WhatsApp üzerinden teknik destek",
+            "noMetaRestrictions": "Meta kısıtlaması yok",
             "limits": "Daha yüksek mesaj limitleri",
             "verification": "İşletme doğrulama desteği",
             "onboarding": "Özel kurulum desteği",

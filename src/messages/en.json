@@ -98,7 +98,8 @@
             "media": "Send media & documents",
             "webhook": "Webhook support",
             "support": "Priority Support",
-            "cancel": "Cancel Anytime"
+            "cancel": "Cancel Anytime",
+            "nonOfficial": "Non offical"
         },
         "cta": {
             "trial": "Start Your Free Trial",
@@ -122,6 +123,10 @@
             "bestFor": "Best for: Enterprise & Compliance",
             "messages": "Messages: Pay-per-conversation",
             "meta": "Official Meta-Verified API",
+            "officialApiFromMeta": "Official API from Meta",
+            "freeSetupAccount": "Free setup account",
+            "technicalSupportWhatsapp": "Technical support via WhatsApp",
+            "noMetaRestrictions": "No Meta restrictions",
             "limits": "Higher Message Limits",
             "verification": "Business Verification Support",
             "onboarding": "Dedicated Onboarding",
