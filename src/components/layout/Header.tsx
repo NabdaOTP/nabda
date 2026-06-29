@@ -85,7 +85,7 @@ export default function Header() {
           >
             <Image
               src="/assets/android-chrome-192x192.png"
-              alt="Nabda OTP"
+              alt=""
               width={40}
               height={40}
               className="rounded-xl"
@@ -223,6 +223,7 @@ export default function Header() {
           <Button
             variant="ghost"
             onClick={() => setMobileOpen(false)}
+            aria-label="Close menu"
             className="p-2 rounded-lg text-deep-navy hover:bg-gray-100 dark:text-white dark:hover:bg-white/10 transition-colors"
           >
             <X size={22} />

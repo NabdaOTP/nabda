@@ -1,0 +1,52 @@
+# Nabda OTP
+
+> The cheapest WhatsApp API for MENA — unlimited messages, REST API, webhooks, from $10/month with no per-message fees.
+
+Nabda OTP is a WhatsApp Business API gateway for developers and businesses in Iraq, Syria, and the broader MENA region. It enables OTP verification, order confirmations, appointment reminders, account security alerts, and marketing messages over WhatsApp. Pricing is flat-rate: a monthly bundle with unlimited messages — no per-message charges, no setup fees, no contracts. Plans start at $10/month and support REST API access, webhooks, and delivery tracking.
+
+Nabda OTP is a focused alternative to per-message WhatsApp providers like Twilio, UltraMsg, and OTPiq — for teams that need high volume and predictable costs, without paying per send.
+
+## Product
+
+- [Homepage](https://www.nabdaotp.com/en): WhatsApp OTP API overview, key statistics (1M+ messages delivered, 2s average delivery, 99.9% uptime, 180+ countries), how it works, feature highlights, pricing plans, FAQ, and payment methods.
+- [Pricing](https://www.nabdaotp.com/en#pricing): Flat-rate monthly plans starting at $10/month. Unlimited messages within each plan. No per-message fees. Compare Starter, Growth, and Business tiers.
+
+## Solutions
+
+- [OTP Verification](https://www.nabdaotp.com/en/solutions/otp-verification): Send one-time passwords via WhatsApp for login, signup, and account recovery flows.
+- [Order Confirmations](https://www.nabdaotp.com/en/solutions/order-confirmations): Automate order confirmation messages via WhatsApp for e-commerce and delivery businesses.
+- [Appointment Reminders](https://www.nabdaotp.com/en/solutions/appointment-reminders): Reduce no-shows by sending automated appointment reminders to customers on WhatsApp.
+- [Account Security](https://www.nabdaotp.com/en/solutions/account-security): Protect accounts with two-factor authentication (2FA) messages delivered over WhatsApp.
+- [Marketing Messages](https://www.nabdaotp.com/en/solutions/marketing): Send promotional campaigns, offers, and product announcements via WhatsApp Business API.
+
+## Comparisons
+
+- [Nabda vs Twilio](https://www.nabdaotp.com/en/comparing/nabda-vs-twilio): Side-by-side comparison of Nabda OTP and Twilio Verify across pricing, charging model, anti-fraud, onboarding, and support.
+- [Nabda vs UltraMsg](https://www.nabdaotp.com/en/comparing/nabda-vs-ultramsg): How Nabda's official WhatsApp Business API compares to UltraMsg's unofficial routing on reliability, compliance, and cost.
+- [Nabda vs OTPiq](https://www.nabdaotp.com/en/comparing/nabda-vs-otpiq): Feature and pricing comparison between Nabda OTP and OTPiq for MENA businesses.
+- [Nabda vs Bulk SMS](https://www.nabdaotp.com/en/comparing/nabda-vs-bulk-sms): Why WhatsApp OTP outperforms Bulk SMS for delivery rates, open rates, and cost-per-verified-user in MENA.
+- [Nabda vs Official WhatsApp API](https://www.nabdaotp.com/en/comparing/nabda-vs-official): How Nabda simplifies access to Meta's WhatsApp Business Cloud API without direct BSP onboarding complexity.
+- [All Alternatives](https://www.nabdaotp.com/en/comparing/nabda-vs-alternatives): Overview of all Nabda OTP comparisons against major WhatsApp and SMS verification providers.
+
+## Blog
+
+- [WhatsApp OTP Guide for Iraq](https://www.nabdaotp.com/en/blogs/whatsapp-otp-iraq-guide): Step-by-step guide to implementing WhatsApp OTP for Iraqi businesses — regulations, setup, and best practices.
+- [Top 5 WhatsApp OTP Mistakes](https://www.nabdaotp.com/en/blogs/whatsapp-otp-mistakes): Common mistakes developers make when implementing WhatsApp OTP and how to avoid them.
+- [WhatsApp vs SMS Cost Comparison](https://www.nabdaotp.com/en/blogs/whatsapp-vs-sms-cost): Detailed cost breakdown comparing WhatsApp OTP delivery against traditional SMS for MENA markets.
+- [WhatsApp Replacing SMS](https://www.nabdaotp.com/en/blogs/whatsapp-replacing-sms): Why WhatsApp is becoming the default OTP channel in MENA and emerging markets.
+- [Bundle vs Instance Pricing](https://www.nabdaotp.com/en/blogs/bundle-vs-instance): Explaining Nabda's flat-rate bundle model versus per-instance pricing — and which model fits different business sizes.
+
+## Company
+
+- [About Nabda OTP](https://www.nabdaotp.com/en/about): Company background, mission, and why Nabda was built for MENA businesses that needed affordable, reliable WhatsApp messaging.
+
+## Legal
+
+- [Privacy Policy](https://www.nabdaotp.com/en/privacy-policy): Data collection, retention, and third-party services used by Nabda OTP.
+- [Terms of Service](https://www.nabdaotp.com/en/terms-of-service): Account terms, billing model, acceptable use, and governing law.
+- [Refund Policy](https://www.nabdaotp.com/en/refund-policy): Conditions under which refunds are issued for prepaid plans and wallet credit.
+
+## Contact
+
+- WhatsApp support: https://wa.me/905352682350
+- Website: https://www.nabdaotp.com

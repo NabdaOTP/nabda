@@ -1,6 +1,6 @@
 import type { Metadata, Viewport } from 'next';
 import { NextIntlClientProvider } from 'next-intl';
-import { getMessages } from 'next-intl/server';
+import { getMessages, setRequestLocale } from 'next-intl/server';
 import { notFound } from 'next/navigation';
 import { routing } from '@/i18n/routing';
 import { Inter, IBM_Plex_Sans_Arabic } from 'next/font/google';
@@ -139,6 +139,7 @@ export default async function LocaleLayout({ children, params }: Props) {
     notFound();
   }
 
+  setRequestLocale(locale);
   const messages = await getMessages();
   const isRTL = locale === 'ar';
 
@@ -150,10 +151,10 @@ export default async function LocaleLayout({ children, params }: Props) {
       lang={locale}
       dir={isRTL ? 'rtl' : 'ltr'}
       className={`${inter.variable} ${ibmPlexArabic.variable}`}
+      suppressHydrationWarning
     >
       <body
         className={isRTL ? 'font-arabic' : 'font-inter'}
-        suppressHydrationWarning
       >
         <script
           type="application/ld+json"
