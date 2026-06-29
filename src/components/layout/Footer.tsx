@@ -160,7 +160,7 @@ export default function Footer() {
           >
             <Image
               src="/assets/android-chrome-192x192.png"
-              alt="Nabda OTP"
+              alt=""
               width={44}
               height={44}
               className="rounded-xl"

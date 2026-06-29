@@ -1,6 +1,5 @@
 import { useTranslations } from 'next-intl';
 import { ArrowRight, Rocket } from 'lucide-react';
-import AnimateIn from '@/components/shared/AnimateIn';
 
 export default function Hero() {
   const t = useTranslations();
@@ -32,7 +31,7 @@ export default function Hero() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
 
           {/* Left: Text */}
-          <AnimateIn className="flex flex-col gap-6">
+          <div className="flex flex-col gap-6 animate-hero-left">
 
             {/* Badge */}
             <div className="inline-flex items-center self-start gap-2 rounded-full px-4 py-1.5 text-sm font-medium
@@ -88,10 +87,10 @@ export default function Hero() {
               <strong className="font-semibold text-deep-navy dark:text-white">$10/month</strong>
               {' '}— No per-message fees
             </p>
-          </AnimateIn>
+          </div>
 
           {/*  Right: Code Terminal  */}
-          <AnimateIn className="relative" delay={150} from="right">
+          <div className="relative animate-hero-right">
             <div className="rounded-2xl overflow-hidden border shadow-2xl
               border-[#e2e8f0] bg-[#f8fafc]
               dark:border-white/10 dark:bg-[#0d1b2e]
@@ -152,7 +151,7 @@ export default function Hero() {
                 <span className="text-xs font-medium text-[#00d4aa]">Message delivered · 0.3s</span>
               </div>
             </div>
-          </AnimateIn>
+          </div>
 
         </div>
       </div>

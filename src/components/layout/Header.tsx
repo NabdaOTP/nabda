@@ -81,6 +81,7 @@ export default function Header() {
           {/* Logo */}
           <Link
             href="/"
+            aria-label="Nabda OTP"
             className="flex items-center gap-2.5 font-bold text-lg text-deep-navy dark:text-white shrink-0 hover:opacity-80 transition-opacity"
           >
             <Image
@@ -91,7 +92,7 @@ export default function Header() {
               className="rounded-xl"
               priority
             />
-            <span className="hidden sm:inline tracking-tight">Nabda OTP</span>
+            <span className="hidden sm:inline tracking-tight" aria-hidden="true">Nabda OTP</span>
           </Link>
 
           {/* Desktop Nav Links */}
