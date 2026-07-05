@@ -113,7 +113,6 @@ export default function TermsOfServicePage() {
 
             <Section title={t('whatsappTitle')}>
               <P>{t('whatsapp.one')}</P>
-              <P>{t('whatsapp.two')}</P>
               <P>{t('whatsapp.three')}</P>
               <P>{t('whatsapp.four')}</P>
               <P>{t('whatsapp.five')}</P>

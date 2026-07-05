@@ -407,7 +407,6 @@
         "whatsappTitle": "WhatsApp Usage Policy",
         "whatsapp": {
             "one": "Nabda OTP provides a WhatsApp Gateway service. Your use of WhatsApp through our platform must comply with Meta's WhatsApp Business Policy.",
-            "two": "You may not use the platform to send promotional messages without proper consent from recipients.",
             "three": "We reserve the right to suspend accounts that violate WhatsApp policies or applicable laws.",
             "four": "Nabda OTP is not affiliated with or endorsed by WhatsApp Inc. or Meta Platforms.",
             "five": "The platform is designed for legitimate business messaging including OTP verification, order notifications, and customer support."

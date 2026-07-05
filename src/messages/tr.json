@@ -405,7 +405,6 @@
         "whatsappTitle": "WhatsApp Kullanım Politikası",
         "whatsapp": {
             "one": "Nabda OTP bir WhatsApp Gateway hizmeti sunar. Platformumuz üzerinden WhatsApp kullanımı Meta'nın WhatsApp Business Politikasına uygun olmalıdır.",
-            "two": "Alıcılardan uygun onay almadan promosyon mesajları göndermek için platformu kullanamazsınız.",
             "three": "WhatsApp politikalarını veya geçerli yasaları ihlal eden hesapları askıya alma hakkını saklı tutarız.",
             "four": "Nabda OTP, WhatsApp Inc. veya Meta Platforms ile bağlı veya onaylanmış değildir.",
             "five": "Platform, OTP doğrulama, sipariş bildirimleri ve müşteri desteği gibi meşru iş mesajlaşmaları için tasarlanmıştır."

@@ -1,16 +1,18 @@
-import { getTranslations } from 'next-intl/server';
-import GeoLocationBanner from '@/components/home/GeoLocationBanner';
-import Hero     from '@/components/home/Hero';
-import Stats    from '@/components/home/Stats';
+import dynamic from 'next/dynamic';
+import Hero from '@/components/home/Hero';
 import Partner  from '@/components/home/Partner';
 import Features from '@/components/home/Features';
-import Pricing  from '@/components/home/Pricing';
 import FAQ      from '@/components/home/FAQ';
 import CTA      from '@/components/home/CTA';
 import Payment  from '@/components/home/Payment';
+import GeoLocationBannerLoader from '@/components/home/GeoLocationBannerLoader';
+
+// Client-heavy components: split into deferred JS chunks, SSR stays on
+const Stats   = dynamic(() => import('@/components/home/Stats'));
+const Pricing = dynamic(() => import('@/components/home/Pricing'));
+
 const BASE_URL = 'https://www.nabdaotp.com';
- 
-// JSON-LD schemas
+
 const organizationSchema = {
   '@context': 'https://schema.org',
   '@type': 'Organization',
@@ -27,7 +29,7 @@ const organizationSchema = {
   },
   sameAs: [],
 };
- 
+
 const websiteSchema = {
   '@context': 'https://schema.org',
   '@type': 'WebSite',
@@ -39,7 +41,7 @@ const websiteSchema = {
     'query-input': 'required name=search_term_string',
   },
 };
- 
+
 const softwareSchema = {
   '@context': 'https://schema.org',
   '@type': 'SoftwareApplication',
@@ -62,12 +64,10 @@ const softwareSchema = {
   description:
     'WhatsApp API gateway for OTP verification, order confirmations, and business messaging in MENA. From $10/month with no per-message fees.',
 };
- 
-// Page Component
+
 export default async function HomePage() {
   return (
     <>
-      {/* Structured Data */}
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationSchema) }}
@@ -80,8 +80,7 @@ export default async function HomePage() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(softwareSchema) }}
       />
- 
-      {/* Sections */}
+
       <Hero />
       <Stats />
       <Partner />
@@ -90,7 +89,7 @@ export default async function HomePage() {
       <FAQ />
       <CTA />
       <Payment />
-      <GeoLocationBanner />
+      <GeoLocationBannerLoader />
     </>
   );
 }
