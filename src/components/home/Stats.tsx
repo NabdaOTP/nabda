@@ -93,8 +93,8 @@ export default function Stats() {
   }, []);
 
   const stats = [
-    { icon: Building2,     countTarget: 186,  suffix: '+', label: t('businesses') },
-    { icon: MessageSquare, countTarget: 14, suffix: 'k+', label: t('messages')   },
+    { icon: Building2,     countTarget: 250,  suffix: '+', label: t('businesses') },
+    { icon: MessageSquare, countTarget: 17, suffix: 'K+', label: t('messages')   },
     { icon: Activity,      staticValue: '99.99%',          label: t('uptime')     },
     { icon: ShieldCheck,   staticValue: '✓',               label: t('reliable')   },
   ];
