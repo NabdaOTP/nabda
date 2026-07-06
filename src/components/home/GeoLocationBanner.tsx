@@ -98,7 +98,7 @@ export default function GeoLocationBanner() {
   return (
     <div
       className={`
-        fixed bottom-24 inset-e-4 z-50 w-[min(340px,calc(100vw-2rem))]
+        fixed bottom-6 inset-e-4 z-50 w-[min(300px,calc(100vw-2rem))]
         transition-all duration-300 ease-out
         ${animating ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'}
       `}
@@ -113,37 +113,31 @@ export default function GeoLocationBanner() {
         {/* Top accent line */}
         <div className="h-1 bg-linear-to-r from-[#635bff] to-[#00d4aa]" />
 
-        <div className="p-4">
+        <div className="p-3">
           {/* Header row */}
-          <div className="flex items-start justify-between gap-3 mb-3">
-            <div className="flex items-center gap-2">
-              <div className="flex items-center justify-center w-8 h-8 rounded-full bg-[#635bff]/10">
-                <MapPin size={16} className="text-[#635bff]" />
+          <div className="flex items-center justify-between gap-2 mb-2">
+            <div className="flex items-center gap-1.5">
+              <div className="flex items-center justify-center w-6 h-6 rounded-full bg-[#635bff]/10">
+                <MapPin size={13} className="text-[#635bff]" />
               </div>
-              <span className="text-xs font-semibold uppercase tracking-wide text-[#635bff]">
+              <span className="text-[0.7rem] font-semibold uppercase tracking-wide text-[#635bff]">
                 {isAR ? 'تم تحديد موقعك' : 'Location detected'}
               </span>
             </div>
             <button
               onClick={dismiss}
-              className="p-1 rounded-lg text-[#94a3b8] hover:text-[#475569] hover:bg-gray-100 dark:hover:bg-white/10 transition-colors"
+              className="p-0.5 rounded-lg text-[#94a3b8] hover:text-[#475569] hover:bg-gray-100 dark:hover:bg-white/10 transition-colors"
               aria-label="Dismiss"
             >
-              <X size={16} />
+              <X size={14} />
             </button>
           </div>
 
           {/* Message */}
-          <p className="text-[0.9375rem] font-semibold text-[#0a2540] dark:text-white mb-1" dir={isAR ? 'rtl' : 'ltr'}>
+          <p className="text-sm font-semibold text-[#0a2540] dark:text-white mb-2.5" dir={isAR ? 'rtl' : 'ltr'}>
             {isAR
               ? `${country.flag} يبدو أنك في ${country.ar}`
               : `${country.flag} It seems you're in ${country.en}`
-            }
-          </p>
-          <p className="text-sm text-[#64748b] dark:text-[#8899a6] mb-4" dir={isAR ? 'rtl' : 'ltr'}>
-            {isAR
-              ? `لدينا صفحة مخصصة لـ${country.ar} بمعلومات محلية أفضل.`
-              : `We have a dedicated page for ${country.en} with local info.`
             }
           </p>
 
@@ -151,14 +145,14 @@ export default function GeoLocationBanner() {
           <div className="flex gap-2">
             <button
               onClick={goToCountryPage}
-              className="flex-1 flex items-center justify-center gap-2 py-2.5 px-4 rounded-xl text-sm font-semibold bg-[#635bff] hover:bg-[#7a73ff] text-white transition-colors"
+              className="flex-1 flex items-center justify-center gap-1.5 py-2 px-3 rounded-xl text-xs font-semibold bg-[#635bff] hover:bg-[#7a73ff] text-white transition-colors"
             >
               {isAR ? `اذهب لصفحة ${country.ar}` : `Go to ${country.en} page`}
-              <ArrowRight size={15} className={isAR ? 'rotate-180' : ''} />
+              <ArrowRight size={13} className={isAR ? 'rotate-180' : ''} />
             </button>
             <button
               onClick={dismiss}
-              className="py-2.5 px-4 rounded-xl text-sm font-medium text-[#64748b] dark:text-[#8899a6] hover:bg-gray-100 dark:hover:bg-white/8 transition-colors"
+              className="py-2 px-3 rounded-xl text-xs font-medium text-[#64748b] dark:text-[#8899a6] hover:bg-gray-100 dark:hover:bg-white/8 transition-colors"
             >
               {isAR ? 'لاحقاً' : 'Later'}
             </button>
