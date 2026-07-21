@@ -104,7 +104,7 @@
         "cta": {
             "trial": "Start Your Free Trial",
             "yearly": "Choose Yearly Plan",
-            "contact": "Contact Us"
+            "contact": "Try Official Meta API"
         },
         "note": {
             "trial": "No credit card required • Setup in 2 minutes",
@@ -117,7 +117,7 @@
             "messages": "Messages: Unlimited WhatsApp (Annual)"
         },
         "enterprise": {
-            "contact": "Contact Us",
+            "contact": "Best Option",
             "enter": "Enterprise",
             "type": "Type: WhatsApp Official API",
             "bestFor": "Best for: Enterprise & Compliance",

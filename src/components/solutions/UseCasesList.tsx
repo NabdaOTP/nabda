@@ -15,7 +15,7 @@ export default function UseCasesList({ labelKey, titleKey, useCases }: UseCasesL
     const t = useTranslations();
 
     return (
-        <section className="bg-[#f8f9ff] dark:bg-[#0a1628] border-y border-gray-100 dark:border-white/8 py-16">
+        <section className="bg-[#f8f9ff] dark:bg-[#0a1628] border-y border-gray-100 dark:border-white/8 py-12">
             <div className="container max-w-240 mx-auto px-6">
                 {/* Label */}
                 <span className="inline-block px-3 py-1 rounded-full bg-[#ede9fe] dark:bg-[#635bff]/20 text-[#635bff] dark:text-[#a89fff] text-xs font-bold uppercase tracking-wide mb-3">
@@ -23,7 +23,7 @@ export default function UseCasesList({ labelKey, titleKey, useCases }: UseCasesL
                 </span>
 
                 {/* Title */}
-                <h2 className="text-3xl md:text-4xl font-extrabold text-[#0a2540] dark:text-white mb-10 leading-tight">
+                <h2 className="text-3xl md:text-4xl font-extrabold text-[#0a2540] dark:text-white mb-8 leading-tight">
                     {t(titleKey as Parameters<typeof t>[0])}
                 </h2>
 
@@ -32,7 +32,7 @@ export default function UseCasesList({ labelKey, titleKey, useCases }: UseCasesL
                     {useCases.map((uc, i) => (
                         <div
                             key={i}
-                            className="flex items-center gap-3 p-5 rounded-xl bg-white dark:bg-white/4 border-s-4 border-[#635bff] shadow-sm"
+                            className="flex items-center gap-3 p-4 rounded-xl bg-white dark:bg-white/4 border-s-4 border-[#635bff]"
                         >
                             <span className="text-2xl shrink-0">{uc.emoji}</span>
                             <span className="text-sm font-medium text-[#374151] dark:text-[#e2e8f0] leading-snug">

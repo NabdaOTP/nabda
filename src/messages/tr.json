@@ -102,7 +102,7 @@
         "cta": {
             "trial": "Ücretsiz Denemenizi Başlatın",
             "yearly": "Yıllık Planı Seç",
-            "contact": "Bize Ulaşın"
+            "contact": "Resmi Meta API'yi Deneyin"
         },
         "note": {
             "trial": "Kredi kartı gerekmez • 2 dakikada kurulum",
@@ -115,7 +115,7 @@
             "messages": "Mesajlar: Sınırsız WhatsApp (Yıllık)"
         },
         "enterprise": {
-            "contact": "Bize Ulaşın",
+            "contact": "En İyi Seçenek",
             "enter": "Kurumsal",
             "type": "Tür: WhatsApp Resmi API",
             "bestFor": "En uygun: Kurumsal ve uyumluluk",

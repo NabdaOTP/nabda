@@ -12,8 +12,8 @@ function FooterCol({
 }) {
   return (
     <div>
-      <h4 className="text-sm font-semibold text-white mb-5 tracking-wide">{title}</h4>
-      <ul className="flex flex-col gap-3">
+      <h4 className="text-sm font-semibold text-white mb-4 tracking-wide">{title}</h4>
+      <ul className="flex flex-col gap-2.5">
         {links.map(({ label, href, external, accent }) => {
           const cls = `text-[0.875rem] leading-snug transition-colors duration-150 ${
             accent
@@ -130,8 +130,8 @@ export default function Footer() {
 
       {/*Countries Strip*/}
       <div className="border-b border-white/8">
-        <div className="max-w-300 mx-auto px-6 py-5">
-          <p className="text-xs font-semibold text-[#475569] uppercase tracking-widest mb-4">
+        <div className="max-w-300 mx-auto px-6 py-4">
+          <p className="text-xs font-semibold text-[#475569] uppercase tracking-widest mb-3">
             {t('regions')}
           </p>
           <div className="flex flex-wrap gap-2">
@@ -150,10 +150,10 @@ export default function Footer() {
       </div>
 
       {/* Main Link Grid */}
-      <div className="max-w-[1200px] mx-auto px-6 py-14">
+      <div className="max-w-[1200px] mx-auto px-6 py-10">
 
         {/* Top: Logo + tagline */}
-        <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4 mb-12 pb-10 border-b border-white/8">
+        <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4 mb-8 pb-7 border-b border-white/8">
           <Link
             href="/"
             className="inline-flex items-center gap-3 font-bold text-xl text-white hover:opacity-80 transition-opacity"
@@ -174,7 +174,7 @@ export default function Footer() {
         </div>
 
         {/* 5-column links grid */}
-        <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-10">
+        <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-8">
           <FooterCol title={t('product')}     links={PRODUCT_LINKS} />
           <FooterCol title={t('solutions')}   links={SOLUTIONS_LINKS} />
           <FooterCol title={t('comparisons')} links={COMPARISONS_LINKS} />
@@ -185,7 +185,7 @@ export default function Footer() {
 
       {/* Bottom Bar */}
       <div className="border-t border-white/8">
-        <div className="max-w-300 mx-auto px-6 py-6 flex flex-col sm:flex-row items-center justify-between gap-4">
+        <div className="max-w-300 mx-auto px-6 py-5 flex flex-col sm:flex-row items-center justify-between gap-4">
 
           {/* Badges */}
           <div className="flex items-center gap-6">

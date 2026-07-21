@@ -256,7 +256,7 @@ app.post("/nabda/webhook", (req, res) => {
             <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
 
             {/* Hero */}
-            <div className="relative overflow-hidden pt-20 pb-12 bg-linear-to-br from-white via-[#fff5f5] to-[#ffe4e4] dark:from-[#0a2540] dark:via-[#0d1b2e] dark:to-[#0a1628]">
+            <div className="relative overflow-hidden pt-14 pb-10 bg-linear-to-br from-white via-[#fff5f5] to-[#ffe4e4] dark:from-[#0a2540] dark:via-[#0d1b2e] dark:to-[#0a1628]">
                 <div className="pointer-events-none absolute inset-0">
                     <div className="absolute -top-32 -right-32 w-[500px] h-[500px] rounded-full bg-orange-400/10 blur-[100px] dark:bg-orange-500/10" />
                 </div>
@@ -291,7 +291,7 @@ app.post("/nabda/webhook", (req, res) => {
             </div>
 
             {/* Body */}
-            <div className="max-w-[860px] mx-auto px-6 py-12 flex flex-col gap-6">
+            <div className="max-w-[860px] mx-auto px-6 py-10 flex flex-col gap-5">
                 <div className="rounded-2xl border bg-white border-gray-100 shadow-sm dark:bg-white/4 dark:border-white/8 overflow-hidden">
                     <div className="h-1 bg-linear-to-r from-orange-400 to-[#635bff]" />
                     <div className="p-8 md:p-10 flex flex-col gap-1">
@@ -302,7 +302,7 @@ app.post("/nabda/webhook", (req, res) => {
 
                         {/* 5 Mistakes */}
                         {mistakes.map(({ key, wrong, fix }, i) => (
-                            <div key={key} className="mb-10">
+                            <div key={key} className="mb-8">
                                 {/* Number + title */}
                                 <div className="flex items-center gap-3 mb-4">
                                     <span className="flex items-center justify-center w-9 h-9 rounded-full bg-orange-100 dark:bg-orange-500/15 shrink-0">
@@ -347,7 +347,7 @@ app.post("/nabda/webhook", (req, res) => {
                                 </div>
 
                                 {/* Divider between mistakes */}
-                                {i < 4 && <hr className="mt-10 border-gray-100 dark:border-white/8" />}
+                                {i < 4 && <hr className="mt-8 border-gray-100 dark:border-white/8" />}
                             </div>
                         ))}
 

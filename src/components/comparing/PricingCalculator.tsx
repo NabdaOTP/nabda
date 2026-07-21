@@ -28,10 +28,10 @@ export default function PricingCalculator({
     const nabdaPerMsg = messages > 0 ? nabdaCost / messages : 0;
 
     return (
-        <section className="py-20 bg-[#f8f9ff] dark:bg-[#0a1628]">
+        <section className="py-14 bg-[#f8f9ff] dark:bg-[#0a1628]">
             <div className="container max-w-6xl mx-auto px-6">
                 {/* Header */}
-                <div className="text-center mb-12">
+                <div className="text-center mb-8">
                     <span className="inline-block px-4 py-2 rounded-full bg-[#fef3c7] dark:bg-[#f59e0b]/20 text-[#92400e] dark:text-[#fbbf24] text-sm font-bold uppercase tracking-wide mb-3">
                         {t(`${baseKey}.badge` as Parameters<typeof t>[0])}
                     </span>
@@ -44,7 +44,7 @@ export default function PricingCalculator({
                 </div>
 
                 {/* Slider */}
-                <div className="max-w-3xl mx-auto mb-12">
+                <div className="max-w-3xl mx-auto mb-8">
                     <label
                         htmlFor="messageSlider"
                         className="block text-center text-sm font-bold text-[#0a2540] dark:text-white mb-4"
@@ -143,7 +143,7 @@ export default function PricingCalculator({
                 </div>
 
                 {/* Note */}
-                <p className="text-center text-sm text-[#64748b] dark:text-[#94a3b8] mt-8">
+                <p className="text-center text-sm text-[#64748b] dark:text-[#94a3b8] mt-6">
                     {t(`${baseKey}.note` as Parameters<typeof t>[0])}
                 </p>
             </div>

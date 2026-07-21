@@ -73,8 +73,6 @@ export default function Header() {
         fixed top-0 inset-x-0 z-50 transition-colors duration-300
         bg-white/80 dark:bg-[#0a1628]/80
         backdrop-blur-xl
-        border-b border-black/8 dark:border-white/8
-        shadow-sm
       ">
         <nav className="max-w-300 mx-auto px-6 h-16 flex items-center justify-between gap-6">
 
@@ -148,9 +146,9 @@ export default function Header() {
               {langOpen && (
                 <ul className="
                   absolute inset-e-0 top-[calc(100%+6px)] min-w-40
-                  border rounded-xl shadow-lg overflow-hidden z-50 py-1
-                  bg-white border-gray-100
-                  dark:bg-[#0f1e30] dark:border-white/10
+                  rounded-xl overflow-hidden z-50 p-1.5
+                  bg-[#f8f9fc]
+                  dark:bg-[#0f1e30]
                 ">
                   {LANGUAGES.map(({ code, label }) => (
                     <li key={code}>
@@ -176,7 +174,7 @@ export default function Header() {
               href="https://dash.nabdaotp.com/en/login"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center px-5 py-2.5 bg-[#635bff] hover:bg-[#7a73ff] text-white text-sm font-semibold rounded-full shadow-[0_4px_14px_rgba(99,91,255,0.35)] hover:shadow-[0_6px_20px_rgba(99,91,255,0.5)] hover:-translate-y-0.5 transition-all duration-200"
+              className="inline-flex items-center px-5 py-2.5 bg-[#635bff] hover:bg-[#7a73ff] text-white text-sm font-semibold rounded-full transition-colors duration-200"
             >
               {t('login')}
             </a>
@@ -206,13 +204,13 @@ export default function Header() {
 
       {/* Mobile Panel */}
       <div className={`
-        fixed top-0 inset-x-0 z-50 shadow-2xl lg:hidden
+        fixed top-0 inset-x-0 z-50 lg:hidden
         bg-white dark:bg-[#0a1628]
         transition-transform duration-300 ease-in-out
         ${mobileOpen ? 'translate-y-0' : '-translate-y-full'}
       `}>
         {/* Panel header */}
-        <div className="flex items-center justify-between px-6 h-16 border-b border-gray-100 dark:border-white/10">
+        <div className="flex items-center justify-between px-6 h-16 bg-gray-50/70 dark:bg-white/3">
           <Link
             href="/"
             className="flex items-center gap-2.5 font-bold text-lg text-deep-navy dark:text-white"
@@ -232,7 +230,7 @@ export default function Header() {
         </div>
 
         {/* Nav links */}
-        <ul className="flex flex-col px-4 py-2 border-b border-gray-100 dark:border-white/10">
+        <ul className="flex flex-col px-4 py-3">
           {NAV_LINKS.map(({ key, href }) => (
             <li key={key}>
               <Link
@@ -258,7 +256,7 @@ export default function Header() {
         </ul>
 
         {/* Language */}
-        <div className="px-4 py-4 border-b border-gray-100 dark:border-white/10">
+        <div className="mx-4 px-4 py-4 rounded-2xl bg-gray-50 dark:bg-white/4">
           <p className="px-1 mb-3 text-xs font-semibold text-gray-400 dark:text-[#4a6278] uppercase tracking-widest">Language</p>
           <div className="flex gap-2">
             {LANGUAGES.map(({ code, label }) => (
@@ -267,7 +265,7 @@ export default function Header() {
                 onClick={() => switchLocale(code)}
                 className={`flex-1 py-2.5 text-sm font-semibold rounded-xl transition-colors ${
                   locale === code
-                    ? 'bg-[#635bff] text-white shadow-[0_4px_12px_rgba(99,91,255,0.35)]'
+                    ? 'bg-[#635bff] text-white'
                     : 'bg-gray-100 text-deep-navy hover:bg-gray-200 dark:bg-white/8 dark:text-[#8899a6] dark:hover:bg-white/15'
                 }`}
               >
@@ -284,7 +282,7 @@ export default function Header() {
             target="_blank"
             rel="noopener noreferrer"
             onClick={() => setMobileOpen(false)}
-            className="flex items-center justify-center w-full py-3.5 bg-[#635bff] hover:bg-[#7a73ff] text-white text-base font-semibold rounded-full shadow-[0_4px_14px_rgba(99,91,255,0.4)] transition-all"
+            className="flex items-center justify-center w-full py-3.5 bg-[#635bff] hover:bg-[#7a73ff] text-white text-base font-semibold rounded-full transition-colors"
           >
             {t('login')}
           </a>

@@ -6,7 +6,7 @@ export default function Hero() {
 
   return (
     <section className="
-      relative overflow-hidden py-14 md:py-16
+      relative overflow-hidden py-12 md:py-14
       bg-linear-to-br from-white via-[#f5f3ff] to-[#ede9fe]
       dark:bg-deep-navy dark:bg-none
     ">
@@ -28,15 +28,15 @@ export default function Hero() {
       </div>
 
       <div className="relative max-w-300 mx-auto px-6">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-10 items-center">
 
           {/* Left: Text */}
-          <div className="flex flex-col gap-6 animate-hero-left">
+          <div className="flex flex-col gap-5 animate-hero-left">
 
             {/* Badge */}
             <div className="inline-flex items-center self-start gap-2 rounded-full px-4 py-1.5 text-sm font-medium
-              border border-[#635bff]/30 bg-[#635bff]/8 text-[#635bff]
-              dark:border-[#635bff]/40 dark:bg-[#635bff]/10 dark:text-[#a89fff]
+              bg-[#635bff]/8 text-[#635bff]
+              dark:bg-[#635bff]/10 dark:text-[#a89fff]
             ">
               <Rocket /> {t('hero.badge')}
             </div>
@@ -63,7 +63,7 @@ export default function Hero() {
                 href="https://dash.nabdaotp.com/en/login"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 px-7 py-3.5 text-base font-semibold rounded-full text-white bg-[#635bff] hover:bg-[#7a73ff] shadow-[0_4px_20px_rgba(99,91,255,0.4)] hover:shadow-[0_6px_28px_rgba(99,91,255,0.6)] hover:-translate-y-0.5 transition-all duration-200"
+                className="inline-flex items-center gap-2 px-7 py-3.5 text-base font-semibold rounded-full text-white bg-[#635bff] hover:bg-[#7a73ff] transition-colors duration-200"
               >
                 {t('hero.cta.primary')}
               </a>
@@ -72,8 +72,8 @@ export default function Hero() {
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 px-7 py-3.5 text-base font-semibold rounded-full transition-all duration-200
-                  border border-[#635bff]/30 text-[#635bff] hover:bg-[#635bff]/8
-                  dark:border-white/20 dark:text-white/80 dark:hover:text-white dark:hover:border-white/40 dark:hover:bg-white/5
+                  bg-[#635bff]/6 text-[#635bff] hover:bg-[#635bff]/10
+                  dark:bg-white/5 dark:text-white/80 dark:hover:text-white dark:hover:bg-white/8
                 "
               >
                 {t('hero.cta.secondary')}
@@ -91,15 +91,14 @@ export default function Hero() {
 
           {/*  Right: Code Terminal  */}
           <div className="relative animate-hero-right">
-            <div className="rounded-2xl overflow-hidden border shadow-2xl
-              border-[#e2e8f0] bg-[#f8fafc]
-              dark:border-white/10 dark:bg-[#0d1b2e]
-              shadow-[#635bff]/10 dark:shadow-black/50
+            <div className="rounded-3xl overflow-hidden
+              bg-[#f5f7fb]
+              dark:bg-[#0d1b2e]
             ">
               {/* Terminal header */}
-              <div className="flex items-center gap-2 px-4 py-3 border-b
-                bg-[#f1f5f9] border-[#e2e8f0]
-                dark:bg-[#0a1628] dark:border-white/8
+              <div className="flex items-center gap-2 px-4 py-3
+                bg-[#eef2f7]
+                dark:bg-[#0a1628]
               ">
                 <span className="w-3 h-3 rounded-full bg-[#ff5f57]" />
                 <span className="w-3 h-3 rounded-full bg-[#ffbd2e]" />
@@ -147,7 +146,7 @@ export default function Hero() {
 
               {/* Delivered indicator */}
               <div className="flex items-center gap-2 px-6 pb-5">
-                <span className="flex h-2 w-2 rounded-full bg-[#00d4aa] shadow-[0_0_6px_rgba(0,212,170,0.8)]" />
+                <span className="flex h-2 w-2 rounded-full bg-[#00d4aa]" />
                 <span className="text-xs font-medium text-[#00d4aa]">Message delivered · 0.3s</span>
               </div>
             </div>

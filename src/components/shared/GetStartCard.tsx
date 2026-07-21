@@ -5,7 +5,7 @@ export default function GetStartCard() {
     return (
         <>
             {/* Bottom CTA */}
-            <section className="max-w-300 mx-auto px-6 pb-20">
+            <section className="max-w-300 mx-auto px-6 pb-14">
                 <div className="rounded-2xl bg-linear-to-br from-[#635bff] to-[#4f46e5] dark:from-[#1a1040] dark:to-[#2d1b69] p-10 text-center relative overflow-hidden">
                     <div className="pointer-events-none absolute inset-0">
                         <div className="absolute -top-20 -right-20 w-64 h-64 rounded-full bg-white/8 blur-3xl" />

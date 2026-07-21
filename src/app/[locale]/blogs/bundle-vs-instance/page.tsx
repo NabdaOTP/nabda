@@ -112,7 +112,7 @@ export default async function BlogBundleVsInstance({ params }: Props) {
             <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
 
             {/* Hero */}
-            <div className="relative overflow-hidden pt-20 pb-12 bg-linear-to-br from-white via-[#f5f3ff] to-[#ede9fe] dark:from-[#0a2540] dark:via-[#0d1b2e] dark:to-[#0a1628]">
+            <div className="relative overflow-hidden pt-14 pb-10 bg-linear-to-br from-white via-[#f5f3ff] to-[#ede9fe] dark:from-[#0a2540] dark:via-[#0d1b2e] dark:to-[#0a1628]">
                 <div className="pointer-events-none absolute inset-0">
                     <div className="absolute -top-32 -right-32 w-125 h-125 rounded-full bg-[#635bff]/10 blur-[100px] dark:bg-[#635bff]/20" />
                 </div>
@@ -147,10 +147,10 @@ export default async function BlogBundleVsInstance({ params }: Props) {
             </div>
 
             {/* Body */}
-            <div className="max-w-215 mx-auto px-6 py-12 flex flex-col gap-6">
+            <div className="max-w-215 mx-auto px-6 py-10 flex flex-col gap-5">
                 <div className="rounded-2xl border bg-white border-gray-100 shadow-sm dark:bg-white/4 dark:border-white/8 overflow-hidden">
                     <div className="h-1 bg-linear-to-r from-[#635bff] to-[#00d4aa]" />
-                    <div className="p-8 md:p-10 flex flex-col gap-10">
+                    <div className="p-7 md:p-8 flex flex-col gap-8">
 
                         {/* Intro */}
                         <div>

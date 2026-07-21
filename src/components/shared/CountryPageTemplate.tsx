@@ -97,14 +97,14 @@ export default function CountryPageTemplate({ country, locale, phoneExample }: P
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
 
       {/* Hero */}
-      <section className="relative overflow-hidden py-20 md:py-28 bg-linear-to-br from-white via-[#f5f3ff] to-[#ede9fe] dark:bg-none dark:bg-[#0a2540]">
+      <section className="relative overflow-hidden py-14 md:py-18 bg-linear-to-br from-white via-[#f5f3ff] to-[#ede9fe] dark:bg-none dark:bg-[#0a2540]">
         <div className="pointer-events-none absolute inset-0">
           <div className="absolute -top-40 -right-40 h-150 w-150 rounded-full bg-[#635bff]/10 blur-[120px] dark:bg-[#635bff]/25" />
           <div className="absolute -bottom-20 -left-20 h-100 w-100 rounded-full bg-[#a89fff]/15 blur-[100px]" />
         </div>
 
         <div className="relative max-w-300 mx-auto px-6">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center" dir={dir}>
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-10 items-center" dir={dir}>
             {/* Text */}
             <div className="flex flex-col gap-6">
               <div className="inline-flex items-center self-start gap-2 rounded-full px-4 py-1.5 text-sm font-medium border border-[#635bff]/30 bg-[#635bff]/8 text-[#635bff] dark:border-[#635bff]/40 dark:bg-[#635bff]/10 dark:text-[#a89fff]">
@@ -179,9 +179,9 @@ const response = await Nabda.send({
       <Features/>
       <Pricing />
       {/* FAQ (country-specific) */}
-      <section className="py-20 bg-gray-50/80 dark:bg-[#060f1e]">
+      <section className="py-14 bg-gray-50/80 dark:bg-[#060f1e]">
         <div className="max-w-215 mx-auto px-6" dir={dir}>
-          <h2 className="text-4xl font-extrabold text-center mb-14 text-[#0a2540] dark:text-white">
+          <h2 className="text-4xl font-extrabold text-center mb-10 text-[#0a2540] dark:text-white">
             {isAR ? 'الأسئلة الشائعة' : isTR ? cp.faqTitle : 'Frequently Asked Questions'}
           </h2>
           <Accordion type="single" collapsible className="flex flex-col gap-3">

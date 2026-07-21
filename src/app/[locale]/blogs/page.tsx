@@ -116,7 +116,7 @@ export default function BlogsPage() {
     <main className="min-h-screen bg-linear-to-b from-gray-50 to-white dark:from-[#060f1e] dark:to-[#0a1628]">
 
       {/* ── Hero ── */}
-      <div className="relative overflow-hidden pt-20 pb-14 text-center bg-linear-to-br from-white via-[#f5f3ff] to-[#ede9fe] dark:from-[#0a2540] dark:via-[#0d1b2e] dark:to-[#0a1628]">
+      <div className="relative overflow-hidden pt-14 pb-10 text-center bg-linear-to-br from-white via-[#f5f3ff] to-[#ede9fe] dark:from-[#0a2540] dark:via-[#0d1b2e] dark:to-[#0a1628]">
         <div className="pointer-events-none absolute inset-0">
           <div className="absolute -top-32 left-1/2 -translate-x-1/2 w-[600px] h-[400px] rounded-full bg-[#635bff]/10 blur-[100px] dark:bg-[#635bff]/20" />
         </div>
@@ -138,7 +138,7 @@ export default function BlogsPage() {
       </div>
 
       {/* ── Grid ── */}
-      <section className="max-w-[1200px] mx-auto px-6 py-14">
+      <section className="max-w-[1200px] mx-auto px-6 py-10">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
 
           {/* Published posts */}

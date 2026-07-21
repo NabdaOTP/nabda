@@ -42,14 +42,14 @@ export default function Payment() {
 
   return (
     <section className="
-      py-18
+      py-12
       bg-linear-to-b from-[#ede9fe]/30 to-white
       dark:from-[#060f1e] dark:to-[#0a1628]
     ">
       <div className="max-w-300 mx-auto px-6">
 
         {/* Title */}
-        <p className="text-center text-xs font-semibold uppercase tracking-widest mb-8
+        <p className="text-center text-xs font-semibold uppercase tracking-widest mb-6
           text-[#94a3b8]
           dark:text-[#475569]
         ">
@@ -57,15 +57,15 @@ export default function Payment() {
         </p>
 
         {/* Cards */}
-        <div className="flex flex-wrap items-center justify-center gap-4">
+        <div className="flex flex-wrap items-center justify-center gap-3">
           {PAYMENT_METHODS.map(({ name, svg }) => (
             <div
               key={name}
               className="
-                flex flex-col items-center gap-3 px-8 py-5 rounded-2xl
-                border transition-all duration-200
-                bg-white border-gray-100 hover:border-gray-200 hover:shadow-md
-                dark:bg-white/4 dark:border-white/8 dark:hover:bg-white/8
+                flex flex-col items-center gap-2.5 px-7 py-4 rounded-2xl
+                transition-colors duration-200
+                bg-[#f8f9fc] hover:bg-[#f1f3f8]
+                dark:bg-white/4 dark:hover:bg-white/8
               "
             >
               {svg}

@@ -64,7 +64,7 @@ export default function FAQ() {
 
   return (
     <section className="
-      py-20 md:py-28
+      py-14 md:py-18
       bg-linear-to-b from-[#ede9fe]/30 to-white
         dark:from-[#060f1e] dark:to-[#0a1628]
     ">
@@ -77,7 +77,7 @@ export default function FAQ() {
       <div className="max-w-215 mx-auto px-6">
 
         {/* Header */}
-        <div className="text-center mb-14">
+        <div className="text-center mb-10">
           <h2 className="text-4xl md:text-[2.75rem] font-extrabold tracking-tight leading-tight mb-4
             text-[#0a2540] dark:text-white
           ">
@@ -89,23 +89,21 @@ export default function FAQ() {
         </div>
 
         {/* ── Accordion ── */}
-        <Accordion type="single" collapsible className="flex flex-col gap-3">
+        <Accordion type="single" collapsible className="flex flex-col gap-2.5">
           {items.map((item, i) => (
             <AccordionItem
               key={i}
               value={`item-${i}`}
               className="
-                rounded-2xl border px-6 transition-all duration-200
-                bg-white border-gray-100
-                hover:border-[#635bff]/30 hover:shadow-[0_4px_20px_rgba(99,91,255,0.08)]
-                data-[state=open]:border-[#635bff]/50 data-[state=open]:shadow-[0_4px_24px_rgba(99,91,255,0.12)]
-                dark:bg-white/4 dark:border-white/8
-                dark:hover:border-[#635bff]/30
-                dark:data-[state=open]:border-[#635bff]/40
+                rounded-2xl px-5 transition-colors duration-200
+                bg-[#f8f9fc] hover:bg-[#f3f4fa]
+                data-[state=open]:bg-[#f0efff]
+                dark:bg-white/4 dark:hover:bg-white/6
+                dark:data-[state=open]:bg-[#635bff]/12
               "
             >
               <AccordionTrigger className="
-                py-5 text-start text-base font-semibold no-underline hover:no-underline
+                py-4.5 text-start text-base font-semibold no-underline hover:no-underline
                 text-[#0a2540] dark:text-white
                 [&>svg]:text-[#635bff] [&>svg]:shrink-0
               ">
@@ -113,7 +111,7 @@ export default function FAQ() {
               </AccordionTrigger>
 
               <AccordionContent className="
-                pb-5 text-[0.9375rem] leading-7
+                pb-4.5 text-[0.9375rem] leading-7
                 text-[#425466] dark:text-[#8899a6]
               ">
                 {item.a}

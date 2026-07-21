@@ -118,7 +118,7 @@ export default async function BlogWhatsAppVsSMSCost({ params }: Props) {
             <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
 
             {/* Hero */}
-            <div className="relative overflow-hidden pt-20 pb-12 bg-linear-to-br from-white via-[#f0fff8] to-[#dcfce7] dark:from-[#0a2540] dark:via-[#0d1b2e] dark:to-[#0a1628]">
+            <div className="relative overflow-hidden pt-14 pb-10 bg-linear-to-br from-white via-[#f0fff8] to-[#dcfce7] dark:from-[#0a2540] dark:via-[#0d1b2e] dark:to-[#0a1628]">
                 <div className="pointer-events-none absolute inset-0">
                     <div className="absolute -top-32 -right-32 w-[500px] h-[500px] rounded-full bg-[#00d4aa]/10 blur-[100px] dark:bg-[#00d4aa]/8" />
                 </div>
@@ -153,10 +153,10 @@ export default async function BlogWhatsAppVsSMSCost({ params }: Props) {
             </div>
 
             {/* Body */}
-            <div className="max-w-[860px] mx-auto px-6 py-12 flex flex-col gap-6">
+            <div className="max-w-[860px] mx-auto px-6 py-10 flex flex-col gap-5">
                 <div className="rounded-2xl border bg-white border-gray-100 shadow-sm dark:bg-white/4 dark:border-white/8 overflow-hidden">
                     <div className="h-1 bg-linear-to-r from-[#00d4aa] to-[#635bff]" />
-                    <div className="p-8 md:p-10 flex flex-col gap-10">
+                    <div className="p-7 md:p-8 flex flex-col gap-8">
 
                         {/* Intro */}
                         <p className="text-[1rem] leading-[1.85] text-[#425466] dark:text-[#8899a6]">{t('intro')}</p>

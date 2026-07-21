@@ -22,13 +22,13 @@ export default function SolutionCTA({
     const t = useTranslations();
 
     return (
-        <section className="py-18 text-center">
+        <section className="py-12 text-center">
             <div className="container max-w-200 mx-auto px-6">
                 <h2 className="text-3xl md:text-4xl font-extrabold text-[#0a2540] dark:text-white mb-4 leading-tight">
                     {t(titleKey as Parameters<typeof t>[0])}
                 </h2>
 
-                <p className="text-base text-[#6b7280] dark:text-[#8899a6] max-w-125 mx-auto leading-relaxed mb-8">
+                <p className="text-base text-[#6b7280] dark:text-[#8899a6] max-w-125 mx-auto leading-relaxed mb-6">
                     {t(descKey as Parameters<typeof t>[0])}
                 </p>
 

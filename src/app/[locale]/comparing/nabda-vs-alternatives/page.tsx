@@ -110,7 +110,7 @@ export default function NabdaAlternativesPage() {
     return (
         <main className="min-h-screen bg-white dark:bg-[#060f1e]">
             {/* Hero */}
-            <section className="relative pt-32 pb-16 bg-gradient-to-b from-[#f8f9ff] to-white dark:from-[#0a1628] dark:to-[#060f1e]">
+            <section className="relative pt-20 pb-12 bg-gradient-to-b from-[#f8f9ff] to-white dark:from-[#0a1628] dark:to-[#060f1e]">
                 <div className="container max-w-240 mx-auto px-6">
                     <nav className="flex items-center gap-2 text-sm text-[#64748b] dark:text-[#94a3b8] mb-6">
                         <Link href="/">{t('nav.home')}</Link>
@@ -148,9 +148,9 @@ export default function NabdaAlternativesPage() {
             </section>
 
             {/* Quick Comparison */}
-            <section className="py-16 bg-white dark:bg-[#060f1e]">
+            <section className="py-12 bg-white dark:bg-[#060f1e]">
                 <div className="container max-w-6xl mx-auto px-6">
-                    <h2 className="text-3xl md:text-4xl font-extrabold text-[#0a2540] dark:text-white text-center mb-12">
+                    <h2 className="text-3xl md:text-4xl font-extrabold text-[#0a2540] dark:text-white text-center mb-8">
                         {t('alternatives.quickCompare.title')}
                     </h2>
                     <div className="overflow-x-auto">
@@ -199,9 +199,9 @@ export default function NabdaAlternativesPage() {
             </section>
 
             {/* Detailed Comparisons */}
-            <section className="py-20 bg-[#f8f9ff] dark:bg-[#0a1628]">
+            <section className="py-14 bg-[#f8f9ff] dark:bg-[#0a1628]">
                 <div className="container max-w-6xl mx-auto px-6">
-                    <h2 className="text-3xl md:text-4xl font-extrabold text-[#0a2540] dark:text-white text-center mb-12">
+                    <h2 className="text-3xl md:text-4xl font-extrabold text-[#0a2540] dark:text-white text-center mb-8">
                         {t('alternatives.detailed.title')}
                     </h2>
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -226,12 +226,12 @@ export default function NabdaAlternativesPage() {
             </section>
 
             {/* When to Choose */}
-            <section className="py-20 bg-white dark:bg-[#060f1e]">
+            <section className="py-14 bg-white dark:bg-[#060f1e]">
                 <div className="container max-w-6xl mx-auto px-6">
-                    <h2 className="text-3xl md:text-4xl font-extrabold text-[#0a2540] dark:text-white text-center mb-12">
+                    <h2 className="text-3xl md:text-4xl font-extrabold text-[#0a2540] dark:text-white text-center mb-8">
                         {t('alternatives.whenToChoose.title')}
                     </h2>
-                    <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
                         <div className="p-8 rounded-2xl bg-[#f0fdf4] dark:bg-[#10b981]/10 border-2 border-[#10b981]">
                             <h3 className="text-xl font-bold text-[#0a2540] dark:text-white mb-4">
                                 {t('alternatives.whenToChoose.choose.title')}

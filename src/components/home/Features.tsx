@@ -44,7 +44,7 @@ export default function Features() {
     <section
       id="features"
       className="
-        py-20 md:py-28
+        py-14 md:py-18
         bg-linear-to-b from-[#ede9fe]/30 to-white
         dark:from-[#060f1e] dark:to-[#0a1628]
       "
@@ -52,7 +52,7 @@ export default function Features() {
       <div className="max-w-300 mx-auto px-6">
 
         {/* ── Header ── */}
-        <AnimateIn className="text-center max-w-170 mx-auto mb-16">
+        <AnimateIn className="text-center max-w-170 mx-auto mb-10">
           <h2 className="text-4xl md:text-[2.75rem] font-extrabold tracking-tight leading-tight mb-4
             text-deep-navy dark:text-white
           ">
@@ -65,18 +65,16 @@ export default function Features() {
         </AnimateIn>
 
         {/* Grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
           {FEATURES.map(({ key, icon: Icon, primary }, i) =>
             primary ? (
               /* Primary Card */
               <AnimateIn
                 key={key}
                 className="
-                  relative overflow-hidden flex flex-col gap-5 p-8 rounded-2xl
+                  relative overflow-hidden flex flex-col gap-4 p-7 rounded-2xl
                   bg-linear-to-br from-deep-navy to-navy-light
                   dark:from-[#1a1040] dark:to-[#2d1b69]
-                  shadow-[0_8px_30px_rgba(10,37,64,0.25)]
-                  dark:shadow-[0_8px_30px_rgba(99,91,255,0.25)]
                 "
                 delay={i * 100}
               >
@@ -97,7 +95,7 @@ export default function Features() {
                 </p>
 
                 {/* Highlight pill */}
-                <span className="self-start px-4 py-1.5 rounded-full text-sm font-semibold bg-white/15 text-white border border-white/20">
+                <span className="self-start px-4 py-1.5 rounded-full text-sm font-semibold bg-white/15 text-white">
                   {t('cheapest.highlight')}
                 </span>
               </AnimateIn>
@@ -107,11 +105,9 @@ export default function Features() {
               <AnimateIn
                 key={key}
                 className="
-                  group flex flex-col gap-5 p-8 rounded-2xl border transition-all duration-300
-                  bg-white border-gray-100
-                  hover:border-[#635bff]/40 hover:shadow-[0_8px_30px_rgba(99,91,255,0.1)] hover:-translate-y-1
-                  dark:bg-white/4 dark:border-white/8
-                  dark:hover:border-[#635bff]/40 dark:hover:bg-white/8
+                  group flex flex-col gap-4 p-7 rounded-2xl transition-colors duration-300
+                  bg-[#f8f9fc] hover:bg-[#f2f3fa]
+                  dark:bg-white/4 dark:hover:bg-white/8
                 "
                 delay={i * 100}
               >

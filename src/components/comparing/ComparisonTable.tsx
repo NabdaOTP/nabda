@@ -21,7 +21,7 @@ export default function ComparisonTable({
     const t = useTranslations();
 
     return (
-        <section className="py-16 bg-white dark:bg-[#060f1e]">
+        <section className="py-12 bg-white dark:bg-[#060f1e]">
             <div className="container max-w-6xl mx-auto px-6">
                 <div className="overflow-x-auto">
                     <table className="w-full border-collapse bg-white dark:bg-white/4 rounded-2xl overflow-hidden">

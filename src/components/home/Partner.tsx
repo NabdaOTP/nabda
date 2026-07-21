@@ -7,7 +7,7 @@ export default function Partner() {
 
   return (
     <section className="
-      relative overflow-hidden py-20 md:py-24 text-center
+      relative overflow-hidden py-14 md:py-18 text-center
       bg-linear-to-br from-[#f0f1ff] via-[#e8e6ff] to-[#dde4ff]
       dark:bg-none dark:bg-[#0d1525]
     ">
@@ -20,13 +20,13 @@ export default function Partner() {
       <AnimateIn className="relative max-w-180 mx-auto px-6">
 
         {/* Icon */}
-        <div className="flex justify-center mb-6">
+        <div className="flex justify-center mb-5">
           <div className="
-            flex items-center justify-center w-24 h-24 rounded-3xl
-            bg-white shadow-[0_8px_30px_rgba(99,91,255,0.15)]
-            dark:bg-white/8 dark:shadow-[0_8px_30px_rgba(99,91,255,0.2)]
+            flex items-center justify-center w-20 h-20 rounded-3xl
+            bg-white
+            dark:bg-white/8
           ">
-            <Gift width={60} height={60} />
+            <Gift width={48} height={48} />
           </div>
         </div>
 
@@ -39,7 +39,7 @@ export default function Partner() {
         </h2>
 
         {/* Subtitle */}
-        <p className="text-lg leading-relaxed max-w-145 mx-auto mb-8
+        <p className="text-lg leading-relaxed max-w-145 mx-auto mb-6
           text-[#475569]
           dark:text-[#8899a6]
         ">

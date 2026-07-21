@@ -65,7 +65,7 @@ export default function Pricing() {
   return (
     <section
       id="pricing"
-      className="relative overflow-hidden py-20 md:py-28 bg-[#0a2540] dark:bg-[#04080f]"
+      className="relative overflow-hidden py-14 md:py-18 bg-[#0a2540] dark:bg-[#04080f]"
     >
       {/*  Orbs */}
       <div className="pointer-events-none absolute inset-0">
@@ -77,7 +77,7 @@ export default function Pricing() {
       <div className="relative max-w-300 mx-auto px-6">
 
         {/*  Header  */}
-        <div className="text-center max-w-160 mx-auto mb-10">
+        <div className="text-center max-w-160 mx-auto mb-8">
           <h2 className="text-4xl md:text-[2.75rem] font-extrabold tracking-tight leading-tight mb-4 text-white">
             {t('title')}
           </h2>
@@ -87,7 +87,7 @@ export default function Pricing() {
         </div>
 
         {/* Toggle */}
-        <div className="flex justify-center mb-14">
+        <div className="flex justify-center mb-10">
           <div className="flex items-center gap-1 p-1 rounded-full bg-white/10 backdrop-blur-sm">
             {(['monthly', 'annual'] as const).map((plan) => (
               <button
@@ -96,7 +96,7 @@ export default function Pricing() {
                 className={cn(
                   'px-7 py-2.5 rounded-full text-sm font-semibold transition-all duration-200',
                   billing === plan
-                    ? 'bg-[#635bff] text-white shadow-[0_4px_12px_rgba(99,91,255,0.5)]'
+                    ? 'bg-[#635bff] text-white'
                     : 'text-white/60 hover:text-white'
                 )}
               >
@@ -112,18 +112,18 @@ export default function Pricing() {
         </div>
 
         {/* 2-Column Cards Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-3xl mx-auto">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-5 max-w-3xl mx-auto">
 
           {/* 1. Standard Card */}
-          <Card className="relative overflow-visible border-0 shadow-2xl bg-[#0d1525] transition-shadow duration-300">
+          <Card className="relative overflow-visible bg-[#0d1525]">
             <div className="absolute -top-3 left-1/2 -translate-x-1/2">
-              <Badge className="px-4 py-1 text-xs font-bold uppercase tracking-wider bg-linear-to-r from-[#635bff] to-[#4b44cc] text-white border-0 shadow-lg whitespace-nowrap">
+              <Badge className="px-4 py-1 text-xs font-bold uppercase tracking-wider bg-linear-to-r from-[#635bff] to-[#4b44cc] text-white border-0 whitespace-nowrap">
                 {t('standard.badge')}
               </Badge>
             </div>
 
             <div key={billing} className="animate-billing-swap">
-              <CardHeader className="text-center pt-10 pb-6">
+              <CardHeader className="text-center pt-9 pb-5">
                 <div className="flex items-baseline justify-center gap-1 mb-3">
                   <span className="text-2xl font-semibold text-white/50">$</span>
                   <span className="text-6xl font-extrabold tracking-tight text-white">
@@ -147,7 +147,7 @@ export default function Pricing() {
 
               <Separator className="bg-white/10" />
 
-              <CardContent className="pt-6 pb-8">
+              <CardContent className="pt-5 pb-7">
                 <ul className="space-y-0.5 mb-8">
                   {STANDARD_FEATURES.map((key) => (
                     <FeatureItem
@@ -160,7 +160,8 @@ export default function Pricing() {
                 </ul>
                 <Button
                   asChild
-                  className="w-full py-6 text-white text-[16px] font-bold rounded-full bg-blurple hover:bg-blurple-light [a]:hover:bg-blurple-light shadow-[0_4px_20px_rgba(99,91,255,0.4)] transition-all hover:-translate-y-0.5 duration-200"
+                  variant="outline"
+                  className="w-full py-6 text-white text-[16px] font-semibold rounded-full bg-white/8 hover:bg-white/15 [a]:hover:bg-white/15 transition-colors duration-200"
                 >
                   <a href="https://dash.nabdaotp.com/" target="_blank" rel="noopener noreferrer">
                     {isAnnual ? t('cta.yearly') : t('cta.trial')}
@@ -175,9 +176,8 @@ export default function Pricing() {
 
           {/* 2. Enterprise Card — highlighted */}
           <Card className="
-            relative overflow-visible border-2 border-[#635bff]
+            relative overflow-visible
             bg-linear-to-b from-[#0f1e40] to-[#0a1628]
-            shadow-[0_25px_60px_rgba(99,91,255,0.35)]
             z-10
             dark:from-[#0d1230] dark:to-[#080e20]
           ">
@@ -185,12 +185,12 @@ export default function Pricing() {
             <div className="pointer-events-none absolute inset-0 rounded-[inherit] bg-[#635bff]/5" />
 
             <div className="absolute -top-3 left-1/2 -translate-x-1/2">
-              <Badge className="px-4 py-1 text-xs font-bold uppercase tracking-wider bg-gradient-to-r from-[#00d4aa] to-[#00a88a] text-[#0a2540] border-0 shadow-lg whitespace-nowrap">
+              <Badge className="px-4 py-1 text-xs font-bold uppercase tracking-wider bg-gradient-to-r from-[#00d4aa] to-[#00a88a] text-[#0a2540] border-0 whitespace-nowrap">
                 {te('enter')}
               </Badge>
             </div>
 
-            <CardHeader className="text-center pt-10 pb-6">
+            <CardHeader className="text-center pt-9 pb-5">
               <div className="flex items-baseline justify-center mb-3">
                 <span className="text-4xl font-extrabold text-white">{te('contact')}</span>
               </div>
@@ -203,7 +203,7 @@ export default function Pricing() {
 
             <Separator className="bg-white/10" />
 
-            <CardContent className="pt-6 pb-8">
+            <CardContent className="pt-5 pb-7">
               <ul className="space-y-0.5 mb-8">
                 {ENTERPRISE_FEATURES.map((key) => (
                   <FeatureItem
@@ -219,10 +219,9 @@ export default function Pricing() {
               </ul>
               <Button
                 asChild
-                variant="outline"
-                className="w-full py-6 text-base font-semibold rounded-full border-white/25 text-white bg-white/8 hover:bg-white/15 hover:text-white hover:border-white/40 transition-all"
+                className="w-full py-6 text-base font-bold rounded-full text-white bg-[#635bff] hover:bg-[#7a73ff] [a]:hover:bg-[#7a73ff] transition-colors"
               >
-                <a href="https://wa.me/905352682350" target="_blank" rel="noopener noreferrer">
+                <a href="https://wevlix.com/en" target="_blank" rel="noopener noreferrer">
                   {t('cta.contact')}
                 </a>
               </Button>

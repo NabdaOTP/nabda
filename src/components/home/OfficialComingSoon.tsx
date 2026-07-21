@@ -8,7 +8,7 @@ export default function OfficialComingSoon() {
     const t = useTranslations('official');
 
     return (
-        <section className="py-20 bg-linear-to-b from-[#ede9fe]/30 to-white
+        <section className="py-14 bg-linear-to-b from-[#ede9fe]/30 to-white
         dark:from-[#060f1e] dark:to-[#0a1628]">
             <div className="max-w-[1200px] mx-auto px-6">
 

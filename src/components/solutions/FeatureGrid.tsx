@@ -15,11 +15,11 @@ export default function FeatureGrid({ features }: FeatureGridProps) {
     const t = useTranslations();
 
     return (
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 mt-10">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 mt-8">
             {features.map((feat, i) => (
                 <div
                     key={i}
-                    className="group flex flex-col gap-3 p-6 rounded-2xl border bg-white border-gray-100 shadow-sm transition-all duration-300 hover:shadow-[0_8px_28px_rgba(99,91,255,0.12)] hover:-translate-y-1 hover:border-[#635bff]/30 dark:bg-white/4 dark:border-white/8 dark:hover:bg-white/6"
+                    className="group flex flex-col gap-3 p-5 rounded-2xl bg-[#f8f9fc] transition-colors duration-300 hover:bg-[#f2f3fa] dark:bg-white/4 dark:hover:bg-white/6"
                 >
                     {/* Icon */}
                     <div className="flex items-center justify-center w-11 h-11 rounded-xl bg-[#635bff]/10 dark:bg-[#635bff]/20 text-2xl shrink-0 transition-transform duration-300 group-hover:scale-110">

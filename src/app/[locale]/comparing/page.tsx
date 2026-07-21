@@ -111,7 +111,7 @@ export default function ComparingPage() {
         <main className="min-h-screen bg-white dark:bg-[#060f1e]">
 
             {/* Hero */}
-            <div className="relative overflow-hidden pt-20 pb-16 text-center bg-linear-to-br from-white via-[#f5f3ff] to-[#ede9fe] dark:from-deep-navy dark:via-[#0d1b2e] dark:to-[#0a1628]">
+            <div className="relative overflow-hidden pt-14 pb-12 text-center bg-linear-to-br from-white via-[#f5f3ff] to-[#ede9fe] dark:from-deep-navy dark:via-[#0d1b2e] dark:to-[#0a1628]">
                 <div className="pointer-events-none absolute inset-0">
                     <div className="absolute -top-32 left-1/2 -translate-x-1/2 w-175 h-100 rounded-full bg-blurple/10 blur-[100px] dark:bg-blurple/20" />
                 </div>
@@ -141,7 +141,7 @@ export default function ComparingPage() {
             </div>
 
             {/* Grid */}
-            <section className="max-w-300 mx-auto px-6 py-16">
+            <section className="max-w-300 mx-auto px-6 py-12">
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
                     {COMPARISONS.map(({ slug, titleKey, descKey, linkKey, accent, badgeKey, savingsKey }) => (
                         <Link
@@ -203,7 +203,7 @@ export default function ComparingPage() {
             </section>
 
             {/* Why Nabda wins — quick table */}
-            <section className="max-w-300 mx-auto px-6 pb-16">
+            <section className="max-w-300 mx-auto px-6 pb-12">
                 <div className="rounded-2xl border bg-gray-50 border-gray-100 dark:bg-white/3 dark:border-white/8 overflow-hidden">
                     {/* Header */}
                     <div className="px-6 sm:px-8 py-6 border-b border-gray-100 dark:border-white/8">

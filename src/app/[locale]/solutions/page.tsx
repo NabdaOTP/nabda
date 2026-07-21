@@ -107,7 +107,7 @@ export default function SolutionsPage() {
     <main className="min-h-screen bg-white dark:bg-[#060f1e]">
 
       {/* ── Hero ── */}
-      <div className="relative overflow-hidden pt-20 pb-16 text-center bg-linear-to-br from-white via-[#f5f3ff] to-[#ede9fe] dark:from-[#0a2540] dark:via-[#0d1b2e] dark:to-[#0a1628]">
+      <div className="relative overflow-hidden pt-14 pb-12 text-center bg-linear-to-br from-white via-[#f5f3ff] to-[#ede9fe] dark:from-[#0a2540] dark:via-[#0d1b2e] dark:to-[#0a1628]">
         <div className="pointer-events-none absolute inset-0">
           <div className="absolute -top-32 left-1/2 -translate-x-1/2 w-175 h-100 rounded-full bg-[#635bff]/10 blur-[100px] dark:bg-[#635bff]/20" />
         </div>
@@ -130,7 +130,7 @@ export default function SolutionsPage() {
       </div>
 
       {/* ── Cards Grid ── */}
-      <section className="max-w-300 mx-auto px-6 py-16">
+      <section className="max-w-300 mx-auto px-6 py-12">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
 
           {/* Solution cards */}

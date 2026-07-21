@@ -46,10 +46,10 @@ function StatItem({
 
   return (
     <div className="
-      group flex flex-col items-center gap-3 px-6 py-8 rounded-2xl
-      text-center transition-all duration-300
-      bg-white border border-gray-100 shadow-sm hover:shadow-md hover:-translate-y-1
-      dark:bg-white/5 dark:border-white/8 dark:hover:bg-white/8
+      group flex flex-col items-center gap-3 px-5 py-6 rounded-2xl
+      text-center transition-colors duration-300
+      bg-white/70 hover:bg-white
+      dark:bg-white/5 dark:hover:bg-white/8
     ">
       {/* Icon */}
       <span className="flex items-center justify-center w-12 h-12 rounded-xl bg-[#635bff]/10 dark:bg-[#635bff]/20 text-deep-navy transition-transform duration-300 group-hover:scale-110">
@@ -93,16 +93,16 @@ export default function Stats() {
   }, []);
 
   const stats = [
-    { icon: Building2,     countTarget: 250,  suffix: '+', label: t('businesses') },
-    { icon: MessageSquare, countTarget: 17, suffix: 'K+', label: t('messages')   },
-    { icon: Activity,      staticValue: '99.99%',          label: t('uptime')     },
+    { icon: Building2,     countTarget: 320,  suffix: '+', label: t('businesses') },
+    { icon: MessageSquare, countTarget: 24, suffix: 'K+', label: t('messages')   },
+    { icon: Activity,      staticValue: '95.99%',          label: t('uptime')     },
     { icon: ShieldCheck,   staticValue: '✓',               label: t('reliable')   },
   ];
 
   return (
     <section
       ref={ref}
-      className="py-24
+      className="py-14 md:py-16
         bg-[#f5f3ff]
         dark:bg-[#060f1e]
       "

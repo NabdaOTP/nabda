@@ -27,7 +27,7 @@ export default function SolutionHero({
     const tNav = useTranslations('nav');
 
     return (
-        <section className={`relative overflow-hidden pt-20 pb-16 text-center bg-gradient-to-br ${gradient}`}>
+        <section className={`relative overflow-hidden pt-14 pb-12 text-center bg-gradient-to-br ${gradient}`}>
             {/* Orb background */}
             <div className="pointer-events-none absolute inset-0">
                 <div className="absolute -top-32 left-1/2 -translate-x-1/2 w-175 h-100 rounded-full bg-blurple/8 dark:bg-white/8 blur-[100px]" />
@@ -35,7 +35,7 @@ export default function SolutionHero({
 
             <div className="relative max-w-300 mx-auto px-6">
                 {/* Breadcrumb */}
-                <nav className="flex items-center justify-center gap-1.5 text-sm mb-6 text-gray-500 dark:text-white/70">
+                <nav className="flex items-center justify-center gap-1.5 text-sm mb-5 text-gray-500 dark:text-white/70">
                     <Link href="/" className="hover:text-gray-900 dark:hover:text-white transition-colors">
                         {tNav('home')}
                     </Link>
@@ -48,8 +48,8 @@ export default function SolutionHero({
                 </nav>
 
                 {/* Icon */}
-                <div className="w-20 h-20 mx-auto mb-6 bg-blurple/10 dark:bg-white/15 rounded-2xl flex items-center justify-center backdrop-blur-sm">
-                    <Icon size={40} strokeWidth={1.75} className="text-blurple dark:text-white" />
+                <div className="w-16 h-16 mx-auto mb-5 bg-blurple/10 dark:bg-white/15 rounded-2xl flex items-center justify-center backdrop-blur-sm">
+                    <Icon size={34} strokeWidth={1.75} className="text-blurple dark:text-white" />
                 </div>
 
                 {/* Title */}
@@ -58,7 +58,7 @@ export default function SolutionHero({
                 </h1>
 
                 {/* Description */}
-                <p className="text-lg text-gray-600 dark:text-white/90 max-w-145 mx-auto leading-relaxed mb-8">
+                <p className="text-lg text-gray-600 dark:text-white/90 max-w-145 mx-auto leading-relaxed mb-6">
                     {t(descKey as Parameters<typeof t>[0])}
                 </p>
 
@@ -68,7 +68,7 @@ export default function SolutionHero({
                         href={cta1Href}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="inline-flex items-center px-7 py-3.5 rounded-full bg-blurple dark:bg-white text-white dark:text-blurple font-bold text-sm hover:bg-[#4f46e5] dark:hover:bg-white/90 hover:-translate-y-0.5 transition-all duration-200 shadow-lg"
+                        className="inline-flex items-center px-7 py-3.5 rounded-full bg-blurple dark:bg-white text-white dark:text-blurple font-bold text-sm hover:bg-[#4f46e5] dark:hover:bg-white/90 transition-colors duration-200"
                     >
                         {t(cta1Key as Parameters<typeof t>[0])}
                     </a>
@@ -76,7 +76,7 @@ export default function SolutionHero({
                         href={cta2Href}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="inline-flex items-center px-7 py-3 rounded-lg border-2 border-blurple/50 dark:border-white/60 text-blurple dark:text-white font-semibold text-sm hover:bg-blurple/8 dark:hover:bg-white/12 transition-colors"
+                        className="inline-flex items-center px-7 py-3 rounded-full bg-blurple/8 dark:bg-white/8 text-blurple dark:text-white font-semibold text-sm hover:bg-blurple/12 dark:hover:bg-white/12 transition-colors"
                     >
                         {t(cta2Key as Parameters<typeof t>[0])}
                     </a>

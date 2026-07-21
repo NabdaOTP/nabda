@@ -18,7 +18,7 @@ export default function CodeExample({
     const t = useTranslations();
 
     return (
-        <section className="py-16">
+        <section className="py-12">
             <div className="container max-w-240 mx-auto px-6">
                 {/* Label */}
                 <span className="inline-block px-3 py-1 rounded-full bg-[#ede9fe] dark:bg-[#635bff]/20 text-[#635bff] dark:text-[#a89fff] text-xs font-bold uppercase tracking-wide mb-3">

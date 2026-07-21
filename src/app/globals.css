@@ -63,7 +63,7 @@
 :root {
   --background: oklch(1 0 0);
   --foreground: oklch(0.145 0 0);
-  --card: oklch(1 0 0);
+  --card: oklch(0.985 0.006 275);
   --card-foreground: oklch(0.145 0 0);
   --popover: oklch(1 0 0);
   --popover-foreground: oklch(0.145 0 0);
@@ -98,7 +98,7 @@
 .dark {
   --background: oklch(0.145 0 0);
   --foreground: oklch(0.985 0 0);
-  --card: oklch(0.205 0 0);
+  --card: oklch(1 0 0 / 4%);
   --card-foreground: oklch(0.985 0 0);
   --popover: oklch(0.205 0 0);
   --popover-foreground: oklch(0.985 0 0);
@@ -154,13 +154,48 @@
 }
 
 @layer base {
+  *,
+  *::before,
+  *::after {
+    box-shadow: none !important;
+  }
+
   html {
     @apply scroll-smooth;
   }
+
   body {
     @apply bg-white text-[#0a2540] transition-colors duration-300;
   }
+
   .dark body {
     @apply bg-[#060f1e] text-white;
+  }
+
+  :focus-visible {
+    outline: 2px solid color-mix(in srgb, #635bff 72%, transparent);
+    outline-offset: 3px;
+  }
+}
+
+@layer utilities {
+  /*
+   * Let color, translucency, and spacing define surfaces. Existing border
+   * widths remain in place so this visual refinement cannot shift layout.
+   */
+  :where(.border, .border-2, .border-t, .border-b, .border-l, .border-r) {
+    border-color: transparent !important;
+  }
+
+  :where(.divide-x, .divide-y) > :not(:last-child) {
+    border-color: transparent !important;
+  }
+
+  :where(.border, .border-2).bg-white:where(.rounded-xl, .rounded-2xl, .rounded-3xl) {
+    background-color: #f8f9fc;
+  }
+
+  .dark :where(.border, .border-2).bg-white:where(.rounded-xl, .rounded-2xl, .rounded-3xl) {
+    background-color: rgb(255 255 255 / 4%);
   }
 }

@@ -5,7 +5,7 @@ export default function CTA() {
   const t = useTranslations('cta');
 
   return (
-    <section className="relative overflow-hidden py-20 md:py-28">
+    <section className="relative overflow-hidden py-14 md:py-18">
 
       {/* ── Background ── */}
       <div className="absolute inset-0 bg-linear-to-br from-[#635bff] via-[#4b44cc] to-deep-navy dark:from-[#1a1040] dark:via-[#2d1b69] dark:to-[#04080f]" />
@@ -24,7 +24,7 @@ export default function CTA() {
         </h2>
 
         {/* Subtitle */}
-        <p className="text-lg md:text-xl text-white/75 leading-relaxed mb-10 max-w-140 mx-auto">
+        <p className="text-lg md:text-xl text-white/75 leading-relaxed mb-8 max-w-140 mx-auto">
           {t('subtitle')}
         </p>
 
@@ -36,17 +36,15 @@ export default function CTA() {
           className="
             inline-flex items-center px-10 py-4 text-base font-bold rounded-full
             bg-white text-[#635bff]
-            hover:bg-white/90 hover:-translate-y-0.5
-            shadow-[0_6px_30px_rgba(0,0,0,0.25)]
-            hover:shadow-[0_8px_40px_rgba(0,0,0,0.35)]
-            transition-all duration-200
+            hover:bg-white/90
+            transition-colors duration-200
           "
         >
           {t('button')}
         </a>
 
         {/* Trust note */}
-        <div className="flex flex-wrap items-center justify-center gap-6 mt-10">
+        <div className="flex flex-wrap items-center justify-center gap-5 mt-8">
           {[
             '✓ No credit card required',
             '✓ 5-day free trial',
